@@ -1,15 +1,15 @@
 {
- "started": "2026-09-05T08:18:44",
+ "started": "2026-09-05T08:32:46",
  "dates": [
   "2026-09-05"
  ],
- "reason": "Gold Coast Soft 5 -> Good 4; Gold Coast scratched R5 #14/15, R6 #9; Kempsey scratched R6 #13/14; Randwick scratched R2 #3/19/21/22, R3 #4/10/15/17, R5 #8/19/21; Toowoomba scratched",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
- "extract": "2026-09-04T12:00:58+00:00",
- "finished": "2026-09-05T08:20:59",
+ "extract": "2026-09-04T22:31:53+00:00",
+ "finished": "2026-09-05T08:34:50",
  "going": {
   "Sandown": "Soft 7",
   "Randwick": "Good 4",
@@ -27,5 +27,5 @@
  },
  "scratchings": 222,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "38a87cb8c2a1"
+ "fingerprint": "2434365e2288"
 }
