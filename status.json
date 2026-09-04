@@ -1,15 +1,15 @@
 {
- "started": "2026-09-04T23:16:06",
+ "started": "2026-09-05T00:52:56",
  "dates": [
   "2026-09-05"
  ],
- "reason": "first publish",
- "status": "failed",
+ "reason": "scheduled",
+ "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T12:00:58+00:00",
- "finished": "2026-09-04T23:21:39",
+ "finished": "2026-09-05T00:54:40",
  "going": {
   "Sandown": "Good 4",
   "Randwick": "Good 4",
@@ -27,6 +27,5 @@
  },
  "scratchings": 134,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "051bcb0d9088",
- "error": "publish index.html: 403 {\"message\":\"Resource not accessible by personal access token\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"403\"}"
+ "fingerprint": "051bcb0d9088"
 }
