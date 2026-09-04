@@ -1,31 +1,31 @@
 {
- "started": "2026-09-05T01:05:52",
+ "started": "2026-09-05T08:18:44",
  "dates": [
   "2026-09-05"
  ],
- "reason": "scheduled",
+ "reason": "Gold Coast Soft 5 -> Good 4; Gold Coast scratched R5 #14/15, R6 #9; Kempsey scratched R6 #13/14; Randwick scratched R2 #3/19/21/22, R3 #4/10/15/17, R5 #8/19/21; Toowoomba scratched",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T12:00:58+00:00",
- "finished": "2026-09-05T01:07:04",
+ "finished": "2026-09-05T08:20:59",
  "going": {
-  "Sandown": "Good 4",
+  "Sandown": "Soft 7",
   "Randwick": "Good 4",
   "Eagle Farm": "Soft 5",
   "Morphettville": "Soft 6",
   "Belmont Park": "Soft 5",
-  "Mildura": "Good 4",
+  "Mildura": "Soft 6",
   "Hawkesbury": "Good 4",
-  "Gold Coast": "Soft 5",
+  "Gold Coast": "Good 4",
   "Toowoomba": "Good 4",
   "Kempsey": "Soft 5",
   "Birdsville": "Good",
   "Fannie Bay": "Synthetic",
   "Junction": "Good"
  },
- "scratchings": 134,
+ "scratchings": 222,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "051bcb0d9088"
+ "fingerprint": "38a87cb8c2a1"
 }
