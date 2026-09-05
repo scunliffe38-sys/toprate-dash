@@ -1,15 +1,15 @@
 {
- "started": "2026-09-05T16:20:52",
+ "started": "2026-09-05T16:36:52",
  "dates": [
   "2026-09-05"
  ],
- "reason": "Eagle Farm scratched R9 #14",
+ "reason": "Mildura scratched R7 #9",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T22:31:53+00:00",
- "finished": "2026-09-05T16:21:17",
+ "finished": "2026-09-05T16:37:25",
  "going": {
   "Sandown": "Soft 7",
   "Randwick": "Good 4",
@@ -25,7 +25,7 @@
   "Fannie Bay": "Synthetic",
   "Junction": "Good"
  },
- "scratchings": 235,
+ "scratchings": 236,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "3aa593b0b347"
+ "fingerprint": "2cbf81399929"
 }
