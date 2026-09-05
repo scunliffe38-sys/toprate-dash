@@ -1,15 +1,15 @@
 {
- "started": "2026-09-05T11:51:23",
+ "started": "2026-09-05T13:57:45",
  "dates": [
   "2026-09-05"
  ],
- "reason": "Morphettville scratched R8 #2",
+ "reason": "Gold Coast scratched R3 #11; Kempsey Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T22:31:53+00:00",
- "finished": "2026-09-05T11:54:05",
+ "finished": "2026-09-05T13:59:24",
  "going": {
   "Sandown": "Soft 7",
   "Randwick": "Good 4",
@@ -20,12 +20,12 @@
   "Hawkesbury": "Good 4",
   "Gold Coast": "Good 4",
   "Toowoomba": "Good 4",
-  "Kempsey": "Soft 5",
+  "Kempsey": "Good 4",
   "Birdsville": "Good",
   "Fannie Bay": "Synthetic",
   "Junction": "Good"
  },
- "scratchings": 230,
+ "scratchings": 231,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "25610d362b7d"
+ "fingerprint": "f5fc4f596e86"
 }
