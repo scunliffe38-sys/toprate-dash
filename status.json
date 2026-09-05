@@ -1,15 +1,15 @@
 {
- "started": "2026-09-05T13:57:45",
+ "started": "2026-09-05T14:15:01",
  "dates": [
   "2026-09-05"
  ],
- "reason": "Gold Coast scratched R3 #11; Kempsey Soft 5 -> Good 4",
+ "reason": "Randwick scratched R5 #12",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T22:31:53+00:00",
- "finished": "2026-09-05T13:59:24",
+ "finished": "2026-09-05T14:16:02",
  "going": {
   "Sandown": "Soft 7",
   "Randwick": "Good 4",
@@ -25,7 +25,7 @@
   "Fannie Bay": "Synthetic",
   "Junction": "Good"
  },
- "scratchings": 231,
+ "scratchings": 232,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "f5fc4f596e86"
+ "fingerprint": "0d56645a478b"
 }
