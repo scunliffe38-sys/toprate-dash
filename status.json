@@ -1,15 +1,15 @@
 {
- "started": "2026-09-05T10:04:26",
+ "started": "2026-09-05T10:18:26",
  "dates": [
   "2026-09-05"
  ],
- "reason": "scheduled",
+ "reason": "Belmont Park scratched R2 #3, R5 #9, R7 #1",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T22:31:53+00:00",
- "finished": "2026-09-05T10:05:37",
+ "finished": "2026-09-05T10:18:56",
  "going": {
   "Sandown": "Soft 7",
   "Randwick": "Good 4",
@@ -25,7 +25,7 @@
   "Fannie Bay": "Synthetic",
   "Junction": "Good"
  },
- "scratchings": 226,
+ "scratchings": 229,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "59cc51964108"
+ "fingerprint": "5922e01dadc3"
 }
