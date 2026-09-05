@@ -1,15 +1,15 @@
 {
- "started": "2026-09-05T14:15:01",
+ "started": "2026-09-05T15:48:52",
  "dates": [
   "2026-09-05"
  ],
- "reason": "Randwick scratched R5 #12",
+ "reason": "Hawkesbury scratched R6 #8/11",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "extract": "2026-09-04T22:31:53+00:00",
- "finished": "2026-09-05T14:16:02",
+ "finished": "2026-09-05T15:49:49",
  "going": {
   "Sandown": "Soft 7",
   "Randwick": "Good 4",
@@ -25,7 +25,7 @@
   "Fannie Bay": "Synthetic",
   "Junction": "Good"
  },
- "scratchings": 232,
+ "scratchings": 234,
  "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "0d56645a478b"
+ "fingerprint": "273b647338d0"
 }
