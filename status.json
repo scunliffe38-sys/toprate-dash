@@ -1,31 +1,24 @@
 {
- "started": "2026-09-05T21:39:39",
+ "started": "2026-09-05T23:38:16",
  "dates": [
-  "2026-09-05"
+  "2026-09-06"
  ],
  "reason": "scheduled",
  "status": "ok",
- "acceptors": 740,
- "rider_share": 0.93,
+ "acceptors": 499,
+ "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
- "extract": "2026-09-04T22:31:53+00:00",
- "finished": "2026-09-05T21:42:32",
+ "card_source": "tab",
+ "extract": "2026-09-05T11:47:56+00:00",
+ "finished": "2026-09-05T23:39:51",
  "going": {
-  "Sandown": "Soft 7",
-  "Randwick": "Good 4",
-  "Eagle Farm": "Soft 5",
-  "Morphettville": "Soft 6",
-  "Belmont Park": "Soft 5",
-  "Mildura": "Soft 6",
-  "Hawkesbury": "Good 4",
-  "Gold Coast": "Good 4",
-  "Toowoomba": "Good 4",
-  "Kempsey": "Good 4",
-  "Birdsville": "Good",
-  "Fannie Bay": "Synthetic",
-  "Junction": "Good"
+  "Bendigo": "Soft 6",
+  "Gundagai": "Hvy 9",
+  "Moree": "Good 4",
+  "Sunshine Coast": "Soft 5",
+  "Kalgoorlie": "Good 4"
  },
- "scratchings": 236,
- "dashboard": "toprate_week_v2_2026-09-05.html",
- "fingerprint": "2cbf81399929"
+ "scratchings": 100,
+ "dashboard": "toprate_week_v2_2026-09-06.html",
+ "fingerprint": "396a96d3c322"
 }
