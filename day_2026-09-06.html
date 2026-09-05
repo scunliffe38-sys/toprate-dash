@@ -342,8 +342,11 @@ const liveOf=r=>LIVE[`${M().track}|${r.no}`]||null;
 function setFav(r){ const pr=r.runners.filter(x=>x.sp);
   if(pr.length){ const f=pr.reduce((a,x)=>x.sp<a.sp?x:a); r.fav=f.name; r.favsp=f.sp; }
   else { r.fav=null; r.favsp=null; } }
-if(DATA.priced!=='tab') DATA.days.forEach(d=>d.meetings.forEach(m=>m.races.forEach(r=>{
-  r.runners.forEach(x=>{x.sp=null;}); setFav(r); })));
+// `priced` is written per day by rate_day.py, so DATA.priced is undefined and this
+// test used to clear every baked price on load. Prices then came back only from
+// live.json, which carries today -- so a next-day page showed an empty Mkt column.
+DATA.days.forEach(d=>{ if(d.priced==='tab') return;
+  d.meetings.forEach(m=>m.races.forEach(r=>{ r.runners.forEach(x=>{x.sp=null;}); setFav(r); })); });
 function applyLivePrices(races,date){
   DATA.days.forEach(d=>{ if(date&&d.date&&d.date!==date) return;
     d.meetings.forEach(m=>m.races.forEach(r=>{
@@ -589,4 +592,4 @@ draw();
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 05 Sep 23:46</b> AEST &middot; scheduled</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 06 Sep 00:06</b> AEST &middot; scheduled</div><div style="height:34px"></div></body></html>
