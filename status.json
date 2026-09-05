@@ -1,24 +1,24 @@
 {
- "started": "2026-09-06T01:58:01",
+ "started": "2026-09-06T08:56:46",
  "dates": [
   "2026-09-06"
  ],
- "reason": "dash freshness row",
+ "reason": "six-bar strip + Layoff rename",
  "status": "ok",
- "acceptors": 499,
+ "acceptors": 444,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
  "extract": "2026-09-05T11:47:56+00:00",
- "finished": "2026-09-06T01:59:17",
+ "finished": "2026-09-06T08:58:02",
  "going": {
   "Bendigo": "Soft 6",
-  "Gundagai": "Hvy 9",
   "Moree": "Good 4",
-  "Sunshine Coast": "Soft 5",
+  "Gundagai": "Hvy 10",
+  "Sunshine Coast": "Good 4",
   "Kalgoorlie": "Good 4"
  },
- "scratchings": 100,
+ "scratchings": 154,
  "dashboard": "toprate_week_v2_2026-09-06.html",
- "fingerprint": "396a96d3c322"
+ "fingerprint": "6a83a672c6bb"
 }
