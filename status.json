@@ -1,16 +1,16 @@
 {
- "started": "2026-09-06T09:38:36",
+ "started": "2026-09-06T10:13:18",
  "dates": [
   "2026-09-06"
  ],
- "reason": "Sunshine Coast scratched R4 #18/20",
+ "reason": "Kalgoorlie scratched R7 #2",
  "status": "ok",
  "acceptors": 442,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
  "extract": "2026-09-05T11:47:56+00:00",
- "finished": "2026-09-06T09:39:30",
+ "finished": "2026-09-06T10:15:31",
  "going": {
   "Bendigo": "Soft 6",
   "Moree": "Good 4",
@@ -18,7 +18,7 @@
   "Sunshine Coast": "Good 4",
   "Kalgoorlie": "Good 4"
  },
- "scratchings": 156,
+ "scratchings": 157,
  "dashboard": "toprate_week_v2_2026-09-06.html",
- "fingerprint": "cfde0d78354b"
+ "fingerprint": "f9a19ab6ee18"
 }
