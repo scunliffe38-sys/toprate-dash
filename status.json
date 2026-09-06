@@ -1,22 +1,22 @@
 {
- "started": "2026-09-06T22:06:14",
+ "started": "2026-09-07T08:49:15",
  "dates": [
   "2026-09-07"
  ],
- "reason": "evening harvest",
+ "reason": "Tatura scratched R1 #1/2/8/9/14, R2 #4/5/6/9/10/17/18, R3 #8/10/14, R4 #3/4, R5 #1/4/7/12, R6 #5/11, R7 #6/7/8/9/16/17/18, R8 #2/4/10; Dubbo scratched R1 #11, R2 #5/12/14/15/17, R3",
  "status": "ok",
- "acceptors": 281,
+ "acceptors": 220,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
  "extract": "2026-09-06T12:05:02+00:00",
- "finished": "2026-09-06T22:09:06",
+ "finished": "2026-09-07T08:52:00",
  "going": {
   "Tatura": "Hvy 8",
-  "Dubbo": "Good 4",
-  "Grafton": "Soft 5"
+  "Grafton": "Soft 5",
+  "Dubbo": "Good 4"
  },
- "scratchings": 35,
+ "scratchings": 96,
  "dashboard": "toprate_week_v2_2026-09-07.html",
- "fingerprint": "5e0da4845573"
+ "fingerprint": "5369b61a8675"
 }
