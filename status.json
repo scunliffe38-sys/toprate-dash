@@ -1,16 +1,16 @@
 {
- "started": "2026-09-06T10:13:18",
+ "started": "2026-09-06T17:12:18",
  "dates": [
   "2026-09-06"
  ],
- "reason": "Kalgoorlie scratched R7 #2",
+ "reason": "manual after Sunday full-rebuild collision",
  "status": "ok",
  "acceptors": 442,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
- "extract": "2026-09-05T11:47:56+00:00",
- "finished": "2026-09-06T10:15:31",
+ "extract": "2026-09-06T07:11:35+00:00",
+ "finished": "2026-09-06T17:14:09",
  "going": {
   "Bendigo": "Soft 6",
   "Moree": "Good 4",
@@ -20,5 +20,5 @@
  },
  "scratchings": 157,
  "dashboard": "toprate_week_v2_2026-09-06.html",
- "fingerprint": "f9a19ab6ee18"
+ "fingerprint": "66ed319b6e0e"
 }
