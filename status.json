@@ -1,24 +1,22 @@
 {
- "started": "2026-09-06T18:41:12",
+ "started": "2026-09-06T22:06:14",
  "dates": [
-  "2026-09-06"
+  "2026-09-07"
  ],
- "reason": "scheduled",
+ "reason": "evening harvest",
  "status": "ok",
- "acceptors": 438,
+ "acceptors": 281,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
- "extract": "2026-09-06T07:11:35+00:00",
- "finished": "2026-09-06T18:42:31",
+ "extract": "2026-09-06T12:05:02+00:00",
+ "finished": "2026-09-06T22:09:06",
  "going": {
-  "Kalgoorlie": "Soft 6",
-  "Bendigo": "Soft 5",
-  "Moree": "Good 4",
-  "Gundagai": "Hvy 10",
-  "Sunshine Coast": "Good 4"
+  "Tatura": "Hvy 8",
+  "Dubbo": "Good 4",
+  "Grafton": "Soft 5"
  },
- "scratchings": 161,
- "dashboard": "toprate_week_v2_2026-09-06.html",
- "fingerprint": "23eb1cdc8911"
+ "scratchings": 35,
+ "dashboard": "toprate_week_v2_2026-09-07.html",
+ "fingerprint": "5e0da4845573"
 }
