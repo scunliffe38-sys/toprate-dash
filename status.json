@@ -1,24 +1,24 @@
 {
- "started": "2026-09-06T17:12:18",
+ "started": "2026-09-06T17:56:43",
  "dates": [
   "2026-09-06"
  ],
- "reason": "manual after Sunday full-rebuild collision",
+ "reason": "scheduled",
  "status": "ok",
- "acceptors": 442,
+ "acceptors": 438,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
  "extract": "2026-09-06T07:11:35+00:00",
- "finished": "2026-09-06T17:14:09",
+ "finished": "2026-09-06T17:58:26",
  "going": {
-  "Bendigo": "Soft 6",
+  "Kalgoorlie": "Soft 6",
+  "Bendigo": "Soft 5",
   "Moree": "Good 4",
   "Gundagai": "Hvy 10",
-  "Sunshine Coast": "Good 4",
-  "Kalgoorlie": "Good 4"
+  "Sunshine Coast": "Good 4"
  },
- "scratchings": 157,
+ "scratchings": 161,
  "dashboard": "toprate_week_v2_2026-09-06.html",
- "fingerprint": "66ed319b6e0e"
+ "fingerprint": "23eb1cdc8911"
 }
