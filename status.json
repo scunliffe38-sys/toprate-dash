@@ -1,7 +1,8 @@
 {
- "started": "2026-09-07T22:53:02",
+ "started": "2026-09-07T23:52:54",
  "dates": [
-  "2026-09-08"
+  "2026-09-08",
+  "2026-09-09"
  ],
  "reason": "scheduled",
  "status": "ok",
@@ -10,14 +11,14 @@
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-07T11:02:30+00:00",
- "finished": "2026-09-07T22:53:30",
+ "finished": "2026-09-07T23:54:40",
  "going": {
-  "Moe": "Hvy 9",
+  "Moe": "Heavy 9",
   "Muswellbrook": "Good 4",
   "Queanbeyan": "Soft 6",
   "Townsville": "Soft 5"
  },
  "scratchings": 29,
  "dashboard": "toprate_week_v2_2026-09-08.html",
- "fingerprint": "9f6e2b3ecb66"
+ "fingerprint": "b2ae287a8912"
 }
