@@ -1,22 +1,18 @@
 {
- "started": "2026-09-07T14:27:28",
+ "started": "2026-09-07T20:48:14",
  "dates": [
-  "2026-09-07"
+  "2026-09-08"
  ],
- "reason": "Tatura scratched R5 #11",
+ "reason": "evening harvest",
  "status": "ok",
- "acceptors": 219,
- "rider_share": 1.0,
+ "acceptors": 379,
+ "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
- "card_source": "tab",
- "extract": "2026-09-07T00:13:13+00:00",
- "finished": "2026-09-07T14:31:15",
- "going": {
-  "Tatura": "Soft 7",
-  "Grafton": "Good 4",
-  "Dubbo": "Good 4"
- },
- "scratchings": 97,
- "dashboard": "toprate_week_v2_2026-09-07.html",
- "fingerprint": "baa41281b011"
+ "card_source": "toprate",
+ "extract": "2026-09-07T10:47:17+00:00",
+ "finished": "2026-09-07T20:51:57",
+ "going": {},
+ "scratchings": 0,
+ "dashboard": "toprate_week_v2_2026-09-08.html",
+ "fingerprint": "07f45d1b06c4"
 }
