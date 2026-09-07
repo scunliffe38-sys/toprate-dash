@@ -1,22 +1,22 @@
 {
- "started": "2026-09-07T10:14:02",
+ "started": "2026-09-07T12:14:08",
  "dates": [
   "2026-09-07"
  ],
- "reason": "morning harvest",
+ "reason": "Tatura Hvy 8 -> Soft 7",
  "status": "ok",
  "acceptors": 220,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "tab",
  "extract": "2026-09-07T00:13:13+00:00",
- "finished": "2026-09-07T10:17:14",
+ "finished": "2026-09-07T12:18:28",
  "going": {
-  "Tatura": "Hvy 8",
+  "Tatura": "Soft 7",
   "Grafton": "Soft 5",
   "Dubbo": "Good 4"
  },
  "scratchings": 96,
  "dashboard": "toprate_week_v2_2026-09-07.html",
- "fingerprint": "abfe387057e2"
+ "fingerprint": "6d417cf745df"
 }
