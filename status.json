@@ -1,23 +1,24 @@
 {
- "started": "2026-09-07T22:41:52",
+ "started": "2026-09-07T22:44:19",
  "dates": [
-  "2026-09-08"
+  "2026-09-07",
+  "2026-09-08",
+  "2026-09-09"
  ],
- "reason": "scheduled",
+ "reason": "add wednesday",
  "status": "ok",
- "acceptors": 379,
- "rider_share": 0.92,
+ "acceptors": 316,
+ "rider_share": 0.7,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-07T11:02:30+00:00",
- "finished": "2026-09-07T22:42:22",
+ "finished": "2026-09-07T22:47:47",
  "going": {
-  "Moe": "Hvy 9",
-  "Muswellbrook": "Good 4",
-  "Queanbeyan": "Soft 6",
-  "Townsville": "Soft 5"
+  "Tatura": "Soft 7",
+  "Grafton": "Good 4",
+  "Dubbo": "Good 4"
  },
- "scratchings": 29,
- "dashboard": "toprate_week_v2_2026-09-08.html",
- "fingerprint": "9f6e2b3ecb66"
+ "scratchings": 97,
+ "dashboard": "toprate_week_v2_2026-09-07.html",
+ "fingerprint": "dc4808c1cd07"
 }
