@@ -1,24 +1,24 @@
 {
- "started": "2026-09-08T08:35:43",
+ "started": "2026-09-08T08:52:23",
  "dates": [
   "2026-09-08",
   "2026-09-09"
  ],
- "reason": "Muswellbrook scratched R1 #8, R3 #2/6/8/17, R4 #10, R5 #10/15, R6 #12",
+ "reason": "Moe scratched R6 #8",
  "status": "ok",
  "acceptors": 379,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-07T22:20:00+00:00",
- "finished": "2026-09-08T08:36:39",
+ "finished": "2026-09-08T08:53:21",
  "going": {
   "Moe": "Heavy 9",
   "Muswellbrook": "Good 4",
   "Queanbeyan": "Soft 5",
   "Townsville": "Soft 5"
  },
- "scratchings": 76,
+ "scratchings": 77,
  "dashboard": "toprate_week_v2_2026-09-08.html",
- "fingerprint": "e0efe96df28e"
+ "fingerprint": "4e1dbe574e88"
 }
