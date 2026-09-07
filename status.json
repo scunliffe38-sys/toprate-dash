@@ -1,16 +1,16 @@
 {
- "started": "2026-09-07T21:26:11",
+ "started": "2026-09-07T22:41:52",
  "dates": [
   "2026-09-08"
  ],
- "reason": "tab prices",
+ "reason": "scheduled",
  "status": "ok",
  "acceptors": 379,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-07T11:02:30+00:00",
- "finished": "2026-09-07T21:27:26",
+ "finished": "2026-09-07T22:42:22",
  "going": {
   "Moe": "Hvy 9",
   "Muswellbrook": "Good 4",
@@ -19,5 +19,5 @@
  },
  "scratchings": 29,
  "dashboard": "toprate_week_v2_2026-09-08.html",
- "fingerprint": "2541b1084f07"
+ "fingerprint": "9f6e2b3ecb66"
 }
