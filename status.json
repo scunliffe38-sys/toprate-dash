@@ -1,16 +1,24 @@
 {
- "started": "2026-09-08T08:16:27",
+ "started": "2026-09-08T08:20:58",
  "dates": [
   "2026-09-08",
   "2026-09-09"
  ],
- "reason": "Townsville scratched R4 #1, R5 #15, R8 #18/19",
- "status": "failed",
+ "reason": "morning harvest",
+ "status": "ok",
  "acceptors": 379,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-07T11:02:30+00:00",
- "error": "rate_day.py failed rc=1: ore.py\", line 1465, in __init__\n    [fragment], schema=schema or fragment.physical_schema,\n                                 ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"pyarrow/_dataset.pyx\", line 1479, in pyarrow._dataset.Fragment.physical_schema.__get__\n  File \"pyarrow/error.pxi\", line 155, in pyarrow.lib.pyarrow_internal_check_status\n  File \"pyarrow/error.pxi\", line 92, in pyarrow.lib.check_status\n    raise convert_status(status)\npyarrow.lib.ArrowInvalid: Could not open Parquet input source '<Buffer>': Parquet magic bytes not found in footer. Either the file is corrupted or this is not a parquet file.\n",
- "finished": "2026-09-08T08:20:00"
+ "extract": "2026-09-07T22:20:00+00:00",
+ "finished": "2026-09-08T08:23:47",
+ "going": {
+  "Moe": "Heavy 9",
+  "Muswellbrook": "Good 4",
+  "Queanbeyan": "Soft 5",
+  "Townsville": "Soft 5"
+ },
+ "scratchings": 67,
+ "dashboard": "toprate_week_v2_2026-09-08.html",
+ "fingerprint": "a4f63e0fef4d"
 }
