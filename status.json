@@ -1,5 +1,5 @@
 {
- "started": "2026-09-08T22:12:41",
+ "started": "2026-09-08T22:20:18",
  "dates": [
   "2026-09-09",
   "2026-09-10"
@@ -11,7 +11,7 @@
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-08T12:03:03+00:00",
- "finished": "2026-09-08T22:17:47",
+ "finished": "2026-09-08T22:21:27",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-09-09.html",
