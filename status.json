@@ -1,24 +1,19 @@
 {
- "started": "2026-09-08T09:18:10",
+ "started": "2026-09-08T22:12:41",
  "dates": [
-  "2026-09-08",
-  "2026-09-09"
+  "2026-09-09",
+  "2026-09-10"
  ],
- "reason": "post-patch test",
+ "reason": "manual recovery, publish rc=1",
  "status": "ok",
- "acceptors": 379,
+ "acceptors": 551,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-07T22:20:00+00:00",
- "finished": "2026-09-08T09:20:51",
- "going": {
-  "Moe": "Heavy 9",
-  "Muswellbrook": "Good 4",
-  "Queanbeyan": "Soft 5",
-  "Townsville": "Soft 5"
- },
- "scratchings": 77,
- "dashboard": "toprate_week_v2_2026-09-08.html",
- "fingerprint": "54b14caa010f"
+ "extract": "2026-09-08T12:03:03+00:00",
+ "finished": "2026-09-08T22:17:47",
+ "going": {},
+ "scratchings": 0,
+ "dashboard": "toprate_week_v2_2026-09-09.html",
+ "fingerprint": "025adac54340"
 }
