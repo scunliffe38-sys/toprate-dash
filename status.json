@@ -1,19 +1,26 @@
 {
- "started": "2026-09-08T22:20:18",
+ "started": "2026-09-09T08:34:06",
  "dates": [
   "2026-09-09",
   "2026-09-10"
  ],
- "reason": "manual recovery, publish rc=1",
+ "reason": "Murray Bridge scratched R3 #13/14, R4 #13, R5 #13/14/15, R6 #12/13/14/15, R7 #15, R8 #2/8",
  "status": "ok",
  "acceptors": 551,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-08T12:03:03+00:00",
- "finished": "2026-09-08T22:21:27",
- "going": {},
- "scratchings": 0,
+ "extract": "2026-09-08T22:20:08+00:00",
+ "finished": "2026-09-09T08:38:52",
+ "going": {
+  "Sandown": "Soft 7",
+  "Randwick Kensington": "Soft 5",
+  "Ipswich": "Good 4",
+  "Murray Bridge": "Soft 5",
+  "Belmont Park": "Soft 5",
+  "Devonport": "Synthetic"
+ },
+ "scratchings": 107,
  "dashboard": "toprate_week_v2_2026-09-09.html",
- "fingerprint": "025adac54340"
+ "fingerprint": "540dee4ab235"
 }
