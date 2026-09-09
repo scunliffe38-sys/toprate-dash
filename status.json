@@ -1,17 +1,17 @@
 {
- "started": "2026-09-09T14:19:34",
+ "started": "2026-09-09T16:39:51",
  "dates": [
   "2026-09-09",
   "2026-09-10"
  ],
- "reason": "Murray Bridge Soft 5 -> Good 4",
+ "reason": "Devonport scratched R7 #7; Belmont Park scratched R3 #5",
  "status": "ok",
  "acceptors": 551,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-08T22:20:08+00:00",
- "finished": "2026-09-09T14:35:14",
+ "finished": "2026-09-09T16:45:33",
  "going": {
   "Sandown": "Soft 7",
   "Randwick Kensington": "Good 4",
@@ -20,7 +20,7 @@
   "Belmont Park": "Good 4",
   "Devonport": "Synthetic"
  },
- "scratchings": 117,
+ "scratchings": 119,
  "dashboard": "toprate_week_v2_2026-09-09.html",
- "fingerprint": "ce38bc18b052"
+ "fingerprint": "dba224930ef6"
 }
