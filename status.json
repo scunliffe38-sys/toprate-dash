@@ -1,17 +1,17 @@
 {
- "started": "2026-09-09T08:34:06",
+ "started": "2026-09-09T12:25:07",
  "dates": [
   "2026-09-09",
   "2026-09-10"
  ],
- "reason": "Murray Bridge scratched R3 #13/14, R4 #13, R5 #13/14/15, R6 #12/13/14/15, R7 #15, R8 #2/8",
+ "reason": "patch 17 - jump-outs in last 5",
  "status": "ok",
  "acceptors": 551,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-08T22:20:08+00:00",
- "finished": "2026-09-09T08:38:52",
+ "finished": "2026-09-09T12:28:32",
  "going": {
   "Sandown": "Soft 7",
   "Randwick Kensington": "Soft 5",
