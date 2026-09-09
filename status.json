@@ -1,20 +1,26 @@
 {
- "started": "2026-09-09T21:11:05",
+ "started": "2026-09-10T08:25:14",
  "dates": [
   "2026-09-10",
   "2026-09-11",
   "2026-09-12"
  ],
- "reason": "evening harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 493,
  "rider_share": 0.86,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-09T11:09:37+00:00",
- "finished": "2026-09-09T21:17:37",
- "going": {},
- "scratchings": 0,
+ "extract": "2026-09-09T22:24:01+00:00",
+ "finished": "2026-09-10T08:29:08",
+ "going": {
+  "Seymour": "Soft 6",
+  "Hawkesbury": "Good 4",
+  "Lismore": "Soft 5",
+  "Warwick": "Good 4",
+  "Bunbury": "Good 4"
+ },
+ "scratchings": 109,
  "dashboard": "toprate_week_v2_2026-09-10.html",
- "fingerprint": "39cf1c8aed42"
+ "fingerprint": "54bcfa3f9303"
 }
