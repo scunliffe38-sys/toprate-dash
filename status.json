@@ -1,18 +1,18 @@
 {
- "started": "2026-09-10T08:25:14",
+ "started": "2026-09-10T09:06:21",
  "dates": [
   "2026-09-10",
   "2026-09-11",
   "2026-09-12"
  ],
- "reason": "morning harvest",
+ "reason": "Bunbury scratched R1 #4, R4 #16, R5 #16/18",
  "status": "ok",
  "acceptors": 493,
  "rider_share": 0.86,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-09T22:24:01+00:00",
- "finished": "2026-09-10T08:29:08",
+ "finished": "2026-09-10T09:16:00",
  "going": {
   "Seymour": "Soft 6",
   "Hawkesbury": "Good 4",
@@ -20,7 +20,7 @@
   "Warwick": "Good 4",
   "Bunbury": "Good 4"
  },
- "scratchings": 109,
+ "scratchings": 113,
  "dashboard": "toprate_week_v2_2026-09-10.html",
- "fingerprint": "54bcfa3f9303"
+ "fingerprint": "5608fe1a3a36"
 }
