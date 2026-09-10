@@ -1,19 +1,25 @@
 {
- "started": "2026-09-10T23:08:31",
+ "started": "2026-09-11T08:16:13",
  "dates": [
   "2026-09-11",
   "2026-09-13"
  ],
- "reason": "evening harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 535,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-10T13:08:09+00:00",
- "finished": "2026-09-10T23:11:58",
- "going": {},
- "scratchings": 0,
+ "extract": "2026-09-10T22:15:52+00:00",
+ "finished": "2026-09-11T08:20:30",
+ "going": {
+  "Geelong": "Soft 5",
+  "Goulburn": "Soft 5",
+  "Sunshine Coast": "Soft 6",
+  "Bordertown": "Soft 6",
+  "Tuncurry": "Good 4"
+ },
+ "scratchings": 115,
  "dashboard": "toprate_week_v2_2026-09-11.html",
- "fingerprint": "84d28f6dcc0d"
+ "fingerprint": "df696728901f"
 }
