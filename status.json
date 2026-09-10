@@ -1,17 +1,17 @@
 {
- "started": "2026-09-11T08:16:13",
+ "started": "2026-09-11T08:26:49",
  "dates": [
   "2026-09-11",
   "2026-09-13"
  ],
- "reason": "morning harvest",
+ "reason": "Bordertown scratched R2 #15/16, R3 #10/11/12, R4 #12, R5 #1, R6 #13/14, R9 #3",
  "status": "ok",
  "acceptors": 535,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-10T22:15:52+00:00",
- "finished": "2026-09-11T08:20:30",
+ "finished": "2026-09-11T08:30:01",
  "going": {
   "Geelong": "Soft 5",
   "Goulburn": "Soft 5",
@@ -19,7 +19,7 @@
   "Bordertown": "Soft 6",
   "Tuncurry": "Good 4"
  },
- "scratchings": 115,
+ "scratchings": 125,
  "dashboard": "toprate_week_v2_2026-09-11.html",
- "fingerprint": "df696728901f"
+ "fingerprint": "7b1166875522"
 }
