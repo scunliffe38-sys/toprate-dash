@@ -555,7 +555,7 @@ function analyse(r){
 // -21% with no trend -- so a second label below the first would rank races by how much we
 // disagree with the market, not by how likely we are to be right. Set it to a number to
 // bring the VALUE tag back; 2.0 flags 12% of races, 1.7 flags 25%.
-const GAP_STANDOUT=4.0;   // the only rule on the page
+const GAP_STANDOUT=3.0;   // the only rule on the page
 window.LIVE={};      // "Track|raceNo" -> {status, results:[[tab],...], replay, win_div}
 const liveOf=r=>LIVE[`${M().track}|${r.no}`]||null;
 // Mkt is TAB-only.  Baked pages (bake_prices.py) mark DATA.priced='tab'; anything else is
@@ -988,4 +988,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 08:32</b> AEST &middot; Mackay scratched R2 #1/2; Morphettville scratched R1 #6, R5 #17/18, R8 #18/19/20; Thangool scratched R4 #9, R5 #7/9</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 08:32</b> AEST &middot; Mackay scratched R2 #1/2; Morphettville scratched R1 #6, R5 #17/18, R8 #18/19/20; Thangool scratched R4 #9, R5 #7/9 · standout back to 3.0 pts</div><div style="height:34px"></div></body></html>
