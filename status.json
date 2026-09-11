@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T08:17:02",
+ "started": "2026-09-12T08:30:55",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "morning harvest",
+ "reason": "Mackay scratched R2 #1/2; Morphettville scratched R1 #6, R5 #17/18, R8 #18/19/20; Thangool scratched R4 #9, R5 #7/9",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T08:19:22",
+ "finished": "2026-09-12T08:32:26",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -27,7 +27,7 @@
   "Griffith": "Good 4",
   "Thangool": "Good 4"
  },
- "scratchings": 242,
+ "scratchings": 253,
  "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "fe97c850c11f"
+ "fingerprint": "3ebfb1c11f14"
 }
