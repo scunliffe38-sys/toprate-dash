@@ -1,17 +1,17 @@
 {
- "started": "2026-09-11T18:45:06",
+ "started": "2026-09-11T19:58:21",
  "dates": [
   "2026-09-11",
   "2026-09-13"
  ],
- "reason": "Sunshine Coast Soft 6 -> Soft 7",
+ "reason": "our base replaces WPR_Nett; spell factor; market blend column",
  "status": "ok",
  "acceptors": 535,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-10T22:15:52+00:00",
- "finished": "2026-09-11T18:46:02",
+ "finished": "2026-09-11T20:00:20",
  "going": {
   "Sunshine Coast": "Soft 7",
   "Geelong": "Good 4",
@@ -21,5 +21,5 @@
  },
  "scratchings": 127,
  "dashboard": "toprate_week_v2_2026-09-11.html",
- "fingerprint": "ad0d99973a1c"
+ "fingerprint": "99053c98f709"
 }
