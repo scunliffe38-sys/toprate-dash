@@ -92,7 +92,7 @@ nav button .cd.st{text-transform:uppercase;letter-spacing:.04em;font-size:10px}
 .l5 i{font-style:normal;color:var(--faint)}
 .l5 .none{color:var(--faint);letter-spacing:0}
 .l5{width:136px}
-.l5:has(.l5b){letter-spacing:0;display:flex;flex-wrap:wrap;align-items:flex-start;gap:2px 5px}
+.l5:has(.l5b){letter-spacing:0;display:flex;flex-wrap:nowrap;align-items:flex-start;gap:2px 5px}
 /* last-5 tokens: bare numbers, no box. A small play mark sits under any start that
    has a replay. Colour says one thing only: --text for a real race, --dim for a trial
    or jump-out. A win is not singled out here -- the placing digit already says it, and
@@ -151,7 +151,7 @@ tbody tr.run.top td.key,tbody tr.run.top td.key2{background:rgba(154,122,26,.20)
 .adjn{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;font-size:16.5px;font-weight:600}
 .adjn.p{color:var(--pos)} .adjn.g{color:var(--neg)} .adjn.f{color:var(--faint)}
 th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;line-height:1.2}
-.price{font-family:"Archivo Narrow",sans-serif;font-size:15px;width:56px;text-align:right;color:var(--cond)}
+.price{font-family:"Archivo Narrow",sans-serif;font-size:15px;width:64px;text-align:right;color:var(--cond);font-variant-numeric:tabular-nums}
 .price.mk{color:var(--faint)}
 .price.mk.up{color:var(--pos)} .price.mk.dn{color:var(--neg)}
 .price .arw{font-size:10px;margin-right:2px;vertical-align:1px}
@@ -463,10 +463,19 @@ function last5(s){
   return String(s).split('').map(c=>c==='x'?'<i>x</i>':(c==='1'?'<b>1</b>':c)).join('');
 }
 // last-5 as replay buttons; falls back to the plain string when tokens are absent
+// The column is headed Last 5 but the feed carries every run it has, up to twelve, so the
+// cell was wrapping onto a second line for most of the field. Keep the most recent five
+// runs and whatever spell marks fall among them, and let it be one line.
+function last5of(t, n=5){
+  let runs=0, i=t.length;
+  while(i>0 && runs<n){ if(!t[i-1].x) runs++; i--; }
+  while(i>0 && t[i-1].x) i--;                 // a spell mark reads as leading into the run after it
+  return t.slice(i);
+}
 function l5cell(x){
   const t=x.l5;
   if(!Array.isArray(t)||!t.length) return last5(x.last5);
-  return t.map(k=>{
+  return last5of(t).map(k=>{
     if(k.x) return '<em>x</em>';
     const w=(k.p==='1'?' w':'')+(k.j?' jo':''), tip=(k.t||'').replace(/"/g,'');
     return k.u?`<a class="l5b${w}" href="${k.u}" target="_blank" rel="noopener" title="${tip} \u2014 replay"><span>${k.p}</span></a>`
@@ -572,7 +581,6 @@ function applyLivePrices(races,date){
 const ORD=['1st','2nd','3rd','4th'];
 function placeOf(lv,tab){ if(!lv||!lv.results) return null;
   for(let i=0;i<Math.min(4,lv.results.length);i++) if(lv.results[i].includes(tab)) return i; return null; }
-window.RATED=null;   // page rating time, set from the footer banner / status.json
 function fmtDate(s,opt){return new Date(s+"T00:00:00").toLocaleDateString('en-AU',opt);}
 
 function drawDays(){
@@ -954,7 +962,6 @@ window.skyLive=async ()=>{
       if(old.nextElementSibling&&old.nextElementSibling.style.height) old.nextElementSibling.remove(); old.remove(); }
     const failed=j.status&&j.status!=='ok';
     const fin=asDate(j.finished||j.started), ext=asDate(j.extract);
-    if(!RATED&&fin&&!failed){ RATED=fin; drawMeets(); }
     const rs=j.rider_share, prelim=!!j.preliminary||(rs!=null&&rs<0.6);
     const state=failed?'fail':(prelim?'prelim':'ok');
     const sameDay=fin&&new Date().toDateString()===fin.toDateString();
@@ -980,12 +987,10 @@ window.skyLive=async ()=>{
   }
   function readBanner(){
     const old=document.getElementById('tr-updated'); if(!old) return;
-    pageStamp=(old.querySelector('b')||{}).textContent||null;
-    if(pageStamp){ const y=(DATA.days&&DATA.days[0]&&DATA.days[0].date||'').slice(0,4)||new Date().getFullYear();
-      const d=new Date(pageStamp.replace(/^[A-Za-z]+ /,'')+' '+y); if(!isNaN(d)){ RATED=d; drawMeets(); } }
+    pageStamp=(old.querySelector('b')||{}).textContent||null;   // read for the stale check in tick()
   }
   if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',()=>{readBanner();tick();});
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 01:29</b> AEST &middot; dash: the Sky mark monochrome</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 01:34</b> AEST &middot; dash: tabular price figures, RATED removed</div><div style="height:34px"></div></body></html>
