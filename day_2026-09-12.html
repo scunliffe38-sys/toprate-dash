@@ -180,17 +180,23 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .sname{color:var(--dim);font-size:12px}
 .stime{font-family:"Archivo Narrow",sans-serif;font-weight:500;color:var(--brass);font-size:13px;margin-left:4px}
 .rhead .meta b.stime{font-size:14px;margin-left:0}
-/* speed map: the field as it will be running -- columns are where a horse is
-   projected to settle, and inside a column the fence is at the bottom */
-.smap{margin:0 0 14px;background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:11px 13px 13px}
-.smap .smh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:11px}
-.smap .smh b{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14px;color:var(--text)}
-.smap .smh .ctx{font-size:12.5px;color:var(--brass);font-family:"Archivo Narrow",sans-serif;font-weight:600}
-.smap .smh .sub{font-size:12px;color:var(--dim);flex:1 1 0;min-width:0}
-.smshow,.smap .smh button{background:none;border:0;color:var(--faint);font:inherit;font-size:11.5px;cursor:pointer;padding:0}
-.smshow:hover,.smap .smh button:hover{color:var(--text)}
+/* speed map: a one-line read on the page, the field itself behind a click.
+   Columns are where a horse is projected to settle; inside a column the fence
+   is at the bottom and the wider gates stack above it. */
+.smap{margin:0 0 12px;background:var(--panel);border:1px solid var(--rule);border-radius:3px}
+.smh{display:flex;flex-wrap:wrap;align-items:baseline;gap:5px 11px;width:100%;background:none;border:0;
+     color:inherit;font:inherit;text-align:left;cursor:pointer;padding:8px 12px}
+.smap.open .smh{border-bottom:1px solid var(--rule);margin-bottom:10px}
+.smh:hover .tog{color:var(--text)}
+.smh:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+.smh b{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:13.5px;color:var(--text);flex:0 0 auto}
+.smh .ctx{font-size:12px;color:var(--brass);font-family:"Archivo Narrow",sans-serif;font-weight:600;flex:0 0 auto}
+.smh .sub{font-size:12px;color:var(--dim);flex:1 1 220px;min-width:0}
+.smh .sub u{text-decoration:none;color:var(--pos)} .smh .sub s{text-decoration:none;color:var(--neg)}
+.smh .tog{font-size:11px;color:var(--faint);flex:0 0 auto;font-family:"Archivo Narrow",sans-serif;letter-spacing:.04em;text-transform:uppercase}
+.smbody{padding:0 12px 11px}
 .smgrid{display:flex;gap:7px;align-items:stretch;padding-left:15px;position:relative}
-.smoff{position:absolute;left:0;top:0;bottom:20px;width:13px;color:var(--faint);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:flex-start;justify-content:center;font-family:"Archivo Narrow",sans-serif}
+.smoff{position:absolute;left:0;top:0;bottom:0;width:13px;color:var(--faint);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;writing-mode:vertical-rl;transform:rotate(180deg);display:flex;align-items:flex-start;justify-content:center;font-family:"Archivo Narrow",sans-serif}
 .smcol{flex:1 1 0;min-width:0;display:flex;flex-direction:column;justify-content:flex-end}
 .smcol>.hd{font-family:"Archivo Narrow",sans-serif;font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--faint);text-align:center;padding-bottom:5px;border-bottom:1px solid var(--rule);margin-bottom:6px}
 .smcol.empty>.hd{opacity:.45}
@@ -205,7 +211,7 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .smc em{font-style:normal;font-size:9.5px;color:var(--brass);font-variant-numeric:tabular-nums;flex:0 0 auto}
 .smrail{margin:7px 0 0 15px;height:2px;background:linear-gradient(90deg,var(--brass),rgba(220,190,104,.22));position:relative}
 .smrail em{position:absolute;left:0;top:3px;font-style:normal;color:var(--faint);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase}
-.smnone{margin-top:15px;color:var(--faint);font-size:11.5px}
+.smnone{margin-top:14px;color:var(--faint);font-size:11.5px}
 .srow.look td:first-child{box-shadow:inset 3px 0 0 var(--pos)}
 .legend{margin-top:26px;padding-top:16px;border-top:1px solid var(--rule);color:var(--faint);font-size:12px;display:flex;flex-wrap:wrap;gap:18px;align-items:center}
 .sw{display:inline-block;width:10px;height:10px;border-radius:1px;margin-right:6px;vertical-align:-1px}
@@ -374,7 +380,7 @@ window.setSurfMeet=cls=>{M().races.forEach(r=>rerate(r,cls)); open=null; draw();
 
 // the seven adjustments, in the order they are drawn
 const FXK=['form','spell','firstup','conn','cond','bar_adj','shape'];
-const FXT={form:'Form',spell:'Spell',firstup:'First-up',conn:'Connections',cond:'Conditions',
+const FXT={form:'Trip',spell:'Spell',firstup:'First-up',conn:'Connections',cond:'Conditions',
            bar_adj:'Barrier',shape:'Shape'};
 const fxv=x=>FXK.map(k=>[k,x[k]??0]);
 const fxsign=v=>(v>0?'+':'−')+Math.abs(v).toFixed(1);
@@ -392,7 +398,7 @@ function fxLedger(x,r){
   const sg=(v,d=2)=>v==null?'—':(Math.abs(v)<5/Math.pow(10,d+1)?(0).toFixed(d):(v>0?'+':'−')+Math.abs(v).toFixed(d));
   const pc=v=>sg(v,1);
   const note={
-    form:`exposure ${sg(x.cruns)} · trip ${sg(x.cdrop)}, both against the field`,
+    form:`its level at ${r.dist}m against its own level overall, shrunk by starts near the trip`,
     spell:x.days===null?'first start':`${x.days}d since its last run · vs 14-27 days`,
     firstup:x.seg==='debut'?`debut mark-down${x.tapply?` · trial ${x.tpos} of ${x.tfield}, ${x.tdays}d ago`:', no trial'}`
       :(x.tapply?`trial ${x.tpos} of ${x.tfield}, ${x.tdays}d ago`:`${x.seg} · no recent trial used`),
@@ -610,12 +616,12 @@ function drawSummary(){
 }
 
 // ---- speed map -------------------------------------------------------------
-// The field as it should be running: a column for each settling band from the
-// race shape projection (rs_pos_raw), and inside a column the fence at the
-// bottom, the wider gates stacked above it -- which is the heuristic every
-// hand-drawn map uses until we can project width off the rail properly.
-// Colour is the Shape adjustment, so who the tempo helps reads off the map.
-let smap=true;
+// The overview is on the page every race; the field itself is one click away.
+// Open, it is a column per settling band from the race shape projection
+// (rs_pos_raw), with the fence at the bottom of a column and the wider gates
+// stacked above it -- the heuristic every hand-drawn map uses until we can
+// project width off the rail properly. Colour is the Shape adjustment.
+let smap=false;
 function toggleMap(){ smap=!smap; draw(); }
 const SMB=[[0.15,'Lead'],[0.30,'On-pace'],[0.50,'Handy'],[0.70,'Midfield'],[1.01,'Back']];
 const SMCTX={'lone speed':'one horse clearly wants the lead — expect it cheap in front',
@@ -626,9 +632,24 @@ function speedMap(r){
   const on=r.runners.filter(x=>x.rspos!=null);
   if(on.length<3) return '';
   const off=r.runners.filter(x=>x.rspos==null);
-  const cols=SMB.map(()=>[]);
-  on.forEach(x=>{ cols[SMB.findIndex(b=>x.rspos<b[0])>=0?SMB.findIndex(b=>x.rspos<b[0]):4].push(x); });
   const top=on.reduce((m,x)=>(x.plead!=null&&(m===null||x.plead>m.plead))?x:m,null);
+  const hi=on.filter(x=>(x.shape??0)>=0.3).sort((a,b)=>b.shape-a.shape).slice(0,2);
+  const lo=on.filter(x=>(x.shape??0)<=-0.3).sort((a,b)=>a.shape-b.shape).slice(0,2);
+  const nm=a=>a.map(x=>`${x.no} ${x.name}`).join(', ');
+
+  // the one-line read that sits on the page
+  const bits=[];
+  if(r.ncont) bits.push(`${r.ncont} want the lead`);
+  if(top&&top.plead>=0.25) bits.push(`likely leader <b>${top.no} ${top.name}</b> ${(100*top.plead).toFixed(0)}%`);
+  if(hi.length) bits.push(`helps <u>${nm(hi)}</u>`);
+  if(lo.length) bits.push(`hurts <s>${nm(lo)}</s>`);
+  const head=`<button class="smh" onclick="toggleMap()" aria-expanded="${smap}"><b>Speed map</b>`+
+    `${r.ctx?`<span class="ctx">${r.ctx}</span>`:''}<span class="sub">${bits.join(' &nbsp;·&nbsp; ')}</span>`+
+    `<span class="tog">${smap?'hide map':'show map'}</span></button>`;
+  if(!smap) return `<div class="smap">${head}</div>`;
+
+  const cols=SMB.map(()=>[]);
+  on.forEach(x=>{ const i=SMB.findIndex(b=>x.rspos<b[0]); cols[i<0?4:i].push(x); });
   const grid=cols.map((c,i)=>{
     c.sort((a,b)=>(a.bar??99)-(b.bar??99));              // fence first: column-reverse puts it at the bottom
     const chips=c.map(x=>{
@@ -642,16 +663,12 @@ function speedMap(r){
     }).join('');
     return `<div class="smcol${c.length?'':' empty'}"><div class="hd">${SMB[i][1]}</div><div class="smstack">${chips}</div></div>`;
   }).join('');
-  const hi=on.filter(x=>(x.shape??0)>=0.3).sort((a,b)=>b.shape-a.shape).slice(0,3);
-  const lo=on.filter(x=>(x.shape??0)<=-0.3).sort((a,b)=>a.shape-b.shape).slice(0,3);
-  const nm=a=>a.map(x=>`${x.name} ${x.shape>0?'+':'−'}${Math.abs(x.shape).toFixed(2)}`).join(', ');
-  const read=[SMCTX[r.ctx]||null, r.ncont?`${r.ncont} genuine lead candidate${r.ncont===1?'':'s'}`:null].filter(Boolean).join(' · ');
-  return `<div class="smap"><div class="smh"><b>Speed map</b>${r.ctx?`<span class="ctx">${r.ctx}</span>`:''}
-      <span class="sub">${read}</span><button onclick="toggleMap()">hide</button></div>
+  const sgn=a=>a.map(x=>`${x.name} ${x.shape>0?'+':'−'}${Math.abs(x.shape).toFixed(2)}`).join(', ');
+  return `<div class="smap open">${head}<div class="smbody">
     <div class="smgrid"><div class="smoff">off the fence</div>${grid}</div>
     <div class="smrail"><em>rail</em></div>
-    ${(hi.length||lo.length)?`<div class="smnone">Shape helps ${hi.length?nm(hi):'nobody by 0.3'}${lo.length?` · hurts ${nm(lo)}`:''}</div>`:''}
-    ${off.length?`<div class="smnone">Not mapped (no settling history): ${off.map(x=>`${x.no} ${x.name}`).join(', ')}</div>`:''}</div>`;
+    <div class="smnone">${SMCTX[r.ctx]||''}${(hi.length||lo.length)?`${SMCTX[r.ctx]?' · ':''}shape helps ${hi.length?sgn(hi):'nobody by 0.3'}${lo.length?`, hurts ${sgn(lo)}`:''}`:''}</div>
+    ${off.length?`<div class="smnone">Not mapped (no settling history): ${off.map(x=>`${x.no} ${x.name}`).join(', ')}</div>`:''}</div></div>`;
 }
 
 function drawRace(){
@@ -663,7 +680,7 @@ function drawRace(){
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
   if(r.unrated) h+=`<p class="flag"><b>${r.unrated}</b> of ${r.n} runners have no rated runs. They start from the field average of
     ${r.fieldmean.toFixed(1)}, then take the debut mark-down plus whatever their most recent trial says. Treat those ratings as an estimate.</p>`;
-  h+=smap?speedMap(r):`<p class="smnone" style="margin:0 0 12px"><button class="smshow" onclick="toggleMap()">show speed map</button></p>`;
+  h+=speedMap(r);
   h+=`<div class="scroll"><table><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="l5h">Last 5</th><th class="r" title="our base: last 10 runs weighted to recent, shockers forgiven, wide runs credited">Base</th>
     <th class="r" title="How far today's factors move the horse off its base. Click a runner for the seven that make it up.">Adjust</th>
     <th class="r key">Adjusted</th><th class="r key2">Lengths</th><th class="r bk"><small>100%</small>Model</th><th class="r bk" title="our rating blended with the market price; the rating itself never sees the price"><small>+mkt</small>Blend</th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'}</small>Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
@@ -819,4 +836,4 @@ setInterval(refreshTabAge,30000);
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 11 Sep 22:08</b> AEST &middot; dashboard: opened row is a ledger, biggest factor first</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 11 Sep 22:08</b> AEST &middot; dashboard: speed map</div><div style="height:34px"></div></body></html>
