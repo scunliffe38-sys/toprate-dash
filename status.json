@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T01:15:34",
+ "started": "2026-09-12T01:20:39",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "dash: Sky Thoroughbred Central in the dock",
+ "reason": "dash: flags cut to three, odds right-aligned",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-12T01:17:02",
+ "finished": "2026-09-12T01:22:52",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-09-12.html",
