@@ -1,27 +1,20 @@
 {
- "started": "2026-09-11T21:09:02",
+ "started": "2026-09-11T21:38:40",
  "dates": [
-  "2026-09-11",
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "dashboard: adjustments shorthand, main meetings, other bucket",
+ "reason": "dashboard: adjustments simplified to the net number",
  "status": "ok",
- "acceptors": 535,
- "rider_share": 0.76,
+ "acceptors": 1479,
+ "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-11T21:12:02",
- "going": {
-  "Sunshine Coast": "Soft 7",
-  "Geelong": "Good 4",
-  "Goulburn": "Good 4",
-  "Bordertown": "Soft 6",
-  "Tuncurry": "Good 3"
- },
- "scratchings": 129,
- "dashboard": "toprate_week_v2_2026-09-11.html",
- "fingerprint": "318cf73d7235"
+ "finished": "2026-09-11T21:41:14",
+ "going": {},
+ "scratchings": 0,
+ "dashboard": "toprate_week_v2_2026-09-12.html",
+ "fingerprint": "f2b84550b539"
 }
