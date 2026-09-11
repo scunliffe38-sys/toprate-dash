@@ -1,18 +1,18 @@
 {
- "started": "2026-09-11T23:23:10",
+ "started": "2026-09-11T23:29:49",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "dash: racing.com wordmark on the watch button",
+ "reason": "dash: racing.com wordmark, re-applied after a collision",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-11T23:25:01",
+ "finished": "2026-09-11T23:31:29",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-09-12.html",
