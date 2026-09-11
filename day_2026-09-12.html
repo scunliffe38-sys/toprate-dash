@@ -5,9 +5,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#161B21; --panel:#1E262E; --panel2:#243039; --rule:#2F3B45;
-  --text:#E7EAE6; --dim:#8B959D; --faint:#5E6970;
-  --pos:#79B89A; --neg:#B0697E; --brass:#DCBE68; --flat:#4A555E; --cond:#6E9FC4;
+  color-scheme:light;
+  --ink:#F7F6F3; --panel:#FFFFFF; --panel2:#EDEBE5; --rule:#DCD7CD;
+  --text:#1A1F24; --dim:#586269; --faint:#8A939A;
+  --pos:#2E7150; --neg:#A63350; --brass:#8A6A12; --flat:#C2BEB5; --cond:#27608C;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--text);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased}
@@ -126,8 +127,7 @@ a.l5b:hover:after,a.l5b:focus:after{opacity:1}
 .mtabs.sub button{min-width:0;padding:5px 10px;background:none}
 .mtabs.sub .tk{font-size:13px}
 .mtabs.sub .sb{font-size:10px}
-.dayhead{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:2px 0 12px}
-.daylead{color:var(--faint);font-size:12.5px;margin:0;flex:1 1 340px}
+.dayhead{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin:2px 0 12px;justify-content:flex-end}
 .daysort{color:var(--faint);font-size:11.5px;display:flex;align-items:center;gap:7px;white-space:nowrap}
 .seg{display:flex;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
 .seg button{background:none;border:0;border-left:1px solid var(--rule);color:var(--dim);font:inherit;font-size:11.5px;
@@ -144,12 +144,12 @@ tbody tr.run.top .rate{color:var(--brass)}
 .pct{font-family:"Archivo Narrow",sans-serif;font-size:15px;width:52px;text-align:right;color:var(--dim)}
 /* key column: adjusted rating */
 /* key band: adjusted + lengths */
-td.key,th.key,td.key2,th.key2{background:rgba(220,190,104,.075)}
-td.key,th.key{box-shadow:inset 1px 0 0 rgba(220,190,104,.18)}
-td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(220,190,104,.18)}
+td.key,th.key,td.key2,th.key2{background:rgba(154,122,26,.10)}
+td.key,th.key{box-shadow:inset 1px 0 0 rgba(154,122,26,.42)}
+td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(154,122,26,.42)}
 th.key,th.key2{color:var(--brass)}
-tbody tr.run:hover td.key,tbody tr.run:hover td.key2{background:rgba(220,190,104,.11)}
-tbody tr.run.top td.key,tbody tr.run.top td.key2{background:rgba(220,190,104,.14)}
+tbody tr.run:hover td.key,tbody tr.run:hover td.key2{background:rgba(154,122,26,.16)}
+tbody tr.run.top td.key,tbody tr.run.top td.key2{background:rgba(154,122,26,.20)}
 .lens{font-family:"Archivo Narrow",sans-serif;font-size:17px;font-weight:600;width:66px;text-align:right;color:var(--text);font-variant-numeric:tabular-nums;padding-left:10px;padding-right:12px}
 /* adjustments: the net move off the base. What made it is in the opened row. */
 .adj{width:62px;text-align:right}
@@ -162,15 +162,15 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .edge.p{color:var(--pos)} .edge.g{color:var(--neg)}
 .detail td{background:var(--panel);padding:14px 16px 18px}
 /* opened row: base, every adjustment biggest first, then the total. Numbers in one column. */
-.led{display:grid;grid-template-columns:max-content 68px minmax(0,1fr);gap:0 18px;align-items:baseline;max-width:820px}
-.led>div{padding:6px 0;border-bottom:1px solid var(--panel2)}
-.led .n{color:var(--dim);font-size:12.5px;white-space:nowrap}
-.led .v{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;font-size:17px;font-weight:600;text-align:right}
-.led .v.p{color:var(--pos)} .led .v.g{color:var(--neg)} .led .v.f{color:var(--faint)} .led .v.b{color:var(--brass)}
-.led .w{color:var(--faint);font-size:11.5px}
-.led .n.top,.led .n.tot{color:var(--text);font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14px}
-.led .n.top,.led .n.top+.v,.led .n.top+.v+.w{border-bottom-color:var(--rule);padding-bottom:8px}
-.led .n.tot,.led .n.tot+.v,.led .n.tot+.v+.w{border-bottom:0;border-top:1px solid var(--rule);padding-top:8px;margin-top:2px}
+.adjl{display:grid;grid-template-columns:max-content 68px minmax(0,1fr);gap:0 18px;align-items:baseline;max-width:820px}
+.adjl>div{padding:6px 0;border-bottom:1px solid var(--panel2)}
+.adjl .n{color:var(--dim);font-size:12.5px;white-space:nowrap}
+.adjl .v{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;font-size:17px;font-weight:600;text-align:right}
+.adjl .v.p{color:var(--pos)} .adjl .v.g{color:var(--neg)} .adjl .v.f{color:var(--faint)} .adjl .v.b{color:var(--brass)}
+.adjl .w{color:var(--faint);font-size:11.5px}
+.adjl .n.top,.adjl .n.tot{color:var(--text);font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14px}
+.adjl .n.top,.adjl .n.top+.v,.adjl .n.top+.v+.w{border-bottom-color:var(--rule);padding-bottom:8px}
+.adjl .n.tot,.adjl .n.tot+.v,.adjl .n.tot+.v+.w{border-bottom:0;border-top:1px solid var(--rule);padding-top:8px;margin-top:2px}
 .rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
 .rhead h2{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:23px;margin:0}
 .rhead .meta{color:var(--dim);font-size:13px;flex:1 1 0;min-width:0}
@@ -203,13 +203,13 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .smstack{display:flex;flex-direction:column-reverse;gap:3px;justify-content:flex-start;min-height:24px}
 .smc{display:flex;align-items:center;gap:5px;padding:3px 5px 3px 4px;border-radius:2px;background:var(--panel2);border-left:3px solid var(--flat);min-width:0}
 .smc.p{border-left-color:var(--pos)} .smc.g{border-left-color:var(--neg)}
-.smc.led{background:#2b3340}
+.smc.led{background:#E4E9EF}
 .smc b{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--text);flex:0 0 auto;min-width:13px;text-align:right}
 .smc span{font-size:11.5px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1 1 auto;min-width:0}
 .smc.led span{color:var(--text)}
 .smc i{font-style:normal;font-size:9.5px;color:var(--faint);font-variant-numeric:tabular-nums;flex:0 0 auto}
 .smc em{font-style:normal;font-size:9.5px;color:var(--brass);font-variant-numeric:tabular-nums;flex:0 0 auto}
-.smrail{margin:7px 0 0 15px;height:2px;background:linear-gradient(90deg,var(--brass),rgba(220,190,104,.22));position:relative}
+.smrail{margin:7px 0 0 15px;height:2px;background:linear-gradient(90deg,var(--brass),rgba(154,122,26,.28));position:relative}
 .smrail em{position:absolute;left:0;top:3px;font-style:normal;color:var(--faint);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase}
 .smnone{margin-top:14px;color:var(--faint);font-size:11.5px}
 .srow.look td:first-child{box-shadow:inset 3px 0 0 var(--pos)}
@@ -218,7 +218,7 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 ._off{margin-top:20px;color:var(--faint);font-size:12.5px;line-height:1.75;max-width:80ch}
 ._off b{color:var(--dim);font-weight:600}
 ._off h3{font-family:"Archivo Narrow",sans-serif;font-size:16px;color:var(--text);margin:18px 0 4px;font-weight:600}
-@media(max-width:720px){h1{font-size:28px}.conds{margin-left:0;width:100%}.chip.aux{display:none}.rate{font-size:21px}.jock{padding-left:0}}
+@media(max-width:720px){h1{font-size:28px}.conds{margin-left:0;width:100%}.rate{font-size:21px}.jock{padding-left:0}}
 @media(prefers-reduced-motion:no-preference){tbody tr.run,tbody tr.srow{transition:background .12s ease}}
 /* status strip */
 body{padding-bottom:38px}
@@ -255,7 +255,7 @@ body{padding-bottom:38px}
    iframe.  The dock sits outside #race on purpose: the live feed rebuilds that element
    every time a price moves, which would stop playback mid-run. */
 .vdock{position:fixed;right:16px;bottom:46px;z-index:60;width:min(460px,92vw);
-  background:var(--panel);border:1px solid var(--rule);border-radius:4px;box-shadow:0 8px 28px rgba(0,0,0,.45)}
+  background:var(--panel);border:1px solid var(--rule);border-radius:4px;box-shadow:0 8px 28px rgba(30,26,18,.18)}
 .vdock .vh{display:flex;align-items:center;gap:10px;padding:6px 8px 6px 11px;border-bottom:1px solid var(--rule)}
 .vdock .vt{flex:1 1 auto;min-width:0;color:var(--dim);font-size:11.5px;line-height:1.35;
   overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
@@ -270,6 +270,7 @@ body{padding-bottom:38px}
   font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 11px;cursor:pointer;
   display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
 .wlive span{font-size:10px}
+.wlive .rcl{height:10px;width:auto;display:block;flex:0 0 auto}   /* their wordmark, monochrome, takes the button's colour */
 .wlive:hover{background:var(--cond);color:var(--ink)}
 </style></head>
 <body><div class="wrap">
@@ -277,9 +278,7 @@ body{padding-bottom:38px}
   <div class="meet"><h1 id="h1">TopRate</h1><div class="date" id="hdate"></div>
     <div class="conds">
       <div class="chip wet"><b id="cGoing">—</b><span>going</span></div>
-      <div class="chip aux"><b>Base</b><span>ours, from the last 10 runs · 2 pts ≈ 1 length</span></div>
-      <div class="chip aux"><b>AEST</b><span>race times</span></div>
-      <button class="wlive" id="wlive" hidden onclick="watchLive()">Watch live <span>&#9654;</span></button>
+      <button class="wlive" id="wlive" hidden onclick="watchLive()" aria-label="Watch racing.com live">Watch <svg class="rcl" viewBox="0 0 138 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g clip-path="url(#rcl-clip)"><path d="M40.4903 3.93609C41.7308 3.93609 42.6661 4.15617 44.0805 4.79926L44.7592 1.29229C43.9208 0.672069 42.3895 0.309082 40.8097 0.309082C34.9524 0.309082 31.8727 4.03613 31.0628 8.22334C30.2529 12.4105 31.8898 16.1376 37.747 16.1376C39.3268 16.1376 40.9922 15.7975 42.073 15.1773L42.7516 11.6703C41.0891 12.3105 40.0711 12.5106 38.8306 12.5106C35.3716 12.5106 35.0665 10.2669 35.4629 8.22334C35.8592 6.17975 37.0313 3.93609 40.4903 3.93609Z" fill="currentColor"/><path d="M47.0723 0.00598145L44.1038 15.6516H48.404L51.3697 0.00598145H47.0723Z" fill="currentColor"/><path d="M22.6275 0.00585938C18.7721 4.28167 15.9718 9.24059 15.1505 13.4907L14.7627 15.6543H19.0601L19.4479 13.4707C19.5221 13.0905 19.5991 12.839 19.716 12.1073H25.0942C25.0371 12.8362 24.9801 13.0905 24.906 13.4707L24.5181 15.6543H28.8155L29.2034 13.4907C30.0246 9.24344 29.1492 4.28453 26.885 0.00585938H22.6275ZM20.8367 9.23773C21.6494 7.09982 22.7188 5.69075 24.0162 3.55284H24.0961C24.7377 5.69075 25.1084 7.09982 25.1968 9.23773H20.8395H20.8367Z" fill="currentColor"/><path d="M8.84291 0.308217C6.74411 0.308217 5.38959 0.345373 2.83738 1.12565L0 15.6508H4.1976L5.22134 10.5033C5.63198 10.5433 6.04546 10.6548 6.48461 10.6548L7.13194 12.1925C8.52638 15.4193 10.2088 16.5569 13.4112 15.9166L14.0671 12.5383C12.6213 12.6783 11.9968 12.0839 11.1299 10.1574L10.8904 9.64012C12.8409 8.85984 14.1555 7.43648 14.5205 5.55295C15.0338 2.90915 13.5567 0.305359 8.84006 0.305359L8.84291 0.308217ZM10.186 5.55866C9.90657 7.00204 8.74881 7.62226 7.34866 7.62226C6.82966 7.62226 6.31637 7.58224 5.82874 7.52222L6.53879 3.8552C7.03498 3.77517 7.56253 3.73516 8.18134 3.73516C9.94079 3.73516 10.3742 4.59832 10.1889 5.55866H10.186Z" fill="currentColor"/><path d="M77.4375 3.93585C79.2968 3.93585 80.2321 4.15593 81.6494 4.79901L82.3281 1.29205C81.4897 0.671825 79.7987 0.308838 78.139 0.308838C71.7228 0.308838 68.4463 4.01588 67.5994 8.38315C66.7895 12.5704 68.2153 16.1374 74.6543 16.1374C75.8948 16.1374 78.601 15.7229 80.1009 15.1027L81.3556 8.5575H77.2578L76.4851 12.5989C76.1172 12.639 75.7351 12.6847 75.353 12.6847C71.8939 12.6847 71.5974 10.4153 71.9909 8.36886C72.4956 5.76507 74.0726 3.93299 77.4289 3.93299L77.4375 3.93585Z" fill="currentColor"/><path d="M128.261 6.43959C127.907 6.93976 127.571 7.61429 127.294 8.13448C127.214 7.61429 127.094 6.86545 126.932 6.36527L124.884 0.00585938H119.826L116.914 15.6543H120.881L121.996 9.92655C122.198 8.86331 122.364 7.53426 122.492 6.03087L123.376 8.97478C124.517 12.7818 124.479 13.5164 124.462 14.9255H127.576C127.987 13.5164 128.073 12.779 130.733 9.01193L133.009 5.83365C132.527 7.43708 132.145 8.79185 131.931 9.91225L130.816 15.6543H134.782L137.694 0.00585938H132.638L128.261 6.43959Z" fill="currentColor"/><path d="M110.637 0.308838C105.419 0.308838 102.196 3.83581 101.355 8.18308C100.511 12.5504 102.353 16.1374 107.572 16.1374C112.79 16.1374 116.001 12.5504 116.848 8.18308C117.689 3.83581 115.813 0.308838 110.634 0.308838H110.637ZM112.451 8.18308C111.918 10.9269 110.395 12.7104 108.236 12.7104C106.078 12.7104 105.222 10.9269 105.755 8.18308C106.283 5.45639 107.814 3.73578 109.976 3.73578C112.137 3.73578 112.981 5.45925 112.454 8.18308H112.451Z" fill="currentColor"/><path d="M63.5661 0.00571646L62.7334 4.61593C62.5708 5.45623 62.4368 6.71097 62.3313 7.87138C62.1802 7.51125 61.992 6.92247 61.7895 6.62237L57.3495 0.00285768H53.7108L50.7451 15.6513H54.7431L55.8524 10.0636C56.0263 9.16042 56.1803 8.03144 56.3115 6.72812L60.1755 12.2701C60.8085 13.2304 61.2676 14.2422 61.5585 15.6484H64.5984L67.564 0H63.5661V0.00571646Z" fill="currentColor"/><path d="M97.2852 3.93585C98.5257 3.93585 99.461 4.15593 100.878 4.79901L101.557 1.29205C100.719 0.671825 99.1873 0.308838 97.6074 0.308838C91.7502 0.308838 88.6704 4.03588 87.8577 8.22309C87.0479 12.4103 88.6847 16.1374 94.5419 16.1374C96.1217 16.1374 97.7871 15.7972 98.8679 15.177L99.5466 11.67C97.8841 12.3103 96.866 12.5103 95.6256 12.5103C92.1665 12.5103 91.8614 10.2667 92.2578 8.22309C92.6542 6.17951 93.8262 3.93585 97.2852 3.93585Z" fill="currentColor"/><path d="M84.7358 11.4693C83.4354 11.4693 82.2149 12.5097 81.964 13.813C81.7131 15.1163 82.5343 16.1367 83.8318 16.1367C85.1293 16.1367 86.3698 15.1135 86.6207 13.813C86.8745 12.5097 86.0361 11.4693 84.7358 11.4693Z" fill="currentColor"/></g><defs><clipPath id="rcl-clip"><rect width="137.694" height="16.1374" fill="currentColor"/></clipPath></defs></svg> live <span>&#9654;</span></button>
     </div>
   </div>
 </header>
@@ -440,7 +439,7 @@ function fxLedger(x,r){
   const body=fxv(x).sort((a,b)=>Math.abs(b[1])-Math.abs(a[1]))     // biggest mover first, either way
     .map(([k,v])=>line(FXT[k],sg(v),Math.abs(v)<0.005?'f':(v>0?'p':'g'),note[k]))
     .join('');
-  return `<div class="led">`
+  return `<div class="adjl">`
     +line('Base (ours)',x.wprbase.toFixed(1),x.unrated?'f':'',
        x.unrated?'field average — no rated history':`last 10 runs weighted to recent, shockers forgiven, wide runs credited${x.bsrc==='archive'?' · history from earlier nominations':''}`,'top')
     +body
@@ -564,10 +563,8 @@ function drawMeets(){
   const d=D();
   const main=mainMeets(d), other=otherMeets(d);
   const strip=liveMeets(d).filter(i=>main.has(i)||i===meet);   // always on the top row
-  const sm=shownMeets(d).map(i=>d.meetings[i]), hidden=allMeets?0:other.length;
-  $("hdate").textContent=fmtDate(d.date,{weekday:'long',day:'numeric',month:'long',year:'numeric'})
-    +`  ·  ${sm.length} meeting${sm.length===1?'':'s'}  ·  ${sm.reduce((a,m)=>a+m.races.length,0)} races  ·  ${sm.reduce((a,m)=>a+m.n,0)} runners`
-    +(hidden?`  ·  ${hidden} more not shown`:'');
+  const sm=shownMeets(d).map(i=>d.meetings[i]);
+  $("hdate").textContent=fmtDate(d.date,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   const np=dayPicks().length;
   $("meets").innerHTML=`<button role="tab" class="today" aria-selected="${meet===-1}" onclick="pickMeet(-1)">
       <span class="tk">Today</span>
@@ -597,8 +594,7 @@ function drawMeets(){
 function drawDay(){
   const d=D(), picks=dayPicks();
   const sorts={meeting:'Meeting',time:'Time',rating:'Rating'};
-  const nm=shownMeets(d).length;
-  let h=`<div class="dayhead"><p class="daylead">${picks.length} selections across ${nm} meeting${nm===1?'':'s'} — rating standouts first (top-rater 3+ pts, 1.5 lengths, clear), then value (model at 1.3× or more the market's chance, $30 or under).</p>
+  let h=`<div class="dayhead">
     <div class="daysort">order <div class="seg">${Object.entries(sorts).map(([k,v])=>`<button aria-pressed="${daySort===k}" onclick="setDaySort('${k}')">${v}</button>`).join('')}</div></div></div>`;
   if(!picks.length){ $("race").innerHTML=h+`<p class="mnote">Nothing stands out today on either rule.</p>`; return; }
   h+=`<div class="scroll"><table class="daytab"><thead><tr><th></th><th>Selection</th><th>Race</th><th>Why</th><th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
@@ -915,4 +911,4 @@ window.watchLive=()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 11 Sep 23:25</b> AEST &middot; dash: racing.com wordmark on the watch button</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 11 Sep 23:31</b> AEST &middot; dash: racing.com wordmark, re-applied after a collision</div><div style="height:34px"></div></body></html>
