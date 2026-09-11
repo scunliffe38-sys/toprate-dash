@@ -19,10 +19,6 @@ header{border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:10p
 h1{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:34px;letter-spacing:-.01em;margin:0;line-height:1}
 .date{color:var(--dim);font-size:14px}
 .conds{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto;align-self:center}
-.chip{border:1px solid var(--rule);border-radius:3px;padding:4px 9px;display:flex;align-items:baseline;gap:7px;background:var(--panel)}
-.chip b{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14px}
-.chip span{color:var(--dim);font-size:11.5px}
-.chip.wet b{color:var(--cond)}
 
 .days{display:flex;gap:0;border-bottom:1px solid var(--rule);margin-bottom:14px;overflow-x:auto}
 .days button{background:none;border:0;border-bottom:3px solid transparent;color:var(--dim);padding:8px 14px 9px;cursor:pointer;font-family:inherit;text-align:left;white-space:nowrap;display:flex;flex-direction:column;gap:1px}
@@ -113,7 +109,6 @@ a.l5b:after{border-left-color:currentColor;opacity:.7}
 a.l5b:hover,a.l5b:focus{color:var(--brass);outline:none}
 a.l5b:hover:after,a.l5b:focus:after{opacity:1}
 .l5 em{font-style:normal;color:var(--faint);font-size:12px;line-height:1.05;align-self:flex-start}
-.mtabs .sb .ts{color:var(--faint);margin-left:auto;padding-left:6px}
 .mtabs button.today{border-color:var(--brass);border-style:dashed}
 .mtabs button.today[aria-selected=true]{border-style:solid}
 .mtabs button.today .tk{color:var(--brass)}
@@ -280,15 +275,15 @@ body{padding-bottom:38px}
 .vdock .vt a{color:var(--cond);text-decoration:none}
 .vdock .vt a:hover{text-decoration:underline}
 .vdock .vmsg{color:var(--dim);font-size:12.5px;padding:14px;text-align:center}
-.wlive .rcl{height:10px;width:auto;display:block;flex:0 0 auto}   /* their wordmark, monochrome, takes the button's colour */
+.wlive .rcl{height:10px;width:auto;display:block;flex:0 0 auto}
+.wlive .skl{height:19px;width:auto;display:block;flex:0 0 auto}   /* their wordmark, monochrome, takes the button's colour */
 .wlive:hover{background:var(--cond);color:var(--ink)}
 </style></head>
 <body><div class="wrap">
 <header>
   <div class="meet"><h1 id="h1">TopRate</h1><div class="date" id="hdate"></div>
     <div class="conds">
-      <div class="chip wet"><b id="cGoing">—</b><span>going</span></div>
-      <button class="wlive" id="skylive" onclick="skyLive()" title="Sky Thoroughbred Central — thoroughbreds nationally, whatever is jumping next">Watch Sky <span>&#9654;</span></button>
+      <button class="wlive" id="skylive" onclick="skyLive()" aria-label="Watch Sky Thoroughbred Central live" title="Sky Thoroughbred Central — thoroughbreds nationally, whatever is jumping next">Watch <svg class="skl" viewBox="0 0 384.99 319.64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><polygon fill="currentColor" points="229.3 284.08 274.25 284.08 222.42 219.04 248.83 185.84 248.83 185.76 280.22 228.18 280.22 284.03 317.18 284.03 317.18 228.25 336.44 202.43 316.04 176.94 297.9 200.58 269.97 162.44 238.23 162.4 227.51 162.4 183.26 216.86 183.26 162.4 146.4 162.4 146.4 284.13 182.47 284.13 182.48 284.11 182.48 227.11 229.3 284.08"/><path fill="currentColor" d="M151.73,258.26q0-10.31-4.8-17.17a44.29,44.29,0,0,0-13.27-12.16A223,223,0,0,0,111.09,217c-5.29-2.5-9-4.66-11-6.39A7.94,7.94,0,0,1,97,204.41a8.19,8.19,0,0,1,3.07-6.48c2-1.77,5.35-2.66,10-2.66a46.94,46.94,0,0,1,19.7,4.22,103.49,103.49,0,0,1,16.7,9.57V180.54a58.17,58.17,0,0,0-7.75-3.88,67.93,67.93,0,0,0-8.42-2.93L128,173.1c-1.15-.3-2.34-.59-3.58-.87a85.31,85.31,0,0,0-18.94-2q-14.33,0-24.31,4.74T66.29,187.69a33.77,33.77,0,0,0-4.83,17.77,31.76,31.76,0,0,0,4.81,17.65,41.76,41.76,0,0,0,12.37,12.43,111.06,111.06,0,0,0,17.64,9.17,68.32,68.32,0,0,1,13.84,7c3.19,2.23,4.76,5,4.76,8.29,0,1.81-.91,3.77-2.77,5.86S106.17,269,99.9,269a48.57,48.57,0,0,1-19.17-3.78,132.27,132.27,0,0,1-15.15-7.66l29.35,37.11,1.22.12c3.67.31,6.78.47,9.28.47a61.3,61.3,0,0,0,24.1-4.44A37,37,0,0,0,145.87,278a33.34,33.34,0,0,0,5.86-19.75" transform="translate(-10.32 -9.21)"/><path fill="#b5b3b4" d="M309.29,141.24,269.73,92.31c-16.6-20.63-14.34-53.56,7.33-70.85s51.82-14,68.42,6.6L385,77c16.59,20.63,12.21,49.44-6.93,66.53s-52.23,18.35-68.82-2.28" transform="translate(-10.32 -9.21)"/><path fill="#00aede" d="M99.9,269a48.71,48.71,0,0,1-19.17-3.77A130.22,130.22,0,0,1,67,258.33L21.23,200.15c-16.6-20.63-14.34-53.56,7.33-70.85s51.82-14,68.42,6.6l28.85,36.68-1.46-.34a84.71,84.71,0,0,0-18.94-2q-14.33,0-24.31,4.74T66.29,187.7a33.74,33.74,0,0,0-4.83,17.77,31.7,31.7,0,0,0,4.81,17.64,41.73,41.73,0,0,0,12.36,12.43,110.68,110.68,0,0,0,17.64,9.18,67.7,67.7,0,0,1,13.85,7c3.19,2.24,4.76,5,4.76,8.29,0,1.81-.92,3.77-2.77,5.86S106.17,269,99.9,269Z" transform="translate(-10.32 -9.21)"/><path fill="#00aede" d="M191.06,293.34a50.39,50.39,0,0,1-13.76,20.3c-19.14,17.08-52.83,17.3-69.42-3.33L95.6,294.69l.55.05c3.67.31,6.77.48,9.28.48a61.33,61.33,0,0,0,24.1-4.45A36.82,36.82,0,0,0,145.87,278a33.39,33.39,0,0,0,5.86-19.75q0-10.29-4.81-17.17a44.39,44.39,0,0,0-13.26-12.16A222.32,222.32,0,0,0,111.09,217c-5.29-2.51-9-4.66-11-6.39A8,8,0,0,1,97,204.4a8.2,8.2,0,0,1,3.07-6.48c2-1.77,5.35-2.65,10-2.65a46.93,46.93,0,0,1,17.81,3.41,50,50,0,0,0,10.6,26l18.26,22.6v46Z" transform="translate(-10.32 -9.21)"/><path fill="red" d="M326.32,186.25l-18.1,23.55-27.93-38.14-31.74,0H237.83l-7.33,9-16.29-20.16A47.62,47.62,0,0,0,165,144.25l-42.71-53C105.7,70.59,108,37.66,129.63,20.37S181.45,6.34,198,27Z" transform="translate(-10.32 -9.21)"/><path fill="red" d="M370.25,316.28c-19.14,17.09-52.68,17.44-69.28-3.19l-11.4-13.76-5-6-42.89-53.82-8.94-11.22,18-22.6,8.43-10.59V195l31.39,42.43v55.84h37V237.47l19.26-25.83,30,37.2C393.32,269.47,389.4,299.2,370.25,316.28Z" transform="translate(-10.32 -9.21)"/><path fill="#6ed245" d="M289.57,299.33A49.4,49.4,0,0,1,278.33,314c-19.15,17.08-53.4,17.84-70-2.79L192.8,292V236.32l46.82,57h44.95Z" transform="translate(-10.32 -9.21)"/><path fill="#6ed245" d="M230.5,180.63,212.32,203l-18.74,23.06V171.62H156.72v75.7l-18.26-22.6a50,50,0,0,1-10.6-26c.64.25,1.26.52,1.89.8a104.89,104.89,0,0,1,16.69,9.57V180.54a57.87,57.87,0,0,0-7.74-3.88,66.47,66.47,0,0,0-7.62-2.69,47.77,47.77,0,0,1,14.71-20.09A51,51,0,0,1,165,144.25a47.62,47.62,0,0,1,49.21,16.22Z" transform="translate(-10.32 -9.21)"/></svg> <span>&#9654;</span></button>
       <button class="wlive" id="wlive" hidden onclick="watchLive()" aria-label="Watch racing.com live">Watch <svg class="rcl" viewBox="0 0 138 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g clip-path="url(#rcl-clip)"><path d="M40.4903 3.93609C41.7308 3.93609 42.6661 4.15617 44.0805 4.79926L44.7592 1.29229C43.9208 0.672069 42.3895 0.309082 40.8097 0.309082C34.9524 0.309082 31.8727 4.03613 31.0628 8.22334C30.2529 12.4105 31.8898 16.1376 37.747 16.1376C39.3268 16.1376 40.9922 15.7975 42.073 15.1773L42.7516 11.6703C41.0891 12.3105 40.0711 12.5106 38.8306 12.5106C35.3716 12.5106 35.0665 10.2669 35.4629 8.22334C35.8592 6.17975 37.0313 3.93609 40.4903 3.93609Z" fill="currentColor"/><path d="M47.0723 0.00598145L44.1038 15.6516H48.404L51.3697 0.00598145H47.0723Z" fill="currentColor"/><path d="M22.6275 0.00585938C18.7721 4.28167 15.9718 9.24059 15.1505 13.4907L14.7627 15.6543H19.0601L19.4479 13.4707C19.5221 13.0905 19.5991 12.839 19.716 12.1073H25.0942C25.0371 12.8362 24.9801 13.0905 24.906 13.4707L24.5181 15.6543H28.8155L29.2034 13.4907C30.0246 9.24344 29.1492 4.28453 26.885 0.00585938H22.6275ZM20.8367 9.23773C21.6494 7.09982 22.7188 5.69075 24.0162 3.55284H24.0961C24.7377 5.69075 25.1084 7.09982 25.1968 9.23773H20.8395H20.8367Z" fill="currentColor"/><path d="M8.84291 0.308217C6.74411 0.308217 5.38959 0.345373 2.83738 1.12565L0 15.6508H4.1976L5.22134 10.5033C5.63198 10.5433 6.04546 10.6548 6.48461 10.6548L7.13194 12.1925C8.52638 15.4193 10.2088 16.5569 13.4112 15.9166L14.0671 12.5383C12.6213 12.6783 11.9968 12.0839 11.1299 10.1574L10.8904 9.64012C12.8409 8.85984 14.1555 7.43648 14.5205 5.55295C15.0338 2.90915 13.5567 0.305359 8.84006 0.305359L8.84291 0.308217ZM10.186 5.55866C9.90657 7.00204 8.74881 7.62226 7.34866 7.62226C6.82966 7.62226 6.31637 7.58224 5.82874 7.52222L6.53879 3.8552C7.03498 3.77517 7.56253 3.73516 8.18134 3.73516C9.94079 3.73516 10.3742 4.59832 10.1889 5.55866H10.186Z" fill="currentColor"/><path d="M77.4375 3.93585C79.2968 3.93585 80.2321 4.15593 81.6494 4.79901L82.3281 1.29205C81.4897 0.671825 79.7987 0.308838 78.139 0.308838C71.7228 0.308838 68.4463 4.01588 67.5994 8.38315C66.7895 12.5704 68.2153 16.1374 74.6543 16.1374C75.8948 16.1374 78.601 15.7229 80.1009 15.1027L81.3556 8.5575H77.2578L76.4851 12.5989C76.1172 12.639 75.7351 12.6847 75.353 12.6847C71.8939 12.6847 71.5974 10.4153 71.9909 8.36886C72.4956 5.76507 74.0726 3.93299 77.4289 3.93299L77.4375 3.93585Z" fill="currentColor"/><path d="M128.261 6.43959C127.907 6.93976 127.571 7.61429 127.294 8.13448C127.214 7.61429 127.094 6.86545 126.932 6.36527L124.884 0.00585938H119.826L116.914 15.6543H120.881L121.996 9.92655C122.198 8.86331 122.364 7.53426 122.492 6.03087L123.376 8.97478C124.517 12.7818 124.479 13.5164 124.462 14.9255H127.576C127.987 13.5164 128.073 12.779 130.733 9.01193L133.009 5.83365C132.527 7.43708 132.145 8.79185 131.931 9.91225L130.816 15.6543H134.782L137.694 0.00585938H132.638L128.261 6.43959Z" fill="currentColor"/><path d="M110.637 0.308838C105.419 0.308838 102.196 3.83581 101.355 8.18308C100.511 12.5504 102.353 16.1374 107.572 16.1374C112.79 16.1374 116.001 12.5504 116.848 8.18308C117.689 3.83581 115.813 0.308838 110.634 0.308838H110.637ZM112.451 8.18308C111.918 10.9269 110.395 12.7104 108.236 12.7104C106.078 12.7104 105.222 10.9269 105.755 8.18308C106.283 5.45639 107.814 3.73578 109.976 3.73578C112.137 3.73578 112.981 5.45925 112.454 8.18308H112.451Z" fill="currentColor"/><path d="M63.5661 0.00571646L62.7334 4.61593C62.5708 5.45623 62.4368 6.71097 62.3313 7.87138C62.1802 7.51125 61.992 6.92247 61.7895 6.62237L57.3495 0.00285768H53.7108L50.7451 15.6513H54.7431L55.8524 10.0636C56.0263 9.16042 56.1803 8.03144 56.3115 6.72812L60.1755 12.2701C60.8085 13.2304 61.2676 14.2422 61.5585 15.6484H64.5984L67.564 0H63.5661V0.00571646Z" fill="currentColor"/><path d="M97.2852 3.93585C98.5257 3.93585 99.461 4.15593 100.878 4.79901L101.557 1.29205C100.719 0.671825 99.1873 0.308838 97.6074 0.308838C91.7502 0.308838 88.6704 4.03588 87.8577 8.22309C87.0479 12.4103 88.6847 16.1374 94.5419 16.1374C96.1217 16.1374 97.7871 15.7972 98.8679 15.177L99.5466 11.67C97.8841 12.3103 96.866 12.5103 95.6256 12.5103C92.1665 12.5103 91.8614 10.2667 92.2578 8.22309C92.6542 6.17951 93.8262 3.93585 97.2852 3.93585Z" fill="currentColor"/><path d="M84.7358 11.4693C83.4354 11.4693 82.2149 12.5097 81.964 13.813C81.7131 15.1163 82.5343 16.1367 83.8318 16.1367C85.1293 16.1367 86.3698 15.1135 86.6207 13.813C86.8745 12.5097 86.0361 11.4693 84.7358 11.4693Z" fill="currentColor"/></g><defs><clipPath id="rcl-clip"><rect width="137.694" height="16.1374" fill="currentColor"/></clipPath></defs></svg> live <span>&#9654;</span></button>
     </div>
   </div>
@@ -574,11 +569,6 @@ const ORD=['1st','2nd','3rd','4th'];
 function placeOf(lv,tab){ if(!lv||!lv.results) return null;
   for(let i=0;i<Math.min(4,lv.results.length);i++) if(lv.results[i].includes(tab)) return i; return null; }
 window.RATED=null;   // page rating time, set from the footer banner / status.json
-function ratedAt(m){
-  const d=m.rated?new Date(m.rated):RATED; if(!d||isNaN(d)) return '';
-  const t=d.toLocaleTimeString('en-AU',{hour:'2-digit',minute:'2-digit',hour12:false});
-  return new Date().toDateString()===d.toDateString()?t:d.toLocaleDateString('en-AU',{weekday:'short'})+' '+t;
-}
 function fmtDate(s,opt){return new Date(s+"T00:00:00").toLocaleDateString('en-AU',opt);}
 
 function drawDays(){
@@ -598,8 +588,7 @@ function drawMeets(){
       <span class="sb"><span>${sm.length} meeting${sm.length===1?'':'s'}</span><span class="w">${np} to look at</span></span></button>`+strip.map(i=>{const m=d.meetings[i];return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
       <span class="sb"><span>${m.state}</span>
-        <span class="${/soft|heavy/i.test(m.going||'')?'w':''}">${m.going||''}</span>
-        <span class="ts" title="last rated">${ratedAt(m)}</span></span></button>`;}).join("")
+        <span class="${/soft|heavy/i.test(m.going||'')?'w':''}">${m.going||''}</span></span></button>`;}).join("")
     +(other.length?`<button class="more" aria-expanded="${allMeets}" title="${allMeets?'put them away':'the other cards of the day'}" onclick="setAllMeets(${!allMeets})">${allMeets?'Hide other':'Other '+other.length+' ›'}</button>`:'');
   $("meets2").innerHTML=(allMeets&&other.length)
     ?`<span class="lbl">OTHER MEETINGS</span>`+other.map(i=>{const m=d.meetings[i];return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
@@ -608,7 +597,6 @@ function drawMeets(){
         <span class="${/soft|heavy/i.test(m.going||'')?'w':''}">${m.going||''}</span></span></button>`;}).join("")
     :'';
   $("h1").textContent=meet<0?fmtDate(d.date,{weekday:'long'}):M().track;
-  $("cGoing").textContent=meet<0?'—':(M().going||'—');
   const wl=$("wlive"), wm=meet<0?null:M();
   if(wl){
     wl.hidden=!wm;
@@ -651,7 +639,7 @@ function drawSummary(){
   rows.forEach(({r,a})=>{
     const t=a.top,b=a.best;
     h+=`<tr class="srow" tabindex="0" data-r="${r.no}">
-      <td><div class="stop">R${r.no}${(r.surf_now&&r.surf_now!==r.surf)?' <span class="rerated">re-rated'+"</span>":''}</div><div class="sname">${r.dist}m ${r.cls}${r.surf?` · ${SURF[r.surf_now||r.surf]}`:''}</div></td>
+      <td><div class="stop">R${r.no}${(r.surf_now&&r.surf_now!==r.surf)?' <span class="rerated">re-rated'+"</span>":''}</div><div class="sname">${r.dist}m ${r.cls}</div></td>
       <td>${silk(t)}</td>
       <td><div class="stop">${t.name}${a.gap>=GAP_STANDOUT?' <span class="tagv gold">RATING STANDOUT</span>':''}${resBadge(m.track,r,t)}</div><div class="sname">${t.jockey||'jockey TBA'}</div></td>
       <td class="rate" style="font-size:19px">${t.rating.toFixed(1)}</td>
@@ -996,4 +984,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 01:22</b> AEST &middot; dash: flags cut to three, odds right-aligned</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 01:25</b> AEST &middot; dash: Sky mark, and three repeated readouts removed</div><div style="height:34px"></div></body></html>
