@@ -1,18 +1,18 @@
 {
- "started": "2026-09-11T21:38:40",
+ "started": "2026-09-11T22:05:56",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "dashboard: adjustments simplified to the net number",
+ "reason": "dashboard: opened row is a ledger, biggest factor first",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-11T21:41:14",
+ "finished": "2026-09-11T22:08:39",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-09-12.html",
