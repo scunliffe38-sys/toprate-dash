@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T01:32:55",
+ "started": "2026-09-12T01:40:09",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "dash: tabular price figures, RATED removed",
+ "reason": "dash: standout 4.0, Last 5 on one line, trials 45d",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-12T01:34:25",
+ "finished": "2026-09-12T01:42:27",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-09-12.html",
