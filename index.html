@@ -686,7 +686,12 @@ function speedMap(r){
   const cols=SMB.map(()=>[]);
   on.forEach(x=>{ const i=SMB.findIndex(b=>x.rspos<b[0]); cols[i<0?4:i].push(x); });
   const grid=cols.map((c,i)=>{
-    c.sort((a,b)=>(a.bar??99)-(b.bar??99));              // fence first: column-reverse puts it at the bottom
+    // Stacked on the gate, inside at the foot. Not on where the horse will
+    // actually be running: a projection of width from the draw and the map
+    // orders a field 0.95 to 0.99 like the gate, while realised width at the
+    // turn orders only 0.43 like it (NOTE_2026-09-11_caught_wide_tracking 4.6).
+    // The re-sorting is real and we cannot forecast it, so do not imply we can.
+    c.sort((a,b)=>(a.bar??99)-(b.bar??99));
     const chips=c.map(x=>{
       const sh=x.shape??0;
       const cls=(Math.abs(sh)<0.3?'':(sh>0?'p':'g'))+((top&&top.no===x.no&&top.plead>=0.25)?' led':'');
@@ -700,7 +705,7 @@ function speedMap(r){
   }).join('');
   const sgn=a=>a.map(x=>`${x.name} ${x.shape>0?'+':'−'}${Math.abs(x.shape).toFixed(2)}`).join(', ');
   return `<div class="smap open">${head}<div class="smbody">
-    <div class="smgrid"><div class="smoff">off the fence</div>${grid}</div>
+    <div class="smgrid"><div class="smoff">gate, inside at the foot</div>${grid}</div>
     <div class="smrail"><em>rail</em></div>
     <div class="smnone">${SMCTX[r.ctx]||''}${(hi.length||lo.length)?`${SMCTX[r.ctx]?' · ':''}shape helps ${hi.length?sgn(hi):'nobody by 0.3'}${lo.length?`, hurts ${sgn(lo)}`:''}`:''}</div>
     ${off.length?`<div class="smnone">Not mapped (no settling history): ${off.map(x=>`${x.no} ${x.name}`).join(', ')}</div>`:''}</div></div>`;
@@ -910,4 +915,4 @@ window.watchLive=()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 11 Sep 23:19</b> AEST &middot; deploy last5jo: union trial replay sources</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 11 Sep 23:22</b> AEST &middot; dashboard: speed map</div><div style="height:34px"></div></body></html>
