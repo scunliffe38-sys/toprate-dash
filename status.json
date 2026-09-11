@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T09:34:56",
+ "started": "2026-09-12T09:47:49",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "mobile layout: market freshness stamp off the phone header",
+ "reason": "market freshness stamp folded onto the book% line",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T09:37:22",
+ "finished": "2026-09-12T09:50:08",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -30,5 +30,5 @@
  },
  "scratchings": 256,
  "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "adb0df48ab39"
+ "fingerprint": "7759adf65234"
 }
