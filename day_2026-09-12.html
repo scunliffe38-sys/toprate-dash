@@ -277,6 +277,7 @@ body{padding-bottom:38px}
 .vdock.wide{width:min(680px,94vw)}          /* live vision is a whole page, not a clip */
 .vdock .vt a{color:var(--cond);text-decoration:none}
 .vdock .vt a:hover{text-decoration:underline}
+.vdock .vmsg{color:var(--dim);font-size:12.5px;padding:14px;text-align:center}
 .wlive .rcl{height:10px;width:auto;display:block;flex:0 0 auto}   /* their wordmark, monochrome, takes the button's colour */
 .wlive:hover{background:var(--cond);color:var(--ink)}
 </style></head>
@@ -285,6 +286,7 @@ body{padding-bottom:38px}
   <div class="meet"><h1 id="h1">TopRate</h1><div class="date" id="hdate"></div>
     <div class="conds">
       <div class="chip wet"><b id="cGoing">—</b><span>going</span></div>
+      <button class="wlive" id="skylive" onclick="skyLive()" title="Sky Thoroughbred Central — thoroughbreds nationally, whatever is jumping next">Watch Sky <span>&#9654;</span></button>
       <button class="wlive" id="wlive" hidden onclick="watchLive()" aria-label="Watch racing.com live">Watch <svg class="rcl" viewBox="0 0 138 17" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><g clip-path="url(#rcl-clip)"><path d="M40.4903 3.93609C41.7308 3.93609 42.6661 4.15617 44.0805 4.79926L44.7592 1.29229C43.9208 0.672069 42.3895 0.309082 40.8097 0.309082C34.9524 0.309082 31.8727 4.03613 31.0628 8.22334C30.2529 12.4105 31.8898 16.1376 37.747 16.1376C39.3268 16.1376 40.9922 15.7975 42.073 15.1773L42.7516 11.6703C41.0891 12.3105 40.0711 12.5106 38.8306 12.5106C35.3716 12.5106 35.0665 10.2669 35.4629 8.22334C35.8592 6.17975 37.0313 3.93609 40.4903 3.93609Z" fill="currentColor"/><path d="M47.0723 0.00598145L44.1038 15.6516H48.404L51.3697 0.00598145H47.0723Z" fill="currentColor"/><path d="M22.6275 0.00585938C18.7721 4.28167 15.9718 9.24059 15.1505 13.4907L14.7627 15.6543H19.0601L19.4479 13.4707C19.5221 13.0905 19.5991 12.839 19.716 12.1073H25.0942C25.0371 12.8362 24.9801 13.0905 24.906 13.4707L24.5181 15.6543H28.8155L29.2034 13.4907C30.0246 9.24344 29.1492 4.28453 26.885 0.00585938H22.6275ZM20.8367 9.23773C21.6494 7.09982 22.7188 5.69075 24.0162 3.55284H24.0961C24.7377 5.69075 25.1084 7.09982 25.1968 9.23773H20.8395H20.8367Z" fill="currentColor"/><path d="M8.84291 0.308217C6.74411 0.308217 5.38959 0.345373 2.83738 1.12565L0 15.6508H4.1976L5.22134 10.5033C5.63198 10.5433 6.04546 10.6548 6.48461 10.6548L7.13194 12.1925C8.52638 15.4193 10.2088 16.5569 13.4112 15.9166L14.0671 12.5383C12.6213 12.6783 11.9968 12.0839 11.1299 10.1574L10.8904 9.64012C12.8409 8.85984 14.1555 7.43648 14.5205 5.55295C15.0338 2.90915 13.5567 0.305359 8.84006 0.305359L8.84291 0.308217ZM10.186 5.55866C9.90657 7.00204 8.74881 7.62226 7.34866 7.62226C6.82966 7.62226 6.31637 7.58224 5.82874 7.52222L6.53879 3.8552C7.03498 3.77517 7.56253 3.73516 8.18134 3.73516C9.94079 3.73516 10.3742 4.59832 10.1889 5.55866H10.186Z" fill="currentColor"/><path d="M77.4375 3.93585C79.2968 3.93585 80.2321 4.15593 81.6494 4.79901L82.3281 1.29205C81.4897 0.671825 79.7987 0.308838 78.139 0.308838C71.7228 0.308838 68.4463 4.01588 67.5994 8.38315C66.7895 12.5704 68.2153 16.1374 74.6543 16.1374C75.8948 16.1374 78.601 15.7229 80.1009 15.1027L81.3556 8.5575H77.2578L76.4851 12.5989C76.1172 12.639 75.7351 12.6847 75.353 12.6847C71.8939 12.6847 71.5974 10.4153 71.9909 8.36886C72.4956 5.76507 74.0726 3.93299 77.4289 3.93299L77.4375 3.93585Z" fill="currentColor"/><path d="M128.261 6.43959C127.907 6.93976 127.571 7.61429 127.294 8.13448C127.214 7.61429 127.094 6.86545 126.932 6.36527L124.884 0.00585938H119.826L116.914 15.6543H120.881L121.996 9.92655C122.198 8.86331 122.364 7.53426 122.492 6.03087L123.376 8.97478C124.517 12.7818 124.479 13.5164 124.462 14.9255H127.576C127.987 13.5164 128.073 12.779 130.733 9.01193L133.009 5.83365C132.527 7.43708 132.145 8.79185 131.931 9.91225L130.816 15.6543H134.782L137.694 0.00585938H132.638L128.261 6.43959Z" fill="currentColor"/><path d="M110.637 0.308838C105.419 0.308838 102.196 3.83581 101.355 8.18308C100.511 12.5504 102.353 16.1374 107.572 16.1374C112.79 16.1374 116.001 12.5504 116.848 8.18308C117.689 3.83581 115.813 0.308838 110.634 0.308838H110.637ZM112.451 8.18308C111.918 10.9269 110.395 12.7104 108.236 12.7104C106.078 12.7104 105.222 10.9269 105.755 8.18308C106.283 5.45639 107.814 3.73578 109.976 3.73578C112.137 3.73578 112.981 5.45925 112.454 8.18308H112.451Z" fill="currentColor"/><path d="M63.5661 0.00571646L62.7334 4.61593C62.5708 5.45623 62.4368 6.71097 62.3313 7.87138C62.1802 7.51125 61.992 6.92247 61.7895 6.62237L57.3495 0.00285768H53.7108L50.7451 15.6513H54.7431L55.8524 10.0636C56.0263 9.16042 56.1803 8.03144 56.3115 6.72812L60.1755 12.2701C60.8085 13.2304 61.2676 14.2422 61.5585 15.6484H64.5984L67.564 0H63.5661V0.00571646Z" fill="currentColor"/><path d="M97.2852 3.93585C98.5257 3.93585 99.461 4.15593 100.878 4.79901L101.557 1.29205C100.719 0.671825 99.1873 0.308838 97.6074 0.308838C91.7502 0.308838 88.6704 4.03588 87.8577 8.22309C87.0479 12.4103 88.6847 16.1374 94.5419 16.1374C96.1217 16.1374 97.7871 15.7972 98.8679 15.177L99.5466 11.67C97.8841 12.3103 96.866 12.5103 95.6256 12.5103C92.1665 12.5103 91.8614 10.2667 92.2578 8.22309C92.6542 6.17951 93.8262 3.93585 97.2852 3.93585Z" fill="currentColor"/><path d="M84.7358 11.4693C83.4354 11.4693 82.2149 12.5097 81.964 13.813C81.7131 15.1163 82.5343 16.1367 83.8318 16.1367C85.1293 16.1367 86.3698 15.1135 86.6207 13.813C86.8745 12.5097 86.0361 11.4693 84.7358 11.4693Z" fill="currentColor"/></g><defs><clipPath id="rcl-clip"><rect width="137.694" height="16.1374" fill="currentColor"/></clipPath></defs></svg> live <span>&#9654;</span></button>
     </div>
   </div>
@@ -531,11 +533,16 @@ function analyse(r){
 // Every flag on the page comes from here, so a runner cannot be called one thing in the
 // summary and another in the race. Simon, 12 Sep: standout stays at 3 points clear, value
 // is the 1.15-1.3 band and anything above 1.3 is best v price. Nothing else is flagged.
-const GAP_STANDOUT=3.0, EDGE_VALUE=1.15, EDGE_BEST=1.3;
+// EDGE_VALUE null = no second tier. Measured 12 Sep over 2,187 value picks: the size of
+// the edge does not predict the return -- every band from 1.3 up sits between -12% and
+// -21% with no trend -- so a second label below the first would rank races by how much we
+// disagree with the market, not by how likely we are to be right. Set it to a number to
+// bring the VALUE tag back; 2.0 flags 12% of races, 1.7 flags 25%.
+const GAP_STANDOUT=3.0, EDGE_VALUE=null, EDGE_BEST=2.4;
 function edgeTag(edge){
   if(edge==null) return '';
   if(edge>=EDGE_BEST) return ' <span class="tagv">BEST V PRICE</span>';
-  if(edge>=EDGE_VALUE) return ' <span class="tagv">VALUE</span>';
+  if(EDGE_VALUE!=null && edge>=EDGE_VALUE) return ' <span class="tagv">VALUE</span>';
   return '';
 }
 
@@ -850,11 +857,12 @@ function playVid(url,label){
   else return false;
   $("vdt").textContent=label||'Replay';
   b.innerHTML=inner;
+  killHls();
   $("vdock").classList.remove('wide');
   $("vdock").hidden=false;
   return true;
 }
-window.closeVid=()=>{ const b=$("vdb"); if(b) b.innerHTML='';
+window.closeVid=()=>{ killHls(); const b=$("vdb"); if(b) b.innerHTML='';
   const d=$("vdock"); if(d){ d.hidden=true; d.classList.remove('wide'); } };
 // Delegated: the live feed rebuilds #race under us every time a price moves, so a
 // handler bound to the links themselves would not survive the first redraw.
@@ -876,12 +884,62 @@ document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeVid(); });
 const WATCH_LIVE="https://www.racing.com/live-vision.aspx?th=true";
 window.watchLive=()=>{
   const b=$("vdb"), d=$("vdock"); if(!b||!d) return;
+  killHls();
   $("vdt").innerHTML='racing.com live vision &nbsp;\u00b7&nbsp; '+
     `<a href="${WATCH_LIVE}" target="_blank" rel="noopener">pop out &#8599;</a>`;
   b.innerHTML=`<iframe src="${WATCH_LIVE}" allowfullscreen
                  allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>`;
   d.classList.add('wide');
   d.hidden=false;
+};
+
+// ---- Sky Thoroughbred Central, straight off the HLS ------------------------
+// Racing NSW publish this channel on their own homepage as a plain JW Player
+// with an unauthenticated Akamai URL: no login, no token, no EXT-X-KEY. Five
+// bitrates to 1280x720, 3-second segments. It is the channel feed, thoroughbreds
+// nationally -- whatever is jumping next -- not the vision for the meeting on
+// screen, which is why its button does not wait for a meeting to be picked.
+const SKY_STC="https://skylivernsw.akamaized.net/hls/live/2036965/stc/index.m3u8";
+const HLSJS="https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.6.15/hls.min.js";
+const HLSJS_SRI="sha512-CSVqc4a7tn+tizDNt+eDoVn2fXYAwMDpCLrwGlWrOktNfZQ9gp4dKKScElMeRlrIifhliXs0a06BLaUgmMlCUw==";
+let _hls=null;
+
+// 150 KB, fetched the first time live vision is asked for and never on a plain
+// page load. Safari plays HLS natively and skips this entirely.
+function loadHls(){
+  if(window.Hls) return Promise.resolve();
+  if(!loadHls._p) loadHls._p=new Promise((res,rej)=>{
+    const el=document.createElement('script');
+    el.src=HLSJS; el.integrity=HLSJS_SRI; el.crossOrigin="anonymous";
+    el.onload=res; el.onerror=()=>{ loadHls._p=null; rej(new Error('hls.js did not load')); };
+    document.head.appendChild(el);
+  });
+  return loadHls._p;
+}
+function killHls(){ if(_hls){ try{ _hls.destroy(); }catch(e){} _hls=null; } }
+
+window.skyLive=async ()=>{
+  const b=$("vdb"), d=$("vdock"); if(!b||!d) return;
+  killHls();
+  $("vdt").innerHTML='Sky Thoroughbred Central &nbsp;\u00b7&nbsp; live &nbsp;\u00b7&nbsp; '+
+    '<a href="#" onclick="watchLive();return false;">racing.com instead</a>';
+  b.innerHTML='<video id="skyv" controls autoplay playsinline></video>';
+  d.classList.add('wide'); d.hidden=false;
+  const v=document.getElementById("skyv");
+  if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=SKY_STC; return; }
+  try{ await loadHls(); }
+  catch(e){ b.innerHTML='<p class="vmsg">Live vision needs hls.js and it did not load. '+
+            '<a href="'+SKY_STC+'" target="_blank" rel="noopener">Open the stream</a></p>'; return; }
+  if(!document.getElementById("skyv")) return;           // closed while the script loaded
+  _hls=new Hls({liveDurationInfinity:true});
+  _hls.loadSource(SKY_STC);
+  _hls.attachMedia(v);
+  _hls.on(Hls.Events.ERROR,(_e,data)=>{
+    if(!data.fatal) return;                              // hls.js retries these itself
+    if(data.type===Hls.ErrorTypes.NETWORK_ERROR) _hls.startLoad();
+    else if(data.type===Hls.ErrorTypes.MEDIA_ERROR) _hls.recoverMediaError();
+    else { killHls(); b.innerHTML='<p class="vmsg">The Sky feed dropped out. Close and try again.</p>'; }
+  });
 };
 
 // ---- status strip: reads status.json beside the page, polls every 60 s ----
@@ -936,4 +994,4 @@ window.watchLive=()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 00:44</b> AEST &middot; going suitability (sui_ab) added to the conditions factor</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 01:17</b> AEST &middot; dash: Sky Thoroughbred Central in the dock</div><div style="height:34px"></div></body></html>
