@@ -1,16 +1,25 @@
 {
- "started": "2026-09-11T18:02:42",
+ "started": "2026-09-11T18:05:24",
  "dates": [
   "2026-09-11",
   "2026-09-13"
  ],
  "reason": "race shape v3: rider, pressure, track profile",
- "status": "failed",
+ "status": "ok",
  "acceptors": 535,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-10T22:15:52+00:00",
- "error": "distprofile.py failed rc=-9: ",
- "finished": "2026-09-11T18:04:25"
+ "finished": "2026-09-11T18:07:11",
+ "going": {
+  "Sunshine Coast": "Soft 6",
+  "Geelong": "Good 4",
+  "Goulburn": "Good 4",
+  "Bordertown": "Soft 6",
+  "Tuncurry": "Good 3"
+ },
+ "scratchings": 127,
+ "dashboard": "toprate_week_v2_2026-09-11.html",
+ "fingerprint": "69defb5e7e1f"
 }
