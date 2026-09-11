@@ -249,6 +249,7 @@ body{padding-bottom:38px}
 #tr-updated+div{display:none}
 @media(max-width:720px){.trs{padding:6px 12px;gap:8px 10px}.trs .t{flex:1 1 0;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .trs .m{margin-left:0;width:100%;gap:10px}.trs .reload{width:100%}body{padding-bottom:64px}}
+.bspc{font-family:"Archivo Narrow",sans-serif;font-size:10.5px;font-weight:400;color:var(--faint);white-space:nowrap;margin-top:1px}
 .mkt-fresh{display:inline-block;font-size:9.5px;font-weight:400;color:var(--faint);margin-left:2px;white-space:nowrap}
 .mkt-fresh.warn{color:var(--brass)} .mkt-fresh.bad{color:var(--neg)}
 /* Inline replay dock.  Sky race replays are plain MP4s on mediatabs.skyracing.com.au
@@ -300,7 +301,7 @@ body{padding-bottom:38px}
   <span><i class="sw" style="background:var(--pos)"></i>above the field</span>
   <span><i class="sw" style="background:var(--neg)"></i>below the field</span>
   <span><i class="sw" style="background:var(--flat)"></i>neutral</span>
-  <span>Edge = model win chance ÷ market chance (overround removed). Click any runner for its components.</span>
+  <span>Edge = model win chance ÷ market chance (book removed by the fitted power method, not by flat division). Click any runner for its components.</span>
 </div>
 
 </div>
@@ -486,11 +487,21 @@ function silk(x){
   return x.silk?`<img class="silk" src="${x.silk}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`
                :`<span class="silk ph"></span>`;
 }
-// market chance with overround removed
+// market chance with the book removed.
+// Until 12 Sep 2026 this divided every runner by the book, which assumes the
+// bookmaker's margin is spread evenly across the field. It is not: it sits on the
+// long prices. Measured against ten years of Betfair SP, that assumption made the
+// market chance 40% too high on a 1-in-50 shot and 8% too low on a favourite
+// (docs/NOTE_2026-09-12_calibration_bsp.md).
+// MKT_K is the power-method exponent, fitted on 2019-23 by log loss and confirmed
+// on 2024-25, and it lands between 1.11 and 1.14 at every field size, so one number
+// does the job. k=1 is the old behaviour. Betfair SP cannot be used here: it does
+// not exist until the race has been run.
+const MKT_K=1.12;
 function mktp(r){
   const priced=r.runners.filter(x=>x.sp);
-  const ov=priced.reduce((a,x)=>a+1/x.sp,0);
-  const m={}; priced.forEach(x=>m[x.no]=ov?(1/x.sp)/ov:null); return m;
+  const ov=priced.reduce((a,x)=>a+Math.pow(1/x.sp,MKT_K),0);
+  const m={}; priced.forEach(x=>m[x.no]=ov?Math.pow(1/x.sp,MKT_K)/ov:null); return m;
 }
 function resBadge(track,r,x){
   const lv=LIVE[`${track}|${r.no}`]; if(!lv) return '';
@@ -506,7 +517,6 @@ function dayPicks(){
     const put=(x,kind,sc)=>{const it=items.find(i=>i.r===r&&i.x===x);
       if(it){it.kinds.push(kind);it.score+=sc;} else items.push({m,mi,r,ri,x,a,kinds:[kind],score:sc});};
     if(a.gap>=GAP_STANDOUT) put(a.top,'standout',100+a.gap);              // standouts first, by margin
-    if(a.best&&a.best.edge>=1.3&&a.best.x.sp&&a.best.x.sp<=30) put(a.best.x,'value',a.best.edge);   // then value, by edge; no roughies
   });});
   const top=items.sort((p,q)=>q.score-p.score).slice(0,15);     // which 15: always on strength
   const run=it=>{const lv=LIVE[`${it.m.track}|${it.r.no}`]; return lv&&(lv.status==='Paying'||lv.status==='Abandoned')?1:0;};
@@ -522,7 +532,7 @@ function whyPick(it){
   else out.push(`Rated ${ordn(r.runners.indexOf(x)+1)}, ${((top.rating-x.rating)/2).toFixed(1)}L behind ${top.name}`);
   if(x.sp){
     const q=mktp(r)[x.no], e=q?(x.pct/100)/q:null;
-    if(e>=1.3) out.push(`value at $${x.sp.toFixed(2)} against a $${x.fair.toFixed(2)} model — ${e.toFixed(1)}× the market's chance`);
+    if(e>=1.3) out.push(`$${x.sp.toFixed(2)} against a $${x.fair.toFixed(2)} model — ${e.toFixed(1)}× the market's chance, which on measurement predicts nothing`);
     else if(e>=1.1) out.push(`$${x.sp.toFixed(2)} is a little over the $${x.fair.toFixed(2)} model`);
     else if(e!==null&&e<0.9) out.push(`model $${x.fair.toFixed(2)} but the market has it shorter at $${x.sp.toFixed(2)}`);
     else out.push(`model $${x.fair.toFixed(2)}, market $${x.sp.toFixed(2)} — priced about right`);
@@ -530,15 +540,9 @@ function whyPick(it){
   return out.join('; ')+'.';
 }
 function analyse(r){
-  const m=mktp(r), top=r.runners[0], sec=r.runners[1];
-  let best=null;
-  r.runners.forEach(x=>{
-    const q=m[x.no]; if(!q||x.pct<12) return;
-    const e=(x.pct/100)/q;
-    if(!best||e>best.edge) best={x,edge:e,mq:q};
-  });
+  const top=r.runners[0], sec=r.runners[1];
   const gap=sec?top.rating-sec.rating:0;
-  return {top,gap,best};
+  return {top,gap};
 }
 // Every flag on the page comes from here, so a runner cannot be called one thing in the
 // summary and another in the race. Simon, 12 Sep: standout stays at 3 points clear, value
@@ -548,14 +552,7 @@ function analyse(r){
 // -21% with no trend -- so a second label below the first would rank races by how much we
 // disagree with the market, not by how likely we are to be right. Set it to a number to
 // bring the VALUE tag back; 2.0 flags 12% of races, 1.7 flags 25%.
-const GAP_STANDOUT=4.0, EDGE_VALUE=null, EDGE_BEST=2.4;
-function edgeTag(edge){
-  if(edge==null) return '';
-  if(edge>=EDGE_BEST) return ' <span class="tagv">BEST V PRICE</span>';
-  if(EDGE_VALUE!=null && edge>=EDGE_VALUE) return ' <span class="tagv">VALUE</span>';
-  return '';
-}
-
+const GAP_STANDOUT=4.0;   // the only rule on the page
 window.LIVE={};      // "Track|raceNo" -> {status, results:[[tab],...], replay, win_div}
 const liveOf=r=>LIVE[`${M().track}|${r.no}`]||null;
 // Mkt is TAB-only.  Baked pages (bake_prices.py) mark DATA.priced='tab'; anything else is
@@ -623,11 +620,11 @@ function drawDay(){
   const sorts={meeting:'Meeting',time:'Time',rating:'Rating'};
   let h=`<div class="dayhead">
     <div class="daysort">order <div class="seg">${Object.entries(sorts).map(([k,v])=>`<button aria-pressed="${daySort===k}" onclick="setDaySort('${k}')">${v}</button>`).join('')}</div></div></div>`;
-  if(!picks.length){ $("race").innerHTML=h+`<p class="mnote">Nothing stands out today on either rule.</p>`; return; }
+  if(!picks.length){ $("race").innerHTML=h+`<p class="mnote">Nothing stands out today on the ratings.</p>`; return; }
   h+=`<div class="scroll"><table class="daytab"><thead><tr><th></th><th>Worth a look</th><th>Race</th><th>Why</th><th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
   picks.forEach((it,i)=>{
     const {m,mi,r,ri,x,kinds}=it;
-    const tags=(kinds.includes('standout')?' <span class="tagv gold">RATING STANDOUT</span>':'')+(kinds.includes('value')?edgeTag(it.a.best?it.a.best.edge:null):'');
+    const tags=kinds.includes('standout')?' <span class="tagv gold">RATING STANDOUT</span>':'';
     h+=`<tr class="srow" tabindex="0" data-mi="${mi}" data-ri="${ri}">
       <td>${silk(x)}</td>
       <td><div class="stop">${x.name}${tags}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
@@ -647,9 +644,9 @@ function drawSummary(){
   const m=M(); const rows=m.races.map(r=>({r,a:analyse(r)}));
   let h='';
   h+=`<div class="scroll"><table><thead><tr><th>Race</th><th></th><th>Top rated</th><th class="r">Adjusted</th><th class="r">Rating gap</th>
-    <th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th><th>Best v price</th><th>Favourite</th></tr></thead><tbody>`;
+    <th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th><th>Favourite</th></tr></thead><tbody>`;
   rows.forEach(({r,a})=>{
-    const t=a.top,b=a.best;
+    const t=a.top;
     h+=`<tr class="srow" tabindex="0" data-r="${r.no}">
       <td><div class="stop">R${r.no}${(r.surf_now&&r.surf_now!==r.surf)?' <span class="rerated">re-rated'+"</span>":''}</div><div class="sname">${r.dist}m ${r.cls}</div></td>
       <td>${silk(t)}</td>
@@ -658,7 +655,6 @@ function drawSummary(){
       <td class="edge ${a.gap>=GAP_STANDOUT?'p':''}">${a.gap.toFixed(1)}</td>
       <td class="price">$${t.fair.toFixed(2)}</td>
       <td class="price mk">${t.sp?'$'+t.sp.toFixed(2):'—'}</td>
-      <td>${b?`<div class="stop">${b.x.name}${edgeTag(b.edge)}${resBadge(m.track,r,b.x)}</div><div class="sname">$${b.x.sp.toFixed(2)} · model $${b.x.fair.toFixed(2)}</div>`:'<span class="sname">—</span>'}</td>
       <td class="sname">${r.fav?`${r.fav} $${r.favsp.toFixed(2)}`:'—'}</td></tr>`;
   });
   $("race").innerHTML=h+`</tbody></table></div>`+(m.note?`<p class="mnote" style="margin-top:14px">${m.note}</p>`:'');
@@ -747,10 +743,9 @@ function drawRace(){
     const q=mq[x.no], e=q?(x.pct/100)/q:null;
     const lens=(topR-x.rating)/2;
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
-    const isBest=a.best&&a.best.x.no===x.no;
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
       <td class="tab">${x.no}</td>
-      <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}${x.unrated?' <span class="tagu">NO RATING</span>':''}${isBest?edgeTag(a.best.edge):''}</div>
+      <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}${x.unrated?' <span class="tagu">NO RATING</span>':''}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="l5">${l5cell(x)}</td>
@@ -760,7 +755,7 @@ function drawRace(){
       <td class="lens key2${i===0?' top':''}">${i===0?'':'−'+lens.toFixed(1)+'L'}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
       <td class="price">${x.fairblend?'$'+x.fairblend.toFixed(2):'—'}</td>
-      <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}</td></tr>`;
+      <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}${x.bsp?`<div class="bspc" title="Betfair SP: the price money actually changed hands at. Known only after the race.">BSP $${x.bsp.toFixed(2)}</div>`:''}</td></tr>`;
     if(open===i){
       h+=`<tr class="detail"><td colspan="11">${fxLedger(x,r)}</td></tr>`;
     }
@@ -993,4 +988,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 03:04</b> AEST &middot; overnight harvest</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 07:16</b> AEST &middot; dash: the value rule comes off</div><div style="height:34px"></div></body></html>
