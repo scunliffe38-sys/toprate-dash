@@ -326,6 +326,12 @@ body{padding-bottom:38px}
   .lens{padding-left:6px;padding-right:6px}
   .rhead h2{font-size:18px} .rhead .meta{font-size:12px}
   .mtabs button{min-width:104px;padding:7px 11px}
+  /* The market column's freshness stamp wraps "122% / Mkt / . 6m ago" onto a third
+     line and drags the whole header row down with it. It is the same tabAgeInfo()
+     the status strip prints as "TAB 6m ago", same text and same warn/bad colour,
+     and that strip is fixed to the bottom of the screen -- so drop the duplicate
+     here and let Mkt sit level with Model. */
+  .mkt-fresh{display:none}
   /* One line per runner, so a field scrolls in one screen instead of three.
      Clamped, NOT nowrap: in an auto-layout table a nowrap line sets the column's
      minimum width and shoves the market price off the screen. Clamping leaves the
@@ -1062,4 +1068,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 09:22</b> AEST &middot; Alice Springs going Synthetic; Alice Springs scratched R3 #7, R4 #4, R5 #7</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 09:37</b> AEST &middot; mobile layout: market freshness stamp off the phone header</div><div style="height:34px"></div></body></html>
