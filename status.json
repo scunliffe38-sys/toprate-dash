@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T09:21:17",
+ "started": "2026-09-12T09:34:56",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "Alice Springs going Synthetic; Alice Springs scratched R3 #7, R4 #4, R5 #7",
+ "reason": "mobile layout: market freshness stamp off the phone header",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T09:22:49",
+ "finished": "2026-09-12T09:37:22",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
