@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T01:24:16",
+ "started": "2026-09-12T01:27:36",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "dash: Sky mark, and three repeated readouts removed",
+ "reason": "dash: the Sky mark monochrome",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-12T01:25:45",
+ "finished": "2026-09-12T01:29:03",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-09-12.html",
