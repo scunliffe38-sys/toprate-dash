@@ -1,19 +1,19 @@
 {
- "started": "2026-09-11T21:06:31",
+ "started": "2026-09-11T21:09:02",
  "dates": [
   "2026-09-11",
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "Sunshine Coast scratched R8 #6",
+ "reason": "dashboard: adjustments shorthand, main meetings, other bucket",
  "status": "ok",
  "acceptors": 535,
  "rider_share": 0.76,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-11T21:08:49",
+ "finished": "2026-09-11T21:12:02",
  "going": {
   "Sunshine Coast": "Soft 7",
   "Geelong": "Good 4",
