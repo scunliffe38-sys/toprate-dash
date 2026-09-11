@@ -497,6 +497,9 @@ function silk(x){
 // on 2024-25, and it lands between 1.11 and 1.14 at every field size, so one number
 // does the job. k=1 is the old behaviour. Betfair SP cannot be used here: it does
 // not exist until the race has been run.
+// Since 1b7ef1c took the value rule off the page this has exactly ONE live caller,
+// the whyPick wording, and flags nothing. It stays correct anyway, and it stays in
+// step with ledger.py's MKT_K, so that a value rule coming back finds them agreeing.
 const MKT_K=1.12;
 function mktp(r){
   const priced=r.runners.filter(x=>x.sp);
@@ -725,7 +728,7 @@ function speedMap(r){
 }
 
 function drawRace(){
-  const r=M().races[active], a=analyse(r), mq=mktp(r);
+  const r=M().races[active], a=analyse(r);
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);   // market percentage
   const lvh=liveOf(r), replay=(lvh&&lvh.status==='Paying'&&lvh.replay)?`<a class="replay" href="${lvh.replay}" target="_blank" rel="noopener" data-vlabel="${M().track} R${r.no} — replay">Replay <span>▶</span></a>`:'';
   let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls} &nbsp;·&nbsp; ${r.n} runners &nbsp;·&nbsp; ${r.going||'going TBA'}
@@ -739,7 +742,6 @@ function drawRace(){
     <th class="r key">Adjusted</th><th class="r key2">Lengths</th><th class="r bk"><small>100%</small>Model</th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'}</small>Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
   const topR=r.runners[0].rating, lv=liveOf(r);
   r.runners.forEach((x,i)=>{
-    const q=mq[x.no], e=q?(x.pct/100)/q:null;
     const lens=(topR-x.rating)/2;
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
@@ -986,4 +988,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 08:14</b> AEST &middot; Mackay Soft 5 -> Good 4; Mackay scratched R1 #3, R2 #6/10, R4 #6/7, R5 #4/7; Doomben scratched R5 #8; Flemington scratched R10 #19; Rosehill scratched R3 #6; Donald scratched R1 #1</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 12 Sep 08:19</b> AEST &middot; morning harvest</div><div style="height:34px"></div></body></html>
