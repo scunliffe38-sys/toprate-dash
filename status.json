@@ -1,19 +1,19 @@
 {
- "started": "2026-09-11T20:18:06",
+ "started": "2026-09-11T21:06:31",
  "dates": [
   "2026-09-11",
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "Sunshine Coast scratched R6 #11",
+ "reason": "Sunshine Coast scratched R8 #6",
  "status": "ok",
  "acceptors": 535,
  "rider_share": 0.76,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T10:12:01+00:00",
- "finished": "2026-09-11T20:20:28",
+ "finished": "2026-09-11T21:08:49",
  "going": {
   "Sunshine Coast": "Soft 7",
   "Geelong": "Good 4",
@@ -21,7 +21,7 @@
   "Bordertown": "Soft 6",
   "Tuncurry": "Good 3"
  },
- "scratchings": 128,
+ "scratchings": 129,
  "dashboard": "toprate_week_v2_2026-09-11.html",
- "fingerprint": "5be1acb5b2b7"
+ "fingerprint": "318cf73d7235"
 }
