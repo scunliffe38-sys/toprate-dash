@@ -1,35 +1,35 @@
 {
- "started": "2026-09-12T10:11:34",
+ "started": "2026-09-12T12:39:52",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "Belmont Park scratched R1 #3; Carnarvon going Good",
+ "reason": "Morphettville Soft 5 -> Good 4; Morphettville scratched R4 #11; Griffith Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T10:13:10",
+ "finished": "2026-09-12T12:41:32",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
   "Doomben": "Good 4",
-  "Morphettville": "Soft 5",
+  "Morphettville": "Good 4",
   "Belmont Park": "Soft 5",
   "Donald": "Good 4",
   "Kembla Grange": "Good 4",
   "Gold Coast": "Good 4",
   "Toowoomba": "Good 4",
   "Mackay": "Good 4",
-  "Griffith": "Good 4",
+  "Griffith": "Good 3",
   "Thangool": "Good 4",
   "Alice Springs": "Synthetic",
   "Carnarvon": "Good"
  },
- "scratchings": 257,
+ "scratchings": 258,
  "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "5a5b5e9274c1"
+ "fingerprint": "38dafabc103c"
 }
