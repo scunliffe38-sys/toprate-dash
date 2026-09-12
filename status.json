@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T13:30:01",
+ "started": "2026-09-12T13:47:56",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "Thangool Good 4 -> Good 3",
+ "reason": "Morphettville scratched R5 #6",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T13:31:33",
+ "finished": "2026-09-12T13:49:26",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -29,7 +29,7 @@
   "Alice Springs": "Synthetic",
   "Carnarvon": "Good"
  },
- "scratchings": 258,
+ "scratchings": 259,
  "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "2c87fb9ee279"
+ "fingerprint": "d44bf22d7308"
 }
