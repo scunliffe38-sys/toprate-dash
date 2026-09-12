@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T14:53:49",
+ "started": "2026-09-12T16:15:03",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "Flemington Good 4 -> Good 3; Thangool Good 3 -> Firm 2",
+ "reason": "Thangool scratched R5 #3",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T14:55:19",
+ "finished": "2026-09-12T16:16:38",
  "going": {
   "Flemington": "Good 3",
   "Rosehill": "Good 4",
@@ -29,7 +29,7 @@
   "Alice Springs": "Synthetic",
   "Carnarvon": "Good"
  },
- "scratchings": 259,
+ "scratchings": 260,
  "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "2befc04ac5c5"
+ "fingerprint": "cdc20e7aebd9"
 }
