@@ -1,35 +1,20 @@
 {
- "started": "2026-09-12T20:41:51",
+ "started": "2026-09-13T03:01:57",
  "dates": [
-  "2026-09-12",
   "2026-09-13",
+  "2026-09-14",
   "2026-09-15"
  ],
- "reason": "Toowoomba scratched R6 #9",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 1479,
- "rider_share": 0.87,
+ "acceptors": 555,
+ "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T20:43:29",
- "going": {
-  "Toowoomba": "Good 4",
-  "Flemington": "Good 3",
-  "Rosehill": "Good 4",
-  "Doomben": "Good 4",
-  "Morphettville": "Good 4",
-  "Belmont Park": "Soft 5",
-  "Donald": "Good 4",
-  "Kembla Grange": "Good 4",
-  "Gold Coast": "Good 4",
-  "Mackay": "Good 4",
-  "Griffith": "Good 3",
-  "Thangool": "Firm 2",
-  "Alice Springs": "Synthetic",
-  "Carnarvon": "Good"
- },
- "scratchings": 261,
- "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "656a1db20e6b"
+ "extract": "2026-09-12T17:01:34+00:00",
+ "finished": "2026-09-13T03:04:19",
+ "going": {},
+ "scratchings": 0,
+ "dashboard": "toprate_week_v2_2026-09-13.html",
+ "fingerprint": "272dbc85ec8c"
 }
