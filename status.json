@@ -1,18 +1,18 @@
 {
- "started": "2026-09-13T08:37:34",
+ "started": "2026-09-13T09:15:26",
  "dates": [
   "2026-09-13",
   "2026-09-14",
   "2026-09-15"
  ],
- "reason": "lead-in credit deployed",
+ "reason": "Dalby scratched R2 #6, R5 #4, R7 #2, R8 #5",
  "status": "ok",
  "acceptors": 555,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-12T22:16:08+00:00",
- "finished": "2026-09-13T08:40:00",
+ "finished": "2026-09-13T09:17:01",
  "going": {
   "Sale": "Good 4",
   "Kilmore": "Soft 5",
@@ -21,7 +21,7 @@
   "Dalby": "Good 4",
   "Northam": "Soft 5"
  },
- "scratchings": 110,
+ "scratchings": 114,
  "dashboard": "toprate_week_v2_2026-09-13.html",
- "fingerprint": "638959466eaa"
+ "fingerprint": "9270c127a93f"
 }
