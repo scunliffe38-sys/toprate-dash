@@ -1,18 +1,18 @@
 {
- "started": "2026-09-12T09:47:49",
+ "started": "2026-09-12T10:11:34",
  "dates": [
   "2026-09-12",
   "2026-09-13",
   "2026-09-15"
  ],
- "reason": "market freshness stamp folded onto the book% line",
+ "reason": "Belmont Park scratched R1 #3; Carnarvon going Good",
  "status": "ok",
  "acceptors": 1479,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-11T22:16:42+00:00",
- "finished": "2026-09-12T09:50:08",
+ "finished": "2026-09-12T10:13:10",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -26,9 +26,10 @@
   "Mackay": "Good 4",
   "Griffith": "Good 4",
   "Thangool": "Good 4",
-  "Alice Springs": "Synthetic"
+  "Alice Springs": "Synthetic",
+  "Carnarvon": "Good"
  },
- "scratchings": 256,
+ "scratchings": 257,
  "dashboard": "toprate_week_v2_2026-09-12.html",
- "fingerprint": "7759adf65234"
+ "fingerprint": "5a5b5e9274c1"
 }
