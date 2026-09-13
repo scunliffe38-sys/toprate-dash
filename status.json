@@ -1,17 +1,17 @@
 {
- "started": "2026-09-14T08:11:20",
+ "started": "2026-09-14T08:16:37",
  "dates": [
   "2026-09-14",
   "2026-09-15"
  ],
- "reason": "Tamworth scratched R1 #7, R3 #14, R4 #5/16; Corowa Soft 5 -> Good 4; Corowa scratched R1 #1, R2 #3/8, R3 #3/4, R4 #10, R5 #3/12/14/15, R6 #7/8/13/15, R7 #1/5/6/9/12/18/20; Hamilton",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 275,
  "rider_share": 0.9,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-13T17:01:43+00:00",
- "finished": "2026-09-14T08:12:31",
+ "extract": "2026-09-13T22:16:16+00:00",
+ "finished": "2026-09-14T08:18:31",
  "going": {
   "Hamilton": "Soft 6",
   "Tamworth": "Soft 5",
@@ -19,5 +19,5 @@
  },
  "scratchings": 64,
  "dashboard": "toprate_week_v2_2026-09-14.html",
- "fingerprint": "b9f814b8f3dd"
+ "fingerprint": "230df29d8c62"
 }
