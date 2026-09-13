@@ -1,27 +1,27 @@
 {
- "started": "2026-09-13T14:31:43",
+ "started": "2026-09-13T15:50:41",
  "dates": [
   "2026-09-13",
   "2026-09-14",
   "2026-09-15"
  ],
- "reason": "Dalby Good 4 -> Good 3",
+ "reason": "Kilmore Soft 5 -> Good 4; Coffs Harbour scratched R5 #8",
  "status": "ok",
  "acceptors": 555,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-12T22:16:08+00:00",
- "finished": "2026-09-13T14:33:19",
+ "finished": "2026-09-13T15:52:20",
  "going": {
   "Sale": "Good 4",
-  "Kilmore": "Soft 5",
+  "Kilmore": "Good 4",
   "Bathurst": "Soft 5",
   "Coffs Harbour": "Good 4",
   "Dalby": "Good 3",
   "Northam": "Good 4"
  },
- "scratchings": 115,
+ "scratchings": 116,
  "dashboard": "toprate_week_v2_2026-09-13.html",
- "fingerprint": "7bd1f3ad8b49"
+ "fingerprint": "a3a3c8a30a34"
 }
