@@ -1,27 +1,27 @@
 {
- "started": "2026-09-13T09:15:26",
+ "started": "2026-09-13T10:19:31",
  "dates": [
   "2026-09-13",
   "2026-09-14",
   "2026-09-15"
  ],
- "reason": "Dalby scratched R2 #6, R5 #4, R7 #2, R8 #5",
+ "reason": "Northam Soft 5 -> Good 4; Northam scratched R6 #10",
  "status": "ok",
  "acceptors": 555,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-12T22:16:08+00:00",
- "finished": "2026-09-13T09:17:01",
+ "finished": "2026-09-13T10:21:12",
  "going": {
   "Sale": "Good 4",
   "Kilmore": "Soft 5",
   "Bathurst": "Soft 5",
   "Coffs Harbour": "Soft 5",
   "Dalby": "Good 4",
-  "Northam": "Soft 5"
+  "Northam": "Good 4"
  },
- "scratchings": 114,
+ "scratchings": 115,
  "dashboard": "toprate_week_v2_2026-09-13.html",
- "fingerprint": "9270c127a93f"
+ "fingerprint": "6bc7829d8943"
 }
