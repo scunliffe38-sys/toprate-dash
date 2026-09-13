@@ -1,18 +1,18 @@
 {
- "started": "2026-09-13T10:19:31",
+ "started": "2026-09-13T10:35:56",
  "dates": [
   "2026-09-13",
   "2026-09-14",
   "2026-09-15"
  ],
- "reason": "Northam Soft 5 -> Good 4; Northam scratched R6 #10",
+ "reason": "dist_edge mirrors lead-in credit",
  "status": "ok",
  "acceptors": 555,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-12T22:16:08+00:00",
- "finished": "2026-09-13T10:21:12",
+ "finished": "2026-09-13T10:38:16",
  "going": {
   "Sale": "Good 4",
   "Kilmore": "Soft 5",
