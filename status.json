@@ -1,23 +1,23 @@
 {
- "started": "2026-09-14T17:29:04",
+ "started": "2026-09-15T05:10:56",
  "dates": [
-  "2026-09-14",
   "2026-09-15"
  ],
- "reason": "Tamworth scratched R7 #2",
+ "reason": "manual rerun after 03:00 harvest guard",
  "status": "ok",
- "acceptors": 275,
- "rider_share": 0.9,
+ "acceptors": 340,
+ "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-13T22:16:16+00:00",
- "finished": "2026-09-14T17:30:17",
+ "extract": "2026-09-14T19:10:26+00:00",
+ "finished": "2026-09-15T05:12:29",
  "going": {
-  "Corowa": "Good 4",
-  "Hamilton": "Soft 6",
-  "Tamworth": "Good 4"
+  "Wodonga": "Soft 5",
+  "Moruya": "Good 4",
+  "Wellington": "Heavy",
+  "Bowen": "Soft 5"
  },
- "scratchings": 67,
- "dashboard": "toprate_week_v2_2026-09-14.html",
- "fingerprint": "f5a82574ee38"
+ "scratchings": 73,
+ "dashboard": "toprate_week_v2_2026-09-15.html",
+ "fingerprint": "b6c8feda06a7"
 }
