@@ -1,16 +1,16 @@
 {
- "started": "2026-09-15T08:10:57",
+ "started": "2026-09-15T08:16:53",
  "dates": [
   "2026-09-15"
  ],
- "reason": "Wellington going Soft 5; Wellington scratched R1 #1/3/6/12, R2 #5, R3 #7/10/15/16/17, R4 #10/12/15, R5 #3, R6 #2/9/10/12, R7 #7; Wodonga Soft 5 -> Good 4; Wodonga scratched R2 #1/8",
+ "reason": "morning harvest",
  "status": "ok",
- "acceptors": 340,
- "rider_share": 0.87,
+ "acceptors": 270,
+ "rider_share": 0.78,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-14T19:10:26+00:00",
- "finished": "2026-09-15T08:11:37",
+ "extract": "2026-09-14T22:16:32+00:00",
+ "finished": "2026-09-15T08:18:19",
  "going": {
   "Wodonga": "Good 4",
   "Moruya": "Good 4",
@@ -19,5 +19,5 @@
  },
  "scratchings": 70,
  "dashboard": "toprate_week_v2_2026-09-15.html",
- "fingerprint": "d610e09bad64"
+ "fingerprint": "d6117adca788"
 }
