@@ -1,23 +1,23 @@
 {
- "started": "2026-09-15T13:45:26",
+ "started": "2026-09-15T14:15:23",
  "dates": [
   "2026-09-15"
  ],
- "reason": "Bowen Soft 5 -> Good 4",
+ "reason": "Wellington scratched R5 #2",
  "status": "ok",
  "acceptors": 270,
  "rider_share": 0.78,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-14T22:16:32+00:00",
- "finished": "2026-09-15T13:46:04",
+ "finished": "2026-09-15T14:16:02",
  "going": {
   "Wodonga": "Good 4",
   "Moruya": "Good 4",
   "Wellington": "Soft 6",
   "Bowen": "Good 4"
  },
- "scratchings": 70,
+ "scratchings": 71,
  "dashboard": "toprate_week_v2_2026-09-15.html",
- "fingerprint": "0c2dde13d6ff"
+ "fingerprint": "88215c43940c"
 }
