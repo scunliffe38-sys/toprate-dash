@@ -488,8 +488,12 @@ function rerate(r,cls){                       // re-rate a race under surface cl
 }
 // rating -> chance as rate_day.py does it: the sum of the adjustments, centred within the race, times each runner's own
 // fair-price slope (fairprice.py). Pages without pslope fall back to 1, which is the old flat softmax.
+// ADJ is every adjustment rate_day.py adds to the base, and must stay the same list as its `rating` line. Until 16 Sep 2026 this
+// sum was written out by hand and stopped at speed, so from the 15 Sep 23:10 deploys Best rating, Stable change and Sire fell out
+// of any race re-rated here (a debutant's price on every live poll, or a going switch). tpx is not in it: it sits inside firstup.
+const ADJ=['form','firstup','conn','cond','bar_adj','shape','spell','arc','track','speed','plc','best','stab','sire','debmkt'];
 function reprice(r,k){
-  r.runners.forEach(x=>{x.rating=+(x.wprbase+x.form+x.firstup+x.conn+x.cond+(x.bar_adj||0)+(x.shape||0)+(x.spell||0)+(x.arc||0)+(x.track||0)+(x.speed||0)+(x.debmkt||0)).toFixed(1);});
+  r.runners.forEach(x=>{x.rating=+(x.wprbase+ADJ.reduce((a,c)=>a+(x[c]||0),0)).toFixed(1);});
   const mean=r.runners.reduce((a,x)=>a+x.rating,0)/r.runners.length;
   const e=r.runners.map(x=>Math.exp(k*(x.pslope??1)*(x.rating-mean))); const z=e.reduce((a,b)=>a+b,0);
   r.runners.forEach((x,i)=>{x.pct=+(100*e[i]/z).toFixed(1); x.fair=+(z/e[i]).toFixed(2);});
