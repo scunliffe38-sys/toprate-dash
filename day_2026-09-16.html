@@ -165,7 +165,9 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .adjsum .ar{color:var(--faint)}
 .adjsum .net.p{color:var(--pos)} .adjsum .net.g{color:var(--neg)} .adjsum .net.f{color:var(--faint)}
 /* the seven, left to right, biggest first */
-.adjr{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:0 14px}
+.adjr{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px 14px}
+.adjr .w .sub{display:block;margin-top:1px}
+.adjr .w .sub em{font-style:normal;color:var(--dim)}
 .adjr>div{border-top:1px solid var(--rule);padding:7px 0 0;min-width:0}
 .adjr .n{color:var(--dim);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .adjr .v{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;font-size:19px;font-weight:600;line-height:1.2}
@@ -527,10 +529,24 @@ window.setSurfMeet=cls=>{M().races.forEach(r=>rerate(r,cls)); open=null; draw();
 // against its own level, and its record here against everywhere.
 // Speed joined on 15 Sep 2026, after Track: the vendor's sectional speed over the horse's last ten runs against the field.
 // Debut price joined on 15 Sep 2026, beside Trials and shown for debutants only: the market speaking for a horse with no form.
-const FXK=['bar_adj','shape','cond','form','track','speed','spell','arc','firstup','debmkt','conn'];
-const FXT={bar_adj:'Barrier', shape:'Shape', cond:'Going', form:'Distance', track:'Track', speed:'Speed',
-           spell:'Spell', arc:'Exposure', firstup:'Trials', debmkt:'Debut price', conn:'Trainer &amp; Jockey'};
-const fxv=x=>FXK.filter(k=>k!=='debmkt'||x.dfu).map(k=>[k,x[k]??0]);
+// Simon's groups, 16 Sep 2026, in his order: Debutant Price, Connections, Exposure, Trials and JOs, Spell length, Speed Map (race
+// shape and barrier together), Track, Distance, Going, Sectional Speed, Other (everything else). A group's value is the sum of its
+// parts, and every part in ADJ sits in exactly one group, so the groups still add up to Adjusted − Base.
+const FXG=[
+  {k:'debmkt', t:'Debutant Price',  parts:['debmkt'], only:x=>!!x.dfu},
+  {k:'conn',   t:'Connections',     parts:['conn']},
+  {k:'arc',    t:'Exposure',        parts:['arc']},
+  {k:'firstup',t:'Trials and JOs',  parts:['firstup']},
+  {k:'spell',  t:'Spell length',    parts:['spell']},
+  {k:'map',    t:'Speed Map',       parts:['shape','bar_adj']},
+  {k:'track',  t:'Track',           parts:['track']},
+  {k:'form',   t:'Distance',        parts:['form']},
+  {k:'cond',   t:'Going',           parts:['cond']},
+  {k:'speed',  t:'Sectional Speed', parts:['speed']},
+  {k:'other',  t:'Other',           parts:['best','sire','stab','plc']}];
+const FXP={shape:'Shape', bar_adj:'Barrier', best:'Best rating', sire:'Sire', stab:'Stable change', plc:'Placings'};
+{ const lost=ADJ.filter(c=>FXG.filter(g=>g.parts.includes(c)).length!==1); if(lost.length) console.warn('FXG: not in exactly one group',lost); }
+const fxv=x=>FXG.filter(g=>!g.only||g.only(x)).map(g=>[g,g.parts.reduce((a,c)=>a+(x[c]||0),0)]);
 const fxsign=v=>(v>0?'+':'−')+Math.abs(v).toFixed(1);
 // the shorthand: how far the horse moves off its base. Which factors did it is a click away.
 function adjCell(x){
@@ -554,8 +570,20 @@ function fxLedger(x,r){
       +(x.lastfin==null?' · first start':` · ${x.lastfin===1?'won':'ran '+x.lastfin} last time`)
       +(x.days!=null&&x.days>=366?' · a year off':'')
       +(x.lastdist!=null&&r.dist!=null&&x.lastdist-r.dist>=400?` · down from ${x.lastdist}m`:''),
-    firstup:x.seg==='debut'?`debut point${x.tapply?` · trial ${x.tpos} of ${x.tfield}, ${x.tdays}d ago`:', no trial'}`
-      :(x.tapply?`trial ${x.tpos} of ${x.tfield}, ${x.tdays}d ago`:`${x.seg} · no recent trial used`),
+    firstup:(x.seg==='debut'?`debut point${x.tapply?` · trial ${x.tpos} of ${x.tfield}, ${x.tdays}d ago`:', no trial'}`
+      :(x.tapply?`trial ${x.tpos} of ${x.tfield}, ${x.tdays}d ago`:`${x.seg} · no recent trial used`))
+      +(x.tpx!=null&&Math.abs(x.tpx)>=0.005?` · trials and JOs in 28 days, venue quality ${sg(x.tpx)}`:''),
+    // Other's parts. The inputs (bestr, trprev, trop, trdp, sirep, siren) arrive with rate_day.py's 17 Sep deploy; until then the
+    // generic wording, never a wrong "none"
+    // all three are centred on the race, so a horse with nothing of its own still moves when others in the race have something:
+    // every note ends "against the field"
+    best:(x.bestr===undefined?'its best figure near this trip in two years'
+      :(x.bestr==null?(x.starts?'no run near this trip in two years':'no runs yet'):`best ${x.bestr.toFixed(1)} within 15% of ${r.dist}m in two years`))+' · against the field',
+    sire:(x.sirep===undefined?'its sire\'s progeny strike, counting less as its own starts grow'
+      :(x.sirep==null?(x.starts?'sire not known':'no past run to carry a sire'):`progeny ${x.sirep.toFixed(1)}% on ${x.siren} starts · counts less as its own ${x.starts} start${x.starts===1?'':'s'} grow`))+' · against the field',
+    stab:(x.trprev===undefined?'whether this is a first run for a new stable, and how good both stables are'
+      :(x.trprev==null?'same stable as its last start':`first run from ${x.trprev}${x.trop!=null?` (${x.trop.toFixed(1)}%)`:''} to ${x.trainer}${x.trdp!=null?` (${x.trdp.toFixed(1)}%)`:''}, 365-day strike`))+' · against the field',
+    plc:'past placings',
     debmkt:x.sp>1&&x.debmkt!==0?`$${x.sp.toFixed(2)} against the field · no form, so the market speaks for it`:'waiting for every runner to be priced',
     conn:`jockey ${x.jsr===null?'—':x.jsr.toFixed(1)+'%'} · trainer ${x.tsr===null?'—':x.tsr.toFixed(1)+'%'}, career to date${x.dcx?' · weighted up on a debutant':''}`,
     cond:x.condc?`on ${SURF[r.surf_now||r.surf]||'—'} · dry ${pc(x.condc.dry)} soft ${pc(x.condc.soft)} wet ${pc(x.condc.wet)} hvy ${pc(x.condc.heavy)} synth ${pc(x.condc.synth)}`
@@ -570,8 +598,11 @@ function fxLedger(x,r){
     +`<span class="net ${ncls}">${Math.abs(net)<0.05?'level':(net>0?'up':'down')+' '+Math.abs(net).toFixed(1)} on today's factors</span>`
     +`<span class="ar">· base is ${x.unrated?'the field average, no rated history':`its last 10 runs weighted to recent${x.bsrc==='archive'?', history from earlier nominations':''}`}</span>`
     +`</div>`;
-  const cells=fxv(x)                                               // fixed order, see FXK
-    .map(([k,v])=>`<div><div class="n">${FXT[k]}</div><div class="v ${Math.abs(v)<0.005?'f':(v>0?'p':'g')}">${sg(v)}</div><div class="w">${note[k]}</div></div>`)
+  // a one-part group carries its part's note; a group of several lists each part, signed, with its own note
+  const sub=c=>`<span class="sub"><em>${FXP[c]}</em> ${sg(x[c]||0)} · ${note[c]}</span>`;
+  const gnote=g=>g.parts.length===1?note[g.parts[0]]:g.parts.filter(c=>c!=='plc'||Math.abs(x.plc||0)>=0.005).map(sub).join('');
+  const cells=fxv(x)                                               // fixed order, see FXG
+    .map(([g,v])=>`<div><div class="n">${g.t}</div><div class="v ${Math.abs(v)<0.005?'f':(v>0?'p':'g')}">${sg(v)}</div><div class="w">${gnote(g)}</div></div>`)
     .join('');
   return sum+`<div class="adjr">${cells}</div>`;
 }
