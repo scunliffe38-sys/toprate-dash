@@ -1,23 +1,23 @@
 {
- "started": "2026-09-15T08:16:53",
+ "started": "2026-09-15T13:30:27",
  "dates": [
   "2026-09-15"
  ],
- "reason": "morning harvest",
+ "reason": "Wellington Soft 5 -> Soft 6",
  "status": "ok",
  "acceptors": 270,
  "rider_share": 0.78,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-14T22:16:32+00:00",
- "finished": "2026-09-15T08:18:19",
+ "finished": "2026-09-15T13:31:07",
  "going": {
   "Wodonga": "Good 4",
   "Moruya": "Good 4",
-  "Wellington": "Soft 5",
+  "Wellington": "Soft 6",
   "Bowen": "Soft 5"
  },
  "scratchings": 70,
  "dashboard": "toprate_week_v2_2026-09-15.html",
- "fingerprint": "d6117adca788"
+ "fingerprint": "f27939778db5"
 }
