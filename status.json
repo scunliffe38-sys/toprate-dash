@@ -1,16 +1,16 @@
 {
- "started": "2026-09-16T14:45:31",
+ "started": "2026-09-16T15:30:35",
  "dates": [
   "2026-09-16"
  ],
- "reason": "Doomben scratched R3 #2",
+ "reason": "Canterbury scratched R4 #10",
  "status": "ok",
  "acceptors": 544,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-15T22:15:58+00:00",
- "finished": "2026-09-16T14:46:23",
+ "finished": "2026-09-16T15:31:28",
  "going": {
   "Caulfield": "Good 4",
   "Canterbury": "Good 4",
@@ -19,7 +19,7 @@
   "Belmont Park": "Good 4",
   "Launceston": "Soft 5"
  },
- "scratchings": 100,
+ "scratchings": 101,
  "dashboard": "toprate_week_v2_2026-09-16.html",
- "fingerprint": "3bcdddc74f57"
+ "fingerprint": "38a0736667d5"
 }
