@@ -1,25 +1,26 @@
 {
- "started": "2026-09-16T17:45:30",
+ "started": "2026-09-17T03:02:06",
  "dates": [
-  "2026-09-16"
+  "2026-09-17",
+  "2026-09-18",
+  "2026-09-19",
+  "2026-09-20"
  ],
- "reason": "Launceston Soft 5 -> Good 4",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 544,
- "rider_share": 0.92,
+ "acceptors": 440,
+ "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-15T22:15:58+00:00",
- "finished": "2026-09-16T17:46:25",
+ "extract": "2026-09-16T17:01:38+00:00",
+ "finished": "2026-09-17T03:07:42",
  "going": {
-  "Belmont Park": "Good 4",
-  "Launceston": "Good 4",
-  "Caulfield": "Good 4",
-  "Canterbury": "Good 4",
-  "Doomben": "Good 4",
-  "Balaklava": "Good 4"
+  "Mornington": "Good 4",
+  "Illawarra Grange": "Good 4",
+  "Beaudesert": "Good 4",
+  "Bunbury": "Good 4"
  },
- "scratchings": 101,
- "dashboard": "toprate_week_v2_2026-09-16.html",
- "fingerprint": "31021f2c2ef4"
+ "scratchings": 47,
+ "dashboard": "toprate_week_v2_2026-09-17.html",
+ "fingerprint": "fed56a8e3056"
 }
