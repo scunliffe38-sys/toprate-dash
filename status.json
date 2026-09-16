@@ -1,25 +1,25 @@
 {
- "started": "2026-09-16T08:16:20",
+ "started": "2026-09-16T10:00:33",
  "dates": [
   "2026-09-16"
  ],
- "reason": "morning harvest",
+ "reason": "Launceston scratched R2 #13/14",
  "status": "ok",
  "acceptors": 544,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-15T22:15:58+00:00",
- "finished": "2026-09-16T08:18:09",
+ "finished": "2026-09-16T10:01:33",
  "going": {
   "Caulfield Heath": "Good 4",
   "Canterbury": "Good 4",
-  "Doomben": "Soft 5",
+  "Doomben": "Good 4",
   "Balaklava": "Soft 5",
   "Belmont Park": "Soft",
   "Launceston": "Soft 5"
  },
- "scratchings": 49,
+ "scratchings": 99,
  "dashboard": "toprate_week_v2_2026-09-16.html",
- "fingerprint": "8e2c784b1959"
+ "fingerprint": "f99dfc388a03"
 }
