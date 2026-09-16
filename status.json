@@ -1,18 +1,18 @@
 {
- "started": "2026-09-16T11:30:30",
+ "started": "2026-09-16T13:36:40",
  "dates": [
   "2026-09-16"
  ],
- "reason": "Balaklava Soft 5 -> Good 4",
+ "reason": "track alias fix: Caulfield scratchings were filed under Caulfield Heath",
  "status": "ok",
  "acceptors": 544,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-15T22:15:58+00:00",
- "finished": "2026-09-16T11:31:25",
+ "finished": "2026-09-16T13:38:32",
  "going": {
-  "Caulfield Heath": "Good 4",
+  "Caulfield": "Good 4",
   "Canterbury": "Good 4",
   "Doomben": "Good 4",
   "Balaklava": "Good 4",
@@ -21,5 +21,5 @@
  },
  "scratchings": 99,
  "dashboard": "toprate_week_v2_2026-09-16.html",
- "fingerprint": "9d43380fcb16"
+ "fingerprint": "74bb4952573b"
 }
