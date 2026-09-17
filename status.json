@@ -1,26 +1,26 @@
 {
- "started": "2026-09-17T12:15:30",
+ "started": "2026-09-17T14:30:29",
  "dates": [
   "2026-09-17",
   "2026-09-18",
   "2026-09-19",
   "2026-09-20"
  ],
- "reason": "Mornington scratched R2 #1",
+ "reason": "Illawarra Grange scratched R2 #3; Beaudesert scratched R6 #14",
  "status": "ok",
  "acceptors": 440,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-16T22:17:01+00:00",
- "finished": "2026-09-17T12:20:50",
+ "finished": "2026-09-17T14:36:12",
  "going": {
   "Mornington": "Good 4",
   "Illawarra Grange": "Good 4",
   "Beaudesert": "Good 4",
   "Bunbury": "Good 4"
  },
- "scratchings": 103,
+ "scratchings": 105,
  "dashboard": "toprate_week_v2_2026-09-17.html",
- "fingerprint": "4c9f90c241e4"
+ "fingerprint": "67c874174a7c"
 }
