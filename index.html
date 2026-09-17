@@ -505,6 +505,19 @@ function reprice(r,k){
 // quarters priced, adds debut.with_price.mk_pts per unit of -log price against the priced runners' mean, and its debut point and
 // stable weight switch to the priced set; otherwise the unpriced set. live.json lists priced runners only, so a scratched runner
 // simply drops out of the mean. Re-read on every live.json poll, the same rule rate_day.py applies at 03:00.
+// First starters (Simon, 18 Sep 2026): a bare NO RATING tag said nothing. The tag now names the two things a first
+// starter's estimate is actually made of: the read of its trials and whether the market is with it.
+//   Trials  the most recent trial or jump-out inside the window, the same event the rating's trial term reads (tpos of tfield).
+//           Good = won it, or ran second in a field of five or more; Avg = the front half; Poor = the back half.
+//   Market  debmkt is the debutant price term, re-read on every live poll: positive when the horse is shorter than the priced
+//           field's mean price. "Mkt Support" needs two points of it, about a fifth shorter than that mean, so a debutant priced
+//           with the pack is not called supported.
+function debutTag(x){
+  let t='No Trial';
+  if(x.tapply&&x.tpos>0&&x.tfield>1){const rf=(x.tpos-1)/(x.tfield-1); t=rf<=0.25?'Good Trials':rf<=0.6?'Avg Trials':'Poor Trials';}
+  const m=(x.sp>1&&x.debmkt!==0)?(x.debmkt>=2?'Mkt Support':'No Mkt Support'):'Unpriced';
+  return `1st Start · ${t} & ${m}`;
+}
 function debutPrice(r,d){
   if(!d.debut||!r.runners.some(x=>x.dfu)) return;
   const pr=r.runners.filter(x=>x.sp>1); const ok=pr.length>=0.75*r.runners.length;
@@ -899,7 +912,8 @@ function drawRace(){
     ${r.surf?`&nbsp;·&nbsp; rate as <select class="surf" onchange="setSurf(this.value)">${(SURF[r.surf_now||r.surf]?'':'<option value="" selected>going not posted — no conditions factor</option>')}${Object.keys(SURF).map(c=>`<option value="${c}" ${(r.surf_now||r.surf)===c?'selected':''}>${SURF[c]}</option>`).join('')}</select><button class="surfall" onclick="setSurfMeet(document.querySelector('select.surf').value)" title="apply this surface to every race at the meeting">all races</button>${(r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''}`:''}</div>${replay}</div>`;
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
   if(r.unrated) h+=`<p class="flag"><b>${r.unrated}</b> of ${r.n} runners have no rated runs. They start from the field average of
-    ${r.fieldmean.toFixed(1)}, then take the debut mark-down plus whatever their most recent trial says. Treat those ratings as an estimate.</p>`;
+    ${r.fieldmean.toFixed(1)}, then take the debut mark-down, the read of their most recent trial and, once the race is priced, their price against the field.
+    The tag on each says what that estimate is made of. Treat those ratings as an estimate.</p>`;
   h+=speedMap(r);
   h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="l5h">Last 5</th><th class="r" title="our base: last 10 runs weighted to recent, shockers forgiven, wide runs credited">Base</th>
     <th class="r" title="How far today's factors move the horse off its base. Click a runner for the seven that make it up.">Adjust</th>
@@ -910,7 +924,7 @@ function drawRace(){
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
       <td class="tab">${x.no}</td>
-      <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}${x.unrated?' <span class="tagu">NO RATING</span>':''}</div>
+      <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}${x.unrated?` <span class="tagu">${debutTag(x)}</span>`:''}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="l5">${l5cell(x)}</td>
@@ -1152,4 +1166,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 18 Sep 09:06</b> AEST &middot; morning harvest</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 18 Sep 09:42</b> AEST &middot; first-starter tag on the dash (ratings from 09:06)</div><div style="height:34px"></div></body></html>
