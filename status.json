@@ -1,26 +1,25 @@
 {
- "started": "2026-09-17T16:00:22",
+ "started": "2026-09-18T08:46:32",
  "dates": [
-  "2026-09-17",
   "2026-09-18",
   "2026-09-19",
   "2026-09-20"
  ],
- "reason": "Beaudesert scratched R8 #2",
+ "reason": "morning harvest",
  "status": "ok",
- "acceptors": 440,
- "rider_share": 0.89,
+ "acceptors": 442,
+ "rider_share": 0.9,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-16T22:17:01+00:00",
- "finished": "2026-09-17T16:05:40",
+ "extract": "2026-09-17T22:46:06+00:00",
+ "finished": "2026-09-18T09:06:30",
  "going": {
-  "Mornington": "Good 4",
-  "Illawarra Grange": "Good 4",
-  "Beaudesert": "Good 3",
-  "Bunbury": "Good 4"
+  "Ballarat": "Good 4",
+  "Newcastle": "Good 4",
+  "Townsville": "Soft 5",
+  "Canberra": "Good 4"
  },
- "scratchings": 106,
- "dashboard": "toprate_week_v2_2026-09-17.html",
- "fingerprint": "1abb32b423a1"
+ "scratchings": 86,
+ "dashboard": "toprate_week_v2_2026-09-18.html",
+ "fingerprint": "50e123cdc9d7"
 }
