@@ -8,7 +8,7 @@
   color-scheme:light;
   --ink:#F7F6F3; --panel:#FFFFFF; --panel2:#EDEBE5; --rule:#DCD7CD;
   --text:#1A1F24; --dim:#586269; --faint:#8A939A;
-  --pos:#2E7150; --neg:#A63350; --brass:#8A6A12; --flat:#C2BEB5; --cond:#27608C;
+  --pos:#2E7150; --neg:#A63350; --amber:#B8741A; --brass:#8A6A12; --flat:#C2BEB5; --cond:#27608C;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--text);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -83,6 +83,12 @@ tbody tr.run:focus-visible,tbody tr.srow:focus-visible{outline:2px solid var(--b
 .replay:hover{background:var(--cond);color:var(--ink)}
 @media(max-width:720px){.replay{margin-left:0}}
 nav button .cd.st{text-transform:uppercase;letter-spacing:.04em;font-size:10px}
+/* the first-starter tag (Simon, 18 Sep 2026): under the last-5 tokens, wrapping to a second row if it must.
+   Green when both trials and market are with it, red when neither is, orange for one of the two. */
+.tagd{flex:0 0 100%;margin-top:4px;max-width:136px;box-sizing:border-box;border:1px solid;border-radius:2px;padding:1px 4px;
+  font-family:"Archivo Narrow",sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.03em;line-height:1.25;white-space:normal}
+.tagd.g{border-color:var(--pos);color:var(--pos)} .tagd.o{border-color:var(--amber);color:var(--amber)} .tagd.r{border-color:var(--neg);color:var(--neg)}
+.l5:has(.tagd){flex-wrap:wrap;display:flex;letter-spacing:0;gap:2px 5px;align-items:flex-start}
 .tagu{border:1px solid var(--brass);color:var(--brass);border-radius:2px;font-size:9.5px;font-family:"Archivo Narrow",sans-serif;font-weight:600;padding:1px 4px;letter-spacing:.03em;white-space:nowrap}
 .tagv.gold{border-color:var(--brass);color:var(--brass)}
 .tagv{border:1px solid var(--pos);color:var(--pos);border-radius:2px;font-size:9.5px;font-family:"Archivo Narrow",sans-serif;font-weight:600;padding:1px 4px;white-space:nowrap}
@@ -513,10 +519,12 @@ function reprice(r,k){
 //           field's mean price. "Mkt Support" needs two points of it, about a fifth shorter than that mean, so a debutant priced
 //           with the pack is not called supported.
 function debutTag(x){
-  let t='No Trial';
-  if(x.tapply&&x.tpos>0&&x.tfield>1){const rf=(x.tpos-1)/(x.tfield-1); t=rf<=0.25?'Good Trials':rf<=0.6?'Avg Trials':'Poor Trials';}
-  const m=(x.sp>1&&x.debmkt!==0)?(x.debmkt>=2?'Mkt Support':'No Mkt Support'):'Unpriced';
-  return `1st Start · ${t} & ${m}`;
+  let t='No Trial', tg=false;
+  if(x.tapply&&x.tpos>0&&x.tfield>1){const rf=(x.tpos-1)/(x.tfield-1); tg=rf<=0.25; t=tg?'Good Trials':rf<=0.6?'Avg Trials':'Poor Trials';}
+  const priced=x.sp>1&&x.debmkt!==0, mg=priced&&x.debmkt>=2;
+  const m=priced?(mg?'Mkt Support':'No Mkt Support'):'Unpriced';
+  const n=(tg?1:0)+(mg?1:0);                       // 2 green, 1 orange, 0 red; unpriced counts as no support
+  return {text:`1st Start \u00b7 ${t} & ${m}`, cls:n===2?'g':n===1?'o':'r'};
 }
 function debutPrice(r,d){
   if(!d.debut||!r.runners.some(x=>x.dfu)) return;
@@ -924,10 +932,10 @@ function drawRace(){
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
       <td class="tab">${x.no}</td>
-      <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}${x.unrated?` <span class="tagu">${debutTag(x)}</span>`:''}</div>
+      <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
-      <td class="l5">${l5cell(x)}</td>
+      <td class="l5">${l5cell(x)}${x.unrated?(()=>{const g=debutTag(x);return `<div class="tagd ${g.cls}">${g.text}</div>`;})():''}</td>
       <td class="abil${x.unrated?' est':''}">${x.wprbase.toFixed(1)}</td>
       ${adjCell(x)}
       <td class="rate key">${x.rating.toFixed(1)}</td>
@@ -1166,4 +1174,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 18 Sep 10:16</b> AEST &middot; Townsville scratched R8 #6</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 18 Sep 11:33</b> AEST &middot; first-starter tag coloured (ratings from 10:16)</div><div style="height:34px"></div></body></html>
