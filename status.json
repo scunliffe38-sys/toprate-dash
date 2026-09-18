@@ -1,25 +1,25 @@
 {
- "started": "2026-09-18T10:00:27",
+ "started": "2026-09-18T13:30:29",
  "dates": [
   "2026-09-18",
   "2026-09-19",
   "2026-09-20"
  ],
- "reason": "Townsville scratched R8 #6",
+ "reason": "Canberra scratched R2 #5",
  "status": "ok",
  "acceptors": 442,
  "rider_share": 0.9,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-17T22:46:06+00:00",
- "finished": "2026-09-18T10:16:32",
+ "finished": "2026-09-18T13:45:12",
  "going": {
   "Ballarat": "Good 4",
   "Newcastle": "Good 4",
   "Townsville": "Soft 5",
   "Canberra": "Good 4"
  },
- "scratchings": 87,
+ "scratchings": 88,
  "dashboard": "toprate_week_v2_2026-09-18.html",
- "fingerprint": "840a46fb1067"
+ "fingerprint": "7a58a93a75bf"
 }
