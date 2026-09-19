@@ -1,34 +1,20 @@
 {
- "started": "2026-09-19T17:30:36",
+ "started": "2026-09-19T22:07:29",
  "dates": [
-  "2026-09-19",
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Randwick scratched R10 #10",
+ "reason": "live vision in the dock",
  "status": "ok",
- "acceptors": 1509,
- "rider_share": 0.88,
+ "acceptors": 659,
+ "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-18T22:19:05+00:00",
- "finished": "2026-09-19T17:50:23",
- "going": {
-  "Caulfield": "Good 3",
-  "Gold Coast": "Good 3",
-  "Morphettville": "Good 4",
-  "Belmont Park": "Soft 5",
-  "Fannie Bay": "Good",
-  "Randwick": "Good 4",
-  "Eagle Farm": "Good 4",
-  "Echuca": "Good 4",
-  "Newcastle": "Good 4",
-  "Wagga": "Good 4",
-  "Bowraville": "Good 3",
-  "Mount Magnet": "Good"
- },
- "scratchings": 241,
- "dashboard": "toprate_week_v2_2026-09-19.html",
- "fingerprint": "233098a2531b"
+ "finished": "2026-09-19T22:35:15",
+ "going": {},
+ "scratchings": 0,
+ "dashboard": "toprate_week_v2_2026-09-20.html",
+ "fingerprint": "2fd9691c1f1f"
 }
