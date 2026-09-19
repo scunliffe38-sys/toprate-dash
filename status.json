@@ -1,20 +1,29 @@
 {
- "started": "2026-09-19T22:07:29",
+ "started": "2026-09-20T03:06:41",
  "dates": [
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "live vision in the dock",
+ "reason": "overnight harvest",
  "status": "ok",
  "acceptors": 659,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-18T22:19:05+00:00",
- "finished": "2026-09-19T22:35:15",
- "going": {},
- "scratchings": 0,
+ "extract": "2026-09-19T17:06:04+00:00",
+ "finished": "2026-09-20T03:25:25",
+ "going": {
+  "Bendigo": "Good 4",
+  "Bairnsdale": "Good 4",
+  "Armidale": "Good 4",
+  "Nowra": "Good 4",
+  "Sunshine Coast": "Soft 5",
+  "Mount Gambier": "Soft 6",
+  "Kalgoorlie": "Good 4",
+  "Pioneer Park": "Synthetic"
+ },
+ "scratchings": 62,
  "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "2fd9691c1f1f"
+ "fingerprint": "8694b6995a4e"
 }
