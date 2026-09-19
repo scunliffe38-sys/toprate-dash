@@ -1,18 +1,18 @@
 {
- "started": "2026-09-20T03:06:41",
+ "started": "2026-09-20T08:19:19",
  "dates": [
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 659,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-19T17:06:04+00:00",
- "finished": "2026-09-20T03:25:25",
+ "extract": "2026-09-19T22:18:46+00:00",
+ "finished": "2026-09-20T08:38:04",
  "going": {
   "Bendigo": "Good 4",
   "Bairnsdale": "Good 4",
@@ -25,5 +25,5 @@
  },
  "scratchings": 62,
  "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "8694b6995a4e"
+ "fingerprint": "5a5f37d4a2de"
 }
