@@ -1,19 +1,19 @@
 {
- "started": "2026-09-19T11:31:28",
+ "started": "2026-09-19T12:01:28",
  "dates": [
   "2026-09-19",
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Eagle Farm Soft 5 -> Good 4",
+ "reason": "Caulfield scratched R3 #5",
  "status": "ok",
  "acceptors": 1509,
  "rider_share": 0.88,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-18T22:19:05+00:00",
- "finished": "2026-09-19T11:58:19",
+ "finished": "2026-09-19T12:28:23",
  "going": {
   "Caulfield": "Good 4",
   "Randwick": "Good 4",
@@ -28,7 +28,7 @@
   "Fannie Bay": "Good",
   "Mount Magnet": "Good"
  },
- "scratchings": 233,
+ "scratchings": 234,
  "dashboard": "toprate_week_v2_2026-09-19.html",
- "fingerprint": "c42cce0de5d0"
+ "fingerprint": "0d00d99f88a4"
 }
