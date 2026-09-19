@@ -1,23 +1,23 @@
 {
- "started": "2026-09-19T15:00:49",
+ "started": "2026-09-19T15:31:09",
  "dates": [
   "2026-09-19",
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Gold Coast scratched R5 #1",
+ "reason": "Gold Coast Good 4 -> Good 3; Caulfield Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 1509,
  "rider_share": 0.88,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-18T22:19:05+00:00",
- "finished": "2026-09-19T15:22:57",
+ "finished": "2026-09-19T15:52:37",
  "going": {
-  "Caulfield": "Good 4",
+  "Caulfield": "Good 3",
   "Randwick": "Good 4",
-  "Gold Coast": "Good 4",
+  "Gold Coast": "Good 3",
   "Eagle Farm": "Good 4",
   "Morphettville": "Good 4",
   "Belmont Park": "Soft 5",
@@ -30,5 +30,5 @@
  },
  "scratchings": 240,
  "dashboard": "toprate_week_v2_2026-09-19.html",
- "fingerprint": "e47e9d1544a6"
+ "fingerprint": "fe546d8e69d2"
 }
