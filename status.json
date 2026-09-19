@@ -1,19 +1,19 @@
 {
- "started": "2026-09-19T14:01:05",
+ "started": "2026-09-19T15:00:49",
  "dates": [
   "2026-09-19",
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Caulfield scratched R4 #13; Eagle Farm scratched R3 #7",
+ "reason": "Gold Coast scratched R5 #1",
  "status": "ok",
  "acceptors": 1509,
  "rider_share": 0.88,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-18T22:19:05+00:00",
- "finished": "2026-09-19T14:22:50",
+ "finished": "2026-09-19T15:22:57",
  "going": {
   "Caulfield": "Good 4",
   "Randwick": "Good 4",
@@ -28,7 +28,7 @@
   "Fannie Bay": "Good",
   "Mount Magnet": "Good"
  },
- "scratchings": 239,
+ "scratchings": 240,
  "dashboard": "toprate_week_v2_2026-09-19.html",
- "fingerprint": "5815167e7360"
+ "fingerprint": "e47e9d1544a6"
 }
