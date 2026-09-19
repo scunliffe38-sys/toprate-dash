@@ -145,7 +145,9 @@ a.l5b:hover:after,a.l5b:focus:after{opacity:1}
 .seg button:first-child{border-left:0}
 .seg button:hover{color:var(--text)}
 .seg button[aria-pressed=true]{background:var(--panel2);color:var(--brass);font-weight:600}
-.daytab .why{color:var(--dim);font-size:12.5px;line-height:1.45;max-width:480px}
+/* Simon, 19 Sep 2026: a gap of GAP_BIG points or more over the next horse lights the row, on Today and on the meeting summary */
+.daytab tr.big td,.sumtab tr.big td{background:rgba(154,122,26,.10)}
+.edge.big{color:var(--brass);font-weight:700;font-size:16px}
 .res.un{border:1px solid var(--faint);color:var(--faint);font-weight:500}
 .abil{font-family:"Archivo Narrow",sans-serif;font-size:17px;text-align:right;width:56px;color:var(--dim)}
 .abil.est{color:var(--faint);font-style:italic}
@@ -307,16 +309,16 @@ th:has(.mkt-fresh){white-space:nowrap}
    down the field, so a phone drops columns rather than re-flowing each runner
    into a card. Nothing dropped is lost -- base, every adjustment and the total
    are all in the opened row, one tap away. Order of sacrifice, least useful
-   first: Base and Lengths (both read straight off Adjusted), then the barrier,
-   then the net Adjust, then the silks. Tab number, runner, last 5, adjusted
-   rating, our price and the market survive to the narrowest width. */
+   first: Base (it is read straight off Adjusted), then the barrier, then the
+   net Adjust, then the silks. Tab number, runner, last 5, adjusted rating,
+   LENGTHS, our price and the market survive to the narrowest width.
+   Simon, 19 Sep 2026, on the phone: "just the adjusted and Lengths is most
+   important" -- so Lengths keeps its place beside Adjusted and Base gives way
+   instead, and the gold key band still closes around the pair. */
 @media(max-width:860px){
   .wrap{padding:14px 14px 60px}
   table{min-width:640px}
-  .rtab th:nth-child(5),.rtab td.abil,
-  .rtab th:nth-child(8),.rtab td.lens{display:none}
-  /* the gold key band loses its right-hand edge with Lengths gone: put it back on Adjusted */
-  .rtab td.key,.rtab th.key{box-shadow:inset 1px 0 0 rgba(154,122,26,.42),inset -1px 0 0 rgba(154,122,26,.42)}
+  .rtab th:nth-child(5),.rtab td.abil{display:none}
   .sumtab th:nth-child(5),.sumtab td.edge{display:none}
 }
 @media(max-width:720px){
@@ -326,7 +328,6 @@ th:has(.mkt-fresh){white-space:nowrap}
   .sumtab th:nth-child(2),.sumtab td:nth-child(2),
   .sumtab th:nth-child(8),.sumtab td:nth-child(8){display:none}
   .daytab th:nth-child(1),.daytab td:nth-child(1){display:none}
-  .daytab .why{font-size:12px;line-height:1.4}
   .horse{flex-wrap:wrap;gap:3px 8px;min-width:0}
   .detail td{padding:12px 10px 14px}
   .rhead h2{font-size:20px}
@@ -339,13 +340,16 @@ th:has(.mkt-fresh){white-space:nowrap}
 }
 @media(max-width:560px){
   .rtab th:nth-child(6),.rtab td.adj{display:none}
-  .daytab th:nth-child(4),.daytab td.why{display:none}
+  .daytab th:nth-child(6),.daytab td:nth-child(6){display:none}   /* Model: the Mkt highlight carries the comparison on a phone */
   .horse{font-size:13.5px}
   .l5{width:auto} .l5b{font-size:13px}
   .rate{font-size:19px;width:52px}
   .abil{font-size:15px;width:48px}
   .price{font-size:13.5px;width:52px}
-  .lens{padding-left:6px;padding-right:6px}
+  .lens{font-size:15px;width:50px;padding-left:6px;padding-right:6px}
+  /* Lengths rides at every width now, so the field table buys its room back from the
+     gaps rather than scrolling sideways: seven columns x 4px a side. */
+  .rtab th,.rtab td{padding-left:4px;padding-right:4px}
   .rhead h2{font-size:18px} .rhead .meta{font-size:12px}
   .mtabs button{min-width:104px;padding:7px 11px}
   /* The market column's freshness stamp wraps "122% / Mkt / . 6m ago" onto a third
@@ -365,6 +369,11 @@ th:has(.mkt-fresh){white-space:nowrap}
 @media(max-width:420px){
   .wrap{padding:12px 10px 60px}
   .silk{display:none}
+  /* Carrying Lengths costs a column and the field table runs a little past a narrow
+     phone because of it -- about 30px at 360, 3px at 390. Simon, 19 Sep 2026: "keep our
+     price on the phone, i'd rather scroll". So nothing further is dropped and .scroll
+     takes it. The swipe handler knows: it hands a sideways drag to the table until the
+     table has no room left, and only then changes race. */
   th{font-size:10.5px;padding:0 4px 6px} td{padding:8px 4px}
   .tab{font-size:13.5px;width:22px}
   .horse{font-size:13px}
@@ -688,9 +697,9 @@ function silk(x){
 // on 2024-25, and it lands between 1.11 and 1.14 at every field size, so one number
 // does the job. k=1 is the old behaviour. Betfair SP cannot be used here: it does
 // not exist until the race has been run.
-// Since 1b7ef1c took the value rule off the page this has exactly ONE live caller,
-// the whyPick wording, and flags nothing. It stays correct anyway, and it stays in
-// step with ledger.py's MKT_K, so that a value rule coming back finds them agreeing.
+// Since 1b7ef1c took the value rule off the page this flags nothing, and since 19 Sep 2026
+// (the Why column replaced by Rating and Gap) it has no caller. It stays correct anyway, and
+// in step with ledger.py's MKT_K, so that a value rule coming back finds them agreeing.
 const MKT_K=1.12;
 function mktp(r){
   const priced=r.runners.filter(x=>x.sp);
@@ -704,6 +713,21 @@ function resBadge(track,r,x){
   return (lv.status==='Paying'&&lv.results&&lv.results.length)?' <span class="res un">unpl</span>':'';
 }
 const ordn=n=>n+(n%100>=11&&n%100<=13?'th':['th','st','nd','rd'][Math.min(n%10,4)]||'th');
+// Has this race been run? The live feed's word first (Interim = run, results provisional; Paying; Abandoned); with no
+// live word, a start time more than 30 minutes past, the same line the tab countdown draws as "ran".
+function raceRun(m,r){
+  const lv=LIVE[`${m.track}|${r.no}`];
+  if(lv&&['Interim','Paying','Abandoned'].includes(lv.status)) return true;
+  if(lv&&lv.status) return false;
+  return !!r.start_utc&&(Date.now()-new Date(r.start_utc).getTime())>=1800000;
+}
+// Where a meeting opens (Simon, 19 Sep 2026): the Summary until its first race has been run, then the next race still
+// to run; the Summary again once the card is done.
+function landingRace(m){
+  const run=m.races.map(r=>raceRun(m,r));
+  if(!run.some(Boolean)) return -1;
+  const i=run.indexOf(false); return i;
+}
 function dayPicks(){
   const items=[], d=D(), inView=new Set(shownMeets(d));
   d.meetings.forEach((m,mi)=>{ if(!inView.has(mi)) return; m.races.forEach((r,ri)=>{
@@ -713,26 +737,13 @@ function dayPicks(){
     if(a.gap>=GAP_STANDOUT) put(a.top,'standout',100+a.gap);              // standouts first, by margin
   });});
   const top=items.sort((p,q)=>q.score-p.score).slice(0,15);     // which 15: always on strength
-  const run=it=>{const lv=LIVE[`${it.m.track}|${it.r.no}`]; return lv&&(lv.status==='Paying'||lv.status==='Abandoned')?1:0;};
+  const run=it=>raceRun(it.m,it.r)?1:0;
   if(daySort==='time') return top.sort((p,q)=>run(p)-run(q)||String(p.r.start_utc||'').localeCompare(String(q.r.start_utc||'')));
   if(daySort==='rating') return top;
   return top.sort((p,q)=>p.mi-q.mi||p.r.no-q.r.no);             // meeting, then race
 }
 window.setDaySort=v=>{daySort=v;draw();};
 window.setAllMeets=v=>{allMeets=v;draw();};
-function whyPick(it){
-  const {x,r,a}=it, top=a.top, sec=r.runners[1], out=[];
-  if(x===top) out.push(`${a.gap>=GAP_STANDOUT?'Best on ratings':'Top rated'}, ${(a.gap/2).toFixed(1)}L clear of ${sec.name}`);
-  else out.push(`Rated ${ordn(r.runners.indexOf(x)+1)}, ${((top.rating-x.rating)/2).toFixed(1)}L behind ${top.name}`);
-  if(x.sp){
-    const q=mktp(r)[x.no], e=q?(x.pct/100)/q:null;
-    if(e>=1.3) out.push(`$${x.sp.toFixed(2)} against a $${x.fair.toFixed(2)} model — ${e.toFixed(1)}× the market's chance, which on measurement predicts nothing`);
-    else if(e>=1.1) out.push(`$${x.sp.toFixed(2)} is a little over the $${x.fair.toFixed(2)} model`);
-    else if(e!==null&&e<0.9) out.push(`model $${x.fair.toFixed(2)} but the market has it shorter at $${x.sp.toFixed(2)}`);
-    else out.push(`model $${x.fair.toFixed(2)}, market $${x.sp.toFixed(2)} — priced about right`);
-  } else out.push(`model $${x.fair.toFixed(2)}, no market yet`);
-  return out.join('; ')+'.';
-}
 function analyse(r){
   const top=r.runners[0], sec=r.runners[1];
   const gap=sec?top.rating-sec.rating:0;
@@ -746,7 +757,8 @@ function analyse(r){
 // -21% with no trend -- so a second label below the first would rank races by how much we
 // disagree with the market, not by how likely we are to be right. Set it to a number to
 // bring the VALUE tag back; 2.0 flags 12% of races, 1.7 flags 25%.
-const GAP_STANDOUT=3.0;   // the only rule on the page
+const GAP_STANDOUT=3.0;   // the only rule on the page: which races reach Today
+const GAP_BIG=8.0;        // Simon, 19 Sep 2026: a top rater this far clear of the next horse is lit on Today and the summary
 window.LIVE={};      // "Track|raceNo" -> {status, results:[[tab],...], replay, win_div}
 const liveOf=r=>LIVE[`${M().track}|${r.no}`]||null;
 // Mkt is TAB-only.  Baked pages (bake_prices.py) mark DATA.priced='tab'; anything else is
@@ -828,17 +840,22 @@ function drawDay(){
   let h=`<div class="dayhead">
     <div class="daysort">order <div class="seg">${Object.entries(sorts).map(([k,v])=>`<button aria-pressed="${daySort===k}" onclick="setDaySort('${k}')">${v}</button>`).join('')}</div></div></div>`;
   if(!picks.length){ $("race").innerHTML=h+`<p class="mnote">Nothing stands out today on the ratings.</p>`; return; }
-  h+=`<div class="scroll"><table class="daytab"><thead><tr><th></th><th>Worth a look</th><th>Race</th><th>Why</th><th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
+  // Simon, 19 Sep 2026: the rating and its gap to the next horse in the race replace the Why sentence; no RATING STANDOUT
+  // tag here, since every row is one. A gap of GAP_BIG or more lights the row; a market price longer than our price lights Mkt.
+  h+=`<div class="scroll"><table class="daytab"><thead><tr><th></th><th>Worth a look</th><th>Race</th><th class="r">Rating</th>
+      <th class="r" title="Rating points clear of the next horse in the race">Gap</th><th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
   picks.forEach((it,i)=>{
-    const {m,mi,r,ri,x,kinds}=it;
-    const tags=kinds.includes('standout')?' <span class="tagv gold">RATING STANDOUT</span>':'';
-    h+=`<tr class="srow" tabindex="0" data-mi="${mi}" data-ri="${ri}">
+    const {m,mi,r,ri,x,a}=it;
+    const gap=x===a.top?a.gap:x.rating-a.top.rating;              // every pick is the top rater today; the else keeps it honest if that changes
+    const big=gap>=GAP_BIG, over=!!x.sp&&x.sp>x.fair;
+    h+=`<tr class="srow${big?' big':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
       <td>${silk(x)}</td>
-      <td><div class="stop">${x.name}${tags}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
+      <td><div class="stop">${x.name}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
       <td><div class="stop">${m.track} R${r.no}</div><div class="sname">${r.time||''} · ${r.dist}m ${r.cls}${m.going?` · ${m.going}`:''}</div></td>
-      <td class="why">${whyPick(it)}</td>
+      <td class="rate" style="font-size:19px">${x.rating.toFixed(1)}</td>
+      <td class="edge ${big?'big':(gap>=GAP_STANDOUT?'p':(gap<0?'g':''))}">${fxsign(gap)}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
-      <td class="price mk">${x.sp?'$'+x.sp.toFixed(2):'—'}</td></tr>`;
+      <td class="price mk${over?' up':''}" title="${over?'the market is offering more than our price':''}">${x.sp?(over?'<span class="arw">▲</span>':'')+'$'+x.sp.toFixed(2):'—'}</td></tr>`;
   });
   $("race").innerHTML=h+`</tbody></table></div>`;
   document.querySelectorAll("tr.srow").forEach(tr=>{
@@ -853,12 +870,12 @@ function drawSummary(){
     <th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th><th>Favourite</th></tr></thead><tbody>`;
   rows.forEach(({r,a})=>{
     const t=a.top;
-    h+=`<tr class="srow" tabindex="0" data-r="${r.no}">
+    h+=`<tr class="srow${a.gap>=GAP_BIG?' big':''}" tabindex="0" data-r="${r.no}">
       <td><div class="stop">R${r.no}${(r.surf_now&&r.surf_now!==r.surf)?' <span class="rerated">re-rated'+"</span>":''}</div><div class="sname">${r.dist}m ${r.cls}</div></td>
       <td>${silk(t)}</td>
       <td><div class="stop">${t.name}${a.gap>=GAP_STANDOUT?' <span class="tagv gold">RATING STANDOUT</span>':''}${resBadge(m.track,r,t)}</div><div class="sname">${t.jockey||'jockey TBA'}</div></td>
       <td class="rate" style="font-size:19px">${t.rating.toFixed(1)}</td>
-      <td class="edge ${a.gap>=GAP_STANDOUT?'p':''}">${a.gap.toFixed(1)}</td>
+      <td class="edge ${a.gap>=GAP_BIG?'big':(a.gap>=GAP_STANDOUT?'p':'')}">${a.gap.toFixed(1)}</td>
       <td class="price">$${t.fair.toFixed(2)}</td>
       <td class="price mk">${t.sp?'$'+t.sp.toFixed(2):'—'}</td>
       <td class="sname">${r.fav?`${r.fav} $${r.favsp.toFixed(2)}`:'—'}</td></tr>`;
@@ -1027,9 +1044,34 @@ function countdown(){
 }
 setInterval(countdown,30000);
 window.pick=i=>{active=i;open=null;draw();};
-window.pickMeet=i=>{meet=i;active=-1;open=null;draw();$("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});};
+window.pickMeet=i=>{meet=i;active=landingRace(D().meetings[i]);open=null;draw();$("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});};
 window.pickDay=i=>{day=i;meet=-1;active=-1;open=null;draw();};
 draw();
+
+// ---- swipe between races (Simon, 19 Sep 2026, on the phone): inside a meeting, a swipe left on the race
+// panel moves to the next race, a swipe right to the previous one (and back to the Summary before R1).
+// Mostly sideways, at least 60px, finished within a second; never from inside something that scrolls
+// sideways itself (the speed map, a wide table), where the finger is scrolling that instead.
+(function(){
+  let t0=null;
+  // the innermost thing under the finger that scrolls sideways, or null: the field table once
+  // Lengths pushes it past a narrow phone, and the speed map at any width
+  const sideways=el=>{ for(;el&&el.id!=='race';el=el.parentElement){ if(el.scrollWidth>el.clientWidth+1&&/auto|scroll/.test(getComputedStyle(el).overflowX)) return el; } return null; };
+  const race=$("race");
+  race.addEventListener('touchstart',e=>{ if(e.touches.length!==1){t0=null;return;}
+    const t=e.touches[0]; t0={x:t.clientX,y:t.clientY,at:Date.now(),box:sideways(e.target)}; },{passive:true});
+  race.addEventListener('touchend',e=>{
+    if(!t0||meet<0||e.changedTouches.length!==1) {t0=null;return;}
+    const t=e.changedTouches[0], dx=t.clientX-t0.x, dy=t.clientY-t0.y, s=t0; t0=null;
+    if(Date.now()-s.at>1000||Math.abs(dx)<60||Math.abs(dy)>Math.abs(dx)*0.6) return;
+    // started inside something that scrolls sideways: that drag is the table's while it has
+    // room left in the direction of travel, and ours once it is against the end
+    if(s.box&&(dx<0 ? s.box.scrollWidth-s.box.clientWidth-s.box.scrollLeft : s.box.scrollLeft)>1) return;
+    const n=M().races.length, to=dx<0?Math.min(active+1,n-1):Math.max(active-1,-1);
+    if(to===active) return;
+    active=to; open=null; draw(); $("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});
+  },{passive:true});
+})();
 
 // ---- TAB feed freshness: "generated" from live.json -> "Nm ago", coloured
 // warn/bad only inside the feed's own 08:00-22:30 Melbourne polling window.
@@ -1234,4 +1276,4 @@ window.skyLive=async ()=>{
   else {readBanner();tick();}
   setInterval(tick,60000); window._trsTick=tick;
 })();
-</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 19 Sep 22:35</b> AEST &middot; live vision in the dock</div><div style="height:34px"></div></body></html>
+</script><div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 19 Sep 23:01</b> AEST &middot; dash template deploy</div><div style="height:34px"></div></body></html>
