@@ -1,32 +1,34 @@
 {
- "started": "2026-09-19T08:19:32",
+ "started": "2026-09-19T11:01:39",
  "dates": [
   "2026-09-19",
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "morning harvest",
+ "reason": "Belmont Park Good 4 -> Soft 5; Belmont Park scratched R1 #8; Mount Magnet going Good",
  "status": "ok",
  "acceptors": 1509,
  "rider_share": 0.88,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-18T22:19:05+00:00",
- "finished": "2026-09-19T08:43:06",
+ "finished": "2026-09-19T11:27:14",
  "going": {
   "Caulfield": "Good 4",
   "Randwick": "Good 4",
-  "Gold Coast": "Soft 5",
+  "Gold Coast": "Good 4",
   "Eagle Farm": "Soft 5",
   "Morphettville": "Good 4",
-  "Belmont Park": "Good 4",
+  "Belmont Park": "Soft 5",
   "Echuca": "Good 4",
   "Newcastle": "Good 4",
   "Wagga": "Good 4",
-  "Bowraville": "Good 3"
+  "Bowraville": "Good 3",
+  "Fannie Bay": "Good",
+  "Mount Magnet": "Good"
  },
- "scratchings": 141,
+ "scratchings": 248,
  "dashboard": "toprate_week_v2_2026-09-19.html",
- "fingerprint": "dd3b221c4df5"
+ "fingerprint": "7daa681c365c"
 }
