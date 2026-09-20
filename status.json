@@ -1,29 +1,29 @@
 {
- "started": "2026-09-20T08:19:19",
+ "started": "2026-09-20T11:00:45",
  "dates": [
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "morning harvest",
+ "reason": "Kalgoorlie scratched R4 #15/16",
  "status": "ok",
  "acceptors": 659,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-19T22:18:46+00:00",
- "finished": "2026-09-20T08:38:04",
+ "finished": "2026-09-20T11:16:01",
  "going": {
   "Bendigo": "Good 4",
   "Bairnsdale": "Good 4",
-  "Armidale": "Good 4",
   "Nowra": "Good 4",
-  "Sunshine Coast": "Soft 5",
-  "Mount Gambier": "Soft 6",
+  "Armidale": "Good 4",
+  "Sunshine Coast": "Good 4",
+  "Mount Gambier": "Soft 5",
   "Kalgoorlie": "Good 4",
   "Pioneer Park": "Synthetic"
  },
- "scratchings": 62,
+ "scratchings": 126,
  "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "5a5f37d4a2de"
+ "fingerprint": "68f216a8662d"
 }
