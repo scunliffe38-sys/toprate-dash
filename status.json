@@ -1,29 +1,23 @@
 {
- "started": "2026-09-20T17:15:37",
+ "started": "2026-09-21T03:06:38",
  "dates": [
-  "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Bairnsdale scratched R7 #1",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 659,
- "rider_share": 0.92,
+ "acceptors": 289,
+ "rider_share": 0.83,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-19T22:18:46+00:00",
- "finished": "2026-09-20T17:30:20",
+ "extract": "2026-09-20T17:05:54+00:00",
+ "finished": "2026-09-21T03:24:26",
  "going": {
-  "Bendigo": "Good 3",
-  "Bairnsdale": "Good 3",
-  "Nowra": "Good 4",
-  "Sunshine Coast": "Good 4",
-  "Mount Gambier": "Soft 5",
-  "Kalgoorlie": "Good 4",
-  "Armidale": "Good 3",
-  "Pioneer Park": "Synthetic"
+  "Warrnambool": "Good 4",
+  "Grafton": "Soft 5",
+  "Narromine": "Good 4"
  },
- "scratchings": 137,
- "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "29e96fbb8b07"
+ "scratchings": 28,
+ "dashboard": "toprate_week_v2_2026-09-21.html",
+ "fingerprint": "28f2e2089815"
 }
