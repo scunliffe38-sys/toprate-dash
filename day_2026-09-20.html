@@ -103,12 +103,15 @@ tbody tr.run:focus-visible,tbody tr.srow:focus-visible{outline:2px solid var(--b
 .replay:hover{background:var(--cond);color:var(--ink)}
 @media(max-width:720px){.replay{margin-left:0}}
 nav button .cd.st{text-transform:uppercase;letter-spacing:.04em;font-size:10px}
-/* the first-starter tag (Simon, 18 Sep 2026): under the last-5 tokens, wrapping to a second row if it must.
-   Green when both trials and market are with it, red when neither is, orange for one of the two. */
-.tagd{flex:0 0 100%;margin-top:4px;max-width:136px;box-sizing:border-box;border:1px solid;border-radius:2px;padding:1px 4px;
-  font-family:"Archivo Narrow",sans-serif;font-size:9.5px;font-weight:600;letter-spacing:.03em;line-height:1.25;white-space:normal}
-.tagd.g{border-color:var(--pos);color:var(--pos)} .tagd.o{border-color:var(--amber);color:var(--amber)} .tagd.r{border-color:var(--neg);color:var(--neg)}
-.l5:has(.tagd){flex-wrap:wrap;display:flex;letter-spacing:0;gap:2px 5px;align-items:flex-start}
+/* the first-starter chips (Simon, 20 Sep 2026): the spelled-out tag was too wide for the
+   last-5 cell and spilled over the Adjusted column on a phone. Two circles instead -- T for
+   the trial read, $ for the market. No word alongside them: the last-five tokens already show
+   a horse with no starts, and anything spelled out next to finishing positions was read as one
+   (Simon, 20 Sep 2026). A circle with nothing behind it is left off entirely. */
+.dcir{display:inline-flex;align-items:center;justify-content:center;width:15px;height:15px;border-radius:50%;box-sizing:border-box;
+  font-family:"Archivo Narrow",sans-serif;font-size:10.5px;font-weight:700;line-height:1;color:var(--panel)}
+.dcir.g{background:var(--pos)} .dcir.o{background:var(--amber)} .dcir.r{background:var(--neg)}
+.l5:has(.dcir){flex-wrap:wrap;display:flex;letter-spacing:0;gap:3px 5px;align-items:center}
 .tagu{border:1px solid var(--brass);color:var(--brass);border-radius:2px;font-size:9.5px;font-family:"Archivo Narrow",sans-serif;font-weight:600;padding:1px 4px;letter-spacing:.03em;white-space:nowrap}
 .tagv.gold{border-color:var(--brass);color:var(--brass)}
 .tagv{border:1px solid var(--pos);color:var(--pos);border-radius:2px;font-size:9.5px;font-family:"Archivo Narrow",sans-serif;font-weight:600;padding:1px 4px;white-space:nowrap}
@@ -206,8 +209,6 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
 .rhead h2{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:23px;margin:0}
 .rhead .meta{color:var(--dim);font-size:13px;flex:1 1 0;min-width:0}
-.flag{margin:0 0 14px;padding:10px 13px;background:var(--panel);border-left:2px solid var(--brass);border-radius:0 3px 3px 0;font-size:12.5px;color:var(--dim)}
-.flag b{color:var(--brass);font-family:"Archivo Narrow",sans-serif;font-size:14px}
 .stop{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14.5px}
 .sname{color:var(--dim);font-size:12px}
 .stime{font-family:"Archivo Narrow",sans-serif;font-weight:500;color:var(--brass);font-size:13px;margin-left:4px}
@@ -542,20 +543,24 @@ function reprice(r,k){
 // quarters priced, adds debut.with_price.mk_pts per unit of -log price against the priced runners' mean, and its debut point and
 // stable weight switch to the priced set; otherwise the unpriced set. live.json lists priced runners only, so a scratched runner
 // simply drops out of the mean. Re-read on every live.json poll, the same rule rate_day.py applies at 03:00.
-// First starters (Simon, 18 Sep 2026): a bare NO RATING tag said nothing. The tag now names the two things a first
-// starter's estimate is actually made of: the read of its trials and whether the market is with it.
-//   Trials  the most recent trial or jump-out inside the window, the same event the rating's trial term reads (tpos of tfield).
-//           Good = won it, or ran second in a field of five or more; Avg = the front half; Poor = the back half.
-//   Market  debmkt is the debutant price term, re-read on every live poll: positive when the horse is shorter than the priced
-//           field's mean price. "Mkt Support" needs two points of it, about a fifth shorter than that mean, so a debutant priced
-//           with the pack is not called supported.
-function debutTag(x){
-  let t='No Trial', tg=false;
-  if(x.tapply&&x.tpos>0&&x.tfield>1){const rf=(x.tpos-1)/(x.tfield-1); tg=rf<=0.25; t=tg?'Good Trials':rf<=0.6?'Avg Trials':'Poor Trials';}
-  const priced=x.sp>1&&x.debmkt!==0, mg=priced&&x.debmkt>=2;
-  const m=priced?(mg?'Mkt Support':'No Mkt Support'):'Unpriced';
-  const n=(tg?1:0)+(mg?1:0);                       // 2 green, 1 orange, 0 red; unpriced counts as no support
-  return {text:`1st Start \u00b7 ${t} & ${m}`, cls:n===2?'g':n===1?'o':'r'};
+// First starters: what a debutant's estimate is made of, as two circles (Simon, 18 Sep 2026 for
+// the reads themselves, 20 Sep for the chips -- the words did not fit the cell).
+//   T  the most recent trial or jump-out inside the window, the same event the rating's trial term
+//      reads (tpos of tfield). Green = won it, or ran second in a field of five or more; amber =
+//      the front half; red = the back half.
+//   $  debmkt is the debutant price term, re-read on every live poll: positive when the horse is
+//      shorter than the priced field's mean price. Green needs two points of it, about a fifth
+//      shorter than that mean, so a debutant priced with the pack is not called supported.
+// A circle with nothing behind it is left off rather than drawn in a third colour (Simon, 20 Sep):
+// no trial in the window, or a race not yet priced, is an absence, not a mark against the horse.
+function debutChips(x){
+  let h='';
+  if(x.tapply&&x.tpos>0&&x.tfield>1){
+    const rf=(x.tpos-1)/(x.tfield-1);
+    h+=`<span class="dcir ${rf<=0.25?'g':rf<=0.6?'o':'r'}">T</span>`;
+  }
+  if(x.sp>1&&x.debmkt!==0) h+=`<span class="dcir ${x.debmkt>=2?'g':'r'}">$</span>`;
+  return h;
 }
 function debutPrice(r,d){
   if(!d.debut||!r.runners.some(x=>x.dfu)) return;
@@ -992,9 +997,6 @@ function drawRace(){
     ${r.surf?`&nbsp;·&nbsp; rate as <select class="surf" onchange="setSurf(this.value)">${(SURF[r.surf_now||r.surf]?'':'<option value="" selected>going not posted — no conditions factor</option>')}${Object.keys(SURF).map(c=>`<option value="${c}" ${(r.surf_now||r.surf)===c?'selected':''}>${SURF[c]}</option>`).join('')}</select><button class="surfall" onclick="setSurfMeet(document.querySelector('select.surf').value)" title="apply this surface to every race at the meeting">all races</button>${(r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''}`:''}</div>${replay}</div>`;
   h+=h2hCue(r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
-  if(r.unrated) h+=`<p class="flag"><b>${r.unrated}</b> of ${r.n} runners have no rated runs. They start from the field average of
-    ${r.fieldmean.toFixed(1)}, then take the debut mark-down, the read of their most recent trial and, once the race is priced, their price against the field.
-    The tag on each says what that estimate is made of. Treat those ratings as an estimate.</p>`;
   h+=speedMap(r);
   h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="l5h">Last 5</th><th class="r" title="our base: last 10 runs weighted to recent, shockers forgiven, wide runs credited">Base</th>
     <th class="r" title="How far today's factors move the horse off its base. Click a runner for the seven that make it up.">Adjust</th>
@@ -1008,7 +1010,7 @@ function drawRace(){
       <td><div class="horse">${silk(x)}${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
-      <td class="l5">${l5cell(x)}${x.unrated?(()=>{const g=debutTag(x);return `<div class="tagd ${g.cls}">${g.text}</div>`;})():''}</td>
+      <td class="l5">${l5cell(x)}${x.unrated?debutChips(x):''}</td>
       <td class="abil${x.unrated?' est':''}">${x.wprbase.toFixed(1)}</td>
       ${adjCell(x)}
       <td class="rate key">${x.rating.toFixed(1)}</td>
@@ -1289,4 +1291,4 @@ window.skyLive=async ()=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 20 Sep 10:17</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 20 Sep 10:21</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
