@@ -1,21 +1,21 @@
 {
- "started": "2026-09-20T14:00:43",
+ "started": "2026-09-20T14:30:43",
  "dates": [
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Nowra scratched R1 #8; Armidale scratched R6 #5",
+ "reason": "Bendigo Good 4 -> Good 3; Bendigo scratched R8 #12; Bairnsdale Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 659,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-19T22:18:46+00:00",
- "finished": "2026-09-20T14:15:39",
+ "finished": "2026-09-20T14:46:14",
  "going": {
-  "Bendigo": "Good 4",
-  "Bairnsdale": "Good 4",
+  "Bendigo": "Good 3",
+  "Bairnsdale": "Good 3",
   "Nowra": "Good 4",
   "Armidale": "Good 3",
   "Sunshine Coast": "Good 4",
@@ -23,7 +23,7 @@
   "Kalgoorlie": "Good 4",
   "Pioneer Park": "Synthetic"
  },
- "scratchings": 128,
+ "scratchings": 129,
  "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "afc13999f3c3"
+ "fingerprint": "705ded94c678"
 }
