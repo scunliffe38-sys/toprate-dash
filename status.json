@@ -1,17 +1,17 @@
 {
- "started": "2026-09-21T03:06:38",
+ "started": "2026-09-21T08:20:23",
  "dates": [
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 289,
  "rider_share": 0.83,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-20T17:05:54+00:00",
- "finished": "2026-09-21T03:24:26",
+ "extract": "2026-09-20T22:19:34+00:00",
+ "finished": "2026-09-21T08:39:43",
  "going": {
   "Warrnambool": "Good 4",
   "Grafton": "Soft 5",
@@ -19,5 +19,5 @@
  },
  "scratchings": 28,
  "dashboard": "toprate_week_v2_2026-09-21.html",
- "fingerprint": "28f2e2089815"
+ "fingerprint": "83f7198f3c36"
 }
