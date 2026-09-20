@@ -1,18 +1,18 @@
 {
- "started": "2026-09-20T15:30:45",
+ "started": "2026-09-20T16:00:46",
  "dates": [
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Pioneer Park scratched R3 #6; Bendigo scratched R7 #16",
+ "reason": "Bairnsdale scratched R5 #1",
  "status": "ok",
  "acceptors": 659,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-19T22:18:46+00:00",
- "finished": "2026-09-20T15:45:02",
+ "finished": "2026-09-20T16:15:39",
  "going": {
   "Bendigo": "Good 3",
   "Bairnsdale": "Good 3",
@@ -23,7 +23,7 @@
   "Kalgoorlie": "Good 4",
   "Pioneer Park": "Synthetic"
  },
- "scratchings": 134,
+ "scratchings": 135,
  "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "6aa434fe30dc"
+ "fingerprint": "1bb6b0349d4d"
 }
