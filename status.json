@@ -1,23 +1,23 @@
 {
- "started": "2026-09-20T11:00:45",
+ "started": "2026-09-20T13:30:45",
  "dates": [
   "2026-09-20",
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "Kalgoorlie scratched R4 #15/16",
+ "reason": "Armidale Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 659,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-19T22:18:46+00:00",
- "finished": "2026-09-20T11:16:01",
+ "finished": "2026-09-20T13:45:36",
  "going": {
   "Bendigo": "Good 4",
   "Bairnsdale": "Good 4",
   "Nowra": "Good 4",
-  "Armidale": "Good 4",
+  "Armidale": "Good 3",
   "Sunshine Coast": "Good 4",
   "Mount Gambier": "Soft 5",
   "Kalgoorlie": "Good 4",
@@ -25,5 +25,5 @@
  },
  "scratchings": 126,
  "dashboard": "toprate_week_v2_2026-09-20.html",
- "fingerprint": "68f216a8662d"
+ "fingerprint": "577f3a5108d3"
 }
