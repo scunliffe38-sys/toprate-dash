@@ -1,23 +1,24 @@
 {
- "started": "2026-09-21T17:30:23",
+ "started": "2026-09-22T03:06:31",
  "dates": [
-  "2026-09-21",
-  "2026-09-22"
+  "2026-09-22",
+  "2026-09-23"
  ],
- "reason": "Grafton scratched R7 #14",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 289,
- "rider_share": 0.83,
+ "acceptors": 364,
+ "rider_share": 0.82,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-09-20T22:19:34+00:00",
- "finished": "2026-09-21T17:44:29",
+ "extract": "2026-09-21T17:05:52+00:00",
+ "finished": "2026-09-22T03:24:12",
  "going": {
-  "Narromine": "Good 3",
-  "Warrnambool": "Good 4",
-  "Grafton": "Good 4"
+  "Swan Hill (Vic)": "Soft 5",
+  "Taree (Nsw)": "Soft 5",
+  "Emerald (Qld)": "Soft 5",
+  "Leeton (Nsw)": "Good 4"
  },
- "scratchings": 70,
- "dashboard": "toprate_week_v2_2026-09-21.html",
- "fingerprint": "d36b2c17671c"
+ "scratchings": 60,
+ "dashboard": "toprate_week_v2_2026-09-22.html",
+ "fingerprint": "7a3afe1afb7e"
 }
