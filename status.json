@@ -1,23 +1,23 @@
 {
- "started": "2026-09-21T08:20:23",
+ "started": "2026-09-21T12:00:32",
  "dates": [
   "2026-09-21",
   "2026-09-22"
  ],
- "reason": "morning harvest",
+ "reason": "Narromine Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 289,
  "rider_share": 0.83,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-20T22:19:34+00:00",
- "finished": "2026-09-21T08:39:43",
+ "finished": "2026-09-21T12:15:25",
  "going": {
   "Warrnambool": "Good 4",
   "Grafton": "Soft 5",
-  "Narromine": "Good 4"
+  "Narromine": "Good 3"
  },
- "scratchings": 28,
+ "scratchings": 67,
  "dashboard": "toprate_week_v2_2026-09-21.html",
- "fingerprint": "83f7198f3c36"
+ "fingerprint": "23a18b4e7604"
 }
