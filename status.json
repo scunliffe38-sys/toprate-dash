@@ -1,24 +1,24 @@
 {
- "started": "2026-09-22T08:20:09",
+ "started": "2026-09-22T13:00:29",
  "dates": [
   "2026-09-22",
   "2026-09-23"
  ],
- "reason": "morning harvest",
+ "reason": "Emerald Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 364,
  "rider_share": 0.82,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-09-21T22:19:31+00:00",
- "finished": "2026-09-22T08:38:53",
+ "finished": "2026-09-22T13:15:08",
  "going": {
-  "Swan Hill (Vic)": "Soft 5",
-  "Taree (Nsw)": "Soft 5",
-  "Emerald (Qld)": "Soft 5",
-  "Leeton (Nsw)": "Good 4"
+  "Swan Hill": "Good 4",
+  "Taree": "Soft 5",
+  "Leeton": "Good 4",
+  "Emerald": "Good 3"
  },
- "scratchings": 60,
+ "scratchings": 91,
  "dashboard": "toprate_week_v2_2026-09-22.html",
- "fingerprint": "6bb3c324e00e"
+ "fingerprint": "815ff24f270d"
 }
