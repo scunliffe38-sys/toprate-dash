@@ -1,26 +1,29 @@
 {
- "started": "2026-09-24T15:30:27",
+ "started": "2026-09-25T03:06:48",
  "dates": [
-  "2026-09-24",
   "2026-09-25",
   "2026-09-26",
-  "2026-09-27"
+  "2026-09-27",
+  "2026-09-28"
  ],
- "reason": "Warwick Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 374,
- "rider_share": 0.85,
+ "acceptors": 747,
+ "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-09-23T22:19:30+00:00",
- "finished": "2026-09-24T16:00:02",
+ "extract": "2026-09-24T17:06:07+00:00",
+ "finished": "2026-09-25T03:38:16",
  "going": {
-  "Moe": "Good 4",
-  "Hawkesbury": "Good 4",
-  "Goulburn": "Good 4",
-  "Warwick": "Good 3"
+  "Cranbourne": "Good 4",
+  "Coleraine": "Good 4",
+  "Lismore": "Soft 5",
+  "Scone": "Good 4",
+  "Sunshine Coast": "Soft 5",
+  "Launceston": "Soft 5",
+  "Ewan": "Good 4"
  },
- "scratchings": 99,
- "dashboard": "toprate_week_v2_2026-09-24.html",
- "fingerprint": "46f59826c658"
+ "scratchings": 67,
+ "dashboard": "toprate_week_v2_2026-09-25.html",
+ "fingerprint": "fe589875c688"
 }
