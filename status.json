@@ -1,25 +1,26 @@
 {
- "started": "2026-09-24T08:20:07",
+ "started": "2026-09-24T11:45:34",
  "dates": [
   "2026-09-24",
   "2026-09-25",
   "2026-09-26",
   "2026-09-27"
  ],
- "reason": "morning harvest",
+ "reason": "Warwick Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 374,
  "rider_share": 0.85,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-23T22:19:30+00:00",
- "finished": "2026-09-24T08:50:47",
+ "finished": "2026-09-24T12:12:41",
  "going": {
   "Moe": "Good 4",
   "Hawkesbury": "Good 4",
-  "Goulburn": "Soft 5"
+  "Goulburn": "Soft 5",
+  "Warwick": "Good 4"
  },
- "scratchings": 50,
+ "scratchings": 99,
  "dashboard": "toprate_week_v2_2026-09-24.html",
- "fingerprint": "50925bba5003"
+ "fingerprint": "1335bde7b59c"
 }
