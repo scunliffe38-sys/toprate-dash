@@ -1,19 +1,19 @@
 {
- "started": "2026-09-25T03:06:48",
+ "started": "2026-09-25T08:20:07",
  "dates": [
   "2026-09-25",
   "2026-09-26",
   "2026-09-27",
   "2026-09-28"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 747,
  "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-09-24T17:06:07+00:00",
- "finished": "2026-09-25T03:38:16",
+ "extract": "2026-09-24T22:19:25+00:00",
+ "finished": "2026-09-25T08:51:44",
  "going": {
   "Cranbourne": "Good 4",
   "Coleraine": "Good 4",
@@ -25,5 +25,5 @@
  },
  "scratchings": 67,
  "dashboard": "toprate_week_v2_2026-09-25.html",
- "fingerprint": "fe589875c688"
+ "fingerprint": "da402866ade5"
 }
