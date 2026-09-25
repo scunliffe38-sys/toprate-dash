@@ -1,22 +1,22 @@
 {
- "started": "2026-09-25T11:00:46",
+ "started": "2026-09-25T15:45:37",
  "dates": [
   "2026-09-25",
   "2026-09-26",
   "2026-09-27",
   "2026-09-28"
  ],
- "reason": "Lismore scratched R5 #15",
+ "reason": "Ewan scratched R5 #2; Coleraine Good 4 -> Good 3; Lismore scratched R6 #2",
  "status": "ok",
  "acceptors": 747,
  "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-24T22:19:25+00:00",
- "finished": "2026-09-25T11:28:23",
+ "finished": "2026-09-25T16:13:09",
  "going": {
   "Cranbourne": "Good 4",
-  "Coleraine": "Good 4",
+  "Coleraine": "Good 3",
   "Lismore": "Soft 5",
   "Scone": "Good 4",
   "Sunshine Coast": "Soft 7",
@@ -24,7 +24,7 @@
   "Ewan": "Good",
   "Fannie Bay": "Synthetic"
  },
- "scratchings": 137,
+ "scratchings": 139,
  "dashboard": "toprate_week_v2_2026-09-25.html",
- "fingerprint": "4c96c1b053fb"
+ "fingerprint": "f268d4cec2e3"
 }
