@@ -1,30 +1,33 @@
 {
- "started": "2026-09-25T18:30:34",
+ "started": "2026-09-26T03:06:45",
  "dates": [
-  "2026-09-25",
   "2026-09-26",
   "2026-09-27",
-  "2026-09-28"
+  "2026-09-28",
+  "2026-09-29"
  ],
- "reason": "Cranbourne scratched R2 #11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 747,
- "rider_share": 0.91,
+ "acceptors": 1380,
+ "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-09-24T22:19:25+00:00",
- "finished": "2026-09-25T18:58:08",
+ "extract": "2026-09-25T17:06:06+00:00",
+ "finished": "2026-09-26T03:38:17",
  "going": {
-  "Cranbourne": "Good 4",
-  "Sunshine Coast": "Soft 6",
-  "Launceston": "Good 4",
-  "Coleraine": "Good 3",
-  "Lismore": "Soft 5",
-  "Scone": "Good 4",
-  "Ewan": "Good",
-  "Fannie Bay": "Synthetic"
+  "Mornington": "Good 4",
+  "Rosehill": "Soft 5",
+  "Toowoomba": "Good 4",
+  "Murray Bridge": "Good 4",
+  "Belmont Park": "Soft 5",
+  "Kembla Grange": "Soft 5",
+  "Gold Coast": "Good 4",
+  "Canberra": "Soft 5",
+  "Gunnedah": "Good 3",
+  "Longreach": "Good",
+  "Mingenew": "Good 3"
  },
- "scratchings": 141,
- "dashboard": "toprate_week_v2_2026-09-25.html",
- "fingerprint": "daeb9c4e5cc1"
+ "scratchings": 118,
+ "dashboard": "toprate_week_v2_2026-09-26.html",
+ "fingerprint": "488718cbf41a"
 }
