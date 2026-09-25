@@ -1,19 +1,19 @@
 {
- "started": "2026-09-26T03:06:45",
+ "started": "2026-09-26T08:19:59",
  "dates": [
   "2026-09-26",
   "2026-09-27",
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 1380,
  "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-09-25T17:06:06+00:00",
- "finished": "2026-09-26T03:38:17",
+ "extract": "2026-09-25T22:19:21+00:00",
+ "finished": "2026-09-26T08:50:51",
  "going": {
   "Mornington": "Good 4",
   "Rosehill": "Soft 5",
@@ -29,5 +29,5 @@
  },
  "scratchings": 118,
  "dashboard": "toprate_week_v2_2026-09-26.html",
- "fingerprint": "488718cbf41a"
+ "fingerprint": "d45a5eb27620"
 }
