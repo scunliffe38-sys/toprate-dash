@@ -1,30 +1,30 @@
 {
- "started": "2026-09-25T18:00:52",
+ "started": "2026-09-25T18:30:34",
  "dates": [
   "2026-09-25",
   "2026-09-26",
   "2026-09-27",
   "2026-09-28"
  ],
- "reason": "Launceston Soft 5 -> Good 4",
+ "reason": "Cranbourne scratched R2 #11",
  "status": "ok",
  "acceptors": 747,
  "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-24T22:19:25+00:00",
- "finished": "2026-09-25T18:28:26",
+ "finished": "2026-09-25T18:58:08",
  "going": {
   "Cranbourne": "Good 4",
   "Sunshine Coast": "Soft 6",
   "Launceston": "Good 4",
-  "Fannie Bay": "Synthetic",
   "Coleraine": "Good 3",
   "Lismore": "Soft 5",
   "Scone": "Good 4",
-  "Ewan": "Good"
+  "Ewan": "Good",
+  "Fannie Bay": "Synthetic"
  },
- "scratchings": 140,
+ "scratchings": 141,
  "dashboard": "toprate_week_v2_2026-09-25.html",
- "fingerprint": "4659f0b50873"
+ "fingerprint": "daeb9c4e5cc1"
 }
