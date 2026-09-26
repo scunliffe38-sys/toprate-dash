@@ -1,33 +1,33 @@
 {
- "started": "2026-09-26T08:19:59",
+ "started": "2026-09-26T10:01:10",
  "dates": [
   "2026-09-26",
   "2026-09-27",
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "morning harvest",
+ "reason": "Mornington scratched R2 #9",
  "status": "ok",
  "acceptors": 1380,
  "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-25T22:19:21+00:00",
- "finished": "2026-09-26T08:50:51",
+ "finished": "2026-09-26T10:28:12",
  "going": {
-  "Mornington": "Good 4",
-  "Rosehill": "Soft 5",
+  "Mornington": "Soft 5",
+  "Rosehill": "Good 4",
   "Toowoomba": "Good 4",
   "Murray Bridge": "Good 4",
   "Belmont Park": "Soft 5",
   "Kembla Grange": "Soft 5",
-  "Gold Coast": "Good 4",
+  "Gold Coast": "Soft 5",
   "Canberra": "Soft 5",
-  "Gunnedah": "Good 3",
   "Longreach": "Good",
-  "Mingenew": "Good 3"
+  "Mingenew": "Good 3",
+  "Gunnedah": "Good 3"
  },
- "scratchings": 118,
+ "scratchings": 187,
  "dashboard": "toprate_week_v2_2026-09-26.html",
- "fingerprint": "d45a5eb27620"
+ "fingerprint": "33b7b8fcd2b3"
 }
