@@ -1,19 +1,19 @@
 {
- "started": "2026-09-26T11:46:09",
+ "started": "2026-09-26T13:00:52",
  "dates": [
   "2026-09-26",
   "2026-09-27",
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "Kembla Grange Soft 5 -> Good 4",
+ "reason": "Murray Bridge scratched R2 #7; Canberra Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 1380,
  "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-25T22:19:21+00:00",
- "finished": "2026-09-26T12:13:02",
+ "finished": "2026-09-26T13:28:02",
  "going": {
   "Mornington": "Soft 5",
   "Rosehill": "Good 4",
@@ -22,12 +22,12 @@
   "Belmont Park": "Good 4",
   "Kembla Grange": "Good 4",
   "Gold Coast": "Soft 5",
-  "Canberra": "Soft 5",
+  "Canberra": "Good 4",
   "Longreach": "Good",
   "Mingenew": "Good 3",
   "Gunnedah": "Good 3"
  },
- "scratchings": 195,
+ "scratchings": 196,
  "dashboard": "toprate_week_v2_2026-09-26.html",
- "fingerprint": "ae88d4bb4a93"
+ "fingerprint": "5cf02a7873fd"
 }
