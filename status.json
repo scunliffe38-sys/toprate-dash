@@ -1,18 +1,18 @@
 {
- "started": "2026-09-27T15:00:38",
+ "started": "2026-09-27T15:30:31",
  "dates": [
   "2026-09-27",
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "Port Macquarie Soft 5 -> Good 4",
+ "reason": "Strathalbyn scratched R3 #6",
  "status": "ok",
  "acceptors": 595,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-26T22:19:28+00:00",
- "finished": "2026-09-27T15:23:40",
+ "finished": "2026-09-27T15:51:23",
  "going": {
   "Caulfield": "Good 4",
   "Dubbo": "Good 4",
@@ -21,7 +21,7 @@
   "Strathalbyn": "Soft 5",
   "Toodyay": "Good 3"
  },
- "scratchings": 114,
+ "scratchings": 115,
  "dashboard": "toprate_week_v2_2026-09-27.html",
- "fingerprint": "6deebe0fca46"
+ "fingerprint": "3c8c72c4a216"
 }
