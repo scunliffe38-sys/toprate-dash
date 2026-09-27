@@ -1,27 +1,27 @@
 {
- "started": "2026-09-27T08:20:35",
+ "started": "2026-09-27T10:00:54",
  "dates": [
   "2026-09-27",
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "morning harvest",
+ "reason": "Dubbo scratched R1 #6",
  "status": "ok",
  "acceptors": 595,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-26T22:19:28+00:00",
- "finished": "2026-09-27T08:46:07",
+ "finished": "2026-09-27T10:21:18",
  "going": {
   "Caulfield": "Good 4",
   "Dubbo": "Good 4",
   "Port Macquarie": "Soft 5",
-  "Sunshine Coast": "Soft 5",
-  "Strathalbyn": "Good 4",
+  "Sunshine Coast": "Good 4",
+  "Strathalbyn": "Soft 5",
   "Toodyay": "Good 4"
  },
- "scratchings": 59,
+ "scratchings": 103,
  "dashboard": "toprate_week_v2_2026-09-27.html",
- "fingerprint": "3cdf7d455da1"
+ "fingerprint": "77dc352a4bd0"
 }
