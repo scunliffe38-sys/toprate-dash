@@ -1,18 +1,18 @@
 {
- "started": "2026-09-27T13:30:37",
+ "started": "2026-09-27T14:30:35",
  "dates": [
   "2026-09-27",
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "Sunshine Coast scratched R3 #5",
+ "reason": "Caulfield scratched R4 #7",
  "status": "ok",
  "acceptors": 595,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-26T22:19:28+00:00",
- "finished": "2026-09-27T13:51:56",
+ "finished": "2026-09-27T14:52:52",
  "going": {
   "Caulfield": "Good 4",
   "Dubbo": "Good 4",
@@ -21,7 +21,7 @@
   "Strathalbyn": "Soft 5",
   "Toodyay": "Good 3"
  },
- "scratchings": 113,
+ "scratchings": 114,
  "dashboard": "toprate_week_v2_2026-09-27.html",
- "fingerprint": "0af7fd960e7e"
+ "fingerprint": "2b64839df385"
 }
