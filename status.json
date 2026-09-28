@@ -1,24 +1,24 @@
 {
- "started": "2026-09-28T14:15:29",
+ "started": "2026-09-28T14:30:29",
  "dates": [
   "2026-09-28",
   "2026-09-29"
  ],
- "reason": "Kilmore Good 4 -> Good 3",
+ "reason": "Tamworth scratched R3 #5; Kilmore scratched R6 #5, R7 #14",
  "status": "ok",
  "acceptors": 377,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-27T22:19:22+00:00",
- "finished": "2026-09-28T14:29:42",
+ "finished": "2026-09-28T14:44:26",
  "going": {
   "Kilmore": "Good 3",
   "Tamworth": "Good 4",
   "Wagga": "Good 4",
   "Bunbury": "Soft 5"
  },
- "scratchings": 85,
+ "scratchings": 88,
  "dashboard": "toprate_week_v2_2026-09-28.html",
- "fingerprint": "ae7049c659f2"
+ "fingerprint": "6fe9b2873b17"
 }
