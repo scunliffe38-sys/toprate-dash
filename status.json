@@ -1,17 +1,17 @@
 {
- "started": "2026-09-30T03:06:32",
+ "started": "2026-09-30T08:20:15",
  "dates": [
   "2026-09-30",
   "2026-10-01"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 429,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-09-29T17:05:53+00:00",
- "finished": "2026-09-30T03:49:22",
+ "extract": "2026-09-29T22:19:34+00:00",
+ "finished": "2026-09-30T08:38:09",
  "going": {
   "Ballarat": "Good 4",
   "Rosehill": "Good 4",
@@ -21,5 +21,5 @@
  },
  "scratchings": 48,
  "dashboard": "toprate_week_v2_2026-09-30.html",
- "fingerprint": "45d11efeeeca"
+ "fingerprint": "373d6c1f0e58"
 }
