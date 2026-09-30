@@ -1,25 +1,23 @@
 {
- "started": "2026-09-30T17:00:34",
+ "started": "2026-10-01T03:06:15",
  "dates": [
-  "2026-09-30",
   "2026-10-01"
  ],
- "reason": "Balaklava Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 429,
- "rider_share": 0.92,
+ "acceptors": 481,
+ "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-09-29T22:19:34+00:00",
- "finished": "2026-09-30T17:14:33",
+ "extract": "2026-09-30T17:05:34+00:00",
+ "finished": "2026-10-01T03:29:41",
  "going": {
-  "Ballarat": "Good 4",
-  "Rosehill": "Good 4",
-  "Doomben": "Good 4",
-  "Balaklava": "Good 3",
-  "Geraldton": "Good 4"
+  "Warrnambool": "Good 4",
+  "Illawarra Grange": "Good 4",
+  "Tamworth": "Good 4",
+  "Gatton": "Soft 6"
  },
- "scratchings": 110,
- "dashboard": "toprate_week_v2_2026-09-30.html",
- "fingerprint": "77f96af62d43"
+ "scratchings": 47,
+ "dashboard": "toprate_week_v2_2026-10-01.html",
+ "fingerprint": "d759c77fe23c"
 }
