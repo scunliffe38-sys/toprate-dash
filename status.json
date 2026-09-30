@@ -1,17 +1,17 @@
 {
- "started": "2026-09-30T13:00:47",
+ "started": "2026-09-30T15:30:37",
  "dates": [
   "2026-09-30",
   "2026-10-01"
  ],
- "reason": "Balaklava scratched R4 #8",
+ "reason": "Geraldton scratched R4 #3",
  "status": "ok",
  "acceptors": 429,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-29T22:19:34+00:00",
- "finished": "2026-09-30T13:14:24",
+ "finished": "2026-09-30T15:44:38",
  "going": {
   "Ballarat": "Good 4",
   "Rosehill": "Good 4",
@@ -19,7 +19,7 @@
   "Balaklava": "Good 4",
   "Geraldton": "Good 4"
  },
- "scratchings": 108,
+ "scratchings": 109,
  "dashboard": "toprate_week_v2_2026-09-30.html",
- "fingerprint": "e73828e83f04"
+ "fingerprint": "b76536e6cfe6"
 }
