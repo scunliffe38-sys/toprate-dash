@@ -1,25 +1,25 @@
 {
- "started": "2026-09-30T08:20:15",
+ "started": "2026-09-30T11:00:42",
  "dates": [
   "2026-09-30",
   "2026-10-01"
  ],
- "reason": "morning harvest",
+ "reason": "Geraldton scratched R4 #11, R7 #11",
  "status": "ok",
  "acceptors": 429,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-29T22:19:34+00:00",
- "finished": "2026-09-30T08:38:09",
+ "finished": "2026-09-30T11:14:40",
  "going": {
   "Ballarat": "Good 4",
   "Rosehill": "Good 4",
-  "Doomben": "Soft 5",
+  "Doomben": "Good 4",
   "Balaklava": "Good 4",
   "Geraldton": "Good 4"
  },
- "scratchings": 48,
+ "scratchings": 106,
  "dashboard": "toprate_week_v2_2026-09-30.html",
- "fingerprint": "373d6c1f0e58"
+ "fingerprint": "5b586272a175"
 }
