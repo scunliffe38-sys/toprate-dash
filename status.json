@@ -1,16 +1,16 @@
 {
- "started": "2026-10-01T15:45:27",
+ "started": "2026-10-01T16:30:27",
  "dates": [
   "2026-10-01"
  ],
- "reason": "Kalgoorlie Soft 5 -> Good 4",
+ "reason": "Gatton scratched R6 #14",
  "status": "ok",
  "acceptors": 481,
  "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-30T22:19:25+00:00",
- "finished": "2026-10-01T15:52:33",
+ "finished": "2026-10-01T16:37:32",
  "going": {
   "Warrnambool": "Heavy 9",
   "Illawarra Grange": "Good 4",
@@ -18,7 +18,7 @@
   "Gatton": "Good 4",
   "Kalgoorlie": "Good 4"
  },
- "scratchings": 109,
+ "scratchings": 110,
  "dashboard": "toprate_week_v2_2026-10-01.html",
- "fingerprint": "cb791b17665e"
+ "fingerprint": "0eb89153f981"
 }
