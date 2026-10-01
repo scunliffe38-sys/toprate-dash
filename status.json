@@ -1,24 +1,24 @@
 {
- "started": "2026-10-01T14:15:34",
+ "started": "2026-10-01T14:30:39",
  "dates": [
   "2026-10-01"
  ],
- "reason": "Warrnambool scratched R4 #11",
+ "reason": "Warrnambool Soft 7 -> Heavy 8; Warrnambool scratched R8 #7; Illawarra Grange scratched R3 #10",
  "status": "ok",
  "acceptors": 481,
  "rider_share": 0.88,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-09-30T22:19:25+00:00",
- "finished": "2026-10-01T14:22:39",
+ "finished": "2026-10-01T14:37:43",
  "going": {
-  "Warrnambool": "Soft 7",
+  "Warrnambool": "Heavy 8",
   "Illawarra Grange": "Good 4",
   "Tamworth": "Good 4",
   "Gatton": "Soft 5",
   "Kalgoorlie": "Soft 5"
  },
- "scratchings": 105,
+ "scratchings": 107,
  "dashboard": "toprate_week_v2_2026-10-01.html",
- "fingerprint": "71bdb4314a07"
+ "fingerprint": "c68030737d40"
 }
