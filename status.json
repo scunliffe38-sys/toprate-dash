@@ -1,27 +1,27 @@
 {
- "started": "2026-10-02T17:45:29",
+ "started": "2026-10-02T18:07:15",
  "dates": [
   "2026-10-02",
   "2026-10-03",
   "2026-10-04"
  ],
- "reason": "Dubbo Soft 7 -> Heavy 8; Dubbo scratched R8 #1",
+ "reason": "Cranbourne @ Pakenham: Synthetic + scratchings (venue fix)",
  "status": "ok",
  "acceptors": 581,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-01T22:19:37+00:00",
- "finished": "2026-10-02T18:06:49",
+ "finished": "2026-10-02T18:28:45",
  "going": {
-  "Cranbourne @ Pakenham": "Synthetic",
-  "Dubbo": "Heavy 8",
+  "Cranbourne": "Synthetic",
   "Sunshine Coast": "Good 4",
   "Launceston": "Soft 5",
   "Moruya": "Soft 7",
+  "Dubbo": "Heavy 8",
   "Rockhampton": "Good 4"
  },
  "scratchings": 146,
  "dashboard": "toprate_week_v2_2026-10-02.html",
- "fingerprint": "45f44c58e233"
+ "fingerprint": "d2ee3f762cdd"
 }
