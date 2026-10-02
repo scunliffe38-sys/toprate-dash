@@ -1,27 +1,33 @@
 {
- "started": "2026-10-02T20:45:23",
+ "started": "2026-10-03T03:07:11",
  "dates": [
-  "2026-10-02",
   "2026-10-03",
-  "2026-10-04"
+  "2026-10-04",
+  "2026-10-05",
+  "2026-10-06"
  ],
- "reason": "Cranbourne scratched R8 #6",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 581,
- "rider_share": 0.89,
+ "acceptors": 1610,
+ "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-01T22:19:37+00:00",
- "finished": "2026-10-02T21:08:36",
+ "extract": "2026-10-02T17:06:23+00:00",
+ "finished": "2026-10-03T04:04:33",
  "going": {
-  "Cranbourne": "Synthetic",
-  "Sunshine Coast": "Good 4",
-  "Launceston": "Soft 5",
-  "Moruya": "Soft 7",
-  "Dubbo": "Heavy 8",
-  "Rockhampton": "Good 4"
+  "Flemington": "Heavy 9",
+  "Randwick": "Soft 5",
+  "Eagle Farm": "Soft 5",
+  "Murray Bridge": "Soft 6",
+  "Kalgoorlie": "Soft 5",
+  "Gunbower": "Good 3",
+  "Murtoa": "Heavy 8",
+  "Newcastle": "Good 4",
+  "Wagga": "Good 4",
+  "Gold Coast": "Soft 5",
+  "Toowoomba": "Good 4"
  },
- "scratchings": 147,
- "dashboard": "toprate_week_v2_2026-10-02.html",
- "fingerprint": "2cd1fec793e5"
+ "scratchings": 112,
+ "dashboard": "toprate_week_v2_2026-10-03.html",
+ "fingerprint": "56ab85bd5c57"
 }
