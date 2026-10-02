@@ -1,19 +1,19 @@
 {
- "started": "2026-10-03T03:07:11",
+ "started": "2026-10-03T08:20:34",
  "dates": [
   "2026-10-03",
   "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 1610,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-02T17:06:23+00:00",
- "finished": "2026-10-03T04:04:33",
+ "extract": "2026-10-02T22:19:49+00:00",
+ "finished": "2026-10-03T08:55:48",
  "going": {
   "Flemington": "Heavy 9",
   "Randwick": "Soft 5",
@@ -29,5 +29,5 @@
  },
  "scratchings": 112,
  "dashboard": "toprate_week_v2_2026-10-03.html",
- "fingerprint": "56ab85bd5c57"
+ "fingerprint": "8d79a0015ec4"
 }
