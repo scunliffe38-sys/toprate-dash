@@ -1,27 +1,27 @@
 {
- "started": "2026-10-02T08:20:16",
+ "started": "2026-10-02T10:00:40",
  "dates": [
   "2026-10-02",
   "2026-10-03",
   "2026-10-04"
  ],
- "reason": "morning harvest",
+ "reason": "Cranbourne Good 3 -> Synthetic; Cranbourne scratched R1 #4/12, R2 #1/4/5/8/14, R3 #1/2/3/5/9/10, R4 #3/5/9, R5 #5/6/8/9, R6 #2/3/4/5/6/7/9/10/13/15/16, R7 #1/3/6/7/9/12/13/15, R8 #",
  "status": "ok",
  "acceptors": 581,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-01T22:19:37+00:00",
- "finished": "2026-10-02T08:46:13",
+ "finished": "2026-10-02T10:22:37",
  "going": {
-  "Cranbourne": "Good 3",
+  "Cranbourne": "Synthetic",
+  "Moruya": "Soft 5",
   "Dubbo": "Good 4",
-  "Moruya": "Good 4",
-  "Sunshine Coast": "Soft 5",
+  "Sunshine Coast": "Good 4",
   "Rockhampton": "Soft 5",
-  "Launceston": "Soft 5"
+  "Launceston": "Soft 6"
  },
- "scratchings": 52,
+ "scratchings": 141,
  "dashboard": "toprate_week_v2_2026-10-02.html",
- "fingerprint": "e2b8eb7ff098"
+ "fingerprint": "d67798cbb7b2"
 }
