@@ -1,18 +1,18 @@
 {
- "started": "2026-10-02T18:07:15",
+ "started": "2026-10-02T20:45:23",
  "dates": [
   "2026-10-02",
   "2026-10-03",
   "2026-10-04"
  ],
- "reason": "Cranbourne @ Pakenham: Synthetic + scratchings (venue fix)",
+ "reason": "Cranbourne scratched R8 #6",
  "status": "ok",
  "acceptors": 581,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-01T22:19:37+00:00",
- "finished": "2026-10-02T18:28:45",
+ "finished": "2026-10-02T21:08:36",
  "going": {
   "Cranbourne": "Synthetic",
   "Sunshine Coast": "Good 4",
@@ -21,7 +21,7 @@
   "Dubbo": "Heavy 8",
   "Rockhampton": "Good 4"
  },
- "scratchings": 146,
+ "scratchings": 147,
  "dashboard": "toprate_week_v2_2026-10-02.html",
- "fingerprint": "d2ee3f762cdd"
+ "fingerprint": "2cd1fec793e5"
 }
