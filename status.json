@@ -1,27 +1,27 @@
 {
- "started": "2026-10-02T15:30:37",
+ "started": "2026-10-02T16:45:29",
  "dates": [
   "2026-10-02",
   "2026-10-03",
   "2026-10-04"
  ],
- "reason": "Dubbo Good 4 -> Soft 5",
+ "reason": "Dubbo Soft 5 -> Soft 7; Launceston Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 581,
  "rider_share": 0.89,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-01T22:19:37+00:00",
- "finished": "2026-10-02T15:52:10",
+ "finished": "2026-10-02T17:06:51",
  "going": {
   "Cranbourne @ Pakenham": "Synthetic",
   "Moruya": "Soft 7",
-  "Dubbo": "Soft 5",
+  "Dubbo": "Soft 7",
   "Sunshine Coast": "Good 4",
   "Rockhampton": "Good 4",
-  "Launceston": "Soft 6"
+  "Launceston": "Soft 5"
  },
  "scratchings": 144,
  "dashboard": "toprate_week_v2_2026-10-02.html",
- "fingerprint": "1ef9db0158c8"
+ "fingerprint": "4d56326fc518"
 }
