@@ -1,26 +1,27 @@
 {
- "started": "2026-10-04T08:21:26",
+ "started": "2026-10-04T10:00:52",
  "dates": [
   "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "morning harvest",
+ "reason": "Pioneer Park going Good; Pioneer Park scratched R1 #9, R3 #2",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.86,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-03T21:20:32+00:00",
- "finished": "2026-10-04T09:03:32",
+ "finished": "2026-10-04T10:24:15",
  "going": {
   "Bendigo": "Heavy 8",
   "Ballina": "Good 4",
   "Townsville": "Soft 5",
   "Port Lincoln": "Good 4",
-  "Cootamundra": "Soft 5"
+  "Cootamundra": "Soft 5",
+  "Pioneer Park": "Good"
  },
- "scratchings": 148,
+ "scratchings": 150,
  "dashboard": "toprate_week_v2_2026-10-04.html",
- "fingerprint": "47270dcacb7c"
+ "fingerprint": "a1de896642c0"
 }
