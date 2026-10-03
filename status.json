@@ -1,33 +1,35 @@
 {
- "started": "2026-10-03T08:20:34",
+ "started": "2026-10-03T10:46:10",
  "dates": [
   "2026-10-03",
   "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "morning harvest",
+ "reason": "Kalgoorlie Soft 5 -> Good 4; Kalgoorlie scratched R2 #5, R4 #5/9, R6 #1/2, R7 #7/12/14/15, R9 #11; Moora going Good; Moora scratched R3 #11",
  "status": "ok",
  "acceptors": 1610,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-02T22:19:49+00:00",
- "finished": "2026-10-03T08:55:48",
+ "finished": "2026-10-03T11:14:30",
  "going": {
-  "Flemington": "Heavy 9",
-  "Randwick": "Soft 5",
+  "Flemington": "Heavy 10",
+  "Randwick": "Soft 6",
   "Eagle Farm": "Soft 5",
   "Murray Bridge": "Soft 6",
-  "Kalgoorlie": "Soft 5",
-  "Gunbower": "Good 3",
-  "Murtoa": "Heavy 8",
+  "Kalgoorlie": "Good 4",
   "Newcastle": "Good 4",
-  "Wagga": "Good 4",
-  "Gold Coast": "Soft 5",
-  "Toowoomba": "Good 4"
+  "Wagga": "Soft 5",
+  "Gold Coast": "Good 4",
+  "Toowoomba": "Good 4",
+  "Fannie Bay": "Good",
+  "Moora": "Good",
+  "Gunbower": "Good 3",
+  "Murtoa": "Heavy 8"
  },
- "scratchings": 112,
+ "scratchings": 263,
  "dashboard": "toprate_week_v2_2026-10-03.html",
- "fingerprint": "8d79a0015ec4"
+ "fingerprint": "35b34280c32f"
 }
