@@ -1,26 +1,26 @@
 {
- "started": "2026-10-03T19:15:33",
+ "started": "2026-10-03T20:15:31",
  "dates": [
   "2026-10-03",
   "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "Toowoomba scratched R3 #6",
+ "reason": "Toowoomba scratched R5 #7",
  "status": "ok",
  "acceptors": 1610,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-02T22:19:49+00:00",
- "finished": "2026-10-03T19:44:03",
+ "finished": "2026-10-03T20:44:18",
  "going": {
-  "Kalgoorlie": "Good 4",
   "Toowoomba": "Good 4",
   "Flemington": "Heavy 8",
   "Randwick": "Soft 6",
   "Eagle Farm": "Good 4",
   "Murray Bridge": "Soft 7",
+  "Kalgoorlie": "Good 4",
   "Gunbower": "Good 3",
   "Murtoa": "Heavy 8",
   "Newcastle": "Good 4",
@@ -29,7 +29,7 @@
   "Fannie Bay": "Good",
   "Moora": "Good"
  },
- "scratchings": 273,
+ "scratchings": 274,
  "dashboard": "toprate_week_v2_2026-10-03.html",
- "fingerprint": "6dffedf48fdc"
+ "fingerprint": "10b5af8e41fb"
 }
