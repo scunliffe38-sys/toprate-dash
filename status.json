@@ -1,24 +1,24 @@
 {
- "started": "2026-10-03T12:46:07",
+ "started": "2026-10-03T13:16:09",
  "dates": [
   "2026-10-03",
   "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "Flemington scratched R4 #3",
+ "reason": "Murray Bridge Soft 6 -> Soft 7; Murray Bridge scratched R8 #14",
  "status": "ok",
  "acceptors": 1610,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-02T22:19:49+00:00",
- "finished": "2026-10-03T13:14:23",
+ "finished": "2026-10-03T13:44:32",
  "going": {
   "Flemington": "Heavy 10",
   "Randwick": "Soft 6",
   "Eagle Farm": "Soft 5",
-  "Murray Bridge": "Soft 6",
+  "Murray Bridge": "Soft 7",
   "Kalgoorlie": "Good 4",
   "Newcastle": "Good 4",
   "Wagga": "Soft 5",
@@ -29,7 +29,7 @@
   "Gunbower": "Good 3",
   "Murtoa": "Heavy 8"
  },
- "scratchings": 267,
+ "scratchings": 268,
  "dashboard": "toprate_week_v2_2026-10-03.html",
- "fingerprint": "62a2ba70f2bc"
+ "fingerprint": "5b6dcf98ca21"
 }
