@@ -1,28 +1,25 @@
 {
- "started": "2026-10-04T18:30:25",
+ "started": "2026-10-05T03:06:42",
  "dates": [
-  "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "Northam scratched R3 #6",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 740,
- "rider_share": 0.86,
+ "acceptors": 498,
+ "rider_share": 0.87,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-03T21:20:32+00:00",
- "finished": "2026-10-04T18:53:56",
+ "extract": "2026-10-04T16:06:02+00:00",
+ "finished": "2026-10-05T03:38:14",
  "going": {
-  "Townsville": "Good 4",
-  "Northam": "Good 4",
-  "Bendigo": "Soft 6",
-  "Ballina": "Good 3",
-  "Port Lincoln": "Good 4",
-  "Cootamundra": "Good 4",
-  "Pioneer Park": "Good"
+  "Warwick Farm": "Soft 7",
+  "Doomben": "Soft 5",
+  "Pakenham": "Synthetic",
+  "Muswellbrook": "Soft 5",
+  "Gawler": "Soft 5"
  },
- "scratchings": 164,
- "dashboard": "toprate_week_v2_2026-10-04.html",
- "fingerprint": "3ee48bb292d9"
+ "scratchings": 59,
+ "dashboard": "toprate_week_v2_2026-10-05.html",
+ "fingerprint": "aa11d68a0d54"
 }
