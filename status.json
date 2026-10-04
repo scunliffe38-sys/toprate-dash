@@ -1,28 +1,28 @@
 {
- "started": "2026-10-04T14:00:39",
+ "started": "2026-10-04T14:30:38",
  "dates": [
   "2026-10-04",
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "Bendigo Heavy 8 -> Soft 7; Townsville scratched R1 #8",
+ "reason": "Townsville Soft 5 -> Good 4; Pioneer Park scratched R1 #6",
  "status": "ok",
  "acceptors": 740,
  "rider_share": 0.86,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-03T21:20:32+00:00",
- "finished": "2026-10-04T14:23:23",
+ "finished": "2026-10-04T14:53:28",
  "going": {
   "Bendigo": "Soft 7",
   "Ballina": "Good 4",
-  "Townsville": "Soft 5",
+  "Townsville": "Good 4",
   "Port Lincoln": "Good 4",
   "Northam": "Good 4",
   "Cootamundra": "Good 4",
   "Pioneer Park": "Good"
  },
- "scratchings": 156,
+ "scratchings": 157,
  "dashboard": "toprate_week_v2_2026-10-04.html",
- "fingerprint": "a438e99a79be"
+ "fingerprint": "c1fb6e9dc78e"
 }
