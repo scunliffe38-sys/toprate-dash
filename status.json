@@ -1,25 +1,25 @@
 {
- "started": "2026-10-05T17:15:31",
+ "started": "2026-10-05T18:00:29",
  "dates": [
   "2026-10-05",
   "2026-10-06"
  ],
- "reason": "Warwick Farm scratched R7 #2",
+ "reason": "Gawler scratched R7 #9",
  "status": "ok",
  "acceptors": 498,
  "rider_share": 0.87,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-04T21:19:39+00:00",
- "finished": "2026-10-05T17:31:44",
+ "finished": "2026-10-05T18:16:22",
  "going": {
-  "Warwick Farm": "Soft 6",
   "Doomben": "Good 4",
+  "Gawler": "Good 4",
+  "Warwick Farm": "Soft 6",
   "Pakenham": "Synthetic",
-  "Muswellbrook": "Good 4",
-  "Gawler": "Good 4"
+  "Muswellbrook": "Good 4"
  },
- "scratchings": 133,
+ "scratchings": 134,
  "dashboard": "toprate_week_v2_2026-10-05.html",
- "fingerprint": "dc0a48e79a7c"
+ "fingerprint": "d6acc419f9c6"
 }
