@@ -1,25 +1,24 @@
 {
- "started": "2026-10-05T18:00:29",
+ "started": "2026-10-06T03:07:33",
  "dates": [
-  "2026-10-05",
-  "2026-10-06"
+  "2026-10-06",
+  "2026-10-07"
  ],
- "reason": "Gawler scratched R7 #9",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 498,
- "rider_share": 0.87,
+ "acceptors": 328,
+ "rider_share": 0.81,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-04T21:19:39+00:00",
- "finished": "2026-10-05T18:16:22",
+ "extract": "2026-10-05T16:06:37+00:00",
+ "finished": "2026-10-06T03:50:58",
  "going": {
-  "Doomben": "Good 4",
-  "Gawler": "Good 4",
-  "Warwick Farm": "Soft 6",
-  "Pakenham": "Synthetic",
-  "Muswellbrook": "Good 4"
+  "Mildura": "Good 4",
+  "Newcastle": "Soft 5",
+  "Goulburn": "Heavy 8",
+  "Kilcoy": "Soft 5"
  },
- "scratchings": 134,
- "dashboard": "toprate_week_v2_2026-10-05.html",
- "fingerprint": "d6acc419f9c6"
+ "scratchings": 51,
+ "dashboard": "toprate_week_v2_2026-10-06.html",
+ "fingerprint": "dd2d29785f2a"
 }
