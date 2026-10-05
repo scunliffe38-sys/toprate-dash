@@ -1,17 +1,17 @@
 {
- "started": "2026-10-06T03:07:33",
+ "started": "2026-10-06T08:21:08",
  "dates": [
   "2026-10-06",
   "2026-10-07"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 328,
  "rider_share": 0.81,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-05T16:06:37+00:00",
- "finished": "2026-10-06T03:50:58",
+ "extract": "2026-10-05T21:20:14+00:00",
+ "finished": "2026-10-06T08:54:41",
  "going": {
   "Mildura": "Good 4",
   "Newcastle": "Soft 5",
@@ -20,5 +20,5 @@
  },
  "scratchings": 51,
  "dashboard": "toprate_week_v2_2026-10-06.html",
- "fingerprint": "dd2d29785f2a"
+ "fingerprint": "7cbe2993557f"
 }
