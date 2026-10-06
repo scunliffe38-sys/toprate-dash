@@ -1,24 +1,24 @@
 {
- "started": "2026-10-06T08:21:08",
+ "started": "2026-10-06T13:45:34",
  "dates": [
   "2026-10-06",
   "2026-10-07"
  ],
- "reason": "morning harvest",
+ "reason": "Mildura scratched R1 #9",
  "status": "ok",
  "acceptors": 328,
  "rider_share": 0.81,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-05T21:20:14+00:00",
- "finished": "2026-10-06T08:54:41",
+ "finished": "2026-10-06T14:02:10",
  "going": {
   "Mildura": "Good 4",
   "Newcastle": "Soft 5",
-  "Goulburn": "Heavy 8",
-  "Kilcoy": "Soft 5"
+  "Goulburn": "Soft 7",
+  "Kilcoy": "Good 4"
  },
- "scratchings": 51,
+ "scratchings": 97,
  "dashboard": "toprate_week_v2_2026-10-06.html",
- "fingerprint": "7cbe2993557f"
+ "fingerprint": "8e03276eefaf"
 }
