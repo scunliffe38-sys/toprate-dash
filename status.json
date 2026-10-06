@@ -1,24 +1,24 @@
 {
- "started": "2026-10-06T17:15:27",
+ "started": "2026-10-06T17:45:26",
  "dates": [
   "2026-10-06",
   "2026-10-07"
  ],
- "reason": "Kilcoy scratched R5 #1",
+ "reason": "Newcastle scratched R7 #11",
  "status": "ok",
  "acceptors": 328,
  "rider_share": 0.81,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-05T21:20:14+00:00",
- "finished": "2026-10-06T17:33:05",
+ "finished": "2026-10-06T18:01:50",
  "going": {
-  "Newcastle": "Good 4",
   "Goulburn": "Soft 6",
   "Kilcoy": "Good 4",
-  "Mildura": "Good 4"
+  "Mildura": "Good 4",
+  "Newcastle": "Good 4"
  },
- "scratchings": 98,
+ "scratchings": 99,
  "dashboard": "toprate_week_v2_2026-10-06.html",
- "fingerprint": "002b483a474a"
+ "fingerprint": "8a62702688e5"
 }
