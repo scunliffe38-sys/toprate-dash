@@ -1,18 +1,18 @@
 {
- "started": "2026-10-07T08:20:43",
+ "started": "2026-10-07T10:00:45",
  "dates": [
   "2026-10-07",
   "2026-10-08",
   "2026-10-09"
  ],
- "reason": "morning harvest",
+ "reason": "Gold Coast Poly scratched R2 #13/14, R3 #6, R4 #6",
  "status": "ok",
  "acceptors": 416,
  "rider_share": 0.94,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-06T21:19:57+00:00",
- "finished": "2026-10-07T09:01:30",
+ "finished": "2026-10-07T10:24:23",
  "going": {
   "Randwick Kensington": "Soft 7",
   "Geelong": "Soft 6",
@@ -20,7 +20,7 @@
   "Mount Gambier": "Soft 5",
   "Bunbury": "Good 4"
  },
- "scratchings": 66,
+ "scratchings": 65,
  "dashboard": "toprate_week_v2_2026-10-07.html",
- "fingerprint": "5f5d03b7462c"
+ "fingerprint": "1710c25452f5"
 }
