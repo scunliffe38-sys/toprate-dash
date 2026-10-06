@@ -1,24 +1,26 @@
 {
- "started": "2026-10-06T17:45:26",
+ "started": "2026-10-07T03:07:47",
  "dates": [
-  "2026-10-06",
-  "2026-10-07"
+  "2026-10-07",
+  "2026-10-08",
+  "2026-10-09"
  ],
- "reason": "Newcastle scratched R7 #11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 328,
- "rider_share": 0.81,
+ "acceptors": 416,
+ "rider_share": 0.94,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-05T21:20:14+00:00",
- "finished": "2026-10-06T18:01:50",
+ "extract": "2026-10-06T16:06:49+00:00",
+ "finished": "2026-10-07T04:13:35",
  "going": {
-  "Goulburn": "Soft 6",
-  "Kilcoy": "Good 4",
-  "Mildura": "Good 4",
-  "Newcastle": "Good 4"
+  "Randwick Kensington": "Soft 7",
+  "Geelong": "Soft 7",
+  "Gold Coast Poly": "Synthetic",
+  "Mount Gambier": "Soft 6",
+  "Bunbury": "Good 4"
  },
- "scratchings": 99,
- "dashboard": "toprate_week_v2_2026-10-06.html",
- "fingerprint": "8a62702688e5"
+ "scratchings": 24,
+ "dashboard": "toprate_week_v2_2026-10-07.html",
+ "fingerprint": "3fe6d3f85c7b"
 }
