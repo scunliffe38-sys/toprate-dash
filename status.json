@@ -1,26 +1,26 @@
 {
- "started": "2026-10-08T03:07:31",
+ "started": "2026-10-08T08:21:10",
  "dates": [
   "2026-10-08",
   "2026-10-09",
   "2026-10-10"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 426,
  "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-07T16:06:43+00:00",
- "finished": "2026-10-08T04:03:54",
+ "extract": "2026-10-07T21:20:17+00:00",
+ "finished": "2026-10-08T09:04:28",
  "going": {
   "Kyneton": "Soft 5",
-  "Hawkesbury": "Soft 5",
-  "Orange": "Soft 5",
-  "Ipswich": "Soft 5",
+  "Hawkesbury": "Good 4",
+  "Orange": "Good 4",
+  "Ipswich": "Good 4",
   "York": "Soft 5"
  },
- "scratchings": 36,
+ "scratchings": 69,
  "dashboard": "toprate_week_v2_2026-10-08.html",
- "fingerprint": "78c3e87fa355"
+ "fingerprint": "c98045f3bc62"
 }
