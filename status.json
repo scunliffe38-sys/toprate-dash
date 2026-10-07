@@ -1,27 +1,27 @@
 {
- "started": "2026-10-07T17:04:40",
+ "started": "2026-10-07T18:15:46",
  "dates": [
   "2026-10-07",
   "2026-10-08",
   "2026-10-09"
  ],
- "reason": "Randwick scratchings (TAB name fix)",
+ "reason": "Geelong Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 416,
  "rider_share": 0.94,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-06T21:19:57+00:00",
- "finished": "2026-10-07T17:32:40",
+ "finished": "2026-10-07T18:42:04",
  "going": {
-  "Randwick": "Soft 6",
-  "Geelong": "Soft 6",
+  "Geelong": "Soft 5",
   "Gold Coast Poly": "Synthetic",
-  "Mount Gambier": "Soft 5",
   "Bunbury": "Good 4",
-  "Happy Valley": "Good"
+  "Happy Valley": "Good",
+  "Randwick": "Soft 6",
+  "Mount Gambier": "Soft 5"
  },
  "scratchings": 70,
  "dashboard": "toprate_week_v2_2026-10-07.html",
- "fingerprint": "551fb1774136"
+ "fingerprint": "9f10e947abf9"
 }
