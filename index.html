@@ -480,6 +480,10 @@ th:has(.mkt-fresh){white-space:nowrap}
    which hide Base and Adjust by position, are undone here and the two are hidden by name (7 Oct 2026) */
 @media(max-width:860px){.rtab.hk th:nth-child(6),.rtab.hk th:nth-child(7){display:table-cell}.rtab.hk th.hkb{display:none}}
 @media(max-width:560px){.rtab.hk th:nth-child(7){display:none}.rtab.hk th.hka{display:none}}
+/* betr's fixed price on the HK table (7 Oct 2026): its own column, and on a phone a second line under the tote instead */
+.bxl{display:none;font-size:11px;color:var(--faint);white-space:nowrap}
+.bxl.up{color:var(--pos)} .bxl.dn{color:var(--neg)}
+@media(max-width:560px){.rtab.hk .hkbx{display:none}.bxl{display:block;white-space:normal}}
 </style></head>
 <body><div class="wrap">
 <header>
@@ -892,7 +896,9 @@ function applyLivePrices(races,date){
       const lv=races[`${m.track}|${r.no}`]; if(!lv) return;
       const p=lv.p||{};
       const bp=(lv.bf&&lv.bf.p)||{}; r.bfm=lv.bf?lv.bf.matched:null;
+      const bx=lv.bx||{};
       r.runners.forEach(x=>{ const v=p[String(x.no)]; x.sp=(v&&v>1)?v:null;
+        const bv=bx[String(x.no)]; x.bx=(bv&&bv>1)?bv:null;
         const q=bp[String(x.no)]; x.bfb=q&&q[0]>1?q[0]:null; x.bfl=q&&q[1]>1?q[1]:null;
         x.bfn=q&&q[2]>1&&q[2]<=1000?q[2]:null; x.bsp=q&&q[3]>1?q[3]:null; });
       setFav(r); debutPrice(r,d);
@@ -1268,6 +1274,7 @@ function drawRace(){
 function drawRaceHK(){
   const m=M(), r=m.races[active], topR=r.runners[0].rating, lv=liveOf(r), lpl=r.lb_per_len||2;
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);
+  const bxbook=r.runners.filter(x=>x.bx).reduce((a,x)=>a+100/x.bx,0);
   const course=r.surf==='synth'?'All weather':`Turf${r.rail?' "'+r.rail+'" course':''}`;
   let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''} &nbsp;·&nbsp; ${r.going||'going not posted'}
     <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong</div></div>`;
@@ -1276,10 +1283,11 @@ function drawRaceHK(){
     <th class="r" title="pounds carried, after any apprentice claim">Wt</th>
     <th class="r hkb" title="ability: the field's average mark, plus form against the mark, plus the mark">Base</th>
     <th class="r hka" title="today: weight carried, days off, HK starts. Click a runner for the parts.">Adjust</th>
-    <th class="r key">Adjusted</th><th class="r key2">Lengths</th><th class="r bk"><small>100%</small>Model</th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
+    <th class="r key">Adjusted</th><th class="r key2">Lengths</th><th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
   r.runners.forEach((x,i)=>{
     const lens=(topR-x.rating)/lpl;
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';
+    const bov=x.bx?(x.bx>=x.fair*1.15?' up':(x.bx<=x.fair/1.15?' dn':'')):'';
     const mc=x.mark_chg?`<small class="${x.mark_chg>0?'p':'g'}">${x.mark_chg>0?'+':'−'}${Math.abs(x.mark_chg)}</small>`:'';
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
       <td class="tab">${x.no}</td>
@@ -1294,8 +1302,9 @@ function drawRaceHK(){
       <td class="rate key">${x.rating.toFixed(1)}${i===0?'':`<div class="lensm">−${lens.toFixed(1)}L</div>`}</td>
       <td class="lens key2${i===0?' top':''}">${i===0?'':'−'+lens.toFixed(1)+'L'}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
-      <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}</td></tr>`;
-    if(open===i) h+=`<tr class="detail"><td colspan="12">${hkLedger(x,r)}</td></tr>`;
+      <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}${x.bx?`<div class="bxl${bov}">betr $${x.bx.toFixed(2)}</div>`:''}</td>
+      <td class="price mk${bov} hkbx">${x.bx?(bov?`<span class="arw">${bov===' up'?'▲':'▼'}</span>`:'')+'$'+x.bx.toFixed(2):'—'}</td></tr>`;
+    if(open===i) h+=`<tr class="detail"><td colspan="13">${hkLedger(x,r)}</td></tr>`;
   });
   h+="</tbody></table></div>";
   if(r.standby&&r.standby.length) h+=`<p class="mnote" style="margin-top:10px">Stand-by: ${r.standby.join(', ')}. They run only if a starter comes out.</p>`;
@@ -1596,4 +1605,4 @@ window.skyLive=async ()=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 07 Oct 11:47</b> AEST &middot; HK card</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 07 Oct 12:58</b> AEST &middot; HK betr column</div><div style="height:34px"></div></body></html>
