@@ -1,27 +1,26 @@
 {
- "started": "2026-10-07T19:00:45",
+ "started": "2026-10-08T03:07:31",
  "dates": [
-  "2026-10-07",
   "2026-10-08",
-  "2026-10-09"
+  "2026-10-09",
+  "2026-10-10"
  ],
- "reason": "Geelong scratched R8 #11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 416,
- "rider_share": 0.94,
+ "acceptors": 426,
+ "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-06T21:19:57+00:00",
- "finished": "2026-10-07T19:24:17",
+ "extract": "2026-10-07T16:06:43+00:00",
+ "finished": "2026-10-08T04:03:54",
  "going": {
-  "Geelong": "Soft 5",
-  "Bunbury": "Good 4",
-  "Happy Valley": "Good",
-  "Randwick": "Soft 6",
-  "Gold Coast Poly": "Synthetic",
-  "Mount Gambier": "Soft 5"
+  "Kyneton": "Soft 5",
+  "Hawkesbury": "Soft 5",
+  "Orange": "Soft 5",
+  "Ipswich": "Soft 5",
+  "York": "Soft 5"
  },
- "scratchings": 71,
- "dashboard": "toprate_week_v2_2026-10-07.html",
- "fingerprint": "8110543d8908"
+ "scratchings": 36,
+ "dashboard": "toprate_week_v2_2026-10-08.html",
+ "fingerprint": "78c3e87fa355"
 }
