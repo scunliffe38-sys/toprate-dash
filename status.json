@@ -1,18 +1,18 @@
 {
- "started": "2026-10-07T16:30:52",
+ "started": "2026-10-07T17:04:40",
  "dates": [
   "2026-10-07",
   "2026-10-08",
   "2026-10-09"
  ],
- "reason": "Geelong scratched R3 #5",
+ "reason": "Randwick scratchings (TAB name fix)",
  "status": "ok",
  "acceptors": 416,
  "rider_share": 0.94,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-06T21:19:57+00:00",
- "finished": "2026-10-07T16:55:51",
+ "finished": "2026-10-07T17:32:40",
  "going": {
   "Randwick": "Soft 6",
   "Geelong": "Soft 6",
@@ -23,5 +23,5 @@
  },
  "scratchings": 70,
  "dashboard": "toprate_week_v2_2026-10-07.html",
- "fingerprint": "c09a5ba07a9e"
+ "fingerprint": "551fb1774136"
 }
