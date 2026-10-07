@@ -1,27 +1,27 @@
 {
- "started": "2026-10-07T14:45:53",
+ "started": "2026-10-07T16:30:52",
  "dates": [
   "2026-10-07",
   "2026-10-08",
   "2026-10-09"
  ],
- "reason": "Randwick Kensington Soft 7 -> Soft 6",
+ "reason": "Geelong scratched R3 #5",
  "status": "ok",
  "acceptors": 416,
  "rider_share": 0.94,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-06T21:19:57+00:00",
- "finished": "2026-10-07T15:11:10",
+ "finished": "2026-10-07T16:55:51",
  "going": {
-  "Randwick Kensington": "Soft 6",
+  "Randwick": "Soft 6",
   "Geelong": "Soft 6",
   "Gold Coast Poly": "Synthetic",
   "Mount Gambier": "Soft 5",
   "Bunbury": "Good 4",
   "Happy Valley": "Good"
  },
- "scratchings": 69,
+ "scratchings": 70,
  "dashboard": "toprate_week_v2_2026-10-07.html",
- "fingerprint": "9c87f1d52b50"
+ "fingerprint": "c09a5ba07a9e"
 }
