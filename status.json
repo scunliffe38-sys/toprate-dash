@@ -1,26 +1,26 @@
 {
- "started": "2026-10-08T17:45:24",
+ "started": "2026-10-08T18:15:24",
  "dates": [
   "2026-10-08",
   "2026-10-09",
   "2026-10-10"
  ],
- "reason": "York Soft 5 -> Good 4",
+ "reason": "Kyneton scratched R8 #11",
  "status": "ok",
  "acceptors": 426,
  "rider_share": 0.91,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-07T21:20:17+00:00",
- "finished": "2026-10-08T18:12:00",
+ "finished": "2026-10-08T18:40:36",
  "going": {
   "Kyneton": "Soft 5",
-  "Orange": "Good 4",
   "Ipswich": "Good 4",
   "York": "Good 4",
-  "Hawkesbury": "Good 4"
+  "Hawkesbury": "Good 4",
+  "Orange": "Good 4"
  },
- "scratchings": 73,
+ "scratchings": 74,
  "dashboard": "toprate_week_v2_2026-10-08.html",
- "fingerprint": "b23421697690"
+ "fingerprint": "9ace79ce98a2"
 }
