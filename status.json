@@ -1,29 +1,29 @@
 {
- "started": "2026-10-09T08:21:43",
+ "started": "2026-10-09T10:00:50",
  "dates": [
   "2026-10-09",
   "2026-10-10",
   "2026-10-11",
   "2026-10-12"
  ],
- "reason": "morning harvest",
+ "reason": "Cloncurry scratched R4 #10, R7 #3; Launceston scratched R4 #1/3/11/12/14; Sunshine Coast Soft 5 -> Good 4; Sunshine Coast scratched R1 #1/6, R2 #7, R3 #1/9, R4 #5/11, R6 #12, R7 #4",
  "status": "ok",
  "acceptors": 689,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-08T21:20:42+00:00",
- "finished": "2026-10-09T09:29:56",
+ "finished": "2026-10-09T10:49:34",
  "going": {
   "Cranbourne": "Good 4",
   "Ballarat": "Good 4",
   "Port Macquarie": "Soft 5",
-  "Sunshine Coast": "Soft 5",
+  "Sunshine Coast": "Good 4",
   "Canberra": "Soft 5",
   "Launceston": "Soft 5",
   "Cloncurry": "Good"
  },
- "scratchings": 115,
+ "scratchings": 133,
  "dashboard": "toprate_week_v2_2026-10-09.html",
- "fingerprint": "c3d18f0c68dc"
+ "fingerprint": "603952c6158a"
 }
