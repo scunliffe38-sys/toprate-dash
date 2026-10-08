@@ -1,26 +1,29 @@
 {
- "started": "2026-10-08T18:15:24",
+ "started": "2026-10-09T03:07:54",
  "dates": [
-  "2026-10-08",
   "2026-10-09",
-  "2026-10-10"
+  "2026-10-10",
+  "2026-10-11",
+  "2026-10-12"
  ],
- "reason": "Kyneton scratched R8 #11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 426,
- "rider_share": 0.91,
+ "acceptors": 689,
+ "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-07T21:20:17+00:00",
- "finished": "2026-10-08T18:40:36",
+ "extract": "2026-10-08T16:06:52+00:00",
+ "finished": "2026-10-09T04:20:42",
  "going": {
-  "Kyneton": "Soft 5",
-  "Ipswich": "Good 4",
-  "York": "Good 4",
-  "Hawkesbury": "Good 4",
-  "Orange": "Good 4"
+  "Ballarat": "Soft 5",
+  "Cranbourne": "Good 4",
+  "Port Macquarie": "Soft 7",
+  "Sunshine Coast": "Soft 5",
+  "Canberra": "Soft 6",
+  "Launceston": "Soft 5",
+  "Cloncurry": "Good"
  },
- "scratchings": 74,
- "dashboard": "toprate_week_v2_2026-10-08.html",
- "fingerprint": "9ace79ce98a2"
+ "scratchings": 58,
+ "dashboard": "toprate_week_v2_2026-10-09.html",
+ "fingerprint": "efca5565aeed"
 }
