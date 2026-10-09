@@ -1,29 +1,35 @@
 {
- "started": "2026-10-09T19:30:33",
+ "started": "2026-10-10T03:07:30",
  "dates": [
-  "2026-10-09",
   "2026-10-10",
   "2026-10-11",
-  "2026-10-12"
+  "2026-10-12",
+  "2026-10-13"
  ],
- "reason": "Cranbourne Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 689,
+ "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-08T21:20:42+00:00",
- "finished": "2026-10-09T20:16:06",
+ "extract": "2026-10-09T16:06:34+00:00",
+ "finished": "2026-10-10T04:21:12",
  "going": {
-  "Cranbourne": "Good 3",
-  "Sunshine Coast": "Good 4",
-  "Launceston": "Good 4",
-  "Ballarat": "Good 4",
-  "Port Macquarie": "Good 4",
-  "Canberra": "Good 4",
-  "Cloncurry": "Good"
+  "Caulfield": "Good 4",
+  "Rosehill": "Good 4",
+  "Eagle Farm": "Soft 5",
+  "Morphettville": "Good 4",
+  "Ascot": "Soft 6",
+  "Hamilton": "Soft 5",
+  "Manangatang": "Good 4",
+  "Kembla Grange": "Good 4",
+  "Albury": "Heavy 8",
+  "Port Macquarie": "Soft 5",
+  "Gold Coast": "Soft 5",
+  "Warwick": "Soft 6",
+  "Forbes": "Soft 5"
  },
- "scratchings": 138,
- "dashboard": "toprate_week_v2_2026-10-09.html",
- "fingerprint": "b5c8d00a3c9f"
+ "scratchings": 123,
+ "dashboard": "toprate_week_v2_2026-10-10.html",
+ "fingerprint": "af1a6fd6bba9"
 }
