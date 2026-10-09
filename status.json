@@ -1,19 +1,19 @@
 {
- "started": "2026-10-10T09:01:40",
+ "started": "2026-10-10T10:01:33",
  "dates": [
   "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Manangatang scratched R1 #11/13/14, R2 #6/13/14, R3 #11/12/13/14, R4 #12/13/14, R5 #7/13/14, R6 #13/14, R7 #2/6, R8 #11/12/13/14; Warwick Soft 6 -> Good 4; Warwick scratched R2 #10",
+ "reason": "Pioneer Park going Good; Pioneer Park scratched R1 #7, R2 #8",
  "status": "ok",
  "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T09:34:47",
+ "finished": "2026-10-10T10:34:39",
  "going": {
   "Caulfield": "Good 4",
   "Rosehill": "Good 4",
@@ -27,9 +27,10 @@
   "Port Macquarie": "Soft 5",
   "Gold Coast": "Good 4",
   "Warwick": "Good 4",
-  "Forbes": "Good 4"
+  "Forbes": "Good 4",
+  "Pioneer Park": "Good"
  },
- "scratchings": 247,
+ "scratchings": 249,
  "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "d9dcd25a662c"
+ "fingerprint": "709c861f188c"
 }
