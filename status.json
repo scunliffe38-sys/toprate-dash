@@ -1,19 +1,19 @@
 {
- "started": "2026-10-10T03:07:30",
+ "started": "2026-10-10T07:01:31",
  "dates": [
   "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "overnight harvest",
+ "reason": "Albury scratched R7 #14",
  "status": "ok",
  "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T04:21:12",
+ "finished": "2026-10-10T07:53:15",
  "going": {
   "Caulfield": "Good 4",
   "Rosehill": "Good 4",
@@ -29,7 +29,7 @@
   "Warwick": "Soft 6",
   "Forbes": "Soft 5"
  },
- "scratchings": 123,
+ "scratchings": 124,
  "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "af1a6fd6bba9"
+ "fingerprint": "a2685d53d18e"
 }
