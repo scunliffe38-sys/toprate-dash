@@ -1,29 +1,29 @@
 {
- "started": "2026-10-09T13:31:07",
+ "started": "2026-10-09T14:30:47",
  "dates": [
   "2026-10-09",
   "2026-10-10",
   "2026-10-11",
   "2026-10-12"
  ],
- "reason": "Canberra scratched R3 #8",
+ "reason": "Port Macquarie Soft 5 -> Good 4; Port Macquarie scratched R3 #18; Cloncurry scratched R1 #4",
  "status": "ok",
  "acceptors": 689,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-08T21:20:42+00:00",
- "finished": "2026-10-09T14:22:17",
+ "finished": "2026-10-09T15:16:28",
  "going": {
   "Cranbourne": "Good 4",
   "Ballarat": "Good 4",
-  "Port Macquarie": "Soft 5",
+  "Port Macquarie": "Good 4",
   "Sunshine Coast": "Good 4",
   "Canberra": "Soft 5",
   "Launceston": "Soft 5",
   "Cloncurry": "Good"
  },
- "scratchings": 134,
+ "scratchings": 136,
  "dashboard": "toprate_week_v2_2026-10-09.html",
- "fingerprint": "6db5c4c10750"
+ "fingerprint": "42b62b2da925"
 }
