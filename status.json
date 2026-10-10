@@ -1,23 +1,23 @@
 {
- "started": "2026-10-10T11:31:47",
+ "started": "2026-10-10T12:16:31",
  "dates": [
   "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Forbes scratched R2 #6, R6 #8; Ascot Soft 6 -> Soft 5; Ascot scratched R1 #5, R2 #1, R3 #11, R4 #17; Leonora going Good",
+ "reason": "Eagle Farm Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T12:05:08",
+ "finished": "2026-10-10T12:49:54",
  "going": {
   "Caulfield": "Good 4",
   "Rosehill": "Good 4",
-  "Eagle Farm": "Soft 5",
+  "Eagle Farm": "Good 4",
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
   "Hamilton": "Soft 5",
@@ -33,5 +33,5 @@
  },
  "scratchings": 255,
  "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "85e1217e8f0f"
+ "fingerprint": "d5454ad4a389"
 }
