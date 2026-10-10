@@ -1,18 +1,18 @@
 {
- "started": "2026-10-11T03:07:33",
+ "started": "2026-10-11T08:21:45",
  "dates": [
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 575,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-10T16:06:47+00:00",
- "finished": "2026-10-11T03:48:25",
+ "extract": "2026-10-10T21:20:46+00:00",
+ "finished": "2026-10-11T08:55:28",
  "going": {
   "Seymour": "Soft 5",
   "Queanbeyan": "Soft 6",
@@ -22,5 +22,5 @@
  },
  "scratchings": 47,
  "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "ced474c24d8d"
+ "fingerprint": "9ec28bbb8701"
 }
