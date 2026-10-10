@@ -1,37 +1,37 @@
 {
- "started": "2026-10-10T17:30:55",
+ "started": "2026-10-10T18:15:53",
  "dates": [
   "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Port Macquarie scratched R6 #17",
+ "reason": "Leonora scratched R3 #1, R4 #4",
  "status": "ok",
  "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T18:04:57",
+ "finished": "2026-10-10T18:49:32",
  "going": {
+  "Eagle Farm": "Good 4",
+  "Ascot": "Soft 5",
+  "Gold Coast": "Good 4",
+  "Pioneer Park": "Good",
+  "Leonora": "Good",
   "Caulfield": "Good 3",
   "Rosehill": "Good 4",
-  "Eagle Farm": "Good 4",
   "Morphettville": "Good 3",
-  "Ascot": "Soft 5",
   "Hamilton": "Soft 5",
   "Manangatang": "Good 3",
   "Kembla Grange": "Good 4",
-  "Port Macquarie": "Good 4",
-  "Gold Coast": "Good 4",
-  "Forbes": "Good 4",
-  "Pioneer Park": "Good",
-  "Leonora": "Good",
   "Albury": "Good 4",
-  "Warwick": "Soft 6"
+  "Port Macquarie": "Good 4",
+  "Warwick": "Soft 6",
+  "Forbes": "Good 4"
  },
- "scratchings": 262,
+ "scratchings": 264,
  "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "9d2b34f13463"
+ "fingerprint": "7133d9f8e3dc"
 }
