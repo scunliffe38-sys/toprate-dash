@@ -1,19 +1,19 @@
 {
- "started": "2026-10-10T12:16:31",
+ "started": "2026-10-10T13:01:39",
  "dates": [
   "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Eagle Farm Soft 5 -> Good 4",
+ "reason": "Warwick Good 4 -> Soft 5; Warwick scratched R6 #2",
  "status": "ok",
  "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T12:49:54",
+ "finished": "2026-10-10T13:34:48",
  "going": {
   "Caulfield": "Good 4",
   "Rosehill": "Good 4",
@@ -26,12 +26,12 @@
   "Albury": "Soft 5",
   "Port Macquarie": "Soft 5",
   "Gold Coast": "Good 4",
-  "Warwick": "Good 4",
+  "Warwick": "Soft 5",
   "Forbes": "Good 4",
   "Pioneer Park": "Good",
   "Leonora": "Good"
  },
- "scratchings": 255,
+ "scratchings": 256,
  "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "d5454ad4a389"
+ "fingerprint": "a60aae6f594e"
 }
