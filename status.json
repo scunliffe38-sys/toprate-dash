@@ -1,37 +1,26 @@
 {
- "started": "2026-10-10T20:00:42",
+ "started": "2026-10-11T03:07:33",
  "dates": [
-  "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Gold Coast scratched R8 #5",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 1674,
- "rider_share": 0.9,
+ "acceptors": 575,
+ "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T20:33:36",
+ "extract": "2026-10-10T16:06:47+00:00",
+ "finished": "2026-10-11T03:48:25",
  "going": {
-  "Ascot": "Soft 5",
-  "Caulfield": "Good 3",
-  "Rosehill": "Good 4",
-  "Eagle Farm": "Good 4",
-  "Morphettville": "Good 3",
-  "Hamilton": "Soft 5",
-  "Manangatang": "Good 3",
-  "Kembla Grange": "Good 4",
-  "Albury": "Good 4",
-  "Port Macquarie": "Good 4",
-  "Gold Coast": "Good 4",
-  "Warwick": "Soft 6",
-  "Forbes": "Good 4",
-  "Pioneer Park": "Good",
-  "Leonora": "Good"
+  "Seymour": "Soft 5",
+  "Queanbeyan": "Soft 6",
+  "Cairns": "Soft 5",
+  "Coonamble": "Good 4",
+  "Halidon": "Good 3"
  },
- "scratchings": 265,
- "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "bc7cac8272cf"
+ "scratchings": 47,
+ "dashboard": "toprate_week_v2_2026-10-11.html",
+ "fingerprint": "ced474c24d8d"
 }
