@@ -1,19 +1,19 @@
 {
- "started": "2026-10-10T16:45:58",
+ "started": "2026-10-10T17:30:55",
  "dates": [
   "2026-10-10",
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Warwick scratched R6 #7; Morphettville Good 4 -> Good 3",
+ "reason": "Port Macquarie scratched R6 #17",
  "status": "ok",
  "acceptors": 1674,
  "rider_share": 0.9,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-09T16:06:34+00:00",
- "finished": "2026-10-10T17:19:43",
+ "finished": "2026-10-10T18:04:57",
  "going": {
   "Caulfield": "Good 3",
   "Rosehill": "Good 4",
@@ -23,15 +23,15 @@
   "Hamilton": "Soft 5",
   "Manangatang": "Good 3",
   "Kembla Grange": "Good 4",
-  "Albury": "Good 4",
   "Port Macquarie": "Good 4",
   "Gold Coast": "Good 4",
-  "Warwick": "Soft 6",
   "Forbes": "Good 4",
   "Pioneer Park": "Good",
-  "Leonora": "Good"
+  "Leonora": "Good",
+  "Albury": "Good 4",
+  "Warwick": "Soft 6"
  },
- "scratchings": 261,
+ "scratchings": 262,
  "dashboard": "toprate_week_v2_2026-10-10.html",
- "fingerprint": "46dfa3ffcdff"
+ "fingerprint": "9d2b34f13463"
 }
