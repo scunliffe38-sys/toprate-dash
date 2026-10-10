@@ -1,26 +1,26 @@
 {
- "started": "2026-10-11T08:21:45",
+ "started": "2026-10-11T10:01:08",
  "dates": [
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "morning harvest",
+ "reason": "Halidon scratched R6 #14",
  "status": "ok",
  "acceptors": 575,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-10T21:20:46+00:00",
- "finished": "2026-10-11T08:55:28",
+ "finished": "2026-10-11T10:27:48",
  "going": {
   "Seymour": "Soft 5",
-  "Queanbeyan": "Soft 6",
-  "Cairns": "Soft 5",
+  "Queanbeyan": "Soft 5",
+  "Cairns": "Good 4",
   "Coonamble": "Good 4",
-  "Halidon": "Good 3"
+  "Halidon": "Good 4"
  },
- "scratchings": 47,
+ "scratchings": 91,
  "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "9ec28bbb8701"
+ "fingerprint": "a3caff196b19"
 }
