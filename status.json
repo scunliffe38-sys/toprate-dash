@@ -1,18 +1,18 @@
 {
- "started": "2026-10-12T03:06:54",
+ "started": "2026-10-12T08:21:36",
  "dates": [
   "2026-10-13"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 166,
  "rider_share": 0.79,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-11T16:06:12+00:00",
- "finished": "2026-10-12T03:33:33",
+ "extract": "2026-10-11T21:20:21+00:00",
+ "finished": "2026-10-12T08:35:37",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-10-13.html",
- "fingerprint": "531fee1b42f5"
+ "fingerprint": "2dfef756a9bf"
 }
