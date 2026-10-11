@@ -1,26 +1,27 @@
 {
- "started": "2026-10-11T11:03:26",
+ "started": "2026-10-11T11:45:53",
  "dates": [
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Halidon scratched R2 #6",
+ "reason": "Geraldton going Good 4",
  "status": "ok",
  "acceptors": 575,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-10T21:20:46+00:00",
- "finished": "2026-10-11T11:29:50",
+ "finished": "2026-10-11T12:12:18",
  "going": {
   "Seymour": "Soft 5",
   "Queanbeyan": "Soft 5",
   "Cairns": "Good 4",
+  "Geraldton": "Good 4",
   "Coonamble": "Good 4",
   "Halidon": "Good 4"
  },
  "scratchings": 93,
  "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "ca18f5377139"
+ "fingerprint": "edc569aaffbc"
 }
