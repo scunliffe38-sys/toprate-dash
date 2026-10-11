@@ -1,21 +1,21 @@
 {
- "started": "2026-10-11T13:30:41",
+ "started": "2026-10-11T14:00:48",
  "dates": [
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Halidon Good 4 -> Good 3",
+ "reason": "Queanbeyan Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 575,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-10T21:20:46+00:00",
- "finished": "2026-10-11T13:55:20",
+ "finished": "2026-10-11T14:24:59",
  "going": {
   "Seymour": "Soft 5",
-  "Queanbeyan": "Soft 5",
+  "Queanbeyan": "Good 4",
   "Cairns": "Good 4",
   "Geraldton": "Good 4",
   "Coonamble": "Good 4",
@@ -24,5 +24,5 @@
  },
  "scratchings": 93,
  "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "0699517c15d4"
+ "fingerprint": "0760a4cba5d7"
 }
