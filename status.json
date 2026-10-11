@@ -1,18 +1,18 @@
 {
- "started": "2026-10-11T16:30:50",
+ "started": "2026-10-11T17:00:44",
  "dates": [
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Halidon Good 3 -> Firm 2",
+ "reason": "Halidon scratched R7 #6/11",
  "status": "ok",
  "acceptors": 575,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-10T21:20:46+00:00",
- "finished": "2026-10-11T16:57:20",
+ "finished": "2026-10-11T17:26:57",
  "going": {
   "Seymour": "Soft 5",
   "Queanbeyan": "Good 4",
@@ -22,7 +22,7 @@
   "Halidon": "Firm 2",
   "Sha Tin": "Good"
  },
- "scratchings": 97,
+ "scratchings": 99,
  "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "934ff0daff80"
+ "fingerprint": "26ed204bd703"
 }
