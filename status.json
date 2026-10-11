@@ -1,28 +1,28 @@
 {
- "started": "2026-10-11T14:30:43",
+ "started": "2026-10-11T16:00:52",
  "dates": [
   "2026-10-11",
   "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Cairns scratched R2 #3",
+ "reason": "Halidon scratched R6 #6",
  "status": "ok",
  "acceptors": 575,
  "rider_share": 0.92,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-10T21:20:46+00:00",
- "finished": "2026-10-11T14:55:40",
+ "finished": "2026-10-11T16:27:25",
  "going": {
   "Seymour": "Soft 5",
   "Queanbeyan": "Good 4",
   "Cairns": "Good 4",
   "Geraldton": "Good 4",
-  "Coonamble": "Good 4",
+  "Coonamble": "Good 3",
   "Halidon": "Good 3",
   "Sha Tin": "Good"
  },
- "scratchings": 94,
+ "scratchings": 97,
  "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "c21dbe35f60a"
+ "fingerprint": "f2f6a145c2bc"
 }
