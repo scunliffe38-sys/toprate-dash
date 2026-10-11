@@ -1,28 +1,18 @@
 {
- "started": "2026-10-11T17:00:44",
+ "started": "2026-10-12T03:06:54",
  "dates": [
-  "2026-10-11",
-  "2026-10-12",
   "2026-10-13"
  ],
- "reason": "Halidon scratched R7 #6/11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 575,
- "rider_share": 0.92,
+ "acceptors": 166,
+ "rider_share": 0.79,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-10T21:20:46+00:00",
- "finished": "2026-10-11T17:26:57",
- "going": {
-  "Seymour": "Soft 5",
-  "Queanbeyan": "Good 4",
-  "Cairns": "Good 4",
-  "Geraldton": "Good 4",
-  "Coonamble": "Good 3",
-  "Halidon": "Firm 2",
-  "Sha Tin": "Good"
- },
- "scratchings": 99,
- "dashboard": "toprate_week_v2_2026-10-11.html",
- "fingerprint": "26ed204bd703"
+ "extract": "2026-10-11T16:06:12+00:00",
+ "finished": "2026-10-12T03:33:33",
+ "going": {},
+ "scratchings": 0,
+ "dashboard": "toprate_week_v2_2026-10-13.html",
+ "fingerprint": "531fee1b42f5"
 }
