@@ -1,18 +1,18 @@
 {
- "started": "2026-10-12T08:21:36",
+ "started": "2026-10-12T21:02:16",
  "dates": [
   "2026-10-13"
  ],
- "reason": "morning harvest",
+ "reason": "switched to our own feed",
  "status": "ok",
  "acceptors": 166,
- "rider_share": 0.79,
- "extract_max_date": "2026-11-03",
+ "rider_share": 0.85,
+ "extract_max_date": "2026-10-13",
  "card_source": "toprate",
- "extract": "2026-10-11T21:20:21+00:00",
- "finished": "2026-10-12T08:35:37",
+ "extract": "2026-10-12T10:01:14+00:00",
+ "finished": "2026-10-12T21:15:23",
  "going": {},
  "scratchings": 0,
  "dashboard": "toprate_week_v2_2026-10-13.html",
- "fingerprint": "2dfef756a9bf"
+ "fingerprint": "37b169d1490c"
 }
