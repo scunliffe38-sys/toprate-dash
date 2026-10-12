@@ -1,21 +1,23 @@
 {
- "started": "2026-10-13T03:05:59",
+ "started": "2026-10-13T08:21:20",
  "dates": [
-  "2026-10-13"
+  "2026-10-13",
+  "2026-10-14",
+  "2026-10-15"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 166,
- "rider_share": 0.85,
- "extract_max_date": "2026-10-13",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-10-15",
  "card_source": "toprate",
- "extract": "2026-10-12T16:05:12+00:00",
- "finished": "2026-10-13T03:33:47",
+ "extract": "2026-10-12T21:20:27+00:00",
+ "finished": "2026-10-13T09:35:14",
  "going": {
-  "Kilmore": "Soft 5",
+  "Kilmore": "Good 4",
   "Grafton": "Soft 5"
  },
- "scratchings": 22,
+ "scratchings": 47,
  "dashboard": "toprate_week_v2_2026-10-13.html",
- "fingerprint": "b41876a2cb67"
+ "fingerprint": "4cac38f7aedf"
 }
