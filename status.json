@@ -1,25 +1,26 @@
 {
- "started": "2026-10-14T03:07:04",
+ "started": "2026-10-14T08:23:01",
  "dates": [
   "2026-10-14",
-  "2026-10-15"
+  "2026-10-15",
+  "2026-10-16"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 453,
- "rider_share": 0.94,
- "extract_max_date": "2026-10-15",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-10-16",
  "card_source": "toprate",
- "extract": "2026-10-13T16:05:58+00:00",
- "finished": "2026-10-14T03:47:11",
+ "extract": "2026-10-13T21:21:50+00:00",
+ "finished": "2026-10-14T09:33:58",
  "going": {
   "Caulfield": "Good 4",
-  "Rosehill": "Soft 5",
+  "Rosehill": "Soft 7",
   "Eagle Farm": "Soft 5",
   "Balaklava": "Good 4",
   "Ascot": "Good 4"
  },
- "scratchings": 35,
+ "scratchings": 68,
  "dashboard": "toprate_week_v2_2026-10-14.html",
- "fingerprint": "1e981f1b8b80"
+ "fingerprint": "e1b8e9cdea77"
 }
