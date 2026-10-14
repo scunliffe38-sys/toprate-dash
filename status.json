@@ -1,18 +1,18 @@
 {
- "started": "2026-10-14T10:03:54",
+ "started": "2026-10-14T12:01:01",
  "dates": [
   "2026-10-14",
   "2026-10-15",
   "2026-10-16"
  ],
- "reason": "Eagle Farm scratched R1 #6/9/12/14, R4 #14/15, R5 #3, R6 #9",
+ "reason": "Ascot scratched R1 #16/18, R5 #10",
  "status": "ok",
  "acceptors": 453,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-16",
  "card_source": "toprate",
  "extract": "2026-10-13T21:21:50+00:00",
- "finished": "2026-10-14T10:38:24",
+ "finished": "2026-10-14T12:34:50",
  "going": {
   "Caulfield": "Good 4",
   "Rosehill": "Soft 7",
@@ -20,7 +20,7 @@
   "Balaklava": "Good 4",
   "Ascot": "Good 4"
  },
- "scratchings": 76,
+ "scratchings": 79,
  "dashboard": "toprate_week_v2_2026-10-14.html",
- "fingerprint": "2486b1bef4ed"
+ "fingerprint": "bebbef5c65b7"
 }
