@@ -1,27 +1,24 @@
 {
- "started": "2026-10-14T16:45:56",
+ "started": "2026-10-15T03:08:24",
  "dates": [
-  "2026-10-14",
   "2026-10-15",
   "2026-10-16"
  ],
- "reason": "Balaklava scratched R6 #8",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 453,
- "rider_share": 1.0,
+ "acceptors": 339,
+ "rider_share": 0.95,
  "extract_max_date": "2026-10-16",
  "card_source": "toprate",
- "extract": "2026-10-13T21:21:50+00:00",
- "finished": "2026-10-14T17:19:19",
+ "extract": "2026-10-14T16:07:04+00:00",
+ "finished": "2026-10-15T03:49:43",
  "going": {
-  "Caulfield": "Good 4",
-  "Rosehill": "Soft 6",
-  "Eagle Farm": "Soft 5",
-  "Balaklava": "Good 4",
-  "Ascot": "Good 4",
-  "Happy Valley": "Good"
+  "Warrnambool": "Good 4",
+  "Hawkesbury": "Soft 7",
+  "Ipswich": "Good 4",
+  "Northam": "Soft 5"
  },
- "scratchings": 84,
- "dashboard": "toprate_week_v2_2026-10-14.html",
- "fingerprint": "58149c890837"
+ "scratchings": 23,
+ "dashboard": "toprate_week_v2_2026-10-15.html",
+ "fingerprint": "2fc924ebcc85"
 }
