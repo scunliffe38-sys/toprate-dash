@@ -1,24 +1,25 @@
 {
- "started": "2026-10-15T03:08:24",
+ "started": "2026-10-15T08:23:12",
  "dates": [
   "2026-10-15",
-  "2026-10-16"
+  "2026-10-16",
+  "2026-10-17"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 339,
- "rider_share": 0.95,
- "extract_max_date": "2026-10-16",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-10-17",
  "card_source": "toprate",
- "extract": "2026-10-14T16:07:04+00:00",
- "finished": "2026-10-15T03:49:43",
+ "extract": "2026-10-14T21:22:06+00:00",
+ "finished": "2026-10-15T09:35:13",
  "going": {
-  "Warrnambool": "Good 4",
-  "Hawkesbury": "Soft 7",
+  "Warrnambool": "Soft 5",
+  "Hawkesbury": "Soft 6",
   "Ipswich": "Good 4",
   "Northam": "Soft 5"
  },
- "scratchings": 23,
+ "scratchings": 49,
  "dashboard": "toprate_week_v2_2026-10-15.html",
- "fingerprint": "2fc924ebcc85"
+ "fingerprint": "3be2766c9144"
 }
