@@ -1,25 +1,25 @@
 {
- "started": "2026-10-15T14:45:39",
+ "started": "2026-10-15T15:15:30",
  "dates": [
   "2026-10-15",
   "2026-10-16",
   "2026-10-17"
  ],
- "reason": "Hawkesbury Soft 6 -> Soft 7",
+ "reason": "Hawkesbury scratched R4 #4; Ipswich scratched R2 #3",
  "status": "ok",
  "acceptors": 339,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-17",
  "card_source": "toprate",
  "extract": "2026-10-14T21:22:06+00:00",
- "finished": "2026-10-15T15:12:52",
+ "finished": "2026-10-15T15:43:09",
  "going": {
   "Warrnambool": "Good 4",
   "Hawkesbury": "Soft 7",
   "Ipswich": "Good 4",
   "Northam": "Good 4"
  },
- "scratchings": 59,
+ "scratchings": 61,
  "dashboard": "toprate_week_v2_2026-10-15.html",
- "fingerprint": "01a29e44acec"
+ "fingerprint": "9797039ada40"
 }
