@@ -1,25 +1,25 @@
 {
- "started": "2026-10-15T12:00:32",
+ "started": "2026-10-15T13:45:32",
  "dates": [
   "2026-10-15",
   "2026-10-16",
   "2026-10-17"
  ],
- "reason": "Northam Soft 5 -> Good 4; Northam scratched R3 #1, R5 #4/13, R6 #11/13/14/15, R7 #3, R8 #1/7",
+ "reason": "Warrnambool Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 339,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-17",
  "card_source": "toprate",
  "extract": "2026-10-14T21:22:06+00:00",
- "finished": "2026-10-15T12:33:32",
+ "finished": "2026-10-15T14:12:30",
  "going": {
-  "Warrnambool": "Soft 5",
+  "Warrnambool": "Good 4",
   "Hawkesbury": "Soft 6",
   "Ipswich": "Good 4",
   "Northam": "Good 4"
  },
  "scratchings": 59,
  "dashboard": "toprate_week_v2_2026-10-15.html",
- "fingerprint": "ad048fed5102"
+ "fingerprint": "dd4a96e659cf"
 }
