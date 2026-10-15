@@ -1,25 +1,27 @@
 {
- "started": "2026-10-15T19:30:23",
+ "started": "2026-10-16T03:07:14",
  "dates": [
-  "2026-10-15",
   "2026-10-16",
   "2026-10-17"
  ],
- "reason": "Northam scratched R6 #5",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 339,
- "rider_share": 1.0,
+ "acceptors": 729,
+ "rider_share": 0.85,
  "extract_max_date": "2026-10-17",
  "card_source": "toprate",
- "extract": "2026-10-14T21:22:06+00:00",
- "finished": "2026-10-15T20:02:26",
+ "extract": "2026-10-15T16:06:08+00:00",
+ "finished": "2026-10-16T03:48:57",
  "going": {
-  "Northam": "Good 4",
-  "Warrnambool": "Good 4",
-  "Hawkesbury": "Soft 7",
-  "Ipswich": "Good 4"
+  "Cranbourne": "Good 4",
+  "Bathurst": "Soft 6",
+  "Taree": "Soft 7",
+  "Sunshine Coast": "Soft 6",
+  "Gatton": "Soft 5",
+  "Penola": "Soft 5",
+  "Launceston": "Soft 5"
  },
- "scratchings": 64,
- "dashboard": "toprate_week_v2_2026-10-15.html",
- "fingerprint": "549ac64ea9e4"
+ "scratchings": 95,
+ "dashboard": "toprate_week_v2_2026-10-16.html",
+ "fingerprint": "e50dedd359e0"
 }
