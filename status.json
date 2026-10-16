@@ -1,18 +1,18 @@
 {
- "started": "2026-10-17T03:06:50",
+ "started": "2026-10-17T06:11:14",
  "dates": [
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "overnight harvest",
+ "reason": "learned base live (re-rate)",
  "status": "ok",
  "acceptors": 1938,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-16T16:05:43+00:00",
- "finished": "2026-10-17T04:00:10",
+ "finished": "2026-10-17T07:05:41",
  "going": {
   "Caulfield": "Good 4",
   "Randwick": "Soft 7",
