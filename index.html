@@ -1591,7 +1591,7 @@ function wormIcon(r,x){
     <path class="l" d="${wSmooth(k.map((z,i)=>[xs(i),ys(z[6])]))}"/><circle class="e" cx="${xs(k.length-1)}" cy="${ys(v[v.length-1]).toFixed(1)}" r="2.2"/></svg></button>`;
 }
 function wormRow(r,x){
-  const all=wFig(x).slice(-wormN), [lo,hi]=wormDist, inR=z=>z[2]!=null&&z[2]>=lo&&z[2]<=hi;
+  const all=wFig(x).slice(-wormN), [lo,hi]=wormDist, inR=z=>z[2]==null||(z[2]>=lo&&z[2]<=hi);   // a run whose trip the form file lost (17 Oct 2026: 80% of October's) cannot be filtered out by trip
   // drawn at the width it gets, so the labels stay readable on a phone (a fixed 700 viewBox shrank them to ~8px)
   const W=Math.max(340,Math.min(980,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))),H=W<500?200:240,L=34,R=W<500?70:86,T=14,B=40;
   // the scale fits the figures (Simon, 16 Oct: rounding out to whole fives left dead space under the line): the range of
@@ -1625,7 +1625,7 @@ function wormWire(r){
   const x=r.runners.find(z=>wormKey===wkey(r,z)); if(!x) return;
   const all=wFig(x).slice(-wormN), [lo,hi]=wormDist;
   const show=i=>{ const z=all[i]; if(!z) return; const el=$("wRun"); if(!el) return;
-    el.innerHTML=`<span><b>${wDate(z[0])}</b> · ${z[1]||''} ${z[2]??''}m${z[3]?' · '+WSURF[z[3]]:''}</span><span>${ordn(z[4])}${z[5]?' of '+z[5]:''}</span><span>figure <span class="v">${z[6].toFixed(1)}</span></span>${z[7]?'<span>first up</span>':''}${(z[2]!=null&&z[2]>=lo&&z[2]<=hi)?'':'<span>outside the trip range</span>'}`; };
+    el.innerHTML=`<span><b>${wDate(z[0])}</b> · ${z[1]||''} ${z[2]??''}m${z[3]?' · '+WSURF[z[3]]:''}</span><span>${ordn(z[4])}${z[5]?' of '+z[5]:''}</span><span>figure <span class="v">${z[6].toFixed(1)}</span></span>${z[7]?'<span>first up</span>':''}${(z[2]==null||(z[2]>=lo&&z[2]<=hi))?'':'<span>outside the trip range</span>'}`; };
   show(all.length-1);
   document.querySelectorAll('.wg .hit').forEach(h=>{ h.onmouseenter=()=>show(+h.dataset.k); h.onclick=e=>{e.stopPropagation(); show(+h.dataset.k);}; });
   const lab=()=>{ const a=+$("wLo").value, b=+$("wHi").value; $("wLbl").textContent=`${Math.min(a,b)}–${Math.max(a,b)}m`; };
@@ -2053,4 +2053,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 17 Oct 10:34</b> AEST &middot; Gold Coast Soft 5 -> Soft 7; Gold Coast scratched R1 #14/16, R2 #6, R4 #4, R5 #5/6/12/13, R6 #11, R7 #1, R8 #4/14; Wagga scratched R2 #3; Innisfail scratched R5 #13, R6 #5; Fannie </div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 17 Oct 10:35</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
