@@ -1,18 +1,18 @@
 {
- "started": "2026-10-17T08:13:25",
+ "started": "2026-10-17T10:01:53",
  "dates": [
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "wet column (deploy_wet)",
+ "reason": "Gold Coast Soft 5 -> Soft 7; Gold Coast scratched R1 #14/16, R2 #6, R4 #4, R5 #5/6/12/13, R6 #11, R7 #1, R8 #4/14; Wagga scratched R2 #3; Innisfail scratched R5 #13, R6 #5; Fannie ",
  "status": "ok",
  "acceptors": 1938,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-16T16:05:43+00:00",
- "finished": "2026-10-17T09:10:33",
+ "finished": "2026-10-17T10:34:07",
  "going": {
   "Caulfield": "Good 4",
   "Randwick": "Soft 7",
@@ -25,14 +25,14 @@
   "Newcastle": "Soft 5",
   "Wagga": "Good 4",
   "Narromine": "Soft 7",
-  "Gold Coast": "Soft 5",
+  "Gold Coast": "Soft 7",
   "Toowoomba": "Soft 5",
   "Rockhampton": "Soft 6",
   "Innisfail": "Good 4",
   "Fannie Bay": "Good",
   "Leinster": "Good"
  },
- "scratchings": 267,
+ "scratchings": 284,
  "dashboard": "toprate_week_v2_2026-10-17.html",
- "fingerprint": "0fbe726b0110"
+ "fingerprint": "796c75810e17"
 }
