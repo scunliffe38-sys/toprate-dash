@@ -1,27 +1,29 @@
 {
- "started": "2026-10-16T03:07:14",
+ "started": "2026-10-16T10:01:00",
  "dates": [
   "2026-10-16",
-  "2026-10-17"
+  "2026-10-17",
+  "2026-10-18",
+  "2026-10-19"
  ],
- "reason": "overnight harvest",
+ "reason": "Launceston scratched R2 #2",
  "status": "ok",
  "acceptors": 729,
- "rider_share": 0.85,
- "extract_max_date": "2026-10-17",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-10-19",
  "card_source": "toprate",
- "extract": "2026-10-15T16:06:08+00:00",
- "finished": "2026-10-16T03:48:57",
+ "extract": "2026-10-15T21:22:02+00:00",
+ "finished": "2026-10-16T11:01:38",
  "going": {
   "Cranbourne": "Good 4",
-  "Bathurst": "Soft 6",
   "Taree": "Soft 7",
+  "Bathurst": "Soft 5",
   "Sunshine Coast": "Soft 6",
-  "Gatton": "Soft 5",
+  "Gatton": "Soft 6",
   "Penola": "Soft 5",
   "Launceston": "Soft 5"
  },
- "scratchings": 95,
+ "scratchings": 190,
  "dashboard": "toprate_week_v2_2026-10-16.html",
- "fingerprint": "e50dedd359e0"
+ "fingerprint": "cca5cd7bdfe9"
 }
