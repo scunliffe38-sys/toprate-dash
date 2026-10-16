@@ -1,29 +1,29 @@
 {
- "started": "2026-10-16T17:00:45",
+ "started": "2026-10-16T18:00:38",
  "dates": [
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Taree Soft 7 -> Soft 6",
+ "reason": "Sunshine Coast Soft 6 -> Soft 7",
  "status": "ok",
  "acceptors": 729,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-15T21:22:02+00:00",
- "finished": "2026-10-16T17:43:13",
+ "finished": "2026-10-16T18:44:19",
  "going": {
   "Cranbourne": "Good 4",
+  "Sunshine Coast": "Soft 7",
+  "Gatton": "Soft 5",
+  "Launceston": "Good 4",
   "Taree": "Soft 6",
   "Bathurst": "Good 4",
-  "Sunshine Coast": "Soft 6",
-  "Gatton": "Soft 5",
-  "Penola": "Soft 5",
-  "Launceston": "Good 4"
+  "Penola": "Soft 5"
  },
  "scratchings": 199,
  "dashboard": "toprate_week_v2_2026-10-16.html",
- "fingerprint": "34f4a8eba52b"
+ "fingerprint": "e746d6269d3d"
 }
