@@ -1,29 +1,29 @@
 {
- "started": "2026-10-16T20:45:29",
+ "started": "2026-10-16T21:45:29",
  "dates": [
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Cranbourne scratched R8 #12; Launceston scratched R6 #8; Sunshine Coast Soft 7 -> Heavy 9",
+ "reason": "Sunshine Coast Heavy 9 -> Heavy 10; Sunshine Coast scratched R6 #12, R8 #3",
  "status": "ok",
  "acceptors": 729,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-15T21:22:02+00:00",
- "finished": "2026-10-16T21:31:34",
+ "finished": "2026-10-16T22:29:10",
  "going": {
   "Cranbourne": "Good 4",
-  "Sunshine Coast": "Heavy 9",
+  "Sunshine Coast": "Heavy 10",
   "Launceston": "Good 4",
   "Taree": "Soft 6",
   "Bathurst": "Good 4",
   "Gatton": "Soft 5",
   "Penola": "Soft 5"
  },
- "scratchings": 204,
+ "scratchings": 206,
  "dashboard": "toprate_week_v2_2026-10-16.html",
- "fingerprint": "b2cbab7a2e5e"
+ "fingerprint": "0b29bf767381"
 }
