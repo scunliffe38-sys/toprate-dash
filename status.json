@@ -1,19 +1,19 @@
 {
- "started": "2026-10-16T15:15:51",
+ "started": "2026-10-16T16:15:48",
  "dates": [
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Bathurst Soft 5 -> Good 4; Taree scratched R5 #6; Gatton scratched R3 #7/8, R4 #2, R8 #9",
+ "reason": "Launceston Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 729,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-15T21:22:02+00:00",
- "finished": "2026-10-16T16:00:39",
+ "finished": "2026-10-16T16:59:05",
  "going": {
   "Cranbourne": "Good 4",
   "Taree": "Soft 7",
@@ -21,9 +21,9 @@
   "Sunshine Coast": "Soft 6",
   "Gatton": "Soft 5",
   "Penola": "Soft 5",
-  "Launceston": "Soft 5"
+  "Launceston": "Good 4"
  },
  "scratchings": 199,
  "dashboard": "toprate_week_v2_2026-10-16.html",
- "fingerprint": "6cb05b5df46e"
+ "fingerprint": "f3eb7b176886"
 }
