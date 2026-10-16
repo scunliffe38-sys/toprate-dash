@@ -1,19 +1,19 @@
 {
- "started": "2026-10-16T10:01:00",
+ "started": "2026-10-16T12:01:08",
  "dates": [
   "2026-10-16",
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Launceston scratched R2 #2",
+ "reason": "Launceston scratched R5 #5",
  "status": "ok",
  "acceptors": 729,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-15T21:22:02+00:00",
- "finished": "2026-10-16T11:01:38",
+ "finished": "2026-10-16T12:44:57",
  "going": {
   "Cranbourne": "Good 4",
   "Taree": "Soft 7",
@@ -23,7 +23,7 @@
   "Penola": "Soft 5",
   "Launceston": "Soft 5"
  },
- "scratchings": 190,
+ "scratchings": 191,
  "dashboard": "toprate_week_v2_2026-10-16.html",
- "fingerprint": "cca5cd7bdfe9"
+ "fingerprint": "a4eb0d95bee3"
 }
