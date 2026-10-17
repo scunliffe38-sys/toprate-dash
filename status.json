@@ -1,30 +1,30 @@
 {
- "started": "2026-10-17T15:01:47",
+ "started": "2026-10-17T15:46:28",
  "dates": [
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Narromine Soft 7 -> Soft 6; Newcastle scratched R3 #12",
+ "reason": "Narromine Soft 6 -> Soft 5; Leinster scratched R4 #7; Avoca Good 4 -> Good 3; Morphettville Good 4 -> Good 3; Doomben Soft 5 -> Good 4; Innisfail scratched R6 #8; Wodonga Good 4 ->",
  "status": "ok",
  "acceptors": 1938,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-16T16:05:43+00:00",
- "finished": "2026-10-17T15:33:47",
+ "finished": "2026-10-17T16:18:02",
  "going": {
   "Caulfield": "Good 4",
-  "Randwick": "Soft 6",
-  "Doomben": "Soft 5",
-  "Morphettville": "Good 4",
+  "Randwick": "Soft 5",
+  "Doomben": "Good 4",
+  "Morphettville": "Good 3",
   "Ascot": "Good 4",
-  "Bendigo": "Good 4",
-  "Wodonga": "Good 4",
-  "Avoca": "Good 4",
+  "Bendigo": "Good 3",
+  "Wodonga": "Good 3",
+  "Avoca": "Good 3",
   "Newcastle": "Soft 5",
   "Wagga": "Good 4",
-  "Narromine": "Soft 6",
+  "Narromine": "Soft 5",
   "Gold Coast": "Soft 7",
   "Toowoomba": "Soft 5",
   "Rockhampton": "Soft 6",
@@ -32,7 +32,7 @@
   "Fannie Bay": "Good",
   "Leinster": "Good"
  },
- "scratchings": 296,
+ "scratchings": 298,
  "dashboard": "toprate_week_v2_2026-10-17.html",
- "fingerprint": "774f33b52aa5"
+ "fingerprint": "38fa30f2978a"
 }
