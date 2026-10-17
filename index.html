@@ -1292,18 +1292,22 @@ function spMapSvg(r,on,alloc,top,key,sel,rival){
   }
   return s+'</svg>';
 }
+let SPCTX=null;
+function spTextW(t){ try{ SPCTX=SPCTX||document.createElement('canvas').getContext('2d'); SPCTX.font='500 10px Inter, system-ui, sans-serif'; return SPCTX.measureText(t).width; }catch(e){ return t.length*6.3; } }
 function spProfSvg(r,pr,key,sel){
   // mirrored to read with the map beside it (Simon, 16 Oct 2026): runners at the right edge, then Early, Middle, Late
   // reading leftwards; each bar grows leftwards from its panel's right edge, so faster reaches further left, as the leader does
   const W=Math.max(320,Math.min(900,SPW.r||(spNarrow()?370:690))), n=W<520, rows=pr.rs.slice().sort((a,b)=>(b.bar??99)-(a.bar??99)||a.no-b.no);
-  const rh=n?18:19, NW=n?150:186, T=30, B=8, H=T+rows.length*rh+B, gap=n?8:14, pw=(W-NW-gap*2)/3, Z=W-NW+6;
+  // the name column fits the longest name in the field, not a fixed 186 px (Simon, 18 Oct 2026: "too much empty space")
+  const NW=Math.min(n?150:186,Math.max(84,Math.ceil(Math.max(...rows.map(x=>spTextW(x.name))))+32));
+  const rh=n?18:19, T=30, B=8, H=T+rows.length*rh+B, gap=n?8:14, pw=(W-NW-gap*2)/3, Z=W-NW+6;
   const all=pr.rs.flatMap(x=>x.rsp);
   const SECN=n?['EARLY','MIDDLE','LATE']:['EARLY · TO 800','MIDDLE · 800–400','LATE · 400–POST'];
   let s=`<svg class="spprof" viewBox="0 0 ${W} ${H}" style="max-width:${W}px" role="img" aria-label="Race speed profile: runners at the right in barrier order, inside draw at the foot; early, middle and late reading leftwards">`;
   rows.forEach((x,j)=>{ const y=T+j*rh, p=pr.P[x.no], on=sel&&sel.no===x.no, cls=on?' sel':'', cy=y+rh/2;
     if(on) s+=`<rect class="hl" x="0" y="${y}" width="${W}" height="${rh}"/>`;
     const tx=Z;                                                // no tags (Simon, 17 Oct 2026: "simplify the view"); the bar colours carry it
-    const fit=Math.max(4,Math.floor((W-26-(tx+2))/6.3)), nm=x.name.length>fit?x.name.slice(0,fit-1)+'…':x.name;
+    const room=W-24-(tx+2); let nm=x.name; while(nm.length>4&&spTextW(nm)>room) nm=nm.slice(0,-2)+'…';
     s+=`<g class="rl${cls}" onclick="stPick(event,'${key}',${x.no})"><text class="rn" x="${tx+2}" y="${cy+4}">${spEsc(nm)}</text><text class="sno" x="${W-4}" y="${cy+4}" text-anchor="end">${x.no}</text></g>`; });
   // each section on its own scale (Simon, 18 Oct 2026): the fastest bar fills the panel, the slowest keeps a third of it, so
   // the early section's spread is as readable as the others'; no grid lines or axis numbers, the field average line stays
@@ -2056,4 +2060,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 18 Oct 07:49</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 18 Oct 09:09</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
