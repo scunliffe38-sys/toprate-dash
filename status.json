@@ -1,38 +1,38 @@
 {
- "started": "2026-10-17T18:00:56",
+ "started": "2026-10-17T18:45:51",
  "dates": [
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Innisfail scratched R6 #1",
+ "reason": "Leinster scratched R5 #8; Fannie Bay scratched R6 #3",
  "status": "ok",
  "acceptors": 1938,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-16T16:05:43+00:00",
- "finished": "2026-10-17T18:33:37",
+ "finished": "2026-10-17T19:21:29",
  "going": {
   "Caulfield": "Good 4",
-  "Randwick": "Soft 5",
   "Doomben": "Good 4",
-  "Morphettville": "Good 3",
   "Ascot": "Good 4",
-  "Newcastle": "Soft 5",
-  "Gold Coast": "Soft 7",
   "Toowoomba": "Soft 5",
-  "Rockhampton": "Soft 6",
-  "Innisfail": "Good 4",
   "Fannie Bay": "Good",
   "Leinster": "Good",
+  "Randwick": "Soft 5",
+  "Morphettville": "Good 3",
   "Bendigo": "Good 3",
   "Wodonga": "Good 3",
   "Avoca": "Good 3",
+  "Newcastle": "Soft 5",
   "Wagga": "Good 4",
-  "Narromine": "Soft 5"
+  "Narromine": "Soft 5",
+  "Gold Coast": "Soft 7",
+  "Rockhampton": "Soft 6",
+  "Innisfail": "Good 4"
  },
- "scratchings": 300,
+ "scratchings": 302,
  "dashboard": "toprate_week_v2_2026-10-17.html",
- "fingerprint": "21611b040337"
+ "fingerprint": "874243e6bb49"
 }
