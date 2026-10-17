@@ -1,18 +1,18 @@
 {
- "started": "2026-10-17T13:32:10",
+ "started": "2026-10-17T14:16:29",
  "dates": [
   "2026-10-17",
   "2026-10-18",
   "2026-10-19"
  ],
- "reason": "Randwick scratched R2 #6",
+ "reason": "Morphettville scratched R6 #15; Fannie Bay scratched R4 #6",
  "status": "ok",
  "acceptors": 1938,
  "rider_share": 0.87,
  "extract_max_date": "2026-10-19",
  "card_source": "toprate",
  "extract": "2026-10-16T16:05:43+00:00",
- "finished": "2026-10-17T14:04:51",
+ "finished": "2026-10-17T14:48:57",
  "going": {
   "Caulfield": "Good 4",
   "Randwick": "Soft 6",
@@ -32,7 +32,7 @@
   "Fannie Bay": "Good",
   "Leinster": "Good"
  },
- "scratchings": 293,
+ "scratchings": 295,
  "dashboard": "toprate_week_v2_2026-10-17.html",
- "fingerprint": "4c495357a8a1"
+ "fingerprint": "61e7c7a5ff25"
 }
