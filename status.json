@@ -1,26 +1,26 @@
 {
- "started": "2026-10-18T03:06:04",
+ "started": "2026-10-18T10:00:40",
  "dates": [
   "2026-10-18",
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "overnight harvest",
+ "reason": "Townsville scratched R2 #17, R7 #15",
  "status": "ok",
  "acceptors": 511,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
  "extract": "2026-10-17T16:05:17+00:00",
- "finished": "2026-10-18T04:09:03",
+ "finished": "2026-10-18T10:30:38",
  "going": {
-  "Horsham": "Soft 5",
+  "Horsham": "Good 4",
   "Moe": "Good 4",
+  "Nowra": "Soft 6",
   "Lismore": "Soft 6",
-  "Nowra": "Soft 7",
   "Townsville": "Soft 5"
  },
- "scratchings": 60,
+ "scratchings": 104,
  "dashboard": "toprate_week_v2_2026-10-18.html",
- "fingerprint": "2298922c1054"
+ "fingerprint": "2fcb00aa796c"
 }
