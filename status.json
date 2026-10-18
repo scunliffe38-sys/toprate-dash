@@ -1,27 +1,23 @@
 {
- "started": "2026-10-18T17:45:29",
+ "started": "2026-10-19T03:07:00",
  "dates": [
-  "2026-10-18",
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "Moe scratched R7 #11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 511,
- "rider_share": 0.89,
+ "acceptors": 304,
+ "rider_share": 0.81,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
- "extract": "2026-10-17T16:05:17+00:00",
- "finished": "2026-10-18T18:16:08",
+ "extract": "2026-10-18T16:06:16+00:00",
+ "finished": "2026-10-19T03:48:38",
  "going": {
-  "Horsham": "Good 3",
-  "Townsville": "Good 4",
-  "Kalgoorlie": "Good 4",
-  "Moe": "Good 3",
-  "Nowra": "Good 4",
-  "Lismore": "Soft 7"
+  "Echuca": "Good 4",
+  "Muswellbrook": "Soft 5",
+  "Orange": "Good 4"
  },
- "scratchings": 110,
- "dashboard": "toprate_week_v2_2026-10-18.html",
- "fingerprint": "273a2702d5d5"
+ "scratchings": 39,
+ "dashboard": "toprate_week_v2_2026-10-19.html",
+ "fingerprint": "03296a8cc15f"
 }
