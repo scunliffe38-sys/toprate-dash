@@ -1,26 +1,27 @@
 {
- "started": "2026-10-18T10:00:40",
+ "started": "2026-10-18T12:01:06",
  "dates": [
   "2026-10-18",
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "Townsville scratched R2 #17, R7 #15",
+ "reason": "Kalgoorlie going Good 4",
  "status": "ok",
  "acceptors": 511,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
  "extract": "2026-10-17T16:05:17+00:00",
- "finished": "2026-10-18T10:30:38",
+ "finished": "2026-10-18T12:30:56",
  "going": {
   "Horsham": "Good 4",
   "Moe": "Good 4",
   "Nowra": "Soft 6",
   "Lismore": "Soft 6",
-  "Townsville": "Soft 5"
+  "Townsville": "Soft 5",
+  "Kalgoorlie": "Good 4"
  },
  "scratchings": 104,
  "dashboard": "toprate_week_v2_2026-10-18.html",
- "fingerprint": "2fcb00aa796c"
+ "fingerprint": "b20b1dfaf29b"
 }
