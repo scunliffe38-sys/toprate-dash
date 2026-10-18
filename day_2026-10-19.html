@@ -198,6 +198,10 @@ nav button .hkt{font-size:10px;font-weight:500;color:var(--hk)}
 .rate{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:23px;text-align:right;width:64px;letter-spacing:-.01em}
 tbody tr.run.top .rate{color:var(--brass)}
 .pct{font-family:"Archivo Narrow",sans-serif;font-size:15px;width:52px;text-align:right;color:var(--dim)}
+/* the win chance and the running total (19 Oct 2026): Chance in the text colour, Cum. a step back; on a phone Cum.
+   rides under Chance as .cumsm, as Lengths rides under the rating */
+td.chc{color:var(--text);font-variant-numeric:tabular-nums} td.cum{color:var(--faint);font-variant-numeric:tabular-nums}
+.cumsm{display:none;font-size:12px;font-weight:400;color:var(--faint);line-height:1.1;margin-top:1px}
 /* key column: adjusted rating */
 /* key band: adjusted + lengths */
 td.key,th.key,td.key2,th.key2{background:rgba(154,122,26,.10)}
@@ -423,8 +427,8 @@ th:has(.mkt-fresh){white-space:nowrap}
    down the field, so a phone drops columns rather than re-flowing each runner
    into a card. Nothing dropped is lost -- base, every adjustment and the total
    are all in the opened row, one tap away. Order of sacrifice, least useful
-   first: Base (it is read straight off Adjusted), then the barrier, then the
-   net Adjust, then the silks. Tab number, runner, last 5, adjusted rating,
+   first: the barrier, then the silks (Base and the net Adjust left the table
+   at every width on 19 Oct 2026; both are in the opened row). Tab number, runner, last 5, adjusted rating,
    LENGTHS, our price and the market survive to the narrowest width.
    Simon, 19 Sep 2026, on the phone: "just the adjusted and Lengths is most
    important" -- so Lengths keeps its place beside Adjusted and Base gives way
@@ -432,7 +436,6 @@ th:has(.mkt-fresh){white-space:nowrap}
 @media(max-width:860px){
   .wrap{padding:14px 14px 60px}
   table{min-width:640px}
-  .rtab th:nth-child(6),.rtab td.abil{display:none}
   .sumtab th:nth-child(5),.sumtab td.edge{display:none}
 }
 @media(max-width:720px){
@@ -470,7 +473,8 @@ th:has(.mkt-fresh){white-space:nowrap}
   .rtab th.key2,.rtab td.key2{display:none}
   .lensm{display:block;font-size:12.5px;font-weight:600;color:var(--dim);letter-spacing:0;line-height:1.1;margin-top:1px}
   .rtab td.key,.rtab th.key{box-shadow:inset 1px 0 0 rgba(154,122,26,.42),inset -1px 0 0 rgba(154,122,26,.42)}
-  .rtab th:nth-child(7),.rtab td.adj{display:none}
+  .rtab th.cumh,.rtab td.cum{display:none} .rtab .cumsm{display:block} .rtab th .cumsm{font-size:10px;margin-top:0}
+  .rtab td.chc,.rtab th.chh{width:34px} .rtab td.chc{font-size:13px} .rtab td.chc .cumsm{font-size:11px}
   .rtab th.slh,.rtab td.slc{display:none} .slin{display:inline-block;width:16px;height:16px;line-height:16px;font-size:11.5px}
   .daytab th:nth-child(6),.daytab td:nth-child(6){display:none}   /* Model: the Mkt highlight carries the comparison on a phone */
   .horse{font-size:13.5px}
@@ -539,10 +543,6 @@ th:has(.mkt-fresh){white-space:nowrap}
   .rtab .jock .trn{color:var(--faint)}
 
 }
-/* Hong Kong race table: two more columns (Mark, Wt) push Base and Adjust to the 7th and 8th, so the phone rules above,
-   which hide Base and Adjust by position, are undone here and the two are hidden by name (7 Oct 2026) */
-@media(max-width:860px){.rtab.hk th:nth-child(6),.rtab.hk th:nth-child(7){display:table-cell}.rtab.hk th.hkb{display:none}}
-@media(max-width:560px){.rtab.hk th:nth-child(7){display:none}.rtab.hk th.hka{display:none}}
 /* betr's fixed price on the HK table (7 Oct 2026): its own column, and on a phone a second line under the tote instead */
 .bxl{display:none;font-size:11px;color:var(--faint);white-space:nowrap}
 .bxl.up{color:var(--pos)} .bxl.dn{color:var(--neg)}
@@ -1658,6 +1658,15 @@ function wetLine(r,x){
 }
 const wetCell=(r,x)=>{ const w=wetLine(r,x); return w?`<td class="wetc" title="${w.tip}"><span class="wr">${w.rec}</span>${w.adj?`<div>${w.adj}</div>`:''}</td>`:`<td class="wetc"></td>`; };
 const wetPhone=(r,x)=>{ const w=wetLine(r,x); return w?`<div class="wetl" title="${w.tip}">Wet ${w.rec} ${w.adj}</div>`:''; };
+// the win chance and the running total down the table (Simon, 19 Oct 2026): x.pct is the model's own chance, the 100%
+// price's inverse; Cum. adds in every runner above it, and the table is in rating order
+const CHH='<th class="r chh" title="The model\'s win chance: the 100% price as a percentage"><span class="dsk">Chance<span class="cumsm">cum.</span></span><span class="phd">Win<br>cum.</span></th>'
+  +'<th class="r cumh" title="Cumulative: this runner\'s chance plus every runner\'s above it in the table">Cum.</th>';
+function chanceCells(r,i){
+  const c=x=>x.pct!=null?x.pct:(x.fair>0?100/x.fair:0), p=c(r.runners[i]);
+  const cum=Math.min(100,r.runners.slice(0,i+1).reduce((a,x)=>a+c(x),0)).toFixed(0);
+  return `<td class="pct chc">${p.toFixed(1)}%<div class="cumsm">${cum}%</div></td><td class="pct cum">${cum}%</td>`;
+}
 function drawRace(){
   if(isHK(M())) return drawRaceHK();
   const r=M().races[active], a=analyse(r);
@@ -1668,11 +1677,10 @@ function drawRace(){
   h+=h2hCue(r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
   h+=speedMap(r);
-  h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="slh" title="Stride length. ! a short strider racing 15% or more beyond its usual trip: these win less often than their form says. + a long strider stepping up that has not yet placed at the trip: these win more often. Hover or open the runner for the detail.">SL</th><th class="l5h">Last 5</th><th class="r" title="our base: last 10 runs weighted to recent, shockers forgiven, wide runs credited">Base</th>
-    <th class="r" title="How far today's factors move the horse off its base. Click a runner for the seven that make it up.">Adjust</th>
-    <th class="r key"><span class="dsk">SPM Rating</span><span class="phd">SPM<br>Rating</span></th><th class="r key2">Lengths</th><th class="r bk"><span class="dsk"><small>100%</small>Model</span><span class="phd">Model <small>100%</small><br>BSP<br>Mkt <small>${book?book.toFixed(0)+'%':''}</small></span></th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
+  h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="slh" title="Stride length. ! a short strider racing 15% or more beyond its usual trip: these win less often than their form says. + a long strider stepping up that has not yet placed at the trip: these win more often. Hover or open the runner for the detail.">SL</th><th class="l5h">Last 5</th>
+    <th class="r key"><span class="dsk">SPM Rating</span><span class="phd">SPM<br>Rating</span></th><th class="r key2">Lengths</th>${CHH}<th class="r bk"><span class="dsk"><small>100%</small>Model</span><span class="phd">Model <small>100%</small><br>BSP<br>Mkt <small>${book?book.toFixed(0)+'%':''}</small></span></th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
   const topR=r.runners[0].rating, lv=liveOf(r), wet=wetOn(r)&&r.runners.some(x=>'wet' in x), span=wet?12:11;
-  if(wet) h=h.replace('<th class="r" title="our base:', '<th class="weth" title="Wet record, Soft 7 or heavier: starts: wins-seconds-thirds. Under it, the model\'s adjustment for this going against the field, in rating points, already in the SPM Rating.">Wet</th><th class="r" title="our base:');
+  if(wet) h=h.replace('<th class="r key">', '<th class="weth" title="Wet record, Soft 7 or heavier: starts: wins-seconds-thirds. Under it, the model\'s adjustment for this going against the field, in rating points, already in the SPM Rating.">Wet</th><th class="r key">');
   r.runners.forEach((x,i)=>{
     const lens=(x.fair>0&&r.runners[0].fair>0)?Math.max(0,1.66*Math.log(x.fair/r.runners[0].fair)):0;   // from the chances, not the points (deploy_lenfix, 18 Oct 2026): the points' scale moves with the nightly fit, the chance does not; 1.66 lengths a logit, measured on 6,592 races (probe_calib_fit.py)
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
@@ -1683,10 +1691,9 @@ function drawRace(){
       <td class="bar an">${x.bar??'—'}</td>
       <td class="slc">${slCell(x)}</td>
       <td class="l5">${l5cell(x)}${x.unrated?debutChips(x):''}${wetPhone(r,x)}<span class="pwi">${wormIcon(r,x)}</span></td>${wet?wetCell(r,x):''}
-      <td class="abil${x.unrated?' est':''}">${x.wprbase.toFixed(1)}</td>
-      ${adjCell(x)}
       <td class="rate key">${x.rating.toFixed(1)}${i===0?'':`<div class="lensm">−${lens.toFixed(1)}L</div>`}</td>
       <td class="lens key2${i===0?' top':''}">${i===0?'':'−'+lens.toFixed(1)+'L'}</td>
+      ${chanceCells(r,i)}
       <td class="price">$${x.fair.toFixed(2)}<div class="pbs">${x.bsp?'$'+bfx(x.bsp):(x.bfn?'~$'+bfx(x.bfn):(x.bfb?'BF $'+bfx(x.bfb):'–'))}</div><div class="pmk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}</div></td>
       <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}${x.bsp?`<div class="bspc" title="Betfair SP: the price money actually changed hands at. Known only after the race.">BSP $${bfx(x.bsp)}</div>`:bfLine(x,r)}</td></tr>`;
     if(wormKey===wkey(r,x)) h+=wormRow(r,x);
@@ -1715,7 +1722,7 @@ function drawRace(){
 }
 
 // ---- Hong Kong race view (Simon, 7 Oct 2026: "the same as Aus as much as possible") --------------------------------
-// The Aus table, with Mark and Wt added. Ratings are in handicap pounds (hk_day.py): Base = the field's average mark +
+// The Aus table (Mark and Wt dropped 19 Oct 2026: both are in the opened row). Ratings are in handicap pounds (hk_day.py): Base = the field's average mark +
 // form against the mark + the mark (ability); Adjust = weight carried + days off + HK starts (today), so adjCell() works
 // unchanged. Lengths use hk_base's pounds a length at the trip. The ledger draws x.fxg, the HK model's parts in pounds
 // (hk_day.py), and falls back to the five base parts for a day file written before the full model. No settle map or head-to-head yet.
@@ -1727,11 +1734,7 @@ function drawRaceHK(){
   let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''} &nbsp;·&nbsp; ${r.going||'going not posted'}
     <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong</div></div>`;
   h+=`<div class="scroll"><table class="rtab hk"><thead><tr><th></th><th>Runner</th><th>Draw</th><th class="l5h">Last 5</th>
-    <th class="r" title="today's official rating, and its change since the last start">Mark</th>
-    <th class="r" title="pounds carried, after any apprentice claim">Wt</th>
-    <th class="r hkb" title="ability: the field's average mark, plus form against the mark, plus the mark">Base</th>
-    <th class="r hka" title="today: weight carried, days off, HK starts. Click a runner for the parts.">Adjust</th>
-    <th class="r key">SPM Rating</th><th class="r key2">Lengths</th><th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
+    <th class="r key">SPM Rating</th><th class="r key2">Lengths</th>${CHH}<th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
   r.runners.forEach((x,i)=>{
     const lens=(topR-x.rating)/lpl;
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';
@@ -1743,16 +1746,13 @@ function drawRaceHK(){
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="l5">${l5cell(x)}</td>
-      <td class="hkmw">${x.mark??'—'}${mc}</td>
-      <td class="hkmw">${x.wt??'—'}${x.claim?`<small>(−${x.claim})</small>`:''}</td>
-      <td class="abil${x.unrated?' est':''}">${x.wprbase.toFixed(1)}</td>
-      ${adjCell(x)}
       <td class="rate key">${x.rating.toFixed(1)}${i===0?'':`<div class="lensm">−${lens.toFixed(1)}L</div>`}</td>
       <td class="lens key2${i===0?' top':''}">${i===0?'':'−'+lens.toFixed(1)+'L'}</td>
+      ${chanceCells(r,i)}
       <td class="price">$${x.fair.toFixed(2)}</td>
       <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}${x.bx?`<div class="bxl${bov}">betr $${x.bx.toFixed(2)}</div>`:''}</td>
       <td class="price mk${bov} hkbx">${x.bx?(bov?`<span class="arw">${bov===' up'?'▲':'▼'}</span>`:'')+'$'+x.bx.toFixed(2):'—'}</td></tr>`;
-    if(open===i) h+=`<tr class="detail"><td colspan="13">${hkLedger(x,r)}</td></tr>`;
+    if(open===i) h+=`<tr class="detail"><td colspan="11">${hkLedger(x,r)}</td></tr>`;
   });
   h+="</tbody></table></div>";
   if(r.standby&&r.standby.length) h+=`<p class="mnote" style="margin-top:10px">Stand-by: ${r.standby.join(', ')}. They run only if a starter comes out.</p>`;
@@ -2060,4 +2060,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 19 Oct 09:16</b> AEST &middot; HK scratching</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 19 Oct 09:31</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
