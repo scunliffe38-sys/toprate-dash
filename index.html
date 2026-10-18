@@ -1674,7 +1674,7 @@ function drawRace(){
   const topR=r.runners[0].rating, lv=liveOf(r), wet=wetOn(r)&&r.runners.some(x=>'wet' in x), span=wet?12:11;
   if(wet) h=h.replace('<th class="r" title="our base:', '<th class="weth" title="Wet record, Soft 7 or heavier: starts: wins-seconds-thirds. Under it, the model\'s adjustment for this going against the field, in rating points, already in the SPM Rating.">Wet</th><th class="r" title="our base:');
   r.runners.forEach((x,i)=>{
-    const lens=(topR-x.rating)/2;
+    const lens=(x.fair>0&&r.runners[0].fair>0)?Math.max(0,1.66*Math.log(x.fair/r.runners[0].fair)):0;   // from the chances, not the points (deploy_lenfix, 18 Oct 2026): the points' scale moves with the nightly fit, the chance does not; 1.66 lengths a logit, measured on 6,592 races (probe_calib_fit.py)
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
       <td class="tab"><span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span></td>
@@ -2060,4 +2060,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 18 Oct 18:16</b> AEST &middot; Moe scratched R7 #11</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 18 Oct 21:30</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
