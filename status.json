@@ -1,23 +1,23 @@
 {
- "started": "2026-10-19T03:07:00",
+ "started": "2026-10-19T08:22:37",
  "dates": [
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 304,
- "rider_share": 0.81,
+ "rider_share": 1.0,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
- "extract": "2026-10-18T16:06:16+00:00",
- "finished": "2026-10-19T03:48:38",
+ "extract": "2026-10-18T21:21:40+00:00",
+ "finished": "2026-10-19T09:05:17",
  "going": {
   "Echuca": "Good 4",
   "Muswellbrook": "Soft 5",
   "Orange": "Good 4"
  },
- "scratchings": 39,
+ "scratchings": 88,
  "dashboard": "toprate_week_v2_2026-10-19.html",
- "fingerprint": "03296a8cc15f"
+ "fingerprint": "8340e73de200"
 }
