@@ -1,27 +1,27 @@
 {
- "started": "2026-10-18T17:00:31",
+ "started": "2026-10-18T17:45:29",
  "dates": [
   "2026-10-18",
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "Kalgoorlie scratched R3 #5; Nowra Soft 5 -> Good 4",
+ "reason": "Moe scratched R7 #11",
  "status": "ok",
  "acceptors": 511,
  "rider_share": 0.89,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
  "extract": "2026-10-17T16:05:17+00:00",
- "finished": "2026-10-18T17:31:24",
+ "finished": "2026-10-18T18:16:08",
  "going": {
   "Horsham": "Good 3",
+  "Townsville": "Good 4",
+  "Kalgoorlie": "Good 4",
   "Moe": "Good 3",
   "Nowra": "Good 4",
-  "Lismore": "Soft 7",
-  "Townsville": "Good 4",
-  "Kalgoorlie": "Good 4"
+  "Lismore": "Soft 7"
  },
- "scratchings": 109,
+ "scratchings": 110,
  "dashboard": "toprate_week_v2_2026-10-18.html",
- "fingerprint": "308c3dd8ac33"
+ "fingerprint": "273a2702d5d5"
 }
