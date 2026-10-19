@@ -1,24 +1,22 @@
 {
- "started": "2026-10-19T14:45:45",
+ "started": "2026-10-20T03:06:37",
  "dates": [
-  "2026-10-19",
   "2026-10-20"
  ],
- "reason": "Muswellbrook Soft 5 -> Good 4",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 304,
- "rider_share": 1.0,
+ "acceptors": 242,
+ "rider_share": 0.86,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
- "extract": "2026-10-18T21:21:40+00:00",
- "finished": "2026-10-19T15:07:13",
+ "extract": "2026-10-19T16:05:51+00:00",
+ "finished": "2026-10-20T03:36:52",
  "going": {
-  "Echuca": "Good 4",
-  "Muswellbrook": "Good 4",
-  "Orange": "Good 4",
-  "Sha Tin": "Good"
+  "Kyneton": "Good 4",
+  "Grafton": "Heavy 10",
+  "Mount Isa": "Synthetic"
  },
- "scratchings": 90,
- "dashboard": "toprate_week_v2_2026-10-19.html",
- "fingerprint": "8a8c44363951"
+ "scratchings": 36,
+ "dashboard": "toprate_week_v2_2026-10-20.html",
+ "fingerprint": "e32f64a1e9a6"
 }
