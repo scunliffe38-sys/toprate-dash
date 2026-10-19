@@ -96,6 +96,7 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
 .quad td.lg{color:var(--dim);white-space:nowrap} .quad td.cv{color:var(--faint);white-space:nowrap}
 .quad tr.here td{color:var(--text)} .quad tr.here td.lg{font-weight:600}
 .quad .sm{color:var(--dim);font-size:12px} .quad .ft{margin-left:19px}
+.quad .tie{color:var(--brass);font-weight:600}   /* runners in by the tie rule (19 Oct 2026) */
 
 
 
@@ -1692,19 +1693,25 @@ function chanceCells(r,i){
 // model's chances this rule got back about 85c a dollar; on Betfair SP's, about $1.10. QOPEN keeps a line open across redraws.
 // Hong Kong takes a wider ticket (Simon, 19 Oct 2026: "slightly bigger fields ... more value ... say 150 or 200 combos"): 150.
 const QUAD_COVER=60, QUAD_STAKE=40, QUAD_MAX=100, QUAD_MAX_HK=150;
+// Simon, 19 Oct 2026: the tie rule (Sha Tin R8, 9.1% in and 8.5% out): past the cover, a runner within QUAD_TIE of the LAST runner in
+// comes in too, against that one runner, not chained; the near miss (Muswellbrook R4, Costa Del Sol 58.9% alone): a leg within
+// QUAD_NEAR points of the cover stops there
+const QUAD_TIE=0, QUAD_NEAR=2;
 window.QOPEN={};
 function quadLeg(r){
   const c=x=>x.pct!=null?x.pct:(x.fair>0?100/x.fair:0);
   const rs=r.runners.filter(x=>c(x)>0).slice().sort((a,b)=>c(b)-c(a)), z=rs.reduce((a,x)=>a+c(x),0);
   if(!rs.length||!(z>0)) return null;
   const pick=[]; let cum=0;
-  for(const x of rs){ pick.push(x); cum+=100*c(x)/z; if(cum>=QUAD_COVER-1e-9) break; }
-  return {pick,cum};
+  for(const x of rs){ pick.push(x); cum+=100*c(x)/z; if(cum>=QUAD_COVER-QUAD_NEAR-1e-9) break; }
+  const n0=pick.length, edge=c(pick[n0-1])*(1-QUAD_TIE);
+  for(const x of rs.slice(n0)){ if(c(x)>=edge-1e-9){ pick.push(x); cum+=100*c(x)/z; } else break; }
+  return {pick,cum,n0};
 }
 function quadPanel(m,r){
   const qs=(m.quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs.includes(r.no)); if(!qs.length) return '';
   const cap=m.state==='HK'?QUAD_MAX_HK:QUAD_MAX;
-  const tip=`In each leg, the runners in order of the model's chance until they reach ${QUAD_COVER}%. $${QUAD_STAKE} flexi; a bet at ${cap} combinations or fewer.`;
+  const tip=`In each leg, the runners in order of the model's chance until they reach ${QUAD_COVER}%. $${QUAD_STAKE} flexi; a bet at ${cap} combinations or fewer. A leg within ${QUAD_NEAR} points of ${QUAD_COVER}% stops there; after a +, runners within ${Math.round(100*QUAD_TIE)}% of the last runner's chance, in too.`;
   return '<div class="quads">'+qs.map(q=>{
     const k=`${m.track}|${q.p}|${q.legs[0]}`, op=QOPEN[k]?' open':'';
     const legs=q.legs.map(no=>{ const rr=m.races.find(x=>x.no===no); return {no,l:rr?quadLeg(rr):null}; });
@@ -1712,7 +1719,7 @@ function quadPanel(m,r){
     const tog=`ontoggle="QOPEN['${k.replace(/'/g,"\'")}']=this.open"`;
     if(legs.some(g=>!g.l)) return `<details class="quad no"${op} ${tog} title="${tip}"><summary>${name}<span class="vd n">NO TICKET</span></summary><div class="sm ft">A leg is not rated, so there is no ticket.</div></details>`;
     const n=legs.reduce((a,g)=>a*g.l.pick.length,1), fx=100*QUAD_STAKE/n, ok=n<=cap, fxs=fx>=10?fx.toFixed(0):fx.toFixed(1);
-    const rows=legs.map((g,i)=>`<tr${g.no===r.no?' class="here"':''}><td class="lg">Leg ${i+1} &nbsp;R${g.no}</td><td><b>${g.l.pick.map(x=>x.no).join(', ')}</b></td><td class="cv">${g.l.pick.length} for ${g.l.cum.toFixed(0)}%</td></tr>`).join('');
+    const rows=legs.map((g,i)=>`<tr${g.no===r.no?' class="here"':''}><td class="lg">Leg ${i+1} &nbsp;R${g.no}</td><td><b>${g.l.pick.slice(0,g.l.n0).map(x=>x.no).join(', ')}</b>${g.l.pick.length>g.l.n0?` <span class="tie">+ ${g.l.pick.slice(g.l.n0).map(x=>x.no).join(', ')}</span>`:''}</td><td class="cv">${g.l.pick.length} for ${g.l.cum.toFixed(0)}%</td></tr>`).join('');
     return `<details class="quad${ok?'':' no'}"${op} ${tog} title="${tip}"><summary>${name}<span class="sm">${n} combo${n===1?'':'s'} · ${fxs}%</span><span class="vd ${ok?'y':'n'}">${ok?'BET':'SIT OUT'}</span></summary>`
       +`<table>${rows}</table><div class="sm ft">${legs.map(g=>g.l.pick.length).join(' × ')} = <b>${n}</b> combination${n===1?'':'s'} &nbsp;·&nbsp; $${QUAD_STAKE} is <b>${fxs}%</b> flexi &nbsp;·&nbsp; ${ok?'qualifies':'does not qualify'} (${cap} or fewer) &nbsp;·&nbsp; ${QUAD_COVER}% a leg on the model's chances</div></details>`;
   }).join('')+'</div>';
@@ -2112,4 +2119,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 19 Oct 11:18</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 19 Oct 12:43</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
