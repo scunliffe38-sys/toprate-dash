@@ -1,23 +1,24 @@
 {
- "started": "2026-10-19T10:09:53",
+ "started": "2026-10-19T13:15:53",
  "dates": [
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "43 rated runners late-scratched before the 09:00 first poll (tab_live first-pass baseline): Echuca R1 #14 et al",
+ "reason": "Echuca scratched R2 #16",
  "status": "ok",
  "acceptors": 304,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
  "extract": "2026-10-18T21:21:40+00:00",
- "finished": "2026-10-19T10:31:57",
+ "finished": "2026-10-19T13:40:10",
  "going": {
   "Echuca": "Good 4",
   "Muswellbrook": "Soft 5",
-  "Orange": "Good 4"
+  "Orange": "Good 4",
+  "Sha Tin": "Good"
  },
- "scratchings": 89,
+ "scratchings": 90,
  "dashboard": "toprate_week_v2_2026-10-19.html",
- "fingerprint": "d4f27882f4c1"
+ "fingerprint": "115c515ade41"
 }
