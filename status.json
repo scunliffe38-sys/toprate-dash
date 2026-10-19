@@ -1,24 +1,24 @@
 {
- "started": "2026-10-19T13:15:53",
+ "started": "2026-10-19T14:45:45",
  "dates": [
   "2026-10-19",
   "2026-10-20"
  ],
- "reason": "Echuca scratched R2 #16",
+ "reason": "Muswellbrook Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 304,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-20",
  "card_source": "toprate",
  "extract": "2026-10-18T21:21:40+00:00",
- "finished": "2026-10-19T13:40:10",
+ "finished": "2026-10-19T15:07:13",
  "going": {
   "Echuca": "Good 4",
-  "Muswellbrook": "Soft 5",
+  "Muswellbrook": "Good 4",
   "Orange": "Good 4",
   "Sha Tin": "Good"
  },
  "scratchings": 90,
  "dashboard": "toprate_week_v2_2026-10-19.html",
- "fingerprint": "115c515ade41"
+ "fingerprint": "8a8c44363951"
 }
