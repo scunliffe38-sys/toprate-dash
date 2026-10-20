@@ -1,24 +1,25 @@
 {
- "started": "2026-10-20T15:00:33",
+ "started": "2026-10-21T03:08:07",
  "dates": [
-  "2026-10-20",
   "2026-10-21",
   "2026-10-22"
  ],
- "reason": "Kyneton Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 242,
- "rider_share": 1.0,
+ "acceptors": 513,
+ "rider_share": 0.91,
  "extract_max_date": "2026-10-22",
  "card_source": "toprate",
- "extract": "2026-10-19T21:21:00+00:00",
- "finished": "2026-10-20T15:40:52",
+ "extract": "2026-10-20T16:06:47+00:00",
+ "finished": "2026-10-21T03:53:10",
  "going": {
-  "Kyneton": "Good 3",
-  "Mt Isa": "Good",
-  "Grafton": "Heavy 10"
+  "Warwick Farm": "Soft 5",
+  "Eagle Farm": "Heavy 9",
+  "Geelong": "Good 4",
+  "Strathalbyn": "Soft 5",
+  "Belmont Park": "Soft 5"
  },
- "scratchings": 59,
- "dashboard": "toprate_week_v2_2026-10-20.html",
- "fingerprint": "f71897d82a98"
+ "scratchings": 44,
+ "dashboard": "toprate_week_v2_2026-10-21.html",
+ "fingerprint": "54f5c2314d3d"
 }
