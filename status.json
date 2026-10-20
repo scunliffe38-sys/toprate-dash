@@ -1,22 +1,24 @@
 {
- "started": "2026-10-20T03:06:37",
+ "started": "2026-10-20T12:39:20",
  "dates": [
-  "2026-10-20"
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22"
  ],
- "reason": "overnight harvest",
+ "reason": "Mt Isa going Good; Mt Isa scratched R1 #3, R2 #2, R3 #7, R4 #1, R5 #1/6/7, R6 #2/8, R7 #1/4/8",
  "status": "ok",
  "acceptors": 242,
- "rider_share": 0.86,
- "extract_max_date": "2026-10-20",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-10-22",
  "card_source": "toprate",
- "extract": "2026-10-19T16:05:51+00:00",
- "finished": "2026-10-20T03:36:52",
+ "extract": "2026-10-19T21:21:00+00:00",
+ "finished": "2026-10-20T13:20:59",
  "going": {
   "Kyneton": "Good 4",
-  "Grafton": "Heavy 10",
-  "Mount Isa": "Synthetic"
+  "Mt Isa": "Good",
+  "Grafton": "Heavy 10"
  },
- "scratchings": 36,
+ "scratchings": 59,
  "dashboard": "toprate_week_v2_2026-10-20.html",
- "fingerprint": "e32f64a1e9a6"
+ "fingerprint": "82c58211476b"
 }
