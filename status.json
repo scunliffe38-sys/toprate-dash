@@ -1,27 +1,27 @@
 {
- "started": "2026-10-21T13:46:00",
+ "started": "2026-10-21T14:31:10",
  "dates": [
   "2026-10-21",
   "2026-10-22",
   "2026-10-23"
  ],
- "reason": "Geelong scratched R4 #10",
+ "reason": "Belmont Park Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 513,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-23",
  "card_source": "toprate",
  "extract": "2026-10-20T21:21:51+00:00",
- "finished": "2026-10-21T14:24:51",
+ "finished": "2026-10-21T15:05:18",
  "going": {
   "Geelong": "Good 4",
   "Warwick Farm": "Good 4",
   "Eagle Farm": "Heavy 8",
   "Strathalbyn": "Soft 5",
-  "Belmont Park": "Soft 5",
+  "Belmont Park": "Good 4",
   "Happy Valley": "Good"
  },
  "scratchings": 108,
  "dashboard": "toprate_week_v2_2026-10-21.html",
- "fingerprint": "cdc3bbe25eb5"
+ "fingerprint": "0baebe818418"
 }
