@@ -1,25 +1,25 @@
 {
- "started": "2026-10-22T08:22:54",
+ "started": "2026-10-22T10:00:40",
  "dates": [
   "2026-10-22",
   "2026-10-23",
   "2026-10-24"
  ],
- "reason": "morning harvest",
+ "reason": "Gosford scratched R5 #1",
  "status": "ok",
  "acceptors": 339,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-10-21T21:21:41+00:00",
- "finished": "2026-10-22T09:40:18",
+ "finished": "2026-10-22T10:41:20",
  "going": {
   "Mornington": "Good 4",
   "Gosford": "Good 4",
   "Geraldton": "Good 4",
   "Ipswich": "Heavy 8"
  },
- "scratchings": 54,
+ "scratchings": 55,
  "dashboard": "toprate_week_v2_2026-10-22.html",
- "fingerprint": "9a28cf4ebacf"
+ "fingerprint": "5ae707323927"
 }
