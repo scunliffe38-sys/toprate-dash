@@ -1,27 +1,24 @@
 {
- "started": "2026-10-21T18:15:53",
+ "started": "2026-10-22T03:07:01",
  "dates": [
-  "2026-10-21",
   "2026-10-22",
   "2026-10-23"
  ],
- "reason": "Belmont Park Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 513,
- "rider_share": 1.0,
+ "acceptors": 339,
+ "rider_share": 0.91,
  "extract_max_date": "2026-10-23",
  "card_source": "toprate",
- "extract": "2026-10-20T21:21:51+00:00",
- "finished": "2026-10-21T18:49:53",
+ "extract": "2026-10-21T16:05:51+00:00",
+ "finished": "2026-10-22T03:49:19",
  "going": {
-  "Eagle Farm": "Soft 7",
-  "Belmont Park": "Good 3",
-  "Happy Valley": "Good",
-  "Geelong": "Good 4",
-  "Warwick Farm": "Good 4",
-  "Strathalbyn": "Soft 5"
+  "Mornington": "Good 4",
+  "Gosford": "Good 4",
+  "Ipswich": "Heavy 8",
+  "Geraldton": "Good 4"
  },
- "scratchings": 109,
- "dashboard": "toprate_week_v2_2026-10-21.html",
- "fingerprint": "081de7905466"
+ "scratchings": 26,
+ "dashboard": "toprate_week_v2_2026-10-22.html",
+ "fingerprint": "277330678524"
 }
