@@ -1,28 +1,30 @@
 {
- "started": "2026-10-23T03:07:19",
+ "started": "2026-10-23T08:23:13",
  "dates": [
   "2026-10-23",
-  "2026-10-24"
+  "2026-10-24",
+  "2026-10-25",
+  "2026-10-26"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 877,
- "rider_share": 0.87,
- "extract_max_date": "2026-10-24",
+ "rider_share": 0.93,
+ "extract_max_date": "2026-10-26",
  "card_source": "toprate",
- "extract": "2026-10-22T16:06:14+00:00",
- "finished": "2026-10-23T03:51:57",
+ "extract": "2026-10-22T21:22:13+00:00",
+ "finished": "2026-10-23T10:07:43",
  "going": {
+  "Cranbourne": "Soft 5",
   "Ballarat": "Good 4",
-  "Cranbourne": "Good 4",
-  "Scone": "Soft 5",
+  "Scone": "Good 4",
+  "Sunshine Coast Poly": "Synthetic",
+  "Canberra": "Good 4",
   "Mackay": "Soft 5",
   "Gawler": "Good 4",
-  "Canberra": "Soft 5",
-  "Launceston": "Soft 5",
-  "Sunshine Coast Poly (Qld)": "Synthetic"
+  "Launceston": "Soft 5"
  },
- "scratchings": 68,
+ "scratchings": 171,
  "dashboard": "toprate_week_v2_2026-10-23.html",
- "fingerprint": "b1cae80e90e1"
+ "fingerprint": "7f3c6c909c63"
 }
