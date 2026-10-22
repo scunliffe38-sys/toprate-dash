@@ -1,25 +1,28 @@
 {
- "started": "2026-10-22T17:45:26",
+ "started": "2026-10-23T03:07:19",
  "dates": [
-  "2026-10-22",
   "2026-10-23",
   "2026-10-24"
  ],
- "reason": "Mornington Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 339,
- "rider_share": 1.0,
+ "acceptors": 877,
+ "rider_share": 0.87,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
- "extract": "2026-10-21T21:21:41+00:00",
- "finished": "2026-10-22T18:25:42",
+ "extract": "2026-10-22T16:06:14+00:00",
+ "finished": "2026-10-23T03:51:57",
  "going": {
-  "Mornington": "Good 3",
-  "Geraldton": "Good 4",
-  "Gosford": "Heavy 9",
-  "Ipswich": "Heavy 8"
+  "Ballarat": "Good 4",
+  "Cranbourne": "Good 4",
+  "Scone": "Soft 5",
+  "Mackay": "Soft 5",
+  "Gawler": "Good 4",
+  "Canberra": "Soft 5",
+  "Launceston": "Soft 5",
+  "Sunshine Coast Poly (Qld)": "Synthetic"
  },
- "scratchings": 70,
- "dashboard": "toprate_week_v2_2026-10-22.html",
- "fingerprint": "c68c10dfd282"
+ "scratchings": 68,
+ "dashboard": "toprate_week_v2_2026-10-23.html",
+ "fingerprint": "b1cae80e90e1"
 }
