@@ -7,21 +7,26 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#1A1F24">
+<meta name="theme-color" content="#005C42">
 <meta name="application-name" content="SPM">
 <meta name="apple-mobile-web-app-title" content="SPM">
 <title>SPM — week</title>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
   color-scheme:light;
-  --ink:#F7F6F3; --panel:#FFFFFF; --panel2:#EDEBE5; --rule:#DCD7CD;
-  --text:#1A1F24; --dim:#586269; --faint:#8A939A;
+  /* SPM palette (Simon, 23 Oct 2026): dark green brand, mid green highlight, dark brown second accent,
+     warm grey fills, brick red for negatives; the extended set for multi-series charts */
+  --green:#005C42; --green2:#759F72; --brown:#592414; --warm:#CFCDBF; --brick:#A52210;
+  --sblue:#99CCCC; --dblue:#003366; --syellow:#FCE070; --teal:#43978F; --porange:#F7A465;
+  --keyrgb:117,159,114;   /* the rating column's tint, rgba(var(--keyrgb),a) */
+  --ink:#F3F2ED; --panel:#FFFFFF; --panel2:#E7E6DD; --rule:#CFCDBF;
+  --text:#16211C; --dim:#4F5A55; --faint:#858C86;
   --hk:#8E2A3B; --hkbg:#F6ECEE;
-  --pos:#2E7150; --neg:#A63350; --amber:#B8741A; --brass:#8A6A12; --flat:#C2BEB5; --cond:#27608C;
+  --pos:#005C42; --neg:#A52210; --amber:#B8741A; --brass:#592414; --flat:#CFCDBF; --cond:#003366;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--ink);color:var(--text);font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--ink);color:var(--text);font-family:Gotham,system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .an{font-family:"Archivo Narrow",Arial Narrow,sans-serif;font-variant-numeric:tabular-nums}
 .wrap{max-width:1180px;margin:0 auto;padding:18px 20px 60px}
 header{border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:10px}
@@ -209,7 +214,7 @@ nav button .hkt{font-size:10px;font-weight:500;color:var(--hk)}
 .seg button:hover{color:var(--text)}
 .seg button[aria-pressed=true]{background:var(--panel2);color:var(--brass);font-weight:600}
 /* Simon, 19 Sep 2026: a gap of GAP_BIG points or more over the next horse lights the row, on Today and on the meeting summary */
-.daytab tr.big td,.sumtab tr.big td{background:rgba(154,122,26,.10)}
+.daytab tr.big td,.sumtab tr.big td{background:rgba(var(--keyrgb),.10)}
 .edge.big{color:var(--brass);font-weight:700;font-size:16px}
 .res.un{border:1px solid var(--faint);color:var(--faint);font-weight:500}
 .abil{font-family:"Archivo Narrow",sans-serif;font-size:17px;text-align:right;width:56px;color:var(--dim)}
@@ -223,12 +228,12 @@ td.chc{color:var(--text);font-variant-numeric:tabular-nums} td.cum{color:var(--f
 .cumsm{display:none;font-size:12px;font-weight:400;color:var(--faint);line-height:1.1;margin-top:1px}
 /* key column: adjusted rating */
 /* key band: adjusted + lengths */
-td.key,th.key,td.key2,th.key2{background:rgba(154,122,26,.10)}
-td.key,th.key{box-shadow:inset 1px 0 0 rgba(154,122,26,.42)}
-td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(154,122,26,.42)}
+td.key,th.key,td.key2,th.key2{background:rgba(var(--keyrgb),.10)}
+td.key,th.key{box-shadow:inset 1px 0 0 rgba(var(--keyrgb),.42)}
+td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(var(--keyrgb),.42)}
 th.key,th.key2{color:var(--brass)}
-tbody tr.run:hover td.key,tbody tr.run:hover td.key2{background:rgba(154,122,26,.16)}
-tbody tr.run.top td.key,tbody tr.run.top td.key2{background:rgba(154,122,26,.20)}
+tbody tr.run:hover td.key,tbody tr.run:hover td.key2{background:rgba(var(--keyrgb),.16)}
+tbody tr.run.top td.key,tbody tr.run.top td.key2{background:rgba(var(--keyrgb),.20)}
 .lensm{display:none}
 .lens{font-family:"Archivo Narrow",sans-serif;font-size:17px;font-weight:600;width:66px;text-align:right;color:var(--text);font-variant-numeric:tabular-nums;padding-left:10px;padding-right:12px}
 /* adjustments: the net move off the base. What made it is in the opened row. */
@@ -244,7 +249,7 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .edge.p{color:var(--pos)} .edge.g{color:var(--neg)}
 .detail td{background:var(--panel);padding:14px 16px 18px}
 /* the worm (Simon, 16 Oct 2026): the horse's last ten figures as a line, an icon on the row and a panel under it. Display only. */
-:root{--wdry:#A9A397;--wsoft:#5B8DB8;--wwet:#1F4E79;--wsyn:#7A5BA6}
+:root{--wdry:#CFCDBF;--wsoft:#43978F;--wwet:#003366;--wsyn:#F7A465}
 .wi{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:3px;background:var(--panel);padding:2px 5px;cursor:pointer;vertical-align:middle;flex:0 0 auto;font:inherit}
 .wi svg{display:block;width:34px;height:14px;overflow:visible}
 .wi .l{fill:none;stroke:var(--dim);stroke-width:1.4;stroke-linecap:round}
@@ -333,13 +338,13 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .smstack{display:flex;flex-direction:column-reverse;gap:3px;justify-content:flex-start;min-height:24px}
 .smc{display:flex;align-items:center;gap:5px;padding:3px 5px 3px 4px;border-radius:2px;background:var(--panel2);border-left:3px solid var(--flat);min-width:0}
 .smc.p{border-left-color:var(--pos)} .smc.g{border-left-color:var(--neg)}
-.smc.led{background:#E4E9EF}
+.smc.led{background:rgba(153,204,204,.35)}
 .smc b{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--text);flex:0 0 auto;min-width:13px;text-align:right}
 .smc span{font-size:11.5px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1 1 auto;min-width:0}
 .smc.led span{color:var(--text)}
 .smc i{font-style:normal;font-size:9.5px;color:var(--faint);font-variant-numeric:tabular-nums;flex:0 0 auto}
 .smc em{font-style:normal;font-size:9.5px;color:var(--brass);font-variant-numeric:tabular-nums;flex:0 0 auto}
-.smrail{margin:7px 0 0 15px;height:2px;background:linear-gradient(90deg,var(--brass),rgba(154,122,26,.28));position:relative}
+.smrail{margin:7px 0 0 15px;height:2px;background:linear-gradient(90deg,var(--brass),rgba(var(--keyrgb),.28));position:relative}
 .smrail em{position:absolute;left:0;top:3px;font-style:normal;color:var(--faint);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase}
 .smnone{margin-top:14px;color:var(--faint);font-size:11.5px}
 /* the settle picture (Simon, 29 Sep 2026; the Manikato mock-up he signed off): the race seen from the stand, the rail
@@ -352,10 +357,10 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .stb .ln{font-family:"Archivo Narrow",sans-serif;font-size:10px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);
          display:flex;align-items:center;justify-content:flex-end;padding-right:7px;text-align:right;line-height:1.15}
 .stb .cell{border-left:1px dashed var(--rule);padding:3px 3px;display:flex;flex-direction:column;gap:3px;justify-content:flex-end;min-height:30px}
-.stb .cell.f{background:rgba(154,122,26,.06)}
+.stb .cell.f{background:rgba(var(--keyrgb),.06)}
 .stb .smc{padding:2px 4px 2px 3px}
 .stb .smc.wd{border-left-color:var(--neg)}
-.strail{grid-column:2 / span 6;height:6px;margin-top:3px;background:linear-gradient(90deg,var(--brass),rgba(154,122,26,.28));border-radius:1px}
+.strail{grid-column:2 / span 6;height:6px;margin-top:3px;background:linear-gradient(90deg,var(--brass),rgba(var(--keyrgb),.28));border-radius:1px}
 .strl{grid-column:1;font-size:9.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;text-align:right;padding-right:7px;align-self:center}
 .sttab{width:100%;border-collapse:collapse;margin-top:12px;font-size:11.5px;font-variant-numeric:tabular-nums}
 .sttab th{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--faint);
@@ -401,7 +406,7 @@ body{padding-bottom:38px}
 .trs[hidden]{display:none}
 /* pipeline's own banner: shown only if status.json is unreachable, restyled to the page */
 #tr-updated{position:fixed!important;left:0!important;right:0!important;bottom:0!important;z-index:50!important;
-  font:12.5px/1.4 Inter,system-ui,sans-serif!important;padding:8px 20px!important;background:var(--panel)!important;
+  font:12.5px/1.4 Gotham,system-ui,sans-serif!important;padding:8px 20px!important;background:var(--panel)!important;
   color:var(--dim)!important;border-top:1px solid var(--rule)!important;text-align:left!important}
 #tr-updated b{color:var(--text);font-family:"Archivo Narrow",sans-serif;font-weight:600}
 #tr-updated+div{display:none}
@@ -491,7 +496,7 @@ th:has(.mkt-fresh){white-space:nowrap}
      now closes on both sides of the one cell. That buys back the ~58px the field table ran past a phone by. */
   .rtab th.key2,.rtab td.key2{display:none}
   .lensm{display:block;font-size:12.5px;font-weight:600;color:var(--dim);letter-spacing:0;line-height:1.1;margin-top:1px}
-  .rtab td.key,.rtab th.key{box-shadow:inset 1px 0 0 rgba(154,122,26,.42),inset -1px 0 0 rgba(154,122,26,.42)}
+  .rtab td.key,.rtab th.key{box-shadow:inset 1px 0 0 rgba(var(--keyrgb),.42),inset -1px 0 0 rgba(var(--keyrgb),.42)}
   .rtab th.cumh,.rtab td.cum{display:none} .rtab .cumsm{display:block} .rtab th .cumsm{font-size:10px;margin-top:0}
   .rtab td.chc,.rtab th.chh{width:34px} .rtab td.chc{font-size:13px} .rtab td.chc .cumsm{font-size:11px}
   .rtab th.slh,.rtab td.slc{display:none} .slin{display:inline-block;width:16px;height:16px;line-height:16px;font-size:11.5px}
@@ -580,7 +585,7 @@ th:has(.mkt-fresh){white-space:nowrap}
 .spwrap>div{padding:10px 12px;min-width:0}
 .spwrap>div+div{border-left:1px solid var(--rule)}
 .sph{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--text);display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 10px;margin-bottom:6px}
-.sph small{font-family:Inter,system-ui,sans-serif;font-weight:400;font-size:10px;letter-spacing:0;text-transform:none;color:var(--faint)}
+.sph small{font-family:Gotham,system-ui,sans-serif;font-weight:400;font-size:10px;letter-spacing:0;text-transform:none;color:var(--faint)}
 .sph .spt{margin-left:auto;font-size:10px;color:var(--brass);border:1px solid var(--brass);border-radius:2px;padding:0 6px}
 .sph .avk{color:var(--cond)}
 .spmap,.spprof{display:block;width:100%;height:auto;overflow:visible}
@@ -601,13 +606,13 @@ th:has(.mkt-fresh){white-space:nowrap}
 .spmap .no{fill:var(--text);font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:10px}
 .spmap .lp{fill:var(--brass);font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:9px} .spmap .lp.rv{fill:var(--dim)}
 .spprof .ttl{fill:var(--dim);font-size:10px;font-family:"Archivo Narrow",sans-serif;font-weight:600;letter-spacing:.06em}
-.spprof .ttl.sub{fill:var(--faint);font-family:Inter,system-ui,sans-serif;font-weight:400;font-size:9px;letter-spacing:0}
+.spprof .ttl.sub{fill:var(--faint);font-family:Gotham,system-ui,sans-serif;font-weight:400;font-size:9px;letter-spacing:0}
 .spprof .grid{stroke:var(--rule);stroke-width:1}
 .spprof .ax{fill:var(--faint);font-size:9px;font-family:"Archivo Narrow",sans-serif}
 .spprof .spb{fill:var(--flat);cursor:pointer} .spprof .spb.ma{fill:var(--pos);opacity:.75} .spprof .spb.la{fill:var(--neg);opacity:.6}
 .spprof .spb.sel{stroke:var(--text);stroke-width:1.5}
 .spprof .avg{stroke:var(--cond);stroke-width:1.5;stroke-dasharray:3 4}
-.spprof .hl{fill:rgba(138,106,18,.08)}
+.spprof .hl{fill:rgba(var(--keyrgb),.08)}
 .spprof .rl{cursor:pointer}
 .spprof .sno{fill:var(--dim);font-size:9px;font-family:"Archivo Narrow",sans-serif;font-weight:600}
 .spprof .rn{fill:var(--dim);font-size:10px;font-weight:500} .spprof .rl.sel .rn{fill:var(--text);font-weight:600}
@@ -629,9 +634,9 @@ th:has(.mkt-fresh){white-space:nowrap}
 .sptab td.no{font-family:"Archivo Narrow",sans-serif;font-weight:600;color:var(--dim)} .sptab td.nm{font-weight:600}
 .sptab td.dim{color:var(--faint)} .sptab td.b{color:var(--brass);font-weight:700} .sptab td.g{color:var(--neg)}
 .sptab td.d.p{color:var(--pos)} .sptab td.d.g{color:var(--neg)} .sptab td.d.f{color:var(--faint)}
-.sptab td.net{font-family:"Archivo Narrow",sans-serif;font-weight:700;text-align:right;background:rgba(138,106,18,.12)} .sptab td.net.p{color:var(--pos)} .sptab td.net.g{color:var(--neg)}
+.sptab td.net{font-family:"Archivo Narrow",sans-serif;font-weight:700;text-align:right;background:rgba(var(--keyrgb),.12)} .sptab td.net.p{color:var(--pos)} .sptab td.net.g{color:var(--neg)}
 .sptab .silk{width:20px;height:24px;flex-basis:20px;display:inline-block}
-.sptab tbody tr{cursor:pointer} .sptab tbody tr:hover td{background:var(--panel2)} .sptab tbody tr.sel td{background:rgba(138,106,18,.08)}
+.sptab tbody tr{cursor:pointer} .sptab tbody tr:hover td{background:var(--panel2)} .sptab tbody tr.sel td{background:rgba(var(--keyrgb),.08)}
 .sptab td.tags{display:flex;gap:4px;align-items:center}
 .wetl{display:none;margin-top:4px;font-family:"Archivo Narrow",sans-serif;font-size:12px;color:var(--dim);white-space:nowrap;cursor:help}
 .rtab th.weth{text-align:center;cursor:help}
@@ -645,6 +650,119 @@ th:has(.mkt-fresh){white-space:nowrap}
 .sptab .k.fl::after{content:"";position:absolute;left:1px;top:0;border-left:8px solid var(--neg);border-top:3px solid transparent;border-bottom:3px solid transparent}
 @media(max-width:860px){.spwrap{grid-template-columns:minmax(0,1fr)}.spwrap>div+div{border-left:0;border-top:1px solid var(--rule)}}
 @media(max-width:560px){.spwrap>div{padding:8px 6px}.sptab .sx{display:none}.sptab td,.sptab th{padding-left:3px;padding-right:3px}.sptab table{font-size:12px}.sptab .silk{display:none}.sptab tr.grp{display:none}.sptab td.nm{white-space:normal;min-width:84px}.sptab td.g1l{white-space:normal}}
+/* ---- SPM restyle, 23 Oct 2026: Gotham and the green palette ---- */
+/* Gotham, served beside the page from fonts/ */
+@font-face{font-family:Gotham;src:url(fonts/gotham-light.woff2) format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:Gotham;src:url(fonts/gotham-book.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Gotham;src:url(fonts/gotham-bookitalic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:Gotham;src:url(fonts/gotham-medium.woff2) format("woff2");font-weight:500 600;font-display:swap}
+@font-face{font-family:Gotham;src:url(fonts/gotham-mediumitalic.woff2) format("woff2");font-weight:500 600;font-style:italic;font-display:swap}
+@font-face{font-family:Gotham;src:url(fonts/gotham-bold.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:Gotham;src:url(fonts/gotham-black.woff2) format("woff2");font-weight:800 900;font-display:swap}
+/* type: Gotham for words and headings; the narrow figures stay in the number columns */
+body{font-family:Gotham,system-ui,sans-serif;font-size:13.5px}
+h1{font-family:Gotham,sans-serif;font-weight:700;font-size:29px;letter-spacing:-.015em;color:var(--green)}
+.brand{font-family:Gotham,sans-serif;font-weight:900;font-size:19px;color:var(--green)}
+.brand .d{color:var(--green2)}
+.days button .d,.mtabs .tk{font-family:Gotham,sans-serif;font-weight:500}
+.days button .d{font-size:15px}
+.mtabs .tk{font-size:13px}
+nav button{font-family:Gotham,sans-serif;font-weight:500;font-size:13.5px}
+.spprof .ttl.sub{font-family:Gotham,sans-serif}
+/* brand accent: dark green on headings, selections and the rating column */
+th{color:var(--green);font-weight:500}
+th.key,th.key2{color:var(--green)}
+td.key,th.key,td.key2,th.key2{background:rgba(117,159,114,.12)}
+td.key,th.key{box-shadow:inset 1px 0 0 rgba(0,92,66,.35)}
+td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(0,92,66,.35)}
+.days button[aria-selected=true]{border-bottom-color:var(--green)}
+nav button[aria-selected=true]{border-bottom-color:var(--green)}
+nav button[aria-selected=true] .rt{color:var(--green)}
+.mtabs button[aria-selected=true]{border-color:var(--green);box-shadow:inset 0 0 0 1px var(--green)}
+.sptab th.s.on{color:var(--green)}
+.rate{color:var(--green)}   /* a race's lead rating (summary, Next to Go) */
+tbody tr.run .rate{color:var(--text)} tbody tr.run.top .rate{color:var(--green)}   /* race table: the leader green, the rest black (Simon) */
+/* charts: the worm in green, speed bars warm grey / mid green / brick */
+.wg .ln,.wg .today,.wg .win{stroke:var(--green)}
+.wg .tl{fill:var(--green)}
+.spprof .avg{stroke:var(--dblue)}
+.smc.led{background:rgba(153,204,204,.35)}
+.spprof .spb{fill:var(--warm)} .spprof .spb.ma{fill:var(--green2);opacity:1} .spprof .spb.la{fill:var(--brick);opacity:.75}
+/* ---- second pass, 23 Oct 2026 (Simon: "do all of those things") ---- */
+/* 1. the masthead: a dark green band, edge to edge, white type, the live buttons outlined in white */
+header{background:var(--green);color:#fff;border-bottom:0;margin:-18px 0 12px;padding:14px 0 13px;
+  box-shadow:0 0 0 100vmax var(--green);clip-path:inset(0 -100vmax)}
+header h1{color:#fff}
+header .brand{color:#fff;border-right-color:rgba(255,255,255,.35)}
+header .brand .d{color:#A9CBA6}
+header .date{color:rgba(255,255,255,.78)}
+header .wlive{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
+header .wlive:hover{background:#fff;color:var(--green)}
+@media(max-width:860px){header{margin-top:-14px;padding:12px 0 11px}}
+@media(max-width:720px){h1{font-size:24px}.brand{font-size:16px}}
+@media(max-width:560px){header{margin-top:-12px}h1{font-size:21px}.brand{font-size:15px}}
+/* 2. column headings: small Gotham capitals, one baseline; the book % note sits above in grey */
+th{font-family:Gotham,sans-serif;font-weight:500;font-size:10px;letter-spacing:.07em;text-transform:uppercase}
+th small,th .mkt-fresh{text-transform:none;letter-spacing:0}
+@media(min-width:721px){th{white-space:nowrap}}
+/* 3. runner rows: jockey and trainer on one line, cut with an ellipsis, so every row is the same height */
+@media(min-width:561px){
+  .horse{white-space:nowrap}
+  .rtab .jock{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:300px}
+}
+/* 4. one panel style: white card, hairline warm-grey border, 4px corners; a green edge only on a BET quaddie */
+.mnote,.rnote,.h2hc,.quad,.smap,.spwrap{background:var(--panel);border:1px solid var(--rule);border-radius:4px}
+.mnote,.rnote,.h2hc{border-left-width:1px}
+.rnote b,.h2hc b.lbl{color:var(--green)}
+.quad{border-left:3px solid var(--green)} .quad.no{border-left:1px solid var(--rule)}
+.mtabs button{border-radius:4px}
+.mtabs button.today{border-style:solid;border-color:var(--rule)}
+.mtabs button.today .tk,.mtabs button.ntg .tk{color:var(--green)}
+.mtabs button.ntg{border-color:var(--rule)}
+nav button.sum{color:var(--green)}
+/* 5. badges: 1st solid green, 2nd and 3rd outlined, the rest grey; the standout tag a mid green pill */
+.res.r1{background:var(--green);color:#fff}
+.res.r2,.res.r3{border:1px solid var(--text);color:var(--text)}
+.res.r4{border:1px solid var(--rule);color:var(--faint)}
+.tagv.gold,.tagv{border:0;border-radius:9px;background:rgba(var(--keyrgb),.22);color:var(--green);padding:1px 7px}
+/* 6. small touches: a warm hover band, a soft yellow edge on a race inside 10 minutes, a drawn placeholder silk */
+tbody tr.run:hover,tbody tr.srow:hover{background:rgba(207,205,191,.28)}
+.daytab tr.near td:first-child{box-shadow:inset 3px 0 0 var(--syellow)}
+.daytab tr.near td{background:rgba(252,224,112,.14)}
+.silk.ph{background:var(--panel2) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M8 3l4 2 4-2 5 4-3 3-2-1v12H8V9l-2 1-3-3z' fill='none' stroke='%23A9A79A' stroke-width='1.3' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
+/* the placing sits on the runner number's top-left corner, not after the name (Simon, 23 Oct 2026) */
+.rtab td.tab{position:relative}
+.rtab .res.pc{position:absolute;top:4px;left:2px;font-size:9px;padding:0 3px;line-height:1.35;z-index:1}
+.rtab .res.pc.r2,.rtab .res.pc.r3,.rtab .res.pc.r4{background:var(--panel)}
+@media(max-width:560px){.rtab .res.pc{top:3px;left:0}}
+/* the drill-in row: one line of items under the race header, the open one's detail beneath (Simon, 23 Oct 2026) */
+.drill{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
+.dri{flex:1 1 0;display:flex;align-items:baseline;gap:8px;min-width:0;background:var(--panel);border:1px solid var(--rule);border-radius:4px;
+  padding:8px 12px;cursor:pointer;font:inherit;font-size:12.5px;color:var(--dim);text-align:left}
+.dri:hover{border-color:var(--dim)}
+.dri[aria-expanded=true]{border-color:var(--green);box-shadow:inset 0 0 0 1px var(--green);color:var(--text)}
+.dri:focus-visible{outline:2px solid var(--green);outline-offset:1px}
+.dri .dl{font-weight:500;color:var(--green);white-space:nowrap;flex:0 0 auto}
+.dri .dl .dr{color:var(--faint);font-weight:400;margin-left:2px}
+.dri .ds{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dri .ds b{color:var(--text);font-weight:500}
+.dri.y .ds b:first-child{color:var(--green)} .dri.n .ds b:first-child{color:var(--faint)}
+.dri.y{box-shadow:inset 3px 0 0 var(--green)} .dri.y[aria-expanded=true]{box-shadow:inset 3px 0 0 var(--green),inset 0 0 0 1px var(--green)}
+.dri .dc{flex:0 0 auto;color:var(--faint);font-size:11px}
+.dbody{margin:-4px 0 14px}
+.dbody .smap{margin:0;border-radius:4px}
+.dbody .smh{display:none}
+.dbody .smbody{padding:12px}
+.dmap .spr,.drsp .spl,.drsp .smnone{display:none}
+.dmap .spwrap,.drsp .spwrap{grid-template-columns:minmax(0,1fr);border:0}
+.dmap .spwrap>div+div,.drsp .spwrap>div+div{border-left:0}
+.dbody .quad.qb{border:1px solid var(--rule);border-radius:4px;padding:8px 12px}
+.dbody .quad.qb table,.dbody .quad.qb .ft{margin-left:0}
+.dri .dls{display:none}
+/* phone: still side by side, each just its short name; the verdict shows as the green edge (Simon, 23 Oct 2026) */
+@media(max-width:560px){.drill{flex-wrap:nowrap;gap:5px}.dri{padding:8px 6px;justify-content:center;font-size:12.5px}
+  .dri .dl,.dri .ds,.dri .dc{display:none}.dri .dls{display:inline;font-weight:500;color:var(--green);white-space:nowrap}
+  .dri.n .dls{color:var(--dim)}}
 </style></head>
 <body><div class="wrap">
 <header>
@@ -970,7 +1088,7 @@ function l5cell(x){
   }).join('');
 }
 function silk(x){
-  return x.silk?`<img class="silk" src="${x.silk}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">`
+  return x.silk?`<img class="silk" src="${x.silk}" alt="" loading="lazy" onerror="this.outerHTML='<span class=&quot;silk ph&quot;></span>'">`   // a silk that fails to load: the drawn placeholder (23 Oct 2026)
                :`<span class="silk ph"></span>`;
 }
 // market chance with the book removed.
@@ -1089,8 +1207,7 @@ function fmtDate(s,opt){return new Date(s+"T00:00:00").toLocaleDateString('en-AU
 
 function drawDays(){
   $("days").innerHTML=DATA.days.map((d,i)=>`<button role="tab" aria-selected="${i===day}" onclick="pickDay(${i})">
-    <span class="d">${fmtDate(d.date,{weekday:'short'})} ${fmtDate(d.date,{day:'numeric'})}</span>
-    <span class="s">${liveMeets(d).length} meetings</span></button>`).join("");
+    <span class="d">${fmtDate(d.date,{weekday:'short'})} ${fmtDate(d.date,{day:'numeric'})}</span></button>`).join("");   // no meeting count under the date (Simon, 23 Oct 2026)
 }
 function drawMeets(){
   const d=D();
@@ -1312,7 +1429,7 @@ function spMapSvg(r,on,alloc,top,key,sel,rival){
   return s+'</svg>';
 }
 let SPCTX=null;
-function spTextW(t){ try{ SPCTX=SPCTX||document.createElement('canvas').getContext('2d'); SPCTX.font='500 10px Inter, system-ui, sans-serif'; return SPCTX.measureText(t).width; }catch(e){ return t.length*6.3; } }
+function spTextW(t){ try{ SPCTX=SPCTX||document.createElement('canvas').getContext('2d'); SPCTX.font='500 10px Gotham, system-ui, sans-serif'; return SPCTX.measureText(t).width; }catch(e){ return t.length*6.3; } }
 function spProfSvg(r,pr,key,sel){
   // mirrored to read with the map beside it (Simon, 16 Oct 2026): runners at the right edge, then Early, Middle, Late
   // reading leftwards; each bar grows leftwards from its panel's right edge, so faster reaches further left, as the leader does
@@ -1667,8 +1784,8 @@ function wetOn(r){ const c=r.surf_now||r.surf; return c==='wet'||c==='heavy'; }
 function wetLine(r,x){
   if(!wetOn(r)||!('wet' in x)||x.unrated&&!x.wet) return null;             // no 'wet' key: a day file from before wet.py
   const w=x.wet, a=x.condc?x.cond:null;
-  const rec=!w||!w[0]?'none':`${w[0]}: ${w[1]}-${w[2]}-${w[3]}`;
-  const adj=a==null?'':`<b class="${!w||!w[0]?'f':a>=0.5?'p':a<=-0.5?'g':'f'}">${a>0?'+':a<0?'−':''}${Math.abs(a).toFixed(1)}</b>`;
+  const rec=!w||!w[0]?'–':`${w[0]}: ${w[1]}-${w[2]}-${w[3]}`;
+  const adj=a==null||!w||!w[0]?'':`<b class="${!w||!w[0]?'f':a>=0.5?'p':a<=-0.5?'g':'f'}">${a>0?'+':a<0?'−':''}${Math.abs(a).toFixed(1)}</b>`;
   const tip=`Wet record, Soft 7 or heavier: ${w&&w[0]?`${w[0]} starts, ${w[1]} wins, ${w[2]} seconds, ${w[3]} thirds`:'no wet starts'}.`+
     (a==null?'':` The model's adjustment for this going: ${a>0?'+':''}${a.toFixed(1)} rating points against the field, already in the SPM Rating`+
       (!w||!w[0]?' (grey: with no wet run it carries no wet penalty, and most of the field carries a small one).':'.'))+
@@ -1708,33 +1825,54 @@ function quadLeg(r){
   for(const x of rs.slice(n0)){ if(c(x)>=edge-1e-9){ pick.push(x); cum+=100*c(x)/z; } else break; }
   return {pick,cum,n0};
 }
-function quadPanel(m,r){
-  const qs=(m.quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs.includes(r.no)); if(!qs.length) return '';
+// ---- the drill-in row (Simon, 23 Oct 2026: "Speed Map, RSP, Quaddie could all be clickable items to drill into on one
+// row"): one line of items under the race header, each a short read (the likely leader, the most advantaged on the speed
+// profile, the quaddie's verdict and combinations); a click opens that one underneath. DRILL holds the open one across races.
+let DRILL=null;
+window.drill=k=>{ DRILL=DRILL===k?null:k; draw(); };
+function speedMapBody(r){ const was=smap; smap=true; try{ return speedMap(r); } finally{ smap=was; } }
+function drillRow(m,r){
+  const it=[], on=r.runners.filter(x=>x.rspos!=null);
+  if(on.length>=3){
+    const sl=spLead(r), top=sl?sl.ldr:on.reduce((a,x)=>(x.plead!=null&&(a===null||x.plead>a.plead))?x:a,null);
+    it.push({k:'map',cls:'dmap',lab:'Speed map',sh:'Map',sum:top?`Leader <b>${top.no} ${top.name}</b>`:'no clear leader',
+      tip:top&&sl?`${(100*sl.front).toFixed(0)}% to settle in the first two lengths`:''});
+  }
+  const pr=spProfile(r);
+  if(pr){ const b=pr.rs.slice().sort((a,c)=>pr.P[c.no].net-pr.P[a.no].net)[0];
+    it.push({k:'rsp',cls:'drsp',lab:'RSP',sh:'RSP',sum:`Most advantaged <b>${b.no} ${b.name}</b>`,tip:'the race speed profile: early, middle and late against the field'}); }
+  quadItems(m,r).forEach(q=>it.push(q));
+  if(!it.length) return '';
+  let h='<div class="drill">'+it.map(x=>`<button type="button" class="dri${x.y===true?' y':x.y===false?' n':''}" aria-expanded="${DRILL===x.k}"`+
+    ` onclick="drill('${x.k}')"${x.tip?` title="${x.tip.replace(/"/g,'&quot;')}"`:''}><span class="dl">${x.lab}</span><span class="dls">${x.sh||x.lab}</span><span class="ds">${x.sum}</span>`+
+    `<span class="dc">${DRILL===x.k?'▾':'▸'}</span></button>`).join('')+'</div>';
+  const o=it.find(x=>x.k===DRILL);
+  if(o) h+=`<div class="dbody ${o.cls||'dq'}">${o.body!=null?o.body:(speedMapBody(r)||`<div class="smap open"><div class="smbody">${spPanel(r,null,'',null)}</div></div>`)}</div>`;
+  return h;
+}
+function quadItems(m,r){   // each quaddie this race is in, as a drill-in on the race's one row (Simon, 23 Oct 2026)
+  const qs=(m.quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs.includes(r.no)); if(!qs.length) return [];
   const cap=m.state==='HK'?QUAD_MAX_HK:QUAD_MAX;
   const tip=`In each leg, the runners in order of the model's chance until they reach ${QUAD_COVER}%. $${QUAD_STAKE} flexi; a bet at ${cap} combinations or fewer. A leg within ${QUAD_NEAR} points of ${QUAD_COVER}% stops there; after a +, runners within ${Math.round(100*QUAD_TIE)}% of the last runner's chance, in too.`;
-  return '<div class="quads">'+qs.map(q=>{
-    const k=`${m.track}|${q.p}|${q.legs[0]}`, op=QOPEN[k]?' open':'';
+  return qs.map(q=>{
+    const k='q:'+q.p;   // the same key on every leg, so an open quaddie stays open from leg to leg
     const legs=q.legs.map(no=>{ const rr=m.races.find(x=>x.no===no); return {no,l:rr?quadLeg(rr):null}; });
-    const name=`<b class="lbl">${q.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'}</b><span>R${q.legs[0]}–R${q.legs[3]}</span>`;
-    const tog=`ontoggle="QOPEN['${k.replace(/'/g,"\'")}']=this.open"`;
-    if(legs.some(g=>!g.l)) return `<details class="quad no"${op} ${tog} title="${tip}"><summary>${name}<span class="vd n">NO TICKET</span></summary><div class="sm ft">A leg is not rated, so there is no ticket.</div></details>`;
+    const sh=q.p==='EarlyQuaddie'?'Early Q':'Quaddie', lab=`${q.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'} <span class="dr">R${q.legs[0]}–R${q.legs[3]}</span>`;
+    if(legs.some(g=>!g.l)) return {k,lab,sh,tip,y:false,sum:'<b>NO TICKET</b>',body:`<div class="quad no qb"><div class="sm ft">A leg is not rated, so there is no ticket.</div></div>`};
     const n=legs.reduce((a,g)=>a*g.l.pick.length,1), fx=100*QUAD_STAKE/n, ok=n<=cap, fxs=fx>=10?fx.toFixed(0):fx.toFixed(1);
     const rows=legs.map((g,i)=>`<tr${g.no===r.no?' class="here"':''}><td class="lg">Leg ${i+1} &nbsp;R${g.no}</td><td><b>${g.l.pick.slice(0,g.l.n0).map(x=>x.no).join(', ')}</b>${g.l.pick.length>g.l.n0?` <span class="tie">+ ${g.l.pick.slice(g.l.n0).map(x=>x.no).join(', ')}</span>`:''}</td><td class="cv">${g.l.pick.length} for ${g.l.cum.toFixed(0)}%</td></tr>`).join('');
-    return `<details class="quad${ok?'':' no'}"${op} ${tog} title="${tip}"><summary>${name}<span class="sm">${n} combo${n===1?'':'s'} · ${fxs}%</span><span class="vd ${ok?'y':'n'}">${ok?'BET':'SIT OUT'}</span></summary>`
-      +`<table>${rows}</table><div class="sm ft">${legs.map(g=>g.l.pick.length).join(' × ')} = <b>${n}</b> combination${n===1?'':'s'} &nbsp;·&nbsp; $${QUAD_STAKE} is <b>${fxs}%</b> flexi &nbsp;·&nbsp; ${ok?'qualifies':'does not qualify'} (${cap} or fewer) &nbsp;·&nbsp; ${QUAD_COVER}% a leg on the model's chances</div></details>`;
-  }).join('')+'</div>';
+    return {k,lab,sh,tip,y:ok,sum:`<b>${ok?'BET':'SIT OUT'}</b> · ${n} combo${n===1?'':'s'}`,body:`<div class="quad${ok?'':' no'} qb"><table>${rows}</table><div class="sm ft">${legs.map(g=>g.l.pick.length).join(' × ')} = <b>${n}</b> combination${n===1?'':'s'} &nbsp;·&nbsp; $${QUAD_STAKE} is <b>${fxs}%</b> flexi &nbsp;·&nbsp; ${ok?'qualifies':'does not qualify'} (${cap} or fewer) &nbsp;·&nbsp; ${QUAD_COVER}% a leg on the model's chances</div></div>`};
+  });
 }
 function drawRace(){
   if(isHK(M())) return drawRaceHK();
   const r=M().races[active], a=analyse(r);
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);   // market percentage
   const lvh=liveOf(r), replay=(lvh&&lvh.status==='Paying'&&lvh.replay)?`<a class="replay" href="${lvh.replay}" target="_blank" rel="noopener" data-vlabel="${M().track} R${r.no} — replay">Replay <span>▶</span></a>`:'';
-  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}
-    ${r.surf?`&nbsp;·&nbsp; rate as <select class="surf" onchange="setSurf(this.value)">${(SURF[r.surf_now||r.surf]?'':'<option value="" selected>going not posted — no conditions factor</option>')}${Object.keys(SURF).map(c=>`<option value="${c}" ${(r.surf_now||r.surf)===c?'selected':''}>${SURF[c]}</option>`).join('')}</select><button class="surfall" onclick="setSurfMeet(document.querySelector('select.surf').value)" title="apply this surface to every race at the meeting">all races</button>${(r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''}`:''}</div>${replay}</div>`;
+  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${(r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''}</div>${replay}</div>`;
+  h+=drillRow(M(),r);
   h+=h2hCue(r);
-  h+=quadPanel(M(),r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
-  h+=speedMap(r);
   h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="slh" title="Stride length. ! a short strider racing 15% or more beyond its usual trip: these win less often than their form says. + a long strider stepping up that has not yet placed at the trip: these win more often. Hover or open the runner for the detail.">SL</th><th class="l5h">Last 5</th>
     <th class="r key"><span class="dsk">SPM Rating</span><span class="phd">SPM<br>Rating</span></th><th class="r key2">Lengths</th>${CHH}<th class="r bk"><span class="dsk"><small>100%</small>Model</span><span class="phd">Model <small>100%</small><br>BSP<br>Mkt <small>${book?book.toFixed(0)+'%':''}</small></span></th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
   const topR=r.runners[0].rating, lv=liveOf(r), wet=wetOn(r)&&r.runners.some(x=>'wet' in x), span=wet?12:11;
@@ -1743,8 +1881,8 @@ function drawRace(){
     const lens=(x.fair>0&&r.runners[0].fair>0)?Math.max(0,1.66*Math.log(x.fair/r.runners[0].fair)):0;   // from the chances, not the points (deploy_lenfix, 18 Oct 2026): the points' scale moves with the nightly fit, the chance does not; 1.66 lengths a logit, measured on 6,592 races (probe_calib_fit.py)
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
-      <td class="tab"><span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span></td>
-      <td><div class="horse">${silk(x)}${x.name}${wormIcon(r,x)}${x.sl?`<span class="slm slin ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span>`:''}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}</div>
+      <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}<span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span></td>
+      <td><div class="horse">${silk(x)}${x.name}${wormIcon(r,x)}${x.sl?`<span class="slm slin ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span>`:''}</div>
         <div class="jock"><span class="jk">${x.jockey||'jockey TBA'}</span><span class="jsep"> &nbsp;·&nbsp; </span><span class="trn">${x.trainer}</span></div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="slc">${slCell(x)}</td>
@@ -1791,7 +1929,7 @@ function drawRaceHK(){
   const course=r.surf==='synth'?'All weather':`Turf${r.rail?' "'+r.rail+'" course':''}`;
   let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''} &nbsp;·&nbsp; ${r.going||'going not posted'}
     <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong</div></div>`;
-  h+=quadPanel(m,r);
+  h+=drillRow(m,r);
   h+=`<div class="scroll"><table class="rtab hk"><thead><tr><th></th><th>Runner</th><th>Draw</th><th class="l5h">Last 5</th>
     <th class="r key">SPM Rating</th><th class="r key2">Lengths</th>${CHH}<th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
   r.runners.forEach((x,i)=>{
@@ -1800,8 +1938,8 @@ function drawRaceHK(){
     const bov=x.bx?(x.bx>=x.fair*1.15?' up':(x.bx<=x.fair/1.15?' dn':'')):'';
     const mc=x.mark_chg?`<small class="${x.mark_chg>0?'p':'g'}">${x.mark_chg>0?'+':'−'}${Math.abs(x.mark_chg)}</small>`:'';
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
-      <td class="tab">${x.no}</td>
-      <td><div class="horse">${x.name}${(()=>{const p=placeOf(lv,x.no);return p===null?'':` <span class="res r${p+1}">${ORD[p]}</span>`;})()}</div>
+      <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}${x.no}</td>
+      <td><div class="horse">${x.name}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="l5">${l5cell(x)}</td>
@@ -1863,7 +2001,8 @@ function draw(){
 function countdown(){
   const now=Date.now();
   document.querySelectorAll("nav .cd[data-t],.daytab .cd[data-t]").forEach(el=>{
-    const lv=LIVE[el.dataset.k]; const st=lv&&lv.status;
+    const lv=LIVE[el.dataset.k]; const st=lv&&lv.status, tr=el.closest('.daytab tr');
+    if(tr) tr.classList.toggle('near',!(st&&st!=='Normal')&&!!el.dataset.t&&(new Date(el.dataset.t).getTime()-now)>0&&(new Date(el.dataset.t).getTime()-now)<=600000);   // inside 10 minutes (23 Oct 2026)
     if(st&&st!=='Normal'){ const m={Closed:['closed','soon'],Interim:['interim','soon'],Paying:['paying','gone'],Abandoned:['abnd','gone']}[st];
       if(m){el.textContent=m[0]; el.className='cd '+m[1]+' st'; return;} }
     const t=el.dataset.t; if(!t){el.innerHTML="&nbsp;";return;}
@@ -2119,4 +2258,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Thu 22 Oct 18:25</b> AEST &middot; Mornington Good 4 -> Good 3</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 23 Oct 00:41</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
