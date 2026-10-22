@@ -1,19 +1,19 @@
 {
- "started": "2026-10-23T08:23:13",
+ "started": "2026-10-23T10:00:56",
  "dates": [
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
   "2026-10-26"
  ],
- "reason": "morning harvest",
+ "reason": "Launceston scratched R2 #9, R3 #12, R6 #10, R8 #5; Sunshine Coast Poly scratched R8 #6",
  "status": "ok",
  "acceptors": 877,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-26",
  "card_source": "toprate",
  "extract": "2026-10-22T21:22:13+00:00",
- "finished": "2026-10-23T10:07:43",
+ "finished": "2026-10-23T10:54:53",
  "going": {
   "Cranbourne": "Soft 5",
   "Ballarat": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 171,
  "dashboard": "toprate_week_v2_2026-10-23.html",
- "fingerprint": "7f3c6c909c63"
+ "fingerprint": "16015a64f7c9"
 }
