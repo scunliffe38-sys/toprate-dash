@@ -1,25 +1,25 @@
 {
- "started": "2026-10-22T12:00:39",
+ "started": "2026-10-22T12:45:37",
  "dates": [
   "2026-10-22",
   "2026-10-23",
   "2026-10-24"
  ],
- "reason": "Geraldton scratched R2 #13, R3 #12/15/16, R4 #11/12/13, R5 #14; Gosford Good 4 -> Soft 6",
+ "reason": "Gosford Soft 6 -> Heavy 9; Gosford scratched R1 #6, R2 #1, R5 #11",
  "status": "ok",
  "acceptors": 339,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-24",
  "card_source": "toprate",
  "extract": "2026-10-21T21:21:41+00:00",
- "finished": "2026-10-22T12:41:32",
+ "finished": "2026-10-22T13:23:41",
  "going": {
   "Mornington": "Good 4",
-  "Gosford": "Soft 6",
+  "Gosford": "Heavy 9",
   "Geraldton": "Good 4",
   "Ipswich": "Heavy 8"
  },
- "scratchings": 63,
+ "scratchings": 66,
  "dashboard": "toprate_week_v2_2026-10-22.html",
- "fingerprint": "17fc7c20523a"
+ "fingerprint": "d42c37ab3119"
 }
