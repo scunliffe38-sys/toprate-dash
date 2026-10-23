@@ -1,0 +1,173 @@
+{
+ "key": "2026-10-24|Flemington|8",
+ "date": "2026-10-24",
+ "venue": "Flemington",
+ "race": 8,
+ "start_utc": "2026-10-24T06:10:00Z",
+ "rconf": 0,
+ "spot": {
+  "1": 8,
+  "2": 4,
+  "3": 12,
+  "4": 13,
+  "5": 9,
+  "6": 21,
+  "7": 16,
+  "8": 14,
+  "9": 5,
+  "10": 17,
+  "11": 0,
+  "12": 1
+ },
+ "live": {
+  "1": 8,
+  "2": 0,
+  "3": 8,
+  "4": 4,
+  "5": 4,
+  "6": 12,
+  "7": 20,
+  "8": 12,
+  "9": 0,
+  "10": 16,
+  "11": 1,
+  "12": 20
+ },
+ "conf": {},
+ "savedAt": "2026-10-23T03:43:37.661Z",
+ "beforeJump": true,
+ "runners": [
+  {
+   "b": 1,
+   "name": "Birdman",
+   "live_pct": 7,
+   "new_pct": 6.99,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 8,
+   "live_spot": 8,
+   "conf": 0
+  },
+  {
+   "b": 2,
+   "name": "Warwoven",
+   "live_pct": 16.9,
+   "new_pct": 16.88,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 4,
+   "live_spot": 0,
+   "conf": 0
+  },
+  {
+   "b": 3,
+   "name": "Ceolwulf",
+   "live_pct": 10.2,
+   "new_pct": 10.19,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 12,
+   "live_spot": 8,
+   "conf": 0
+  },
+  {
+   "b": 4,
+   "name": "Attrition",
+   "live_pct": 1.7,
+   "new_pct": 1.7,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 13,
+   "live_spot": 4,
+   "conf": 0
+  },
+  {
+   "b": 5,
+   "name": "Sir Delius",
+   "live_pct": 15.5,
+   "new_pct": 15.48,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 9,
+   "live_spot": 4,
+   "conf": 0
+  },
+  {
+   "b": 6,
+   "name": "Saint George",
+   "live_pct": 4.1,
+   "new_pct": 4.1,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 21,
+   "live_spot": 12,
+   "conf": 0
+  },
+  {
+   "b": 7,
+   "name": "Middle Earth",
+   "live_pct": 1,
+   "new_pct": 1,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 16,
+   "live_spot": 20,
+   "conf": 0
+  },
+  {
+   "b": 8,
+   "name": "Cosmic Crusader",
+   "live_pct": 23.8,
+   "new_pct": 23.78,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 14,
+   "live_spot": 12,
+   "conf": 0
+  },
+  {
+   "b": 9,
+   "name": "Blind Raise",
+   "live_pct": 8,
+   "new_pct": 7.99,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 5,
+   "live_spot": 0,
+   "conf": 0
+  },
+  {
+   "b": 10,
+   "name": "Aeliana",
+   "live_pct": 7.8,
+   "new_pct": 7.79,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 17,
+   "live_spot": 16,
+   "conf": 0
+  },
+  {
+   "b": 11,
+   "name": "Light Infantry Man",
+   "live_pct": 3,
+   "new_pct": 3,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 0,
+   "live_spot": 1,
+   "conf": 0
+  },
+  {
+   "b": 12,
+   "name": "Land Legend",
+   "live_pct": 1.1,
+   "new_pct": 1.1,
+   "delta_pts": 0,
+   "delta_logit": 0,
+   "spot": 1,
+   "live_spot": 20,
+   "conf": 0
+  }
+ ]
+}
