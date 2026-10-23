@@ -10,8 +10,8 @@
  "tempo": null,
  "tempo_fc": "slow",
  "spot": {
-  "1": 12,
-  "2": 20,
+  "1": 8,
+  "2": 16,
   "3": 21,
   "4": 5,
   "5": 13,
@@ -28,7 +28,7 @@
   "7": 24
  },
  "conf": {},
- "savedAt": "2026-10-23T21:46:04.363Z",
+ "savedAt": "2026-10-23T21:46:58.048Z",
  "beforeJump": true,
  "runners": [
   {
@@ -39,7 +39,7 @@
    "delta_pts": 0.71,
    "delta_logit": 0.2131,
    "spot": 4,
-   "spot48": 12,
+   "spot48": 8,
    "live_spot": 4,
    "live_spot48": 8,
    "conf": 100
@@ -52,7 +52,7 @@
    "delta_pts": -0.85,
    "delta_logit": -0.25728,
    "spot": 8,
-   "spot48": 20,
+   "spot48": 16,
    "live_spot": 4,
    "live_spot48": 12,
    "conf": 100
