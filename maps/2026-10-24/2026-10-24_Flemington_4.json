@@ -5,7 +5,7 @@
  "venue": "Flemington",
  "race": 4,
  "start_utc": "2026-10-24T03:20:00Z",
- "rconf": 0,
+ "rconf": 70,
  "tempo": "even",
  "tempo_fc": "fast",
  "spot": {
@@ -32,139 +32,150 @@
   "12": 25,
   "13": 7
  },
- "conf": {},
- "savedAt": "2026-10-23T10:18:12.906Z",
+ "conf": {
+  "2": 100,
+  "3": 100,
+  "6": 100,
+  "7": 100,
+  "8": 100,
+  "9": 100,
+  "10": 100,
+  "11": 100,
+  "12": 100,
+  "13": 100
+ },
+ "savedAt": "2026-10-23T10:18:48.409Z",
  "beforeJump": true,
  "runners": [
   {
    "b": 2,
    "name": "Angels Fury",
    "live_pct": 27.6,
-   "new_pct": 35.95,
-   "delta_pts": 0.04,
-   "delta_logit": 0.01129,
+   "new_pct": 42.87,
+   "delta_pts": 1.05,
+   "delta_logit": 0.31487,
    "spot": 0,
    "spot48": 4,
    "live_spot": 0,
    "live_spot48": 4,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 3,
    "name": "Lady Catalina",
    "live_pct": 3.9,
-   "new_pct": 5.09,
-   "delta_pts": 0.05,
-   "delta_logit": 0.01366,
+   "new_pct": 3.81,
+   "delta_pts": -0.5,
+   "delta_logit": -0.14917,
    "spot": 4,
    "spot48": 8,
    "live_spot": 0,
    "live_spot48": 4,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 6,
    "name": "Chayan",
    "live_pct": 13.3,
-   "new_pct": 16.99,
-   "delta_pts": -0.03,
-   "delta_logit": -0.00832,
+   "new_pct": 10.86,
+   "delta_pts": -1.09,
+   "delta_logit": -0.32848,
    "spot": 8,
    "spot48": 16,
    "live_spot": 8,
    "live_spot48": 20,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 7,
    "name": "Ladhar",
    "live_pct": 2.5,
-   "new_pct": 3.24,
-   "delta_pts": 0.02,
-   "delta_logit": 0.00566,
+   "new_pct": 2.57,
+   "delta_pts": -0.32,
+   "delta_logit": -0.09635,
    "spot": 5,
    "spot48": 9,
    "live_spot": 4,
    "live_spot48": 8,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 8,
    "name": "Unkechaug",
    "live_pct": 2.1,
-   "new_pct": 2.68,
-   "delta_pts": -0.04,
-   "delta_logit": -0.01055,
+   "new_pct": 1.98,
+   "delta_pts": -0.61,
+   "delta_logit": -0.18418,
    "spot": 9,
    "spot48": 21,
    "live_spot": 8,
    "live_spot48": 20,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 9,
    "name": "Caddington",
    "live_pct": 5.3,
-   "new_pct": 6.84,
-   "delta_pts": 0.01,
-   "delta_logit": 0.00153,
+   "new_pct": 5.72,
+   "delta_pts": -0.16,
+   "delta_logit": -0.04947,
    "spot": 5,
    "spot48": 13,
    "live_spot": 4,
    "live_spot48": 8,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 10,
    "name": "Avery Anna",
    "live_pct": 1.5,
-   "new_pct": 1.92,
-   "delta_pts": -0.03,
-   "delta_logit": -0.00864,
+   "new_pct": 2.33,
+   "delta_pts": 1.04,
+   "delta_logit": 0.31313,
    "spot": 1,
    "spot48": 5,
    "live_spot": 12,
    "live_spot48": 24,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 11,
    "name": "Almost An Angel",
    "live_pct": 2.9,
-   "new_pct": 3.67,
-   "delta_pts": -0.06,
-   "delta_logit": -0.01702,
+   "new_pct": 3.12,
+   "delta_pts": -0.17,
+   "delta_logit": -0.05109,
    "spot": 9,
    "spot48": 17,
    "live_spot": 12,
    "live_spot48": 28,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 12,
    "name": "Nishioka",
    "live_pct": 3.1,
-   "new_pct": 3.94,
-   "delta_pts": -0.04,
-   "delta_logit": -0.01298,
+   "new_pct": 3.17,
+   "delta_pts": -0.34,
+   "delta_logit": -0.10243,
    "spot": 10,
    "spot48": 18,
    "live_spot": 13,
    "live_spot48": 25,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 13,
    "name": "Aroused",
    "live_pct": 14.9,
-   "new_pct": 19.68,
-   "delta_pts": 0.08,
-   "delta_logit": 0.02537,
+   "new_pct": 23.57,
+   "delta_pts": 1.11,
+   "delta_logit": 0.33319,
    "spot": 0,
    "spot48": 0,
    "live_spot": 3,
    "live_spot48": 7,
-   "conf": 0
+   "conf": 100
   }
  ]
 }
