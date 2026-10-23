@@ -1,0 +1,117 @@
+{
+ "fine": 48,
+ "key": "2026-10-23|Cranbourne|5",
+ "date": "2026-10-23",
+ "venue": "Cranbourne",
+ "race": 5,
+ "start_utc": "2026-10-23T09:15:00Z",
+ "rconf": 85,
+ "tempo": null,
+ "tempo_fc": "slow",
+ "spot": {
+  "1": 16,
+  "3": 17,
+  "4": 4,
+  "5": 9,
+  "6": 5,
+  "8": 0
+ },
+ "live": {
+  "1": 16,
+  "3": 16,
+  "4": 4,
+  "5": 5,
+  "6": 17,
+  "8": 4
+ },
+ "conf": {
+  "1": 100,
+  "3": 100,
+  "4": 100,
+  "5": 100,
+  "6": 100,
+  "8": 100
+ },
+ "savedAt": "2026-10-23T06:13:32.402Z",
+ "beforeJump": true,
+ "runners": [
+  {
+   "b": 1,
+   "name": "Miss Playlounge",
+   "live_pct": 10.8,
+   "new_pct": 5.68,
+   "delta_pts": -1.73,
+   "delta_logit": -0.52035,
+   "spot": 8,
+   "spot48": 16,
+   "live_spot": 8,
+   "live_spot48": 16,
+   "conf": 100
+  },
+  {
+   "b": 3,
+   "name": "Moby Dick",
+   "live_pct": 9,
+   "new_pct": 5.6,
+   "delta_pts": -1.17,
+   "delta_logit": -0.3516,
+   "spot": 9,
+   "spot48": 17,
+   "live_spot": 8,
+   "live_spot48": 16,
+   "conf": 100
+  },
+  {
+   "b": 4,
+   "name": "Run Harry Run",
+   "live_pct": 29.4,
+   "new_pct": 36.93,
+   "delta_pts": 1.17,
+   "delta_logit": 0.35092,
+   "spot": 0,
+   "spot48": 4,
+   "live_spot": 0,
+   "live_spot48": 4,
+   "conf": 100
+  },
+  {
+   "b": 5,
+   "name": "Bossy Benita",
+   "live_pct": 19.5,
+   "new_pct": 13.23,
+   "delta_pts": -0.88,
+   "delta_logit": -0.26503,
+   "spot": 5,
+   "spot48": 9,
+   "live_spot": 1,
+   "live_spot48": 5,
+   "conf": 100
+  },
+  {
+   "b": 6,
+   "name": "Racey Casey",
+   "live_pct": 4.5,
+   "new_pct": 6.45,
+   "delta_pts": 1.6,
+   "delta_logit": 0.48234,
+   "spot": 1,
+   "spot48": 5,
+   "live_spot": 9,
+   "live_spot48": 17,
+   "conf": 100
+  },
+  {
+   "b": 8,
+   "name": "Regal Zeus",
+   "live_pct": 26.8,
+   "new_pct": 32.11,
+   "delta_pts": 1.01,
+   "delta_logit": 0.30373,
+   "spot": 0,
+   "spot48": 0,
+   "live_spot": 0,
+   "live_spot48": 4,
+   "conf": 100
+  }
+ ]
+}
