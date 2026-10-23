@@ -1,0 +1,101 @@
+{
+ "fine": 48,
+ "key": "2026-10-23|Cranbourne|1",
+ "date": "2026-10-23",
+ "venue": "Cranbourne",
+ "race": 1,
+ "start_utc": "2026-10-23T07:15:00Z",
+ "rconf": 85,
+ "tempo": null,
+ "tempo_fc": "slow",
+ "spot": {
+  "1": 0,
+  "2": 8,
+  "3": 0,
+  "4": 9,
+  "7": 5
+ },
+ "live": {
+  "1": 0,
+  "2": 4,
+  "3": 8,
+  "4": 12,
+  "7": 5
+ },
+ "conf": {
+  "1": 100,
+  "2": 100,
+  "3": 100,
+  "4": 100,
+  "7": 100
+ },
+ "savedAt": "2026-10-23T05:36:34.733Z",
+ "beforeJump": true,
+ "runners": [
+  {
+   "b": 1,
+   "name": "Super Wonder",
+   "live_pct": 18.7,
+   "new_pct": 20.99,
+   "delta_pts": 0.88,
+   "delta_logit": 0.26534,
+   "spot": 0,
+   "spot48": 0,
+   "live_spot": 0,
+   "live_spot48": 0,
+   "conf": 100
+  },
+  {
+   "b": 2,
+   "name": "Lady Catalina",
+   "live_pct": 18.2,
+   "new_pct": 7.67,
+   "delta_pts": -2.37,
+   "delta_logit": -0.71438,
+   "spot": 4,
+   "spot48": 8,
+   "live_spot": 0,
+   "live_spot48": 4,
+   "conf": 100
+  },
+  {
+   "b": 3,
+   "name": "Handee",
+   "live_pct": 16.3,
+   "new_pct": 23.75,
+   "delta_pts": 1.75,
+   "delta_logit": 0.52658,
+   "spot": 0,
+   "spot48": 0,
+   "live_spot": 4,
+   "live_spot48": 8,
+   "conf": 100
+  },
+  {
+   "b": 4,
+   "name": "Senza Nome",
+   "live_pct": 17.8,
+   "new_pct": 9.22,
+   "delta_pts": -1.68,
+   "delta_logit": -0.50752,
+   "spot": 5,
+   "spot48": 9,
+   "live_spot": 4,
+   "live_spot48": 12,
+   "conf": 100
+  },
+  {
+   "b": 7,
+   "name": "Myhro's Ruler",
+   "live_pct": 29,
+   "new_pct": 38.37,
+   "delta_pts": 1.43,
+   "delta_logit": 0.42998,
+   "spot": 1,
+   "spot48": 5,
+   "live_spot": 1,
+   "live_spot48": 5,
+   "conf": 100
+  }
+ ]
+}
