@@ -1,21 +1,21 @@
 {
- "started": "2026-10-23T15:30:47",
+ "started": "2026-10-23T16:30:41",
  "dates": [
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
   "2026-10-26"
  ],
- "reason": "Launceston scratched R4 #4; Gawler scratched R1 #6",
+ "reason": "Cranbourne Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 877,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-26",
  "card_source": "toprate",
  "extract": "2026-10-22T21:22:13+00:00",
- "finished": "2026-10-23T16:22:16",
+ "finished": "2026-10-23T17:23:24",
  "going": {
-  "Cranbourne": "Soft 5",
+  "Cranbourne": "Good 4",
   "Scone": "Good 4",
   "Canberra": "Good 4",
   "Mackay": "Soft 5",
@@ -26,5 +26,5 @@
  },
  "scratchings": 175,
  "dashboard": "toprate_week_v2_2026-10-23.html",
- "fingerprint": "0ffc2cbaef5b"
+ "fingerprint": "0acff80e24b4"
 }
