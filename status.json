@@ -1,19 +1,19 @@
 {
- "started": "2026-10-23T20:00:39",
+ "started": "2026-10-23T21:00:31",
  "dates": [
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
   "2026-10-26"
  ],
- "reason": "Cranbourne Good 4 -> Good 3; Cranbourne scratched R4 #4/6",
+ "reason": "Cranbourne scratched R6 #3",
  "status": "ok",
  "acceptors": 877,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-26",
  "card_source": "toprate",
  "extract": "2026-10-22T21:22:13+00:00",
- "finished": "2026-10-23T20:51:48",
+ "finished": "2026-10-23T21:52:02",
  "going": {
   "Cranbourne": "Good 3",
   "Launceston": "Good 4",
@@ -24,7 +24,7 @@
   "Mackay": "Soft 5",
   "Gawler": "Good 4"
  },
- "scratchings": 178,
+ "scratchings": 179,
  "dashboard": "toprate_week_v2_2026-10-23.html",
- "fingerprint": "4b72e4c1c0c3"
+ "fingerprint": "151e3c0841d9"
 }
