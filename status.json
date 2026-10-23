@@ -1,22 +1,22 @@
 {
- "started": "2026-10-23T16:30:41",
+ "started": "2026-10-23T17:30:43",
  "dates": [
   "2026-10-23",
   "2026-10-24",
   "2026-10-25",
   "2026-10-26"
  ],
- "reason": "Cranbourne Soft 5 -> Good 4",
+ "reason": "Scone Good 4 -> Soft 5",
  "status": "ok",
  "acceptors": 877,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-26",
  "card_source": "toprate",
  "extract": "2026-10-22T21:22:13+00:00",
- "finished": "2026-10-23T17:23:24",
+ "finished": "2026-10-23T18:20:28",
  "going": {
   "Cranbourne": "Good 4",
-  "Scone": "Good 4",
+  "Scone": "Soft 5",
   "Canberra": "Good 4",
   "Mackay": "Soft 5",
   "Gawler": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 175,
  "dashboard": "toprate_week_v2_2026-10-23.html",
- "fingerprint": "0acff80e24b4"
+ "fingerprint": "b091fe02305d"
 }
