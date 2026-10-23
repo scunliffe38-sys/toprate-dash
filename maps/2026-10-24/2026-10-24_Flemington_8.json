@@ -4,7 +4,7 @@
  "venue": "Flemington",
  "race": 8,
  "start_utc": "2026-10-24T06:10:00Z",
- "rconf": 0,
+ "rconf": 75,
  "spot": {
   "1": 8,
   "2": 4,
@@ -33,141 +33,154 @@
   "11": 1,
   "12": 20
  },
- "conf": {},
- "savedAt": "2026-10-23T03:43:37.661Z",
+ "conf": {
+  "1": 100,
+  "2": 100,
+  "3": 100,
+  "4": 100,
+  "5": 100,
+  "6": 100,
+  "7": 100,
+  "8": 100,
+  "9": 100,
+  "10": 100,
+  "11": 100,
+  "12": 100
+ },
+ "savedAt": "2026-10-23T03:44:11.284Z",
  "beforeJump": true,
  "runners": [
   {
    "b": 1,
    "name": "Birdman",
    "live_pct": 7,
-   "new_pct": 6.99,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 7.42,
+   "delta_pts": 0.69,
+   "delta_logit": 0.20852,
    "spot": 8,
    "live_spot": 8,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 2,
    "name": "Warwoven",
    "live_pct": 16.9,
-   "new_pct": 16.88,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 16.54,
+   "delta_pts": 0.43,
+   "delta_logit": 0.12833,
    "spot": 4,
    "live_spot": 0,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 3,
    "name": "Ceolwulf",
    "live_pct": 10.2,
-   "new_pct": 10.19,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 8.45,
+   "delta_pts": -0.13,
+   "delta_logit": -0.03859,
    "spot": 12,
    "live_spot": 8,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 4,
    "name": "Attrition",
    "live_pct": 1.7,
-   "new_pct": 1.7,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 1.59,
+   "delta_pts": 0.28,
+   "delta_logit": 0.08567,
    "spot": 13,
    "live_spot": 4,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 5,
    "name": "Sir Delius",
    "live_pct": 15.5,
-   "new_pct": 15.48,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 16.8,
+   "delta_pts": 0.77,
+   "delta_logit": 0.23059,
    "spot": 9,
    "live_spot": 4,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 6,
    "name": "Saint George",
    "live_pct": 4.1,
-   "new_pct": 4.1,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 1.68,
+   "delta_pts": -2.47,
+   "delta_logit": -0.74281,
    "spot": 21,
    "live_spot": 12,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 7,
    "name": "Middle Earth",
    "live_pct": 1,
-   "new_pct": 1,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 0.66,
+   "delta_pts": -0.9,
+   "delta_logit": -0.27258,
    "spot": 16,
    "live_spot": 20,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 8,
    "name": "Cosmic Crusader",
    "live_pct": 23.8,
-   "new_pct": 23.78,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 30.58,
+   "delta_pts": 1.33,
+   "delta_logit": 0.40049,
    "spot": 14,
    "live_spot": 12,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 9,
    "name": "Blind Raise",
    "live_pct": 8,
-   "new_pct": 7.99,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 6.58,
+   "delta_pts": -0.15,
+   "delta_logit": -0.04562,
    "spot": 5,
    "live_spot": 0,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 10,
    "name": "Aeliana",
    "live_pct": 7.8,
-   "new_pct": 7.79,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 5.68,
+   "delta_pts": -0.55,
+   "delta_logit": -0.16711,
    "spot": 17,
    "live_spot": 16,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 11,
    "name": "Light Infantry Man",
    "live_pct": 3,
-   "new_pct": 3,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 3.03,
+   "delta_pts": 0.53,
+   "delta_logit": 0.16033,
    "spot": 0,
    "live_spot": 1,
-   "conf": 0
+   "conf": 100
   },
   {
    "b": 12,
    "name": "Land Legend",
    "live_pct": 1.1,
-   "new_pct": 1.1,
-   "delta_pts": 0,
-   "delta_logit": 0,
+   "new_pct": 1,
+   "delta_pts": 0.18,
+   "delta_logit": 0.05276,
    "spot": 1,
    "live_spot": 20,
-   "conf": 0
+   "conf": 100
   }
  ]
 }
