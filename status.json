@@ -1,19 +1,19 @@
 {
- "started": "2026-10-24T14:01:19",
+ "started": "2026-10-24T15:01:17",
  "dates": [
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "Morphettville scratched R3 #11, R5 #9",
+ "reason": "St Arnaud Good 4 -> Good 3; Ascot scratched R4 #8; Morphettville scratched R4 #5",
  "status": "ok",
  "acceptors": 2119,
  "rider_share": 0.91,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-23T21:22:00+00:00",
- "finished": "2026-10-24T14:50:11",
+ "finished": "2026-10-24T15:50:29",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -21,7 +21,7 @@
   "Morphettville": "Soft 5",
   "Ascot": "Good 4",
   "Yarra Valley": "Soft 5",
-  "St Arnaud": "Good 4",
+  "St Arnaud": "Good 3",
   "Kembla Grange": "Good 4",
   "Albury": "Good 4",
   "Gold Coast Poly": "Synthetic",
@@ -32,7 +32,7 @@
   "Armidale": "Heavy 10",
   "Gympie": "Good"
  },
- "scratchings": 273,
+ "scratchings": 275,
  "dashboard": "toprate_week_v2_2026-10-24.html",
- "fingerprint": "9038f16073cf"
+ "fingerprint": "d65477b2aa29"
 }
