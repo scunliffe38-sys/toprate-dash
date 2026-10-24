@@ -1,19 +1,19 @@
 {
- "started": "2026-10-24T10:01:50",
+ "started": "2026-10-24T11:01:40",
  "dates": [
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "Eagle Farm scratched R7 #10",
+ "reason": "Gold Coast Poly scratched R4 #9; Fannie Bay scratched R3 #2, R4 #5/12/13",
  "status": "ok",
  "acceptors": 2119,
  "rider_share": 0.91,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-23T21:22:00+00:00",
- "finished": "2026-10-24T10:50:54",
+ "finished": "2026-10-24T11:50:57",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -32,7 +32,7 @@
   "Armidale": "Heavy 10",
   "Gympie": "Good"
  },
- "scratchings": 260,
+ "scratchings": 265,
  "dashboard": "toprate_week_v2_2026-10-24.html",
- "fingerprint": "830e1ecbd5a9"
+ "fingerprint": "1cda888cef3a"
 }
