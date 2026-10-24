@@ -1,27 +1,27 @@
 {
- "started": "2026-10-25T03:07:16",
+ "started": "2026-10-25T09:16:13",
  "dates": [
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "overnight harvest",
+ "reason": "Sale scratched R1 #11/12/14, R2 #8/10/11/14/16/18, R3 #1/4/17, R5 #6/15/17, R6 #7, R7 #3/4/7, R8 #5/17, R9 #1/2/11; Townsville scratched R7 #12, R9 #4; Port Lincoln Good 4 -> Soft ",
  "status": "ok",
  "acceptors": 681,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-24T16:06:18+00:00",
- "finished": "2026-10-25T04:00:53",
+ "finished": "2026-10-25T09:52:28",
  "going": {
   "Sale": "Good 4",
-  "Port Macquarie": "Soft 7",
+  "Port Macquarie": "Soft 6",
   "Townsville": "Soft 5",
-  "Port Lincoln": "Good 4",
+  "Port Lincoln": "Soft 7",
   "Northam": "Soft 5",
   "Coonabarabran": "Good 4"
  },
- "scratchings": 48,
+ "scratchings": 118,
  "dashboard": "toprate_week_v2_2026-10-25.html",
- "fingerprint": "af91a4ae5392"
+ "fingerprint": "95dd060374fa"
 }
