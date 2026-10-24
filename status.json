@@ -1,27 +1,26 @@
 {
- "started": "2026-10-24T19:00:50",
+ "started": "2026-10-24T20:45:45",
  "dates": [
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "Collie scratched R3 #4",
+ "reason": "Toowoomba Heavy 8 -> Heavy 9",
  "status": "ok",
  "acceptors": 2119,
  "rider_share": 0.91,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-23T21:22:00+00:00",
- "finished": "2026-10-24T19:49:55",
+ "finished": "2026-10-24T21:34:26",
  "going": {
-  "Ascot": "Good 4",
-  "Toowoomba": "Heavy 8",
-  "Collie": "Good",
+  "Toowoomba": "Heavy 9",
   "Flemington": "Good 4",
   "Randwick": "Good 4",
   "Eagle Farm": "Heavy 10",
   "Morphettville": "Soft 5",
+  "Ascot": "Good 4",
   "Yarra Valley": "Soft 5",
   "St Arnaud": "Good 3",
   "Kembla Grange": "Good 4",
@@ -30,9 +29,10 @@
   "Gold Coast Poly": "Synthetic",
   "Gympie": "Good",
   "Fannie Bay": "Synthetic",
+  "Collie": "Good",
   "Laverton": "Good"
  },
  "scratchings": 278,
  "dashboard": "toprate_week_v2_2026-10-24.html",
- "fingerprint": "66ae1ce7aca9"
+ "fingerprint": "d6118ab37c57"
 }
