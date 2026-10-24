@@ -1,19 +1,19 @@
 {
- "started": "2026-10-24T20:45:45",
+ "started": "2026-10-24T21:45:40",
  "dates": [
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "Toowoomba Heavy 8 -> Heavy 9",
+ "reason": "Toowoomba scratched R5 #2",
  "status": "ok",
  "acceptors": 2119,
  "rider_share": 0.91,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-23T21:22:00+00:00",
- "finished": "2026-10-24T21:34:26",
+ "finished": "2026-10-24T22:35:47",
  "going": {
   "Toowoomba": "Heavy 9",
   "Flemington": "Good 4",
@@ -32,7 +32,7 @@
   "Collie": "Good",
   "Laverton": "Good"
  },
- "scratchings": 278,
+ "scratchings": 279,
  "dashboard": "toprate_week_v2_2026-10-24.html",
- "fingerprint": "d6118ab37c57"
+ "fingerprint": "9fe3acc24ed4"
 }
