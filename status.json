@@ -1,26 +1,25 @@
 {
- "started": "2026-10-24T16:01:19",
+ "started": "2026-10-24T17:01:12",
  "dates": [
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "St Arnaud scratched R6 #7",
+ "reason": "Eagle Farm Heavy 9 -> Heavy 10; Eagle Farm scratched R8 #3",
  "status": "ok",
  "acceptors": 2119,
  "rider_share": 0.91,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-23T21:22:00+00:00",
- "finished": "2026-10-24T16:50:21",
+ "finished": "2026-10-24T17:50:09",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
-  "Eagle Farm": "Heavy 9",
+  "Eagle Farm": "Heavy 10",
   "Morphettville": "Soft 5",
   "Ascot": "Good 4",
-  "Yarra Valley": "Soft 5",
   "St Arnaud": "Good 3",
   "Kembla Grange": "Good 4",
   "Albury": "Good 4",
@@ -29,10 +28,11 @@
   "Fannie Bay": "Synthetic",
   "Collie": "Good",
   "Laverton": "Good",
+  "Yarra Valley": "Soft 5",
   "Armidale": "Heavy 10",
   "Gympie": "Good"
  },
- "scratchings": 276,
+ "scratchings": 277,
  "dashboard": "toprate_week_v2_2026-10-24.html",
- "fingerprint": "81bc579eb724"
+ "fingerprint": "bbeb33fe0e0c"
 }
