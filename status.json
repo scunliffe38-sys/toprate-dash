@@ -1,19 +1,19 @@
 {
- "started": "2026-10-24T15:01:17",
+ "started": "2026-10-24T16:01:19",
  "dates": [
   "2026-10-24",
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "St Arnaud Good 4 -> Good 3; Ascot scratched R4 #8; Morphettville scratched R4 #5",
+ "reason": "St Arnaud scratched R6 #7",
  "status": "ok",
  "acceptors": 2119,
  "rider_share": 0.91,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-23T21:22:00+00:00",
- "finished": "2026-10-24T15:50:29",
+ "finished": "2026-10-24T16:50:21",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -32,7 +32,7 @@
   "Armidale": "Heavy 10",
   "Gympie": "Good"
  },
- "scratchings": 275,
+ "scratchings": 276,
  "dashboard": "toprate_week_v2_2026-10-24.html",
- "fingerprint": "d65477b2aa29"
+ "fingerprint": "81bc579eb724"
 }
