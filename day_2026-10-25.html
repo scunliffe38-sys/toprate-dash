@@ -774,7 +774,7 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(207,205,191,.28)}
   <div class="meet"><span class="brand" aria-label="SPM"><span class="d" aria-hidden="true">$</span>PM</span><h1 id="h1"></h1><div class="date" id="hdate"></div>
     <div class="conds">
       <button class="wlive" id="sky1live" onclick="skyLive('sky1')" aria-label="Watch Sky 1 live" title="Sky 1 — the TAB's main channel, gallops, harness and greyhounds">Sky 1 <span>&#9654;</span></button>
-      <button class="wlive" id="wlive" hidden onclick="watchLive()" aria-label="Watch Racing.com live" title="racing.com live vision — Victorian, SA and some WA racing">Racing.com <span>&#9654;</span></button>
+      <button class="wlive" id="wlive" onclick="watchLive()" aria-label="Watch Racing.com live" title="racing.com live vision — Victorian, SA and some WA racing">Racing.com <span>&#9654;</span></button>
       <button class="wlive" id="skylive" onclick="skyLive('stc')" aria-label="Watch Sky Thoroughbred Central live" title="Sky Thoroughbred Central — thoroughbreds nationally, whatever is jumping next">Sky TC <span>&#9654;</span></button>
       <a class="wlive" href="settle.html" style="text-decoration:none" title="Your adjustable settle map: move horses, set your confidence, see the change in points and win chance">Adjust Speed Maps <span>&#8594;</span></a>
     </div>
@@ -1263,10 +1263,10 @@ function drawMeets(){
       <span class="sb"><span>${rs.length?rs[0].time+'–'+rs[rs.length-1].time:''}</span><span>${[m.going,m.rail?'"'+m.rail+'"':''].filter(Boolean).join(' · ')}</span></span></button>`;}).join("");
   $("h1").textContent=meet<0?fmtDate(d.date,{weekday:'long'}):M().track;
   const wl=$("wlive"), wm=meet<0?null:M();
-  if(wl){
-    wl.hidden=!wm||isHK(wm);
-    wl.style.display=isHK(wm)?'none':'';   // .wlive sets display, which beats [hidden]; racing.com carries no Hong Kong
-    if(wm) wl.title=(wm.state==='VIC'||wm.state==='SA')
+  if(wl&&wm){   // shown on every meeting, HK too (Simon, 25 Oct 2026): it plays racing.com's one national feed, not this meeting's
+    wl.title=isHK(wm)
+      ? 'racing.com live vision in the dock: their Australian feed, which carries no Hong Kong racing.'
+      : (wm.state==='VIC'||wm.state==='SA')
       ? `${wm.track} is ${wm.state==='VIC'?'Victorian':'South Australian'}, so racing.com carries it free. Plays in the dock; Australia only.`
       : `racing.com live vision in the dock. Free vision is Victorian, SA and some WA racing, so ${wm.state} is not always carried; Australia only.`;
   }
@@ -2287,4 +2287,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 25 Oct 19:33</b> AEST &middot; scratchings struck between re-rates</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 25 Oct 20:18</b> AEST &middot; Racing.com button on HK meetings</div><div style="height:34px"></div></body></html>
