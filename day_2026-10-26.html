@@ -74,6 +74,30 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
 .rerated{color:var(--cond);font-size:12px;margin-left:6px}
 .mgo{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:-8px 0 14px;font-size:12.5px}
 .mgo label{display:flex;align-items:center;gap:6px}.mgo .lbl{color:var(--faint);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase}
+.mwx{color:var(--dim);gap:2px 10px}.mgo+.mwx{margin-top:-10px}.mwx b{color:var(--text);font-weight:600}.mwx .src{color:var(--faint);font-size:11px}
+.rhead .meta .wxr{white-space:nowrap;cursor:pointer;text-decoration:underline dotted var(--faint);text-underline-offset:3px}
+.mwx{cursor:pointer;border-radius:4px}.mwx:hover,.mwx:focus-visible{background:var(--panel2);outline:none}.mwx .more{color:var(--green);font-weight:600;font-size:12px}
+dialog.wxpop{border:0;border-radius:8px;padding:0;width:min(720px,96vw);max-height:92vh;overflow:hidden;background:var(--panel);color:var(--text);box-shadow:0 12px 40px rgba(0,0,0,.35)}
+dialog.wxpop::backdrop{background:rgba(22,33,28,.45)}
+.wxpop .wxh{display:flex;align-items:baseline;gap:10px;padding:14px 16px 6px;border-bottom:1px solid var(--rule)}
+.wxpop .wxh h3{margin:0;font-size:18px;text-transform:uppercase;letter-spacing:.03em;color:var(--green)}
+.wxpop .wxh .sub{color:var(--faint);font-size:11.5px;flex:1}
+.wxpop .wxx{border:0;background:none;font-size:22px;line-height:1;cursor:pointer;color:var(--dim);padding:0 4px}
+.wxpop .wxb{padding:10px 16px 14px;overflow:auto;max-height:calc(92vh - 52px)}
+.wxpop table{border-collapse:collapse;width:100%;font-size:12.5px;margin-bottom:12px}
+.wxpop th{color:var(--faint);font-weight:500;font-size:10.5px;text-transform:uppercase;letter-spacing:.04em;text-align:right;padding:3px 6px;border-bottom:1px solid var(--rule)}
+.wxpop td{text-align:right;padding:4px 6px;border-bottom:1px solid var(--panel2);white-space:nowrap}
+.wxpop th:first-child,.wxpop td:first-child,.wxpop th:nth-child(2),.wxpop td:nth-child(2){text-align:left}
+.wxpop tr.nx td{background:rgba(var(--keyrgb),.14);font-weight:600}.wxpop tr.gone td{color:var(--faint)}
+.wxpop .arr{display:inline-block;width:12px;text-align:center;color:var(--green)}
+.wxpop .hd{color:var(--neg)}.wxpop .tl{color:var(--pos)}
+.wxpop .seg{display:flex;gap:4px;margin:4px 0 6px;flex-wrap:wrap}
+.wxpop .seg button{border:1px solid var(--rule);background:var(--panel);border-radius:4px;padding:4px 10px;font-size:12px;cursor:pointer;color:var(--text)}
+.wxpop .seg button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
+.wxpop iframe{width:100%;height:min(420px,55vh);border:0;border-radius:6px;background:var(--panel2)}
+.wxpop .lnk{display:flex;gap:14px;flex-wrap:wrap;font-size:12px;margin-top:8px}.wxpop .lnk a{color:var(--green)}
+.wxpop .note{color:var(--faint);font-size:11px;margin-top:8px}
+@media(max-width:560px){.wxpop .wxh{padding:12px 12px 6px}.wxpop .wxb{padding:8px 10px 12px}.wxpop td,.wxpop th{padding:3px 3px}.wxpop .c-st{display:none}}
 .mgo .rerated{margin-left:0}.mgo .surfall{margin-left:0}.mgo .gonote{color:var(--faint);font-size:11.5px;flex-basis:100%}
 .rnote{margin:0 0 14px;padding:10px 13px;border-left:3px solid var(--brass);background:var(--panel);color:var(--text);font-size:13px;line-height:1.5}
 .rnote b{color:var(--brass);font-family:"Archivo Narrow",sans-serif;font-size:14px}
@@ -1007,6 +1031,93 @@ window.pickGoing=g=>{
   goStore(o=>{ const key=d.date+'|'+m.track; if(m.going_user) o[key]={g:m.going_user,posted:m.going||''}; else delete o[key]; });
   open=null; draw();
 };
+// ---- the weather beside each meeting (Simon, 25 Oct 2026), display only: nothing rates on it ----------------------
+// live.json's wx block (wx_live.py): Open-Meteo's hourly forecast at each venue's point, refetched every 30 min.
+// Head or tail is shown only where the home straight's bearing is confirmed (track_geo.json, six Victorian tracks
+// on 25 Oct); everywhere else the wind's compass direction only, because a guessed bearing turns head into tail.
+// The arrays cover today's card only, so another day's races fall outside them and show nothing.
+window.WX=null;
+const WXDIR=['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSW','SW','WSW','W','WNW','NW','NNW'];
+const TABWX={Ocast:'Overcast',Shwry:'Showery',Fine:'Fine'};
+function wxAt(track,iso){
+  const x=window.WX&&window.WX.tracks&&window.WX.tracks[track], t=iso?new Date(iso).getTime()/1000:NaN;
+  if(!x||!isFinite(t)) return null;
+  const i=Math.round((t-x.t0)/3600), f=Math.floor((t-x.t0)/3600);
+  if(i<0||i>=x.ws.length||x.ws[i]==null) return null;
+  const rain=(a,b)=>{let s=0,n=0; for(let k=Math.max(0,a);k<=Math.min(x.r.length-1,b);k++) if(x.r[k]!=null){s+=x.r[k];n++;} return n?s:null;};
+  const hd=(x.sb!=null&&x.wd[i]!=null)?x.ws[i]*Math.cos((x.wd[i]-x.sb)*Math.PI/180):null;
+  return {T:x.T[i],ws:x.ws[i],wd:x.wd[i],wg:x.wg[i],past:rain(f-2,f),next:rain(f+1,f+3),hd,tw:x.tw};
+}
+function wxWind(w){
+  if(w.ws<2) return 'calm';
+  return `${w.wd!=null?WXDIR[Math.round(w.wd/22.5)%16]+' ':''}${w.ws.toFixed(0)} km/h`;
+}
+function wxStraight(w){
+  if(w.hd==null||w.ws<2) return '';
+  const h=Math.round(w.hd);
+  return Math.abs(h)<3?'across the straight':`${h>0?'head':'tail'} ${Math.abs(h)} km/h in the straight`;
+}
+function wxBar(){
+  const m=meet<0?null:M(); if(!m||!window.WX) return '';
+  const now=Date.now(), rs=m.races.filter(r=>r.start_utc);
+  const r=rs.find(r=>new Date(r.start_utc).getTime()>now-300000)||rs[rs.length-1];
+  const w=r&&wxAt(m.track,r.start_utc); if(!w) return '';
+  const mm=v=>v<0.05?'0':v.toFixed(1);
+  const rain=(!w.past&&!w.next)?'no rain 3 h either side':`rain ${mm(w.past||0)} mm last 3 h, ${mm(w.next||0)} mm next 3 h`;
+  const at=window.WX.at?new Date(window.WX.at.replace('Z',':00Z')):null;
+  const st=wxStraight(w);
+  return `<div class="mgo mwx" role="button" tabindex="0" title="Race by race, radar and wind map" onclick="wxOpen()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();wxOpen();}"><span class="lbl">Weather</span><span>at R${r.no} ${r.time||''}</span><b>${wxWind(w)}${w.wg!=null&&w.ws>=2?', gusts '+w.wg.toFixed(0):''}</b>`+
+    (st?`<b>${st}</b>`:'')+`<span>${w.T!=null?w.T.toFixed(0)+'°':''}</span><span>${rain}</span>`+
+    (w.tw?`<span>TAB: ${TABWX[w.tw]||w.tw}</span>`:'')+
+    `<span class="src" title="Open-Meteo's hourly forecast at the course (a model, not a station reading), refetched every 30 minutes. Head or tail in the straight only where the straight's bearing is confirmed.">forecast${at&&!isNaN(at)?', as at '+at.toLocaleTimeString('en-AU',{hour:'numeric',minute:'2-digit',timeZone:'Australia/Melbourne'}):''}</span><span class="more">Radar &amp; more ›</span></div>`;
+}
+function wxRace(track,r){
+  const w=wxAt(track,r.start_utc); if(!w) return '';
+  const st=wxStraight(w);
+  return ` &nbsp;·&nbsp; <span class="wxr" onclick="wxOpen()" title="Click for race by race, radar and wind map. Forecast at the start${w.wg!=null?', gusts '+w.wg.toFixed(0)+' km/h':''} (Open-Meteo, display only)">${wxWind(w)}${st?' ('+st.replace(' km/h in the straight','')+')':''}${w.T!=null?', '+w.T.toFixed(0)+'°':''}</span>`;
+}
+// The popup behind the Weather line (Simon, 25 Oct 2026: "a click through to a popup? deeper information like radars"):
+// every race at the meeting hour by hour, then a live map centred on the course -- Windy's free embed, which carries a
+// rain radar (BOM's radars composited), wind, gusts and rain layers -- and links out to the radar services.
+const WXMAP=[['radar','Radar'],['wind','Wind'],['gust','Gusts'],['rain','Rain forecast']];
+function wxMapSrc(x,ov){
+  const z=x.state==='HK'?10:8;
+  return `https://embed.windy.com/embed2.html?lat=${x.lat}&lon=${x.lon}&detailLat=${x.lat}&detailLon=${x.lon}&zoom=${z}&level=surface&overlay=${ov}&product=${ov==='radar'?'radar':'ecmwf'}&menu=&message=true&marker=true&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1`;
+}
+function wxOpen(){
+  const m=meet<0?null:M(); if(!m||!window.WX) return;
+  const x=window.WX.tracks&&window.WX.tracks[m.track]; if(!x) return;
+  let d=document.getElementById('wxpop');
+  if(!d){ d=document.createElement('dialog'); d.id='wxpop'; d.className='wxpop'; document.body.appendChild(d);
+    d.addEventListener('click',e=>{ if(e.target===d) d.close(); });
+    d.addEventListener('close',()=>{ const f=d.querySelector('iframe'); if(f) f.src='about:blank'; }); }
+  const now=Date.now(), rs=m.races.filter(r=>r.start_utc);
+  const nx=rs.find(r=>new Date(r.start_utc).getTime()>now-300000);
+  const mm=v=>v==null?'–':(v<0.05?'0':v.toFixed(1));
+  const rows=rs.map(r=>{ const w=wxAt(m.track,r.start_utc); if(!w) return '';
+    const i=Math.round((new Date(r.start_utc).getTime()/1000-x.t0)/3600), hr=x.r[i];
+    const st=w.hd==null||w.ws<2?'':(Math.abs(w.hd)<3?'across':`<span class="${w.hd>0?'hd':'tl'}">${w.hd>0?'head':'tail'} ${Math.abs(Math.round(w.hd))}</span>`);
+    const arr=w.wd==null||w.ws<2?'':`<span class="arr" style="transform:rotate(${(w.wd+180)%360}deg)" title="blowing toward ${WXDIR[Math.round(((w.wd+180)%360)/22.5)%16]}">↑</span>`;
+    const gone=new Date(r.start_utc).getTime()<now-300000;
+    return `<tr class="${r===nx?'nx':(gone?'gone':'')}"><td>R${r.no}</td><td>${r.time||''}</td><td>${arr} ${wxWind(w)}</td><td>${w.wg!=null?w.wg.toFixed(0):'–'}</td>`+
+      (x.sb!=null?`<td class="c-st">${st}</td>`:'')+`<td>${w.T!=null?w.T.toFixed(0)+'°':'–'}</td><td>${mm(hr)}</td><td>${mm(w.next)}</td></tr>`; }).join('');
+  const at=window.WX.at?new Date(window.WX.at.replace('Z',':00Z')):null;
+  const hk=x.state==='HK';
+  const links=hk?`<a href="https://www.hko.gov.hk/en/wxinfo/radars/radar.htm" target="_blank" rel="noopener">HK Observatory radar ↗</a>`
+    :`<a href="https://www.bom.gov.au/australia/radar/" target="_blank" rel="noopener">BOM radar ↗</a><a href="https://www.bom.gov.au/australia/warnings/" target="_blank" rel="noopener">BOM warnings ↗</a>`;
+  d.innerHTML=`<div class="wxh"><h3>${m.track} weather</h3><span class="sub">Open-Meteo's hourly forecast at the course${at&&!isNaN(at)?', as at '+at.toLocaleTimeString('en-AU',{hour:'numeric',minute:'2-digit',timeZone:'Australia/Melbourne'}):''} · display only</span><button class="wxx" aria-label="Close" onclick="this.closest('dialog').close()">×</button></div>`+
+    `<div class="wxb"><table><thead><tr><th>Race</th><th>Time</th><th>Wind km/h</th><th>Gusts</th>${x.sb!=null?'<th class="c-st" title="Resolved on the home straight\'s confirmed bearing">Straight</th>':''}<th>Temp</th><th title="Rain in the hour to the start">Rain mm</th><th title="Rain in the three hours after the start">Next 3 h</th></tr></thead><tbody>${rows}</tbody></table>`+
+    `<div class="seg" role="group" aria-label="Map layer">${WXMAP.map(([k,t],j)=>`<button aria-pressed="${j===0}" onclick="wxLayer(this,'${k}')">${t}</button>`).join('')}</div>`+
+    `<iframe id="wxmap" title="${m.track} weather map" src="${wxMapSrc(x,'radar')}"></iframe>`+
+    `<div class="lnk">${links}<a href="https://www.windy.com/?radar,${x.lat},${x.lon},9" target="_blank" rel="noopener">Windy, full screen ↗</a></div>`+
+    `<div class="note">${x.sb!=null?'Head or tail on the home straight\'s confirmed bearing. ':'No confirmed bearing for this straight yet, so no head or tail: the arrow shows which way the wind blows. '}`+
+    `${x.tw?'TAB posts the weather as '+(TABWX[x.tw]||x.tw)+'. ':''}A forecast model at the course's point, not a station reading; nothing in the rating uses it.</div></div>`;
+  d._x=x; if(!d.open) d.showModal();
+}
+function wxLayer(b,ov){
+  const d=b.closest('dialog'); b.parentNode.querySelectorAll('button').forEach(e=>e.setAttribute('aria-pressed',e===b));
+  const f=d.querySelector('#wxmap'); if(f&&d._x) f.src=wxMapSrc(d._x,ov);
+}
 function goingBar(){
   const m=meet<0?null:M();
   if(!m||isHK(m)||!m.races.some(r=>r.runners.length&&r.runners[0].condc)) return '';
@@ -1970,7 +2081,7 @@ function drawRace(){
   const r=M().races[active], a=analyse(r);
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);   // market percentage
   const lvh=liveOf(r), replay=(lvh&&lvh.status==='Paying'&&lvh.replay)?`<a class="replay" href="${lvh.replay}" target="_blank" rel="noopener" data-vlabel="${M().track} R${r.no} — replay">Replay <span>▶</span></a>`:'';
-  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${reratedTag(r)}</div>${replay}</div>`;
+  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${reratedTag(r)}${wxRace(M().track,r)}</div>${replay}</div>`;
   h+=drillRow(M(),r);
   h+=h2hCue(r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
@@ -2029,7 +2140,7 @@ function drawRaceHK(){
   const bxbook=r.runners.filter(x=>x.bx).reduce((a,x)=>a+100/x.bx,0);
   const course=r.surf==='synth'?'All weather':`Turf${r.rail?' "'+r.rail+'" course':''}`;
   let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''} &nbsp;·&nbsp; ${r.going||'going not posted'}
-    <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong</div></div>`;
+    <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong${wxRace(M().track,r)}</div></div>`;
   h+=drillRow(m,r);
   h+=`<div class="scroll"><table class="rtab hk"><thead><tr><th></th><th>Runner</th><th>Draw</th><th class="l5h">Last 5</th>
     <th class="r key">SPM Rating</th><th class="r key2">Lengths</th>${CHH}<th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
@@ -2090,7 +2201,7 @@ function hkLedger(x,r){
 
 function draw(){
   drawDays(); drawMeets();
-  $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=goingBar();
+  $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=goingBar()+wxBar();
   if(meet<0){ $("tabs").innerHTML=''; if(meet===-2) drawNext(); else drawDay(); countdown(); refreshTabAge(); return; }
   const races=M().races;
   $("tabs").innerHTML=`<button role="tab" class="sum" aria-selected="${active===-1}" onclick="pick(-1)"><span class="rn">Summary</span><span class="rt">&nbsp;</span><span class="cd">&nbsp;</span></button>`+
@@ -2178,7 +2289,8 @@ setInterval(refreshTabAge,30000);
   async function tick(){
     let j; try{const r=await fetch('live.json',{cache:'no-store'}); if(!r.ok) throw 0; j=await r.json();}catch(e){return;}
     window.TAB_GENERATED=j&&j.generated||null; refreshTabAge();
-    const races=j&&j.races||{}; const sig=JSON.stringify(races); if(sig===last) return;
+    window.WX=j&&j.wx||null;
+    const races=j&&j.races||{}; const sig=JSON.stringify(races)+(j&&j.wx&&j.wx.at||''); if(sig===last) return;
     last=sig; window.LIVE=races; applyLivePrices(races,j.date); draw();
   }
   tick(); setInterval(tick,60000); window._liveTick=tick;
@@ -2359,4 +2471,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 26 Oct 09:07</b> AEST &middot; morning harvest</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 26 Oct 09:53</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
