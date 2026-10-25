@@ -1,20 +1,20 @@
 {
- "started": "2026-10-25T16:01:02",
+ "started": "2026-10-25T16:45:59",
  "dates": [
   "2026-10-25",
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "Sale Soft 6 -> Soft 7; Sale scratched R8 #7, R9 #7",
+ "reason": "Sale Soft 7 -> Heavy 10; Sale scratched R8 #8",
  "status": "ok",
  "acceptors": 681,
  "rider_share": 0.92,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-24T16:06:18+00:00",
- "finished": "2026-10-25T16:35:13",
+ "finished": "2026-10-25T17:19:38",
  "going": {
-  "Sale": "Soft 7",
+  "Sale": "Heavy 10",
   "Port Macquarie": "Soft 6",
   "Townsville": "Soft 5",
   "Port Lincoln": "Soft 6",
@@ -22,7 +22,7 @@
   "Coonabarabran": "Good 4",
   "Sha Tin": "Good"
  },
- "scratchings": 130,
+ "scratchings": 131,
  "dashboard": "toprate_week_v2_2026-10-25.html",
- "fingerprint": "dfb52bbd6066"
+ "fingerprint": "c2ac3346f9c0"
 }
