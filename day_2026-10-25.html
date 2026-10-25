@@ -72,6 +72,9 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
 .surfall{background:none;color:var(--dim);border:1px solid var(--rule);border-radius:3px;padding:2px 8px;font:inherit;font-size:12px;cursor:pointer;margin-left:4px}
 .surfall:hover{color:var(--text);border-color:var(--brass)}
 .rerated{color:var(--cond);font-size:12px;margin-left:6px}
+.mgo{display:flex;flex-wrap:wrap;align-items:center;gap:4px 8px;margin:-8px 0 14px;font-size:12.5px}
+.mgo label{display:flex;align-items:center;gap:6px}.mgo .lbl{color:var(--faint);font-size:10.5px;letter-spacing:.04em;text-transform:uppercase}
+.mgo .rerated{margin-left:0}.mgo .surfall{margin-left:0}.mgo .gonote{color:var(--faint);font-size:11.5px;flex-basis:100%}
 .rnote{margin:0 0 14px;padding:10px 13px;border-left:3px solid var(--brass);background:var(--panel);color:var(--text);font-size:13px;line-height:1.5}
 .rnote b{color:var(--brass);font-family:"Archivo Narrow",sans-serif;font-size:14px}
 /* item 47, the head-to-head cue: the market's top two have met each other before. Display only --
@@ -786,6 +789,7 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(207,205,191,.28)}
 <div class="mtabs sub" id="meets2" role="tablist"></div>
 <div class="mtabs hkrow" id="meetshk" role="tablist" aria-label="Hong Kong"></div>
 <nav id="tabs" role="tablist"></nav>
+<div id="mgo"></div>
 <div id="race"></div>
 
 <div class="legend">
@@ -897,13 +901,17 @@ function mainMeets(d){                                   // -> Set of indices in
   return new Set(Object.values(win).map(v=>v.i));
 }
 const SURF={dry:'Good / Firm',soft:'Soft 5–6',wet:'Soft 7 / Heavy 8',heavy:'Heavy 9+',synth:'Synthetic'};
-function rerate(r,cls){                       // re-rate a race under surface class cls, in the browser
+function rerate(r,cls,k=D().k){                       // re-rate a race under surface class cls, in the browser
   if(!r.runners[0].condc || !SURF[cls]) return;      // '' = the "going not posted" placeholder
   r.surf_now=cls;
+  const was=r.runners.map(x=>(x.cond||0)+(x.bar_adj||0));
   if(r.runners[0].barc){const wet=(cls==='wet'||cls==='heavy'); r.runners.forEach(x=>{x.bar_adj=wet?x.barc.wet:x.barc.dry;});}   // the draw fades on wet ground (15 Sep 2026)
   const raw=r.runners.map(x=>x.condc[cls]??0); const mean=raw.reduce((a,b)=>a+b,0)/raw.length;
   r.runners.forEach((x,i)=>{x.cond=+(raw[i]-mean).toFixed(2);});
-  reprice(r,D().k);
+  // only the two terms that moved go onto the box's rating (25 Oct 2026): the box's rating line holds no settle, and ADJ
+  // below does, so re-summing ADJ here moved every price by ~0.4 points of chance before the going had changed at all
+  r.runners.forEach((x,i)=>{x.rating=+(x.rating+(x.cond||0)+(x.bar_adj||0)-was[i]).toFixed(2);});
+  priceAt(r,k);
 }
 // rating -> chance as rate_day.py does it: the sum of the adjustments, centred within the race, times each runner's own
 // fair-price slope (fairprice.py). Pages without pslope fall back to 1, which is the old flat softmax.
@@ -913,6 +921,9 @@ function rerate(r,cls){                       // re-rate a race under surface cl
 const ADJ=['lrn','form','firstup','conn','cfm','cond','bar_adj','shape','settle','spell','arc','track','speed','boost','plc','best','stab','sire','pxm','debmkt'];   // 'boost' = the factors combined, item 59, 14 Oct 2026   // 'settle' = the settle map, 27 Sep 2026
 function reprice(r,k){
   r.runners.forEach(x=>{x.rating=+(x.wprbase+ADJ.reduce((a,c)=>a+(x[c]||0),0)).toFixed(1);});
+  priceAt(r,k);
+}
+function priceAt(r,k){                               // the chances and fair prices off the ratings as they stand
   const mean=r.runners.reduce((a,x)=>a+x.rating,0)/r.runners.length;
   const e=r.runners.map(x=>Math.exp(k*(x.pslope??1)*(x.rating-mean))); const z=e.reduce((a,b)=>a+b,0);
   r.runners.forEach((x,i)=>{x.pct=+(100*e[i]/z).toFixed(1); x.fair=+(z/e[i]).toFixed(2);});
@@ -945,13 +956,74 @@ function debutPrice(r,d){
   if(!d.debut||!r.runners.some(x=>x.dfu)) return;
   const pr=r.runners.filter(x=>x.sp>1); const ok=pr.length>=0.75*r.runners.length;
   const mean=ok?pr.reduce((a,x)=>a-Math.log(x.sp),0)/pr.length:0;
-  r.runners.forEach(x=>{ if(!x.dfu) return; const on=ok&&x.sp>1;
-    x.firstup=on?x.dfu.wp:x.dfu.np; x.conn=on?x.dcx.wp:x.dcx.np;
-    x.debmkt=on?+(d.debut.with_price.mk_pts*(-Math.log(x.sp)-mean)).toFixed(2):0; });
-  reprice(r,d.k);
+  // Only what moved goes onto the box's rating (25 Oct 2026). Re-summing ADJ put the settle map in twice (a saved map's change
+  // rides in settle and rating alike), and the card's firstup is not dfu's value as it stands, so the swap is made as a shift
+  // off the box's own figures: dfu / dcx's priced-less-unpriced gap, only when the runner has crossed between the two sets.
+  r.runners.forEach(x=>{ if(!x.dfu) return; const on=ok&&x.sp>1, was=(x.firstup||0)+(x.conn||0)+(x.debmkt||0);
+    if(!x._d0) x._d0={fu:x.firstup||0, cn:x.conn||0, on:(x.debmkt||0)!==0};   // as rated: a debmkt means the priced set
+    const sw=(on?1:0)-(x._d0.on?1:0);
+    x.firstup=+(x._d0.fu+sw*(x.dfu.wp-x.dfu.np)).toFixed(2); x.conn=+(x._d0.cn+sw*(x.dcx.wp-x.dcx.np)).toFixed(2);
+    x.debmkt=on?+(d.debut.with_price.mk_pts*(-Math.log(x.sp)-mean)).toFixed(2):0;
+    x.rating=+(x.rating+x.firstup+x.conn+x.debmkt-was).toFixed(2); });
+  priceAt(r,d.k);
 }
 window.setSurf=cls=>{rerate(M().races[active],cls); open=null; draw();};
 window.setSurfMeet=cls=>{M().races.forEach(r=>rerate(r,cls)); open=null; draw();};
+// ---- the meeting's going, your call (Simon, 25 Oct 2026: "change track rating at a meeting level") ----------------
+// Pick a track rating for the whole meeting and every race there is re-rated in the browser on its surface class:
+// Firm 1 to Good 4 dry, Soft 5-6 soft, Soft 7 / Heavy 8 wet, Heavy 9+ heavy, Synthetic synth (cond_build.surf_class).
+// It moves the two terms the page carries for every class -- the going factor (condc) and the barrier (barc dry/wet).
+// The learned base and the settle map also read going and stay as rated on the posted going until the box re-rates.
+// Kept on this device only (localStorage spm.going, "date|track" -> {g, posted}), and dropped when TAB posts a new
+// going for the meeting, since the 03:00 / live re-rate has then rated it on that one.
+const GOINGS=['Firm 1','Firm 2','Good 3','Good 4','Soft 5','Soft 6','Soft 7','Heavy 8','Heavy 9','Heavy 10','Synthetic'];
+function goCls(g){
+  g=String(g||'').trim().replace(/^Hvy\b/i,'Heavy').replace(/^Sft\b/i,'Soft').replace(/^Gd\b/i,'Good');
+  if(/^(syn|awt|poly|tapeta|cushion|all weather)/i.test(g)) return 'synth';
+  if(/^(good|firm|fast)/i.test(g)) return 'dry';
+  const n=+((g.match(/(\d+)/)||[])[1]||0);
+  if(/^soft/i.test(g)) return n>=7?'wet':'soft';
+  if(/^heavy/i.test(g)) return n>=9?'heavy':'wet';
+  return '';
+}
+function goStore(f){ try{ const o=JSON.parse(localStorage.getItem('spm.going')||'{}'); if(f){f(o); localStorage.setItem('spm.going',JSON.stringify(o));} return o; }catch(e){ return {}; } }
+function goKeep(r){ if(r._g0) return;                // the race as the box rated it, put back exactly on a reset
+  r._g0={surf_now:r.surf_now, x:r.runners.map(x=>({x,cond:x.cond,bar_adj:x.bar_adj,rating:x.rating,pct:x.pct,fair:x.fair}))}; }
+function goBack(r){ if(!r._g0) return;
+  r._g0.x.forEach(o=>{Object.assign(o.x,{cond:o.cond,bar_adj:o.bar_adj,rating:o.rating,pct:o.pct,fair:o.fair});});
+  r.surf_now=r._g0.surf_now; delete r._g0; delete r.going_user; r.runners.sort((a,b)=>b.rating-a.rating); }
+function meetGoing(m,g,k){                           // g '' = as posted
+  const cls=goCls(g);
+  m.races.forEach(r=>{
+    if(!g||!cls||!r.runners.length||!r.runners[0].condc){ goBack(r); return; }
+    goKeep(r); r.going_user=g;
+    if(cls===(r._g0.surf_now||r.surf)){ const u=g; goBack(r); r.going_user=u; return; }   // same class: the box's own numbers
+    rerate(r,cls,k);
+  });
+  if(g&&cls) m.going_user=g; else delete m.going_user;
+}
+window.pickGoing=g=>{
+  const m=M(), d=D(); meetGoing(m,g,d.k);
+  goStore(o=>{ const key=d.date+'|'+m.track; if(m.going_user) o[key]={g:m.going_user,posted:m.going||''}; else delete o[key]; });
+  open=null; draw();
+};
+function goingBar(){
+  const m=meet<0?null:M();
+  if(!m||isHK(m)||!m.races.some(r=>r.runners.length&&r.runners[0].condc)) return '';
+  const u=m.going_user||'';
+  return `<div class="mgo"><label><span class="lbl">Track</span><select class="surf" onchange="pickGoing(this.value)" title="Rate every race at ${m.track} on this track rating">`+
+    `<option value=""${u?'':' selected'}>${m.going?'As posted · '+m.going:'Going not posted'}</option>`+
+    GOINGS.map(g=>`<option value="${g}"${u===g?' selected':''}>${g}</option>`).join('')+`</select></label>`+
+    (u?`<span class="rerated">every race re-rated on ${u}</span><button class="surfall" onclick="pickGoing('')">back to ${m.going||'as rated'}</button>`+
+       `<span class="gonote">going and barrier factors only; the learned base and settle map stay on ${m.going||'the card'}</span>`:'')+`</div>`;
+}
+function reratedTag(r){ return r.going_user?`<span class="rerated">on ${r.going_user}</span>`:((r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''); }
+(function(){                                         // a saved going back on, for the meetings still posting what it was set against
+  const o=goStore(), seen={};
+  DATA.days.forEach(d=>d.meetings.forEach(m=>{ const key=d.date+'|'+m.track, v=o[key]; if(!v) return; seen[key]=1;
+    if(v.posted===(m.going||'')) meetGoing(m,v.g,d.k); else seen[key]=0; }));
+  goStore(o2=>{ Object.keys(o2).forEach(k=>{ if(!seen[k]) delete o2[k]; }); });   // gone from the page, or TAB has moved: forget it
+})();
 
 // the nine adjustments, in the order they are drawn
 // Simon's order, 12 Sep: the race first, then the horse. Barrier and shape are about where
@@ -1249,13 +1321,13 @@ function drawMeets(){
       <span class="sb"><span>${sm.length} meeting${sm.length===1?'':'s'}</span><span class="w">${np} to look at</span></span></button>`+strip.map(i=>{const m=d.meetings[i];return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
       <span class="sb"><span>${m.state}</span>
-        <span class="${/soft|heavy/i.test(m.going||'')?'w':''}">${m.going||''}</span></span></button>`;}).join("")
+        <span class="${/soft|heavy/i.test(m.going_user||m.going||'')?'w':''}"${m.going_user?` title="your going; posted ${m.going||'none'}"`:''}>${m.going_user?m.going_user+'*':(m.going||'')}</span></span></button>`;}).join("")
     +(other.length?`<button class="more" aria-expanded="${allMeets}" title="${allMeets?'put them away':'the other cards of the day'}" onclick="setAllMeets(${!allMeets})">${allMeets?'Hide other':'Other '+other.length+' ›'}</button>`:'');
   $("meets2").innerHTML=(allMeets&&other.length)
     ?`<span class="lbl">OTHER MEETINGS</span>`+other.map(i=>{const m=d.meetings[i];return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
       <span class="sb"><span>${m.state}</span>
-        <span class="${/soft|heavy/i.test(m.going||'')?'w':''}">${m.going||''}</span></span></button>`;}).join("")
+        <span class="${/soft|heavy/i.test(m.going_user||m.going||'')?'w':''}"${m.going_user?` title="your going; posted ${m.going||'none'}"`:''}>${m.going_user?m.going_user+'*':(m.going||'')}</span></span></button>`;}).join("")
     :'';
   $("meetshk").innerHTML=hkMeets(d).map(i=>{const m=d.meetings[i], rs=m.races;
     return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
@@ -1348,7 +1420,7 @@ function drawSummary(){
   rows.forEach(({r,a})=>{
     const t=a.top;
     h+=`<tr class="srow${a.gap>=GAP_BIG?' big':''}" tabindex="0" data-r="${r.no}">
-      <td><div class="stop">R${r.no}${(r.surf_now&&r.surf_now!==r.surf)?' <span class="rerated">re-rated'+"</span>":''}</div><div class="sname">${r.dist}m ${r.cls}</div></td>
+      <td><div class="stop">R${r.no} ${reratedTag(r)}</div><div class="sname">${r.dist}m ${r.cls}</div></td>
       <td>${silk(t)}</td>
       <td><div class="stop">${t.name}${a.gap>=GAP_STANDOUT?' <span class="tagv gold">RATING STANDOUT</span>':''}${resBadge(m.track,r,t)}</div><div class="sname">${t.jockey||'jockey TBA'}</div></td>
       <td class="rate" style="font-size:19px">${t.rating.toFixed(1)}</td>
@@ -1898,7 +1970,7 @@ function drawRace(){
   const r=M().races[active], a=analyse(r);
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);   // market percentage
   const lvh=liveOf(r), replay=(lvh&&lvh.status==='Paying'&&lvh.replay)?`<a class="replay" href="${lvh.replay}" target="_blank" rel="noopener" data-vlabel="${M().track} R${r.no} — replay">Replay <span>▶</span></a>`:'';
-  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${(r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''}</div>${replay}</div>`;
+  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${reratedTag(r)}</div>${replay}</div>`;
   h+=drillRow(M(),r);
   h+=h2hCue(r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
@@ -2018,7 +2090,7 @@ function hkLedger(x,r){
 
 function draw(){
   drawDays(); drawMeets();
-  $("tabs").style.display=meet<0?'none':'';
+  $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=goingBar();
   if(meet<0){ $("tabs").innerHTML=''; if(meet===-2) drawNext(); else drawDay(); countdown(); refreshTabAge(); return; }
   const races=M().races;
   $("tabs").innerHTML=`<button role="tab" class="sum" aria-selected="${active===-1}" onclick="pick(-1)"><span class="rn">Summary</span><span class="rt">&nbsp;</span><span class="cd">&nbsp;</span></button>`+
@@ -2287,4 +2359,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 25 Oct 20:18</b> AEST &middot; Racing.com button on HK meetings</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 25 Oct 20:25</b> AEST &middot; meeting going picker</div><div style="height:34px"></div></body></html>
