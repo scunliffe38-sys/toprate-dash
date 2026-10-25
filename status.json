@@ -1,17 +1,17 @@
 {
- "started": "2026-10-26T08:23:22",
+ "started": "2026-10-26T10:00:33",
  "dates": [
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "morning harvest",
+ "reason": "retry: Wangaratta Good 4 -> Soft 5; Wangaratta scratched R1 #4/10/12/13, R2 #3/9, R3 #5/11/17, R4 #2/3/7/13/15, R5 #13/14/15/16, R6 #1, R7 #14/17, R8 #9/14, R9 #1/3/11/18; Queanbey",
  "status": "ok",
  "acceptors": 311,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-25T21:22:08+00:00",
- "finished": "2026-10-26T09:07:23",
+ "finished": "2026-10-26T10:28:23",
  "going": {
   "Wangaratta": "Soft 5",
   "Newcastle": "Soft 5",
@@ -19,5 +19,5 @@
  },
  "scratchings": 82,
  "dashboard": "toprate_week_v2_2026-10-26.html",
- "fingerprint": "99fb53079a0d"
+ "fingerprint": "acb1148022f5"
 }
