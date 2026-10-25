@@ -224,6 +224,7 @@ tbody tr.run.top .rate{color:var(--brass)}
 .pct{font-family:"Archivo Narrow",sans-serif;font-size:15px;width:52px;text-align:right;color:var(--dim)}
 /* the win chance and the running total (19 Oct 2026): Chance in the text colour, Cum. a step back; on a phone Cum.
    rides under Chance as .cumsm, as Lengths rides under the rating */
+tr.scr td{color:var(--faint)} tr.scr .horse{font-size:15px} .scrl{margin-left:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
 td.chc{color:var(--text);font-variant-numeric:tabular-nums} td.cum{color:var(--faint);font-variant-numeric:tabular-nums}
 .cumsm{display:none;font-size:12px;font-weight:400;color:var(--faint);line-height:1.1;margin-top:1px}
 /* key column: adjusted rating */
@@ -1180,10 +1181,27 @@ function setFav(r){ const pr=r.runners.filter(x=>x.sp);
 // live.json, which carries today -- so a next-day page showed an empty Mkt column.
 DATA.days.forEach(d=>{ if(d.priced==='tab') return;
   d.meetings.forEach(m=>m.races.forEach(r=>{ r.runners.forEach(x=>{x.sp=null;}); setFav(r); })); });
+// TAB's scratchings between re-rates (Simon, 25 Oct 2026: Sale's sat on the page for an hour behind the re-rate). live.json's
+// scr lists each race's scratched saddlecloths: they leave r.runners for r.scr, drawn struck at the foot of the table, and the
+// chances are renormalised over the rest -- the same softmax on the smaller field. A runner TAB puts back comes back.
+function strikeScr(r,lv){
+  if(!r.all) r.all=r.runners.slice();
+  const s=new Set((lv.scr||[]).map(String));
+  r.runners=r.all.filter(x=>!s.has(String(x.no))).sort((a,b)=>b.rating-a.rating);
+  r.scr=r.all.filter(x=>s.has(String(x.no)));
+  if(r.scr.length) r.struck=true;
+}
+function renormScr(r){
+  if(!r.struck) return;
+  const z=r.runners.reduce((a,x)=>a+(x.fair>0?1/x.fair:0),0); if(!(z>0)) return;
+  r.runners.forEach(x=>{ if(!(x.fair>0)) return; const p=1/x.fair/z; x.pct=+(100*p).toFixed(1); x.fair=+(1/p).toFixed(2); });
+}
+const scrRows=(r,span)=>(r.scr||[]).map(x=>`<tr class="scr"><td class="tab">${x.no}</td><td colspan="${span-1}"><div class="horse"><s>${x.name}</s><span class="scrl">Scratched</span></div></td></tr>`).join('');
 function applyLivePrices(races,date){
   DATA.days.forEach(d=>{ if(date&&d.date&&d.date!==date) return;
     d.meetings.forEach(m=>m.races.forEach(r=>{
       const lv=races[`${m.track}|${r.no}`]; if(!lv) return;
+      strikeScr(r,lv);
       const p=lv.p||{};
       const bp=(lv.bf&&lv.bf.p)||{}; r.bfm=lv.bf?lv.bf.matched:null;
       const bx=lv.bx||{};
@@ -1191,7 +1209,7 @@ function applyLivePrices(races,date){
         const bv=bx[String(x.no)]; x.bx=(bv&&bv>1)?bv:null;
         const q=bp[String(x.no)]; x.bfb=q&&q[0]>1?q[0]:null; x.bfl=q&&q[1]>1?q[1]:null;
         x.bfn=q&&q[2]>1&&q[2]<=1000?q[2]:null; x.bsp=q&&q[3]>1?q[3]:null; });
-      setFav(r); debutPrice(r,d);
+      setFav(r); debutPrice(r,d); renormScr(r);
     }));
   });
 }
@@ -1908,7 +1926,7 @@ function drawRace(){
       h+=`<tr class="detail"><td colspan="${span}">${x.sl?`<p class="slnote ${x.sl.k}"><span class="slm ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span> ${x.sl.t}</p>`:''}${fxLedger(x,r)}</td></tr>`;
     }
   });
-  $("race").innerHTML=h+"</tbody></table></div>";
+  $("race").innerHTML=h+scrRows(r,span)+"</tbody></table></div>";
   document.querySelectorAll("tr.run").forEach(tr=>{
     const go=()=>{const i=+tr.dataset.i; open=open===i?null:i; wormKey=null; draw();};
     tr.onclick=e=>{if(e.target.closest('.wi,a[href]')) return; go();};   // a replay link plays; it does not open the factor detail (23 Oct 2026)
@@ -1962,7 +1980,7 @@ function drawRaceHK(){
       <td class="price mk${bov} hkbx">${x.bx?(bov?`<span class="arw">${bov===' up'?'▲':'▼'}</span>`:'')+'$'+x.bx.toFixed(2):'—'}</td></tr>`;
     if(open===i) h+=`<tr class="detail"><td colspan="11">${hkLedger(x,r)}</td></tr>`;
   });
-  h+="</tbody></table></div>";
+  h+=scrRows(r,11)+"</tbody></table></div>";
   if(r.standby&&r.standby.length) h+=`<p class="mnote" style="margin-top:10px">Stand-by: ${r.standby.join(', ')}. They run only if a starter comes out.</p>`;
   $("race").innerHTML=h;
   document.querySelectorAll("tr.run").forEach(tr=>{
@@ -2269,4 +2287,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 25 Oct 18:28</b> AEST &middot; HK scratching</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 25 Oct 19:33</b> AEST &middot; scratchings struck between re-rates</div><div style="height:34px"></div></body></html>
