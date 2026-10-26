@@ -1,23 +1,23 @@
 {
- "started": "2026-10-26T14:15:30",
+ "started": "2026-10-26T14:45:31",
  "dates": [
   "2026-10-26",
   "2026-10-27"
  ],
- "reason": "Wangaratta Soft 5 -> Good 4",
+ "reason": "Wangaratta scratched R9 #15",
  "status": "ok",
  "acceptors": 311,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-27",
  "card_source": "toprate",
  "extract": "2026-10-25T21:22:08+00:00",
- "finished": "2026-10-26T14:38:56",
+ "finished": "2026-10-26T15:08:46",
  "going": {
   "Wangaratta": "Good 4",
   "Newcastle": "Soft 5",
   "Queanbeyan": "Soft 6"
  },
- "scratchings": 82,
+ "scratchings": 83,
  "dashboard": "toprate_week_v2_2026-10-26.html",
- "fingerprint": "ee501f105a7a"
+ "fingerprint": "9ec9dec5e8eb"
 }
