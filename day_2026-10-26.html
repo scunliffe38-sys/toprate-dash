@@ -2115,6 +2115,10 @@ function drawRace(){
     tr.onclick=e=>{if(e.target.closest('.wi,a[href]')) return; go();};   // a replay link plays; it does not open the factor detail (23 Oct 2026)
     tr.onkeydown=e=>{if(e.target.closest('.wi,a[href]')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
   });
+  wormBind(r);
+}
+// the worm icons on a race table, Aus and HK alike (HK since 25 Oct 2026, deploy_hkworm)
+function wormBind(r){
   document.querySelectorAll("tr.run .wi").forEach(b=>b.onclick=e=>{
     e.stopPropagation();
     const x=r.runners.find(z=>z.no===+b.dataset.w), k=wkey(r,x);
@@ -2134,6 +2138,9 @@ function drawRace(){
 // form against the mark + the mark (ability); Adjust = weight carried + days off + HK starts (today), so adjCell() works
 // unchanged. Lengths use hk_base's pounds a length at the trip. The ledger draws x.fxg, the HK model's parts in pounds
 // (hk_day.py), and falls back to the five base parts for a day file written before the full model. No settle map or head-to-head yet.
+// The worm and the RSP (25 Oct 2026, hk_worm.py, display only): x.runs is the Aus worm's layout with hk_base's per-run figure P
+// (the mark it ran to, in pounds, the Rating's own scale), drawn by the Aus worm code; x.rsp is the race speed profile on HKJC's
+// sections (jump-800, 800-400, last 400), which the drill row's RSP item draws as on the Aus page.
 function drawRaceHK(){
   const m=M(), r=m.races[active], topR=r.runners[0].rating, lv=liveOf(r), lpl=r.lb_per_len||2;
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);
@@ -2151,25 +2158,27 @@ function drawRaceHK(){
     const mc=x.mark_chg?`<small class="${x.mark_chg>0?'p':'g'}">${x.mark_chg>0?'+':'−'}${Math.abs(x.mark_chg)}</small>`:'';
     h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
       <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}${x.no}</td>
-      <td><div class="horse">${x.name}</div>
+      <td><div class="horse">${x.name}${wormIcon(r,x)}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
-      <td class="l5">${l5cell(x)}</td>
+      <td class="l5">${l5cell(x)}<span class="pwi">${wormIcon(r,x)}</span></td>
       <td class="rate key">${x.rating.toFixed(1)}${i===0?'':`<div class="lensm">−${lens.toFixed(1)}L</div>`}</td>
       <td class="lens key2${i===0?' top':''}">${i===0?'':'−'+lens.toFixed(1)+'L'}</td>
       ${chanceCells(r,i)}
       <td class="price">$${x.fair.toFixed(2)}</td>
       <td class="price mk${ov}">${x.sp?(ov?`<span class="arw">${ov===' up'?'▲':'▼'}</span>`:'')+'$'+x.sp.toFixed(2):'—'}${x.bx?`<div class="bxl${bov}">betr $${x.bx.toFixed(2)}</div>`:''}</td>
       <td class="price mk${bov} hkbx">${x.bx?(bov?`<span class="arw">${bov===' up'?'▲':'▼'}</span>`:'')+'$'+x.bx.toFixed(2):'—'}</td></tr>`;
+    if(wormKey===wkey(r,x)) h+=wormRow(r,x);
     if(open===i) h+=`<tr class="detail"><td colspan="11">${hkLedger(x,r)}</td></tr>`;
   });
   h+=scrRows(r,11)+"</tbody></table></div>";
   if(r.standby&&r.standby.length) h+=`<p class="mnote" style="margin-top:10px">Stand-by: ${r.standby.join(', ')}. They run only if a starter comes out.</p>`;
   $("race").innerHTML=h;
   document.querySelectorAll("tr.run").forEach(tr=>{
-    const go=()=>{const i=+tr.dataset.i; open=open===i?null:i; draw();};
-    tr.onclick=e=>{if(e.target.closest('a[href]')) return; go();}; tr.onkeydown=e=>{if(e.target.closest('a[href]')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
+    const go=()=>{const i=+tr.dataset.i; open=open===i?null:i; wormKey=null; draw();};
+    tr.onclick=e=>{if(e.target.closest('.wi,a[href]')) return; go();}; tr.onkeydown=e=>{if(e.target.closest('.wi,a[href]')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
   });
+  wormBind(r);
 }
 function hkLedger(x,r){
   const sg=(v,d=2)=>v==null?'—':(Math.abs(v)<5/Math.pow(10,d+1)?(0).toFixed(d):(v>0?'+':'−')+Math.abs(v).toFixed(d));
@@ -2471,4 +2480,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 26 Oct 10:28</b> AEST &middot; retry: Wangaratta Good 4 -> Soft 5; Wangaratta scratched R1 #4/10/12/13, R2 #3/9, R3 #5/11/17, R4 #2/3/7/13/15, R5 #13/14/15/16, R6 #1, R7 #14/17, R8 #9/14, R9 #1/3/11/18; Queanbey</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 26 Oct 11:54</b> AEST &middot; HK worm and RSP</div><div style="height:34px"></div></body></html>
