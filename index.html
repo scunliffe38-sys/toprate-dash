@@ -353,8 +353,16 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .fct tr.fsp td{text-align:center;color:var(--brick);background:#F7ECE8;font-size:12px;padding:3px}
 .fct td.n{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums}
 .fct a.frp{color:var(--green);text-decoration:none;font-size:13px}
+.fctp{display:none;min-width:0;font-size:12px;table-layout:auto}   /* the phone's table: no sideways scroll (27 Oct 2026) */
+.fcsp{display:none;background:var(--panel2);border-radius:3px 3px 0 0;padding:6px 8px;font-size:12px;line-height:1.35}
+.fcsp .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fcsp .k{color:var(--dim);font-size:10.5px}.fcsp b{font-weight:600}
+.fcsp .g{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:0 4px;margin-top:4px}.fcsp .g>div{min-width:0;white-space:nowrap}
+.fcsp .g .an{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;font-size:12px}
+.fctp td,.fctp th{padding:5px 4px}.fctp td.fv{width:100%;max-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}   /* a long venue truncates, never wraps (Simon) */.fctp td.pl{font-weight:600}
+.fctp tr.r1 td:first-child{font-weight:400;color:var(--text)}.fctp tr.ftr td:first-child{color:var(--faint)}
+.rtab table.fctp th,.rtab table.fctp td{display:table-cell;padding:5px 4px;vertical-align:middle}   /* the race table's phone rules hide its 3rd column; not this one's */.fctp tr.r1 td.pl{color:var(--green);font-weight:700}
 @media(max-width:1000px){.fcs{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:8px}.fcs .fsd{grid-column:span 2}}
-@media(max-width:560px){.fcs{grid-template-columns:repeat(3,minmax(0,1fr))}.fcs .fsd{grid-column:span 3}.fct tr.fsp td{text-align:left;padding-left:120px}.fct{font-size:12px;min-width:760px}.fxb{margin-left:0}}
+@media(max-width:560px){.fcs{grid-template-columns:repeat(3,minmax(0,1fr))}.fcs .fsd{grid-column:span 3}.fcsc{display:none}.fctp{display:table}.fcs{display:none}.fcsp{display:block}}
 @media(max-width:1000px){.adjr{grid-template-columns:repeat(4,minmax(0,1fr));gap:12px 14px}}
 @media(max-width:680px){.adjr{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
@@ -1231,6 +1239,11 @@ function formPanel(m,r,x){
     +`<div class="fsd"><div class="k">Sire / Dam</div><div class="v" title="${esc(h.sire)} / ${esc(h.dam)}">${h.sire||'—'}<br>${h.dam||'—'}</div></div>`
     +['Track','Distance','1st Up','Good','Soft','Heavy'].concat(syn?['Synth']:[]).map(k=>cell(k,rec(st[k]),'an')).join('')
     +`</div>`;
+  // the phone's strip (Simon, 27 Oct 2026: "taking up far too much room"): two lines and one row of records
+  o+=`<div class="fcsp"><div class="l"><span class="k">Career</span> <b class="an">${rec(h.car)}</b>${h.prize!=null?` · $${h.prize.toLocaleString('en-AU')}`:''}${h.type?` · ${h.type}`:''}</div>`
+    +`<div class="l"><span class="k">Sire / Dam</span> ${h.sire||'—'} / ${h.dam||'—'}</div>`
+    +`<div class="g" style="--n:${syn?7:6}">${[['Track','Track'],['Distance','Dist'],['1st Up','1st Up'],['Good','Good'],['Soft','Soft'],['Heavy','Heavy']].concat(syn?[['Synth','Synth']]:[])
+      .map(([k,lab])=>`<div><div class="k">${lab}</div><div class="an">${rec(st[k])}</div></div>`).join('')}</div></div>`;
   const dd=s=>`${s.slice(8,10)}/${s.slice(5,7)}/${s.slice(2,4)}`;
   const tm=t=>t==null?'':(t>=60?`${Math.floor(t/60)}:${(t%60).toFixed(2).padStart(5,'0')}`:t.toFixed(2));
   const rows=(f.r||[]).map(q=>{
@@ -1242,7 +1255,13 @@ function formPanel(m,r,x){
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`;
   }).join('');
   o+=`<div class="fcsc"><table class="fct"><thead><tr><th>Plcg</th><th>Venue</th><th>Date</th><th>Track</th><th>Dist</th><th>Class</th><th>Jockey (Br)</th>`
-    +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="14" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div></div>`;
+    +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="14" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
+  // the phone's own table (Simon, 27 Oct 2026: "only show these items - no scroll over"): date, venue, placing, trip, class, replay
+  const gs=g=>{ g=String(g||''); const n=(g.match(/\d+/)||[''])[0]; return /synth|poly/i.test(g)?'Syn':(g?g[0].toUpperCase()+n:''); };   // Good 4 -> G4
+  const prow=(f.r||[]).map(q=>q.x?`<tr class="fsp"><td colspan="7">${q.x} Day Spell</td></tr>`
+    :`<tr class="${(q.p===1?'r1':'')+(q.tr?' ftr':'')}"><td class="n">${dd(q.d)}</td><td class="fv">${q.v||''}</td><td class="n pl">${q.p??'–'}/${q.f??'–'}</td><td class="n">${q.m||''}</td><td class="n">${gs(q.g)}</td><td>${q.c||''}</td>`
+      +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`).join('');
+  o+=`<table class="fct fctp"><thead><tr><th>Date</th><th>Venue</th><th>Plcg</th><th>Dist</th><th>Going</th><th>Class</th><th></th></tr></thead><tbody>${prow||'<tr><td colspan="7" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
   return o;
 }
 function fxLedger(x,r){
@@ -1290,8 +1309,6 @@ function fxLedger(x,r){
   const sum=`<div class="adjsum">`
     +`<span>Base</span><b>${x.wprbase.toFixed(1)}</b>`
     +`<span class="ar">&rarr;</span><span>SPM Rating</span><b class="tot">${x.rating.toFixed(1)}</b>`
-    +`<span class="net ${ncls}">${Math.abs(net)<0.05?'level':(net>0?'up':'down')+' '+Math.abs(net).toFixed(1)} on today's factors</span>`
-    +`<span class="ar">· base is ${x.unrated?'the field average, no rated history':`its last 10 runs weighted to recent${x.bsrc==='archive'?', history from earlier nominations':''}${(x.baseraw!==null&&x.baseraw!==undefined&&x.starts>0&&Math.abs(x.baseraw-x.wprbase)>=0.05)?`; with ${x.starts} run${x.starts===1?'':'s'} behind it, it counts ${Math.round(100*x.starts/(x.starts+0.5))}% and the rest goes to the field average (its own figure ${x.baseraw.toFixed(1)})`:''}`}</span>`
     +`</div>`;
   // a one-part group carries its part's note; a group of several lists each part, signed, with its own note
   const sub=c=>`<span class="sub"><em>${FXP[c]}</em> ${sg(x[c]||0)} · ${note[c]}</span>`;
@@ -2545,4 +2562,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 27 Oct 18:36</b> AEST &middot; Rockhampton scratched R5 #6</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 27 Oct 22:51</b> AEST &middot; form panel phone table</div><div style="height:34px"></div></body></html>
