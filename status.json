@@ -1,24 +1,25 @@
 {
- "started": "2026-10-28T03:07:40",
+ "started": "2026-10-28T08:22:58",
  "dates": [
   "2026-10-28",
-  "2026-10-29"
+  "2026-10-29",
+  "2026-10-30"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 449,
- "rider_share": 0.91,
- "extract_max_date": "2026-10-29",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-10-30",
  "card_source": "toprate",
- "extract": "2026-10-27T16:06:32+00:00",
- "finished": "2026-10-28T03:51:31",
+ "extract": "2026-10-27T21:21:43+00:00",
+ "finished": "2026-10-28T09:35:39",
  "going": {
-  "Warwick Farm": "Good 4",
-  "Eagle Farm": "Heavy 10",
-  "Bendigo": "Soft 5",
+  "Warwick Farm": "Soft 5",
+  "Eagle Farm": "Heavy 9",
+  "Bendigo": "Good 4",
   "Murray Bridge": "Soft 5"
  },
- "scratchings": 42,
+ "scratchings": 97,
  "dashboard": "toprate_week_v2_2026-10-28.html",
- "fingerprint": "52003e599325"
+ "fingerprint": "d42a3de2ea69"
 }
