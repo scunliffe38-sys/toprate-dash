@@ -1,24 +1,24 @@
 {
- "started": "2026-10-27T14:45:35",
+ "started": "2026-10-27T15:45:34",
  "dates": [
   "2026-10-27",
   "2026-10-28",
   "2026-10-29"
  ],
- "reason": "Hawkesbury Soft 5 -> Good 4",
+ "reason": "Swan Hill Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 271,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-29",
  "card_source": "toprate",
  "extract": "2026-10-26T21:21:30+00:00",
- "finished": "2026-10-27T15:25:15",
+ "finished": "2026-10-27T16:22:37",
  "going": {
-  "Swan Hill": "Soft 5",
+  "Swan Hill": "Good 4",
   "Hawkesbury": "Good 4",
   "Rockhampton": "Soft 5"
  },
  "scratchings": 67,
  "dashboard": "toprate_week_v2_2026-10-27.html",
- "fingerprint": "1d876b06eb62"
+ "fingerprint": "c4055370cbbe"
 }
