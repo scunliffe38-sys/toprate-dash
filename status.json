@@ -1,24 +1,24 @@
 {
- "started": "2026-10-27T17:15:29",
+ "started": "2026-10-27T18:00:31",
  "dates": [
   "2026-10-27",
   "2026-10-28",
   "2026-10-29"
  ],
- "reason": "Hawkesbury scratched R8 #8",
+ "reason": "Rockhampton scratched R5 #6",
  "status": "ok",
  "acceptors": 271,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-29",
  "card_source": "toprate",
  "extract": "2026-10-26T21:21:30+00:00",
- "finished": "2026-10-27T17:51:47",
+ "finished": "2026-10-27T18:36:53",
  "going": {
-  "Hawkesbury": "Good 4",
   "Rockhampton": "Soft 5",
-  "Swan Hill": "Good 4"
+  "Swan Hill": "Good 4",
+  "Hawkesbury": "Good 4"
  },
- "scratchings": 68,
+ "scratchings": 69,
  "dashboard": "toprate_week_v2_2026-10-27.html",
- "fingerprint": "3569db5c8efa"
+ "fingerprint": "4bab2754f514"
 }
