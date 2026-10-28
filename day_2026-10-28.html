@@ -335,6 +335,18 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .adjsum .net.p{color:var(--pos)} .adjsum .net.g{color:var(--neg)} .adjsum .net.f{color:var(--faint)}
 /* the seven, left to right, biggest first */
 .adjr{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px 14px}
+.fcmore{font:inherit;font-size:12px;margin:8px 0 6px;border:1px solid var(--rule);background:var(--panel);border-radius:10px;padding:1px 10px;cursor:pointer;color:var(--green)}
+.adjl{display:grid;grid-template-columns:minmax(150px,200px) 64px minmax(0,1fr);column-gap:14px;margin-bottom:16px;font-size:13px}
+.adjl>div{display:contents}
+.adjl>div>*{border-top:1px solid var(--rule);padding:6px 0 5px}
+.adjl .an{color:var(--text);font-weight:600}
+.adjl .av{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums;font-size:16px;font-weight:600;text-align:right;line-height:1.25}
+.adjl .av.p{color:var(--pos)} .adjl .av.g{color:var(--neg)} .adjl .av.f{color:var(--faint)}
+.adjl .aw{color:var(--faint);font-size:11px;line-height:1.4}
+.adjl .aw .sub{display:block}
+.adjl .aw .sub em{font-style:normal;color:var(--dim)}
+.adjl .zero .an,.adjl .zero .av{color:var(--faint);font-weight:400}
+@media(max-width:680px){.adjl{grid-template-columns:minmax(0,1fr) 56px;column-gap:10px;max-width:calc(100vw - 48px)}.adjl .aw{grid-column:1/-1;border-top:0!important;padding-top:0!important}}
 .adjr .w .sub{display:block;margin-top:1px}
 .adjr .w .sub em{font-style:normal;color:var(--dim)}
 .adjr>div{border-top:1px solid var(--rule);padding:7px 0 0;min-width:0}
@@ -820,16 +832,16 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(207,205,191,.28)}
 .dri .dc{flex:0 0 auto;color:var(--faint);font-size:11px}
 .dbody.dwc{background:var(--panel);border:1px solid var(--rule);border-radius:4px;padding:10px 12px 8px}
 .wcmp svg{display:block;width:100%;height:auto}
-.wcmp path.wl{fill:none;stroke:#8E9A94;stroke-width:1.4;opacity:.7}
-.wcmp path.wl.dim{opacity:.16}
-.wcmp path.wl.on{stroke-width:2.6;opacity:1}
+.wcmp path.wl{fill:none;stroke-width:1.6;opacity:.85}
+.wcmp path.wl.dim,.wcmp path.wf.dim,.wcmp circle.wfp.dim{opacity:.13}
+.wcmp path.wl.on{stroke-width:2.8;opacity:1}
 .wcmp path.wf{fill:none;stroke-width:1.6;stroke-dasharray:4 4;opacity:.8}
 .wcmp path.wf.dim{opacity:.16}
 .wcmp path.hitl{fill:none;stroke:transparent;stroke-width:12;cursor:pointer}
 .wcmp circle.wd{stroke:none}
 .wcmp circle.wfp{fill:var(--panel);stroke-width:1.8;stroke-dasharray:2.5 2}
 .wcmp text.wcn{font-size:11.5px;cursor:pointer;fill:var(--text)}
-.wcmp text.wcn.dim{fill:var(--faint)}
+.wcmp text.wcn.dim{opacity:.35}
 .wcmp text.wcn.on{font-weight:700}
 .wcmp line.wlead{stroke:var(--rule);stroke-width:1}
 .wcmp rect.wbz{fill:var(--green);opacity:.07}
@@ -1240,6 +1252,9 @@ function adjCell(x){
 // and the adjustments are a second click. formcard.py writes form_MMDD.json beside the page; it is fetched the first time a
 // runner on that day is opened, so a missing file costs this panel and nothing else.
 const FORM={}; let FXOPEN=false;
+// the form list shows the last eight runs, trials included (Simon, 28 Oct 2026), Full history a click away; FCALL holds the runners opened out
+const FCALL=new Set(), FCN=8;
+window.fcAll=k=>{ if(FCALL.has(k)) FCALL.delete(k); else FCALL.add(k); draw(); };
 window.fxTog=()=>{ FXOPEN=!FXOPEN; draw(); };
 const fcKey=(m,r,x)=>`${m.track}|${r.no}|${String(x.name||'').toUpperCase().replace(/[^A-Z0-9]/g,'')}`;
 function formOf(d){
@@ -1272,7 +1287,13 @@ function formPanel(m,r,x){
       .map(([k,lab])=>`<div><div class="k">${lab}</div><div class="an">${rec(st[k])}</div></div>`).join('')}</div></div>`;
   const dd=s=>`${s.slice(8,10)}/${s.slice(5,7)}/${s.slice(2,4)}`;
   const tm=t=>t==null?'':(t>=60?`${Math.floor(t/60)}:${(t%60).toFixed(2).padStart(5,'0')}`:t.toFixed(2));
-  const rows=(f.r||[]).map(q=>{
+  // the last FCN runs (the list is oldest first, today's spell last); a spell row just above them stays with them
+  const fk=fcKey(m,r,x), allr=f.r||[], nrun=allr.filter(q=>!q.x).length; let cut=0;
+  for(let i=allr.length-1,n=0;i>=0;i--) if(!allr[i].x&&++n===FCN){ cut=i; break; }
+  if(cut>0&&allr[cut-1].x) cut--;
+  const full=FCALL.has(fk)||nrun<=FCN, shown=full?allr:allr.slice(cut), fkq=fk.replace(/'/g,"\\'");
+  const more=nrun>FCN?`<button type="button" class="fcmore" onclick="fcAll('${fkq}')">${FCALL.has(fk)?`Last ${FCN} only ▴`:`Full history · all ${nrun} runs ▸`}</button>`:'';
+  const rows=shown.map(q=>{
     if(q.x) return `<tr class="fsp"><td colspan="14">${q.x} Day Spell</td></tr>`;
     const cls=(q.p===1?'r1':'')+(q.tr?' ftr':'');
     return `<tr class="${cls}"><td class="n">${q.p??'–'}/${q.f??'–'}</td><td>${q.v||''}</td><td class="n">${dd(q.d)}</td><td>${q.g||''}</td><td class="n">${q.m||''}</td>`
@@ -1280,11 +1301,11 @@ function formPanel(m,r,x){
       +`<td>${q.o||''}</td><td class="n">${q.mg!=null?q.mg.toFixed(1):''}</td><td class="n">${tm(q.t)}</td><td class="n">${q.ir||''}</td>`
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`;
   }).join('');
-  o+=`<div class="fcsc"><table class="fct"><thead><tr><th>Plcg</th><th>Venue</th><th>Date</th><th>Track</th><th>Dist</th><th>Class</th><th>Jockey (Br)</th>`
+  o+=more+`<div class="fcsc"><table class="fct"><thead><tr><th>Plcg</th><th>Venue</th><th>Date</th><th>Track</th><th>Dist</th><th>Class</th><th>Jockey (Br)</th>`
     +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="14" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
   // the phone's own table (Simon, 27 Oct 2026: "only show these items - no scroll over"): date, venue, placing, trip, class, replay
   const gs=g=>{ g=String(g||''); const n=(g.match(/\d+/)||[''])[0]; return /synth|poly/i.test(g)?'Syn':(g?g[0].toUpperCase()+n:''); };   // Good 4 -> G4
-  const prow=(f.r||[]).map(q=>q.x?`<tr class="fsp"><td colspan="7">${q.x} Day Spell</td></tr>`
+  const prow=shown.map(q=>q.x?`<tr class="fsp"><td colspan="7">${q.x} Day Spell</td></tr>`
     :`<tr class="${(q.p===1?'r1':'')+(q.tr?' ftr':'')}"><td class="n">${dd(q.d)}</td><td class="fv">${q.v||''}</td><td class="n pl">${q.p??'–'}/${q.f??'–'}</td><td class="n">${q.m||''}</td><td class="n">${gs(q.g)}</td><td>${q.c||''}</td>`
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`).join('');
   o+=`<table class="fct fctp"><thead><tr><th>Date</th><th>Venue</th><th>Plcg</th><th>Dist</th><th>Going</th><th>Class</th><th></th></tr></thead><tbody>${prow||'<tr><td colspan="7" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
@@ -1352,10 +1373,12 @@ function fxLedger(x,r){
     return one('Jockey',x.jkf,x.jksr90,x.jkcar,x.jkn90)+one('Trainer',x.trf,x.trsr90,x.trcar,x.trn90); })();
   const connNote=halves?`<span class="sub"><em>Jockey</em> ${sg(halves[0])} · ${x.jsr.toFixed(1)}% wins</span><span class="sub"><em>Trainer</em> ${sg(halves[1])} · ${x.tsr.toFixed(1)}% wins</span><span class="sub">career rate at this class of meeting (metro or country)</span>${inform?`<span class="sub"><em>In form</em> ${sg(x.cfm)} · how far above or below that career rate he is riding right now</span>`+inform:''}`:null;
   const gnote=g=>(g.k==='conn'&&connNote)?connNote:g.parts.length===1?note[g.parts[0]]:g.parts.filter(c=>c!=='plc'||Math.abs(x.plc||0)>=0.005).map(sub).join('');
-  const cells=fxv(x)                                               // fixed order, see FXG
-    .map(([g,v])=>`<div><div class="n">${g.t}</div><div class="v ${Math.abs(v)<0.005?'f':(v>0?'p':'g')}">${sg(v)}</div><div class="w">${gnote(g)}</div></div>`)
+  // one row per adjustment, biggest first, like the ladder (Simon, 28 Oct 2026)
+  const rows=fxv(x).slice().sort((a,b)=>Math.abs(b[1])-Math.abs(a[1]));
+  const cells=rows.map(([g,v])=>{ const c=Math.abs(v)<0.005?'f':(v>0?'p':'g');
+      return `<div class="${c==='f'?'zero':''}"><div class="an">${g.t}</div><div class="av ${c}">${sg(v)}</div><div class="aw">${gnote(g)}</div></div>`; })
     .join('');
-  return sum.replace(/<\/div>$/,fxb+'</div>')+(FXOPEN?`<div class="adjr">${cells}</div>`:'');   // the adjustments a second click (27 Oct 2026)
+  return sum.replace(/<\/div>$/,fxb+'</div>')+(FXOPEN?`<div class="adjl">${cells}</div>`:'');   // the adjustments a second click (27 Oct 2026)
 }
 // last-5 form string: oldest -> newest, 'x' = spell, trailing 'x' = first-up today
 function last5(s){
@@ -2187,7 +2210,7 @@ function speedMapBody(r){ const was=smap; smap=true; try{ return speedMap(r); } 
 // at each forecast, spread so they do not overlap. A click on a name or a line highlights that runner; several can be on.
 // WSEL is the highlighted set for the race on screen; it clears when the race changes. Display only.
 let WSEL=new Set(), WSELK='';
-const WPAL=['#005C42','#A52210','#003366','#B8741A','#43978F','#592414','#7A4FA0','#C2185B'];
+const WPAL=['#1F77B4','#D62728','#2CA02C','#9467BD','#FF7F0E','#17BECF','#8C564B','#E377C2','#7F7F00','#393B79','#637939','#AD494A','#7B4173','#3182BD','#E6550D','#31A354'];
 window.wsel=no=>{ if(no==null) WSEL.clear(); else if(WSEL.has(no)) WSEL.delete(no); else WSEL.add(no); draw(); };
 function wcmpTop(r){
   let b=null; for(const x of r.runners){ if(x.wb0==null) continue; const td=wLines(r,x)[1]; if(b===null||td>b[1]) b=[x,td]; }
@@ -2195,47 +2218,46 @@ function wcmpTop(r){
 }
 function wormCompare(r){
   const key=`${M().track}|${r.no}`; if(key!==WSELK){ WSEL=new Set(); WSELK=key; }
-  const N=5, H0=[];
+  const N=10, H0=[];
   for(const x of r.runners){ const f=wFig(x).slice(-N); if(!f.length||x.wb0==null) continue; H0.push({x,f,td:wLines(r,x)[1]}); }
   if(H0.length<2) return '<div class="wcmp"><div class="sm">Not enough form to compare.</div></div>';
+  H0.forEach((h,i)=>{ h.c=WPAL[i%WPAL.length]; });               // each runner its own colour, in card order (Simon, 28 Oct 2026)
   const narrow=innerWidth<=560;
-  const W=Math.max(340,Math.min(980,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))), H=narrow?300:340;
+  const W=Math.max(340,Math.min(980,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))), H=narrow?320:380;
   const L=30, R=narrow?132:170, T=16, B=30;
+  // a 20-point window down from the top (the highest run, forecast or bar): the same depth every race, so races compare by eye;
+  // anything lower leaves the foot (Simon, 28 Oct 2026)
   const vals=[]; H0.forEach(h=>{ h.f.forEach(z=>vals.push(z[6])); vals.push(h.td); }); if(r.wb&&r.wb.w!=null) vals.push(r.wb.w);
-  let vlo=Math.min(...vals), vhi=Math.max(...vals);
-  // the floor sits 12 under the lowest forecast (or the bar): a far-off run (a 15 among 75s) is clipped at the foot, not allowed
-  // to squash the field into the top of the chart
-  const ref=r.wb&&r.wb.w!=null?r.wb.w:Math.max(...H0.map(h=>h.td)); vlo=Math.max(vlo,ref-10);
-  if(vhi-vlo<8){ const c=(vhi+vlo)/2; vlo=c-4; vhi=c+4; }
-  const pad=(vhi-vlo)*0.05, y0=vlo-pad, y1=vhi+pad, step=vhi-vlo<=14?2:vhi-vlo<=35?5:10;
+  const vhi=Math.max(...vals), vlo=vhi-20;
+  const pad=1, y0=vlo-pad, y1=vhi+pad, step=5;
   const xs=i=>L+(W-L-R)*i/N, ys=v=>T+(H-T-B)*(1-(v-y0)/(y1-y0));
-  const any=WSEL.size>0, col=no=>{ const k=[...WSEL].indexOf(no); return k<0?null:WPAL[k%WPAL.length]; };
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every runner's last ${N} figures and its forecast for today"><defs><clipPath id="wcc"><rect x="${L-6}" y="${T}" width="${W-R-L+12}" height="${H-T-B}"/></clipPath></defs>`;
+  const any=WSEL.size>0;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every runner's last ${N} ratings and its rating today"><defs><clipPath id="wcc"><rect x="${L-6}" y="${T}" width="${W-R-L+12}" height="${H-T-B}"/></clipPath></defs>`;
   for(let t=Math.ceil(y0/step)*step;t<=y1;t+=step) s+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${ys(t)}" y2="${ys(t)}"/><text class="axn" x="${L-8}" y="${ys(t)+4}" text-anchor="end">${t}</text>`;
   if(r.wb&&r.wb.w!=null){ const yw=ys(r.wb.w); s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">needed to win today · ${Math.round(r.wb.w)}+</text>`; }
-  for(let i=0;i<=N;i++) s+=`<text class="ax" x="${xs(i)}" y="${H-B+18}" text-anchor="middle">${i===N?'today':i===N-1?'last':narrow?`-${N-i}`:`${N-i} back`}</text>`;
+  s+=`<text class="ax" x="${xs(N-1)}" y="${H-B+18}" text-anchor="middle">last</text><text class="ax" x="${xs(N)}" y="${H-B+18}" text-anchor="middle">today</text>`;
   // unhighlighted first, so the highlighted ones draw on top
   s+=`<g clip-path="url(#wcc)">`;
   const order=H0.slice().sort((a,b)=>(WSEL.has(a.x.no)?1:0)-(WSEL.has(b.x.no)?1:0));
   for(const h of order){
-    const on=WSEL.has(h.x.no), c=col(h.x.no)||'#8E9A94', cls=on?'on':(any?'dim':'');
+    const on=WSEL.has(h.x.no), c=h.c, cls=on?'on':(any?'dim':'');
     const off=N-h.f.length, pts=h.f.map((z,i)=>[xs(off+i),ys(z[6])]), last=pts[pts.length-1], fp=[xs(N),ys(h.td)];
-    if(pts.length>1) s+=`<path class="wl ${cls}" d="${wSmooth(pts)}"${on?` style="stroke:${c}"`:''}/>`;
-    s+=`<path class="wf ${any&&!on?'dim':''}" d="M${last[0].toFixed(1)},${last[1].toFixed(1)} L${fp[0].toFixed(1)},${fp[1].toFixed(1)}" style="stroke:${c}"/>`;
+    if(pts.length>1) s+=`<path class="wl ${cls}" d="${wSmooth(pts)}" style="stroke:${c}"/>`;
+    s+=`<path class="wf ${cls}" d="M${last[0].toFixed(1)},${last[1].toFixed(1)} L${fp[0].toFixed(1)},${fp[1].toFixed(1)}" style="stroke:${c}"/>`;
     if(on) pts.forEach(p=>{ s+=`<circle class="wd" cx="${p[0]}" cy="${p[1]}" r="3.2" style="fill:${c}"/>`; });
-    s+=`<circle class="wfp" cx="${fp[0]}" cy="${fp[1]}" r="${on?5:3.5}" style="stroke:${c}${any&&!on?';opacity:.25':''}"/>`;
+    s+=`<circle class="wfp ${cls}" cx="${fp[0]}" cy="${fp[1]}" r="${on?5:3.5}" style="stroke:${c}"/>`;
     const hd=pts.concat([fp]); s+=`<path class="hitl" d="M${hd.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' L')}" onclick="wsel(${h.x.no})"><title>${h.x.no} ${h.x.name.replace(/</g,'')}</title></path>`;
   }
   s+=`</g>`;
-  // the names on the right, at each forecast, pushed apart to at least 13 px
-  const lab=H0.map(h=>({h,y:Math.min(ys(h.td),H-B-2)})).sort((a,b)=>a.y-b.y), gap=13;
+  // the names on the right, at each forecast, pushed apart to at least 13 px, each in its line's colour
+  const lab=H0.map(h=>({h,y:Math.min(Math.max(ys(h.td),T+4),H-B-2)})).sort((a,b)=>a.y-b.y), gap=13;
   for(let i=1;i<lab.length;i++) if(lab[i].y-lab[i-1].y<gap) lab[i].y=lab[i-1].y+gap;
   const over=lab.length?lab[lab.length-1].y-(H-B):0; if(over>0) lab.forEach(l=>l.y-=over);
   for(let i=lab.length-2;i>=0;i--) if(lab[i+1].y-lab[i].y<gap) lab[i].y=lab[i+1].y-gap;
   const lx=xs(N)+14, nmax=narrow?10:22;
-  for(const l of lab){ const h=l.h, on=WSEL.has(h.x.no), c=col(h.x.no), nm=h.x.name.length>nmax?h.x.name.slice(0,nmax-1)+'…':h.x.name;
-    s+=`<line class="wlead" x1="${xs(N)+6}" x2="${lx-3}" y1="${Math.min(ys(h.td),H-B-2)}" y2="${l.y}"/>`;
-    s+=`<text class="wcn ${on?'on':(any?'dim':'')}" x="${lx}" y="${l.y+4}" onclick="wsel(${h.x.no})"${on?` style="fill:${c}"`:''}>${h.x.no} ${nm} <tspan style="opacity:.75">${h.td.toFixed(1)}</tspan></text>`; }
+  for(const l of lab){ const h=l.h, on=WSEL.has(h.x.no), nm=h.x.name.length>nmax?h.x.name.slice(0,nmax-1)+'…':h.x.name;
+    s+=`<line class="wlead" x1="${xs(N)+6}" x2="${lx-3}" y1="${Math.min(Math.max(ys(h.td),T+4),H-B-2)}" y2="${l.y}"/>`;
+    s+=`<text class="wcn ${on?'on':(any?'dim':'')}" x="${lx}" y="${l.y+4}" onclick="wsel(${h.x.no})" style="fill:${h.c}">${h.x.no} ${nm} <tspan style="opacity:.8">${h.td.toFixed(1)}</tspan></text>`; }
   s+='</svg>';
   const hint=any?`<button type="button" onclick="wsel(null)">clear</button>`:'';
   return `<div class="wcmp">${s}<div class="wch"><span>Solid: its last ${N} runs, in SPM rating points at today's trip. Dashed to the hollow point: its SPM rating today. Click a name or a line to highlight it; click more to compare.</span>${hint}</div></div>`;
@@ -2680,4 +2702,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 28 Oct 15:54</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 28 Oct 16:35</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
