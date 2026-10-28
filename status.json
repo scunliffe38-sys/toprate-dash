@@ -1,27 +1,27 @@
 {
- "started": "2026-10-28T14:31:15",
+ "started": "2026-10-28T15:16:01",
  "dates": [
   "2026-10-28",
   "2026-10-29",
   "2026-10-30"
  ],
- "reason": "Murray Bridge Soft 5 -> Good 4",
+ "reason": "Eagle Farm Heavy 9 -> Heavy 8",
  "status": "ok",
  "acceptors": 449,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-30",
  "card_source": "toprate",
  "extract": "2026-10-27T21:21:43+00:00",
- "finished": "2026-10-28T15:08:29",
+ "finished": "2026-10-28T15:52:46",
  "going": {
   "Bendigo": "Good 4",
   "Warwick Farm": "Soft 5",
-  "Eagle Farm": "Heavy 9",
+  "Eagle Farm": "Heavy 8",
   "Murray Bridge": "Good 4",
   "Belmont Park": "Good 4",
   "Sha Tin": "Synthetic"
  },
  "scratchings": 101,
  "dashboard": "toprate_week_v2_2026-10-28.html",
- "fingerprint": "e0aa22fc7b23"
+ "fingerprint": "c9f61d904c57"
 }
