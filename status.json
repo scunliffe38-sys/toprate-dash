@@ -1,24 +1,25 @@
 {
- "started": "2026-10-29T03:08:02",
+ "started": "2026-10-29T08:23:04",
  "dates": [
   "2026-10-29",
-  "2026-10-30"
+  "2026-10-30",
+  "2026-10-31"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 411,
- "rider_share": 0.83,
- "extract_max_date": "2026-10-30",
+ "rider_share": 0.93,
+ "extract_max_date": "2026-10-31",
  "card_source": "toprate",
- "extract": "2026-10-28T16:06:25+00:00",
- "finished": "2026-10-29T03:50:30",
+ "extract": "2026-10-28T21:21:50+00:00",
+ "finished": "2026-10-29T09:35:13",
  "going": {
-  "Warrnambool": "Soft 6",
-  "Wyong": "Soft 5",
+  "Warrnambool": "Soft 5",
+  "Wyong": "Good 4",
   "Northam": "Good 4",
-  "Casino": "Heavy 8"
+  "Casino": "Soft 7"
  },
- "scratchings": 26,
+ "scratchings": 62,
  "dashboard": "toprate_week_v2_2026-10-29.html",
- "fingerprint": "b51c63a136f9"
+ "fingerprint": "857bafb1ba70"
 }
