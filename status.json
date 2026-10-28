@@ -1,27 +1,27 @@
 {
- "started": "2026-10-28T15:16:01",
+ "started": "2026-10-28T18:00:54",
  "dates": [
   "2026-10-28",
   "2026-10-29",
   "2026-10-30"
  ],
- "reason": "Eagle Farm Heavy 9 -> Heavy 8",
+ "reason": "Warwick Farm scratched R6 #9",
  "status": "ok",
  "acceptors": 449,
  "rider_share": 1.0,
  "extract_max_date": "2026-10-30",
  "card_source": "toprate",
  "extract": "2026-10-27T21:21:43+00:00",
- "finished": "2026-10-28T15:52:46",
+ "finished": "2026-10-28T18:37:31",
  "going": {
-  "Bendigo": "Good 4",
   "Warwick Farm": "Soft 5",
   "Eagle Farm": "Heavy 8",
-  "Murray Bridge": "Good 4",
   "Belmont Park": "Good 4",
-  "Sha Tin": "Synthetic"
+  "Sha Tin": "Synthetic",
+  "Bendigo": "Good 4",
+  "Murray Bridge": "Good 4"
  },
- "scratchings": 101,
+ "scratchings": 102,
  "dashboard": "toprate_week_v2_2026-10-28.html",
- "fingerprint": "c9f61d904c57"
+ "fingerprint": "f0ba2c3bc82e"
 }
