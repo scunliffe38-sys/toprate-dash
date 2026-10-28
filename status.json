@@ -1,18 +1,18 @@
 {
- "started": "2026-10-29T08:23:04",
+ "started": "2026-10-29T10:00:48",
  "dates": [
   "2026-10-29",
   "2026-10-30",
   "2026-10-31"
  ],
- "reason": "morning harvest",
+ "reason": "retry: Wyong Soft 5 -> Good 4; Wyong scratched R1 #1/5, R3 #4/6, R4 #12/15/16, R5 #6/11/15, R6 #5/14/15/17, R7 #5/11, R8 #3/5; Warrnambool Soft 6 -> Soft 5; Warrnambool scratched R",
  "status": "ok",
  "acceptors": 411,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-31",
  "card_source": "toprate",
  "extract": "2026-10-28T21:21:50+00:00",
- "finished": "2026-10-29T09:35:13",
+ "finished": "2026-10-29T10:38:51",
  "going": {
   "Warrnambool": "Soft 5",
   "Wyong": "Good 4",
@@ -21,5 +21,5 @@
  },
  "scratchings": 62,
  "dashboard": "toprate_week_v2_2026-10-29.html",
- "fingerprint": "857bafb1ba70"
+ "fingerprint": "f52dabe0c875"
 }
