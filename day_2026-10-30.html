@@ -2055,11 +2055,11 @@ const wFig=x=>(Array.isArray(x.runs)?x.runs:[]).filter(k=>k[6]!=null);
 // the winning standard (winbar.py, 28 Oct 2026, display only): the form figure this race's winner likely runs, from the
 // class and the field's recent bests (the best two of each runner's last five inside a year), and who has run it lately.
 // It is on the worm's scale, the vendor's figures, not the Base / Rating columns' points. Nothing on the page rates off it.
-const WBT="The rating the winner of this race is likely to run, in SPM rating points, from its class and the field's recent best runs (each runner's best two of its last five inside a year).";
+const WBT="Likely Winning Rating: the rating the winner of this race is likely to run -- usually above every runner's average, since winners tend to run above theirs. SPM rating points, from the class and the field's recent best runs (each runner's best two of its last five inside a year).";
 function wbChip(r){ const w=r.wb; if(!w||w.w==null) return '';
-  return ` &nbsp;·&nbsp; <span class="wbchip" title="${WBT}">to win ≈ ${Math.round(w.w)}</span>`; }
+  return ` &nbsp;·&nbsp; <span class="wbchip" title="${WBT}">Likely Winning Rating ${Math.round(w.w)}</span>`; }
 function wbMark(r,x){ const w=r.wb; if(!w||w.w==null||x.wbr==null||x.wbr<w.w) return '';
-  return `<span class="wbm" title="recent best ${x.wbr.toFixed(1)} reaches the ${Math.round(w.w)} it likely takes to win (SPM points)">${Math.round(x.wbr)}</span>`; }
+  return `<span class="wbm" title="recent best ${x.wbr.toFixed(1)} reaches the Likely Winning Rating of ${Math.round(w.w)}">${Math.round(x.wbr)}</span>`; }
 // a smooth line through the points: a MONOTONE cubic (Fritsch-Butland tangents), so the line is eased but never swings
 // past a value between two runs -- a plain spline overshot a 46-to-77 jump to 78. The dots stay on the values.
 function wSmooth(p){
@@ -2113,7 +2113,7 @@ function wormRow(r,x){
   for(let t=Math.ceil(y0/step)*step;t<=y1;t+=step) s+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${ys(t)}" y2="${ys(t)}"/><text class="axn" x="${L-8}" y="${ys(t)+4}" text-anchor="end">${t}</text>`;
   if(x.wb0==null) s+=`<line class="base" x1="${L}" x2="${W-R}" y1="${ys(bs)}" y2="${ys(bs)}"/><text class="axn" x="${W-R+6}" y="${ys(bs)+(Math.abs(ys(bs)-ys(td))<13?(bs<td?12:-6):4)}">${bs.toFixed(1)} base</text>`;
   if(r.wb&&r.wb.w!=null){ const yw=ys(r.wb.w);     // the winning zone: everything at or above the bar, lightly shaded
-    s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">needed to win today · ${Math.round(r.wb.w)}+</text>`; }
+    s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">Likely Winning Rating · ${Math.round(r.wb.w)}</text>`; }
   if(!FC) s+=`<line class="today" x1="${L}" x2="${W-R}" y1="${ys(td)}" y2="${ys(td)}"/><text class="tl" x="${W-R-4}" y="${ys(td)-5}" text-anchor="end">expected today ${td.toFixed(1)}</text>`;
   all.forEach((z,i)=>{ if(i&&z[7]) s+=`<line class="spell" x1="${xs(i-1)}" x2="${xs(i)}" y1="${H-B+6}" y2="${H-B+6}"/>`; });
   const yc=v=>ys(Math.max(v,y0));   // a run under the floor sits on it
@@ -2234,7 +2234,7 @@ function wormCompare(r){
   const any=WSEL.size>0;
   let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every runner's last ${N} ratings and its rating today"><defs><clipPath id="wcc"><rect x="${L-6}" y="${T}" width="${W-R-L+12}" height="${H-T-B}"/></clipPath></defs>`;
   for(let t=Math.ceil(y0/step)*step;t<=y1;t+=step) s+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${ys(t)}" y2="${ys(t)}"/><text class="axn" x="${L-8}" y="${ys(t)+4}" text-anchor="end">${t}</text>`;
-  if(r.wb&&r.wb.w!=null){ const yw=ys(r.wb.w); s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">needed to win today · ${Math.round(r.wb.w)}+</text>`; }
+  if(r.wb&&r.wb.w!=null){ const yw=ys(r.wb.w); s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">Likely Winning Rating · ${Math.round(r.wb.w)}</text>`; }
   s+=`<text class="ax" x="${xs(N-1)}" y="${H-B+18}" text-anchor="middle">last</text><text class="ax" x="${xs(N)}" y="${H-B+18}" text-anchor="middle">today</text>`;
   // unhighlighted first, so the highlighted ones draw on top
   s+=`<g clip-path="url(#wcc)">`;
@@ -2274,7 +2274,7 @@ function drillRow(m,r){
     it.push({k:'rsp',cls:'drsp',lab:'RSP',sh:'RSP',sum:`Most advantaged <b>${b.no} ${b.name}</b>`,tip:'the race speed profile: early, middle and late against the field'}); }
   if(r.wb&&r.wb.w!=null&&r.runners.filter(x=>x.wb0!=null&&wFig(x).length).length>=2){ const t=wcmpTop(r);
     it.push({k:'worms',cls:'dwc',lab:'Worms',sh:'Worms',sum:t?`Top forecast <b>${t[0].no} ${t[0].name}</b>`:'compare the field',
-      tip:'every runner\'s last five figures and its forecast for today, against what it likely takes to win',body:wormCompare(r)}); }
+      tip:'every runner\'s last ten ratings and its rating today, against the Likely Winning Rating',body:wormCompare(r)}); }
   quadItems(m,r).forEach(q=>it.push(q));
   if(!it.length) return '';
   let h='<div class="drill">'+it.map(x=>`<button type="button" class="dri${x.y===true?' y':x.y===false?' n':''}" aria-expanded="${DRILL===x.k}"`+
@@ -2702,4 +2702,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 30 Oct 06:57</b> AEST &middot; HK card</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 30 Oct 07:33</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
