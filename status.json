@@ -1,25 +1,25 @@
 {
- "started": "2026-10-29T14:00:37",
+ "started": "2026-10-29T16:00:33",
  "dates": [
   "2026-10-29",
   "2026-10-30",
   "2026-10-31"
  ],
- "reason": "Casino Soft 7 -> Soft 6",
+ "reason": "Warrnambool Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 411,
  "rider_share": 0.93,
  "extract_max_date": "2026-10-31",
  "card_source": "toprate",
  "extract": "2026-10-28T21:21:50+00:00",
- "finished": "2026-10-29T14:39:18",
+ "finished": "2026-10-29T16:38:20",
  "going": {
-  "Warrnambool": "Soft 5",
+  "Warrnambool": "Good 4",
   "Wyong": "Good 4",
   "Northam": "Good 4",
   "Casino": "Soft 6"
  },
  "scratchings": 64,
  "dashboard": "toprate_week_v2_2026-10-29.html",
- "fingerprint": "0dcad7d1a179"
+ "fingerprint": "9ed2b226af41"
 }
