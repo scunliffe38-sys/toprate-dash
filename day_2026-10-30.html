@@ -373,6 +373,10 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .fct tr.fsp td{text-align:center;color:var(--brick);background:#F7ECE8;font-size:12px;padding:3px}
 .fct td.n{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums}
 .fct a.frp{color:var(--green);text-decoration:none;font-size:13px}
+/* the clock (30 Oct 2026): lengths against the standard, the day out; the colour is the FIELD read, green when the horse
+   beat its race's average in that section by a length or more, brick when it was a length or more behind it */
+.fct td.ck{text-align:right;cursor:help}.fct td.ck.up{color:var(--green);font-weight:600}.fct td.ck.dn{color:var(--brick)}
+.fct th.ckh{text-align:right}.fct th.ckh:first-of-type{border-left:1px solid var(--panel2)}
 .fctp{display:none;min-width:0;font-size:12px;table-layout:auto}   /* the phone's table: no sideways scroll (27 Oct 2026) */
 .fcsp{display:none;background:var(--panel2);border-radius:3px 3px 0 0;padding:6px 8px;font-size:12px;line-height:1.35}
 .fcsp .l{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.fcsp .k{color:var(--dim);font-size:10.5px}.fcsp b{font-weight:600}
@@ -1264,6 +1268,22 @@ function formOf(d){
     .then(q=>q.ok?q.json():null).then(j=>{FORM[d.date]=j&&j.runners?j:null;}).catch(()=>{FORM[d.date]=null;}).finally(()=>draw());
   return '…';
 }
+// the clock columns (30 Oct 2026, Simon: "the merit of the performance against the clock, early, middle, late, vs standard
+// and field"; "show vs standard"): q.ck = [early, mid, late, net] in lengths against the track x distance standard with the
+// meeting's clock taken out (formcard.py, from the nightly IVR table), the number in the cell; q.cf = the same three sections
+// against the field average in that race, which only colours the cell (a length or more either way) and sits in the hover
+// with the field's own figure against standard. Blank on trials and untimed runs.
+const CKT='Lengths against the standard for the track and trip, the clock of the day taken out: early to the 800, mid 800-400, late 400-post, Net the whole run. Green: a length or more quicker than the field average in that section; red: a length or more slower.';
+const CKL=['early, to the 800','mid, 800-400','late, 400-post','the whole run'];
+function ckCells(q){
+  if(!Array.isArray(q.ck)||q.ck.length!==4) return '<td></td><td></td><td></td><td></td>';
+  const sg=v=>(v>0?'+':'')+v.toFixed(1);
+  return q.ck.map((v,i)=>{
+    const f=(i<3&&Array.isArray(q.cf))?q.cf[i]:null, cls=f==null?'':(f>=1?' up':f<=-1?' dn':'');
+    const tip=f==null?`${CKL[i]}: ${sg(v)} L against the standard`
+      :`${CKL[i]}: ${sg(v)} L against the standard · ${sg(f)} L against the field average (the field ran ${sg(v-f)} L against the standard)`;
+    return `<td class="n ck${cls}" title="${tip}">${sg(v)}</td>`; }).join('');
+}
 function formPanel(m,r,x){
   const all=formOf(D());
   if(all==='…') return `<div class="fcp"><div class="fcmsg">Loading form…</div></div>`;
@@ -1294,15 +1314,16 @@ function formPanel(m,r,x){
   const full=FCALL.has(fk)||nrun<=FCN, shown=full?allr:allr.slice(cut), fkq=fk.replace(/'/g,"\\'");
   const more=nrun>FCN?`<button type="button" class="fcmore" onclick="fcAll('${fkq}')">${FCALL.has(fk)?`Last ${FCN} only ▴`:`Full history · all ${nrun} runs ▸`}</button>`:'';
   const rows=shown.map(q=>{
-    if(q.x) return `<tr class="fsp"><td colspan="14">${q.x} Day Spell</td></tr>`;
+    if(q.x) return `<tr class="fsp"><td colspan="18">${q.x} Day Spell</td></tr>`;
     const cls=(q.p===1?'r1':'')+(q.tr?' ftr':'');
     return `<tr class="${cls}"><td class="n">${q.p??'–'}/${q.f??'–'}</td><td>${q.v||''}</td><td class="n">${dd(q.d)}</td><td>${q.g||''}</td><td class="n">${q.m||''}</td>`
       +`<td>${q.c||''}</td><td>${q.j||''}${q.b!=null?` (${q.b})`:''}</td><td class="n">${q.w!=null?q.w.toFixed(1):''}</td><td class="n">${q.sp!=null?q.sp.toFixed(2):''}</td>`
-      +`<td>${q.o||''}</td><td class="n">${q.mg!=null?q.mg.toFixed(1):''}</td><td class="n">${tm(q.t)}</td><td class="n">${q.ir||''}</td>`
+      +`<td>${q.o||''}</td><td class="n">${q.mg!=null?q.mg.toFixed(1):''}</td><td class="n">${tm(q.t)}</td><td class="n">${q.ir||''}</td>${ckCells(q)}`
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`;
   }).join('');
   o+=more+`<div class="fcsc"><table class="fct"><thead><tr><th>Plcg</th><th>Venue</th><th>Date</th><th>Track</th><th>Dist</th><th>Class</th><th>Jockey (Br)</th>`
-    +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="14" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
+    +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th>`
+    +`<th class="ckh" title="${CKT}">Early</th><th class="ckh" title="${CKT}">Mid</th><th class="ckh" title="${CKT}">Late</th><th class="ckh" title="${CKT}">Net</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="18" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
   // the phone's own table (Simon, 27 Oct 2026: "only show these items - no scroll over"): date, venue, placing, trip, class, replay
   const gs=g=>{ g=String(g||''); const n=(g.match(/\d+/)||[''])[0]; return /synth|poly/i.test(g)?'Syn':(g?g[0].toUpperCase()+n:''); };   // Good 4 -> G4
   const prow=shown.map(q=>q.x?`<tr class="fsp"><td colspan="7">${q.x} Day Spell</td></tr>`
@@ -1696,7 +1717,7 @@ const SMCTX={'lone speed':'one horse clearly wants the lead — expect it cheap 
 // One panel, closed with the speed map: LEFT the settle map's firm placing (stAllocate, the same one spot each the board
 // used) drawn as silks in lanes, the leader on the left and the rail at the foot; RIGHT Vince Accardi's race speed
 // profile, three bar panels (to the 800, 800-400, 400-post) of each runner's qualifying run at today's track, trip and
-// going (x.rsp, rsp_live.py), the blue dotted line the field's average, in barrier order with the inside draw at the
+// going (x.rsp, rsp_live.py), the blue dotted line the field average, in barrier order with the inside draw at the
 // foot; the tags MA / LA (best and worst three on the net), L (fastest two early) and a flag (below the line in all
 // three) are a reading aid only. Under both, behind "Runner by runner", one table with the settle chances and the
 // profile's numbers. Display only: nothing here moves a rating. A race without settle cells keeps the old columns on the
@@ -2357,7 +2378,7 @@ function wormBind(r){
 }
 
 // ---- Hong Kong race view (Simon, 7 Oct 2026: "the same as Aus as much as possible") --------------------------------
-// The Aus table (Mark and Wt dropped 19 Oct 2026: both are in the opened row). Ratings are in handicap pounds (hk_day.py): Base = the field's average mark +
+// The Aus table (Mark and Wt dropped 19 Oct 2026: both are in the opened row). Ratings are in handicap pounds (hk_day.py): Base = the field average mark +
 // form against the mark + the mark (ability); Adjust = weight carried + days off + HK starts (today), so adjCell() works
 // unchanged. Lengths use hk_base's pounds a length at the trip. The ledger draws x.fxg, the HK model's parts in pounds
 // (hk_day.py), and falls back to the five base parts for a day file written before the full model. No settle map or head-to-head yet.
@@ -2413,7 +2434,7 @@ function hkLedger(x,r){
   const info=(n,v,w)=>`<div><div class="n">${n}</div><div class="v">${v}</div><div class="w">${w}</div></div>`;
   return `<div class="adjsum"><span>Base</span><b>${x.wprbase.toFixed(1)}</b><span class="ar">&rarr;</span><span>SPM Rating</span><b class="tot">${x.rating.toFixed(1)}</b>`
     +`<span class="net ${nc}">${Math.abs(net)<0.05?'level':(net>0?'up':'down')+' '+Math.abs(net).toFixed(1)} on today's things</span>`
-    +`<span class="ar">· in handicap pounds · base starts at the field's average mark, ${r.markmean!=null?r.markmean.toFixed(1):'—'}</span></div>`
+    +`<span class="ar">· in handicap pounds · base starts at the field average mark, ${r.markmean!=null?r.markmean.toFixed(1):'—'}</span></div>`
     +(x.fxg?(`<div class="hkgrp">Base · ability</div><div class="adjr">`+x.fxg.filter(g=>g.g==='base').map(g=>cell(g.t,g.v,g.w)).join('')
       +`</div><div class="hkgrp">Adjust · today and the HK model's factors</div><div class="adjr">`+x.fxg.filter(g=>g.g!=='base').map(g=>cell(g.t,g.v,g.w)).join(''))
     :(`<div class="hkgrp">Base · ability</div><div class="adjr">`
@@ -2703,4 +2724,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 30 Oct 23:52</b> AEST &middot; your settle map</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 31 Oct 00:10</b> AEST &middot; the clock on the form guide</div><div style="height:34px"></div></body></html>
