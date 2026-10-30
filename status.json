@@ -1,28 +1,28 @@
 {
- "started": "2026-10-30T13:15:50",
+ "started": "2026-10-30T15:00:43",
  "dates": [
   "2026-10-30",
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Ipswich Soft 7 -> Soft 6",
+ "reason": "Moree Soft 7 -> Soft 5",
  "status": "ok",
  "acceptors": 601,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-29T21:22:54+00:00",
- "finished": "2026-10-30T14:09:49",
+ "finished": "2026-10-30T15:53:47",
  "going": {
   "Pakenham": "Soft 6",
   "Kilmore": "Soft 5",
   "Wagga": "Good 4",
-  "Moree": "Soft 7",
+  "Moree": "Soft 5",
   "Ipswich": "Soft 6",
   "Launceston": "Soft 5"
  },
  "scratchings": 129,
  "dashboard": "toprate_week_v2_2026-10-30.html",
- "fingerprint": "0708b82a2468"
+ "fingerprint": "45a54a2321ac"
 }
