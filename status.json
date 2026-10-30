@@ -1,19 +1,19 @@
 {
- "started": "2026-10-30T10:01:20",
+ "started": "2026-10-30T12:01:01",
  "dates": [
   "2026-10-30",
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Pakenham scratched R4 #16",
+ "reason": "Kilmore scratched R4 #7; Launceston scratched R3 #12/13, R5 #11, R7 #10",
  "status": "ok",
  "acceptors": 601,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-29T21:22:54+00:00",
- "finished": "2026-10-30T11:08:19",
+ "finished": "2026-10-30T12:54:25",
  "going": {
   "Pakenham": "Soft 6",
   "Kilmore": "Soft 5",
@@ -22,7 +22,7 @@
   "Ipswich": "Soft 7",
   "Launceston": "Soft 5"
  },
- "scratchings": 124,
+ "scratchings": 129,
  "dashboard": "toprate_week_v2_2026-10-30.html",
- "fingerprint": "b0381d0cf746"
+ "fingerprint": "4ba0e973edf7"
 }
