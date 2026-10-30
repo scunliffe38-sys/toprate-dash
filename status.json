@@ -1,28 +1,28 @@
 {
- "started": "2026-10-30T18:00:54",
+ "started": "2026-10-30T19:00:40",
  "dates": [
   "2026-10-30",
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Launceston scratched R2 #5; Wagga scratched R8 #11",
+ "reason": "Pakenham Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 601,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-29T21:22:54+00:00",
- "finished": "2026-10-30T18:54:24",
+ "finished": "2026-10-30T19:55:59",
  "going": {
-  "Pakenham": "Soft 6",
-  "Moree": "Soft 5",
-  "Ipswich": "Soft 5",
+  "Pakenham": "Soft 5",
   "Launceston": "Good 4",
   "Kilmore": "Soft 5",
-  "Wagga": "Good 4"
+  "Wagga": "Good 4",
+  "Moree": "Soft 5",
+  "Ipswich": "Soft 5"
  },
  "scratchings": 132,
  "dashboard": "toprate_week_v2_2026-10-30.html",
- "fingerprint": "55dbec26670d"
+ "fingerprint": "c1c2e06e1cc4"
 }
