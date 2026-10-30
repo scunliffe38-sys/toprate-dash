@@ -1,18 +1,18 @@
 {
- "started": "2026-10-31T08:23:50",
+ "started": "2026-10-31T10:02:28",
  "dates": [
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "morning harvest",
+ "reason": "Pioneer Park going Good; Dalby Soft 7 -> Soft 6; Dalby scratched R5 #12/13/14/15, R7 #15",
  "status": "ok",
  "acceptors": 1915,
  "rider_share": 0.87,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-30T21:22:31+00:00",
- "finished": "2026-10-31T09:30:28",
+ "finished": "2026-10-31T10:49:55",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -27,10 +27,11 @@
   "Dubbo": "Good 4",
   "Gold Coast": "Soft 5",
   "Toowoomba": "Soft 5",
-  "Dalby": "Soft 7",
-  "Rockhampton": "Soft 5"
+  "Dalby": "Soft 6",
+  "Rockhampton": "Soft 5",
+  "Pioneer Park": "Good"
  },
- "scratchings": 322,
+ "scratchings": 327,
  "dashboard": "toprate_week_v2_2026-10-31.html",
- "fingerprint": "c4360d42b194"
+ "fingerprint": "58e315da1241"
 }
