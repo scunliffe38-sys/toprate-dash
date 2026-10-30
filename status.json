@@ -1,28 +1,36 @@
 {
- "started": "2026-10-30T19:00:40",
+ "started": "2026-10-31T03:07:47",
  "dates": [
-  "2026-10-30",
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Pakenham Soft 6 -> Soft 5",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 601,
- "rider_share": 1.0,
+ "acceptors": 1915,
+ "rider_share": 0.87,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
- "extract": "2026-10-29T21:22:54+00:00",
- "finished": "2026-10-30T19:55:59",
+ "extract": "2026-10-30T16:06:44+00:00",
+ "finished": "2026-10-31T04:07:52",
  "going": {
-  "Pakenham": "Soft 5",
-  "Launceston": "Good 4",
-  "Kilmore": "Soft 5",
-  "Wagga": "Good 4",
-  "Moree": "Soft 5",
-  "Ipswich": "Soft 5"
+  "Flemington": "Good 4",
+  "Randwick": "Good 4",
+  "Doomben": "Soft 7",
+  "Morphettville": "Good 4",
+  "Ascot": "Good 4",
+  "Mortlake": "Soft 5",
+  "Traralgon": "Good 4",
+  "Wycheproof": "Soft 5",
+  "Newcastle": "Good 4",
+  "Coffs Harbour": "Heavy 8",
+  "Dubbo": "Good 4",
+  "Gold Coast": "Soft 6",
+  "Dalby": "Soft 7",
+  "Toowoomba": "Soft 5",
+  "Rockhampton": "Soft 5"
  },
- "scratchings": 132,
- "dashboard": "toprate_week_v2_2026-10-30.html",
- "fingerprint": "c1c2e06e1cc4"
+ "scratchings": 164,
+ "dashboard": "toprate_week_v2_2026-10-31.html",
+ "fingerprint": "d8ed093a847b"
 }
