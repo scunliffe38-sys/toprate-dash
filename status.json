@@ -1,37 +1,25 @@
 {
- "started": "2026-10-31T21:00:46",
+ "started": "2026-11-01T08:47:56",
  "dates": [
-  "2026-10-31",
   "2026-11-01",
-  "2026-11-02"
+  "2026-11-02",
+  "2026-11-03"
  ],
- "reason": "Toowoomba scratched R5 #4",
+ "reason": "morning harvest",
  "status": "ok",
- "acceptors": 1915,
- "rider_share": 0.87,
- "extract_max_date": "2026-11-02",
+ "acceptors": 445,
+ "rider_share": 1.0,
+ "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-10-30T21:22:31+00:00",
- "finished": "2026-10-31T21:40:58",
+ "extract": "2026-10-31T21:46:41+00:00",
+ "finished": "2026-11-01T10:14:43",
  "going": {
-  "Toowoomba": "Soft 5",
-  "Flemington": "Good 4",
-  "Randwick": "Good 4",
-  "Doomben": "Soft 5",
-  "Morphettville": "Good 4",
-  "Ascot": "Soft 5",
-  "Traralgon": "Soft 7",
-  "Mortlake": "Soft 5",
-  "Wycheproof": "Good 4",
-  "Newcastle": "Good 4",
-  "Coffs Harbour": "Soft 7",
-  "Dubbo": "Good 3",
-  "Gold Coast": "Soft 5",
-  "Dalby": "Soft 5",
-  "Rockhampton": "Soft 5",
-  "Pioneer Park": "Good"
+  "Mornington": "Good 4",
+  "Muswellbrook": "Soft 7",
+  "Nowra": "Good 4",
+  "Naracoorte": "Good 4"
  },
- "scratchings": 345,
- "dashboard": "toprate_week_v2_2026-10-31.html",
- "fingerprint": "a563a365cbf7"
+ "scratchings": 100,
+ "dashboard": "toprate_week_v2_2026-11-01.html",
+ "fingerprint": "d3d1ecc140ba"
 }
