@@ -1,37 +1,37 @@
 {
- "started": "2026-10-31T17:31:03",
+ "started": "2026-10-31T18:15:56",
  "dates": [
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Ascot scratched R6 #3",
+ "reason": "Dalby scratched R8 #4",
  "status": "ok",
  "acceptors": 1915,
  "rider_share": 0.87,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-30T21:22:31+00:00",
- "finished": "2026-10-31T18:12:38",
+ "finished": "2026-10-31T18:57:01",
  "going": {
-  "Flemington": "Good 4",
-  "Randwick": "Good 4",
   "Doomben": "Soft 5",
-  "Morphettville": "Good 4",
   "Ascot": "Soft 5",
-  "Traralgon": "Soft 7",
-  "Mortlake": "Soft 5",
-  "Newcastle": "Good 4",
-  "Dubbo": "Good 3",
   "Gold Coast": "Soft 5",
   "Toowoomba": "Soft 5",
+  "Flemington": "Good 4",
+  "Randwick": "Good 4",
+  "Morphettville": "Good 4",
+  "Traralgon": "Soft 7",
+  "Mortlake": "Soft 5",
+  "Wycheproof": "Good 4",
+  "Newcastle": "Good 4",
+  "Coffs Harbour": "Soft 7",
+  "Dubbo": "Good 3",
   "Dalby": "Soft 5",
   "Rockhampton": "Soft 5",
-  "Pioneer Park": "Good",
-  "Wycheproof": "Good 4",
-  "Coffs Harbour": "Soft 7"
+  "Pioneer Park": "Good"
  },
- "scratchings": 343,
+ "scratchings": 344,
  "dashboard": "toprate_week_v2_2026-10-31.html",
- "fingerprint": "6e6d6e39756b"
+ "fingerprint": "5678db797930"
 }
