@@ -1,18 +1,18 @@
 {
- "started": "2026-10-31T13:16:54",
+ "started": "2026-10-31T14:02:14",
  "dates": [
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Morphettville scratched R4 #2, R8 #15",
+ "reason": "Wycheproof scratched R3 #4; Dalby scratched R1 #1",
  "status": "ok",
  "acceptors": 1915,
  "rider_share": 0.87,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-30T21:22:31+00:00",
- "finished": "2026-10-31T13:58:01",
+ "finished": "2026-10-31T14:43:59",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -31,7 +31,7 @@
   "Rockhampton": "Soft 5",
   "Pioneer Park": "Good"
  },
- "scratchings": 333,
+ "scratchings": 335,
  "dashboard": "toprate_week_v2_2026-10-31.html",
- "fingerprint": "1ac3fa4070e1"
+ "fingerprint": "6cb93f3dfc5d"
 }
