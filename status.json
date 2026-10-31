@@ -1,18 +1,18 @@
 {
- "started": "2026-11-01T08:47:56",
+ "started": "2026-11-01T10:01:17",
  "dates": [
   "2026-11-01",
   "2026-11-02",
   "2026-11-03"
  ],
- "reason": "morning harvest",
+ "reason": "retry: Naracoorte scratched R3 #13/14/15, R5 #11, R6 #12/15, R7 #6/13; Mornington scratched R1 #9, R2 #14, R3 #8/15, R4 #1/2/10/15, R5 #6, R7 #8, R9 #5/6; Muswellbrook Soft 5 -> So",
  "status": "ok",
  "acceptors": 445,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-31T21:46:41+00:00",
- "finished": "2026-11-01T10:14:43",
+ "finished": "2026-11-01T10:51:42",
  "going": {
   "Mornington": "Good 4",
   "Muswellbrook": "Soft 7",
@@ -21,5 +21,5 @@
  },
  "scratchings": 100,
  "dashboard": "toprate_week_v2_2026-11-01.html",
- "fingerprint": "d3d1ecc140ba"
+ "fingerprint": "406b7f0bcbc1"
 }
