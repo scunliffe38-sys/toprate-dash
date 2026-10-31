@@ -1,22 +1,22 @@
 {
- "started": "2026-10-31T14:46:34",
+ "started": "2026-10-31T15:31:46",
  "dates": [
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Wycheproof scratched R3 #8; Rockhampton scratched R2 #6; Mortlake scratched R5 #5; Traralgon Soft 5 -> Soft 6; Traralgon scratched R7 #1",
+ "reason": "Dubbo Good 4 -> Good 3; Traralgon scratched R6 #7; Doomben Soft 6 -> Soft 5; Doomben scratched R4 #10",
  "status": "ok",
  "acceptors": 1915,
  "rider_share": 0.87,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-30T21:22:31+00:00",
- "finished": "2026-10-31T15:29:09",
+ "finished": "2026-10-31T16:12:14",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
-  "Doomben": "Soft 6",
+  "Doomben": "Soft 5",
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
   "Traralgon": "Soft 6",
@@ -24,14 +24,14 @@
   "Wycheproof": "Good 4",
   "Newcastle": "Good 4",
   "Coffs Harbour": "Soft 7",
-  "Dubbo": "Good 4",
+  "Dubbo": "Good 3",
   "Gold Coast": "Soft 5",
   "Toowoomba": "Soft 5",
   "Dalby": "Soft 6",
   "Rockhampton": "Soft 5",
   "Pioneer Park": "Good"
  },
- "scratchings": 339,
+ "scratchings": 341,
  "dashboard": "toprate_week_v2_2026-10-31.html",
- "fingerprint": "43d9c0433af3"
+ "fingerprint": "b51425bbf62a"
 }
