@@ -1,25 +1,25 @@
 {
- "started": "2026-10-31T11:16:52",
+ "started": "2026-10-31T12:16:58",
  "dates": [
   "2026-10-31",
   "2026-11-01",
   "2026-11-02"
  ],
- "reason": "Ascot Good 4 -> Soft 5; Ascot scratched R7 #10, R10 #4",
+ "reason": "Traralgon Good 4 -> Soft 5; Doomben Soft 7 -> Soft 6; Flemington scratched R3 #8, R6 #11",
  "status": "ok",
  "acceptors": 1915,
  "rider_share": 0.87,
  "extract_max_date": "2026-11-02",
  "card_source": "toprate",
  "extract": "2026-10-30T21:22:31+00:00",
- "finished": "2026-10-31T12:01:11",
+ "finished": "2026-10-31T13:00:59",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
-  "Doomben": "Soft 7",
+  "Doomben": "Soft 6",
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
-  "Traralgon": "Good 4",
+  "Traralgon": "Soft 5",
   "Mortlake": "Soft 5",
   "Wycheproof": "Good 4",
   "Newcastle": "Good 4",
@@ -31,7 +31,7 @@
   "Rockhampton": "Soft 5",
   "Pioneer Park": "Good"
  },
- "scratchings": 329,
+ "scratchings": 331,
  "dashboard": "toprate_week_v2_2026-10-31.html",
- "fingerprint": "760567cf8fb3"
+ "fingerprint": "a7cfb9f6f542"
 }
