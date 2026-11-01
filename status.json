@@ -1,26 +1,27 @@
 {
- "started": "2026-11-01T12:16:57",
+ "started": "2026-11-01T13:32:54",
  "dates": [
   "2026-11-01",
   "2026-11-02",
   "2026-11-03"
  ],
- "reason": "Nowra Good 4 -> Good 3; Albany going Soft 7; Albany scratched R5 #6, R6 #8",
+ "reason": "Nowra scratched R2 #2, R4 #11, R5 #12",
  "status": "ok",
  "acceptors": 445,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-10-31T21:46:41+00:00",
- "finished": "2026-11-01T13:02:57",
+ "finished": "2026-11-01T14:17:47",
  "going": {
   "Mornington": "Good 4",
   "Muswellbrook": "Soft 7",
   "Nowra": "Good 3",
   "Naracoorte": "Good 4",
-  "Albany": "Soft 7"
+  "Albany": "Soft 7",
+  "Happy Valley": "Good"
  },
- "scratchings": 103,
+ "scratchings": 106,
  "dashboard": "toprate_week_v2_2026-11-01.html",
- "fingerprint": "5659a335654b"
+ "fingerprint": "7b175d1889dc"
 }
