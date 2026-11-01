@@ -1,23 +1,23 @@
 {
- "started": "2026-11-02T03:08:03",
+ "started": "2026-11-02T08:23:49",
  "dates": [
   "2026-11-02",
   "2026-11-03"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 246,
- "rider_share": 0.85,
+ "rider_share": 1.0,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
- "extract": "2026-11-01T16:06:58+00:00",
- "finished": "2026-11-02T03:58:34",
+ "extract": "2026-11-01T21:22:31+00:00",
+ "finished": "2026-11-02T09:14:17",
  "going": {
-  "Ballarat": "Soft 6",
-  "Ballina": "Soft 7",
+  "Ballarat": "Soft 5",
+  "Ballina": "Heavy 8",
   "Corowa": "Good 4"
  },
- "scratchings": 37,
+ "scratchings": 79,
  "dashboard": "toprate_week_v2_2026-11-02.html",
- "fingerprint": "39bff73a8788"
+ "fingerprint": "61fc2ba42568"
 }
