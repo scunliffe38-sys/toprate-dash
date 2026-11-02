@@ -1542,7 +1542,8 @@ function strikeScr(r,lv){
   const s=new Set((lv.scr||[]).map(String));
   r.runners=r.all.filter(x=>!s.has(String(x.no))).sort((a,b)=>b.rating-a.rating);
   const live=r.all.filter(x=>s.has(String(x.no)));
-  r.scr=live.concat(cardScr(r).filter(y=>!s.has(String(y.no)))).sort((a,b)=>(+a.no)-(+b.no));
+  // the card's list is never filtered on lv.scr: TAB lists those same saddlecloths, so that emptied the foot (08:46, 3 Nov 2026)
+  r.scr=live.concat(cardScr(r)).sort((a,b)=>(+a.no)-(+b.no));
   if(live.length) r.struck=true;
 }
 DATA.days.forEach(d=>d.meetings.forEach(m=>m.races.forEach(r=>{ const c=cardScr(r); if(c.length) r.scr=c.slice().sort((a,b)=>(+a.no)-(+b.no)); })));
@@ -2765,4 +2766,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 03 Nov 08:43</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 03 Nov 08:50</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
