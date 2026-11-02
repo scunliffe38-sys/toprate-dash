@@ -7,7 +7,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<meta name="theme-color" content="#005C42">
+<meta name="theme-color" content="#006DA6">
 <meta name="application-name" content="SPM">
 <meta name="apple-mobile-web-app-title" content="SPM">
 <title>SPM — week</title>
@@ -15,15 +15,17 @@
 <style>
 :root{
   color-scheme:light;
-  /* SPM palette (Simon, 23 Oct 2026): dark green brand, mid green highlight, dark brown second accent,
-     warm grey fills, brick red for negatives; the extended set for multi-series charts */
-  --green:#005C42; --green2:#759F72; --brown:#592414; --warm:#CFCDBF; --brick:#A52210;
-  --sblue:#99CCCC; --dblue:#003366; --syellow:#FCE070; --teal:#43978F; --porange:#F7A465;
-  --keyrgb:117,159,114;   /* the rating column's tint, rgba(var(--keyrgb),a) */
-  --ink:#F3F2ED; --panel:#FFFFFF; --panel2:#E7E6DD; --rule:#CFCDBF;
-  --text:#16211C; --dim:#4F5A55; --faint:#858C86;
-  --hk:#8E2A3B; --hkbg:#F6ECEE;
-  --pos:#005C42; --neg:#A52210; --amber:#B8741A; --brass:#592414; --flat:#CFCDBF; --cond:#003366;
+  /* SPM palette, blue (Simon, 3 Nov 2026: "more blue ... blue, light blue, grey ... no pink or purple", from the
+     Racing Victoria style guide: RV blue #006DA6, process blue #0085CA, cool grey #6D6E71). The token names keep
+     their old colour words so nothing else moves: --green is the brand blue, --brass the deep blue-grey accent,
+     --warm the cool grey fill. Red stays for negatives only. Before 3 Nov: dark green #005C42 / brown #592414. */
+  --green:#006DA6; --green2:#0085CA; --brown:#2E5570; --warm:#D9DCE0; --brick:#A52210;
+  --sblue:#9CD3F0; --dblue:#003F6B; --syellow:#FCE070; --teal:#4FA3D1; --porange:#8FA3B5;
+  --keyrgb:0,133,202;   /* the rating column's tint, rgba(var(--keyrgb),a) */
+  --ink:#F2F4F6; --panel:#FFFFFF; --panel2:#E4E7EA; --rule:#D0D4D8;
+  --text:#1A2733; --dim:#4E5A66; --faint:#868C92;
+  --hk:#4E5A66; --hkbg:#EEF1F4;
+  --pos:#006DA6; --neg:#A52210; --amber:#B8741A; --brass:#2E5570; --flat:#D9DCE0; --cond:#003F6B;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--text);font-family:Gotham,system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
@@ -278,7 +280,7 @@ th.bk small{display:block;font-size:10px;color:var(--faint);font-family:"Archivo
 .edge.p{color:var(--pos)} .edge.g{color:var(--neg)}
 .detail td{background:var(--panel);padding:14px 16px 18px}
 /* the worm (Simon, 16 Oct 2026): the horse's last ten figures as a line, an icon on the row and a panel under it. Display only. */
-:root{--wdry:#CFCDBF;--wsoft:#43978F;--wwet:#003366;--wsyn:#F7A465}
+:root{--wdry:#D9DCE0;--wsoft:#7FB8DC;--wwet:#003F6B;--wsyn:#9A9CA0}
 .wi{display:inline-flex;align-items:center;border:1px solid var(--rule);border-radius:3px;background:var(--panel);padding:2px 5px;cursor:pointer;vertical-align:middle;flex:0 0 auto;font:inherit}
 .wi svg{display:block;width:34px;height:14px;overflow:visible}
 .wi .l{fill:none;stroke:var(--dim);stroke-width:1.4;stroke-linecap:round}
@@ -422,7 +424,7 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .smstack{display:flex;flex-direction:column-reverse;gap:3px;justify-content:flex-start;min-height:24px}
 .smc{display:flex;align-items:center;gap:5px;padding:3px 5px 3px 4px;border-radius:2px;background:var(--panel2);border-left:3px solid var(--flat);min-width:0}
 .smc.p{border-left-color:var(--pos)} .smc.g{border-left-color:var(--neg)}
-.smc.led{background:rgba(153,204,204,.35)}
+.smc.led{background:rgba(156,211,240,.45)}
 .smc b{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:12.5px;font-variant-numeric:tabular-nums;color:var(--text);flex:0 0 auto;min-width:13px;text-align:right}
 .smc span{font-size:11.5px;color:var(--dim);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;flex:1 1 auto;min-width:0}
 .smc.led span{color:var(--text)}
@@ -444,7 +446,7 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .stb .cell.f{background:rgba(var(--keyrgb),.06)}
 .stb .smc{padding:2px 4px 2px 3px}
 .stb .smc.wd{border-left-color:var(--neg)}
-.stb .smc.mv{box-shadow:inset 0 0 0 2px #592414}   /* moved by Simon on settle.html (usermap.py) */
+.stb .smc.mv{box-shadow:inset 0 0 0 2px var(--brass)}   /* moved by Simon on settle.html (usermap.py) */
 .strail{grid-column:2 / span 6;height:6px;margin-top:3px;background:linear-gradient(90deg,var(--brass),rgba(var(--keyrgb),.28));border-radius:1px}
 .strl{grid-column:1;font-size:9.5px;color:var(--faint);text-transform:uppercase;letter-spacing:.08em;text-align:right;padding-right:7px;align-self:center}
 .sttab{width:100%;border-collapse:collapse;margin-top:12px;font-size:11.5px;font-variant-numeric:tabular-nums}
@@ -690,9 +692,9 @@ th:has(.mkt-fresh){white-space:nowrap}
 .spmap .run.ld rect.bg{stroke:var(--brass);stroke-width:1.5}
 .spmap .run.wd rect.bg{stroke:var(--neg);stroke-width:1.5}
 .spmap .run.sel rect.bg{stroke:var(--text);stroke-width:2}
-.spmap .run.mv rect.bg{stroke:#592414;stroke-width:2.5}   /* moved by Simon on settle.html */
-.uadj{display:inline-block;margin-left:6px;padding:1px 5px;border-radius:2px;background:#592414;color:#fff;font-size:9.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;vertical-align:1px}   /* a map built from Simon's (deploy_usermap3) */
-.spu{font-size:11.5px;color:var(--dim);margin-top:4px} .spu b{color:#592414} .spu a{color:var(--green)}
+.spmap .run.mv rect.bg{stroke:var(--brass);stroke-width:2.5}   /* moved by Simon on settle.html */
+.uadj{display:inline-block;margin-left:6px;padding:1px 5px;border-radius:2px;background:var(--brass);color:#fff;font-size:9.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;line-height:1.4;vertical-align:1px}   /* a map built from Simon's (deploy_usermap3) */
+.spu{font-size:11.5px;color:var(--dim);margin-top:4px} .spu b{color:var(--brass)} .spu a{color:var(--green)}
 .spmap .no{fill:var(--text);font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:10px}
 .spmap .lp{fill:var(--brass);font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:9px} .spmap .lp.rv{fill:var(--dim)}
 .spprof .ttl{fill:var(--dim);font-size:10px;font-family:"Archivo Narrow",sans-serif;font-weight:600;letter-spacing:.06em}
@@ -762,9 +764,9 @@ nav button{font-family:Gotham,sans-serif;font-weight:500;font-size:13.5px}
 /* brand accent: dark green on headings, selections and the rating column */
 th{color:var(--green);font-weight:500}
 th.key,th.key2{color:var(--green)}
-td.key,th.key,td.key2,th.key2{background:rgba(117,159,114,.12)}
-td.key,th.key{box-shadow:inset 1px 0 0 rgba(0,92,66,.35)}
-td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(0,92,66,.35)}
+td.key,th.key,td.key2,th.key2{background:rgba(var(--keyrgb),.12)}
+td.key,th.key{box-shadow:inset 1px 0 0 rgba(0,109,166,.35)}
+td.key2,th.key2{box-shadow:inset -1px 0 0 rgba(0,109,166,.35)}
 .days button[aria-selected=true]{border-bottom-color:var(--green)}
 nav button[aria-selected=true]{border-bottom-color:var(--green)}
 nav button[aria-selected=true] .rt{color:var(--green)}
@@ -776,7 +778,7 @@ tbody tr.run .rate{color:var(--text)} tbody tr.run.top .rate{color:var(--green)}
 .wg .ln,.wg .today,.wg .win{stroke:var(--green)}
 .wg .tl{fill:var(--green)}
 .spprof .avg{stroke:var(--dblue)}
-.smc.led{background:rgba(153,204,204,.35)}
+.smc.led{background:rgba(156,211,240,.45)}
 .spprof .spb{fill:var(--warm)} .spprof .spb.ma{fill:var(--green2);opacity:1} .spprof .spb.la{fill:var(--brick);opacity:.75}
 /* ---- second pass, 23 Oct 2026 (Simon: "do all of those things") ---- */
 /* 1. the masthead: a dark green band, edge to edge, white type, the live buttons outlined in white */
@@ -784,7 +786,7 @@ header{background:var(--green);color:#fff;border-bottom:0;margin:-18px 0 12px;pa
   box-shadow:0 0 0 100vmax var(--green);clip-path:inset(0 -100vmax)}
 header h1{color:#fff}
 header .brand{color:#fff;border-right-color:rgba(255,255,255,.35)}
-header .brand .d{color:#A9CBA6}
+header .brand .d{color:#9CD3F0}
 header .date{color:rgba(255,255,255,.78)}
 header .wlive{background:transparent;border-color:rgba(255,255,255,.7);color:#fff}
 header .wlive:hover{background:#fff;color:var(--green)}
@@ -816,7 +818,7 @@ nav button.sum{color:var(--green)}
 .res.r4{border:1px solid var(--rule);color:var(--faint)}
 .tagv.gold,.tagv{border:0;border-radius:9px;background:rgba(var(--keyrgb),.22);color:var(--green);padding:1px 7px}
 /* 6. small touches: a warm hover band, a soft yellow edge on a race inside 10 minutes, a drawn placeholder silk */
-tbody tr.run:hover,tbody tr.srow:hover{background:rgba(207,205,191,.28)}
+tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 .daytab tr.near td:first-child{box-shadow:inset 3px 0 0 var(--syellow)}
 .daytab tr.near td{background:rgba(252,224,112,.14)}
 .silk,.silk.ph,.rtab .psk .silk{background:transparent}   /* no grey box: TAB answers a silk it cannot draw with a 404, and the space stays empty (Simon, 23 Oct 2026) */
@@ -2243,7 +2245,7 @@ function speedMapBody(r){ const was=smap; smap=true; try{ return speedMap(r); } 
 // at each forecast, spread so they do not overlap. A click on a name or a line highlights that runner; several can be on.
 // WSEL is the highlighted set for the race on screen; it clears when the race changes. Display only.
 let WSEL=new Set(), WSELK='';
-const WPAL=['#1F77B4','#D62728','#2CA02C','#9467BD','#FF7F0E','#17BECF','#8C564B','#E377C2','#7F7F00','#393B79','#637939','#AD494A','#7B4173','#3182BD','#E6550D','#31A354'];
+const WPAL=['#006DA6','#D62728','#2CA02C','#6D6E71','#FF7F0E','#17BECF','#8C564B','#7FB8DC','#7F7F00','#003F6B','#637939','#AD494A','#0085CA','#A3A5A8','#E6550D','#31A354'];   // no pink or purple (Simon, 3 Nov 2026)
 window.wsel=no=>{ if(no==null) WSEL.clear(); else if(WSEL.has(no)) WSEL.delete(no); else WSEL.add(no); draw(); };
 function wcmpTop(r){
   let b=null; for(const x of r.runners){ if(x.wb0==null) continue; const td=wLines(r,x)[1]; if(b===null||td>b[1]) b=[x,td]; }
@@ -2749,4 +2751,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 02 Nov 23:47</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 03 Nov 00:09</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
