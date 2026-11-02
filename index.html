@@ -1201,7 +1201,7 @@ function goingBar(){
   if(!m||isHK(m)||!m.races.some(r=>r.runners.length&&r.runners[0].condc)) return '';
   const u=m.going_user||'';
   return `<div class="mgo"><label><span class="lbl">Track</span><select class="surf" onchange="pickGoing(this.value)" title="Rate every race at ${m.track} on this track rating">`+
-    `<option value=""${u?'':' selected'}>${m.going?'As posted · '+m.going:'Going not posted'}</option>`+
+    `<option value=""${u?'':' selected'}>${goShow(m)?'As posted · '+goShow(m)+(goDiff(m)?' (rated on '+m.going+')':''):'Going not posted'}</option>`+
     GOINGS.map(g=>`<option value="${g}"${u===g?' selected':''}>${g}</option>`).join('')+`</select></label>`+
     (u?`<span class="rerated">every race re-rated on ${u}</span><button class="surfall" onclick="pickGoing('')">back to ${m.going||'as rated'}</button>`+
        `<span class="gonote">going and barrier factors only; the learned base and settle map stay on ${m.going||'the card'}</span>`:'')+`</div>`;
@@ -1546,10 +1546,18 @@ function renormScr(r){
   r.runners.forEach(x=>{ if(!(x.fair>0)) return; const p=1/x.fair/z; x.pct=+(100*p).toFixed(1); x.fair=+(1/p).toFixed(2); });
 }
 const scrRows=(r,span)=>(r.scr||[]).map(x=>`<tr class="scr"><td class="tab">${x.no}</td><td colspan="${span-1}"><div class="horse"><s>${x.name}</s><span class="scrl">Scratched</span></div></td></tr>`).join('');
+// The going shown is TAB's posted one from live.json when it has one (m.going_live), else the going the rating used
+// (m.going): the day-ahead card is rated before TAB posts (3 Nov 2026, Simon: the track rating should be on a meeting
+// held tomorrow; every meeting was blank). When the two differ the title and the race header say so. Display only: the
+// ratings, pickGoing's device re-rate and its stored key stay on m.going.
+const goShow=m=>m.going_live||m.going||'';
+const goDiff=m=>!!(m.going_live&&m.going&&m.going_live!==m.going);
+const goTitle=m=>m.going_user?` title="your going; posted ${goShow(m)||'none'}"`:goDiff(m)?` title="TAB posts ${m.going_live}; rated on ${m.going}"`:'';
 function applyLivePrices(races,date){
   DATA.days.forEach(d=>{ if(date&&d.date&&d.date!==date) return;
     d.meetings.forEach(m=>m.races.forEach(r=>{
       const lv=races[`${m.track}|${r.no}`]; if(!lv) return;
+      if(lv.going) m.going_live=lv.going;          // TAB's posted going, ahead of the rating that used m.going (3 Nov 2026)
       strikeScr(r,lv);
       const p=lv.p||{};
       const bp=(lv.bf&&lv.bf.p)||{}; r.bfm=lv.bf?lv.bf.matched:null;
@@ -1598,18 +1606,18 @@ function drawMeets(){
       <span class="sb"><span>${sm.length} meeting${sm.length===1?'':'s'}</span><span class="w">${np} to look at</span></span></button>`+strip.map(i=>{const m=d.meetings[i];return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
       <span class="sb"><span>${m.state}</span>
-        <span class="${/soft|heavy/i.test(m.going_user||m.going||'')?'w':''}"${m.going_user?` title="your going; posted ${m.going||'none'}"`:''}>${m.going_user?m.going_user+'*':(m.going||'')}</span></span></button>`;}).join("")
+        <span class="${/soft|heavy/i.test(m.going_user||goShow(m))?'w':''}"${goTitle(m)}>${m.going_user?m.going_user+'*':goShow(m)+(goDiff(m)?'†':'')}</span></span></button>`;}).join("")
     +(other.length?`<button class="more" aria-expanded="${allMeets}" title="${allMeets?'put them away':'the other cards of the day'}" onclick="setAllMeets(${!allMeets})">${allMeets?'Hide other':'Other '+other.length+' ›'}</button>`:'');
   $("meets2").innerHTML=(allMeets&&other.length)
     ?`<span class="lbl">OTHER MEETINGS</span>`+other.map(i=>{const m=d.meetings[i];return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
       <span class="sb"><span>${m.state}</span>
-        <span class="${/soft|heavy/i.test(m.going_user||m.going||'')?'w':''}"${m.going_user?` title="your going; posted ${m.going||'none'}"`:''}>${m.going_user?m.going_user+'*':(m.going||'')}</span></span></button>`;}).join("")
+        <span class="${/soft|heavy/i.test(m.going_user||goShow(m))?'w':''}"${goTitle(m)}>${m.going_user?m.going_user+'*':goShow(m)+(goDiff(m)?'†':'')}</span></span></button>`;}).join("")
     :'';
   $("meetshk").innerHTML=hkMeets(d).map(i=>{const m=d.meetings[i], rs=m.races;
     return `<button role="tab" aria-selected="${i===meet}" onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
-      <span class="sb"><span>${rs.length?rs[0].time+'–'+rs[rs.length-1].time:''}</span><span>${[m.going,m.rail?'"'+m.rail+'"':''].filter(Boolean).join(' · ')}</span></span></button>`;}).join("");
+      <span class="sb"><span>${rs.length?rs[0].time+'–'+rs[rs.length-1].time:''}</span><span>${[goShow(m),m.rail?'"'+m.rail+'"':''].filter(Boolean).join(' · ')}</span></span></button>`;}).join("");
   $("h1").textContent=meet<0?fmtDate(d.date,{weekday:'long'}):M().track;
   const wl=$("wlive"), wm=meet<0?null:M();
   if(wl&&wm){   // shown on every meeting, HK too (Simon, 25 Oct 2026): it plays racing.com's one national feed, not this meeting's
@@ -1638,7 +1646,7 @@ function drawDay(){
     h+=`<tr class="srow${big?' big':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
       <td>${silk(x)}</td>
       <td><div class="stop">${x.name}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
-      <td><div class="stop">${m.track} R${r.no}</div><div class="sname">${r.time||''} · ${r.dist}m ${r.cls}${m.going?` · ${m.going}`:''}</div></td>
+      <td><div class="stop">${m.track} R${r.no}</div><div class="sname">${r.time||''} · ${r.dist}m ${r.cls}${goShow(m)?` · ${goShow(m)}`:''}</div></td>
       <td class="rate" style="font-size:19px">${x.rating.toFixed(1)}</td>
       <td class="edge ${big?'big':(gap>=GAP_STANDOUT?'p':(gap<0?'g':''))}">${fxsign(gap)}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
@@ -2404,7 +2412,7 @@ function drawRaceHK(){
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);
   const bxbook=r.runners.filter(x=>x.bx).reduce((a,x)=>a+100/x.bx,0);
   const course=r.surf==='synth'?'All weather':`Turf${r.rail?' "'+r.rail+'" course':''}`;
-  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''} &nbsp;·&nbsp; ${r.going||'going not posted'}
+  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''} &nbsp;·&nbsp; ${goDiff(m)?m.going_live+' (rated on '+m.going+')':(r.going||goShow(m)||'going not posted')}
     <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong${wxRace(M().track,r)}</div>${hkReplay(m,r,lv)}</div>`;
   h+=drillRow(m,r);
   h+=`<div class="scroll"><table class="rtab hk"><thead><tr><th></th><th>Runner</th><th>Draw</th><th class="l5h">Last 5</th>
@@ -2751,4 +2759,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 03 Nov 06:52</b> AEST &middot; HK card</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 03 Nov 07:25</b> AEST &middot; posted going on the page</div><div style="height:34px"></div></body></html>
