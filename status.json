@@ -1,23 +1,23 @@
 {
- "started": "2026-11-02T14:00:34",
+ "started": "2026-11-02T14:45:33",
  "dates": [
   "2026-11-02",
   "2026-11-03"
  ],
- "reason": "Ballarat Soft 6 -> Soft 7; Ballarat scratched R1 #6, R8 #2/15; Ballina Heavy 8 -> Soft 7",
+ "reason": "Corowa scratched R3 #2; Ballarat scratched R5 #11",
  "status": "ok",
  "acceptors": 246,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-03",
  "card_source": "toprate",
  "extract": "2026-11-01T21:22:31+00:00",
- "finished": "2026-11-02T14:30:32",
+ "finished": "2026-11-02T15:15:40",
  "going": {
   "Ballarat": "Soft 7",
   "Ballina": "Soft 7",
   "Corowa": "Soft 5"
  },
- "scratchings": 85,
+ "scratchings": 87,
  "dashboard": "toprate_week_v2_2026-11-02.html",
- "fingerprint": "2ce6c8b6949e"
+ "fingerprint": "17ef72d61de1"
 }
