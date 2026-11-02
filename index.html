@@ -28,7 +28,7 @@
 *{box-sizing:border-box}
 body{margin:0;background:var(--ink);color:var(--text);font-family:Gotham,system-ui,sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;text-size-adjust:100%}
 .an{font-family:"Archivo Narrow",Arial Narrow,sans-serif;font-variant-numeric:tabular-nums}
-.wrap{max-width:1180px;margin:0 auto;padding:18px 20px 60px}
+.wrap{max-width:1480px;margin:0 auto;padding:18px 20px 60px}
 header{border-bottom:1px solid var(--rule);padding-bottom:10px;margin-bottom:10px}
 .meet{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
 h1{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:34px;letter-spacing:-.01em;margin:0;line-height:1}
@@ -309,7 +309,7 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .wg text.fcl{font-size:11px;fill:var(--green);font-weight:600;font-style:italic}
 .wleg i.fc{background:none;border:2px dashed var(--green);width:8px;height:8px}
 .wg text.wbz{font-size:11px;fill:var(--green);font-weight:600}
-.wbox{max-width:980px}
+.wbox{max-width:1400px}
 .wbox svg{display:block;width:100%;height:auto;overflow:visible}
 .wg .ln{fill:none;stroke:var(--brass);stroke-width:2.2;stroke-linecap:round}
 .wg .today{stroke:var(--brass);stroke-width:1.2;stroke-dasharray:4 3}
@@ -2129,7 +2129,7 @@ function wormIcon(r,x){
 function wormRow(r,x){
   const all=wFig(x).slice(-wormN), [lo,hi]=wormDist, inR=z=>z[2]==null||(z[2]>=lo&&z[2]<=hi);   // a run whose trip the form file lost (17 Oct 2026: 80% of October's) cannot be filtered out by trip
   // drawn at the width it gets, so the labels stay readable on a phone (a fixed 700 viewBox shrank them to ~8px)
-  const W=Math.max(340,Math.min(980,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))),H=W<500?200:240,L=34,R=W<500?70:86,T=14,B=40;
+  const W=Math.max(340,Math.min(1400,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))),H=W<500?200:240,L=34,R=W<500?70:86,T=14,B=40;
   // the scale fits the figures (Simon, 16 Oct: rounding out to whole fives left dead space under the line): the range of
   // the runs, today and the base, a 6-point minimum so a flat horse does not look volatile, and a small margin each side
   const [bs,td]=wLines(r,x);
@@ -2256,7 +2256,7 @@ function wormCompare(r){
   if(H0.length<2) return '<div class="wcmp"><div class="sm">Not enough form to compare.</div></div>';
   H0.forEach((h,i)=>{ h.c=WPAL[i%WPAL.length]; });               // each runner its own colour, in card order (Simon, 28 Oct 2026)
   const narrow=innerWidth<=560;
-  const W=Math.max(340,Math.min(980,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))), H=narrow?320:380;
+  const W=Math.max(340,Math.min(1400,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))), H=narrow?320:380;
   const L=30, R=narrow?132:170, T=16, B=30;
   // a 20-point window down from the top (the highest run, forecast or bar): the same depth every race, so races compare by eye;
   // anything lower leaves the foot (Simon, 28 Oct 2026)
@@ -2749,4 +2749,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 02 Nov 23:32</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 02 Nov 23:47</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
