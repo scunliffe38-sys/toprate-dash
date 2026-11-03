@@ -1,18 +1,18 @@
 {
- "started": "2026-11-03T16:45:45",
+ "started": "2026-11-03T17:05:03",
  "dates": [
   "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Kembla Grange scratched R6 #14",
+ "reason": "Kembla Grange scratched R6 #10",
  "status": "ok",
  "acceptors": 2271,
  "rider_share": 0.93,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-02T23:00:29+00:00",
- "finished": "2026-11-03T17:03:54",
+ "finished": "2026-11-03T17:23:44",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -33,5 +33,5 @@
  },
  "scratchings": 333,
  "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "29bc645f9c97"
+ "fingerprint": "6cbedfe30603"
 }
