@@ -1,22 +1,23 @@
 {
- "started": "2026-11-04T03:08:16",
+ "started": "2026-11-04T08:23:41",
  "dates": [
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
- "acceptors": 306,
- "rider_share": 0.88,
+ "acceptors": 400,
+ "rider_share": 0.85,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
- "extract": "2026-11-03T16:07:08+00:00",
- "finished": "2026-11-04T03:54:42",
+ "extract": "2026-11-03T21:22:32+00:00",
+ "finished": "2026-11-04T09:11:24",
  "going": {
-  "Kyneton (Vic)": "Soft 5",
-  "Port Lincoln (Sa)": "Soft 5"
+  "Kyneton": "Soft 7",
+  "Coffs Harbour": "Soft 7",
+  "Port Lincoln": "Good 4"
  },
- "scratchings": 26,
+ "scratchings": 82,
  "dashboard": "toprate_week_v2_2026-11-04.html",
- "fingerprint": "cdc1458aa13e"
+ "fingerprint": "6961ab3fbaaa"
 }
