@@ -1,18 +1,18 @@
 {
- "started": "2026-11-03T10:03:04",
+ "started": "2026-11-03T11:33:02",
  "dates": [
   "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "retry: Doomben scratched R7 #10",
+ "reason": "Fannie Bay scratched R4 #2; Hobart Soft 5 -> Good 4; Flemington scratched R7 #9; Ascot Good 4 -> Soft 5; Ascot scratched R6 #4, R8 #6/16/17/18, R9 #1; Bunbury Soft 5 -> Good 4; Bun",
  "status": "ok",
  "acceptors": 2271,
  "rider_share": 0.93,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
- "extract": "2026-11-02T16:07:43+00:00",
- "finished": "2026-11-03T11:30:56",
+ "extract": "2026-11-02T23:00:29+00:00",
+ "finished": "2026-11-03T12:00:47",
  "going": {
   "Flemington": "Soft 5",
   "Randwick": "Good 4",
@@ -21,6 +21,7 @@
   "Ascot": "Soft 5",
   "Wangaratta": "Soft 6",
   "Echuca": "Soft 6",
+  "Canberra": "Soft 5",
   "Kembla Grange": "Soft 5",
   "Muswellbrook": "Soft 6",
   "Sunshine Coast": "Soft 6",
@@ -28,10 +29,9 @@
   "Geraldton": "Good 4",
   "Bunbury": "Good 4",
   "Hobart": "Good 4",
-  "Canberra": "Soft 5",
   "Fannie Bay": "Good"
  },
  "scratchings": 328,
  "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "84e4f883f2b1"
+ "fingerprint": "cea98eca58da"
 }
