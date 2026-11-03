@@ -1,38 +1,22 @@
 {
- "started": "2026-11-03T18:35:03",
+ "started": "2026-11-03T23:30:11",
  "dates": [
-  "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Kembla Grange scratched R8 #7",
- "status": "failed",
- "acceptors": 2271,
- "rider_share": 0.93,
+ "reason": "re-rate 4-5 Nov: rated 10:03 on features older than the extract, trial line NaN",
+ "status": "ok",
+ "acceptors": 306,
+ "rider_share": 0.88,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-02T23:00:29+00:00",
- "finished": "2026-11-03T18:52:13",
+ "finished": "2026-11-04T00:10:39",
  "going": {
-  "Ascot": "Soft 5",
-  "Geraldton": "Good 4",
-  "Bunbury": "Good 4",
-  "Flemington": "Good 4",
-  "Randwick": "Good 4",
-  "Doomben": "Good 4",
-  "Morphettville": "Good 4",
-  "Wangaratta": "Soft 5",
-  "Echuca": "Soft 5",
-  "Canberra": "Soft 5",
-  "Kembla Grange": "Soft 6",
-  "Muswellbrook": "Heavy 8",
-  "Sunshine Coast": "Soft 5",
-  "Gold Coast Poly": "Synthetic",
-  "Hobart": "Good 4",
-  "Fannie Bay": "Good"
+  "Kyneton (Vic)": "Soft 5",
+  "Port Lincoln (Sa)": "Soft 5"
  },
- "scratchings": 334,
- "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "b7c9801834f9",
- "error": "publish index.html: 409 {\"message\":\"is at d4676552dd428ea3a0ba5580380a7ebb720e79f0 but expected 5184bbb6cb87903a41957fd1b3a419502c7ee851\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file"
+ "scratchings": 25,
+ "dashboard": "toprate_week_v2_2026-11-04.html",
+ "fingerprint": "0b0ed0a8eb70"
 }
