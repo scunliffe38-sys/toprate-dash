@@ -1,18 +1,18 @@
 {
- "started": "2026-11-03T13:40:37",
+ "started": "2026-11-03T14:47:29",
  "dates": [
   "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Sunshine Coast Soft 6 -> Soft 5",
+ "reason": "Canberra scratched R3 #8",
  "status": "ok",
  "acceptors": 2271,
  "rider_share": 0.93,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-02T23:00:29+00:00",
- "finished": "2026-11-03T13:58:48",
+ "finished": "2026-11-03T15:05:39",
  "going": {
   "Flemington": "Soft 5",
   "Randwick": "Good 4",
@@ -28,10 +28,10 @@
   "Gold Coast Poly": "Synthetic",
   "Geraldton": "Good 4",
   "Bunbury": "Good 4",
-  "Hobart": "Good 4",
-  "Fannie Bay": "Good"
+  "Fannie Bay": "Good",
+  "Hobart": "Good 4"
  },
- "scratchings": 328,
+ "scratchings": 329,
  "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "b91c2999ce27"
+ "fingerprint": "4f0613fcc981"
 }
