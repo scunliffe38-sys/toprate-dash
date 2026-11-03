@@ -1,18 +1,18 @@
 {
- "started": "2026-11-03T11:33:02",
+ "started": "2026-11-03T13:10:44",
  "dates": [
   "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Fannie Bay scratched R4 #2; Hobart Soft 5 -> Good 4; Flemington scratched R7 #9; Ascot Good 4 -> Soft 5; Ascot scratched R6 #4, R8 #6/16/17/18, R9 #1; Bunbury Soft 5 -> Good 4; Bun",
+ "reason": "Echuca Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 2271,
  "rider_share": 0.93,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-02T23:00:29+00:00",
- "finished": "2026-11-03T12:00:47",
+ "finished": "2026-11-03T13:30:33",
  "going": {
   "Flemington": "Soft 5",
   "Randwick": "Good 4",
@@ -20,7 +20,7 @@
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
   "Wangaratta": "Soft 6",
-  "Echuca": "Soft 6",
+  "Echuca": "Soft 5",
   "Canberra": "Soft 5",
   "Kembla Grange": "Soft 5",
   "Muswellbrook": "Soft 6",
@@ -33,5 +33,5 @@
  },
  "scratchings": 328,
  "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "cea98eca58da"
+ "fingerprint": "b8d50ee1245d"
 }
