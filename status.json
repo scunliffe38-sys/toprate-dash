@@ -1,25 +1,25 @@
 {
- "started": "2026-11-03T14:47:29",
+ "started": "2026-11-03T15:26:33",
  "dates": [
   "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Canberra scratched R3 #8",
+ "reason": "Flemington Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 2271,
  "rider_share": 0.93,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-02T23:00:29+00:00",
- "finished": "2026-11-03T15:05:39",
+ "finished": "2026-11-03T15:44:52",
  "going": {
-  "Flemington": "Soft 5",
+  "Flemington": "Good 4",
   "Randwick": "Good 4",
   "Doomben": "Good 4",
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
-  "Wangaratta": "Soft 6",
+  "Wangaratta": "Soft 5",
   "Echuca": "Soft 5",
   "Canberra": "Soft 5",
   "Kembla Grange": "Soft 5",
@@ -33,5 +33,5 @@
  },
  "scratchings": 329,
  "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "4f0613fcc981"
+ "fingerprint": "836fda7e65c7"
 }
