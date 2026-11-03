@@ -1,23 +1,23 @@
 {
- "started": "2026-11-04T09:09:02",
+ "started": "2026-11-04T09:32:22",
  "dates": [
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "retry: Kyneton going Soft 7; Kyneton scratched R1 #4/6, R2 #5/7/8/10/14, R3 #3/4/6/13, R4 #5/7, R5 #5/7, R6 #2/5, R7 #4/8/11, R8 #7/8/9, R9 #1/3/4/6/8/9/10/11/12/13/14; Coffs Harbo",
+ "reason": "Kyneton scratched R1 #2",
  "status": "ok",
  "acceptors": 400,
  "rider_share": 0.85,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-03T21:22:32+00:00",
- "finished": "2026-11-04T09:22:37",
+ "finished": "2026-11-04T09:45:40",
  "going": {
   "Kyneton": "Soft 7",
   "Coffs Harbour": "Soft 7",
   "Port Lincoln": "Good 4"
  },
- "scratchings": 82,
+ "scratchings": 83,
  "dashboard": "toprate_week_v2_2026-11-04.html",
- "fingerprint": "d4de21bc50e1"
+ "fingerprint": "5263d180580c"
 }
