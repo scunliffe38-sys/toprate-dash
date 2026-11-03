@@ -1,18 +1,18 @@
 {
- "started": "2026-11-03T15:26:33",
+ "started": "2026-11-03T15:47:03",
  "dates": [
   "2026-11-03",
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Flemington Soft 5 -> Good 4",
+ "reason": "Wangaratta Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 2271,
  "rider_share": 0.93,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-02T23:00:29+00:00",
- "finished": "2026-11-03T15:44:52",
+ "finished": "2026-11-03T16:06:31",
  "going": {
   "Flemington": "Good 4",
   "Randwick": "Good 4",
@@ -23,7 +23,7 @@
   "Echuca": "Soft 5",
   "Canberra": "Soft 5",
   "Kembla Grange": "Soft 5",
-  "Muswellbrook": "Soft 6",
+  "Muswellbrook": "Heavy 8",
   "Sunshine Coast": "Soft 5",
   "Gold Coast Poly": "Synthetic",
   "Geraldton": "Good 4",
@@ -33,5 +33,5 @@
  },
  "scratchings": 329,
  "dashboard": "toprate_week_v2_2026-11-03.html",
- "fingerprint": "836fda7e65c7"
+ "fingerprint": "f0264b3e8791"
 }
