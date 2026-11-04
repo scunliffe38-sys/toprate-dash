@@ -39,7 +39,8 @@ h1{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:34px;letter
 .date{color:var(--dim);font-size:14px}
 .conds{display:flex;flex-wrap:wrap;gap:8px;margin-left:auto;align-self:center}
 
-.days{display:flex;gap:0;border-bottom:1px solid var(--rule);margin-bottom:14px;overflow-x:auto}
+.daysrow{display:flex;align-items:stretch;border-bottom:1px solid var(--rule);margin-bottom:14px}
+.days{display:flex;gap:0;overflow-x:auto;flex:1 1 auto;min-width:0}
 .days button{flex:0 0 auto;background:none;border:0;border-bottom:3px solid transparent;color:var(--dim);padding:8px 14px 9px;cursor:pointer;font-family:inherit;text-align:left;white-space:nowrap;display:flex;flex-direction:column;gap:1px}
 .days button .d{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:17px;color:inherit}
 .days button .s{font-size:11px;color:var(--faint)}
@@ -47,6 +48,34 @@ h1{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:34px;letter
 .days button[aria-selected=true]{color:var(--text);border-bottom-color:var(--brass)}
 .days button[aria-selected=true] .s{color:var(--dim)}
 .days button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
+/* earlier days (Simon, 4 Nov 2026): a date picker on the right of the days bar opens that day's page, day_<date>.html, the
+   page as it was last rated that day with the day's closing prices and results frozen beside it (dash_history.py) */
+.hist{display:flex;align-items:center;gap:8px;padding:4px 0 4px 12px;margin-left:auto;flex:0 0 auto;white-space:nowrap}
+.hist label{color:var(--dim);font-size:11.5px}
+.hist input{font-family:inherit;font-size:12.5px;color:var(--text);background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:3px 6px}
+.hist .hmsg{color:var(--brick);font-size:11.5px}
+.hist a{color:var(--green);font-size:12.5px;font-weight:600;text-decoration:none}.hist a:hover{text-decoration:underline}
+.pastbar{background:#FFF4D6;border:1px solid #E8C96A;border-radius:4px;padding:8px 12px;margin:0 0 12px;font-size:13px;color:#5a4a1a;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center}
+.pastbar b{font-weight:700}.pastbar a{color:var(--green);font-weight:600;text-decoration:none;margin-left:auto}.pastbar a:hover{text-decoration:underline}
+/* find a horse (Simon, 4 Nov 2026): the search box in the header reads hidx/<letter>.json as the name is typed and opens
+   h/<id>.json, the same form guide as the runner's panel, built for every horse in the archive (horsecard.py) */
+.hs{position:relative;flex:0 1 240px;min-width:150px}
+.hs input{width:100%;box-sizing:border-box;font-family:inherit;font-size:13px;color:var(--text);background:var(--panel);border:1px solid var(--rule);border-radius:3px;padding:5px 9px}
+.hs input::placeholder{color:var(--faint)}
+.hsres{position:absolute;top:calc(100% + 3px);left:0;width:max(100%,340px);z-index:65;background:var(--panel);border:1px solid var(--rule);border-radius:4px;box-shadow:0 6px 20px rgba(0,0,0,.18);max-height:min(60vh,420px);overflow:auto;min-width:260px}
+.hsres button{display:block;width:100%;background:none;border:0;border-top:1px solid var(--panel2);color:var(--text);font-family:inherit;font-size:13px;text-align:left;padding:6px 10px;cursor:pointer}
+.hsres button:first-child{border-top:0}.hsres button:hover,.hsres button.on{background:var(--warm)}
+.hsres button b{font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.hsres button .s{display:block;color:var(--dim);font-size:11.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.hsres .hsmsg{color:var(--faint);font-size:12.5px;padding:8px 10px}
+.hpan{position:fixed;inset:0;z-index:55;background:rgba(0,0,0,.45);overflow:auto;padding:28px 12px 60px}
+.hpan .hpi{background:var(--bg,#fff);max-width:1400px;margin:0 auto;border-radius:6px;padding:12px 14px 16px;box-shadow:0 10px 40px rgba(0,0,0,.3)}
+.hpan .hph{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px;margin-bottom:8px}
+.hpan .hph h2{font-family:Gotham,"Archivo Narrow",sans-serif;font-size:22px;font-weight:600;margin:0}
+.hpan .hph .m{color:var(--dim);font-size:12.5px}.hpan .hph .l20{font-family:"Archivo Narrow",sans-serif;letter-spacing:.08em;font-size:13px}
+.hpan .hph .l20 b{color:var(--green)}.hpan .hph .l20 i{color:var(--faint);font-style:normal}
+.hpan .hpx{margin-left:auto;background:none;border:0;color:var(--faint);cursor:pointer;font-family:inherit;font-size:18px;line-height:1;padding:2px 6px}.hpan .hpx:hover{color:var(--text)}
+.hpan .fcp{width:auto;min-width:0}
+@media(max-width:720px){.hs{flex:1 1 100%;order:-1}.hpan{padding:10px 6px 60px}.hpan .hpi{padding:10px 8px 14px}.hist{padding-left:8px}.hist label{display:none}}
 
 .mtabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px;padding-bottom:2px}
 .mtabs button{flex:0 0 auto;background:var(--panel);border:1px solid var(--rule);border-radius:3px;color:var(--dim);padding:8px 13px;cursor:pointer;white-space:nowrap;text-align:left;font-family:inherit;font-size:13px;display:flex;flex-direction:column;gap:2px;min-width:118px}
@@ -878,6 +907,7 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 <header>
   <div class="meet"><span class="brand" aria-label="SPM"><span class="d" aria-hidden="true">$</span>PM</span><h1 id="h1"></h1><div class="date" id="hdate"></div>
     <div class="conds">
+      <div class="hs"><input id="hsq" type="search" placeholder="Find a horse" aria-label="Find a horse in the archive" autocomplete="off" spellcheck="false" oninput="hsType()" onkeydown="hsKey(event)" onfocus="hsType()"><div class="hsres" id="hsres" hidden></div></div>
       <button class="wlive" id="sky1live" onclick="skyLive('sky1')" aria-label="Watch Sky 1 live" title="Sky 1 — the TAB's main channel, gallops, harness and greyhounds">Sky 1 <span>&#9654;</span></button>
       <button class="wlive" id="wlive" onclick="watchLive()" aria-label="Watch Racing.com live" title="racing.com live vision — Victorian, SA and some WA racing">Racing.com <span>&#9654;</span></button>
       <button class="wlive" id="skylive" onclick="skyLive('stc')" aria-label="Watch Sky Thoroughbred Central live" title="Sky Thoroughbred Central — thoroughbreds nationally, whatever is jumping next">Sky TC <span>&#9654;</span></button>
@@ -886,7 +916,8 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
   </div>
 </header>
 
-<div class="days" id="days" role="tablist"></div>
+<div class="daysrow"><div class="days" id="days" role="tablist"></div>
+  <div class="hist" id="hist"><label for="histd">Earlier</label><input type="date" id="histd" onchange="histGo(this.value)" title="Open an earlier day: the page as it was last rated that day, with the closing prices and results"><span class="hmsg" id="hmsg"></span></div></div>
 <div class="mtabs" id="meets" role="tablist"></div>
 <div class="mtabs sub" id="meets2" role="tablist"></div>
 <div class="mtabs hkrow" id="meetshk" role="tablist" aria-label="Hong Kong"></div>
@@ -905,6 +936,7 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 </div>
 
 <div class="trs" id="trs" hidden role="status" aria-live="polite"></div>
+<div class="hpan" id="hpan" hidden onclick="if(event.target===this) closeHorse()"><div class="hpi" id="hpi"></div></div>
 
 <div class="vdock" id="vdock" hidden>
   <div class="vh"><div class="vt" id="vdt"></div>
@@ -1297,26 +1329,32 @@ function formPanel(m,r,x){
   if(all==='…') return `<div class="fcp"><div class="fcmsg">Loading form…</div></div>`;
   const f=all&&all.runners[fcKey(m,r,x)];
   if(!f) return `<div class="fcp"><div class="fcmsg">${all?'No form on file for this runner.':'Form is not available for this day yet.'}</div></div>`;
+  return formBody(f,fcKey(m,r,x),(r.surf_now||r.surf)==='synth');
+}
+// the guide itself: f the runner's record (formcard.py / horsecard.py), fk the key the Full-history toggle remembers it by, syn
+// whether to show the synthetic record (a synthetic meeting today; always on a search card)
+function formBody(f,fk,syn){
   // one strip (Simon, 27 Oct 2026): career, prize money, age and type, sire / dam, then the record at the track, the trip,
   // first up and on each going; Synth only at a synthetic meeting
   const h=f.h||{}, st={}; (f.st||[]).forEach(a=>st[a[0]]=a.slice(1));
   const rec=a=>a?`${a[0]}: ${a[1]}-${a[2]}-${a[3]}`:'—', esc=v=>String(v??'').replace(/"/g,'');
   const cell=(k,v,cls='')=>`<div class="${cls}"><div class="k">${k}</div><div class="v" title="${esc(v)}">${v??'—'}</div></div>`;
-  const syn=(r.surf_now||r.surf)==='synth';
+  // a search card's Track and Distance records are its last start's (horsecard.py, h.at): the cells say which
+  const at=Array.isArray(h.at)&&h.at.length===2?h.at:null, atLab=k=>at?(k==='Track'?at[0]:k==='Distance'?at[1]+'m':k):k;
   let o=`<div class="fcp"><div class="fcs" style="--n:${syn?7:6}">`
     +cell('Career',rec(h.car),'an')+cell('Prize money',h.prize!=null?'$'+h.prize.toLocaleString('en-AU'):null,'an')+cell('Age & Type',h.type)
     +`<div class="fsd"><div class="k">Sire / Dam</div><div class="v" title="${esc(h.sire)} / ${esc(h.dam)}">${h.sire||'—'}<br>${h.dam||'—'}</div></div>`
-    +['Track','Distance','1st Up','Good','Soft','Heavy'].concat(syn?['Synth']:[]).map(k=>cell(k,rec(st[k]),'an')).join('')
+    +['Track','Distance','1st Up','Good','Soft','Heavy'].concat(syn?['Synth']:[]).map(k=>cell(atLab(k),rec(st[k]),'an')).join('')
     +`</div>`;
   // the phone's strip (Simon, 27 Oct 2026: "taking up far too much room"): two lines and one row of records
   o+=`<div class="fcsp"><div class="l"><span class="k">Career</span> <b class="an">${rec(h.car)}</b>${h.prize!=null?` · $${h.prize.toLocaleString('en-AU')}`:''}${h.type?` · ${h.type}`:''}</div>`
     +`<div class="l"><span class="k">Sire / Dam</span> ${h.sire||'—'} / ${h.dam||'—'}</div>`
     +`<div class="g" style="--n:${syn?7:6}">${[['Track','Track'],['Distance','Dist'],['1st Up','1st Up'],['Good','Good'],['Soft','Soft'],['Heavy','Heavy']].concat(syn?[['Synth','Synth']]:[])
-      .map(([k,lab])=>`<div><div class="k">${lab}</div><div class="an">${rec(st[k])}</div></div>`).join('')}</div></div>`;
+      .map(([k,lab])=>`<div><div class="k">${k==='Track'||k==='Distance'?atLab(k):lab}</div><div class="an">${rec(st[k])}</div></div>`).join('')}</div></div>`;
   const dd=s=>`${s.slice(8,10)}/${s.slice(5,7)}/${s.slice(2,4)}`;
   const tm=t=>t==null?'':(t>=60?`${Math.floor(t/60)}:${(t%60).toFixed(2).padStart(5,'0')}`:t.toFixed(2));
   // the last FCN runs (the list is oldest first, today's spell last); a spell row just above them stays with them
-  const fk=fcKey(m,r,x), allr=f.r||[], nrun=allr.filter(q=>!q.x).length; let cut=0;
+  const allr=f.r||[], nrun=allr.filter(q=>!q.x).length; let cut=0;
   for(let i=allr.length-1,n=0;i>=0;i--) if(!allr[i].x&&++n===FCN){ cut=i; break; }
   if(cut>0&&allr[cut-1].x) cut--;
   const full=FCALL.has(fk)||nrun<=FCN, shown=full?allr:allr.slice(cut), fkq=fk.replace(/'/g,"\\'");
@@ -1518,6 +1556,10 @@ function analyse(r){
 // bring the VALUE tag back; 2.0 flags 12% of races, 1.7 flags 25%.
 const GAP_STANDOUT=1.5;   /* points on ptscale's fixed 2 a length (19 Oct 2026): the 3/4 length 3.0 meant on 12 Sep */   // the only rule on the page: which races reach Today
 const GAP_BIG=8.0;        // Simon, 19 Sep 2026: a top rater this far clear of the next horse is lit on Today and the summary
+// a past day (Simon, 4 Nov 2026): day_<date>.html opened after the day. Its live overlay reads live_<date>.json, frozen by
+// dash_history.py (closing prices, scratchings, results, dividends, replays, BSP), once, and the status strip stays as published
+const TODAY=(()=>{ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'Australia/Melbourne'}); }catch(e){ return new Date().toISOString().slice(0,10); } })();
+const PAST=!!(DATA.days[0]&&DATA.days[0].date&&DATA.days[0].date<TODAY);
 window.LIVE={};      // "Track|raceNo" -> {status, results:[[tab],...], replay, win_div}
 window.LIVEBY={};    // date -> that day's block: today's races, and tomorrow's from live.json's `next` (2 Nov 2026)
 const liveOf=r=>((LIVEBY[D().date]||{})[`${M().track}|${r.no}`])||null;   // the block of the day on screen
@@ -2577,16 +2619,101 @@ setInterval(refreshTabAge,30000);
 (function(){
   let last='';
   async function tick(){
-    let j; try{const r=await fetch('live.json',{cache:'no-store'}); if(!r.ok) throw 0; j=await r.json();}catch(e){return;}
-    window.TAB_GENERATED=j&&j.generated||null; refreshTabAge();
+    const src=PAST?`live_${DATA.days[0].date}.json`:'live.json';   // a past day's frozen block (dash_history.py)
+    let j; try{const r=await fetch(src,{cache:PAST?'no-cache':'no-store'}); if(!r.ok) throw 0; j=await r.json();}catch(e){ if(PAST) pastNote(false); return;}
+    if(PAST) pastNote(true);
+    window.TAB_GENERATED=PAST?null:(j&&j.generated||null); refreshTabAge();
     window.WX=j&&j.wx||null;
     const races=j&&j.races||{}, nx=(j&&j.next&&j.next.date&&j.next.date!==j.date)?j.next:null;
     const sig=JSON.stringify(races)+(j&&j.wx&&j.wx.at||'')+(nx?nx.generated||'':''); if(sig===last) return;
     last=sig; window.LIVE=races; window.LIVEBY={[j.date]:races}; if(nx) LIVEBY[nx.date]=nx.races||{};
     applyLivePrices(races,j.date); if(nx) applyLivePrices(nx.races||{},nx.date); draw();   // tomorrow's early markets on its tab
   }
-  tick(); setInterval(tick,60000); window._liveTick=tick;
+  tick(); if(!PAST) setInterval(tick,60000); window._liveTick=tick;
 })();
+
+// ---- earlier days (Simon, 4 Nov 2026) --------------------------------------
+// The picker opens day_<date>.html: every rating publishes the page under that name as well as index.html, so the page of a
+// past day is the one that was live, and dash_history.py freezes the day's closing prices and results beside it after the
+// day. A date with no page (before the dash, or a day with no racing) says so instead of landing on a 404.
+(function(){
+  const el=$("histd"); if(!el) return;
+  const y=new Date(TODAY+'T00:00:00'); y.setDate(y.getDate()-1);
+  el.max=y.toLocaleDateString('en-CA'); el.min='2026-09-05';
+  if(PAST){ el.value=DATA.days[0].date; $("hist").insertAdjacentHTML('beforeend','<a href="index.html">Today ›</a>'); }
+})();
+async function histGo(d){
+  const msg=$("hmsg"); if(!d) return;
+  if(d>=TODAY){ location.href='index.html'; return; }
+  msg.textContent='…';
+  let ok=false; try{ const r=await fetch(`day_${d}.html`,{method:'HEAD',cache:'no-cache'}); ok=r.ok; }catch(e){ ok=false; }
+  if(!ok){ msg.textContent=`no page for ${fmtDate(d,{day:'numeric',month:'short'})}`; return; }
+  msg.textContent=''; location.href=`day_${d}.html`;
+}
+function pastNote(frozen){
+  if(!PAST||$("pastbar")) return;
+  const d=DATA.days[0].date, when=fmtDate(d,{weekday:'long',day:'numeric',month:'long'});
+  document.querySelector('.wrap').insertAdjacentHTML('afterbegin',`<div class="pastbar" id="pastbar"><span>Reviewing <b>${when}</b>: the ratings as last published that day`
+    +(frozen?', with TAB\'s closing prices, the scratchings and the results.':'. The closing prices and results for this day are not on file.')+`</span><a href="index.html">Back to today ›</a></div>`);
+}
+// ---- find a horse (Simon, 4 Nov 2026) --------------------------------------
+// hidx/<L>.json: [[name, id, last run, trainer], ...] for every horse whose name starts with L (A-Z, 0 for the rest), fetched
+// once per letter as the user types; h/<id>.json the horse's guide. Both from horsecard.py, nightly, every horse with a
+// run since 2023. Enter opens the first match, Escape closes.
+const HIDX={}, HREC={}; let HSEL=0, HOPEN=null;
+function hsLetter(q){ const n=q.toUpperCase().replace(/[^A-Z0-9]/g,''); return n?(/[A-Z]/.test(n[0])?n[0]:'0'):null; }
+function hsIndex(L){
+  if(HIDX[L]!==undefined) return HIDX[L];
+  HIDX[L]='…';
+  fetch(`hidx/${L}.json`,{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{HIDX[L]=Array.isArray(j)?j:null;}).catch(()=>{HIDX[L]=null;}).finally(hsType);
+  return '…';
+}
+function hsMatches(q){
+  const L=hsLetter(q); if(!L) return [];
+  const idx=hsIndex(L); if(idx==='…'||!idx) return idx;
+  const n=q.toUpperCase().replace(/[^A-Z0-9 ]/g,'').replace(/\s+/g,' ').trim(), nn=n.replace(/ /g,'');
+  const pre=[], mid=[];
+  for(const e of idx){ const u=String(e[0]).toUpperCase(), uu=u.replace(/[^A-Z0-9]/g,'');
+    if(uu.startsWith(nn)) pre.push(e); else if(u.includes(n)) mid.push(e); if(pre.length>=12) break; }
+  return pre.concat(mid).slice(0,12);
+}
+function hsType(){
+  const q=($("hsq").value||'').trim(), box=$("hsres");
+  if(q.length<2){ box.hidden=true; box.innerHTML=''; return; }
+  const m=hsMatches(q); box.hidden=false; HSEL=Math.min(HSEL,Math.max(0,(Array.isArray(m)?m.length:0)-1));
+  if(m==='…'){ box.innerHTML='<div class="hsmsg">Looking…</div>'; return; }
+  if(!m){ box.innerHTML='<div class="hsmsg">The horse index is not on the dash yet.</div>'; return; }
+  if(!m.length){ box.innerHTML=`<div class="hsmsg">No horse matching “${q.replace(/</g,'')}” (every horse raced or trialled since 2023).</div>`; return; }
+  box.innerHTML=m.map((e,i)=>`<button type="button" class="${i===HSEL?'on':''}" onclick="openHorse(${e[1]},this)"><b>${e[0]}</b><span class="s">${e[3]||''}${e[2]?' · '+e[2].slice(8,10)+'/'+e[2].slice(5,7)+'/'+e[2].slice(2,4):''}</span></button>`).join('');
+}
+function hsKey(ev){
+  const box=$("hsres"), items=box.hidden?[]:[...box.querySelectorAll('button')];
+  if(ev.key==='Escape'){ box.hidden=true; $("hsq").blur(); return; }
+  if(!items.length) return;
+  if(ev.key==='ArrowDown'||ev.key==='ArrowUp'){ ev.preventDefault(); HSEL=(HSEL+(ev.key==='ArrowDown'?1:items.length-1))%items.length; items.forEach((b,i)=>b.classList.toggle('on',i===HSEL)); }
+  else if(ev.key==='Enter'){ ev.preventDefault(); (items[HSEL]||items[0]).click(); }
+}
+document.addEventListener('click',e=>{ if(!e.target.closest('.hs')) { const b=$("hsres"); if(b) b.hidden=true; } });
+function openHorse(id){
+  $("hsres").hidden=true; HOPEN=id;
+  if(HREC[id]===undefined){ HREC[id]='…';
+    fetch(`h/${id}.json`,{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(j=>{HREC[id]=j&&j.h?j:null;}).catch(()=>{HREC[id]=null;}).finally(drawHorse); }
+  drawHorse();
+}
+function closeHorse(){ HOPEN=null; $("hpan").hidden=true; $("hpi").innerHTML=''; }
+window.hsAll=k=>{ if(FCALL.has(k)) FCALL.delete(k); else FCALL.add(k); drawHorse(); };
+function drawHorse(){
+  if(HOPEN==null) return;
+  const f=HREC[HOPEN], p=$("hpan"), c=$("hpi"); p.hidden=false;
+  const x=`<button type="button" class="hpx" onclick="closeHorse()" title="close (Esc)" aria-label="close">&#10005;</button>`;
+  if(f==='…'){ c.innerHTML=`<div class="hph"><h2>Loading…</h2>${x}</div>`; return; }
+  if(!f){ c.innerHTML=`<div class="hph"><h2>No record on the dash for this horse</h2>${x}</div>`; return; }
+  const h=f.h||{}, dd=s=>s?`${s.slice(8,10)}/${s.slice(5,7)}/${s.slice(2,4)}`:'';
+  const meta=[h.type,h.tr?`Trainer ${h.tr}`:null,h.lastrun?`Last start ${dd(h.lastrun)}`:(h.last?`Last trial ${dd(h.last)}`:null),h.won?`Won at ${h.won}`:null].filter(Boolean).map(s=>`<span class="m">${s}</span>`).join('');
+  c.innerHTML=`<div class="hph"><h2>${h.name||''}</h2>${meta}${h.l20?`<span class="l20" title="the last twenty starts, oldest first; x a spell">${last5(h.l20)}</span>`:''}${x}</div>`
+    +formBody(f,'h:'+HOPEN,true).replace(/fcAll\(/g,'hsAll(');
+}
+document.addEventListener('keydown',e=>{ if(e.key==='Escape'&&HOPEN!=null) closeHorse(); });
 
 // ---- replay dock: a replay plays on the page, not in a new tab -------------
 // Two kinds of link land here. TAB's Sky replays (mediatabs.skyracing.com.au) are
@@ -2727,6 +2854,7 @@ window.skyLive=async (ch)=>{
   const ago=d=>{if(!d) return ''; const m=Math.round((Date.now()-d)/60000);
     return m<1?'just now':m<60?`${m}m ago`:m<1440?`${Math.floor(m/60)}h ${m%60}m ago`:`${Math.floor(m/1440)}d ago`;};
   async function tick(){
+    if(PAST) return;                                   // a past day's page keeps the Rated strip it was published with
     let j;
     try{const r=await fetch('status.json',{cache:'no-store'}); if(!r.ok) throw 0; j=await r.json();}
     catch(e){ return; }                                   // leave the injected banner as-is
@@ -2767,4 +2895,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 04 Nov 22:30</b> AEST &middot; HK scratching</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 04 Nov 23:11</b> AEST &middot; earlier days and horse search</div><div style="height:34px"></div></body></html>
