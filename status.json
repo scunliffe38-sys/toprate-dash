@@ -1,24 +1,24 @@
 {
- "started": "2026-11-04T15:19:21",
+ "started": "2026-11-04T15:45:44",
  "dates": [
   "2026-11-04",
   "2026-11-05"
  ],
- "reason": "Kyneton Soft 7 -> Heavy 8",
+ "reason": "Coffs Harbour Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 400,
  "rider_share": 0.85,
  "extract_max_date": "2026-11-05",
  "card_source": "toprate",
  "extract": "2026-11-03T21:22:32+00:00",
- "finished": "2026-11-04T15:32:05",
+ "finished": "2026-11-04T15:58:27",
  "going": {
   "Kyneton": "Heavy 8",
-  "Coffs Harbour": "Soft 6",
+  "Coffs Harbour": "Soft 5",
   "Port Lincoln": "Good 4",
   "Happy Valley": "Good"
  },
  "scratchings": 86,
  "dashboard": "toprate_week_v2_2026-11-04.html",
- "fingerprint": "b68916f982b7"
+ "fingerprint": "051bc5219fdd"
 }
