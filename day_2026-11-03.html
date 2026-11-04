@@ -405,6 +405,7 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .fct tr.fsp td{text-align:center;color:var(--brick);background:#F7ECE8;font-size:12px;padding:3px}
 .fct td.n{font-family:"Archivo Narrow",sans-serif;font-variant-numeric:tabular-nums}
 .fct a.frp{color:var(--green);text-decoration:none;font-size:13px}
+.fct a.frace{color:var(--green);text-decoration:none;border-bottom:1px dotted var(--green)}.fct a.frace:hover{border-bottom-style:solid}
 /* the clock (30 Oct 2026): lengths against the standard, the day out, on the CLASS SCALE since 31 Oct (clockpar.py: less the
    grade's winning par, plus its ladder rung); the colour is the FIELD read, green when the horse beat its race's average in
    that section by a length or more, brick when it was a length or more behind it; grey italic = no grade par, the raw clock */
@@ -1355,6 +1356,10 @@ function formBody(f,fk,syn){
   const tm=t=>t==null?'':(t>=60?`${Math.floor(t/60)}:${(t%60).toFixed(2).padStart(5,'0')}`:t.toFixed(2));
   // the last FCN runs (the list is oldest first, today's spell last); a spell row just above them stays with them
   const allr=f.r||[], nrun=allr.filter(q=>!q.x).length; let cut=0;
+  // a real start on a day the dash rated (day files from 11 Sep 2026) links to that day's page at the race, the horse's row
+  // open: day_<date>.html#<venue>|<horse> (the deep link below). The name is the record's (a search card) or the key's
+  const hname=(f.h&&f.h.name)||fk.split('|').pop()||'';
+  const vcell=q=>(!q.tr&&q.v&&q.d>=DASH_FROM&&q.d<TODAY&&hname)?`<a class="frace" href="day_${q.d}.html#${encodeURIComponent(q.v+'|'+hname)}" title="${q.v} ${dd(q.d)}: the race as SPM assessed it">${q.v}</a>`:(q.v||'');
   for(let i=allr.length-1,n=0;i>=0;i--) if(!allr[i].x&&++n===FCN){ cut=i; break; }
   if(cut>0&&allr[cut-1].x) cut--;
   const full=FCALL.has(fk)||nrun<=FCN, shown=full?allr:allr.slice(cut), fkq=fk.replace(/'/g,"\\'");
@@ -1362,7 +1367,7 @@ function formBody(f,fk,syn){
   const rows=shown.map(q=>{
     if(q.x) return `<tr class="fsp"><td colspan="18">${q.x} Day Spell</td></tr>`;
     const cls=(q.p===1?'r1':'')+(q.tr?' ftr':'');
-    return `<tr class="${cls}"><td class="n">${q.p??'–'}/${q.f??'–'}</td><td>${q.v||''}</td><td class="n">${dd(q.d)}</td><td>${q.g||''}</td><td class="n">${q.m||''}</td>`
+    return `<tr class="${cls}"><td class="n">${q.p??'–'}/${q.f??'–'}</td><td>${vcell(q)}</td><td class="n">${dd(q.d)}</td><td>${q.g||''}</td><td class="n">${q.m||''}</td>`
       +`<td>${q.c||''}</td><td>${q.j||''}${q.b!=null?` (${q.b})`:''}</td><td class="n">${q.w!=null?q.w.toFixed(1):''}</td><td class="n">${q.sp!=null?q.sp.toFixed(2):''}</td>`
       +`<td>${q.o||''}</td><td class="n">${q.mg!=null?q.mg.toFixed(1):''}</td><td class="n">${tm(q.t)}</td><td class="n">${q.ir||''}</td>${ckCells(q)}`
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`;
@@ -1373,7 +1378,7 @@ function formBody(f,fk,syn){
   // the phone's own table (Simon, 27 Oct 2026: "only show these items - no scroll over"): date, venue, placing, trip, class, replay
   const gs=g=>{ g=String(g||''); const n=(g.match(/\d+/)||[''])[0]; return /synth|poly/i.test(g)?'Syn':(g?g[0].toUpperCase()+n:''); };   // Good 4 -> G4
   const prow=shown.map(q=>q.x?`<tr class="fsp"><td colspan="7">${q.x} Day Spell</td></tr>`
-    :`<tr class="${(q.p===1?'r1':'')+(q.tr?' ftr':'')}"><td class="n">${dd(q.d)}</td><td class="fv">${q.v||''}</td><td class="n pl">${q.p??'–'}/${q.f??'–'}</td><td class="n">${q.m||''}</td><td class="n">${gs(q.g)}</td><td>${q.c||''}</td>`
+    :`<tr class="${(q.p===1?'r1':'')+(q.tr?' ftr':'')}"><td class="n">${dd(q.d)}</td><td class="fv">${vcell(q)}</td><td class="n pl">${q.p??'–'}/${q.f??'–'}</td><td class="n">${q.m||''}</td><td class="n">${gs(q.g)}</td><td>${q.c||''}</td>`
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`).join('');
   o+=`<table class="fct fctp"><thead><tr><th>Date</th><th>Venue</th><th>Plcg</th><th>Dist</th><th>Going</th><th>Class</th><th></th></tr></thead><tbody>${prow||'<tr><td colspan="7" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
   return o;
@@ -1560,6 +1565,7 @@ const GAP_BIG=8.0;        // Simon, 19 Sep 2026: a top rater this far clear of t
 // dash_history.py (closing prices, scratchings, results, dividends, replays, BSP), once, and the status strip stays as published
 const TODAY=(()=>{ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'Australia/Melbourne'}); }catch(e){ return new Date().toISOString().slice(0,10); } })();
 const PAST=!!(DATA.days[0]&&DATA.days[0].date&&DATA.days[0].date<TODAY);
+const DASH_FROM='2026-09-11';   // the first day file: a run from here on has a page to link to (the deep link, 4 Nov 2026)
 window.LIVE={};      // "Track|raceNo" -> {status, results:[[tab],...], replay, win_div}
 window.LIVEBY={};    // date -> that day's block: today's races, and tomorrow's from live.json's `next` (2 Nov 2026)
 const liveOf=r=>((LIVEBY[D().date]||{})[`${M().track}|${r.no}`])||null;   // the block of the day on screen
@@ -2565,6 +2571,24 @@ window.pick=i=>{active=i;open=null;draw();};
 window.pickMeet=i=>{meet=i;active=i<0?-1:landingRace(D().meetings[i]);open=null;draw();$("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});};
 window.pickDay=i=>{day=i;meet=-2;active=-1;open=null;draw();};
 draw();
+// the deep link (Simon, 4 Nov 2026): #<track>|<horse> opens that meeting at the race the horse was in, its row open -- the race
+// as SPM assessed it, from a run on the horse's card. The first day that has the meeting wins; a track the page lacks (a
+// non-TAB meeting) leaves the page as it opens
+(function(){
+  let h=''; try{ h=decodeURIComponent((location.hash||'').slice(1)); }catch(e){ return; }
+  const i=h.indexOf('|'); if(i<1) return;
+  const nm=s=>String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,''), tk=nm(h.slice(0,i)), hn=nm(h.slice(i+1));
+  for(let di=0;di<DATA.days.length;di++){
+    const mi=DATA.days[di].meetings.findIndex(m=>nm(m.track)===tk); if(mi<0) continue;
+    const m=DATA.days[di].meetings[mi];
+    let ri=-1, xi=-1;
+    m.races.forEach((r,j)=>{ if(ri>=0) return; const k=r.runners.findIndex(x=>nm(x.name)===hn);
+      if(k>=0){ ri=j; xi=k; } else if((r.scr||[]).some(x=>nm(x.name)===hn)) ri=j; });
+    day=di; meet=mi; active=ri<0?landingRace(m):ri; open=xi>=0?xi:null; draw();
+    const t=$("tabs"); if(t) t.scrollIntoView({block:'start'});
+    return;
+  }
+})();
 
 // ---- swipe between races (Simon, 19 Sep 2026, on the phone): inside a meeting, a swipe left on the race
 // panel moves to the next race, a swipe right to the previous one (and back to the Summary before R1).
