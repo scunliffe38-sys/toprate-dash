@@ -1,18 +1,18 @@
 {
- "started": "2026-11-05T09:10:02",
+ "started": "2026-11-05T09:25:02",
  "dates": [
   "2026-11-05",
   "2026-11-06",
   "2026-11-07"
  ],
- "reason": "retry: Flemington Good 4 -> Soft 5; Flemington scratched R3 #2/12, R5 #19, R6 #17/18/19/20, R7 #13, R8 #20, R9 #13; Gawler scratched R4 #2/10, R6 #11/12, R7 #15/16; Gosford Soft 6 ",
+ "reason": "Ipswich Soft 6 -> Soft 5; Ipswich scratched R1 #3/7, R3 #5, R6 #12/13/14",
  "status": "ok",
  "acceptors": 507,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-07",
  "card_source": "toprate",
  "extract": "2026-11-04T21:22:38+00:00",
- "finished": "2026-11-05T09:24:21",
+ "finished": "2026-11-05T09:39:39",
  "going": {
   "Flemington": "Soft 5",
   "Gosford": "Good 4",
@@ -23,5 +23,5 @@
  },
  "scratchings": 80,
  "dashboard": "toprate_week_v2_2026-11-05.html",
- "fingerprint": "56f98b9dab2c"
+ "fingerprint": "298f915c9a57"
 }
