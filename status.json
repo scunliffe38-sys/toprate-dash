@@ -1,18 +1,18 @@
 {
- "started": "2026-11-05T08:24:11",
+ "started": "2026-11-05T11:09:22",
  "dates": [
   "2026-11-05",
   "2026-11-06",
   "2026-11-07"
  ],
- "reason": "morning harvest",
+ "reason": "Belmont Park scratched R1 #4/9, R3 #17/18, R7 #6",
  "status": "ok",
  "acceptors": 507,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-07",
  "card_source": "toprate",
  "extract": "2026-11-04T21:22:38+00:00",
- "finished": "2026-11-05T10:00:19",
+ "finished": "2026-11-05T11:22:56",
  "going": {
   "Flemington": "Soft 5",
   "Gosford": "Good 4",
@@ -21,7 +21,7 @@
   "Gawler": "Good 4",
   "Belmont Park": "Good 4"
  },
- "scratchings": 80,
+ "scratchings": 85,
  "dashboard": "toprate_week_v2_2026-11-05.html",
- "fingerprint": "cdfb59800877"
+ "fingerprint": "b70f423e6107"
 }
