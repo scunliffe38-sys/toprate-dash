@@ -1,18 +1,18 @@
 {
- "started": "2026-11-05T16:51:02",
+ "started": "2026-11-05T17:05:02",
  "dates": [
   "2026-11-05",
   "2026-11-06",
   "2026-11-07"
  ],
- "reason": "Flemington scratched R7 #1",
+ "reason": "Gosford scratched R7 #7",
  "status": "ok",
  "acceptors": 507,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-07",
  "card_source": "toprate",
  "extract": "2026-11-04T21:22:38+00:00",
- "finished": "2026-11-05T17:04:41",
+ "finished": "2026-11-05T17:19:53",
  "going": {
   "Flemington": "Good 4",
   "Sapphire Coast": "Good 4",
@@ -23,5 +23,5 @@
  },
  "scratchings": 92,
  "dashboard": "toprate_week_v2_2026-11-05.html",
- "fingerprint": "f18365894959"
+ "fingerprint": "f39c516094a1"
 }
