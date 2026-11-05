@@ -1,20 +1,20 @@
 {
- "started": "2026-11-05T13:55:02",
+ "started": "2026-11-05T14:21:21",
  "dates": [
   "2026-11-05",
   "2026-11-06",
   "2026-11-07"
  ],
- "reason": "Gosford scratched R2 #2",
+ "reason": "Flemington Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 507,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-07",
  "card_source": "toprate",
  "extract": "2026-11-04T21:22:38+00:00",
- "finished": "2026-11-05T14:09:19",
+ "finished": "2026-11-05T14:35:37",
  "going": {
-  "Flemington": "Soft 5",
+  "Flemington": "Good 4",
   "Gosford": "Good 4",
   "Sapphire Coast": "Good 4",
   "Ipswich": "Good 4",
@@ -23,5 +23,5 @@
  },
  "scratchings": 88,
  "dashboard": "toprate_week_v2_2026-11-05.html",
- "fingerprint": "0b38b29641de"
+ "fingerprint": "85c3e8b2f6a9"
 }
