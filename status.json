@@ -1,25 +1,27 @@
 {
- "started": "2026-11-06T03:13:01",
+ "started": "2026-11-06T09:10:04",
  "dates": [
   "2026-11-06",
-  "2026-11-07"
+  "2026-11-07",
+  "2026-11-08",
+  "2026-11-09"
  ],
- "reason": "overnight harvest",
+ "reason": "retry: Gatton Soft 6 -> Soft 5; Gatton scratched R1 #11/12/13, R2 #4, R5 #3, R6 #8, R7 #6",
  "status": "ok",
  "acceptors": 480,
- "rider_share": 0.87,
- "extract_max_date": "2026-11-07",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-11-09",
  "card_source": "toprate",
- "extract": "2026-11-05T16:07:11+00:00",
- "finished": "2026-11-06T04:01:51",
+ "extract": "2026-11-05T21:23:06+00:00",
+ "finished": "2026-11-06T09:28:33",
  "going": {
-  "Cranbourne": "Soft 6",
+  "Cranbourne": "Soft 5",
   "Warrnambool": "Good 4",
-  "Albury": "Soft 5",
-  "Gatton": "Soft 6",
+  "Albury": "Good 4",
+  "Gatton": "Soft 5",
   "Kempsey": "Heavy 10"
  },
- "scratchings": 45,
+ "scratchings": 103,
  "dashboard": "toprate_week_v2_2026-11-06.html",
- "fingerprint": "dda3ef0ec67b"
+ "fingerprint": "396153559b92"
 }
