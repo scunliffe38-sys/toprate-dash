@@ -1,27 +1,25 @@
 {
- "started": "2026-11-05T17:05:02",
+ "started": "2026-11-06T03:13:01",
  "dates": [
-  "2026-11-05",
   "2026-11-06",
   "2026-11-07"
  ],
- "reason": "Gosford scratched R7 #7",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 507,
- "rider_share": 1.0,
+ "acceptors": 480,
+ "rider_share": 0.87,
  "extract_max_date": "2026-11-07",
  "card_source": "toprate",
- "extract": "2026-11-04T21:22:38+00:00",
- "finished": "2026-11-05T17:19:53",
+ "extract": "2026-11-05T16:07:11+00:00",
+ "finished": "2026-11-06T04:01:51",
  "going": {
-  "Flemington": "Good 4",
-  "Sapphire Coast": "Good 4",
-  "Ipswich": "Good 3",
-  "Gawler": "Good 4",
-  "Belmont Park": "Good 4",
-  "Gosford": "Good 4"
+  "Cranbourne": "Soft 6",
+  "Warrnambool": "Good 4",
+  "Albury": "Soft 5",
+  "Gatton": "Soft 6",
+  "Kempsey": "Heavy 10"
  },
- "scratchings": 92,
- "dashboard": "toprate_week_v2_2026-11-05.html",
- "fingerprint": "f39c516094a1"
+ "scratchings": 45,
+ "dashboard": "toprate_week_v2_2026-11-06.html",
+ "fingerprint": "dda3ef0ec67b"
 }
