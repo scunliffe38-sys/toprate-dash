@@ -1684,6 +1684,8 @@ function blendOn(r,k,polled){                        // on the raw SPM values, a
     r.blbook=rs.reduce((a,x)=>a+100/x.bfb,0);
     if(r.blbook<=BLBOOK){ const mids={}; rs.forEach(x=>{mids[x.no]=bfMid(x);}); r.blq={book:r.blbook,mids,at:polled||r.blq&&r.blq.at||null}; }
   } else if(!r.blq) r.blbook=null;
+  // the box's own latest qualifying snapshot (live.json bf.q), so a page opened late or after the off still blends
+  const sq=r._sq; if(sq&&sq.m&&sq.book<=BLBOOK&&(!r.blq||!r.blq.at||(sq.at&&sq.at>r.blq.at))) r.blq={book:sq.book,mids:sq.m,at:sq.at};
   if(!BLEND||!r.blq||rs.length<2) return;
   const mids=r.blq.mids; if(!rs.every(x=>mids[x.no]>1&&x.fair>0)) return;   // a runner the snapshot lacks: stay raw
   const zb=rs.reduce((a,x)=>a+1/mids[x.no],0), zr=rs.reduce((a,x)=>a+1/x.fair,0);
@@ -1723,7 +1725,7 @@ function applyLivePrices(races,date){
       blendOff(r);                                 // the merge below works on the raw SPM values; the blend goes back on at the end
       strikeScr(r,lv);
       const p=lv.p||{};
-      const bp=(lv.bf&&lv.bf.p)||{}; r.bfm=lv.bf?lv.bf.matched:null;
+      const bp=(lv.bf&&lv.bf.p)||{}; r.bfm=lv.bf?lv.bf.matched:null; r._sq=(lv.bf&&lv.bf.q)||null;
       const bx=lv.bx||{};
       r.runners.forEach(x=>{ const v=p[String(x.no)]; x.sp=(v&&v>1)?v:null;
         const bv=bx[String(x.no)]; x.bx=(bv&&bv>1)?bv:null;
@@ -3081,4 +3083,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 15:47</b> AEST &middot; quaddie approximates against each runner</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 15:50</b> AEST &middot; SPM + Betfair: box snapshot</div><div style="height:34px"></div></body></html>
