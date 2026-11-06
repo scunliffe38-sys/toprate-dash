@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T21:22:09.593Z",
+ "saved": "2026-11-06T22:29:50.776Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -499,6 +499,15 @@
    "sp": 8.5,
    "fair": 15.75,
    "rating": 87.18
+  },
+  "Rosehill|5|PASADENA": {
+   "on": 1,
+   "t": 1794004187577,
+   "name": "Pasadena",
+   "tab": 7,
+   "sp": 9,
+   "fair": 6.36,
+   "rating": 92.42
   }
  }
 }
