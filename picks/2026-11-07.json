@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:21:55.846Z",
+ "saved": "2026-11-06T12:22:03.478Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -244,6 +244,24 @@
    "sp": 11,
    "fair": 30.27,
    "rating": 97.76
+  },
+  "Flemington|9|EDUCATED": {
+   "on": 1,
+   "t": 1793967719780,
+   "name": "Educated",
+   "tab": 6,
+   "sp": 3.8,
+   "fair": 3.6,
+   "rating": 94.76
+  },
+  "Flemington|9|ELECTRICELVIS": {
+   "on": 1,
+   "t": 1793967720438,
+   "name": "Electric Elvis",
+   "tab": 8,
+   "sp": 9.5,
+   "fair": 10.97,
+   "rating": 91.69
   }
  }
 }
