@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:21:48.056Z",
+ "saved": "2026-11-06T12:21:55.846Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -217,6 +217,33 @@
    "sp": 13,
    "fair": 12.52,
    "rating": 97.61
+  },
+  "Flemington|8|COSMICCRUSADER": {
+   "on": 1,
+   "t": 1793967711777,
+   "name": "Cosmic Crusader",
+   "tab": 1,
+   "sp": 3.2,
+   "fair": 2.68,
+   "rating": 105.02
+  },
+  "Flemington|8|BIRDMAN": {
+   "on": 1,
+   "t": 1793967712775,
+   "name": "Birdman",
+   "tab": 5,
+   "sp": 6,
+   "fair": 6.82,
+   "rating": 102.25
+  },
+  "Flemington|8|OMNIMAN": {
+   "on": 1,
+   "t": 1793967715714,
+   "name": "Omni Man",
+   "tab": 9,
+   "sp": 11,
+   "fair": 30.27,
+   "rating": 97.76
   }
  }
 }
