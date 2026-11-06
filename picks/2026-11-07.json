@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:15:52.026Z",
+ "saved": "2026-11-06T12:16:43.474Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -73,6 +73,15 @@
    "sp": 10,
    "fair": 10.25,
    "rating": 96.61
+  },
+  "Flemington|3|LITZDEEL": {
+   "on": 1,
+   "t": 1793967400362,
+   "name": "Litzdeel",
+   "tab": 8,
+   "sp": 6,
+   "fair": 6.22,
+   "rating": 98.11
   }
  }
 }
