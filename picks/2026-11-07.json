@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:42:00.631Z",
+ "saved": "2026-11-06T12:42:19.135Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -391,6 +391,24 @@
    "sp": 6,
    "fair": 62.04,
    "rating": 77.43
+  },
+  "Rosehill|7|LAZZURA": {
+   "on": 1,
+   "t": 1793968936024,
+   "name": "Lazzura",
+   "tab": 1,
+   "sp": 1.45,
+   "fair": 2.68,
+   "rating": 99.83
+  },
+  "Rosehill|7|CHAINSOFLOVE": {
+   "on": 1,
+   "t": 1793968938677,
+   "name": "Chains Of Love",
+   "tab": 8,
+   "sp": 9.5,
+   "fair": 4.33,
+   "rating": 98.44
   }
  }
 }
