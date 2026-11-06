@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:36:05.493Z",
+ "saved": "2026-11-06T12:37:02.182Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -319,6 +319,24 @@
    "sp": 11,
    "fair": 5.35,
    "rating": 89.21
+  },
+  "Rosehill|4|SAMARELLE": {
+   "on": 1,
+   "t": 1793968618094,
+   "name": "Samarelle",
+   "tab": 2,
+   "sp": 4.8,
+   "fair": 6.63,
+   "rating": 90.43
+  },
+  "Rosehill|4|DONATELLO": {
+   "on": 1,
+   "t": 1793968619039,
+   "name": "Donatello",
+   "tab": 6,
+   "sp": 2.8,
+   "fair": 4.59,
+   "rating": 91.57
   }
  }
 }
