@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:22:03.478Z",
+ "saved": "2026-11-06T12:22:12.209Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -262,6 +262,42 @@
    "sp": 9.5,
    "fair": 10.97,
    "rating": 91.69
+  },
+  "Flemington|9|ESMAHLI": {
+   "on": 1,
+   "t": 1793967726224,
+   "name": "Esmahli",
+   "tab": 2,
+   "sp": 13,
+   "fair": 15.52,
+   "rating": 90.77
+  },
+  "Flemington|9|BRAVEDESIGN": {
+   "on": 1,
+   "t": 1793967728309,
+   "name": "Brave Design",
+   "tab": 18,
+   "sp": 10,
+   "fair": 22.47,
+   "rating": 89.77
+  },
+  "Flemington|9|LAWBOROUGH": {
+   "on": 1,
+   "t": 1793967729125,
+   "name": "Lawborough",
+   "tab": 19,
+   "sp": 21,
+   "fair": 25.32,
+   "rating": 89.44
+  },
+  "Flemington|9|ROYALRENDEZVOUS": {
+   "on": 1,
+   "t": 1793967731840,
+   "name": "Royal Rendezvous",
+   "tab": 14,
+   "sp": 14,
+   "fair": 37.93,
+   "rating": 88.34
   }
  }
 }
