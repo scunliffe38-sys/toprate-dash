@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:42:52.339Z",
+ "saved": "2026-11-06T12:48:12.806Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -454,6 +454,15 @@
    "sp": 3.1,
    "fair": 2.34,
    "rating": 90.65
+  },
+  "Rosehill|9|SWORDPLAY": {
+   "on": 1,
+   "t": 1793969289534,
+   "name": "Swordplay",
+   "tab": 1,
+   "sp": 3,
+   "fair": 4.35,
+   "rating": 88.73
   }
  }
 }
