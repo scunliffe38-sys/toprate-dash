@@ -165,6 +165,9 @@ dialog.wxpop::backdrop{background:rgba(22,33,28,.45)}
 .quad td.lg{color:var(--dim);white-space:nowrap} .quad td.cv{color:var(--faint);white-space:nowrap}
 .quad .myq{margin:9px 0 2px;padding-top:8px;border-top:1px solid var(--rule)}   /* My ticket, from the stars (6 Nov 2026) */
 .quad .myq .mh{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:14px;margin-left:19px}
+/* the model's own legs, named as SPM's (Simon, 7 Nov 2026: "make it clear that the top quaddie selections are 'SPM Auto Generated Selections'") */
+.quad .auh{font-family:"Archivo Narrow",sans-serif;font-weight:700;font-size:14px;margin:2px 0 2px 19px}
+.quad .auh span{font-weight:400;color:var(--faint);font-size:12px;margin-left:7px}
 .quad .myq .mh span{font-weight:400;color:var(--faint);font-size:12px;margin-left:7px}
 .quad .myq td.need{color:var(--faint);font-style:italic} .quad .myq .scrn{color:var(--neg)}
 .quad .myq .ft{margin-left:19px}
@@ -1471,6 +1474,10 @@ function formPanel(m,r,x){
 }
 // the guide itself: f the runner's record (formcard.py / horsecard.py), fk the key the Full-history toggle remembers it by, syn
 // whether to show the synthetic record (a synthetic meeting today; always on a search card)
+// the comment credit on a past run (7 Nov 2026): what the stewards' and video comments added to this run's figure before the rating averaged it,
+// in the base's own figure points, with the reasons on hover (formcard.py xc / xt from excuse_view.py); blank where the run drew none
+function xcCell(q){ if(q.xc==null) return '<td></td>'; const t=String(q.xt||'').replace(/"/g,'');
+  return `<td class="n" title="${t}">${q.xc>0?'+':'\u2212'}${Math.abs(q.xc).toFixed(1)}</td>`; }
 function formBody(f,fk,syn){
   // one strip (Simon, 27 Oct 2026): career, prize money, age and type, sire / dam, then the record at the track, the trip,
   // first up and on each going; Synth only at a synthetic meeting
@@ -1502,16 +1509,16 @@ function formBody(f,fk,syn){
   const full=FCALL.has(fk)||nrun<=FCN, shown=full?allr:allr.slice(cut), fkq=fk.replace(/'/g,"\\'");
   const more=nrun>FCN?`<button type="button" class="fcmore" onclick="fcAll('${fkq}')">${FCALL.has(fk)?`Last ${FCN} only ▴`:`Full history · all ${nrun} runs ▸`}</button>`:'';
   const rows=shown.map(q=>{
-    if(q.x) return `<tr class="fsp"><td colspan="18">${q.x} Day Spell</td></tr>`;
+    if(q.x) return `<tr class="fsp"><td colspan="19">${q.x} Day Spell</td></tr>`;
     const cls=(q.p===1?'r1':'')+(q.tr?' ftr':'');
     return `<tr class="${cls}"><td class="n">${q.p??'–'}/${q.f??'–'}</td><td>${vcell(q)}</td><td class="n">${dd(q.d)}</td><td>${q.g||''}</td><td class="n">${q.m||''}</td>`
       +`<td>${q.c||''}</td><td>${q.j||''}${q.b!=null?` (${q.b})`:''}</td><td class="n">${q.w!=null?q.w.toFixed(1):''}</td><td class="n">${q.sp!=null?q.sp.toFixed(2):''}</td>`
-      +`<td>${q.o||''}</td><td class="n">${q.mg!=null?q.mg.toFixed(1):''}</td><td class="n">${tm(q.t)}</td><td class="n">${q.ir||''}</td>${ckCells(q)}`
+      +`<td>${q.o||''}</td><td class="n">${q.mg!=null?q.mg.toFixed(1):''}</td><td class="n">${tm(q.t)}</td><td class="n">${q.ir||''}</td>${xcCell(q)}${ckCells(q)}`
       +`<td>${q.u?`<a class="frp" href="${q.u}" target="_blank" rel="noopener" title="${q.v||''} ${dd(q.d)} — replay">▶</a>`:''}</td></tr>`;
   }).join('');
   o+=more+`<div class="fcsc"><table class="fct"><thead><tr><th>Plcg</th><th>Venue</th><th>Date</th><th>Track</th><th>Dist</th><th>Class</th><th>Jockey (Br)</th>`
-    +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th>`
-    +`<th class="ckh" title="${CKT}">Early</th><th class="ckh" title="${CKT}">Mid</th><th class="ckh" title="${CKT}">Late</th><th class="ckh" title="${CKT}">Net</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="18" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
+    +`<th>Wgt</th><th>Odds</th><th>Winner/2nd</th><th>Margin L</th><th>Time</th><th>In run</th><th title="Comment credit: the points the stewards' and video comments add to (or take from) this run's figure before the rating averages it, at the size the model uses. Hover a figure for the reasons.">Credit</th>`
+    +`<th class="ckh" title="${CKT}">Early</th><th class="ckh" title="${CKT}">Mid</th><th class="ckh" title="${CKT}">Late</th><th class="ckh" title="${CKT}">Net</th><th>Replay</th></tr></thead><tbody>${rows||'<tr><td colspan="19" class="fcmsg">No starts yet.</td></tr>'}</tbody></table></div>`;
   // the phone's own table (Simon, 27 Oct 2026: "only show these items - no scroll over"): date, venue, placing, trip, class, replay
   const gs=g=>{ g=String(g||''); const n=(g.match(/\d+/)||[''])[0]; return /synth|poly/i.test(g)?'Syn':(g?g[0].toUpperCase()+n:''); };   // Good 4 -> G4
   const prow=shown.map(q=>q.x?`<tr class="fsp"><td colspan="7">${q.x} Day Spell</td></tr>`
@@ -2716,7 +2723,7 @@ function quadItems(m,r){   // each quaddie this race is in, as a drill-in on the
     const n=legs.reduce((a,g)=>a*g.l.pick.length,1), fx=100*QUAD_STAKE/n, ok=n<=cap, fxs=fx>=10?fx.toFixed(0):fx.toFixed(1);
     const qa=quadApprox(m,r,q,legs,fx), my=myqBody(m,q);
     const rows=legs.map((g,i)=>`<tr${g.no===r.no?' class="here"':''}><td class="lg">Leg ${i+1} &nbsp;R${g.no}</td><td><b>${g.l.pick.slice(0,g.l.n0).map(x=>x.no).join(', ')}</b>${g.l.pick.length>g.l.n0?` <span class="tie">+ ${g.l.pick.slice(g.l.n0).map(x=>x.no).join(', ')}</span>`:''}</td><td class="cv">${g.l.pick.length} for ${g.l.cum.toFixed(0)}%</td></tr>`).join('');
-    return {k,lab,sh,tip,y:ok,sum:`<b>${ok?'BET':'SIT OUT'}</b> · ${n} combo${n===1?'':'s'}${my.sum}${qa?qa.sum:''}`,body:`<div class="quad${ok?'':' no'} qb">${qa?qa.body:''}<table>${rows}</table>${(()=>{ const sr=sendRow(m,q,legs.map(g=>({no:g.no,sel:g.l.pick.map(x=>x.no).sort((a,b)=>a-b)})),'mdq-'+q.p);   // the model's ticket to TAB too (Simon, 7 Nov 2026)
+    return {k,lab,sh,tip,y:ok,sum:`<b>${ok?'BET':'SIT OUT'}</b> · ${n} combo${n===1?'':'s'}${my.sum}${qa?qa.sum:''}`,body:`<div class="quad${ok?'':' no'} qb">${qa?qa.body:''}<div class="auh">SPM Auto Generated Selections<span>the model's runners to ${QUAD_COVER}% a leg</span></div><table>${rows}</table>${(()=>{ const sr=sendRow(m,q,legs.map(g=>({no:g.no,sel:g.l.pick.map(x=>x.no).sort((a,b)=>a-b)})),'mdq-'+q.p);   // the model's ticket to TAB too (Simon, 7 Nov 2026)
       return `${sr.html}<div class="sm ft">${ok?'qualifies':'does not qualify'} (${cap} or fewer) &nbsp;·&nbsp; ${QUAD_COVER}% a leg on the model's chances &nbsp;·&nbsp; ${sr.note}</div>`; })()}${my.body}</div>`};
   });
 }
@@ -3359,4 +3366,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 07 Nov 10:00</b> AEST &middot; morning harvest</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 07 Nov 10:01</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
