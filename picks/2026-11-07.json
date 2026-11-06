@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:27:53.014Z",
+ "saved": "2026-11-06T12:35:25.083Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -301,6 +301,15 @@
    "sp": 10,
    "fair": 11.56,
    "rating": 101.8
+  },
+  "Rosehill|3|SAVVYSPY": {
+   "on": 1,
+   "t": 1793968521981,
+   "name": "Savvy Spy",
+   "tab": 3,
+   "sp": 2.3,
+   "fair": 3.2,
+   "rating": 90.82
   }
  }
 }
