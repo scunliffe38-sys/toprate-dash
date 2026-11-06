@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:18:58.537Z",
+ "saved": "2026-11-06T12:21:11.630Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -163,6 +163,24 @@
    "sp": 18,
    "fair": 18.97,
    "rating": 92.6
+  },
+  "Flemington|6|TEMPTED": {
+   "on": 1,
+   "t": 1793967667186,
+   "name": "Tempted",
+   "tab": 6,
+   "sp": 1.8,
+   "fair": 3.31,
+   "rating": 105.48
+  },
+  "Flemington|6|JOLIESTAR": {
+   "on": 1,
+   "t": 1793967668324,
+   "name": "Joliestar",
+   "tab": 7,
+   "sp": 4.8,
+   "fair": 5.45,
+   "rating": 103.99
   }
  }
 }
