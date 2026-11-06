@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:22:12.209Z",
+ "saved": "2026-11-06T12:23:18.496Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -291,13 +291,8 @@
    "rating": 89.44
   },
   "Flemington|9|ROYALRENDEZVOUS": {
-   "on": 1,
-   "t": 1793967731840,
-   "name": "Royal Rendezvous",
-   "tab": 14,
-   "sp": 14,
-   "fair": 37.93,
-   "rating": 88.34
+   "on": 0,
+   "t": 1793967794935
   }
  }
 }
