@@ -1012,6 +1012,62 @@ DATA.days.forEach(d=>d.meetings.forEach(m=>m.races.forEach(r=>{
   r.runners.forEach((x,i)=>{x.pct=+(100*e[i]/z).toFixed(1); x.fair=+(z/e[i]).toFixed(2);});
   r.runners.sort((a,b)=>b.rating-a.rating);
 })));
+// A household phone (?home=<name>: Simon's wife and dad, 7 Nov 2026) keeps its name in spm.home; see the picks below. The
+// switch is read here, before anything is drawn, because its settle maps move the ratings on that phone.
+const PKHOMEL='spm.home';
+let PKHOME=(()=>{ let v=null; try{ v=new URLSearchParams(location.search).get('home'); }catch(e){}
+  try{
+    if(v!=null){ v=String(v).replace(/[^A-Za-z0-9 '\-]/g,'').trim().slice(0,20);
+      if(!v||/^off$/i.test(v)){ localStorage.removeItem(PKHOMEL); v=null; } else localStorage.setItem(PKHOMEL,v);
+      const u=new URL(location.href); u.searchParams.delete('home'); history.replaceState(null,'',u.pathname+u.search+u.hash);
+      return v; }
+    return localStorage.getItem(PKHOMEL)||null;
+  }catch(e){ return v||null; } })();
+// The household's own settle maps (Simon, 7 Nov 2026: "i'd like the map part to work"). On a household phone settle.html saves to
+// the device (localStorage spm-settle-maps, never the repo). Here, before the first draw, every Australian race comes off Simon's
+// map and onto the phone's own: his change (x.umap, page points = his logit change x 3.32, usermap.py) is taken back out of
+// settle and rating, then the phone's saved delta_logit is put in exactly as usermap.apply does on the box: re-centred over the
+// runners now in the race, delta / (k x pslope) into settle and rating, the chances scaled by e^change (so pct' = pct x
+// e^(hers - his) / sum) and fair = 1 / pct'. A race the phone has not mapped shows the model alone, never Simon's map; a race
+// whose field changed too much since the save (fewer than half the runners, or 2) keeps the model. HK is left as built.
+// Nothing leaves the phone, and the day files and the ledger on the box never see these maps.
+(function(){
+  if(!PKHOME) return;
+  let all={}; try{ all=JSON.parse(localStorage.getItem('spm-settle-maps')||'{}')||{}; }catch(e){ all={}; }
+  const nm=v=>String(v||'').toUpperCase().replace(/[^A-Z0-9]/g,''), by={};
+  Object.values(all).forEach(u=>{
+    if(!u||!u.date||u.venue==null||u.race==null||!Array.isArray(u.runners)||!u.runners.length) return;
+    const key=`${u.date}|${u.venue}|${+u.race}`, prev=by[key];
+    if(!prev||String(u.savedAt||'')>String(prev.savedAt||'')) by[key]=u; });
+  DATA.days.forEach(d=>{ if(!d.k) return; d.meetings.forEach(m=>{ if(m.state==='HK') return; m.races.forEach(r=>{
+    const R=r.runners||[], u=by[`${d.date}|${m.track}|${r.no}`];
+    const his=R.map(x=>typeof x.umap==='number'?x.umap/3.32:0);
+    if(!R.length||(!u&&!r.umap&&!his.some(v=>v))) return;
+    let got=null, mine=R.map(()=>0);
+    if(u&&R.length>=2){
+      const q={}; u.runners.forEach(y=>{ q[nm(y.name)]=y; });
+      got=R.map(x=>q[nm(x.name)]||null);
+      if(got.filter(Boolean).length>=Math.max(2,R.length/2)){
+        mine=got.map(y=>y&&typeof y.delta_logit==='number'?y.delta_logit:0);
+        const mu=mine.reduce((a,b)=>a+b,0)/mine.length; mine=mine.map(v=>v-mu);
+      } else got=null;
+    }
+    const w=R.map((x,i)=>{
+      const dv=mine[i]-his[i], pts=dv/(d.k*(x.pslope??1));
+      x.settle=+((x.settle||0)+pts).toFixed(3);
+      if(typeof x.rating==='number') x.rating=+(x.rating+pts).toFixed(2);
+      delete x.umap; delete x.usp; delete x.uconf; delete x.umv;
+      const y=got&&got[i];
+      if(got) x.umap=+(mine[i]*3.32).toFixed(2);
+      if(y){ if(Number.isInteger(y.spot)) x.usp=y.spot; x.uconf=+(y.conf||0); x.umv=y.spot!=null&&y.spot!==y.live_spot; }
+      return (+x.pct||0)*Math.exp(dv); });
+    const z=w.reduce((a,b)=>a+b,0);
+    if(z>0) R.forEach((x,i)=>{ x.pct=+(100*w[i]/z).toFixed(1); if(w[i]>0) x.fair=+(z/w[i]).toFixed(2); });
+    if(got) r.umap={saved:u.savedAt,rconf:+(u.rconf||0),before:u.beforeJump,tempo:u.tempo||null,tempo_fc:u.tempo_fc||null,home:PKHOME};
+    else delete r.umap;
+    R.sort((a,b)=>(typeof b.rating==='number'?b.rating:-1e9)-(typeof a.rating==='number'?a.rating:-1e9));
+  }); }); });
+})();
 const $=id=>document.getElementById(id);
 let daySort='meeting';   // 'meeting' | 'time' | 'rating'
 let allMeets=false;      // the carousel carries one meeting per state until this is on
@@ -2779,7 +2835,7 @@ function hkLedger(x,r){
 
 // ---- your picks (Simon, 6 Nov 2026: "select runners on the dash and have it record my selections - e.g. if i'm looking in the
 // morning, i can come back and see where i left off"). A star on every runner, Australian and Hong Kong, the picked row
-// edged blue and a star on the race tab and Next to Go (no list of them yet: Simon, "my picks is unnecessary at this stage"). Display only: nothing on the box reads them. Kept on the device (localStorage spm.picks,
+// edged blue and a star on the race tab and Next to Go (no list of them yet: Simon, "my picks is unnecessary at this stage"). A household phone (?home=, read up by the barrier fold) gets device-only stars. Display only: nothing on the box reads them. Kept on the device (localStorage spm.picks,
 // date -> "track|race|NAME" -> {on, t, ...}) and, where settle.html's GitHub token is on the device (spm-gh-token, same origin),
 // in the dash repo as picks/<date>.json, so a pick made on the phone is on the laptop. An unpick is kept as {on:0} so the later
 // of two devices wins, key by key (t). Since deploy_picks2 the stars appear only in an authorised browser (pkAuth below).
@@ -2813,17 +2869,23 @@ async function pkAuth(){
   if(PKOK!==was) draw();
   return PKOK;
 }
+// a household phone (Simon, 7 Nov 2026: "i have my dad and my wife using the dash ... i want them to be able to use the features,
+// and also not to mess with how i'm using them"). Opened once as index.html?home=<name>, the browser keeps the name (spm.home)
+// and gets stars of its own: kept on that phone only, never read from or written to the repo, so Simon's picks are neither
+// shown there nor touched. ?home=off takes it away. An authorised browser (PKOK) still syncs as before; the link changes nothing there.
+const pkMine=()=>PKOK||!!PKHOME;                   // stars show; only PKOK ever talks to the repo
+const pkWho=()=>PKOK||!PKHOME?'your picks':`${PKHOME}\u2019s picks (this phone only)`;
 const pkDay=date=>PICKS[date]||(PICKS[date]={});
 const pkOn=(date,k)=>!!(PICKS[date]&&PICKS[date][k]&&PICKS[date][k].on);
 function pkSave(){ try{ localStorage.setItem(PKL,JSON.stringify(PICKS)); }catch(e){} }
 // keep a week: older days drop off this device (the repo copy stays)
 (()=>{ const cut=new Date(Date.now()-8*864e5).toISOString().slice(0,10); Object.keys(PICKS).forEach(d=>{ if(d<cut) delete PICKS[d]; }); pkSave(); })();
-function pkBtn(m,r,x,cls){ if(!PKOK) return ''; const on=pkOn(D().date,pkKey(m,r,x));
-  return `<button class="pk${on?' on':''}${cls?' '+cls:''}" data-pk="${spEsc(pkKey(m,r,x))}" aria-pressed="${on}" title="${on?'In your picks: tap to take it out':'Add to your picks'}" aria-label="${on?'Remove from':'Add to'} your picks">${PKSVG}</button>`; }
-const pkRow=(m,r,x)=>PKOK&&pkOn(D().date,pkKey(m,r,x))?' pkd':'';
-const pkRaceN=(m,r)=>{ if(!PKOK) return 0; const d=PICKS[D().date]; if(!d) return 0; const p=`${m.track}|${r.no}|`; return Object.keys(d).filter(k=>d[k].on&&k.startsWith(p)).length; };
+function pkBtn(m,r,x,cls){ if(!pkMine()) return ''; const on=pkOn(D().date,pkKey(m,r,x));
+  return `<button class="pk${on?' on':''}${cls?' '+cls:''}" data-pk="${spEsc(pkKey(m,r,x))}" aria-pressed="${on}" title="${on?`In ${pkWho()}: tap to take it out`:`Add to ${pkWho()}`}" aria-label="${on?'Remove from':'Add to'} your picks">${PKSVG}</button>`; }
+const pkRow=(m,r,x)=>pkMine()&&pkOn(D().date,pkKey(m,r,x))?' pkd':'';
+const pkRaceN=(m,r)=>{ if(!pkMine()) return 0; const d=PICKS[D().date]; if(!d) return 0; const p=`${m.track}|${r.no}|`; return Object.keys(d).filter(k=>d[k].on&&k.startsWith(p)).length; };
 function pkToggle(k){
-  if(!PKOK) return;
+  if(!pkMine()) return;
   const date=D().date, day=pkDay(date), on=!pkOn(date,k), [track,no]=k.split('|');
   const m=D().meetings.find(q=>q.track===track), r=m&&m.races.find(q=>String(q.no)===no);
   const x=r&&(r.all||r.runners).find(q=>pkKey(m,r,q)===k);
@@ -3266,4 +3328,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 07 Nov 06:57</b> AEST &middot; HK card</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sat 07 Nov 07:29</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
