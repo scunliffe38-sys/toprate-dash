@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:16:43.474Z",
+ "saved": "2026-11-06T12:16:58.801Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -82,6 +82,42 @@
    "sp": 6,
    "fair": 6.22,
    "rating": 98.11
+  },
+  "Flemington|4|HANKEEALPHA": {
+   "on": 1,
+   "t": 1793967410656,
+   "name": "Hankee Alpha",
+   "tab": 17,
+   "sp": 3,
+   "fair": 6.61,
+   "rating": 97.78
+  },
+  "Flemington|4|PALLATON": {
+   "on": 1,
+   "t": 1793967413106,
+   "name": "Pallaton",
+   "tab": 5,
+   "sp": 16,
+   "fair": 13.62,
+   "rating": 95.73
+  },
+  "Flemington|4|IMMORTALSTAR": {
+   "on": 1,
+   "t": 1793967414998,
+   "name": "Immortal Star",
+   "tab": 9,
+   "sp": 16,
+   "fair": 18.44,
+   "rating": 94.89
+  },
+  "Flemington|4|ARKANSAWKID": {
+   "on": 1,
+   "t": 1793967415741,
+   "name": "Arkansaw Kid",
+   "tab": 1,
+   "sp": 15,
+   "fair": 17.29,
+   "rating": 95.07
   }
  }
 }
