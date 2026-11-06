@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:14:50.136Z",
+ "saved": "2026-11-06T12:15:46.813Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -37,6 +37,33 @@
    "sp": 8,
    "fair": 10.72,
    "rating": 90.75
+  },
+  "Flemington|3|DEFIANTLY": {
+   "on": 1,
+   "t": 1793967341640,
+   "name": "Defiantly",
+   "tab": 1,
+   "sp": 4.6,
+   "fair": 5.09,
+   "rating": 98.74
+  },
+  "Flemington|3|KINGPEDRO": {
+   "on": 1,
+   "t": 1793967342824,
+   "name": "King Pedro",
+   "tab": 5,
+   "sp": 4.4,
+   "fair": 6.75,
+   "rating": 97.88
+  },
+  "Flemington|3|PINHOLE": {
+   "on": 1,
+   "t": 1793967343641,
+   "name": "Pinhole",
+   "tab": 4,
+   "sp": 3.1,
+   "fair": 9.19,
+   "rating": 96.96
   }
  }
 }
