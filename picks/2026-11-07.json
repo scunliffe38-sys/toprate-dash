@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T23:46:07.737Z",
+ "saved": "2026-11-06T23:46:31.198Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -132,22 +132,12 @@
    "rating": 94.05
   },
   "Flemington|5|ZULEIKA": {
-   "on": 1,
-   "t": 1793967527595,
-   "name": "Zuleika",
-   "tab": 7,
-   "sp": 14,
-   "fair": 11.84,
-   "rating": 93.88
+   "on": 0,
+   "t": 1794008788207
   },
   "Flemington|5|JENNISMEADOW": {
-   "on": 1,
-   "t": 1793967535466,
-   "name": "Jenni's Meadow",
-   "tab": 10,
-   "sp": 18,
-   "fair": 18.97,
-   "rating": 92.6
+   "on": 0,
+   "t": 1794008786286
   },
   "Flemington|6|TEMPTED": {
    "on": 1,
