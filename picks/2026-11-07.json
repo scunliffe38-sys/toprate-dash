@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:12:38.503Z",
+ "saved": "2026-11-06T12:14:50.136Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -10,6 +10,33 @@
    "sp": 3.2,
    "fair": 3.17,
    "rating": 94.3
+  },
+  "Flemington|2|MOUNTBONA": {
+   "on": 1,
+   "t": 1793967284341,
+   "name": "Mount Bona",
+   "tab": 11,
+   "sp": 13,
+   "fair": 18.46,
+   "rating": 89.2
+  },
+  "Flemington|2|SUPERFABULISTIC": {
+   "on": 1,
+   "t": 1793967286141,
+   "name": "Superfabulistic",
+   "tab": 13,
+   "sp": 4.2,
+   "fair": 8.61,
+   "rating": 91.42
+  },
+  "Flemington|2|HELLRIP": {
+   "on": 1,
+   "t": 1793967286959,
+   "name": "He'll Rip",
+   "tab": 4,
+   "sp": 8,
+   "fair": 10.72,
+   "rating": 90.75
   }
  }
 }
