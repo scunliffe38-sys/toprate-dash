@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:23:18.496Z",
+ "saved": "2026-11-06T12:26:34.794Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -293,6 +293,15 @@
   "Flemington|9|ROYALRENDEZVOUS": {
    "on": 0,
    "t": 1793967794935
+  },
+  "Flemington|6|HEADWALL": {
+   "on": 1,
+   "t": 1793967991609,
+   "name": "Headwall",
+   "tab": 3,
+   "sp": 8.5,
+   "fair": 6.23,
+   "rating": 103.6
   }
  }
 }
