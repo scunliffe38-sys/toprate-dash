@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:38:15.846Z",
+ "saved": "2026-11-06T12:39:03.161Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -346,6 +346,15 @@
    "sp": 2.6,
    "fair": 4.2,
    "rating": 92.75
+  },
+  "Rosehill|5|ACCIDENTALBID": {
+   "on": 1,
+   "t": 1793968739990,
+   "name": "Accidental Bid",
+   "tab": 6,
+   "sp": 16,
+   "fair": 7.25,
+   "rating": 91.02
   }
  }
 }
