@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:15:46.813Z",
+ "saved": "2026-11-06T12:15:52.026Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -64,6 +64,15 @@
    "sp": 3.1,
    "fair": 9.19,
    "rating": 96.96
+  },
+  "Flemington|3|BERKELEYSQUARE": {
+   "on": 1,
+   "t": 1793967348909,
+   "name": "Berkeley Square",
+   "tab": 3,
+   "sp": 10,
+   "fair": 10.25,
+   "rating": 96.61
   }
  }
 }
