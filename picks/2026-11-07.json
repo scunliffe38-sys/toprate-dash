@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:48:57.778Z",
+ "saved": "2026-11-06T12:50:30.505Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -481,6 +481,15 @@
    "sp": 1.8,
    "fair": 3.94,
    "rating": 92.19
+  },
+  "Rosehill|10|NULLARBORJANE": {
+   "on": 1,
+   "t": 1793969427351,
+   "name": "Nullarbor Jane",
+   "tab": 6,
+   "sp": 10,
+   "fair": 6.9,
+   "rating": 90.5
   }
  }
 }
