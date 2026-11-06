@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:42:19.135Z",
+ "saved": "2026-11-06T12:42:29.778Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -409,6 +409,33 @@
    "sp": 9.5,
    "fair": 4.33,
    "rating": 98.44
+  },
+  "Rosehill|8|BRINDAVAN": {
+   "on": 1,
+   "t": 1793968944275,
+   "name": "Brindavan",
+   "tab": 12,
+   "sp": 14,
+   "fair": 5.68,
+   "rating": 99.78
+  },
+  "Rosehill|8|LINEBACKER": {
+   "on": 1,
+   "t": 1793968944958,
+   "name": "Linebacker",
+   "tab": 1,
+   "sp": 6,
+   "fair": 5.83,
+   "rating": 99.67
+  },
+  "Rosehill|8|DECLICHYBOULEVARD": {
+   "on": 1,
+   "t": 1793968946725,
+   "name": "Declichy Boulevard",
+   "tab": 8,
+   "sp": 4.2,
+   "fair": 8.94,
+   "rating": 98.45
   }
  }
 }
