@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:48:12.806Z",
+ "saved": "2026-11-06T12:48:33.047Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -463,6 +463,15 @@
    "sp": 3,
    "fair": 4.35,
    "rating": 88.73
+  },
+  "Rosehill|9|SHOWBUSINESS": {
+   "on": 1,
+   "t": 1793969309990,
+   "name": "Show Business",
+   "tab": 11,
+   "sp": 3.5,
+   "fair": 8.43,
+   "rating": 86.68
   }
  }
 }
