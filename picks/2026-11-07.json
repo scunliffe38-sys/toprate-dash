@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:48:33.047Z",
+ "saved": "2026-11-06T12:48:57.778Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -472,6 +472,15 @@
    "sp": 3.5,
    "fair": 8.43,
    "rating": 86.68
+  },
+  "Rosehill|10|HORSESHOEHILL": {
+   "on": 1,
+   "t": 1793969334641,
+   "name": "Horseshoe Hill",
+   "tab": 9,
+   "sp": 1.8,
+   "fair": 3.94,
+   "rating": 92.19
   }
  }
 }
