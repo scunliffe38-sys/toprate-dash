@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T22:29:50.776Z",
+ "saved": "2026-11-06T23:46:07.737Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -48,22 +48,12 @@
    "rating": 98.74
   },
   "Flemington|3|KINGPEDRO": {
-   "on": 1,
-   "t": 1793967342824,
-   "name": "King Pedro",
-   "tab": 5,
-   "sp": 4.4,
-   "fair": 6.75,
-   "rating": 97.88
+   "on": 0,
+   "t": 1794008764113
   },
   "Flemington|3|PINHOLE": {
-   "on": 1,
-   "t": 1793967343641,
-   "name": "Pinhole",
-   "tab": 4,
-   "sp": 3.1,
-   "fair": 9.19,
-   "rating": 96.96
+   "on": 0,
+   "t": 1794008765219
   },
   "Flemington|3|BERKELEYSQUARE": {
    "on": 1,
@@ -75,13 +65,8 @@
    "rating": 96.61
   },
   "Flemington|3|LITZDEEL": {
-   "on": 1,
-   "t": 1793967400362,
-   "name": "Litzdeel",
-   "tab": 8,
-   "sp": 6,
-   "fair": 6.22,
-   "rating": 98.11
+   "on": 0,
+   "t": 1794008763420
   },
   "Flemington|4|HANKEEALPHA": {
    "on": 1,
