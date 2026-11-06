@@ -1,27 +1,27 @@
 {
- "started": "2026-11-06T18:44:03",
+ "started": "2026-11-06T21:16:22",
  "dates": [
   "2026-11-06",
   "2026-11-07",
   "2026-11-08",
   "2026-11-09"
  ],
- "reason": "Cranbourne scratched R7 #13/16",
+ "reason": "Cranbourne scratched R8 #4",
  "status": "ok",
  "acceptors": 480,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-09",
  "card_source": "toprate",
  "extract": "2026-11-05T21:23:06+00:00",
- "finished": "2026-11-06T18:59:20",
+ "finished": "2026-11-06T21:30:55",
  "going": {
   "Cranbourne": "Good 4",
-  "Albury": "Good 4",
   "Warrnambool": "Good 4",
+  "Albury": "Good 4",
   "Gatton": "Good 4",
   "Kempsey": "Heavy 10"
  },
- "scratchings": 106,
+ "scratchings": 107,
  "dashboard": "toprate_week_v2_2026-11-06.html",
- "fingerprint": "6b8b64fe6f80"
+ "fingerprint": "b53a4e71cf4a"
 }
