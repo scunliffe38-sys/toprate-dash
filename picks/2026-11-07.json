@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:16:58.801Z",
+ "saved": "2026-11-06T12:17:04.320Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -118,6 +118,33 @@
    "sp": 15,
    "fair": 17.29,
    "rating": 95.07
+  },
+  "Flemington|5|TOODARNDISCREET": {
+   "on": 1,
+   "t": 1793967419197,
+   "name": "Too Darn Discreet",
+   "tab": 5,
+   "sp": 4,
+   "fair": 5.2,
+   "rating": 96.07
+  },
+  "Flemington|5|VIVYAIR": {
+   "on": 1,
+   "t": 1793967419951,
+   "name": "Vivy Air",
+   "tab": 8,
+   "sp": 4,
+   "fair": 7.9,
+   "rating": 94.93
+  },
+  "Flemington|5|SOVERATO": {
+   "on": 1,
+   "t": 1793967421259,
+   "name": "Soverato",
+   "tab": 4,
+   "sp": 6,
+   "fair": 11.14,
+   "rating": 94.05
   }
  }
 }
