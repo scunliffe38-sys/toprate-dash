@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:37:02.182Z",
+ "saved": "2026-11-06T12:38:15.846Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -337,6 +337,15 @@
    "sp": 2.8,
    "fair": 4.59,
    "rating": 91.57
+  },
+  "Rosehill|5|CASHOUT": {
+   "on": 1,
+   "t": 1793968692615,
+   "name": "Cashout",
+   "tab": 1,
+   "sp": 2.6,
+   "fair": 4.2,
+   "rating": 92.75
   }
  }
 }
