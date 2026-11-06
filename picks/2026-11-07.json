@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:18:50.787Z",
+ "saved": "2026-11-06T12:18:58.537Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 14,
    "fair": 11.84,
    "rating": 93.88
+  },
+  "Flemington|5|JENNISMEADOW": {
+   "on": 1,
+   "t": 1793967535466,
+   "name": "Jenni's Meadow",
+   "tab": 10,
+   "sp": 18,
+   "fair": 18.97,
+   "rating": 92.6
   }
  }
 }
