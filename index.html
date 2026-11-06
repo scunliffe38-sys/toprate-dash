@@ -2392,30 +2392,38 @@ function ranCells(r,x){
 }
 const ranHead=r=>r.ranw!=null?` &nbsp;·&nbsp; <span class="ranw" title="the rating the winner ran">won in ${r.ranw.toFixed(1)}</span>`:'';
 // The quaddie approximates against each runner (Simon, 6 Nov 2026: "I would like to see them in the card - against each runner -
-// give me a toggle to replace the Cum % with the Quad Approx"). On a race that is the last leg of a quaddie TAB has approximates
-// for (live.json qa, tab_live.quad_approx), the Cum. heading is a toggle: Cum. <-> Quad ≈, TAB's return per $1 for each runner
-// (– for none: no units on it). QCOL is remembered on the device; a race without approximates always shows Cum.
-let QCOL=(()=>{ try{ return localStorage.getItem('spm.quadcol')==='1'; }catch(e){ return false; } })();
-window.quadCol=()=>{ QCOL=!QCOL; try{ localStorage.setItem('spm.quadcol',QCOL?'1':'0'); }catch(e){} draw(); };
+// give me a toggle to replace the Cum % with the Quad Approx"), and the Treble's ("It would be nice to get the treble on the last
+// race as well ... a secondary toggle .. so Cum, Quad, Treble, back to Cum"). On a race that is the last leg of a quaddie or the
+// Treble (the meeting's last three races) with TAB approximates in live.json (qa, tab_live.quad_approx), the Cum. heading cycles
+// Cum. -> Quad ≈ (Early Q ≈) -> Treble ≈ -> Cum., skipping what the race lacks: TAB's return per $1 for each runner (– for none:
+// no units on it). QCOL ('cum' | 'quad' | 'treble') is remembered on the device; a race without the one chosen shows Cum.
+let QCOL=(()=>{ try{ const v=localStorage.getItem('spm.quadcol'); return v==='1'?'quad':(v==='quad'||v==='treble'?v:'cum'); }catch(e){ return 'cum'; } })();
 const qaFmt=v=>'$'+(v>=1000?Math.round(v).toLocaleString('en-AU'):v.toFixed(2));
-function raceQA(r){   // the quaddie this race is the last leg of, with TAB's approximates: {p, a} or null
+function raceQA(r){   // {quad: {p, a}, treble: {p, a}}: the approximates TAB has for this race as a last leg, or null
   const lv=liveOf(r), qa=lv&&lv.qa; if(!qa) return null;
-  const qs=(M().quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs[3]===r.no).map(q=>q.p);
-  for(const p of qs.concat(Object.keys(qa))) if(qa[p]&&qa[p].a) return {p,a:qa[p].a};
-  return null;
+  const out={}, qs=(M().quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs[3]===r.no).map(q=>q.p);
+  for(const p of qs.concat(['Quaddie','EarlyQuaddie'])) if(qa[p]&&qa[p].a){ out.quad={p,a:qa[p].a}; break; }
+  if(qa.Treble&&qa.Treble.a) out.treble={p:'Treble',a:qa.Treble.a};
+  return (out.quad||out.treble)?out:null;
 }
+function qaShown(r){ const z=raceQA(r), ms=['cum'].concat(z?['quad','treble'].filter(k=>z[k]):[]); return {z,ms,m:ms.includes(QCOL)?QCOL:'cum'}; }
+window.quadCol=()=>{ const {ms,m}=qaShown(M().races[active]||{}); QCOL=ms[(ms.indexOf(m)+1)%ms.length]; try{ localStorage.setItem('spm.quadcol',QCOL); }catch(e){} draw(); };
 function chh(r){
-  const z=raceQA(r), on=QCOL&&!!z, nm=z?(z.p==='EarlyQuaddie'?'Early Q':'Quad'):'';
-  const tg=z?`<button type="button" class="qcol${on?' on':''}" onclick="event.stopPropagation();quadCol()" aria-pressed="${on}" title="${on?`TAB's ${z.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'} approximates: the return per $1 if this runner wins the last leg. Click for the cumulative chance.`:`Click for TAB's ${z.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'} approximates against each runner.`}">${on?`${nm} ≈`:'Cum.'} <span>&#8644;</span></button>`:'';
+  const {z,ms,m}=qaShown(r), nx=ms[(ms.indexOf(m)+1)%ms.length];
+  const lng=k=>k==='quad'?(z.quad.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'):'Treble';
+  const nm=k=>k==='cum'?'Cum.':k==='quad'?(z.quad.p==='EarlyQuaddie'?'Early Q ≈':'Quad ≈'):'Treble ≈';
+  const tip=m==='cum'?`Click for TAB's ${lng(nx)} approximates against each runner.`
+    :`TAB's ${lng(m)} approximates: the return per $1 if this runner wins this, the last leg. Click for ${nx==='cum'?'the cumulative chance':`the ${lng(nx)}`}.`;
+  const tg=z?`<button type="button" class="qcol${m!=='cum'?' on':''}" onclick="event.stopPropagation();quadCol()" aria-pressed="${m!=='cum'}" title="${tip}">${nm(m)} <span>&#8644;</span></button>`:'';
   return '<th class="r chh" title="The model\'s win chance: the 100% price as a percentage"><span class="dsk">Chance<span class="cumsm">cum.</span></span><span class="phd">Win<br>'+(z?tg:'cum.')+'</span></th>'
     +(z?`<th class="r cumh">${tg}</th>`:'<th class="r cumh" title="Cumulative: this runner\'s chance plus every runner\'s above it in the table">Cum.</th>');
 }
 function chanceCells(r,i){
   const c=x=>x.pct!=null?x.pct:(x.fair>0?100/x.fair:0), p=c(r.runners[i]);
   let cum=Math.min(100,r.runners.slice(0,i+1).reduce((a,x)=>a+c(x),0)).toFixed(0)+'%', cls='cum';
-  const z=QCOL&&raceQA(r);
-  if(z){ const v=+z.a[String(r.runners[i].no)]; cum=v>0?qaFmt(v):'–'; cls='cum qac'; }
-  return `<td class="pct chc">${p.toFixed(1)}%<div class="cumsm${z?' qac':''}">${cum}</div></td><td class="pct ${cls}">${cum}</td>`;
+  const {z,m}=qaShown(r), on=m!=='cum';
+  if(on){ const v=+z[m].a[String(r.runners[i].no)]; cum=v>0?qaFmt(v):'–'; cls='cum qac'; }
+  return `<td class="pct chc">${p.toFixed(1)}%<div class="cumsm${on?' qac':''}">${cum}</div></td><td class="pct ${cls}">${cum}</td>`;
 }
 // the quaddie selector (Simon, 19 Oct 2026): on each leg's race page, one line for each quaddie that race is in -- BET or SIT OUT,
 // the combinations and the flexi -- that opens to the ticket: every leg's runners in order of the model's chance until they
@@ -3083,4 +3091,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 15:50</b> AEST &middot; SPM + Betfair: box snapshot</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 16:26</b> AEST &middot; treble approximates against each runner</div><div style="height:34px"></div></body></html>
