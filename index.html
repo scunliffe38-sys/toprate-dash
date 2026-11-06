@@ -147,6 +147,9 @@ dialog.wxpop::backdrop{background:rgba(22,33,28,.45)}
 /* the quaddie selector (19 Oct 2026): on each leg's race page, one line for each quaddie it is in, opening to
    the ticket; green edge for a bet, grey for a sit-out */
 .quads{margin:0 0 14px}
+.qapx{margin:0 0 10px}.qaps{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.qap{border:1px solid var(--line,#d9dde3);border-radius:6px;padding:3px 8px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.qap.in{border-color:#006DA6;background:rgba(0,109,166,.08)}.qap small{color:#006DA6}
 .quad{padding:7px 13px;border-left:3px solid var(--pos);background:var(--panel);color:var(--text);font-size:13px;line-height:1.5}
 .quad+.quad{margin-top:4px}
 .quad.no{border-left-color:var(--flat)}
@@ -2497,6 +2500,24 @@ function drillRow(m,r){
   if(o) h+=`<div class="dbody ${o.cls||'dq'}">${o.body!=null?o.body:(speedMapBody(r)||`<div class="smap open"><div class="smbody">${spPanel(r,null,'',null)}</div></div>`)}</div>`;
   return h;
 }
+// TAB's quaddie approximates on the last leg (Simon, 6 Nov 2026: "TAB quaddie dividend approximates when we're up to the last
+// leg"): live.json's qa, off TAB's multiLegApproximates once legs 1-3 have run. Each runner's return per $1, lowest first, the
+// ticket's last-leg runners marked; when legs 1-3 all landed on the ticket, what the $QUAD_STAKE flexi returns on each. Display only.
+function quadApprox(m,r,q,legs,fx){
+  if(q.legs[3]!==r.no) return null;
+  const lv=liveOf(r), z=lv&&lv.qa&&lv.qa[q.p]; if(!z||!z.a) return null;
+  const sc=new Set((liveOf(r)||{}).scr||[]), A=Object.entries(z.a).map(([k,v])=>[+k,+v]).filter(e=>e[1]>0&&!sc.has(e[0])).sort((a,b)=>a[1]-b[1]);
+  if(!A.length) return null;
+  const w=z.w||[], last=legs[3]&&legs[3].l, mine=new Set(last?last.pick.map(x=>x.no):[]);
+  const alive=last&&w.length===3&&legs.slice(0,3).every((g,i)=>g.l&&g.l.pick.some(x=>x.no===w[i]));
+  const nm=no=>{ const x=r.runners.find(y=>y.no===no); return x?x.name:''; };
+  const $q=v=>'$'+(v>=1000?Math.round(v).toLocaleString('en-AU'):v.toFixed(2));
+  const cells=A.map(([no,v])=>`<span class="qap${mine.has(no)?' in':''}" title="${nm(no).replace(/"/g,'&quot;')}"><b>${no}</b> ${$q(v)}${alive&&mine.has(no)?` <small>→ ${$q(v*fx/100)}</small>`:''}</span>`).join('');
+  const head=`TAB approximates per $1${w.length?` &nbsp;·&nbsp; won ${w.map((x,i)=>`R${q.legs[i]} <b>${x}</b>`).join(', ')}`:''}`;
+  const tail=last?(alive?`Ticket alive: the → figure is what the $${QUAD_STAKE} flexi returns if that runner wins.`:'Ticket out: a winner in legs 1–3 was not on it.'):'';
+  const body=`<div class="qapx"><div class="sm">${head}</div><div class="qaps">${cells}</div>${tail?`<div class="sm">${tail}</div>`:''}</div>`;
+  return {sum:` · ≈ ${$q(A[0][1])}–${$q(A[A.length-1][1])}`,body};
+}
 function quadItems(m,r){   // each quaddie this race is in, as a drill-in on the race's one row (Simon, 23 Oct 2026)
   const qs=(m.quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs.includes(r.no)); if(!qs.length) return [];
   const cap=m.state==='HK'?QUAD_MAX_HK:QUAD_MAX;
@@ -2507,8 +2528,9 @@ function quadItems(m,r){   // each quaddie this race is in, as a drill-in on the
     const sh=q.p==='EarlyQuaddie'?'Early Q':'Quaddie', lab=`${q.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'} <span class="dr">R${q.legs[0]}–R${q.legs[3]}</span>`;
     if(legs.some(g=>!g.l)) return {k,lab,sh,tip,y:false,sum:'<b>NO TICKET</b>',body:`<div class="quad no qb"><div class="sm ft">A leg is not rated, so there is no ticket.</div></div>`};
     const n=legs.reduce((a,g)=>a*g.l.pick.length,1), fx=100*QUAD_STAKE/n, ok=n<=cap, fxs=fx>=10?fx.toFixed(0):fx.toFixed(1);
+    const qa=quadApprox(m,r,q,legs,fx);
     const rows=legs.map((g,i)=>`<tr${g.no===r.no?' class="here"':''}><td class="lg">Leg ${i+1} &nbsp;R${g.no}</td><td><b>${g.l.pick.slice(0,g.l.n0).map(x=>x.no).join(', ')}</b>${g.l.pick.length>g.l.n0?` <span class="tie">+ ${g.l.pick.slice(g.l.n0).map(x=>x.no).join(', ')}</span>`:''}</td><td class="cv">${g.l.pick.length} for ${g.l.cum.toFixed(0)}%</td></tr>`).join('');
-    return {k,lab,sh,tip,y:ok,sum:`<b>${ok?'BET':'SIT OUT'}</b> · ${n} combo${n===1?'':'s'}`,body:`<div class="quad${ok?'':' no'} qb"><table>${rows}</table><div class="sm ft">${legs.map(g=>g.l.pick.length).join(' × ')} = <b>${n}</b> combination${n===1?'':'s'} &nbsp;·&nbsp; $${QUAD_STAKE} is <b>${fxs}%</b> flexi &nbsp;·&nbsp; ${ok?'qualifies':'does not qualify'} (${cap} or fewer) &nbsp;·&nbsp; ${QUAD_COVER}% a leg on the model's chances</div></div>`};
+    return {k,lab,sh,tip,y:ok,sum:`<b>${ok?'BET':'SIT OUT'}</b> · ${n} combo${n===1?'':'s'}${qa?qa.sum:''}`,body:`<div class="quad${ok?'':' no'} qb">${qa?qa.body:''}<table>${rows}</table><div class="sm ft">${legs.map(g=>g.l.pick.length).join(' × ')} = <b>${n}</b> combination${n===1?'':'s'} &nbsp;·&nbsp; $${QUAD_STAKE} is <b>${fxs}%</b> flexi &nbsp;·&nbsp; ${ok?'qualifies':'does not qualify'} (${cap} or fewer) &nbsp;·&nbsp; ${QUAD_COVER}% a leg on the model's chances</div></div>`};
   });
 }
 function drawRace(){
@@ -3037,4 +3059,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 14:24</b> AEST &middot; Gatton Soft 5 -> Good 4</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 15:26</b> AEST &middot; quaddie approximates on the last leg</div><div style="height:34px"></div></body></html>
