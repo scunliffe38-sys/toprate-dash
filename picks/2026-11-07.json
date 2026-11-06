@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:35:25.083Z",
+ "saved": "2026-11-06T12:36:05.493Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -310,6 +310,15 @@
    "sp": 2.3,
    "fair": 3.2,
    "rating": 90.82
+  },
+  "Rosehill|3|MEDATSU": {
+   "on": 1,
+   "t": 1793968562273,
+   "name": "Medatsu",
+   "tab": 1,
+   "sp": 11,
+   "fair": 5.35,
+   "rating": 89.21
   }
  }
 }
