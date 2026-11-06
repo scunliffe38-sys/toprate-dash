@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:40:52.987Z",
+ "saved": "2026-11-06T12:41:09.226Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -373,6 +373,15 @@
    "sp": 9,
    "fair": 16.53,
    "rating": 81.14
+  },
+  "Rosehill|6|SILENTINTENT": {
+   "on": 1,
+   "t": 1793968866056,
+   "name": "Silent Intent",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 24.57,
+   "rating": 80.01
   }
  }
 }
