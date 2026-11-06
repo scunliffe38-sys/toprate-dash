@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:27:30.302Z",
+ "saved": "2026-11-06T12:27:36.699Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -187,13 +187,8 @@
    "t": 1793968047144
   },
   "Flemington|6|REYMAGNERIO": {
-   "on": 1,
-   "t": 1793967700073,
-   "name": "Rey Magnerio",
-   "tab": 5,
-   "sp": 51,
-   "fair": 38.68,
-   "rating": 98.28
+   "on": 0,
+   "t": 1793968053627
   },
   "Flemington|7|AUTUMNGLOW": {
    "on": 1,
