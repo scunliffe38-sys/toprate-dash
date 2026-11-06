@@ -923,6 +923,17 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 @media(max-width:560px){.drill{flex-wrap:nowrap;gap:5px}.dri{padding:8px 6px;justify-content:center;font-size:12.5px}
   .dri .dl,.dri .ds,.dri .dc{display:none}.dri .dls{display:inline;font-weight:500;color:var(--green);white-space:nowrap}
   .dri.n .dls{color:var(--dim)}}
+/* your picks (Simon, 6 Nov 2026): a star on every runner and the picked row edged blue */
+.pk{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;width:24px;height:24px;margin:-4px -4px -4px -6px;padding:0;border:0;background:none;
+  cursor:pointer;color:var(--faint);border-radius:50%}
+.pk svg{width:17px;height:17px;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linejoin:round}
+.pk:hover{color:var(--green)} .pk:focus-visible{outline:2px solid var(--green);outline-offset:0}
+.pk.on{color:var(--green)} .pk.on svg{fill:currentColor}
+tbody tr.run.pkd td:first-child{box-shadow:inset 3px 0 0 var(--green)}
+tbody tr.run.pkd td{background:rgba(var(--keyrgb),.06)}
+.ppk{display:none}
+nav button .pkn,.daytab .pkn{color:var(--green);font-style:normal;font-size:10px;margin-left:3px;vertical-align:1px}
+@media(max-width:420px){.rtab:not(.hk) .horse .pk{display:none} .rtab:not(.hk) .ppk{display:flex;margin:6px auto 0}}
 </style></head>
 <body><div class="wrap">
 <header>
@@ -1851,7 +1862,7 @@ function drawNext(){
     h+=`<tr class="srow${big?' big':''}${ran?' ran':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
       <td>${silk(x)}</td>
       <td><div class="stop">${x.name}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
-      <td><div class="stop nw">${m.track} R${r.no}</div><div class="sname"><span class="cd" data-t="${r.start_utc||''}" data-k="${m.track}|${r.no}">&nbsp;</span> · ${r.time||''} · ${r.dist}m ${r.cls}</div></td>
+      <td><div class="stop nw">${m.track} R${r.no}${pkRaceN(m,r)?`<i class="pkn" title="${pkRaceN(m,r)} of your picks">★${pkRaceN(m,r)>1?pkRaceN(m,r):''}</i>`:''}</div><div class="sname"><span class="cd" data-t="${r.start_utc||''}" data-k="${m.track}|${r.no}">&nbsp;</span> · ${r.time||''} · ${r.dist}m ${r.cls}</div></td>
       <td class="rate" style="font-size:19px">${x.rating.toFixed(1)}</td>
       <td class="edge ${big?'big':(gap>=GAP_STANDOUT?'p':'')}">${r.runners[1]?fxsign(gap):''}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
@@ -2582,9 +2593,9 @@ function drawRace(){
   r.runners.forEach((x,i)=>{
     const lens=(x.fair>0&&r.runners[0].fair>0)?Math.max(0,1.66*Math.log(x.fair/r.runners[0].fair)):0;   // from the chances, not the points (deploy_lenfix, 18 Oct 2026): the points' scale moves with the nightly fit, the chance does not; 1.66 lengths a logit, measured on 6,592 races (probe_calib_fit.py)
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
-    h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
-      <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}<span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span>${x.wt==null?'':`<span class="pwt">${wtCell(x)}kg</span>`}</td>
-      <td><div class="horse">${silk(x)}${x.name}${wbMark(r,x)}${wormIcon(r,x)}${x.sl?`<span class="slm slin ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span>`:''}</div>
+    h+=`<tr class="run${i===0?' top':''}${pkRow(M(),r,x)}" tabindex="0" data-i="${i}">
+      <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}<span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span>${x.wt==null?'':`<span class="pwt">${wtCell(x)}kg</span>`}${pkBtn(M(),r,x,'ppk')}</td>
+      <td><div class="horse">${pkBtn(M(),r,x)}${silk(x)}${x.name}${wbMark(r,x)}${wormIcon(r,x)}${x.sl?`<span class="slm slin ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span>`:''}</div>
         <div class="jock"><span class="jk">${x.jockey||'jockey TBA'}</span><span class="jsep"> &nbsp;·&nbsp; </span><span class="trn">${x.trainer}</span></div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="wtc an"${wtTip(x)}>${wtCell(x)}</td>
@@ -2603,8 +2614,8 @@ function drawRace(){
   $("race").innerHTML=h+scrRows(r,span)+"</tbody></table></div>";
   document.querySelectorAll("tr.run").forEach(tr=>{
     const go=()=>{const i=+tr.dataset.i; open=open===i?null:i; wormKey=null; draw();};
-    tr.onclick=e=>{if(e.target.closest('.wi,a[href]')) return; go();};   // a replay link plays; it does not open the factor detail (23 Oct 2026)
-    tr.onkeydown=e=>{if(e.target.closest('.wi,a[href]')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
+    tr.onclick=e=>{if(e.target.closest('.wi,a[href],.pk')) return; go();};   // a replay link plays; it does not open the factor detail (23 Oct 2026); the star picks (6 Nov 2026)
+    tr.onkeydown=e=>{if(e.target.closest('.wi,a[href],.pk')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
   });
   wormBind(r);
 }
@@ -2650,9 +2661,9 @@ function drawRaceHK(){
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';
     const bov=x.bx?(x.bx>=x.fair*1.15?' up':(x.bx<=x.fair/1.15?' dn':'')):'';
     const mc=x.mark_chg?`<small class="${x.mark_chg>0?'p':'g'}">${x.mark_chg>0?'+':'−'}${Math.abs(x.mark_chg)}</small>`:'';
-    h+=`<tr class="run${i===0?' top':''}" tabindex="0" data-i="${i}">
+    h+=`<tr class="run${i===0?' top':''}${pkRow(m,r,x)}" tabindex="0" data-i="${i}">
       <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}${x.no}</td>
-      <td><div class="horse">${silk(x)}${x.name}${wbMark(r,x)}${wormIcon(r,x)}</div>
+      <td><div class="horse">${pkBtn(m,r,x)}${silk(x)}${x.name}${wbMark(r,x)}${wormIcon(r,x)}</div>
         <div class="jock">${x.jockey||'jockey TBA'} &nbsp;·&nbsp; ${x.trainer}</div></td>
       <td class="bar an">${x.bar??'—'}</td>
       <td class="l5">${l5cell(x)}<span class="pwi">${wormIcon(r,x)}</span></td>
@@ -2670,7 +2681,7 @@ function drawRaceHK(){
   $("race").innerHTML=h;
   document.querySelectorAll("tr.run").forEach(tr=>{
     const go=()=>{const i=+tr.dataset.i; open=open===i?null:i; wormKey=null; draw();};
-    tr.onclick=e=>{if(e.target.closest('.wi,a[href]')) return; go();}; tr.onkeydown=e=>{if(e.target.closest('.wi,a[href]')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
+    tr.onclick=e=>{if(e.target.closest('.wi,a[href],.pk')) return; go();}; tr.onkeydown=e=>{if(e.target.closest('.wi,a[href],.pk')) return; if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
   });
   wormBind(r);
 }
@@ -2709,13 +2720,101 @@ function hkLedger(x,r){
   return sum+`<div class="adjl">${cells}${card}</div>`;
 }
 
+// ---- your picks (Simon, 6 Nov 2026: "select runners on the dash and have it record my selections - e.g. if i'm looking in the
+// morning, i can come back and see where i left off"). A star on every runner, Australian and Hong Kong, the picked row
+// edged blue and a star on the race tab and Next to Go (no list of them yet: Simon, "my picks is unnecessary at this stage"). Display only: nothing on the box reads them. Kept on the device (localStorage spm.picks,
+// date -> "track|race|NAME" -> {on, t, ...}) and, where settle.html's GitHub token is on the device (spm-gh-token, same origin),
+// in the dash repo as picks/<date>.json, so a pick made on the phone is on the laptop. An unpick is kept as {on:0} so the later
+// of two devices wins, key by key (t). Without a token the page still reads the repo copy through Pages, read only.
+const PKL='spm.picks', PKTOK='spm-gh-token';
+const PKREPO=(()=>{ const h=location.hostname, p=location.pathname.split('/').filter(Boolean)[0];
+  return /\.github\.io$/.test(h)&&p?h.split('.')[0]+'/'+p:null; })();
+const pkNm=s=>String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
+const pkKey=(m,r,x)=>`${m.track}|${r.no}|${pkNm(x.name)}`;
+const PKSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>';
+let PICKS=(()=>{ try{ return JSON.parse(localStorage.getItem(PKL)||'{}')||{}; }catch(e){ return {}; } })();
+const PKS={timer:{}, pulled:0};
+const pkTok=()=>{ try{ return localStorage.getItem(PKTOK); }catch(e){ return null; } };
+const pkDay=date=>PICKS[date]||(PICKS[date]={});
+const pkOn=(date,k)=>!!(PICKS[date]&&PICKS[date][k]&&PICKS[date][k].on);
+function pkSave(){ try{ localStorage.setItem(PKL,JSON.stringify(PICKS)); }catch(e){} }
+// keep a week: older days drop off this device (the repo copy stays)
+(()=>{ const cut=new Date(Date.now()-8*864e5).toISOString().slice(0,10); Object.keys(PICKS).forEach(d=>{ if(d<cut) delete PICKS[d]; }); pkSave(); })();
+function pkBtn(m,r,x,cls){ const on=pkOn(D().date,pkKey(m,r,x));
+  return `<button class="pk${on?' on':''}${cls?' '+cls:''}" data-pk="${spEsc(pkKey(m,r,x))}" aria-pressed="${on}" title="${on?'In your picks: tap to take it out':'Add to your picks'}" aria-label="${on?'Remove from':'Add to'} your picks">${PKSVG}</button>`; }
+const pkRow=(m,r,x)=>pkOn(D().date,pkKey(m,r,x))?' pkd':'';
+const pkRaceN=(m,r)=>{ const d=PICKS[D().date]; if(!d) return 0; const p=`${m.track}|${r.no}|`; return Object.keys(d).filter(k=>d[k].on&&k.startsWith(p)).length; };
+function pkToggle(k){
+  const date=D().date, day=pkDay(date), on=!pkOn(date,k), [track,no]=k.split('|');
+  const m=D().meetings.find(q=>q.track===track), r=m&&m.races.find(q=>String(q.no)===no);
+  const x=r&&(r.all||r.runners).find(q=>pkKey(m,r,q)===k);
+  day[k]=on?{on:1,t:Date.now(),name:x?x.name:k.split('|')[2],tab:x?x.no:null,sp:x&&x.sp?x.sp:null,fair:x?x.fair:null,rating:x?x.rating:null}:{on:0,t:Date.now()};
+  pkSave(); draw(); pkQueue(date);
+}
+$("race").addEventListener('click',e=>{ const b=e.target.closest('.pk'); if(!b) return; e.preventDefault(); e.stopPropagation(); pkToggle(b.dataset.pk); });
+// ---- the repo copy
+const pkB64=t=>btoa(unescape(encodeURIComponent(t))), pkUnb64=t=>decodeURIComponent(escape(atob(t.replace(/\n/g,''))));
+function pkApi(path,opt={}){
+  return fetch(`https://api.github.com/repos/${PKREPO}/contents/${path}`,{...opt,cache:'no-store',
+    headers:{Authorization:`Bearer ${pkTok()}`,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}});
+}
+function pkMerge(date,rem){                       // the later of the two, key by key; true if this device changed
+  const day=pkDay(date); let ch=false;
+  Object.entries(rem||{}).forEach(([k,v])=>{ if(v&&(!day[k]||(v.t||0)>(day[k].t||0))){ day[k]=v; ch=true; } });
+  return ch;
+}
+const pkSame=(a,b)=>{ const ka=Object.keys(a||{}), kb=Object.keys(b||{}); return ka.length===kb.length&&ka.every(k=>b[k]&&b[k].t===a[k].t&&!!b[k].on===!!a[k].on); };
+async function pkGet(date){                        // -> {sha, picks} or null when the file is not there yet
+  if(pkTok()&&PKREPO){
+    const g=await pkApi(`picks/${date}.json`);
+    if(g.status===404) return {sha:null,picks:{}};
+    if(g.status===401||g.status===403) throw new Error('token refused ('+g.status+')');
+    if(!g.ok) throw new Error('GitHub '+g.status);
+    const j=await g.json(); return {sha:j.sha,picks:(JSON.parse(pkUnb64(j.content))||{}).picks||{}};
+  }
+  const g=await fetch(`picks/${date}.json?x=${Date.now()}`,{cache:'no-store'});   // read only, through Pages (lags a minute or two)
+  if(!g.ok) return {sha:null,picks:{}};
+  return {sha:null,picks:((await g.json())||{}).picks||{}};
+}
+async function pkPush(date){
+  if(!pkTok()||!PKREPO) return;
+  try{
+    for(let i=0;i<4;i++){
+      const g=await pkGet(date); if(pkMerge(date,g.picks)){ pkSave(); draw(); }
+      if(pkSame(PICKS[date],g.picks)) return;
+      const body={date,saved:new Date().toISOString(),picks:PICKS[date]};
+      const r=await pkApi(`picks/${date}.json`,{method:'PUT',body:JSON.stringify({message:`picks ${date}`,content:pkB64(JSON.stringify(body,null,1)),...(g.sha?{sha:g.sha}:{})})});
+      if(r.ok) return;
+      if(r.status===401||r.status===403) throw new Error('token refused ('+r.status+')');
+      if(r.status!==409&&r.status!==422) throw new Error('GitHub '+r.status);
+      await new Promise(q=>setTimeout(q,1500+1000*i));   // another commit landed in between (the box publishes here too): read the sha again
+    }
+    throw new Error('GitHub busy');
+  }catch(e){ console.warn('picks not synced:',e.message||e); }   // kept on this device; the next pull or pick tries again
+}
+function pkQueue(date){ clearTimeout(PKS.timer[date]); PKS.timer[date]=setTimeout(()=>pkPush(date),2500); }
+async function pkPull(){
+  PKS.pulled=Date.now(); let ch=false, err='';
+  for(const d of DATA.days){
+    try{ const g=await pkGet(d.date); if(pkMerge(d.date,g.picks)) ch=true;
+      if(pkTok()&&PKREPO&&!pkSame(PICKS[d.date]||{},g.picks)&&Object.keys(PICKS[d.date]||{}).length) pkQueue(d.date);   // this device has picks the repo lacks
+    }catch(e){ err=String(e.message||e); }
+  }
+  if(err) console.warn('picks not read:',err);
+  if(ch){ pkSave(); draw(); }
+}
+// coming back to the page (the phone left open since the morning): read the other device's picks again
+document.addEventListener('visibilitychange',()=>{
+  if(document.visibilityState==='visible'&&Date.now()-PKS.pulled>30000) pkPull();
+  if(document.visibilityState==='hidden') Object.keys(PKS.timer).forEach(d=>{ clearTimeout(PKS.timer[d]); pkPush(d); });
+});
 function draw(){
   drawDays(); drawMeets(); bltLabel();
   $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=goingBar()+wxBar();
   if(meet<0){ $("tabs").innerHTML=''; if(meet===-2) drawNext(); else drawDay(); countdown(); refreshTabAge(); return; }
   const races=M().races;
   $("tabs").innerHTML=`<button role="tab" class="sum" aria-selected="${active===-1}" onclick="pick(-1)"><span class="rn">Summary</span><span class="rt">&nbsp;</span><span class="cd">&nbsp;</span></button>`+
-    races.map((r,i)=>`<button role="tab" aria-selected="${i===active}" onclick="pick(${i})"><span class="rn">R${r.no}</span><span class="rt">${r.time||'&nbsp;'}</span>${r.time_hk?`<span class="hkt">${r.time_hk} HK</span>`:''}<span class="cd" data-t="${r.start_utc||''}" data-k="${M().track}|${r.no}">&nbsp;</span></button>`).join("");
+    races.map((r,i)=>`<button role="tab" aria-selected="${i===active}" onclick="pick(${i})"><span class="rn">R${r.no}${pkRaceN(M(),r)?`<i class="pkn" title="${pkRaceN(M(),r)} of your picks">★</i>`:''}</span><span class="rt">${r.time||'&nbsp;'}</span>${r.time_hk?`<span class="hkt">${r.time_hk} HK</span>`:''}<span class="cd" data-t="${r.start_utc||''}" data-k="${M().track}|${r.no}">&nbsp;</span></button>`).join("");
   if(active===-1) drawSummary(); else drawRace();
   countdown(); refreshTabAge();
 }
@@ -2743,6 +2842,7 @@ window.pick=i=>{active=i;open=null;draw();};
 window.pickMeet=i=>{meet=i;active=i<0?-1:landingRace(D().meetings[i]);open=null;draw();$("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});};
 window.pickDay=i=>{day=i;meet=-2;active=-1;open=null;draw();};
 draw();
+pkPull();   // the picks the other devices left (picks/<date>.json), after the page is up
 // the deep link (Simon, 4 Nov 2026): #<track>|<horse> opens that meeting at the race the horse was in, its row open -- the race
 // as SPM assessed it, from a run on the horse's card. The first day that has the meeting wins; a track the page lacks (a
 // non-TAB meeting) leaves the page as it opens
@@ -3091,4 +3191,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 21:32</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 22:46</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
