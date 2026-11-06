@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:26:34.794Z",
+ "saved": "2026-11-06T12:27:30.302Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -183,13 +183,8 @@
    "rating": 103.99
   },
   "Flemington|6|POINTBARROW": {
-   "on": 1,
-   "t": 1793967687112,
-   "name": "Point Barrow",
-   "tab": 11,
-   "sp": 26,
-   "fair": 18.31,
-   "rating": 100.46
+   "on": 0,
+   "t": 1793968047144
   },
   "Flemington|6|REYMAGNERIO": {
    "on": 1,
