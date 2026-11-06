@@ -292,6 +292,9 @@ tbody tr.run.top .rate{color:var(--brass)}
 tr.scr td{color:var(--faint)} tr.scr .horse{font-size:15px} .scrl{margin-left:8px;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
 td.chc{color:var(--text);font-variant-numeric:tabular-nums} td.cum{color:var(--faint);font-variant-numeric:tabular-nums}
 .cumsm{display:none;font-size:12px;font-weight:400;color:var(--faint);line-height:1.1;margin-top:1px}
+td.cum.qac,.cumsm.qac{color:#006DA6;white-space:nowrap}
+button.qcol{font:inherit;color:inherit;background:none;border:1px solid var(--line,#d9dde3);border-radius:5px;padding:1px 5px;cursor:pointer;white-space:nowrap}
+button.qcol span{opacity:.6} button.qcol.on{border-color:#006DA6;color:#006DA6;background:rgba(0,109,166,.08)}
 /* key column: adjusted rating */
 /* key band: adjusted + lengths */
 td.key,th.key,td.key2,th.key2{background:rgba(var(--keyrgb),.10)}
@@ -2386,12 +2389,31 @@ function ranCells(r,x){
   return `<td class="ranc" title="${RANT}">${x.ran.toFixed(1)}<div class="randsm ${c}">${s}</div></td><td class="rand ${c}">${s}</td>`;
 }
 const ranHead=r=>r.ranw!=null?` &nbsp;·&nbsp; <span class="ranw" title="the rating the winner ran">won in ${r.ranw.toFixed(1)}</span>`:'';
-const CHH='<th class="r chh" title="The model\'s win chance: the 100% price as a percentage"><span class="dsk">Chance<span class="cumsm">cum.</span></span><span class="phd">Win<br>cum.</span></th>'
-  +'<th class="r cumh" title="Cumulative: this runner\'s chance plus every runner\'s above it in the table">Cum.</th>';
+// The quaddie approximates against each runner (Simon, 6 Nov 2026: "I would like to see them in the card - against each runner -
+// give me a toggle to replace the Cum % with the Quad Approx"). On a race that is the last leg of a quaddie TAB has approximates
+// for (live.json qa, tab_live.quad_approx), the Cum. heading is a toggle: Cum. <-> Quad ≈, TAB's return per $1 for each runner
+// (– for none: no units on it). QCOL is remembered on the device; a race without approximates always shows Cum.
+let QCOL=(()=>{ try{ return localStorage.getItem('spm.quadcol')==='1'; }catch(e){ return false; } })();
+window.quadCol=()=>{ QCOL=!QCOL; try{ localStorage.setItem('spm.quadcol',QCOL?'1':'0'); }catch(e){} draw(); };
+const qaFmt=v=>'$'+(v>=1000?Math.round(v).toLocaleString('en-AU'):v.toFixed(2));
+function raceQA(r){   // the quaddie this race is the last leg of, with TAB's approximates: {p, a} or null
+  const lv=liveOf(r), qa=lv&&lv.qa; if(!qa) return null;
+  const qs=(M().quads||[]).filter(q=>q.legs&&q.legs.length===4&&q.legs[3]===r.no).map(q=>q.p);
+  for(const p of qs.concat(Object.keys(qa))) if(qa[p]&&qa[p].a) return {p,a:qa[p].a};
+  return null;
+}
+function chh(r){
+  const z=raceQA(r), on=QCOL&&!!z, nm=z?(z.p==='EarlyQuaddie'?'Early Q':'Quad'):'';
+  const tg=z?`<button type="button" class="qcol${on?' on':''}" onclick="event.stopPropagation();quadCol()" aria-pressed="${on}" title="${on?`TAB's ${z.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'} approximates: the return per $1 if this runner wins the last leg. Click for the cumulative chance.`:`Click for TAB's ${z.p==='EarlyQuaddie'?'Early Quaddie':'Quaddie'} approximates against each runner.`}">${on?`${nm} ≈`:'Cum.'} <span>&#8644;</span></button>`:'';
+  return '<th class="r chh" title="The model\'s win chance: the 100% price as a percentage"><span class="dsk">Chance<span class="cumsm">cum.</span></span><span class="phd">Win<br>'+(z?tg:'cum.')+'</span></th>'
+    +(z?`<th class="r cumh">${tg}</th>`:'<th class="r cumh" title="Cumulative: this runner\'s chance plus every runner\'s above it in the table">Cum.</th>');
+}
 function chanceCells(r,i){
   const c=x=>x.pct!=null?x.pct:(x.fair>0?100/x.fair:0), p=c(r.runners[i]);
-  const cum=Math.min(100,r.runners.slice(0,i+1).reduce((a,x)=>a+c(x),0)).toFixed(0);
-  return `<td class="pct chc">${p.toFixed(1)}%<div class="cumsm">${cum}%</div></td><td class="pct cum">${cum}%</td>`;
+  let cum=Math.min(100,r.runners.slice(0,i+1).reduce((a,x)=>a+c(x),0)).toFixed(0)+'%', cls='cum';
+  const z=QCOL&&raceQA(r);
+  if(z){ const v=+z.a[String(r.runners[i].no)]; cum=v>0?qaFmt(v):'–'; cls='cum qac'; }
+  return `<td class="pct chc">${p.toFixed(1)}%<div class="cumsm${z?' qac':''}">${cum}</div></td><td class="pct ${cls}">${cum}</td>`;
 }
 // the quaddie selector (Simon, 19 Oct 2026): on each leg's race page, one line for each quaddie that race is in -- BET or SIT OUT,
 // the combinations and the flexi -- that opens to the ticket: every leg's runners in order of the model's chance until they
@@ -2511,7 +2533,7 @@ function quadApprox(m,r,q,legs,fx){
   const w=z.w||[], last=legs[3]&&legs[3].l, mine=new Set(last?last.pick.map(x=>x.no):[]);
   const alive=last&&w.length===3&&legs.slice(0,3).every((g,i)=>g.l&&g.l.pick.some(x=>x.no===w[i]));
   const nm=no=>{ const x=r.runners.find(y=>y.no===no); return x?x.name:''; };
-  const $q=v=>'$'+(v>=1000?Math.round(v).toLocaleString('en-AU'):v.toFixed(2));
+  const $q=qaFmt;
   const cells=A.map(([no,v])=>`<span class="qap${mine.has(no)?' in':''}" title="${nm(no).replace(/"/g,'&quot;')}"><b>${no}</b> ${$q(v)}${alive&&mine.has(no)?` <small>→ ${$q(v*fx/100)}</small>`:''}</span>`).join('');
   const head=`TAB approximates per $1${w.length?` &nbsp;·&nbsp; won ${w.map((x,i)=>`R${q.legs[i]} <b>${x}</b>`).join(', ')}`:''}`;
   const tail=last?(alive?`Ticket alive: the → figure is what the $${QUAD_STAKE} flexi returns if that runner wins.`:'Ticket out: a winner in legs 1–3 was not on it.'):'';
@@ -2544,7 +2566,7 @@ function drawRace(){
   h+=h2hCue(r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
   h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="wth" title="Weight carried today in kilos: the allotted weight less any apprentice claim. From the TAB card; Punting Form's fields until the TAB card arrives.">Wt</th><th class="slh" title="Stride length. ! a short strider racing 15% or more beyond its usual trip: these win less often than their form says. + a long strider stepping up that has not yet placed at the trip: these win more often. Hover or open the runner for the detail.">SL</th><th class="l5h">Last 5</th>
-    <th class="r key">${r._bl?'<span class="dsk">SPM + BF Rating</span><span class="phd">SPM+BF<br>Rating</span>':'<span class="dsk">SPM Rating</span><span class="phd">SPM<br>Rating</span>'}</th><th class="r key2">Lengths</th>${ranHd(r)}${CHH}<th class="r bk"><span class="dsk"><small>100%</small>Model</span><span class="phd">Model <small>100%</small><br>BSP<br>Mkt <small>${book?book.toFixed(0)+'%':''}</small></span></th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
+    <th class="r key">${r._bl?'<span class="dsk">SPM + BF Rating</span><span class="phd">SPM+BF<br>Rating</span>':'<span class="dsk">SPM Rating</span><span class="phd">SPM<br>Rating</span>'}</th><th class="r key2">Lengths</th>${ranHd(r)}${chh(r)}<th class="r bk"><span class="dsk"><small>100%</small>Model</span><span class="phd">Model <small>100%</small><br>BSP<br>Mkt <small>${book?book.toFixed(0)+'%':''}</small></span></th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
   const topR=r.runners[0].rating, lv=liveOf(r), wet=wetOn(r)&&r.runners.some(x=>'wet' in x), span=(wet?13:12)+(hasRan(r)?2:0);
   if(wet) h=h.replace('<th class="r key">', '<th class="weth" title="Wet record, Soft 7 or heavier: starts: wins-seconds-thirds. Under it, the model\'s adjustment for this going against the field, in rating points, already in the SPM Rating.">Wet</th><th class="r key">');
   r.runners.forEach((x,i)=>{
@@ -2612,7 +2634,7 @@ function drawRaceHK(){
   h+=drillRow(m,r);
   h+=h2hCue(r);
   h+=`<div class="scroll"><table class="rtab hk"><thead><tr><th></th><th>Runner</th><th>Draw</th><th class="l5h">Last 5</th>
-    <th class="r key">SPM Rating</th><th class="r key2">Lengths</th>${CHH}<th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
+    <th class="r key">SPM Rating</th><th class="r key2">Lengths</th>${chh(r)}<th class="r bk"><small>100%</small>Model</th><th class="r bk" title="TAB's tote win price, pooled with HKJC's: TAB offer no fixed odds on Hong Kong"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Tote</th><th class="r bk hkbx" title="betr's fixed win price (betr_live.py), display only. Early in the day betr's book runs about 130%, so a longer price matters only past that margin"><small>${bxbook?bxbook.toFixed(0)+'%':'&nbsp;'}</small>betr</th></tr></thead><tbody>`;
   r.runners.forEach((x,i)=>{
     const lens=(topR-x.rating)/lpl;
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';
@@ -3059,4 +3081,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 15:26</b> AEST &middot; quaddie approximates on the last leg</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 15:47</b> AEST &middot; quaddie approximates against each runner</div><div style="height:34px"></div></body></html>
