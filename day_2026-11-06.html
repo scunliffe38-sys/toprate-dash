@@ -2782,7 +2782,7 @@ function hkLedger(x,r){
 // edged blue and a star on the race tab and Next to Go (no list of them yet: Simon, "my picks is unnecessary at this stage"). Display only: nothing on the box reads them. Kept on the device (localStorage spm.picks,
 // date -> "track|race|NAME" -> {on, t, ...}) and, where settle.html's GitHub token is on the device (spm-gh-token, same origin),
 // in the dash repo as picks/<date>.json, so a pick made on the phone is on the laptop. An unpick is kept as {on:0} so the later
-// of two devices wins, key by key (t). Without a token the page still reads the repo copy through Pages, read only.
+// of two devices wins, key by key (t). Since deploy_picks2 the stars appear only in an authorised browser (pkAuth below).
 const PKL='spm.picks', PKTOK='spm-gh-token';
 const PKREPO=(()=>{ const h=location.hostname, p=location.pathname.split('/').filter(Boolean)[0];
   return /\.github\.io$/.test(h)&&p?h.split('.')[0]+'/'+p:null; })();
@@ -2792,16 +2792,38 @@ const PKSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.
 let PICKS=(()=>{ try{ return JSON.parse(localStorage.getItem(PKL)||'{}')||{}; }catch(e){ return {}; } })();
 const PKS={timer:{}, pulled:0};
 const pkTok=()=>{ try{ return localStorage.getItem(PKTOK); }catch(e){ return null; } };
+// only an authorised browser picks (Simon, 6 Nov 2026: "only my authorised browser should be able to select runners"): one holding a
+// GitHub token that GitHub confirms can push to the dash repo (GET /repos: permissions.push). Anywhere else: no star, no marked row,
+// no race-tab star, nothing read from the repo. The check is remembered per token (spm.pkok holds a fingerprint, never the token),
+// so the stars show at once and offline at the track; GitHub refusing the token (401/403/404) takes them away.
+const PKOKL='spm.pkok';
+const pkFp=t=>{ let h=5381; for(let i=0;i<t.length;i++) h=((h*33)^t.charCodeAt(i))>>>0; return 'v1:'+h.toString(36)+':'+t.length; };
+let PKOK=(()=>{ const t=pkTok(); if(!t||!PKREPO) return false; try{ return localStorage.getItem(PKOKL)===pkFp(t); }catch(e){ return false; } })();
+async function pkAuth(){
+  const t=pkTok(), was=PKOK;
+  if(!t||!PKREPO) PKOK=false;
+  else{
+    try{ const g=await fetch(`https://api.github.com/repos/${PKREPO}`,{cache:'no-store',
+          headers:{Authorization:`Bearer ${t}`,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'}});
+      if(g.ok){ const j=await g.json(); PKOK=!!(j.permissions&&j.permissions.push); }
+      else if(g.status===401||g.status===403||g.status===404) PKOK=false;   // a 5xx or a rate limit keeps what was known
+    }catch(e){}                                                              // offline: keep what was known
+  }
+  try{ if(PKOK) localStorage.setItem(PKOKL,pkFp(t)); else localStorage.removeItem(PKOKL); }catch(e){}
+  if(PKOK!==was) draw();
+  return PKOK;
+}
 const pkDay=date=>PICKS[date]||(PICKS[date]={});
 const pkOn=(date,k)=>!!(PICKS[date]&&PICKS[date][k]&&PICKS[date][k].on);
 function pkSave(){ try{ localStorage.setItem(PKL,JSON.stringify(PICKS)); }catch(e){} }
 // keep a week: older days drop off this device (the repo copy stays)
 (()=>{ const cut=new Date(Date.now()-8*864e5).toISOString().slice(0,10); Object.keys(PICKS).forEach(d=>{ if(d<cut) delete PICKS[d]; }); pkSave(); })();
-function pkBtn(m,r,x,cls){ const on=pkOn(D().date,pkKey(m,r,x));
+function pkBtn(m,r,x,cls){ if(!PKOK) return ''; const on=pkOn(D().date,pkKey(m,r,x));
   return `<button class="pk${on?' on':''}${cls?' '+cls:''}" data-pk="${spEsc(pkKey(m,r,x))}" aria-pressed="${on}" title="${on?'In your picks: tap to take it out':'Add to your picks'}" aria-label="${on?'Remove from':'Add to'} your picks">${PKSVG}</button>`; }
-const pkRow=(m,r,x)=>pkOn(D().date,pkKey(m,r,x))?' pkd':'';
-const pkRaceN=(m,r)=>{ const d=PICKS[D().date]; if(!d) return 0; const p=`${m.track}|${r.no}|`; return Object.keys(d).filter(k=>d[k].on&&k.startsWith(p)).length; };
+const pkRow=(m,r,x)=>PKOK&&pkOn(D().date,pkKey(m,r,x))?' pkd':'';
+const pkRaceN=(m,r)=>{ if(!PKOK) return 0; const d=PICKS[D().date]; if(!d) return 0; const p=`${m.track}|${r.no}|`; return Object.keys(d).filter(k=>d[k].on&&k.startsWith(p)).length; };
 function pkToggle(k){
+  if(!PKOK) return;
   const date=D().date, day=pkDay(date), on=!pkOn(date,k), [track,no]=k.split('|');
   const m=D().meetings.find(q=>q.track===track), r=m&&m.races.find(q=>String(q.no)===no);
   const x=r&&(r.all||r.runners).find(q=>pkKey(m,r,q)===k);
@@ -2821,20 +2843,15 @@ function pkMerge(date,rem){                       // the later of the two, key b
   return ch;
 }
 const pkSame=(a,b)=>{ const ka=Object.keys(a||{}), kb=Object.keys(b||{}); return ka.length===kb.length&&ka.every(k=>b[k]&&b[k].t===a[k].t&&!!b[k].on===!!a[k].on); };
-async function pkGet(date){                        // -> {sha, picks} or null when the file is not there yet
-  if(pkTok()&&PKREPO){
-    const g=await pkApi(`picks/${date}.json`);
-    if(g.status===404) return {sha:null,picks:{}};
-    if(g.status===401||g.status===403) throw new Error('token refused ('+g.status+')');
-    if(!g.ok) throw new Error('GitHub '+g.status);
-    const j=await g.json(); return {sha:j.sha,picks:(JSON.parse(pkUnb64(j.content))||{}).picks||{}};
-  }
-  const g=await fetch(`picks/${date}.json?x=${Date.now()}`,{cache:'no-store'});   // read only, through Pages (lags a minute or two)
-  if(!g.ok) return {sha:null,picks:{}};
-  return {sha:null,picks:((await g.json())||{}).picks||{}};
+async function pkGet(date){                        // -> {sha, picks}; an empty set when the file is not there yet
+  const g=await pkApi(`picks/${date}.json`);
+  if(g.status===404) return {sha:null,picks:{}};
+  if(g.status===401||g.status===403) throw new Error('token refused ('+g.status+')');
+  if(!g.ok) throw new Error('GitHub '+g.status);
+  const j=await g.json(); return {sha:j.sha,picks:(JSON.parse(pkUnb64(j.content))||{}).picks||{}};
 }
 async function pkPush(date){
-  if(!pkTok()||!PKREPO) return;
+  if(!PKOK) return;
   try{
     for(let i=0;i<4;i++){
       const g=await pkGet(date); if(pkMerge(date,g.picks)){ pkSave(); draw(); }
@@ -2852,9 +2869,10 @@ async function pkPush(date){
 function pkQueue(date){ clearTimeout(PKS.timer[date]); PKS.timer[date]=setTimeout(()=>pkPush(date),2500); }
 async function pkPull(){
   PKS.pulled=Date.now(); let ch=false, err='';
+  if(!(await pkAuth())) return;                    // not an authorised browser: nothing read, nothing shown
   for(const d of DATA.days){
     try{ const g=await pkGet(d.date); if(pkMerge(d.date,g.picks)) ch=true;
-      if(pkTok()&&PKREPO&&!pkSame(PICKS[d.date]||{},g.picks)&&Object.keys(PICKS[d.date]||{}).length) pkQueue(d.date);   // this device has picks the repo lacks
+      if(!pkSame(PICKS[d.date]||{},g.picks)&&Object.keys(PICKS[d.date]||{}).length) pkQueue(d.date);   // this device has picks the repo lacks
     }catch(e){ err=String(e.message||e); }
   }
   if(err) console.warn('picks not read:',err);
@@ -3248,4 +3266,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 23:38</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 23:51</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
