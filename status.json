@@ -1,27 +1,27 @@
 {
- "started": "2026-11-06T10:55:35",
+ "started": "2026-11-06T14:09:23",
  "dates": [
   "2026-11-06",
   "2026-11-07",
   "2026-11-08",
   "2026-11-09"
  ],
- "reason": "SA jump-out replays on the chips (deploy_rsavid)",
+ "reason": "Gatton Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 480,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-09",
  "card_source": "toprate",
  "extract": "2026-11-05T21:23:06+00:00",
- "finished": "2026-11-06T11:12:24",
+ "finished": "2026-11-06T14:24:41",
  "going": {
   "Cranbourne": "Soft 5",
   "Warrnambool": "Good 4",
   "Albury": "Good 4",
-  "Gatton": "Soft 5",
+  "Gatton": "Good 4",
   "Kempsey": "Heavy 10"
  },
  "scratchings": 103,
  "dashboard": "toprate_week_v2_2026-11-06.html",
- "fingerprint": "bab78db0fe15"
+ "fingerprint": "72b57430dd36"
 }
