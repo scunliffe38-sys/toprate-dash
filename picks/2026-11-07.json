@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:27:36.699Z",
+ "saved": "2026-11-06T12:27:53.014Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -292,6 +292,15 @@
    "sp": 8.5,
    "fair": 6.23,
    "rating": 103.6
+  },
+  "Flemington|6|CABALLUS": {
+   "on": 1,
+   "t": 1793968069945,
+   "name": "Caballus",
+   "tab": 4,
+   "sp": 10,
+   "fair": 11.56,
+   "rating": 101.8
   }
  }
 }
