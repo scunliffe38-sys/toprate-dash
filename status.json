@@ -1,19 +1,19 @@
 {
- "started": "2026-11-06T18:26:22",
+ "started": "2026-11-06T18:44:03",
  "dates": [
   "2026-11-06",
   "2026-11-07",
   "2026-11-08",
   "2026-11-09"
  ],
- "reason": "Cranbourne Soft 5 -> Good 4",
+ "reason": "Cranbourne scratched R7 #13/16",
  "status": "ok",
  "acceptors": 480,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-09",
  "card_source": "toprate",
  "extract": "2026-11-05T21:23:06+00:00",
- "finished": "2026-11-06T18:43:33",
+ "finished": "2026-11-06T18:59:20",
  "going": {
   "Cranbourne": "Good 4",
   "Albury": "Good 4",
@@ -23,5 +23,5 @@
  },
  "scratchings": 106,
  "dashboard": "toprate_week_v2_2026-11-06.html",
- "fingerprint": "010fd31bc264"
+ "fingerprint": "6b8b64fe6f80"
 }
