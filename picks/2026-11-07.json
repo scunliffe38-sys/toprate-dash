@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:42:46.604Z",
+ "saved": "2026-11-06T12:42:52.339Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -445,6 +445,15 @@
    "sp": 11,
    "fair": 13.68,
    "rating": 97.22
+  },
+  "Rosehill|9|AGATHA": {
+   "on": 1,
+   "t": 1793968969274,
+   "name": "Agatha",
+   "tab": 9,
+   "sp": 3.1,
+   "fair": 2.34,
+   "rating": 90.65
   }
  }
 }
