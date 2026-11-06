@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:40:43.759Z",
+ "saved": "2026-11-06T12:40:52.987Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -364,6 +364,15 @@
    "sp": 10,
    "fair": 15.45,
    "rating": 81.33
+  },
+  "Rosehill|6|TOYTOWN": {
+   "on": 1,
+   "t": 1793968849918,
+   "name": "Toytown",
+   "tab": 16,
+   "sp": 9,
+   "fair": 16.53,
+   "rating": 81.14
   }
  }
 }
