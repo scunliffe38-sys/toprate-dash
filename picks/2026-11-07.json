@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:17:04.320Z",
+ "saved": "2026-11-06T12:18:50.787Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 6,
    "fair": 11.14,
    "rating": 94.05
+  },
+  "Flemington|5|ZULEIKA": {
+   "on": 1,
+   "t": 1793967527595,
+   "name": "Zuleika",
+   "tab": 7,
+   "sp": 14,
+   "fair": 11.84,
+   "rating": 93.88
   }
  }
 }
