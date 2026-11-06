@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:39:03.161Z",
+ "saved": "2026-11-06T12:40:43.759Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -355,6 +355,15 @@
    "sp": 16,
    "fair": 7.25,
    "rating": 91.02
+  },
+  "Rosehill|6|TORSHAVN": {
+   "on": 1,
+   "t": 1793968840533,
+   "name": "Torshavn",
+   "tab": 8,
+   "sp": 10,
+   "fair": 15.45,
+   "rating": 81.33
   }
  }
 }
