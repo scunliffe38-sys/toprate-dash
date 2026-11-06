@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:50:30.505Z",
+ "saved": "2026-11-06T21:22:09.593Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -490,6 +490,15 @@
    "sp": 10,
    "fair": 6.9,
    "rating": 90.5
+  },
+  "Rosehill|3|NKOSI": {
+   "on": 1,
+   "t": 1794000126235,
+   "name": "Nkosi",
+   "tab": 4,
+   "sp": 8.5,
+   "fair": 15.75,
+   "rating": 87.18
   }
  }
 }
