@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:21:43.147Z",
+ "saved": "2026-11-06T12:21:48.056Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -199,6 +199,24 @@
    "sp": 51,
    "fair": 38.68,
    "rating": 98.28
+  },
+  "Flemington|7|AUTUMNGLOW": {
+   "on": 1,
+   "t": 1793967704961,
+   "name": "Autumn Glow",
+   "tab": 8,
+   "sp": 1.2,
+   "fair": 1.65,
+   "rating": 103.98
+  },
+  "Flemington|7|TOMKITTEN": {
+   "on": 1,
+   "t": 1793967707822,
+   "name": "Tom Kitten",
+   "tab": 1,
+   "sp": 13,
+   "fair": 12.52,
+   "rating": 97.61
   }
  }
 }
