@@ -1,19 +1,19 @@
 {
- "started": "2026-11-07T09:11:02",
+ "started": "2026-11-07T08:25:22",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "retry: Morphettville scratched R5 #6, R8 #1/2/14, R9 #5/9; Flemington scratched R1 #6, R2 #12, R3 #2, R4 #14/16, R5 #18, R6 #1/5, R7 #6, R9 #4/11; Eagle Farm scratched R3 #4/12/18,",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T09:29:02",
+ "finished": "2026-11-07T10:00:13",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -29,5 +29,5 @@
  },
  "scratchings": 177,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "8faefde91102"
+ "fingerprint": "c863a06f700e"
 }
