@@ -2311,7 +2311,7 @@ function wormRow(r,x){
   const [bs,td]=wLines(r,x);
   const vals=all.map(z=>z[6]).concat(x.wb0==null?[td,bs]:[td]).concat(r.wb&&r.wb.w!=null?[r.wb.w]:[]);
   let vlo=Math.min(...vals), vhi=Math.max(...vals);
-  if(x.wb0!=null) vlo=Math.max(vlo,Math.min(td,r.wb&&r.wb.w!=null?r.wb.w:td)-10);   // a far-off run is clipped at the foot (28 Oct 2026)
+  if(x.wb0!=null) vlo=Math.max(vlo,Math.min(td,r.wb&&r.wb.w!=null?r.wb.w:td)-25);   // a far-off run is clipped at the foot (28 Oct 2026; 25 below since 6 Nov 2026, Simon: "it needs another 15 on the bottom end")
   if(vhi-vlo<6){ const c=(vhi+vlo)/2; vlo=c-3; vhi=c+3; }
   const pad=(vhi-vlo)*0.07, y0=vlo-pad, y1=vhi+pad, step=vhi-vlo<=12?2:vhi-vlo<=30?5:10;
   // the forecast (28 Oct 2026): an Australian runner's expected figure today is one more point at the end of the line,
@@ -2473,10 +2473,10 @@ function wormCompare(r){
   const narrow=innerWidth<=560;
   const W=Math.max(340,Math.min(1400,(($("race")||{}).clientWidth||980)-(innerWidth<=720?20:40))), H=narrow?320:380;
   const L=30, R=narrow?132:170, T=16, B=30;
-  // a 20-point window down from the top (the highest run, forecast or bar): the same depth every race, so races compare by eye;
+  // a 35-point window down from the top (the highest run, forecast or bar): the same depth every race, so races compare by eye;
   // anything lower leaves the foot (Simon, 28 Oct 2026)
   const vals=[]; H0.forEach(h=>{ h.f.forEach(z=>vals.push(z[6])); vals.push(h.td); }); if(r.wb&&r.wb.w!=null) vals.push(r.wb.w);
-  const vhi=Math.max(...vals), vlo=vhi-20;
+  const vhi=Math.max(...vals), vlo=vhi-35;   // 35 deep since 6 Nov 2026 (was 20; Simon: "another 15 on the bottom end")
   const pad=1, y0=vlo-pad, y1=vhi+pad, step=5;
   const xs=i=>L+(W-L-R)*i/N, ys=v=>T+(H-T-B)*(1-(v-y0)/(y1-y0));
   const any=WSEL.size>0;
@@ -3091,4 +3091,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 21:30</b> AEST &middot; Cranbourne scratched R8 #4</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 06 Nov 21:32</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
