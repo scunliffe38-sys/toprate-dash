@@ -1,6 +1,6 @@
 {
  "date": "2026-11-07",
- "saved": "2026-11-06T12:41:09.226Z",
+ "saved": "2026-11-06T12:42:00.631Z",
  "picks": {
   "Flemington|2|FIORENOT": {
    "on": 1,
@@ -382,6 +382,15 @@
    "sp": 6.5,
    "fair": 24.57,
    "rating": 80.01
+  },
+  "Rosehill|6|PROVERB": {
+   "on": 1,
+   "t": 1793968917412,
+   "name": "Proverb",
+   "tab": 5,
+   "sp": 6,
+   "fair": 62.04,
+   "rating": 77.43
   }
  }
 }
