@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:25:19.685Z",
+ "saved": "2026-11-07T12:26:01.860Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -217,6 +217,15 @@
    "sp": 3.9,
    "fair": 7.23,
    "rating": 90.2
+  },
+  "Ararat|7|PRINCESSQUE": {
+   "on": 1,
+   "t": 1794054358697,
+   "name": "Princess Que",
+   "tab": 8,
+   "sp": 6.5,
+   "fair": 8.17,
+   "rating": 89.85
   }
  }
 }
