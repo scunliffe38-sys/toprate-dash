@@ -1,18 +1,18 @@
 {
- "started": "2026-11-08T09:10:02",
+ "started": "2026-11-08T08:24:55",
  "dates": [
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "retry: Warren scratched R1 #9, R2 #6, R4 #11, R7 #13/14/18; Sunshine Coast Soft 5 -> Soft 6; Sunshine Coast scratched R3 #10, R5 #11, R7 #2/3; Armidale Soft 5 -> Good 4; Armidale s",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 401,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-07T21:23:43+00:00",
- "finished": "2026-11-08T09:25:56",
+ "finished": "2026-11-08T09:29:25",
  "going": {
   "Ararat": "Soft 5",
   "Warren": "Good 4",
@@ -22,5 +22,5 @@
  },
  "scratchings": 65,
  "dashboard": "toprate_week_v2_2026-11-08.html",
- "fingerprint": "b4b7e86e9fec"
+ "fingerprint": "5bded7ba3548"
 }
