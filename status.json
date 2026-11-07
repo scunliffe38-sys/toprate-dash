@@ -1,19 +1,19 @@
 {
- "started": "2026-11-07T12:19:02",
+ "started": "2026-11-07T12:36:02",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Gold Coast scratched R3 #8",
+ "reason": "Eagle Farm scratched R3 #21",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T12:34:52",
+ "finished": "2026-11-07T12:52:07",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -29,5 +29,5 @@
  },
  "scratchings": 181,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "5580ad269a05"
+ "fingerprint": "636fc31938eb"
 }
