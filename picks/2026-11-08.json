@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:26:01.860Z",
+ "saved": "2026-11-07T12:26:31.019Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -226,6 +226,15 @@
    "sp": 6.5,
    "fair": 8.17,
    "rating": 89.85
+  },
+  "Ararat|7|BUZITUP": {
+   "on": 1,
+   "t": 1794054387977,
+   "name": "Buzitup",
+   "tab": 13,
+   "sp": 23,
+   "fair": 9.17,
+   "rating": 89.5
   }
  }
 }
