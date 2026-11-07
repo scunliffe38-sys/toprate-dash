@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:26:31.019Z",
+ "saved": "2026-11-07T12:27:02.620Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -235,6 +235,15 @@
    "sp": 23,
    "fair": 9.17,
    "rating": 89.5
+  },
+  "Ararat|7|SERGEANTMAJOR": {
+   "on": 1,
+   "t": 1794054419574,
+   "name": "Sergeant Major",
+   "tab": 7,
+   "sp": 3.9,
+   "fair": 9.43,
+   "rating": 89.42
   }
  }
 }
