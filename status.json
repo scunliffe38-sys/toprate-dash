@@ -1,33 +1,33 @@
 {
- "started": "2026-11-07T17:38:28",
+ "started": "2026-11-07T18:11:24",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Goulburn scratched R6 #9",
+ "reason": "Chinchilla scratched R6 #10",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T17:54:04",
+ "finished": "2026-11-07T18:27:14",
  "going": {
+  "Eagle Farm": "Good 4",
+  "Ascot": "Good 4",
+  "Gold Coast": "Good 4",
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
-  "Eagle Farm": "Good 4",
   "Morphettville": "Good 3",
-  "Ascot": "Good 4",
-  "Hawkesbury": "Good 4",
-  "Gold Coast": "Good 4",
-  "Chinchilla": "Good 3",
-  "Pioneer Park": "Good",
   "Geelong": "Soft 6",
-  "Goulburn": "Good 4"
+  "Hawkesbury": "Good 4",
+  "Goulburn": "Good 4",
+  "Chinchilla": "Good 3",
+  "Pioneer Park": "Good"
  },
- "scratchings": 190,
+ "scratchings": 192,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "e2f2d3107b21"
+ "fingerprint": "ca1b4ed10221"
 }
