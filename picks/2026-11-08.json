@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:21:20.432Z",
+ "saved": "2026-11-07T12:22:02.687Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -163,6 +163,15 @@
    "sp": 8,
    "fair": 12.33,
    "rating": 89.58
+  },
+  "Ararat|8|BOLDSTRIKE": {
+   "on": 1,
+   "t": 1794054119561,
+   "name": "Bold Strike",
+   "tab": 1,
+   "sp": 3.1,
+   "fair": 3.52,
+   "rating": 84.05
   }
  }
 }
