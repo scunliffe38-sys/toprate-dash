@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:03:40.388Z",
+ "saved": "2026-11-07T12:04:03.545Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -55,6 +55,15 @@
    "sp": 19,
    "fair": 27.52,
    "rating": 66.09
+  },
+  "Ararat|3|GENERALBLU": {
+   "on": 1,
+   "t": 1794053040489,
+   "name": "General Blu",
+   "tab": 2,
+   "sp": 1.5,
+   "fair": 1.77,
+   "rating": 81.31
   }
  }
 }
