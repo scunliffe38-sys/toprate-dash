@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:04:25.790Z",
+ "saved": "2026-11-07T12:19:17.284Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -100,6 +100,42 @@
    "sp": 3.3,
    "fair": 3.92,
    "rating": 85.81
+  },
+  "Ararat|5|NIALAH": {
+   "on": 1,
+   "t": 1794053951586,
+   "name": "Nialah",
+   "tab": 13,
+   "sp": 3.2,
+   "fair": 3.87,
+   "rating": 74.91
+  },
+  "Ararat|5|VULCANA": {
+   "on": 1,
+   "t": 1794053952437,
+   "name": "Vulcana",
+   "tab": 14,
+   "sp": 2.3,
+   "fair": 4.08,
+   "rating": 74.82
+  },
+  "Ararat|5|ALMORINA": {
+   "on": 1,
+   "t": 1794053953211,
+   "name": "Almorina",
+   "tab": 7,
+   "sp": 7.5,
+   "fair": 5.71,
+   "rating": 73.77
+  },
+  "Ararat|5|SELITASFURY": {
+   "on": 1,
+   "t": 1794053953950,
+   "name": "Selita's Fury",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 6.16,
+   "rating": 73.57
   }
  }
 }
