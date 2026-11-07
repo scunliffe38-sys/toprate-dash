@@ -1,19 +1,19 @@
 {
- "started": "2026-11-07T14:57:24",
+ "started": "2026-11-07T15:27:25",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Morphettville Good 4 -> Good 3; Gold Coast Soft 5 -> Good 4",
+ "reason": "Rosehill scratched R7 #8",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T15:13:09",
+ "finished": "2026-11-07T15:43:05",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -24,10 +24,10 @@
   "Hawkesbury": "Good 4",
   "Goulburn": "Good 4",
   "Gold Coast": "Good 4",
-  "Chinchilla": "Good 4",
+  "Chinchilla": "Good 3",
   "Pioneer Park": "Good"
  },
- "scratchings": 183,
+ "scratchings": 185,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "37de47b2b5ff"
+ "fingerprint": "fdf5a71a5508"
 }
