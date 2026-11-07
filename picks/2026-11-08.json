@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:02:23.174Z",
+ "saved": "2026-11-07T12:03:33.736Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -10,6 +10,42 @@
    "sp": 3.5,
    "fair": 3.73,
    "rating": 74.5
+  },
+  "Ararat|2|DANIELBOONE": {
+   "on": 1,
+   "t": 1794053008159,
+   "name": "Daniel Boone",
+   "tab": 3,
+   "sp": 5.5,
+   "fair": 7.66,
+   "rating": 70.22
+  },
+  "Ararat|2|POETICPASSAGE": {
+   "on": 1,
+   "t": 1794053008974,
+   "name": "Poetic Passage",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 7.78,
+   "rating": 70.24
+  },
+  "Ararat|2|MODELGIGI": {
+   "on": 1,
+   "t": 1794053009731,
+   "name": "Model Gigi",
+   "tab": 10,
+   "sp": 4.2,
+   "fair": 4.76,
+   "rating": 71.79
+  },
+  "Ararat|2|FIRETYPE": {
+   "on": 1,
+   "t": 1794053010540,
+   "name": "Fire Type",
+   "tab": 5,
+   "sp": 4.2,
+   "fair": 4.36,
+   "rating": 72.04
   }
  }
 }
