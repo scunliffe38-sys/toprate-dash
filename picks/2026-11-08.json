@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:04:03.545Z",
+ "saved": "2026-11-07T12:04:25.790Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -64,6 +64,42 @@
    "sp": 1.5,
    "fair": 1.77,
    "rating": 81.31
+  },
+  "Ararat|4|SOUTHERNCRESCENT": {
+   "on": 1,
+   "t": 1794053059549,
+   "name": "Southern Crescent",
+   "tab": 3,
+   "sp": 7.5,
+   "fair": 8.3,
+   "rating": 83.21
+  },
+  "Ararat|4|MIDNIGHTDEVIL": {
+   "on": 1,
+   "t": 1794053060849,
+   "name": "Midnight Devil",
+   "tab": 4,
+   "sp": 7.5,
+   "fair": 8.08,
+   "rating": 83.3
+  },
+  "Ararat|4|RESTLESSWIND": {
+   "on": 1,
+   "t": 1794053061712,
+   "name": "Restless Wind",
+   "tab": 5,
+   "sp": 3,
+   "fair": 4.39,
+   "rating": 85.39
+  },
+  "Ararat|4|CHASINGRAINBOWS": {
+   "on": 1,
+   "t": 1794053062669,
+   "name": "Chasing Rainbows",
+   "tab": 9,
+   "sp": 3.3,
+   "fair": 3.92,
+   "rating": 85.81
   }
  }
 }
