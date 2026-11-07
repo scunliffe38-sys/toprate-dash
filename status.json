@@ -1,19 +1,19 @@
 {
- "started": "2026-11-07T12:02:24",
+ "started": "2026-11-07T12:19:02",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Eagle Farm Soft 5 -> Good 4",
+ "reason": "Gold Coast scratched R3 #8",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T12:18:03",
+ "finished": "2026-11-07T12:34:52",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -27,7 +27,7 @@
   "Chinchilla": "Good 4",
   "Pioneer Park": "Good"
  },
- "scratchings": 180,
+ "scratchings": 181,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "38883f4ab7c3"
+ "fingerprint": "5580ad269a05"
 }
