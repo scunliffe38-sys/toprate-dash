@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:22:05.906Z",
+ "saved": "2026-11-07T12:22:10.248Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -181,6 +181,24 @@
    "sp": 6.5,
    "fair": 4.32,
    "rating": 83.55
+  },
+  "Ararat|8|MYUNCLEDIDIT": {
+   "on": 1,
+   "t": 1794054127066,
+   "name": "My Uncle Did It",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 5.26,
+   "rating": 82.77
+  },
+  "Ararat|8|CATNOIR": {
+   "on": 1,
+   "t": 1794054129795,
+   "name": "Cat Noir",
+   "tab": 8,
+   "sp": 3.4,
+   "fair": 7.28,
+   "rating": 81.72
   }
  }
 }
