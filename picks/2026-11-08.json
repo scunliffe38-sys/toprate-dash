@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:21:06.453Z",
+ "saved": "2026-11-07T12:21:20.432Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 9.5,
    "fair": 10.8,
    "rating": 89.97
+  },
+  "Ararat|6|NOTHINGELSEMATTERS": {
+   "on": 1,
+   "t": 1794054077363,
+   "name": "Nothingelsematters",
+   "tab": 9,
+   "sp": 8,
+   "fair": 12.33,
+   "rating": 89.58
   }
  }
 }
