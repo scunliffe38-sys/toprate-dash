@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:03:33.736Z",
+ "saved": "2026-11-07T12:03:40.388Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 4.2,
    "fair": 4.36,
    "rating": 72.04
+  },
+  "Ararat|2|CLASSICALPOWER": {
+   "on": 1,
+   "t": 1794053017341,
+   "name": "Classical Power",
+   "tab": 1,
+   "sp": 19,
+   "fair": 27.52,
+   "rating": 66.09
   }
  }
 }
