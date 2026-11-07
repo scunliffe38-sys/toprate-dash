@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:27:02.620Z",
+ "saved": "2026-11-07T22:59:52.765Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -244,6 +244,15 @@
    "sp": 3.9,
    "fair": 9.43,
    "rating": 89.42
+  },
+  "Ararat|4|BOLDBORDEAUX": {
+   "on": 1,
+   "t": 1794092389518,
+   "name": "Bold Bordeaux",
+   "tab": 1,
+   "sp": 4.8,
+   "fair": 6.61,
+   "rating": 81.89
   }
  }
 }
