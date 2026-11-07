@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:22:02.687Z",
+ "saved": "2026-11-07T12:22:05.906Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -172,6 +172,15 @@
    "sp": 3.1,
    "fair": 3.52,
    "rating": 84.05
+  },
+  "Ararat|8|JUSTCALLMEJONNY": {
+   "on": 1,
+   "t": 1794054122848,
+   "name": "Just Call Me Jonny",
+   "tab": 2,
+   "sp": 6.5,
+   "fair": 4.32,
+   "rating": 83.55
   }
  }
 }
