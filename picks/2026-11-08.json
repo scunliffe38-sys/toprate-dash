@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:19:34.913Z",
+ "saved": "2026-11-07T12:21:06.453Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 3.4,
    "fair": 4.07,
    "rating": 93
+  },
+  "Ararat|6|RAGINGBULL": {
+   "on": 1,
+   "t": 1794054063182,
+   "name": "Raging Bull",
+   "tab": 4,
+   "sp": 9.5,
+   "fair": 10.8,
+   "rating": 89.97
   }
  }
 }
