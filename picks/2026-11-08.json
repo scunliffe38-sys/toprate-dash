@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:19:17.284Z",
+ "saved": "2026-11-07T12:19:34.913Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -136,6 +136,15 @@
    "sp": 6.5,
    "fair": 6.16,
    "rating": 73.57
+  },
+  "Ararat|6|AFTERMATH": {
+   "on": 1,
+   "t": 1794053971809,
+   "name": "Aftermath",
+   "tab": 1,
+   "sp": 3.4,
+   "fair": 4.07,
+   "rating": 93
   }
  }
 }
