@@ -1,23 +1,23 @@
 {
- "started": "2026-11-07T11:09:24",
+ "started": "2026-11-07T12:02:24",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Ascot Soft 5 -> Good 4; Ascot scratched R3 #8",
+ "reason": "Eagle Farm Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T11:25:00",
+ "finished": "2026-11-07T12:18:03",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
-  "Eagle Farm": "Soft 5",
+  "Eagle Farm": "Good 4",
   "Morphettville": "Good 4",
   "Ascot": "Good 4",
   "Geelong": "Soft 6",
@@ -27,7 +27,7 @@
   "Chinchilla": "Good 4",
   "Pioneer Park": "Good"
  },
- "scratchings": 179,
+ "scratchings": 180,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "9051840f9d4e"
+ "fingerprint": "38883f4ab7c3"
 }
