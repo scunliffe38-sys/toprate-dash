@@ -1,19 +1,19 @@
 {
- "started": "2026-11-07T15:27:25",
+ "started": "2026-11-07T15:44:02",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Rosehill scratched R7 #8",
+ "reason": "Rosehill scratched R6 #3; Chinchilla Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T15:43:05",
+ "finished": "2026-11-07T15:59:13",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -27,7 +27,7 @@
   "Chinchilla": "Good 3",
   "Pioneer Park": "Good"
  },
- "scratchings": 185,
+ "scratchings": 187,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "fdf5a71a5508"
+ "fingerprint": "33ea7a7427a1"
 }
