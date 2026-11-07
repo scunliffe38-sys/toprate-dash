@@ -1,6 +1,6 @@
 {
  "date": "2026-11-08",
- "saved": "2026-11-07T12:24:45.103Z",
+ "saved": "2026-11-07T12:25:19.685Z",
  "picks": {
   "Ararat|1|LEGENDBEAST": {
    "on": 1,
@@ -199,6 +199,24 @@
    "sp": 3.4,
    "fair": 7.28,
    "rating": 81.72
+  },
+  "Ararat|7|BLACKSTORM": {
+   "on": 1,
+   "t": 1794054314248,
+   "name": "Black Storm",
+   "tab": 4,
+   "sp": 8.5,
+   "fair": 6.92,
+   "rating": 90.34
+  },
+  "Ararat|7|RUEDEROYALE": {
+   "on": 1,
+   "t": 1794054316250,
+   "name": "Rue De Royale",
+   "tab": 5,
+   "sp": 3.9,
+   "fair": 7.23,
+   "rating": 90.2
   }
  }
 }
