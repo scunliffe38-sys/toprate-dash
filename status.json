@@ -1,19 +1,19 @@
 {
- "started": "2026-11-07T16:00:02",
+ "started": "2026-11-07T16:55:27",
  "dates": [
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Goulburn scratched R6 #1; Goulburn scratched R6 #4",
+ "reason": "Ascot scratched R4 #4",
  "status": "ok",
  "acceptors": 1291,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-06T21:23:48+00:00",
- "finished": "2026-11-07T16:15:20",
+ "finished": "2026-11-07T17:10:55",
  "going": {
   "Flemington": "Good 4",
   "Rosehill": "Good 4",
@@ -27,7 +27,7 @@
   "Chinchilla": "Good 3",
   "Pioneer Park": "Good"
  },
- "scratchings": 187,
+ "scratchings": 188,
  "dashboard": "toprate_week_v2_2026-11-07.html",
- "fingerprint": "bb9f883d2b8b"
+ "fingerprint": "c66563ccf6f6"
 }
