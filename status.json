@@ -1,27 +1,27 @@
 {
- "started": "2026-11-08T14:54:02",
+ "started": "2026-11-08T17:49:21",
  "dates": [
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Warren Good 4 -> Good 3",
+ "reason": "Sunshine Coast scratched R7 #5",
  "status": "ok",
  "acceptors": 401,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-07T21:23:43+00:00",
- "finished": "2026-11-08T15:08:10",
+ "finished": "2026-11-08T18:03:47",
  "going": {
+  "York": "Good 4",
+  "Sha Tin": "Good",
   "Ararat": "Good 4",
   "Warren": "Good 3",
   "Armidale": "Good 4",
-  "Sunshine Coast": "Soft 6",
-  "York": "Good 4",
-  "Sha Tin": "Good"
+  "Sunshine Coast": "Soft 6"
  },
- "scratchings": 73,
+ "scratchings": 74,
  "dashboard": "toprate_week_v2_2026-11-08.html",
- "fingerprint": "ab4f6b809ee8"
+ "fingerprint": "686cfa301ce1"
 }
