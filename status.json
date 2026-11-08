@@ -1,27 +1,27 @@
 {
- "started": "2026-11-08T13:50:41",
+ "started": "2026-11-08T14:38:22",
  "dates": [
   "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Ararat Soft 5 -> Good 4",
+ "reason": "Ararat scratched R3 #8",
  "status": "ok",
  "acceptors": 401,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-07T21:23:43+00:00",
- "finished": "2026-11-08T14:05:03",
+ "finished": "2026-11-08T14:53:02",
  "going": {
   "Ararat": "Good 4",
-  "Warren": "Good 4",
+  "Warren": "Good 3",
   "Armidale": "Good 4",
   "Sunshine Coast": "Soft 6",
   "York": "Good 4",
   "Sha Tin": "Good"
  },
- "scratchings": 72,
+ "scratchings": 73,
  "dashboard": "toprate_week_v2_2026-11-08.html",
- "fingerprint": "f6122f1b6e77"
+ "fingerprint": "3a07b34a8d1d"
 }
