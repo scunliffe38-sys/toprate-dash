@@ -3339,7 +3339,9 @@ window.skyLive=async (ch,forceDirect)=>{
     .map(k=>`<a href="#" onclick="skyLive('${k}');return false;">${SKY[k].name}</a>`)
     .join(' &nbsp;\u00b7&nbsp; ');
   $("vdt").innerHTML=c.name+' &nbsp;\u00b7&nbsp; <span id="skyoff">live</span> &nbsp;\u00b7&nbsp; '+
-    (dvr?'30 min back':'this session only')+' &nbsp;\u00b7&nbsp; '+others+
+    // on the fallback the seekable range is Sky's own playlist, which is seconds: say so rather than
+    // imply a rewind that is not there.
+    (dvr?'30 min back':'Sky direct, no rewind')+' &nbsp;\u00b7&nbsp; '+others+
     ' &nbsp;\u00b7&nbsp; <a href="#" onclick="watchLive();return false;">Racing.com</a>';
   b.innerHTML='<video id="skyv" controls autoplay playsinline></video>';
   d.classList.add('wide'); d.hidden=false;
@@ -3350,10 +3352,16 @@ window.skyLive=async (ch,forceDirect)=>{
   catch(e){ b.innerHTML='<p class="vmsg">Live vision needs hls.js and it did not load. '+
             '<a href="'+c.url+'" target="_blank" rel="noopener">Open the stream</a></p>'; return; }
   if(!document.getElementById("skyv")) return;           // closed while the script loaded
-  // No liveDurationInfinity (it made the duration Infinity, and the browser's own controls then draw no
-  // timeline at all). backBufferLength Infinity keeps what has played, so the bar reaches back to the
-  // moment the dock opened even where Akamai's playlist holds only a few segments (Simon, 8 Nov 2026).
-  _hls=new Hls({backBufferLength:Infinity});
+  // liveDurationInfinity TRUE is what gives us a scrubber, and 8 Nov 2026 took it out on exactly the
+  // wrong theory. Only with it set does hls.js call MediaSource.setLiveSeekableRange(first fragment,
+  // live edge) -- see buffer-controller.ts -- and over OUR 30-minute playlist that is a 30-minute
+  // draggable bar. hls.js's own doc: "If you want to have a native Live UI in environments like iOS
+  // Safari, Safari, Android Google Chrome, etc. set this value to true." With it false hls.js sets a
+  // finite, growing duration and never marks a live seekable range at all, so there is no DVR bar.
+  // The timeline was never the problem: over Sky's own 9-12 SECOND window there was nothing to drag.
+  // backBufferLength:Infinity is hls.js's DEFAULT (the browser evicts anyway), so it was a no-op
+  // yesterday; kept explicit only so a short rewind does not re-fetch what has just played.
+  _hls=new Hls({liveDurationInfinity:true,backBufferLength:Infinity});
   _hls.loadSource(src);
   _hls.attachMedia(v);
   _hls.on(Hls.Events.ERROR,(_e,data)=>{
@@ -3416,4 +3424,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 09 Nov 10:38</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 09 Nov 10:54</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
