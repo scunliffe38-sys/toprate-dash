@@ -1,24 +1,24 @@
 {
- "started": "2026-11-09T03:08:35",
+ "started": "2026-11-09T08:24:27",
  "dates": [
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 326,
- "rider_share": 0.89,
+ "rider_share": 1.0,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
- "extract": "2026-11-08T16:07:23+00:00",
- "finished": "2026-11-09T03:57:01",
+ "extract": "2026-11-08T21:23:11+00:00",
+ "finished": "2026-11-09T09:13:48",
  "going": {
-  "Hamilton": "Soft 5",
+  "Hamilton": "Good 4",
   "Lismore": "Soft 5",
-  "Scone": "Good 4",
-  "Mt Isa": "Good"
+  "Mt Isa": "Good",
+  "Scone": "Good 4"
  },
- "scratchings": 30,
+ "scratchings": 59,
  "dashboard": "toprate_week_v2_2026-11-09.html",
- "fingerprint": "6a7b70eb6459"
+ "fingerprint": "779ffc2be565"
 }
