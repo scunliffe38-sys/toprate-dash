@@ -3289,22 +3289,42 @@ function loadHls(){
 }
 function killHls(){ if(_hls){ try{ _hls.destroy(); }catch(e){} _hls=null; } }
 
+// Scrubber (8 Nov 2026, Simon: "go back in time and rewatch a race from a few minutes ago"). The bar is the
+// browser's own, over whatever the player can seek to: Akamai's playlist window, plus (hls.js) what has
+// already played. The title bar shows how far behind live the picture is and a Live link jumps to the edge.
+function skyEdge(v){ try{ return v.seekable.length?v.seekable.end(v.seekable.length-1):null; }catch(e){ return null; } }
+window.skyToLive=()=>{ const v=document.getElementById("skyv"); if(!v) return;
+  const e=(_hls&&_hls.liveSyncPosition)||skyEdge(v); if(e!=null) v.currentTime=e; v.play&&v.play().catch(()=>{}); };
+function skyScrub(v){
+  v.addEventListener('timeupdate',()=>{
+    const el=document.getElementById("skyoff"); if(!el) return;
+    const e=skyEdge(v); if(e==null) return;
+    const back=Math.max(0,e-v.currentTime);
+    if(back<8){ el.textContent='live'; el.className=''; return; }
+    const m=Math.floor(back/60), s=Math.round(back%60);
+    el.className='skyback'; el.innerHTML='<a href="#" onclick="skyToLive();return false;">'+(m?m+'m ':'')+s+'s behind &middot; back to live</a>';
+  });
+}
 window.skyLive=async (ch)=>{
   const c=SKY[ch]||SKY.stc, other=c===SKY.stc?'sky1':'stc';
   const b=$("vdb"), d=$("vdock"); if(!b||!d) return;
   killHls();
-  $("vdt").innerHTML=c.name+' &nbsp;\u00b7&nbsp; live &nbsp;\u00b7&nbsp; '+
+  $("vdt").innerHTML=c.name+' &nbsp;\u00b7&nbsp; <span id="skyoff">live</span> &nbsp;\u00b7&nbsp; '+
     `<a href="#" onclick="skyLive('${other}');return false;">${SKY[other].name}</a>`+
     ' &nbsp;\u00b7&nbsp; <a href="#" onclick="watchLive();return false;">Racing.com</a>';
   b.innerHTML='<video id="skyv" controls autoplay playsinline></video>';
   d.classList.add('wide'); d.hidden=false;
   const v=document.getElementById("skyv");
+  skyScrub(v);
   if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=c.url; return; }
   try{ await loadHls(); }
   catch(e){ b.innerHTML='<p class="vmsg">Live vision needs hls.js and it did not load. '+
             '<a href="'+c.url+'" target="_blank" rel="noopener">Open the stream</a></p>'; return; }
   if(!document.getElementById("skyv")) return;           // closed while the script loaded
-  _hls=new Hls({liveDurationInfinity:true});
+  // No liveDurationInfinity (it made the duration Infinity, and the browser's own controls then draw no
+  // timeline at all). backBufferLength Infinity keeps what has played, so the bar reaches back to the
+  // moment the dock opened even where Akamai's playlist holds only a few segments (Simon, 8 Nov 2026).
+  _hls=new Hls({backBufferLength:Infinity});
   _hls.loadSource(c.url);
   _hls.attachMedia(v);
   _hls.on(Hls.Events.ERROR,(_e,data)=>{
@@ -3366,4 +3386,4 @@ window.skyLive=async (ch)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 08 Nov 15:08</b> AEST &middot; Warren Good 4 -> Good 3</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Sun 08 Nov 16:04</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
