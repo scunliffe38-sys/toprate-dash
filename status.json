@@ -1,27 +1,24 @@
 {
- "started": "2026-11-08T17:49:21",
+ "started": "2026-11-09T03:08:35",
  "dates": [
-  "2026-11-08",
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Sunshine Coast scratched R7 #5",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 401,
- "rider_share": 1.0,
+ "acceptors": 326,
+ "rider_share": 0.89,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
- "extract": "2026-11-07T21:23:43+00:00",
- "finished": "2026-11-08T18:03:47",
+ "extract": "2026-11-08T16:07:23+00:00",
+ "finished": "2026-11-09T03:57:01",
  "going": {
-  "York": "Good 4",
-  "Sha Tin": "Good",
-  "Ararat": "Good 4",
-  "Warren": "Good 3",
-  "Armidale": "Good 4",
-  "Sunshine Coast": "Soft 6"
+  "Hamilton": "Soft 5",
+  "Lismore": "Soft 5",
+  "Scone": "Good 4",
+  "Mt Isa": "Good"
  },
- "scratchings": 74,
- "dashboard": "toprate_week_v2_2026-11-08.html",
- "fingerprint": "686cfa301ce1"
+ "scratchings": 30,
+ "dashboard": "toprate_week_v2_2026-11-09.html",
+ "fingerprint": "6a7b70eb6459"
 }
