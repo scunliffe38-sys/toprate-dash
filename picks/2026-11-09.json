@@ -1,33 +1,18 @@
 {
  "date": "2026-11-09",
- "saved": "2026-11-09T02:40:14.732Z",
+ "saved": "2026-11-09T04:28:54.092Z",
  "picks": {
   "Hamilton|5|ENDEANACE": {
-   "on": 1,
-   "t": 1794192008971,
-   "name": "Endean Ace",
-   "tab": 4,
-   "sp": 12,
-   "fair": 4.88,
-   "rating": 77.23
+   "on": 0,
+   "t": 1794198528919
   },
   "Hamilton|5|TUDAYA": {
-   "on": 1,
-   "t": 1794192010634,
-   "name": "Tudaya",
-   "tab": 7,
-   "sp": 10,
-   "fair": 6.16,
-   "rating": 76.44
+   "on": 0,
+   "t": 1794198529837
   },
   "Hamilton|5|SOTOMAYOR": {
-   "on": 1,
-   "t": 1794192011556,
-   "name": "Sotomayor",
-   "tab": 2,
-   "sp": 3.9,
-   "fair": 8.18,
-   "rating": 75.59
+   "on": 0,
+   "t": 1794198530712
   }
  }
 }
