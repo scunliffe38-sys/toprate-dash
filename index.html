@@ -595,6 +595,18 @@ header .blt.on{background:#fff;color:var(--cond);border-color:#fff}   /* SPM + B
 .vdock .vt a{color:var(--cond);text-decoration:none}
 .vdock .vt a:hover{text-decoration:underline}
 .vdock .vmsg{color:var(--dim);font-size:12.5px;padding:14px;text-align:center}
+/* OUR OWN rewind bar, because the native controls cannot be relied on for a DVR (9 Nov 2026, after two
+   deploys spent finding out): Chrome and Edge HIDE their timeline whenever the media duration is
+   Infinity, which is precisely what hls.js sets in order to mark a live seekable range, and when the
+   duration is finite instead they bound the bar by what hls.js happens to know. This draws the window
+   ourselves from video.seekable and seeks with currentTime, which behaves the same in every browser and
+   on Safari's native HLS path too. */
+.vdock .sdvr{display:flex;align-items:center;gap:10px;padding:7px 11px;border-top:1px solid var(--rule)}
+.vdock .sdvr input[type=range]{flex:1 1 auto;min-width:0;accent-color:var(--cond);height:14px;cursor:pointer;margin:0}
+.vdock .sdvr .sl{color:var(--dim);font-size:11.5px;font-variant-numeric:tabular-nums;white-space:nowrap;min-width:38px;text-align:right}
+.vdock .sdvr .sb{background:none;border:1px solid var(--rule);border-radius:3px;color:var(--cond);
+  cursor:pointer;font-family:inherit;font-size:11px;padding:2px 7px;white-space:nowrap}
+.vdock .sdvr .sb:hover{background:var(--cond);color:var(--ink)}
 .wlive:hover{background:var(--cond);color:var(--ink)}
 
 /* ---- narrow screens -------------------------------------------------------
@@ -992,6 +1004,11 @@ nav button .pkn,.daytab .pkn{color:var(--green);font-style:normal;font-size:10px
   <div class="vh"><div class="vt" id="vdt"></div>
     <button class="vx" onclick="closeVid()" title="close (Esc)" aria-label="close replay">&#10005;</button></div>
   <div class="vb" id="vdb"></div>
+  <div class="sdvr" id="sdvr" hidden>
+    <input type="range" id="sdvrr" min="0" max="1000" step="1" value="1000" aria-label="Rewind the live vision">
+    <span class="sl" id="sdvrl">live</span>
+    <button class="sb" id="sdvrb" onclick="skyToLive()" hidden>live</button>
+  </div>
 </div>
 
 <script>
@@ -3310,7 +3327,8 @@ function loadHls(){
   });
   return loadHls._p;
 }
-function killHls(){ if(_hls){ try{ _hls.destroy(); }catch(e){} _hls=null; } }
+function killHls(){ if(_hls){ try{ _hls.destroy(); }catch(e){} _hls=null; }
+  const s=$("sdvr"); if(s) s.hidden=true; }      // racing.com and the replay dock get no rewind bar
 
 // Scrubber (8 Nov 2026, Simon: "go back in time and rewatch a race from a few minutes ago"). The bar is the
 // browser's own, over whatever the player can seek to: Akamai's playlist window, plus (hls.js) what has
@@ -3318,15 +3336,52 @@ function killHls(){ if(_hls){ try{ _hls.destroy(); }catch(e){} _hls=null; } }
 function skyEdge(v){ try{ return v.seekable.length?v.seekable.end(v.seekable.length-1):null; }catch(e){ return null; } }
 window.skyToLive=()=>{ const v=document.getElementById("skyv"); if(!v) return;
   const e=(_hls&&_hls.liveSyncPosition)||skyEdge(v); if(e!=null) v.currentTime=e; v.play&&v.play().catch(()=>{}); };
+// The window we can actually scrub: with liveDurationInfinity hls.js calls
+// MediaSource.setLiveSeekableRange(first fragment, live edge), so seekable IS the whole playlist --
+// 30 minutes over our own copy, seconds over Sky's. Under 20 s there is nothing worth a bar.
+function skyRange(v){
+  try{
+    const n=v.seekable.length; if(!n) return null;
+    const st=v.seekable.start(0), en=v.seekable.end(n-1);
+    return (en-st)>20?{st:st,en:en}:null;
+  }catch(e){ return null; }
+}
+function fmtBack(s){ return '-'+Math.floor(s/60)+':'+String(Math.round(s%60)).padStart(2,'0'); }
 function skyScrub(v){
-  v.addEventListener('timeupdate',()=>{
-    const el=document.getElementById("skyoff"); if(!el) return;
-    const e=skyEdge(v); if(e==null) return;
-    const back=Math.max(0,e-v.currentTime);
-    if(back<8){ el.textContent='live'; el.className=''; return; }
-    const m=Math.floor(back/60), s=Math.round(back%60);
-    el.className='skyback'; el.innerHTML='<a href="#" onclick="skyToLive();return false;">'+(m?m+'m ':'')+s+'s behind &middot; back to live</a>';
-  });
+  const bar=$("sdvr"), rng=$("sdvrr"), lab=$("sdvrl"), btn=$("sdvrb");
+  let dragging=false;
+  if(rng){
+    rng.oninput=()=>{                                   // show where the drag is before committing it
+      dragging=true; const r=skyRange(v); if(!r||!lab) return;
+      lab.textContent=fmtBack(r.en-(r.st+(rng.value/1000)*(r.en-r.st)));
+    };
+    rng.onchange=()=>{
+      const r=skyRange(v);
+      if(r){                                            // keep off the very edges: a seek outside the
+        const t=r.st+(rng.value/1000)*(r.en-r.st);       // seekable range throws in some browsers
+        v.currentTime=Math.min(r.en-0.1,Math.max(r.st+0.5,t));
+      }
+      dragging=false; v.play&&v.play().catch(()=>{});
+    };
+  }
+  const tick=()=>{
+    const r=skyRange(v), el=$("skyoff");
+    if(bar) bar.hidden=!r;
+    if(!r){ if(el){ el.textContent='live'; el.className=''; } return; }
+    const back=Math.max(0,r.en-v.currentTime), atLive=back<8;
+    if(!dragging&&rng) rng.value=Math.round(1000*Math.min(1,Math.max(0,(v.currentTime-r.st)/(r.en-r.st))));
+    if(!dragging&&lab) lab.textContent=atLive?'live':fmtBack(back);
+    if(btn) btn.hidden=atLive;
+    if(el){
+      if(atLive){ el.textContent='live'; el.className=''; }
+      else { el.className='skyback';
+             el.innerHTML='<a href="#" onclick="skyToLive();return false;">'+fmtBack(back)+' behind &middot; back to live</a>'; }
+    }
+  };
+  v.addEventListener('timeupdate',tick);
+  v.addEventListener('progress',tick);
+  v.addEventListener('loadedmetadata',tick);
+  setInterval(tick,1000);          // the window keeps growing even while parked at the edge
 }
 let _skyDirect=false;          // true when we are on Sky's own feed rather than our 30-minute copy
 window.skyLive=async (ch,forceDirect)=>{
@@ -3424,4 +3479,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 09 Nov 10:54</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 09 Nov 11:05</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
