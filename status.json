@@ -1,23 +1,23 @@
 {
- "started": "2026-11-10T09:09:02",
+ "started": "2026-11-10T08:23:42",
  "dates": [
   "2026-11-10",
   "2026-11-11",
   "2026-11-12"
  ],
- "reason": "retry: Queanbeyan Soft 5 -> Good 4; Queanbeyan scratched R3 #7, R4 #7, R5 #2, R6 #5, R7 #12, R8 #9; Mornington Soft 5 -> Good 4; Mornington scratched R1 #13/14, R2 #1/9/11, R3 #3/4",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 188,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-12",
  "card_source": "toprate",
  "extract": "2026-11-09T21:22:16+00:00",
- "finished": "2026-11-10T09:23:23",
+ "finished": "2026-11-10T09:55:37",
  "going": {
   "Mornington": "Good 4",
   "Queanbeyan": "Good 4"
  },
  "scratchings": 36,
  "dashboard": "toprate_week_v2_2026-11-10.html",
- "fingerprint": "317a312c7dc2"
+ "fingerprint": "04ab1c22c474"
 }
