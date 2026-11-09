@@ -1,24 +1,21 @@
 {
- "started": "2026-11-09T16:02:20",
+ "started": "2026-11-10T03:08:07",
  "dates": [
-  "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Hamilton scratched R6 #6",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 326,
- "rider_share": 1.0,
+ "acceptors": 188,
+ "rider_share": 0.92,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
- "extract": "2026-11-08T21:23:11+00:00",
- "finished": "2026-11-09T16:16:20",
+ "extract": "2026-11-09T16:06:43+00:00",
+ "finished": "2026-11-10T03:41:05",
  "going": {
-  "Hamilton": "Good 4",
-  "Lismore": "Good 4",
-  "Scone": "Good 4",
-  "Mt Isa": "Good"
+  "Mornington": "Soft 5",
+  "Queanbeyan": "Soft 5"
  },
- "scratchings": 63,
- "dashboard": "toprate_week_v2_2026-11-09.html",
- "fingerprint": "d6879cb9882c"
+ "scratchings": 13,
+ "dashboard": "toprate_week_v2_2026-11-10.html",
+ "fingerprint": "65bbae0ea052"
 }
