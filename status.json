@@ -1,24 +1,24 @@
 {
- "started": "2026-11-09T13:58:20",
+ "started": "2026-11-09T14:55:20",
  "dates": [
   "2026-11-09",
   "2026-11-10"
  ],
- "reason": "Hamilton scratched R2 #7",
+ "reason": "Lismore Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 326,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-10",
  "card_source": "toprate",
  "extract": "2026-11-08T21:23:11+00:00",
- "finished": "2026-11-09T14:12:33",
+ "finished": "2026-11-09T15:09:29",
  "going": {
   "Hamilton": "Good 4",
-  "Lismore": "Soft 5",
+  "Lismore": "Good 4",
   "Mt Isa": "Good",
   "Scone": "Good 4"
  },
  "scratchings": 62,
  "dashboard": "toprate_week_v2_2026-11-09.html",
- "fingerprint": "d355b32af818"
+ "fingerprint": "da51cc43d46f"
 }
