@@ -1,23 +1,23 @@
 {
- "started": "2026-11-10T11:57:19",
+ "started": "2026-11-10T15:31:18",
  "dates": [
   "2026-11-10",
   "2026-11-11",
   "2026-11-12"
  ],
- "reason": "Mornington scratched R1 #10, R6 #14",
+ "reason": "Queanbeyan scratched R7 #9",
  "status": "ok",
  "acceptors": 188,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-12",
  "card_source": "toprate",
  "extract": "2026-11-09T21:22:16+00:00",
- "finished": "2026-11-10T12:10:26",
+ "finished": "2026-11-10T15:44:16",
  "going": {
   "Mornington": "Good 4",
   "Queanbeyan": "Good 4"
  },
- "scratchings": 38,
+ "scratchings": 39,
  "dashboard": "toprate_week_v2_2026-11-10.html",
- "fingerprint": "46c425d7f36a"
+ "fingerprint": "1fbbb3f7fbe2"
 }
