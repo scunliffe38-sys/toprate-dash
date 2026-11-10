@@ -3339,7 +3339,9 @@ function loadHls(){
   });
   return loadHls._p;
 }
+let _skyTick=0;                  // the rewind bar's one-second ticker, cleared with the player
 function killHls(){ if(_hls){ try{ _hls.destroy(); }catch(e){} _hls=null; }
+  if(_skyTick){ clearInterval(_skyTick); _skyTick=0; }
   const s=$("sdvr"); if(s) s.hidden=true; }      // racing.com and the replay dock get no rewind bar
 
 // Scrubber (8 Nov 2026, Simon: "go back in time and rewatch a race from a few minutes ago"). The bar is the
@@ -3393,7 +3395,8 @@ function skyScrub(v){
   v.addEventListener('timeupdate',tick);
   v.addEventListener('progress',tick);
   v.addEventListener('loadedmetadata',tick);
-  setInterval(tick,1000);          // the window keeps growing even while parked at the edge
+  if(_skyTick) clearInterval(_skyTick);   // one ticker only: this ran on every open and never cleared,
+  _skyTick=setInterval(tick,1000);        // leaving a ticker per channel switch on a dead element
 }
 let _skyDirect=false;          // true when we are on Sky's own feed rather than our 30-minute copy
 window.skyLive=async (ch,forceDirect)=>{
@@ -3414,11 +3417,21 @@ window.skyLive=async (ch,forceDirect)=>{
   d.classList.add('wide'); d.hidden=false;
   const v=document.getElementById("skyv");
   skyScrub(v);
-  if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=src; return; }
-  try{ await loadHls(); }
-  catch(e){ b.innerHTML='<p class="vmsg">Live vision needs hls.js and it did not load. '+
-            '<a href="'+c.url+'" target="_blank" rel="noopener">Open the stream</a></p>'; return; }
+  // hls.js FIRST, native HLS only where hls.js cannot run. This used to be the other way round, and
+  // that was the whole bug behind three reports of a dead scrubber (11 Nov 2026): Chrome 153 and Edge
+  // now answer "maybe" to canPlayType('application/vnd.apple.mpegurl'), so the native branch -- written
+  // for Safari -- caught them and RETURNED before hls.js was ever created. Chrome's own HLS player
+  // leaves video.seekable EMPTY, and a browser refuses any seek outside the seekable range, so the bar
+  // drew and dragged and the picture never moved. Measured on this page in headless Chrome 153: native
+  // path seekable [], hls.js path seekable [[12,432]] and a drag to -5:27 that held and played on.
+  let _ok=false;
+  try{ await loadHls(); _ok=!!(window.Hls&&Hls.isSupported()); }catch(e){ _ok=false; }
   if(!document.getElementById("skyv")) return;           // closed while the script loaded
+  if(!_ok){                                              // iOS Safari: its own player, its own DVR bar
+    if(v.canPlayType('application/vnd.apple.mpegurl')){ v.src=src; return; }
+    b.innerHTML='<p class="vmsg">Live vision needs hls.js and it did not load. '+
+            '<a href="'+c.url+'" target="_blank" rel="noopener">Open the stream</a></p>'; return;
+  }
   // liveDurationInfinity TRUE is what gives us a scrubber, and 8 Nov 2026 took it out on exactly the
   // wrong theory. Only with it set does hls.js call MediaSource.setLiveSeekableRange(first fragment,
   // live edge) -- see buffer-controller.ts -- and over OUR 30-minute playlist that is a 30-minute
@@ -3491,4 +3504,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 11 Nov 00:10</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 11 Nov 00:21</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
