@@ -1,18 +1,18 @@
 {
- "started": "2026-11-11T09:10:02",
+ "started": "2026-11-11T08:24:21",
  "dates": [
   "2026-11-11",
   "2026-11-12",
   "2026-11-13"
  ],
- "reason": "retry: Balaklava Good 3 -> Good 4; Balaklava scratched R2 #6, R5 #3, R6 #4/8; Eagle Farm scratched R1 #6, R3 #3/14, R4 #5/10/11, R5 #9/12, R7 #1/5; Warwick Farm scratched R1 #7, R2",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 556,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-13",
  "card_source": "toprate",
  "extract": "2026-11-10T21:22:49+00:00",
- "finished": "2026-11-11T09:26:38",
+ "finished": "2026-11-11T09:46:47",
  "going": {
   "Warwick Farm": "Good 4",
   "Eagle Farm": "Soft 5",
@@ -22,7 +22,7 @@
   "Belmont Park": "Soft 5",
   "Launceston": "Soft 5"
  },
- "scratchings": 96,
+ "scratchings": 100,
  "dashboard": "toprate_week_v2_2026-11-11.html",
- "fingerprint": "76efe0678862"
+ "fingerprint": "2bc4f519765b"
 }
