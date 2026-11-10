@@ -1,23 +1,26 @@
 {
- "started": "2026-11-10T15:31:18",
+ "started": "2026-11-11T03:08:30",
  "dates": [
-  "2026-11-10",
   "2026-11-11",
   "2026-11-12"
  ],
- "reason": "Queanbeyan scratched R7 #9",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 188,
- "rider_share": 1.0,
+ "acceptors": 556,
+ "rider_share": 0.92,
  "extract_max_date": "2026-11-12",
  "card_source": "toprate",
- "extract": "2026-11-09T21:22:16+00:00",
- "finished": "2026-11-10T15:44:16",
+ "extract": "2026-11-10T16:06:49+00:00",
+ "finished": "2026-11-11T03:54:49",
  "going": {
-  "Mornington": "Good 4",
-  "Queanbeyan": "Good 4"
+  "Warwick Farm": "Good 4",
+  "Eagle Farm": "Soft 5",
+  "Ballarat": "Soft 5",
+  "Scone": "Good 4",
+  "Balaklava": "Good 3",
+  "Launceston": "Soft 5"
  },
- "scratchings": 39,
- "dashboard": "toprate_week_v2_2026-11-10.html",
- "fingerprint": "1fbbb3f7fbe2"
+ "scratchings": 61,
+ "dashboard": "toprate_week_v2_2026-11-11.html",
+ "fingerprint": "c2d3421858c8"
 }
