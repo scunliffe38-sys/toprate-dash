@@ -2902,7 +2902,7 @@ const pkNm=s=>String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
 const pkKey=(m,r,x)=>`${m.track}|${r.no}|${pkNm(x.name)}`;
 const PKSVG='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>';
 let PICKS=(()=>{ try{ return JSON.parse(localStorage.getItem(PKL)||'{}')||{}; }catch(e){ return {}; } })();
-const PKS={timer:{}, pulled:0};
+const PKS={timer:{}, pulled:0, have:null};
 const pkTok=()=>{ try{ return localStorage.getItem(PKTOK); }catch(e){ return null; } };
 // only an authorised browser picks (Simon, 6 Nov 2026: "only my authorised browser should be able to select runners"): one holding a
 // GitHub token that GitHub confirms can push to the dash repo (GET /repos: permissions.push). Anywhere else: no star, no marked row,
@@ -2961,7 +2961,18 @@ function pkMerge(date,rem){                       // the later of the two, key b
   return ch;
 }
 const pkSame=(a,b)=>{ const ka=Object.keys(a||{}), kb=Object.keys(b||{}); return ka.length===kb.length&&ka.every(k=>b[k]&&b[k].t===a[k].t&&!!b[k].on===!!a[k].on); };
-async function pkGet(date){                        // -> {sha, picks}; an empty set when the file is not there yet
+// which days have a picks file: ONE listing of picks/ instead of a GET per day (the dash looks three days ahead, and every
+// day without a file was a red 404 in the console, 10 Nov 2026). null = not known (listing failed): fall back to asking per day.
+async function pkList(){
+  try{ const g=await pkApi('picks');
+    if(g.status===404) return new Set();            // no picks/ folder yet: no day has a file
+    if(!g.ok) return null;
+    const j=await g.json(); if(!Array.isArray(j)) return null;
+    return new Set(j.map(f=>String(f.name||'').replace(/\.json$/,'')));
+  }catch(e){ return null; }
+}
+async function pkGet(date,skip){                   // -> {sha, picks}; an empty set when the file is not there yet
+  if(skip&&PKS.have&&!PKS.have.has(date)) return {sha:null,picks:{}};   // the listing says there is no file: no request
   const g=await pkApi(`picks/${date}.json`);
   if(g.status===404) return {sha:null,picks:{}};
   if(g.status===401||g.status===403) throw new Error('token refused ('+g.status+')');
@@ -2972,11 +2983,11 @@ async function pkPush(date){
   if(!PKOK) return;
   try{
     for(let i=0;i<4;i++){
-      const g=await pkGet(date); if(pkMerge(date,g.picks)){ pkSave(); draw(); }
+      const g=await pkGet(date,i===0); if(pkMerge(date,g.picks)){ pkSave(); draw(); }
       if(pkSame(PICKS[date],g.picks)) return;
       const body={date,saved:new Date().toISOString(),picks:PICKS[date]};
       const r=await pkApi(`picks/${date}.json`,{method:'PUT',body:JSON.stringify({message:`picks ${date}`,content:pkB64(JSON.stringify(body,null,1)),...(g.sha?{sha:g.sha}:{})})});
-      if(r.ok) return;
+      if(r.ok){ if(PKS.have) PKS.have.add(date); return; }
       if(r.status===401||r.status===403) throw new Error('token refused ('+r.status+')');
       if(r.status!==409&&r.status!==422) throw new Error('GitHub '+r.status);
       await new Promise(q=>setTimeout(q,1500+1000*i));   // another commit landed in between (the box publishes here too): read the sha again
@@ -2988,8 +2999,9 @@ function pkQueue(date){ clearTimeout(PKS.timer[date]); PKS.timer[date]=setTimeou
 async function pkPull(){
   PKS.pulled=Date.now(); let ch=false, err='';
   if(!(await pkAuth())) return;                    // not an authorised browser: nothing read, nothing shown
+  PKS.have=await pkList();
   for(const d of DATA.days){
-    try{ const g=await pkGet(d.date); if(pkMerge(d.date,g.picks)) ch=true;
+    try{ const g=await pkGet(d.date,true); if(pkMerge(d.date,g.picks)) ch=true;
       if(!pkSame(PICKS[d.date]||{},g.picks)&&Object.keys(PICKS[d.date]||{}).length) pkQueue(d.date);   // this device has picks the repo lacks
     }catch(e){ err=String(e.message||e); }
   }
@@ -3479,4 +3491,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Tue 10 Nov 15:44</b> AEST &middot; Queanbeyan scratched R7 #9</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 11 Nov 00:10</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
