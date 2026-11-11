@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:37:32.999Z",
+ "saved": "2026-11-11T05:37:46.129Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -144,6 +144,15 @@
    "sp": 3.4,
    "fair": 11.46,
    "rating": 74.63
+  },
+  "Eagle Farm|5|MAZIS": {
+   "on": 1,
+   "t": 1794375462774,
+   "name": "Mazis",
+   "tab": 2,
+   "sp": 5,
+   "fair": 3.27,
+   "rating": 85.83
   }
  }
 }
