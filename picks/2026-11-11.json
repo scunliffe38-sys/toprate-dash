@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:37:53.497Z",
+ "saved": "2026-11-11T05:38:12.197Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -164,13 +164,8 @@
    "rating": 83.21
   },
   "Eagle Farm|5|MAKEACALL": {
-   "on": 1,
-   "t": 1794375470180,
-   "name": "Make A Call",
-   "tab": 1,
-   "sp": 8.5,
-   "fair": 7.47,
-   "rating": 83.33
+   "on": 0,
+   "t": 1794375488970
   }
  }
 }
