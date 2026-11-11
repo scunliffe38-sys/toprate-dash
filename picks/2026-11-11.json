@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:38:12.197Z",
+ "saved": "2026-11-11T05:38:16.568Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -166,6 +166,15 @@
   "Eagle Farm|5|MAKEACALL": {
    "on": 0,
    "t": 1794375488970
+  },
+  "Eagle Farm|5|LAROSETTA": {
+   "on": 1,
+   "t": 1794375493304,
+   "name": "La Rosetta",
+   "tab": 8,
+   "sp": 5.5,
+   "fair": 11.52,
+   "rating": 82.07
   }
  }
 }
