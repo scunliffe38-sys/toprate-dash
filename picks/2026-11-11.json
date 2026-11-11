@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:37:11.112Z",
+ "saved": "2026-11-11T06:38:10.147Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -391,6 +391,42 @@
    "sp": 2.9,
    "fair": 4.61,
    "rating": 85.74
+  },
+  "Belmont Park|4|VINNYNAY": {
+   "on": 1,
+   "t": 1794379083642,
+   "name": "Vinny Nay",
+   "tab": 4,
+   "sp": 2.8,
+   "fair": 3.47,
+   "rating": 79.38
+  },
+  "Belmont Park|4|NONREFLECTIVE": {
+   "on": 1,
+   "t": 1794379085230,
+   "name": "Non Reflective",
+   "tab": 5,
+   "sp": 5,
+   "fair": 5.13,
+   "rating": 78.25
+  },
+  "Belmont Park|4|SUPERGOD": {
+   "on": 1,
+   "t": 1794379086654,
+   "name": "Super God",
+   "tab": 7,
+   "sp": 5,
+   "fair": 5.39,
+   "rating": 78.12
+  },
+  "Belmont Park|5|UNIMANDO": {
+   "on": 1,
+   "t": 1794379090116,
+   "name": "Unimando",
+   "tab": 2,
+   "sp": 2.5,
+   "fair": 3.19,
+   "rating": 84.91
   }
  }
 }
