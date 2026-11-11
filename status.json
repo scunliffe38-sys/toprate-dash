@@ -1,29 +1,29 @@
 {
- "started": "2026-11-11T19:23:24",
+ "started": "2026-11-11T22:02:23",
  "dates": [
   "2026-11-11",
   "2026-11-12",
   "2026-11-13"
  ],
- "reason": "Belmont Park scratched R5 #8",
+ "reason": "Launceston scratched R8 #6",
  "status": "ok",
  "acceptors": 556,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-13",
  "card_source": "toprate",
  "extract": "2026-11-10T21:22:49+00:00",
- "finished": "2026-11-11T19:38:23",
+ "finished": "2026-11-11T22:19:30",
  "going": {
-  "Ballarat": "Good 3",
-  "Belmont Park": "Good 3",
-  "Launceston": "Good 4",
   "Happy Valley": "Good",
+  "Ballarat": "Good 3",
   "Warwick Farm": "Good 4",
   "Eagle Farm": "Good 4",
   "Scone": "Good 4",
-  "Balaklava": "Good 3"
+  "Balaklava": "Good 3",
+  "Belmont Park": "Good 3",
+  "Launceston": "Good 4"
  },
- "scratchings": 109,
+ "scratchings": 110,
  "dashboard": "toprate_week_v2_2026-11-11.html",
- "fingerprint": "0e508328049d"
+ "fingerprint": "7575146509a4"
 }
