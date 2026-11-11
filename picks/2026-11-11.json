@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T09:00:54.572Z",
+ "saved": "2026-11-11T09:01:00.431Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -589,6 +589,15 @@
    "sp": 3.9,
    "fair": 6.15,
    "rating": 91.51
+  },
+  "Launceston|7|SUMMIT": {
+   "on": 1,
+   "t": 1794387657198,
+   "name": "Summit",
+   "tab": 2,
+   "sp": 1.95,
+   "fair": 3.36,
+   "rating": 78.9
   }
  }
 }
