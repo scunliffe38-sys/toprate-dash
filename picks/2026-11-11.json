@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:19:02.191Z",
+ "saved": "2026-11-11T10:19:13.666Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -737,6 +737,24 @@
    "sp": 3.85,
    "fair": 17.43,
    "rating": 51.9
+  },
+  "Happy Valley|5|AKERMANISGOLD": {
+   "on": 1,
+   "t": 1794392349132,
+   "name": "Akermanis Gold",
+   "tab": 1,
+   "sp": 7.45,
+   "fair": 6.13,
+   "rating": 53.4
+  },
+  "Happy Valley|5|GOLDENACE": {
+   "on": 1,
+   "t": 1794392350435,
+   "name": "Golden Ace",
+   "tab": 4,
+   "sp": 5.9,
+   "fair": 7.12,
+   "rating": 52.8
   }
  }
 }
