@@ -1,29 +1,26 @@
 {
- "started": "2026-11-11T22:02:23",
+ "started": "2026-11-12T03:10:09",
  "dates": [
-  "2026-11-11",
   "2026-11-12",
   "2026-11-13"
  ],
- "reason": "Launceston scratched R8 #6",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 556,
- "rider_share": 1.0,
+ "acceptors": 432,
+ "rider_share": 0.92,
  "extract_max_date": "2026-11-13",
  "card_source": "toprate",
- "extract": "2026-11-10T21:22:49+00:00",
- "finished": "2026-11-11T22:19:30",
+ "extract": "2026-11-11T16:08:33+00:00",
+ "finished": "2026-11-12T04:00:45",
  "going": {
-  "Happy Valley": "Good",
-  "Ballarat": "Good 3",
-  "Warwick Farm": "Good 4",
-  "Eagle Farm": "Good 4",
-  "Scone": "Good 4",
-  "Balaklava": "Good 3",
-  "Belmont Park": "Good 3",
-  "Launceston": "Good 4"
+  "Seymour": "Good 4",
+  "Port Macquarie": "Good 4",
+  "Cairns": "Good 3",
+  "Bunbury": "Good 4",
+  "Quirindi": "Good 4",
+  "Eagle Farm (Qld)": "Soft 5"
  },
- "scratchings": 110,
- "dashboard": "toprate_week_v2_2026-11-11.html",
- "fingerprint": "7575146509a4"
+ "scratchings": 31,
+ "dashboard": "toprate_week_v2_2026-11-12.html",
+ "fingerprint": "050fdeb0705d"
 }
