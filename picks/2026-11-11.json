@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:18:41.191Z",
+ "saved": "2026-11-11T10:18:51.327Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -719,6 +719,15 @@
    "sp": 10.95,
    "fair": 9.44,
    "rating": 54.2
+  },
+  "Happy Valley|4|KINGMANREEF": {
+   "on": 1,
+   "t": 1794392328200,
+   "name": "Kingman Reef",
+   "tab": 8,
+   "sp": 7.75,
+   "fair": 11.49,
+   "rating": 53.4
   }
  }
 }
