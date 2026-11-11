@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:03:24.371Z",
+ "saved": "2026-11-11T13:03:39.473Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -894,6 +894,15 @@
    "sp": 30.35,
    "fair": 25.01,
    "rating": 66.8
+  },
+  "Happy Valley|9|MIGHTYMASTS": {
+   "on": 1,
+   "t": 1794402216558,
+   "name": "Mighty Masts",
+   "tab": 8,
+   "sp": 9.5,
+   "fair": 9.45,
+   "rating": 86.9
   }
  }
 }
