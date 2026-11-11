@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:36:20.191Z",
+ "saved": "2026-11-11T05:36:26.124Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -90,6 +90,24 @@
    "sp": 6,
    "fair": 9.59,
    "rating": 85.37
+  },
+  "Eagle Farm|4|CASTAWAY": {
+   "on": 1,
+   "t": 1794375381109,
+   "name": "Castaway",
+   "tab": 2,
+   "sp": 3.8,
+   "fair": 3.55,
+   "rating": 81.36
+  },
+  "Eagle Farm|4|TALKABOUTLAYLA": {
+   "on": 1,
+   "t": 1794375382756,
+   "name": "Talk About Layla",
+   "tab": 8,
+   "sp": 3.8,
+   "fair": 5.73,
+   "rating": 79.79
   }
  }
 }
