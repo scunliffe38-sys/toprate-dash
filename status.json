@@ -1,29 +1,29 @@
 {
- "started": "2026-11-11T16:25:02",
+ "started": "2026-11-11T17:27:24",
  "dates": [
   "2026-11-11",
   "2026-11-12",
   "2026-11-13"
  ],
- "reason": "Launceston Soft 5 -> Good 4",
+ "reason": "Balaklava Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 556,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-13",
  "card_source": "toprate",
  "extract": "2026-11-10T21:22:49+00:00",
- "finished": "2026-11-11T16:40:16",
+ "finished": "2026-11-11T17:44:54",
  "going": {
   "Ballarat": "Good 4",
   "Warwick Farm": "Good 4",
   "Eagle Farm": "Good 4",
-  "Scone": "Good 4",
-  "Balaklava": "Good 4",
+  "Balaklava": "Good 3",
   "Belmont Park": "Good 4",
   "Launceston": "Good 4",
-  "Happy Valley": "Good"
+  "Happy Valley": "Good",
+  "Scone": "Good 4"
  },
- "scratchings": 107,
+ "scratchings": 108,
  "dashboard": "toprate_week_v2_2026-11-11.html",
- "fingerprint": "05539b9caf10"
+ "fingerprint": "f7fdb1220b73"
 }
