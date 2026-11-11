@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:37:00.868Z",
+ "saved": "2026-11-11T06:37:11.112Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -373,6 +373,24 @@
    "sp": 3,
    "fair": 2.4,
    "rating": 84.96
+  },
+  "Launceston|4|NOVALARGO": {
+   "on": 1,
+   "t": 1794379026687,
+   "name": "Novalargo",
+   "tab": 6,
+   "sp": 2.9,
+   "fair": 2.55,
+   "rating": 87.91
+  },
+  "Launceston|4|GEEGEESMISSILE": {
+   "on": 1,
+   "t": 1794379028374,
+   "name": "Geegees Missile",
+   "tab": 2,
+   "sp": 2.9,
+   "fair": 4.61,
+   "rating": 85.74
   }
  }
 }
