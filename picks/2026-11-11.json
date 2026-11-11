@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:03:11.348Z",
+ "saved": "2026-11-11T13:03:24.371Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -885,6 +885,15 @@
   "Happy Valley|8|SHOOTINGTOTOP": {
    "on": 0,
    "t": 1794402188468
+  },
+  "Happy Valley|8|MISTERDAPPER": {
+   "on": 1,
+   "t": 1794402201515,
+   "name": "Mister Dapper",
+   "tab": 4,
+   "sp": 30.35,
+   "fair": 25.01,
+   "rating": 66.8
   }
  }
 }
