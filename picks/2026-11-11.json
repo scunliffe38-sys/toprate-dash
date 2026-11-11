@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:04:05.263Z",
+ "saved": "2026-11-11T13:04:39.156Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -930,6 +930,15 @@
    "sp": 9.8,
    "fair": 15.2,
    "rating": 85.1
+  },
+  "Happy Valley|9|HELENEFEELING": {
+   "on": 1,
+   "t": 1794402276134,
+   "name": "Helene Feeling",
+   "tab": 1,
+   "sp": 9.3,
+   "fair": 16.2,
+   "rating": 84.9
   }
  }
 }
