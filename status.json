@@ -1,20 +1,20 @@
 {
- "started": "2026-11-11T15:14:22",
+ "started": "2026-11-11T15:53:22",
  "dates": [
   "2026-11-11",
   "2026-11-12",
   "2026-11-13"
  ],
- "reason": "Eagle Farm scratched R1 #3",
+ "reason": "Ballarat Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 556,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-13",
  "card_source": "toprate",
  "extract": "2026-11-10T21:22:49+00:00",
- "finished": "2026-11-11T15:29:20",
+ "finished": "2026-11-11T16:08:16",
  "going": {
-  "Ballarat": "Soft 5",
+  "Ballarat": "Good 4",
   "Warwick Farm": "Good 4",
   "Eagle Farm": "Good 4",
   "Scone": "Good 4",
@@ -23,7 +23,7 @@
   "Launceston": "Soft 5",
   "Happy Valley": "Good"
  },
- "scratchings": 105,
+ "scratchings": 107,
  "dashboard": "toprate_week_v2_2026-11-11.html",
- "fingerprint": "edf4f4b5cd65"
+ "fingerprint": "9ae0db3779a4"
 }
