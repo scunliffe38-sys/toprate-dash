@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:05:16.082Z",
+ "saved": "2026-11-11T06:05:24.632Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -202,6 +202,33 @@
    "sp": 3.9,
    "fair": 7.55,
    "rating": 75.49
+  },
+  "Ballarat|6|LUNAMAN": {
+   "on": 1,
+   "t": 1794377119242,
+   "name": "Lunaman",
+   "tab": 7,
+   "sp": 5.5,
+   "fair": 5.41,
+   "rating": 84.53
+  },
+  "Ballarat|6|GRIFTER": {
+   "on": 1,
+   "t": 1794377120310,
+   "name": "Grifter",
+   "tab": 10,
+   "sp": 4.2,
+   "fair": 5.72,
+   "rating": 84.29
+  },
+  "Ballarat|6|TREBILCO": {
+   "on": 1,
+   "t": 1794377121754,
+   "name": "Trebilco",
+   "tab": 5,
+   "sp": 7,
+   "fair": 7.19,
+   "rating": 83.56
   }
  }
 }
