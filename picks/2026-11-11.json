@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:01:32.626Z",
+ "saved": "2026-11-11T13:01:47.519Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -764,6 +764,15 @@
    "sp": 2.95,
    "fair": 6.26,
    "rating": 54.4
+  },
+  "Happy Valley|6|MRINVINCIBLE": {
+   "on": 1,
+   "t": 1794402104166,
+   "name": "Mr Invincible",
+   "tab": 6,
+   "sp": 14.2,
+   "fair": 9.08,
+   "rating": 53
   }
  }
 }
