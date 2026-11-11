@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T09:00:46.285Z",
+ "saved": "2026-11-11T09:00:50.149Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -562,6 +562,15 @@
    "sp": 5,
    "fair": 6.09,
    "rating": 78.26
+  },
+  "Launceston|6|MASTRETTA": {
+   "on": 1,
+   "t": 1794387646924,
+   "name": "Mastretta",
+   "tab": 8,
+   "sp": 3.7,
+   "fair": 3.41,
+   "rating": 93.39
   }
  }
 }
