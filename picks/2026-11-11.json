@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:16:15.274Z",
+ "saved": "2026-11-11T10:16:21.007Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -652,6 +652,24 @@
    "sp": 12.15,
    "fair": 7.76,
    "rating": 53.3
+  },
+  "Happy Valley|3|ARGENTOOCEAN": {
+   "on": 1,
+   "t": 1794392177066,
+   "name": "Argento Ocean",
+   "tab": 1,
+   "sp": 6.55,
+   "fair": 9.93,
+   "rating": 52.4
+  },
+  "Happy Valley|3|CALIFORNIABAY": {
+   "on": 1,
+   "t": 1794392177785,
+   "name": "California Bay",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 9.55,
+   "rating": 52.6
   }
  }
 }
