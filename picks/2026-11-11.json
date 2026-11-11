@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:36:13.368Z",
+ "saved": "2026-11-11T05:36:20.191Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -63,6 +63,33 @@
    "sp": 3.3,
    "fair": 7,
    "rating": 86.38
+  },
+  "Eagle Farm|7|BREAKOUT": {
+   "on": 1,
+   "t": 1794375373749,
+   "name": "Breakout",
+   "tab": 9,
+   "sp": 3.4,
+   "fair": 7.35,
+   "rating": 86.22
+  },
+  "Eagle Farm|7|PEARLSINJUNE": {
+   "on": 1,
+   "t": 1794375375459,
+   "name": "Pearls In June",
+   "tab": 7,
+   "sp": 10,
+   "fair": 9.29,
+   "rating": 85.47
+  },
+  "Eagle Farm|7|MONOTONE": {
+   "on": 1,
+   "t": 1794375376845,
+   "name": "Monotone",
+   "tab": 4,
+   "sp": 6,
+   "fair": 9.59,
+   "rating": 85.37
   }
  }
 }
