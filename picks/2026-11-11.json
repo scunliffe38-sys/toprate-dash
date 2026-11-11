@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:05:43.537Z",
+ "saved": "2026-11-11T06:05:48.632Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -265,6 +265,15 @@
    "sp": 3,
    "fair": 3.94,
    "rating": 85.44
+  },
+  "Ballarat|8|LUCKYSINGLE": {
+   "on": 1,
+   "t": 1794377145727,
+   "name": "Lucky Single",
+   "tab": 8,
+   "sp": 3.5,
+   "fair": 6.63,
+   "rating": 83.83
   }
  }
 }
