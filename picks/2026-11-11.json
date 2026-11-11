@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:38:50.784Z",
+ "saved": "2026-11-11T09:00:46.285Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -535,6 +535,33 @@
    "sp": 7.5,
    "fair": 13.34,
    "rating": 77.07
+  },
+  "Launceston|5|WOLFJUNIOR": {
+   "on": 1,
+   "t": 1794387638656,
+   "name": "Wolf Junior",
+   "tab": 4,
+   "sp": 2.4,
+   "fair": 3.62,
+   "rating": 80.01
+  },
+  "Launceston|5|SEVILLANA": {
+   "on": 1,
+   "t": 1794387640866,
+   "name": "Sevillana",
+   "tab": 3,
+   "sp": 6,
+   "fair": 5.11,
+   "rating": 78.84
+  },
+  "Launceston|5|KAKIA": {
+   "on": 1,
+   "t": 1794387643157,
+   "name": "Kakia",
+   "tab": 1,
+   "sp": 5,
+   "fair": 6.09,
+   "rating": 78.26
   }
  }
 }
