@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:03:53.544Z",
+ "saved": "2026-11-11T13:04:05.263Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -921,6 +921,15 @@
    "sp": 24.05,
    "fair": 31.99,
    "rating": 82.4
+  },
+  "Happy Valley|9|PACKINGANGEL": {
+   "on": 1,
+   "t": 1794402242413,
+   "name": "Packing Angel",
+   "tab": 3,
+   "sp": 9.8,
+   "fair": 15.2,
+   "rating": 85.1
   }
  }
 }
