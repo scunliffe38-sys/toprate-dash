@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:36:30.282Z",
+ "saved": "2026-11-11T05:36:34.134Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -117,6 +117,15 @@
    "sp": 7.5,
    "fair": 7.53,
    "rating": 78.91
+  },
+  "Eagle Farm|3|INVINCIBLECHASE": {
+   "on": 1,
+   "t": 1794375390875,
+   "name": "Invincible Chase",
+   "tab": 6,
+   "sp": 1.6,
+   "fair": 2.31,
+   "rating": 79.77
   }
  }
 }
