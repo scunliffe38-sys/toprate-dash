@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T09:00:50.149Z",
+ "saved": "2026-11-11T09:00:54.572Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -571,6 +571,24 @@
    "sp": 3.7,
    "fair": 3.41,
    "rating": 93.39
+  },
+  "Launceston|6|GARCONDESPOIR": {
+   "on": 1,
+   "t": 1794387651224,
+   "name": "Garcon D'espoir",
+   "tab": 9,
+   "sp": 2.9,
+   "fair": 4.83,
+   "rating": 92.26
+  },
+  "Launceston|6|EARENDEL": {
+   "on": 1,
+   "t": 1794387654300,
+   "name": "Earendel",
+   "tab": 7,
+   "sp": 3.9,
+   "fair": 6.15,
+   "rating": 91.51
   }
  }
 }
