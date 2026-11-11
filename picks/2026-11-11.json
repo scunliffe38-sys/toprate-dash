@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:05:24.632Z",
+ "saved": "2026-11-11T06:05:36.494Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -229,6 +229,33 @@
    "sp": 7,
    "fair": 7.19,
    "rating": 83.56
+  },
+  "Ballarat|7|MISTERMARTINI": {
+   "on": 1,
+   "t": 1794377131869,
+   "name": "Mister Martini",
+   "tab": 8,
+   "sp": 4.2,
+   "fair": 5.83,
+   "rating": 82.37
+  },
+  "Ballarat|7|THEFLYINGPOPOV": {
+   "on": 1,
+   "t": 1794377132613,
+   "name": "The Flying Popov",
+   "tab": 5,
+   "sp": 2.6,
+   "fair": 4.6,
+   "rating": 83.09
+  },
+  "Ballarat|7|AUBAINE": {
+   "on": 1,
+   "t": 1794377133498,
+   "name": "Aubaine",
+   "tab": 7,
+   "sp": 5,
+   "fair": 4.27,
+   "rating": 83.33
   }
  }
 }
