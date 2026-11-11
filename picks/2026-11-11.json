@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:02:36.556Z",
+ "saved": "2026-11-11T13:02:55.435Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -854,6 +854,24 @@
    "sp": 12.3,
    "fair": 16.47,
    "rating": 67.4
+  },
+  "Happy Valley|8|CHINAWIN": {
+   "on": 1,
+   "t": 1794402170727,
+   "name": "China Win",
+   "tab": 3,
+   "sp": 5.95,
+   "fair": 4.36,
+   "rating": 73.2
+  },
+  "Happy Valley|8|POPECODY": {
+   "on": 1,
+   "t": 1794402172598,
+   "name": "Pope Cody",
+   "tab": 1,
+   "sp": 8.1,
+   "fair": 10.59,
+   "rating": 69.9
   }
  }
 }
