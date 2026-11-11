@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:19:13.666Z",
+ "saved": "2026-11-11T13:01:32.626Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -755,6 +755,15 @@
    "sp": 5.9,
    "fair": 7.12,
    "rating": 52.8
+  },
+  "Happy Valley|6|CLOUDNINE": {
+   "on": 1,
+   "t": 1794402090099,
+   "name": "Cloud Nine",
+   "tab": 4,
+   "sp": 2.95,
+   "fair": 6.26,
+   "rating": 54.4
   }
  }
 }
