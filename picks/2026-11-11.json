@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:38:25.024Z",
+ "saved": "2026-11-11T06:38:30.573Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -463,6 +463,24 @@
    "sp": 13,
    "fair": 8.12,
    "rating": 81.86
+  },
+  "Belmont Park|6|DELAGOSROCK": {
+   "on": 1,
+   "t": 1794379108067,
+   "name": "De Lago's Rock",
+   "tab": 5,
+   "sp": 2.15,
+   "fair": 2.79,
+   "rating": 80.24
+  },
+  "Belmont Park|6|JOYOH": {
+   "on": 1,
+   "t": 1794379109531,
+   "name": "Joyoh",
+   "tab": 4,
+   "sp": 3.1,
+   "fair": 4.53,
+   "rating": 78.64
   }
  }
 }
