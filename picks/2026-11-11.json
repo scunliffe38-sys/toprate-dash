@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:05:48.632Z",
+ "saved": "2026-11-11T06:05:59.024Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -274,6 +274,15 @@
    "sp": 3.5,
    "fair": 6.63,
    "rating": 83.83
+  },
+  "Ballarat|8|STRONGBOX": {
+   "on": 1,
+   "t": 1794377156157,
+   "name": "Strong Box",
+   "tab": 6,
+   "sp": 11,
+   "fair": 11.57,
+   "rating": 82.13
   }
  }
 }
