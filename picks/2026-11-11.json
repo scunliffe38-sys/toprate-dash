@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:16:00.421Z",
+ "saved": "2026-11-11T10:16:15.274Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -634,6 +634,24 @@
    "sp": 3.6,
    "fair": 5.01,
    "rating": 54.9
+  },
+  "Happy Valley|3|IRONSECURITY": {
+   "on": 1,
+   "t": 1794392170685,
+   "name": "Iron Security",
+   "tab": 8,
+   "sp": 11.05,
+   "fair": 7.55,
+   "rating": 53.5
+  },
+  "Happy Valley|3|BEAUTYSHOW": {
+   "on": 1,
+   "t": 1794392172040,
+   "name": "Beauty Show",
+   "tab": 4,
+   "sp": 12.15,
+   "fair": 7.76,
+   "rating": 53.3
   }
  }
 }
