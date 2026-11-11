@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:02:16.248Z",
+ "saved": "2026-11-11T13:02:23.755Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -827,6 +827,24 @@
    "sp": 6.75,
    "fair": 4.05,
    "rating": 72.5
+  },
+  "Happy Valley|7|LEADINGAGILITY": {
+   "on": 1,
+   "t": 1794402140067,
+   "name": "Leading Agility",
+   "tab": 5,
+   "sp": 3.9,
+   "fair": 4.69,
+   "rating": 71.9
+  },
+  "Happy Valley|7|SWIFTASCEND": {
+   "on": 1,
+   "t": 1794402140887,
+   "name": "Swift Ascend",
+   "tab": 1,
+   "sp": 6.4,
+   "fair": 9.95,
+   "rating": 69.2
   }
  }
 }
