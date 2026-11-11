@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:36:45.882Z",
+ "saved": "2026-11-11T06:37:00.868Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -310,6 +310,69 @@
    "sp": 5,
    "fair": 7.17,
    "rating": 68.53
+  },
+  "Launceston|2|OXIDIZE": {
+   "on": 1,
+   "t": 1794379006594,
+   "name": "Oxidize",
+   "tab": 7,
+   "sp": 4,
+   "fair": 5.3,
+   "rating": 78.35
+  },
+  "Launceston|2|PARISWINDS": {
+   "on": 1,
+   "t": 1794379007852,
+   "name": "Paris Winds",
+   "tab": 4,
+   "sp": 2.7,
+   "fair": 6.12,
+   "rating": 77.88
+  },
+  "Launceston|2|WALTZINGMATILDA": {
+   "on": 1,
+   "t": 1794379009555,
+   "name": "Waltzing Matilda",
+   "tab": 6,
+   "sp": 6,
+   "fair": 6.85,
+   "rating": 77.5
+  },
+  "Launceston|2|WARRIORSMILE": {
+   "on": 1,
+   "t": 1794379011109,
+   "name": "Warrior Smile",
+   "tab": 2,
+   "sp": 5.5,
+   "fair": 7.41,
+   "rating": 77.24
+  },
+  "Launceston|2|GILLYSBOY": {
+   "on": 1,
+   "t": 1794379013067,
+   "name": "Gilly's Boy",
+   "tab": 1,
+   "sp": 9,
+   "fair": 8.38,
+   "rating": 76.88
+  },
+  "Launceston|2|VABUIAGI": {
+   "on": 1,
+   "t": 1794379015270,
+   "name": "Vabuiagi",
+   "tab": 5,
+   "sp": 10,
+   "fair": 9.2,
+   "rating": 76.54
+  },
+  "Launceston|3|MCVEIGH": {
+   "on": 1,
+   "t": 1794379017721,
+   "name": "Mcveigh",
+   "tab": 2,
+   "sp": 3,
+   "fair": 2.4,
+   "rating": 84.96
   }
  }
 }
