@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:02:23.755Z",
+ "saved": "2026-11-11T13:02:36.556Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -845,6 +845,15 @@
    "sp": 6.4,
    "fair": 9.95,
    "rating": 69.2
+  },
+  "Happy Valley|7|AURORAPATCH": {
+   "on": 1,
+   "t": 1794402153708,
+   "name": "Aurora Patch",
+   "tab": 2,
+   "sp": 12.3,
+   "fair": 16.47,
+   "rating": 67.4
   }
  }
 }
