@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:36:41.498Z",
+ "saved": "2026-11-11T06:36:45.882Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -292,6 +292,24 @@
    "sp": 2.6,
    "fair": 4.11,
    "rating": 70.23
+  },
+  "Launceston|1|MRTOD": {
+   "on": 1,
+   "t": 1794379001955,
+   "name": "Mr Tod",
+   "tab": 4,
+   "sp": 5,
+   "fair": 5.16,
+   "rating": 69.53
+  },
+  "Launceston|1|NINECHOIRS": {
+   "on": 1,
+   "t": 1794379002780,
+   "name": "Nine Choirs",
+   "tab": 10,
+   "sp": 5,
+   "fair": 7.17,
+   "rating": 68.53
   }
  }
 }
