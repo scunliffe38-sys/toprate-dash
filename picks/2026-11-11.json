@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:36:03.914Z",
+ "saved": "2026-11-11T05:36:13.368Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -36,6 +36,33 @@
   "Eagle Farm|6|CONCESSION": {
    "on": 0,
    "t": 1794375353062
+  },
+  "Eagle Farm|7|DONTDOUBTMISSY": {
+   "on": 1,
+   "t": 1794375368521,
+   "name": "Don't Doubt Missy",
+   "tab": 11,
+   "sp": 8,
+   "fair": 5.31,
+   "rating": 87.23
+  },
+  "Eagle Farm|7|KEEPITREAL": {
+   "on": 1,
+   "t": 1794375370031,
+   "name": "Keep It Real",
+   "tab": 2,
+   "sp": 8,
+   "fair": 6.52,
+   "rating": 86.58
+  },
+  "Eagle Farm|7|STORMINGHOME": {
+   "on": 1,
+   "t": 1794375372691,
+   "name": "Storming Home",
+   "tab": 13,
+   "sp": 3.3,
+   "fair": 7,
+   "rating": 86.38
   }
  }
 }
