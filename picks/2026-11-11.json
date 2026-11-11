@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:18:34.810Z",
+ "saved": "2026-11-11T10:18:41.191Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -708,13 +708,8 @@
    "rating": 57.6
   },
   "Happy Valley|4|CHEERFULWONGCHOY": {
-   "on": 1,
-   "t": 1794392302403,
-   "name": "Cheerful Wongchoy",
-   "tab": 11,
-   "sp": 7.95,
-   "fair": 4.7,
-   "rating": 56.7
+   "on": 0,
+   "t": 1794392317970
   },
   "Happy Valley|4|ACE": {
    "on": 1,
