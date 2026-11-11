@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:38:30.573Z",
+ "saved": "2026-11-11T06:38:50.784Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -481,6 +481,60 @@
    "sp": 3.1,
    "fair": 4.53,
    "rating": 78.64
+  },
+  "Belmont Park|7|QUEENARIA": {
+   "on": 1,
+   "t": 1794379121138,
+   "name": "Queen Aria",
+   "tab": 2,
+   "sp": 11,
+   "fair": 6.94,
+   "rating": 78.98
+  },
+  "Belmont Park|7|BARRONBILL": {
+   "on": 1,
+   "t": 1794379122059,
+   "name": "Barron Bill",
+   "tab": 3,
+   "sp": 3.9,
+   "fair": 6.52,
+   "rating": 79.21
+  },
+  "Belmont Park|7|ZOUCONI": {
+   "on": 1,
+   "t": 1794379124114,
+   "name": "Zouconi",
+   "tab": 7,
+   "sp": 26,
+   "fair": 9.7,
+   "rating": 78.02
+  },
+  "Belmont Park|7|SUPERSENTAI": {
+   "on": 1,
+   "t": 1794379125074,
+   "name": "Super Sentai",
+   "tab": 4,
+   "sp": 9,
+   "fair": 10.67,
+   "rating": 77.74
+  },
+  "Belmont Park|7|RUNPATTIERUN": {
+   "on": 1,
+   "t": 1794379126107,
+   "name": "Run Pattie Run",
+   "tab": 6,
+   "sp": 4.8,
+   "fair": 10.85,
+   "rating": 77.67
+  },
+  "Belmont Park|7|RISINGFAME": {
+   "on": 1,
+   "t": 1794379127689,
+   "name": "Rising Fame",
+   "tab": 11,
+   "sp": 7.5,
+   "fair": 13.34,
+   "rating": 77.07
   }
  }
 }
