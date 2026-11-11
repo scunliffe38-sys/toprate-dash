@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:35:56.452Z",
+ "saved": "2026-11-11T05:36:03.914Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -25,8 +25,13 @@
    "t": 1794375338004
   },
   "Eagle Farm|6|DIAMANTINAROSE": {
-   "on": 0,
-   "t": 1794375350854
+   "on": 1,
+   "t": 1794375360722,
+   "name": "Diamantina Rose",
+   "tab": 4,
+   "sp": 15,
+   "fair": 10.08,
+   "rating": 83.31
   },
   "Eagle Farm|6|CONCESSION": {
    "on": 0,
