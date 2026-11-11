@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:03:43.314Z",
+ "saved": "2026-11-11T13:03:53.544Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -912,6 +912,15 @@
    "sp": 16.95,
    "fair": 9.62,
    "rating": 86.8
+  },
+  "Happy Valley|9|SIXPACK": {
+   "on": 1,
+   "t": 1794402230511,
+   "name": "Six Pack",
+   "tab": 2,
+   "sp": 24.05,
+   "fair": 31.99,
+   "rating": 82.4
   }
  }
 }
