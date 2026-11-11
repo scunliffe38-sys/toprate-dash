@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:05:59.024Z",
+ "saved": "2026-11-11T06:36:41.498Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -283,6 +283,15 @@
    "sp": 11,
    "fair": 11.57,
    "rating": 82.13
+  },
+  "Launceston|1|KINGCANDY": {
+   "on": 1,
+   "t": 1794378998410,
+   "name": "King Candy",
+   "tab": 7,
+   "sp": 2.6,
+   "fair": 4.11,
+   "rating": 70.23
   }
  }
 }
