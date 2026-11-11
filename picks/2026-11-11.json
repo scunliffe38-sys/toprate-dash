@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:18:51.327Z",
+ "saved": "2026-11-11T10:19:02.191Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -728,6 +728,15 @@
    "sp": 7.75,
    "fair": 11.49,
    "rating": 53.4
+  },
+  "Happy Valley|4|GOLDENBRILLIANT": {
+   "on": 1,
+   "t": 1794392338913,
+   "name": "Golden Brilliant",
+   "tab": 3,
+   "sp": 3.85,
+   "fair": 17.43,
+   "rating": 51.9
   }
  }
 }
