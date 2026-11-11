@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:01:55.120Z",
+ "saved": "2026-11-11T13:02:01.527Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -782,6 +782,15 @@
    "sp": 8.65,
    "fair": 9.52,
    "rating": 52.8
+  },
+  "Happy Valley|6|FLOWRIDER": {
+   "on": 1,
+   "t": 1794402118492,
+   "name": "Flow Rider",
+   "tab": 5,
+   "sp": 8.55,
+   "fair": 20.06,
+   "rating": 50.1
   }
  }
 }
