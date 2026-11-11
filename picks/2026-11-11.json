@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T05:36:37.971Z",
+ "saved": "2026-11-11T05:37:32.999Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -135,6 +135,15 @@
    "sp": 7,
    "fair": 3.11,
    "rating": 78.73
+  },
+  "Eagle Farm|3|MAKEMEGREAT": {
+   "on": 1,
+   "t": 1794375449709,
+   "name": "Make Me Great",
+   "tab": 12,
+   "sp": 3.4,
+   "fair": 11.46,
+   "rating": 74.63
   }
  }
 }
