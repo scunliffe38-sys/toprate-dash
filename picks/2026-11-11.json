@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:04:39.156Z",
+ "saved": "2026-11-11T13:05:16.718Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -793,13 +793,8 @@
    "rating": 50.1
   },
   "Happy Valley|6|INVICTUS": {
-   "on": 1,
-   "t": 1794402124797,
-   "name": "Invictus",
-   "tab": 8,
-   "sp": 11.55,
-   "fair": 8.35,
-   "rating": 53.4
+   "on": 0,
+   "t": 1794402313782
   },
   "Happy Valley|6|COUNTRYPRIDE": {
    "on": 1,
