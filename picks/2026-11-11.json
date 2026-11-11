@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:38:20.555Z",
+ "saved": "2026-11-11T06:38:25.024Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -445,6 +445,24 @@
    "sp": 4.4,
    "fair": 7.16,
    "rating": 82.27
+  },
+  "Belmont Park|5|DIAMONDDANCER": {
+   "on": 1,
+   "t": 1794379101857,
+   "name": "Diamond Dancer",
+   "tab": 1,
+   "sp": 8,
+   "fair": 7.7,
+   "rating": 82.01
+  },
+  "Belmont Park|5|JOLSONAL": {
+   "on": 1,
+   "t": 1794379104443,
+   "name": "Jolson Al",
+   "tab": 7,
+   "sp": 13,
+   "fair": 8.12,
+   "rating": 81.86
   }
  }
 }
