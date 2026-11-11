@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T13:03:01.134Z",
+ "saved": "2026-11-11T13:03:11.348Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -881,6 +881,10 @@
    "sp": 3.5,
    "fair": 8.35,
    "rating": 70.8
+  },
+  "Happy Valley|8|SHOOTINGTOTOP": {
+   "on": 0,
+   "t": 1794402188468
   }
  }
 }
