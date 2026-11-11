@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:18:00.970Z",
+ "saved": "2026-11-11T10:18:25.623Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -697,6 +697,24 @@
    "sp": 7.55,
    "fair": 10.72,
    "rating": 35
+  },
+  "Happy Valley|4|AMAZINGGAZE": {
+   "on": 1,
+   "t": 1794392301368,
+   "name": "Amazing Gaze",
+   "tab": 6,
+   "sp": 4.75,
+   "fair": 3.72,
+   "rating": 57.6
+  },
+  "Happy Valley|4|CHEERFULWONGCHOY": {
+   "on": 1,
+   "t": 1794392302403,
+   "name": "Cheerful Wongchoy",
+   "tab": 11,
+   "sp": 7.95,
+   "fair": 4.7,
+   "rating": 56.7
   }
  }
 }
