@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:16:21.007Z",
+ "saved": "2026-11-11T10:16:24.697Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -670,6 +670,24 @@
    "sp": 6.5,
    "fair": 9.55,
    "rating": 52.6
+  },
+  "Happy Valley|2|BEAUTYGEMINI": {
+   "on": 1,
+   "t": 1794392181415,
+   "name": "Beauty Gemini",
+   "tab": 8,
+   "sp": 8.65,
+   "fair": 4.93,
+   "rating": 37.9
+  },
+  "Happy Valley|2|ALWAYSFLUKE": {
+   "on": 1,
+   "t": 1794392184026,
+   "name": "Always Fluke",
+   "tab": 10,
+   "sp": 10.85,
+   "fair": 5.63,
+   "rating": 37.4
   }
  }
 }
