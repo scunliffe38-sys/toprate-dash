@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T10:16:24.697Z",
+ "saved": "2026-11-11T10:18:00.970Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -688,6 +688,15 @@
    "sp": 10.85,
    "fair": 5.63,
    "rating": 37.4
+  },
+  "Happy Valley|2|LAKESHOREHERO": {
+   "on": 1,
+   "t": 1794392277613,
+   "name": "Lakeshore Hero",
+   "tab": 4,
+   "sp": 7.55,
+   "fair": 10.72,
+   "rating": 35
   }
  }
 }
