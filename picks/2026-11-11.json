@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-11",
+ "saved": "2026-11-11T05:35:30.607Z",
+ "picks": {
+  "Eagle Farm|6|WOOTTENHYDE": {
+   "on": 1,
+   "t": 1794375324958,
+   "name": "Wootten Hyde",
+   "tab": 7,
+   "sp": 2.4,
+   "fair": 3.42,
+   "rating": 86.73
+  },
+  "Eagle Farm|6|BOSSMODE": {
+   "on": 1,
+   "t": 1794375326508,
+   "name": "Boss Mode",
+   "tab": 9,
+   "sp": 4.2,
+   "fair": 4.68,
+   "rating": 85.74
+  },
+  "Eagle Farm|6|IMPERVIOUS": {
+   "on": 1,
+   "t": 1794375328086,
+   "name": "Impervious",
+   "tab": 8,
+   "sp": 11,
+   "fair": 8.37,
+   "rating": 83.91
+  }
+ }
+}
