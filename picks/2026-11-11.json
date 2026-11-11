@@ -1,6 +1,6 @@
 {
  "date": "2026-11-11",
- "saved": "2026-11-11T06:05:06.837Z",
+ "saved": "2026-11-11T06:05:16.082Z",
  "picks": {
   "Eagle Farm|6|WOOTTENHYDE": {
    "on": 1,
@@ -184,6 +184,24 @@
    "sp": 2.5,
    "fair": 3.09,
    "rating": 78.39
+  },
+  "Ballarat|5|BLACKBELT": {
+   "on": 1,
+   "t": 1794377112269,
+   "name": "Blackbelt",
+   "tab": 6,
+   "sp": 6.5,
+   "fair": 7.62,
+   "rating": 75.51
+  },
+  "Ballarat|5|GAMADALEPADDY": {
+   "on": 1,
+   "t": 1794377113114,
+   "name": "Gamadale Paddy",
+   "tab": 8,
+   "sp": 3.9,
+   "fair": 7.55,
+   "rating": 75.49
   }
  }
 }
