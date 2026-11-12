@@ -1,27 +1,28 @@
 {
- "started": "2026-11-12T17:40:25",
+ "started": "2026-11-13T03:11:43",
  "dates": [
-  "2026-11-12",
   "2026-11-13",
   "2026-11-14"
  ],
- "reason": "Port Macquarie scratched R7 #7/16",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 496,
- "rider_share": 0.99,
+ "acceptors": 875,
+ "rider_share": 0.87,
  "extract_max_date": "2026-11-14",
  "card_source": "toprate",
- "extract": "2026-11-11T21:23:17+00:00",
- "finished": "2026-11-12T17:55:18",
+ "extract": "2026-11-12T16:07:38+00:00",
+ "finished": "2026-11-13T04:03:53",
  "going": {
-  "Seymour": "Good 3",
-  "Cairns": "Good 4",
-  "Bunbury": "Good 4",
-  "Quirindi": "Good 3",
-  "Eagle Farm": "Soft 5",
-  "Port Macquarie": "Soft 6"
+  "Canterbury": "Good 4",
+  "Geelong": "Good 4",
+  "Pakenham": "Good 4",
+  "Ballina": "Good 4",
+  "Gundagai": "Good 4",
+  "Sunshine Coast": "Soft 5",
+  "Rockhampton": "Soft 5",
+  "Bordertown": "Soft 5"
  },
- "scratchings": 88,
- "dashboard": "toprate_week_v2_2026-11-12.html",
- "fingerprint": "bb60b5d33603"
+ "scratchings": 95,
+ "dashboard": "toprate_week_v2_2026-11-13.html",
+ "fingerprint": "1d478a0a34cb"
 }
