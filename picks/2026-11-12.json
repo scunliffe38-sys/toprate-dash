@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:32:08.987Z",
+ "saved": "2026-11-12T05:32:13.781Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -297,6 +297,15 @@
    "sp": 3.3,
    "fair": 2.84,
    "rating": 75.99
+  },
+  "Bunbury|1|MYDIGITALSOUL": {
+   "on": 1,
+   "t": 1794461530608,
+   "name": "My Digital Soul",
+   "tab": 10,
+   "sp": 2.5,
+   "fair": 5.33,
+   "rating": 73.93
   }
  }
 }
