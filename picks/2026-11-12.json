@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:19:02.964Z",
+ "saved": "2026-11-12T05:19:12.484Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -273,13 +273,17 @@
    "rating": 81.55
   },
   "Seymour|8|ZANEZENA": {
+   "on": 0,
+   "t": 1794460749372
+  },
+  "Seymour|8|ULFBERHT": {
    "on": 1,
-   "t": 1794460739776,
-   "name": "Zane Zena",
-   "tab": 13,
-   "sp": 34,
-   "fair": 10.56,
-   "rating": 81.44
+   "t": 1794460748082,
+   "name": "Ulfberht",
+   "tab": 8,
+   "sp": 8.5,
+   "fair": 11.68,
+   "rating": 81.12
   }
  }
 }
