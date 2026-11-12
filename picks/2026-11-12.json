@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:32:44.629Z",
+ "saved": "2026-11-12T05:32:48.858Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -333,6 +333,15 @@
    "sp": 4.2,
    "fair": 3.7,
    "rating": 73.55
+  },
+  "Bunbury|3|BONDEX": {
+   "on": 1,
+   "t": 1794461565721,
+   "name": "Bondex",
+   "tab": 1,
+   "sp": 2.25,
+   "fair": 4.91,
+   "rating": 72.56
   }
  }
 }
