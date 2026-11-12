@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:19:12.484Z",
+ "saved": "2026-11-12T05:19:20.445Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -264,13 +264,8 @@
    "rating": 82.09
   },
   "Seymour|8|CHERRYHILLS": {
-   "on": 1,
-   "t": 1794460738576,
-   "name": "Cherry Hills",
-   "tab": 9,
-   "sp": 9.5,
-   "fair": 10.24,
-   "rating": 81.55
+   "on": 0,
+   "t": 1794460757348
   },
   "Seymour|8|ZANEZENA": {
    "on": 0,
