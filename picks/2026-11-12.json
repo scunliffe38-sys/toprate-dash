@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T03:14:36.576Z",
+ "saved": "2026-11-12T03:14:46.249Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -46,6 +46,42 @@
    "sp": 12,
    "fair": 15.56,
    "rating": 70.12
+  },
+  "Seymour|2|QUEENSENGLISH": {
+   "on": 1,
+   "t": 1794453279118,
+   "name": "Queen's English",
+   "tab": 12,
+   "sp": 3.8,
+   "fair": 3.99,
+   "rating": 76.35
+  },
+  "Seymour|2|GATTINOVELOCE": {
+   "on": 1,
+   "t": 1794453280973,
+   "name": "Gattino Veloce",
+   "tab": 7,
+   "sp": 5.5,
+   "fair": 4.74,
+   "rating": 75.7
+  },
+  "Seymour|2|MAGNUSAURUSREX": {
+   "on": 1,
+   "t": 1794453282871,
+   "name": "Magnusaurus Rex",
+   "tab": 3,
+   "sp": 3.7,
+   "fair": 5.22,
+   "rating": 75.42
+  },
+  "Seymour|3|CARNEVALE": {
+   "on": 1,
+   "t": 1794453285924,
+   "name": "Carnevale",
+   "tab": 2,
+   "sp": 1.55,
+   "fair": 2.59,
+   "rating": 75.18
   }
  }
 }
