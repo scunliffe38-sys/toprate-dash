@@ -1,19 +1,19 @@
 {
- "started": "2026-11-13T08:25:19",
+ "started": "2026-11-13T10:20:24",
  "dates": [
   "2026-11-13",
   "2026-11-14",
   "2026-11-15",
   "2026-11-16"
  ],
- "reason": "morning harvest",
+ "reason": "Canterbury scratched R6 #6",
  "status": "ok",
  "acceptors": 875,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-16",
  "card_source": "toprate",
  "extract": "2026-11-12T21:23:55+00:00",
- "finished": "2026-11-13T10:22:12",
+ "finished": "2026-11-13T10:36:06",
  "going": {
   "Canterbury": "Good 4",
   "Pakenham": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 197,
  "dashboard": "toprate_week_v2_2026-11-13.html",
- "fingerprint": "c56abc0482b0"
+ "fingerprint": "5577b2a28da4"
 }
