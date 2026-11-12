@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:17:25.530Z",
+ "saved": "2026-11-12T05:17:36.751Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 3.3,
    "fair": 4.26,
    "rating": 80.93
+  },
+  "Seymour|5|ZOVOZO": {
+   "on": 1,
+   "t": 1794460653698,
+   "name": "Zovozo",
+   "tab": 5,
+   "sp": 6,
+   "fair": 7.01,
+   "rating": 79.13
   }
  }
 }
