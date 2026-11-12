@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T03:14:57.529Z",
+ "saved": "2026-11-12T03:15:04.076Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -109,6 +109,24 @@
    "sp": 2,
    "fair": 5.3,
    "rating": 72.57
+  },
+  "Seymour|4|TEMPEREDEDGE": {
+   "on": 1,
+   "t": 1794453298706,
+   "name": "Tempered Edge",
+   "tab": 5,
+   "sp": 8,
+   "fair": 6.22,
+   "rating": 71.97
+  },
+  "Seymour|4|BRIGHTHILL": {
+   "on": 1,
+   "t": 1794453300900,
+   "name": "Brighthill",
+   "tab": 1,
+   "sp": 9,
+   "fair": 7.26,
+   "rating": 71.52
   }
  }
 }
