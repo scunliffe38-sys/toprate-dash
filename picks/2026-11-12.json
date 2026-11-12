@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:19:20.445Z",
+ "saved": "2026-11-12T05:32:08.987Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -279,6 +279,24 @@
    "sp": 8.5,
    "fair": 11.68,
    "rating": 81.12
+  },
+  "Bunbury|1|SHESSOMECRAIC": {
+   "on": 1,
+   "t": 1794461524932,
+   "name": "She's Some Craic",
+   "tab": 5,
+   "sp": 7,
+   "fair": 9.32,
+   "rating": 71.96
+  },
+  "Bunbury|1|RUTHLESSBLOOM": {
+   "on": 1,
+   "t": 1794461525888,
+   "name": "Ruthless Bloom",
+   "tab": 6,
+   "sp": 3.3,
+   "fair": 2.84,
+   "rating": 75.99
   }
  }
 }
