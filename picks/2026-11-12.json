@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:32:13.781Z",
+ "saved": "2026-11-12T05:32:39.387Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -306,6 +306,24 @@
    "sp": 2.5,
    "fair": 5.33,
    "rating": 73.93
+  },
+  "Bunbury|2|PINCERMOVEMENT": {
+   "on": 1,
+   "t": 1794461554929,
+   "name": "Pincer Movement",
+   "tab": 4,
+   "sp": 2.8,
+   "fair": 2.65,
+   "rating": 82.72
+  },
+  "Bunbury|2|BUSTERBIFF": {
+   "on": 1,
+   "t": 1794461556314,
+   "name": "Buster Biff",
+   "tab": 1,
+   "sp": 6.5,
+   "fair": 8.22,
+   "rating": 78.57
   }
  }
 }
