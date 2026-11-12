@@ -1,27 +1,27 @@
 {
- "started": "2026-11-12T08:24:40",
+ "started": "2026-11-12T11:17:21",
  "dates": [
   "2026-11-12",
   "2026-11-13",
   "2026-11-14"
  ],
- "reason": "morning harvest",
+ "reason": "Bunbury scratched R2 #3, R4 #14, R5 #7, R7 #9",
  "status": "ok",
  "acceptors": 496,
  "rider_share": 0.99,
  "extract_max_date": "2026-11-14",
  "card_source": "toprate",
  "extract": "2026-11-11T21:23:17+00:00",
- "finished": "2026-11-12T09:48:05",
+ "finished": "2026-11-12T11:32:33",
  "going": {
-  "Eagle Farm": "Soft 7",
   "Seymour": "Good 4",
+  "Eagle Farm": "Soft 7",
   "Port Macquarie": "Soft 6",
   "Cairns": "Good 4",
   "Bunbury": "Good 4",
   "Quirindi": "Good 4"
  },
- "scratchings": 79,
+ "scratchings": 83,
  "dashboard": "toprate_week_v2_2026-11-12.html",
- "fingerprint": "721b1f22211d"
+ "fingerprint": "6d943f5ac1c0"
 }
