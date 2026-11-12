@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:32:48.858Z",
+ "saved": "2026-11-12T05:32:54.659Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -342,6 +342,15 @@
    "sp": 2.25,
    "fair": 4.91,
    "rating": 72.56
+  },
+  "Bunbury|4|BLINDFOLDED": {
+   "on": 1,
+   "t": 1794461571504,
+   "name": "Blindfolded",
+   "tab": 10,
+   "sp": 1.45,
+   "fair": 1.93,
+   "rating": 78.33
   }
  }
 }
