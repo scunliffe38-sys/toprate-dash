@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:17:36.751Z",
+ "saved": "2026-11-12T05:17:48.915Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 6,
    "fair": 7.01,
    "rating": 79.13
+  },
+  "Seymour|5|FINEANDSUNNY": {
+   "on": 1,
+   "t": 1794460665838,
+   "name": "Fine And Sunny",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 8.08,
+   "rating": 78.6
   }
  }
 }
