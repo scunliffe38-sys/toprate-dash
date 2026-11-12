@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:32:54.659Z",
+ "saved": "2026-11-12T05:33:07.167Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -351,6 +351,15 @@
    "sp": 1.45,
    "fair": 1.93,
    "rating": 78.33
+  },
+  "Bunbury|4|BRAGGINGRIGHTS": {
+   "on": 1,
+   "t": 1794461584073,
+   "name": "Bragging Rights",
+   "tab": 4,
+   "sp": 17,
+   "fair": 8.12,
+   "rating": 73.76
   }
  }
 }
