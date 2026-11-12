@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:33:13.492Z",
+ "saved": "2026-11-12T07:14:21.258Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -369,6 +369,24 @@
    "sp": 7.5,
    "fair": 12.91,
    "rating": 72.3
+  },
+  "Bunbury|5|BEYONDADOUBT": {
+   "on": 1,
+   "t": 1794467656480,
+   "name": "Beyond A Doubt",
+   "tab": 6,
+   "sp": 2,
+   "fair": 3,
+   "rating": 77.29
+  },
+  "Bunbury|5|KAZZAMATAZZ": {
+   "on": 1,
+   "t": 1794467657975,
+   "name": "Kazzamatazz",
+   "tab": 8,
+   "sp": 3.3,
+   "fair": 4.48,
+   "rating": 76.05
   }
  }
 }
