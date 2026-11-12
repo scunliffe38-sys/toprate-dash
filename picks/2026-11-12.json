@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:18:20.862Z",
+ "saved": "2026-11-12T05:18:28.759Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -208,6 +208,24 @@
    "sp": 6.5,
    "fair": 10.72,
    "rating": 79.97
+  },
+  "Seymour|7|FLYINGAWASITA": {
+   "on": 1,
+   "t": 1794460703341,
+   "name": "Flying Awasita",
+   "tab": 6,
+   "sp": 10,
+   "fair": 5.18,
+   "rating": 83.21
+  },
+  "Seymour|7|KILLIANA": {
+   "on": 1,
+   "t": 1794460705534,
+   "name": "Killiana",
+   "tab": 1,
+   "sp": 4.8,
+   "fair": 5.25,
+   "rating": 83.1
   }
  }
 }
