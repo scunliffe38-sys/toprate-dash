@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T07:18:31.560Z",
+ "saved": "2026-11-12T07:18:44.257Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -432,6 +432,24 @@
    "sp": 2.5,
    "fair": 6.9,
    "rating": 79
+  },
+  "Bunbury|7|BANNERED": {
+   "on": 1,
+   "t": 1794467920267,
+   "name": "Bannered",
+   "tab": 2,
+   "sp": 3.8,
+   "fair": 5.37,
+   "rating": 84.3
+  },
+  "Bunbury|7|THINKPINKDAZE": {
+   "on": 1,
+   "t": 1794467921037,
+   "name": "Think Pink Daze",
+   "tab": 7,
+   "sp": 2.7,
+   "fair": 5.54,
+   "rating": 84.24
   }
  }
 }
