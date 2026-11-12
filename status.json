@@ -1,18 +1,18 @@
 {
- "started": "2026-11-12T13:19:22",
+ "started": "2026-11-12T13:35:02",
  "dates": [
   "2026-11-12",
   "2026-11-13",
   "2026-11-14"
  ],
- "reason": "Eagle Farm Soft 6 -> Soft 5",
+ "reason": "Bunbury scratched R6 #3",
  "status": "ok",
  "acceptors": 496,
  "rider_share": 0.99,
  "extract_max_date": "2026-11-14",
  "card_source": "toprate",
  "extract": "2026-11-11T21:23:17+00:00",
- "finished": "2026-11-12T13:34:22",
+ "finished": "2026-11-12T13:49:46",
  "going": {
   "Seymour": "Good 4",
   "Eagle Farm": "Soft 5",
@@ -23,5 +23,5 @@
  },
  "scratchings": 84,
  "dashboard": "toprate_week_v2_2026-11-12.html",
- "fingerprint": "4e466f45018c"
+ "fingerprint": "5819da8b94b5"
 }
