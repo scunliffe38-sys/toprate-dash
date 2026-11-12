@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:18:16.677Z",
+ "saved": "2026-11-12T05:18:20.862Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -199,6 +199,15 @@
    "sp": 6.5,
    "fair": 8.99,
    "rating": 80.55
+  },
+  "Seymour|6|FIERYDEAL": {
+   "on": 1,
+   "t": 1794460697794,
+   "name": "Fiery Deal",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 10.72,
+   "rating": 79.97
   }
  }
 }
