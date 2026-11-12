@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:17:48.915Z",
+ "saved": "2026-11-12T05:17:55.491Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -163,6 +163,24 @@
    "sp": 6.5,
    "fair": 8.08,
    "rating": 78.6
+  },
+  "Seymour|6|SARAPO": {
+   "on": 1,
+   "t": 1794460672057,
+   "name": "Sarapo",
+   "tab": 4,
+   "sp": 2.5,
+   "fair": 3.85,
+   "rating": 83.3
+  },
+  "Seymour|6|GARNACHO": {
+   "on": 1,
+   "t": 1794460674663,
+   "name": "Garnacho",
+   "tab": 1,
+   "sp": 4,
+   "fair": 6.48,
+   "rating": 81.6
   }
  }
 }
