@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T03:14:27.503Z",
+ "saved": "2026-11-12T03:14:36.576Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": 4.8,
    "fair": 8.51,
    "rating": 71.99
+  },
+  "Seymour|1|BLINGBABY": {
+   "on": 1,
+   "t": 1794453273290,
+   "name": "Bling Baby",
+   "tab": 10,
+   "sp": 12,
+   "fair": 15.56,
+   "rating": 70.12
   }
  }
 }
