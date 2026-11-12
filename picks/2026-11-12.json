@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T03:15:04.076Z",
+ "saved": "2026-11-12T05:17:25.530Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -127,6 +127,24 @@
    "sp": 9,
    "fair": 7.26,
    "rating": 71.52
+  },
+  "Seymour|5|MAHMUDAH": {
+   "on": 1,
+   "t": 1794460641271,
+   "name": "Mahmudah",
+   "tab": 3,
+   "sp": 6,
+   "fair": 5.62,
+   "rating": 79.91
+  },
+  "Seymour|5|DIAMONDEYE": {
+   "on": 1,
+   "t": 1794460642404,
+   "name": "Diamond Eye",
+   "tab": 2,
+   "sp": 3.3,
+   "fair": 4.26,
+   "rating": 80.93
   }
  }
 }
