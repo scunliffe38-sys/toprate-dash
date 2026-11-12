@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T07:18:20.465Z",
+ "saved": "2026-11-12T07:18:31.560Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -423,6 +423,15 @@
    "sp": 14,
    "fair": 15.3,
    "rating": 76.3
+  },
+  "Bunbury|6|UXORIOUS": {
+   "on": 1,
+   "t": 1794467908469,
+   "name": "Uxorious",
+   "tab": 2,
+   "sp": 2.5,
+   "fair": 6.9,
+   "rating": 79
   }
  }
 }
