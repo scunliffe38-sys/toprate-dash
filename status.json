@@ -1,18 +1,18 @@
 {
- "started": "2026-11-12T16:58:02",
+ "started": "2026-11-12T17:14:02",
  "dates": [
   "2026-11-12",
   "2026-11-13",
   "2026-11-14"
  ],
- "reason": "Seymour scratched R6 #2",
+ "reason": "Cairns scratched R6 #9",
  "status": "ok",
  "acceptors": 496,
  "rider_share": 0.99,
  "extract_max_date": "2026-11-14",
  "card_source": "toprate",
  "extract": "2026-11-11T21:23:17+00:00",
- "finished": "2026-11-12T17:12:53",
+ "finished": "2026-11-12T17:28:57",
  "going": {
   "Seymour": "Good 3",
   "Port Macquarie": "Soft 6",
@@ -23,5 +23,5 @@
  },
  "scratchings": 86,
  "dashboard": "toprate_week_v2_2026-11-12.html",
- "fingerprint": "b4e2bf31ba02"
+ "fingerprint": "a57831f43532"
 }
