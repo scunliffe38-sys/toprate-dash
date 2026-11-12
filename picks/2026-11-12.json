@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T07:16:39.434Z",
+ "saved": "2026-11-12T07:16:50.344Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -396,6 +396,15 @@
    "sp": 9,
    "fair": 10.94,
    "rating": 73.22
+  },
+  "Bunbury|5|GETSTHEGIRLS": {
+   "on": 1,
+   "t": 1794467807267,
+   "name": "Gets The Girls",
+   "tab": 1,
+   "sp": 17,
+   "fair": 17.02,
+   "rating": 71.77
   }
  }
 }
