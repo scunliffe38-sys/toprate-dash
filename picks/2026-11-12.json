@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:17:55.491Z",
+ "saved": "2026-11-12T05:17:59.398Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -181,6 +181,15 @@
    "sp": 4,
    "fair": 6.48,
    "rating": 81.6
+  },
+  "Seymour|6|CATALONA": {
+   "on": 1,
+   "t": 1794460676208,
+   "name": "Catalona",
+   "tab": 10,
+   "sp": 10,
+   "fair": 8.26,
+   "rating": 80.82
   }
  }
 }
