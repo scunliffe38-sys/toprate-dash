@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T03:14:21.284Z",
+ "saved": "2026-11-12T03:14:27.503Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -19,6 +19,24 @@
    "sp": 5.5,
    "fair": 5.72,
    "rating": 73.24
+  },
+  "Seymour|1|ZVEREV": {
+   "on": 1,
+   "t": 1794453261975,
+   "name": "Zverev",
+   "tab": 4,
+   "sp": 4.8,
+   "fair": 6.65,
+   "rating": 72.76
+  },
+  "Seymour|1|CHOCOLATEFRECKLES": {
+   "on": 1,
+   "t": 1794453264387,
+   "name": "Chocolate Freckles",
+   "tab": 14,
+   "sp": 4.8,
+   "fair": 8.51,
+   "rating": 71.99
   }
  }
 }
