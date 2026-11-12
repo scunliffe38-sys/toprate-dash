@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:17:59.398Z",
+ "saved": "2026-11-12T05:18:16.677Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -190,6 +190,15 @@
    "sp": 10,
    "fair": 8.26,
    "rating": 80.82
+  },
+  "Seymour|6|LADYTHINKABELL": {
+   "on": 1,
+   "t": 1794460693488,
+   "name": "Lady Thinkabell",
+   "tab": 6,
+   "sp": 6.5,
+   "fair": 8.99,
+   "rating": 80.55
   }
  }
 }
