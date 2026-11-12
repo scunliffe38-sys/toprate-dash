@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T07:16:58.423Z",
+ "saved": "2026-11-12T07:18:20.465Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -414,6 +414,15 @@
    "sp": 3.6,
    "fair": 3.5,
    "rating": 81.26
+  },
+  "Bunbury|6|LUNAASCENDING": {
+   "on": 1,
+   "t": 1794467897217,
+   "name": "Luna Ascending",
+   "tab": 9,
+   "sp": 14,
+   "fair": 15.3,
+   "rating": 76.3
   }
  }
 }
