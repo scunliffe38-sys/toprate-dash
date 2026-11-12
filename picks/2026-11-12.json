@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T07:16:50.344Z",
+ "saved": "2026-11-12T07:16:58.423Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -405,6 +405,15 @@
    "sp": 17,
    "fair": 17.02,
    "rating": 71.77
+  },
+  "Bunbury|6|FREETOFLY": {
+   "on": 1,
+   "t": 1794467815222,
+   "name": "Free To Fly",
+   "tab": 5,
+   "sp": 3.6,
+   "fair": 3.5,
+   "rating": 81.26
   }
  }
 }
