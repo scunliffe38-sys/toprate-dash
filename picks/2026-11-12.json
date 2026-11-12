@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:33:07.167Z",
+ "saved": "2026-11-12T05:33:13.492Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -360,6 +360,15 @@
    "sp": 17,
    "fair": 8.12,
    "rating": 73.76
+  },
+  "Bunbury|4|OFFTHERICHTER": {
+   "on": 1,
+   "t": 1794461590396,
+   "name": "Off The Richter",
+   "tab": 11,
+   "sp": 7.5,
+   "fair": 12.91,
+   "rating": 72.3
   }
  }
 }
