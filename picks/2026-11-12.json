@@ -1,6 +1,6 @@
 {
  "date": "2026-11-12",
- "saved": "2026-11-12T05:18:28.759Z",
+ "saved": "2026-11-12T05:18:47.889Z",
  "picks": {
   "Seymour|1|PRINCESSOFSOL": {
    "on": 1,
@@ -226,6 +226,24 @@
    "sp": 4.8,
    "fair": 5.25,
    "rating": 83.1
+  },
+  "Seymour|7|CUMBOOGLE": {
+   "on": 1,
+   "t": 1794460724646,
+   "name": "Cumboogle",
+   "tab": 5,
+   "sp": 26,
+   "fair": 19.32,
+   "rating": 78.91
+  },
+  "Seymour|7|SKJALDMO": {
+   "on": 1,
+   "t": 1794460727391,
+   "name": "Skjaldmo",
+   "tab": 7,
+   "sp": 7,
+   "fair": 8.65,
+   "rating": 81.5
   }
  }
 }
