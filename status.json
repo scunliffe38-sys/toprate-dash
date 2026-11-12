@@ -1,21 +1,21 @@
 {
- "started": "2026-11-12T11:17:21",
+ "started": "2026-11-12T12:25:21",
  "dates": [
   "2026-11-12",
   "2026-11-13",
   "2026-11-14"
  ],
- "reason": "Bunbury scratched R2 #3, R4 #14, R5 #7, R7 #9",
+ "reason": "Eagle Farm Soft 7 -> Soft 6",
  "status": "ok",
  "acceptors": 496,
  "rider_share": 0.99,
  "extract_max_date": "2026-11-14",
  "card_source": "toprate",
  "extract": "2026-11-11T21:23:17+00:00",
- "finished": "2026-11-12T11:32:33",
+ "finished": "2026-11-12T12:40:02",
  "going": {
   "Seymour": "Good 4",
-  "Eagle Farm": "Soft 7",
+  "Eagle Farm": "Soft 6",
   "Port Macquarie": "Soft 6",
   "Cairns": "Good 4",
   "Bunbury": "Good 4",
@@ -23,5 +23,5 @@
  },
  "scratchings": 83,
  "dashboard": "toprate_week_v2_2026-11-12.html",
- "fingerprint": "6d943f5ac1c0"
+ "fingerprint": "7d1b5780a7f4"
 }
