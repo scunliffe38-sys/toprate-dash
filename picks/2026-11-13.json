@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:22:08.133Z",
+ "saved": "2026-11-13T08:22:26.717Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -541,6 +541,15 @@
    "sp": 3,
    "fair": 3.42,
    "rating": 89.83
+  },
+  "Canterbury|6|HEZDARNHOTTOO": {
+   "on": 1,
+   "t": 1794558143877,
+   "name": "Hezdarnhottoo",
+   "tab": 1,
+   "sp": 2.7,
+   "fair": 6.26,
+   "rating": 87.71
   }
  }
 }
