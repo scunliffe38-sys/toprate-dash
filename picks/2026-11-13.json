@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:28:22.961Z",
+ "saved": "2026-11-13T08:28:27.664Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -626,6 +626,15 @@
    "sp": 6,
    "fair": 13.85,
    "rating": 83.2
+  },
+  "Pakenham|5|LOMU": {
+   "on": 1,
+   "t": 1794558504761,
+   "name": "Lomu",
+   "tab": 7,
+   "sp": 5.5,
+   "fair": 18.48,
+   "rating": 82.3
   }
  }
 }
