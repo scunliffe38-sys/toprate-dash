@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:20:13.097Z",
+ "saved": "2026-11-13T06:20:22.310Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -244,6 +244,24 @@
    "sp": 8.5,
    "fair": 4.94,
    "rating": 76.87
+  },
+  "Canterbury|2|THREEPROPHETS": {
+   "on": 1,
+   "t": 1794550818564,
+   "name": "Three Prophets",
+   "tab": 3,
+   "sp": 4.2,
+   "fair": 8.89,
+   "rating": 74.78
+  },
+  "Canterbury|2|GERROA": {
+   "on": 1,
+   "t": 1794550819360,
+   "name": "Gerroa",
+   "tab": 5,
+   "sp": 15,
+   "fair": 9.93,
+   "rating": 74.38
   }
  }
 }
