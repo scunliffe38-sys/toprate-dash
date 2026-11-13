@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:22:26.717Z",
+ "saved": "2026-11-13T08:22:59.461Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -550,6 +550,33 @@
    "sp": 2.7,
    "fair": 6.26,
    "rating": 87.71
+  },
+  "Canterbury|7|ZOUCRATIC": {
+   "on": 1,
+   "t": 1794558174391,
+   "name": "Zoucratic",
+   "tab": 8,
+   "sp": 10,
+   "fair": 13.17,
+   "rating": 82.48
+  },
+  "Canterbury|7|MONTEVEEBEE": {
+   "on": 1,
+   "t": 1794558175353,
+   "name": "Monte Veebee",
+   "tab": 6,
+   "sp": 1.65,
+   "fair": 2.3,
+   "rating": 88.49
+  },
+  "Canterbury|7|AGAINSTTHELAW": {
+   "on": 1,
+   "t": 1794558176381,
+   "name": "Against The Law",
+   "tab": 7,
+   "sp": 9,
+   "fair": 6.33,
+   "rating": 85
   }
  }
 }
