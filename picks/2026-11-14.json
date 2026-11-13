@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:34:59.709Z",
+ "saved": "2026-11-13T23:35:03.845Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -55,6 +55,15 @@
    "sp": 6.5,
    "fair": 4.73,
    "rating": 92.41
+  },
+  "Sandown|4|KILLENAULE": {
+   "on": 1,
+   "t": 1794612900784,
+   "name": "Killenaule",
+   "tab": 12,
+   "sp": 4.6,
+   "fair": 7.98,
+   "rating": 90.78
   }
  }
 }
