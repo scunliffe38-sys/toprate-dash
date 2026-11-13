@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:34:11.707Z",
+ "saved": "2026-11-13T08:36:11.723Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -851,6 +851,15 @@
    "sp": 5,
    "fair": 7.81,
    "rating": 79.62
+  },
+  "Sunshine Coast|8|FIFTHFORCE": {
+   "on": 1,
+   "t": 1794558964798,
+   "name": "Fifth Force",
+   "tab": 10,
+   "sp": 19,
+   "fair": 14.66,
+   "rating": 77.78
   }
  }
 }
