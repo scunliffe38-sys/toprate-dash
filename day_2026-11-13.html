@@ -940,7 +940,7 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 .wcmp path.wf.dim{opacity:.16}
 .wcmp path.hitl{fill:none;stroke:transparent;stroke-width:12;cursor:pointer}
 .wcmp circle.wd{stroke:none}
-.wcmp circle.wfp{fill:var(--panel);stroke-width:1.8;stroke-dasharray:2.5 2}
+.wcmp circle.wfp{fill:var(--panel);stroke-width:1.8;stroke-dasharray:none}
 .wcmp text.wcn{font-size:11.5px;cursor:pointer;fill:var(--text)}
 .wcmp text.wcn.dim{opacity:.35}
 .wcmp text.wcn.on{font-weight:700}
@@ -2449,21 +2449,20 @@ function wormRow(r,x){
   // the scale fits the figures (Simon, 16 Oct: rounding out to whole fives left dead space under the line): the range of
   // the runs, today and the base, a 6-point minimum so a flat horse does not look volatile, and a small margin each side
   const [bs,td]=wLines(r,x);
-  const vals=all.map(z=>z[6]).concat(x.wb0==null?[td,bs]:[td]).concat(r.wb&&r.wb.w!=null?[r.wb.w]:[]);
+  const vals=all.map(z=>z[6]).concat(x.wb0==null?[bs]:[]).concat(r.wb&&r.wb.w!=null?[r.wb.w]:[]);   // past ratings only: no projected point (Simon, 13 Nov 2026)
   let vlo=Math.min(...vals), vhi=Math.max(...vals);
-  if(x.wb0!=null) vlo=Math.max(vlo,Math.min(td,r.wb&&r.wb.w!=null?r.wb.w:td)-25);   // a far-off run is clipped at the foot (28 Oct 2026; 25 below since 6 Nov 2026, Simon: "it needs another 15 on the bottom end")
+  if(x.wb0!=null&&all.length){ const lastv=all[all.length-1][6]; vlo=Math.max(vlo,Math.min(lastv,r.wb&&r.wb.w!=null?r.wb.w:lastv)-25); }   // a far-off run is clipped at the foot (28 Oct 2026; 25 below since 6 Nov 2026, Simon: "it needs another 15 on the bottom end")
   if(vhi-vlo<6){ const c=(vhi+vlo)/2; vlo=c-3; vhi=c+3; }
   const pad=(vhi-vlo)*0.07, y0=vlo-pad, y1=vhi+pad, step=vhi-vlo<=12?2:vhi-vlo<=30?5:10;
   // the forecast (28 Oct 2026): an Australian runner's expected figure today is one more point at the end of the line,
   // dashed and hollow so it reads as a forecast, not a run
-  const FC=x.wb0!=null&&all.length>0, nx=all.length+(FC?1:0);
+  const FC=false, nx=all.length;   // the dashed expected-today point is gone (Simon, 13 Nov 2026: "just show actual ratings from the past")
   const xs=i=>L+(W-L-R)*(nx===1?.5:i/(nx-1)), ys=v=>T+(H-T-B)*(1-(v-y0)/(y1-y0));
   let s=`<svg class="wg" viewBox="0 0 ${W} ${H}" role="img" aria-label="${x.name.replace(/"/g,'')}: the figure it ran at each of its last ${all.length} starts">`;
   for(let t=Math.ceil(y0/step)*step;t<=y1;t+=step) s+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${ys(t)}" y2="${ys(t)}"/><text class="axn" x="${L-8}" y="${ys(t)+4}" text-anchor="end">${t}</text>`;
   if(x.wb0==null) s+=`<line class="base" x1="${L}" x2="${W-R}" y1="${ys(bs)}" y2="${ys(bs)}"/><text class="axn" x="${W-R+6}" y="${ys(bs)+(Math.abs(ys(bs)-ys(td))<13?(bs<td?12:-6):4)}">${bs.toFixed(1)} base</text>`;
   if(r.wb&&r.wb.w!=null){ const yw=ys(r.wb.w);     // the winning zone: everything at or above the bar, lightly shaded
     s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">Likely Winning Rating · ${Math.round(r.wb.w)}</text>`; }
-  if(!FC) s+=`<line class="today" x1="${L}" x2="${W-R}" y1="${ys(td)}" y2="${ys(td)}"/><text class="tl" x="${W-R-4}" y="${ys(td)-5}" text-anchor="end">expected today ${td.toFixed(1)}</text>`;
   all.forEach((z,i)=>{ if(i&&z[7]) s+=`<line class="spell" x1="${xs(i-1)}" x2="${xs(i)}" y1="${H-B+6}" y2="${H-B+6}"/>`; });
   const yc=v=>ys(Math.max(v,y0));   // a run under the floor sits on it
   const pts=all.map((z,i)=>inR(z)?[xs(i),yc(z[6])]:null).filter(Boolean);
@@ -2483,7 +2482,7 @@ function wormRow(r,x){
   return `<tr class="wrow"><td colspan="${(wetOn(r)&&r.runners.some(z=>'wet' in z)?12:11)+(hasRan(r)?2:0)}">
     <div class="wctl"><label>trip <input type="range" id="wLo" min="800" max="3200" step="100" value="${lo}" aria-label="shortest trip"><input type="range" id="wHi" min="800" max="3200" step="100" value="${hi}" aria-label="longest trip"><b id="wLbl">${lo}–${hi}m</b></label>
       <label>starts <span class="wseg">${[5,10].map(n=>`<button type="button" data-n="${n}" aria-pressed="${wormN===n}">${n}</button>`).join('')}</span></label>
-      <span class="wleg"><span><i style="background:var(--wdry)"></i>good</span><span><i style="background:var(--wsoft)"></i>soft</span><span><i style="background:var(--wwet)"></i>heavy</span><span><i style="background:var(--wsyn)"></i>synthetic</span><span><i class="ring"></i>won</span>${FC?'<span><i class="fc"></i>expected today</span>':'<span><i class="dash"></i>today</span>'}${x.wb0==null?'<span><i class="base"></i>base</span>':''}</span></div>
+      <span class="wleg"><span><i style="background:var(--wdry)"></i>good</span><span><i style="background:var(--wsoft)"></i>soft</span><span><i style="background:var(--wwet)"></i>heavy</span><span><i style="background:var(--wsyn)"></i>synthetic</span><span><i class="ring"></i>won</span>${x.wb0==null?'<span><i class="base"></i>base</span>':''}</span></div>
     <div class="wbox"><div>${s}<div class="wrun" id="wRun"></div></div>
 </div></td></tr>`;
 }
@@ -2675,13 +2674,13 @@ let WSEL=new Set(), WSELK='';
 const WPAL=['#006DA6','#D62728','#2CA02C','#6D6E71','#FF7F0E','#17BECF','#8C564B','#7FB8DC','#7F7F00','#003F6B','#637939','#AD494A','#0085CA','#A3A5A8','#E6550D','#31A354'];   // no pink or purple (Simon, 3 Nov 2026)
 window.wsel=no=>{ if(no==null) WSEL.clear(); else if(WSEL.has(no)) WSEL.delete(no); else WSEL.add(no); draw(); };
 function wcmpTop(r){
-  let b=null; for(const x of r.runners){ if(x.wb0==null) continue; const td=wLines(r,x)[1]; if(b===null||td>b[1]) b=[x,td]; }
+  let b=null; for(const x of r.runners){ if(x.wb0==null) continue; const f=wFig(x); if(!f.length) continue; const td=f[f.length-1][6]; if(b===null||td>b[1]) b=[x,td]; }   // the best last run
   return b;
 }
 function wormCompare(r){
   const key=`${M().track}|${r.no}`; if(key!==WSELK){ WSEL=new Set(); WSELK=key; }
   const N=10, H0=[];
-  for(const x of r.runners){ const f=wFig(x).slice(-N); if(!f.length||x.wb0==null) continue; H0.push({x,f,td:wLines(r,x)[1]}); }
+  for(const x of r.runners){ const f=wFig(x).slice(-N); if(!f.length||x.wb0==null) continue; H0.push({x,f,td:f[f.length-1][6]}); }   // td is the last actual rating
   if(H0.length<2) return '<div class="wcmp"><div class="sm">Not enough form to compare.</div></div>';
   H0.forEach((h,i)=>{ h.c=WPAL[i%WPAL.length]; });               // each runner its own colour, in card order (Simon, 28 Oct 2026)
   const narrow=innerWidth<=560;
@@ -2692,23 +2691,22 @@ function wormCompare(r){
   const vals=[]; H0.forEach(h=>{ h.f.forEach(z=>vals.push(z[6])); vals.push(h.td); }); if(r.wb&&r.wb.w!=null) vals.push(r.wb.w);
   const vhi=Math.max(...vals), vlo=vhi-35;   // 35 deep since 6 Nov 2026 (was 20; Simon: "another 15 on the bottom end")
   const pad=1, y0=vlo-pad, y1=vhi+pad, step=5;
-  const xs=i=>L+(W-L-R)*i/N, ys=v=>T+(H-T-B)*(1-(v-y0)/(y1-y0));
+  const xs=i=>L+(W-L-R)*i/(N-1), ys=v=>T+(H-T-B)*(1-(v-y0)/(y1-y0));
   const any=WSEL.size>0;
-  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every runner's last ${N} ratings and its rating today"><defs><clipPath id="wcc"><rect x="${L-6}" y="${T}" width="${W-R-L+12}" height="${H-T-B}"/></clipPath></defs>`;
+  let s=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Every runner's last ${N} ratings"><defs><clipPath id="wcc"><rect x="${L-6}" y="${T}" width="${W-R-L+12}" height="${H-T-B}"/></clipPath></defs>`;
   for(let t=Math.ceil(y0/step)*step;t<=y1;t+=step) s+=`<line class="grid" x1="${L}" x2="${W-R}" y1="${ys(t)}" y2="${ys(t)}"/><text class="axn" x="${L-8}" y="${ys(t)+4}" text-anchor="end">${t}</text>`;
   if(r.wb&&r.wb.w!=null){ const yw=ys(r.wb.w); s+=`<rect class="wbz" x="${L}" y="${T}" width="${W-R-L}" height="${Math.max(0,yw-T)}"/><text class="wbz" x="${L+6}" y="${T+13}">Likely Winning Rating · ${Math.round(r.wb.w)}</text>`; }
-  s+=`<text class="ax" x="${xs(N-1)}" y="${H-B+18}" text-anchor="middle">last</text><text class="ax" x="${xs(N)}" y="${H-B+18}" text-anchor="middle">today</text>`;
+  s+=`<text class="ax" x="${xs(N-1)}" y="${H-B+18}" text-anchor="middle">last</text>`;
   // unhighlighted first, so the highlighted ones draw on top
   s+=`<g clip-path="url(#wcc)">`;
   const order=H0.slice().sort((a,b)=>(WSEL.has(a.x.no)?1:0)-(WSEL.has(b.x.no)?1:0));
   for(const h of order){
     const on=WSEL.has(h.x.no), c=h.c, cls=on?'on':(any?'dim':'');
-    const off=N-h.f.length, pts=h.f.map((z,i)=>[xs(off+i),ys(z[6])]), last=pts[pts.length-1], fp=[xs(N),ys(h.td)];
+    const off=N-h.f.length, pts=h.f.map((z,i)=>[xs(off+i),ys(z[6])]), last=pts[pts.length-1], fp=last;
     if(pts.length>1) s+=`<path class="wl ${cls}" d="${wSmooth(pts)}" style="stroke:${c}"/>`;
-    s+=`<path class="wf ${cls}" d="M${last[0].toFixed(1)},${last[1].toFixed(1)} L${fp[0].toFixed(1)},${fp[1].toFixed(1)}" style="stroke:${c}"/>`;
     if(on) pts.forEach(p=>{ s+=`<circle class="wd" cx="${p[0]}" cy="${p[1]}" r="3.2" style="fill:${c}"/>`; });
-    s+=`<circle class="wfp ${cls}" cx="${fp[0]}" cy="${fp[1]}" r="${on?5:3.5}" style="stroke:${c}"/>`;
-    const hd=pts.concat([fp]); s+=`<path class="hitl" d="M${hd.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' L')}" onclick="wsel(${h.x.no})"><title>${h.x.no} ${h.x.name.replace(/</g,'')}</title></path>`;
+    s+=`<circle class="wfp ${cls}" cx="${fp[0]}" cy="${fp[1]}" r="${on?5:3.5}" style="stroke:${c};fill:${c}"/>`;
+    const hd=pts.length>1?pts:pts.concat([[pts[0][0]+0.1,pts[0][1]]]); s+=`<path class="hitl" d="M${hd.map(p=>p[0].toFixed(1)+','+p[1].toFixed(1)).join(' L')}" onclick="wsel(${h.x.no})"><title>${h.x.no} ${h.x.name.replace(/</g,'')}</title></path>`;
   }
   s+=`</g>`;
   // the names on the right, at each forecast, pushed apart to at least 13 px, each in its line's colour
@@ -2716,13 +2714,13 @@ function wormCompare(r){
   for(let i=1;i<lab.length;i++) if(lab[i].y-lab[i-1].y<gap) lab[i].y=lab[i-1].y+gap;
   const over=lab.length?lab[lab.length-1].y-(H-B):0; if(over>0) lab.forEach(l=>l.y-=over);
   for(let i=lab.length-2;i>=0;i--) if(lab[i+1].y-lab[i].y<gap) lab[i].y=lab[i+1].y-gap;
-  const lx=xs(N)+14, nmax=narrow?10:22;
+  const lx=xs(N-1)+14, nmax=narrow?10:22;
   for(const l of lab){ const h=l.h, on=WSEL.has(h.x.no), nm=h.x.name.length>nmax?h.x.name.slice(0,nmax-1)+'…':h.x.name;
-    s+=`<line class="wlead" x1="${xs(N)+6}" x2="${lx-3}" y1="${Math.min(Math.max(ys(h.td),T+4),H-B-2)}" y2="${l.y}"/>`;
+    s+=`<line class="wlead" x1="${xs(N-1)+6}" x2="${lx-3}" y1="${Math.min(Math.max(ys(h.td),T+4),H-B-2)}" y2="${l.y}"/>`;
     s+=`<text class="wcn ${on?'on':(any?'dim':'')}" x="${lx}" y="${l.y+4}" onclick="wsel(${h.x.no})" style="fill:${h.c}">${h.x.no} ${nm} <tspan style="opacity:.8">${h.td.toFixed(1)}</tspan></text>`; }
   s+='</svg>';
   const hint=any?`<button type="button" onclick="wsel(null)">clear</button>`:'';
-  return `<div class="wcmp">${s}<div class="wch"><span>Solid: its last ${N} runs, in SPM rating points at today's trip. Dashed to the hollow point: its SPM rating today. Click a name or a line to highlight it; click more to compare.</span>${hint}</div></div>`;
+  return `<div class="wcmp">${s}<div class="wch"><span>Its last ${N} runs, in SPM rating points at today's trip; the dot and the figure at the right are its latest. Click a name or a line to highlight it; click more to compare.</span>${hint}</div></div>`;
 }
 function drillRow(m,r){
   const it=[], on=r.runners.filter(x=>x.rspos!=null);
@@ -2735,8 +2733,8 @@ function drillRow(m,r){
   if(pr){ const b=pr.rs.slice().sort((a,c)=>pr.P[c.no].net-pr.P[a.no].net)[0];
     it.push({k:'rsp',cls:'drsp',lab:'RSP',sh:'RSP',sum:`Most advantaged <b>${b.no} ${b.name}</b>`,tip:'the race speed profile: early, middle and late against the field'}); }
   if(r.wb&&r.wb.w!=null&&r.runners.filter(x=>x.wb0!=null&&wFig(x).length).length>=2){ const t=wcmpTop(r);
-    it.push({k:'worms',cls:'dwc',lab:'Worms',sh:'Worms',sum:t?`Top forecast <b>${t[0].no} ${t[0].name}</b>`:'compare the field',
-      tip:'every runner\'s last ten ratings and its rating today, against the Likely Winning Rating',body:wormCompare(r)}); }
+    it.push({k:'worms',cls:'dwc',lab:'Worms',sh:'Worms',sum:t?`Best last run <b>${t[0].no} ${t[0].name}</b>`:'compare the field',
+      tip:'every runner\'s last ten ratings, against the Likely Winning Rating',body:wormCompare(r)}); }
   quadItems(m,r).forEach(q=>it.push(q));
   if(!it.length) return '';
   let h='<div class="drill">'+it.map(x=>`<button type="button" class="dri${x.y===true?' y':x.y===false?' n':''}" aria-expanded="${DRILL===x.k}"`+
@@ -3539,4 +3537,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 13 Nov 19:05</b> AEST &middot; Rockhampton scratched R7 #12</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 13 Nov 19:37</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
