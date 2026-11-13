@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:20:29.690Z",
+ "saved": "2026-11-13T06:20:47.076Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -280,6 +280,24 @@
    "sp": 4.4,
    "fair": 4.57,
    "rating": 80.09
+  },
+  "Canterbury|3|LIGULARIA": {
+   "on": 1,
+   "t": 1794550841795,
+   "name": "Ligularia",
+   "tab": 8,
+   "sp": 3.3,
+   "fair": 6.1,
+   "rating": 79.04
+  },
+  "Canterbury|4|KOOLIBAH": {
+   "on": 1,
+   "t": 1794550844209,
+   "name": "Koolibah",
+   "tab": 3,
+   "sp": 1.7,
+   "fair": 1.83,
+   "rating": 88.51
   }
  }
 }
