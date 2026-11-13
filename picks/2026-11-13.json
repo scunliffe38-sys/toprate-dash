@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:29:51.520Z",
+ "saved": "2026-11-13T08:31:36.588Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -725,6 +725,15 @@
    "sp": 8.5,
    "fair": 8.55,
    "rating": 84.16
+  },
+  "Sunshine Coast|5|TREVATTCOURT": {
+   "on": 1,
+   "t": 1794558694056,
+   "name": "Trevatt Court",
+   "tab": 9,
+   "sp": 2.5,
+   "fair": 3.73,
+   "rating": 82.28
   }
  }
 }
