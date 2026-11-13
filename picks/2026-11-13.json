@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:33:25.139Z",
+ "saved": "2026-11-13T08:33:33.147Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -797,6 +797,15 @@
    "sp": 6.5,
    "fair": 8.34,
    "rating": 85.25
+  },
+  "Sunshine Coast|7|WEONAREDWOOD": {
+   "on": 1,
+   "t": 1794558810313,
+   "name": "Weona Redwood",
+   "tab": 10,
+   "sp": 34,
+   "fair": 13.66,
+   "rating": 83.67
   }
  }
 }
