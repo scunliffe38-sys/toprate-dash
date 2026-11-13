@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:22:35.954Z",
+ "saved": "2026-11-13T06:22:39.133Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -334,6 +334,15 @@
    "sp": 1.45,
    "fair": 2.88,
    "rating": 74.47
+  },
+  "Pakenham|2|ROYALCANVAS": {
+   "on": 1,
+   "t": 1794550956173,
+   "name": "Royal Canvas",
+   "tab": 9,
+   "sp": 8,
+   "fair": 6.64,
+   "rating": 72.06
   }
  }
 }
