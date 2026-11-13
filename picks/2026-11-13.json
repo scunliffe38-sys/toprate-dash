@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:20:00.311Z",
+ "saved": "2026-11-13T06:20:04.917Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -217,6 +217,15 @@
    "sp": 4,
    "fair": 5.97,
    "rating": 72.47
+  },
+  "Canterbury|2|THREESOME": {
+   "on": 1,
+   "t": 1794550802024,
+   "name": "Threesome",
+   "tab": 6,
+   "sp": 4.8,
+   "fair": 4.15,
+   "rating": 77.45
   }
  }
 }
