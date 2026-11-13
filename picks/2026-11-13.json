@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:33:58.937Z",
+ "saved": "2026-11-13T08:34:11.707Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -841,6 +841,15 @@
    "tab": 12,
    "sp": 5,
    "fair": 7.82,
+   "rating": 79.62
+  },
+  "Sunshine Coast|8|FAMILYOFLEAGUE": {
+   "on": 1,
+   "t": 1794558845652,
+   "name": "Family Of League",
+   "tab": 7,
+   "sp": 5,
+   "fair": 7.81,
    "rating": 79.62
   }
  }
