@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:20:25.278Z",
+ "saved": "2026-11-13T06:20:29.690Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -271,6 +271,15 @@
    "sp": 3.7,
    "fair": 3.91,
    "rating": 80.64
+  },
+  "Canterbury|3|MARKOSPORT": {
+   "on": 1,
+   "t": 1794550826702,
+   "name": "Markos Port",
+   "tab": 2,
+   "sp": 4.4,
+   "fair": 4.57,
+   "rating": 80.09
   }
  }
 }
