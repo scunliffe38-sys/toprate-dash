@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:05.168Z",
+ "saved": "2026-11-13T23:36:11.002Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -91,6 +91,24 @@
    "sp": 11,
    "fair": 8.89,
    "rating": 90.47
+  },
+  "Sandown|5|STAROFMACEDON": {
+   "on": 1,
+   "t": 1794612966519,
+   "name": "Star Of Macedon",
+   "tab": 2,
+   "sp": 4.8,
+   "fair": 5.58,
+   "rating": 87.23
+  },
+  "Sandown|5|MILSONSPOINT": {
+   "on": 1,
+   "t": 1794612967935,
+   "name": "Milsons Point",
+   "tab": 1,
+   "sp": 9,
+   "fair": 8.15,
+   "rating": 86.08
   }
  }
 }
