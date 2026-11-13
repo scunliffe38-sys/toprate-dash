@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T04:10:30.529Z",
+ "saved": "2026-11-13T04:10:38.135Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -154,6 +154,24 @@
    "sp": 2.1,
    "fair": 3.17,
    "rating": 86.61
+  },
+  "Geelong|8|JACKPOTPARK": {
+   "on": 1,
+   "t": 1794543033955,
+   "name": "Jackpot Park",
+   "tab": 2,
+   "sp": 2.3,
+   "fair": 3.51,
+   "rating": 84.85
+  },
+  "Geelong|8|WHISKEYJOE": {
+   "on": 1,
+   "t": 1794543035225,
+   "name": "Whiskey Joe",
+   "tab": 1,
+   "sp": 3,
+   "fair": 5.24,
+   "rating": 83.44
   }
  }
 }
