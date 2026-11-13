@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:19.205Z",
+ "saved": "2026-11-13T23:36:28.427Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -136,6 +136,15 @@
    "sp": 12,
    "fair": 8.54,
    "rating": 85.95
+  },
+  "Sandown|5|ANGLAIS": {
+   "on": 1,
+   "t": 1794612985382,
+   "name": "Anglais",
+   "tab": 12,
+   "sp": 15,
+   "fair": 14.17,
+   "rating": 84.41
   }
  }
 }
