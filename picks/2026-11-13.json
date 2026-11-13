@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:32:17.634Z",
+ "saved": "2026-11-13T08:32:21.807Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -761,6 +761,15 @@
    "sp": 9.5,
    "fair": 6.53,
    "rating": 83.35
+  },
+  "Sunshine Coast|6|CONTILDASLOVE": {
+   "on": 1,
+   "t": 1794558738961,
+   "name": "Contilda's Love",
+   "tab": 9,
+   "sp": 5,
+   "fair": 6.9,
+   "rating": 83.18
   }
  }
 }
