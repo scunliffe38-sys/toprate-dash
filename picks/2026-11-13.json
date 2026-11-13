@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:21:39.633Z",
+ "saved": "2026-11-13T08:21:45.423Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -514,6 +514,15 @@
    "sp": 4,
    "fair": 5.53,
    "rating": 86.18
+  },
+  "Canterbury|5|SATNESS": {
+   "on": 1,
+   "t": 1794558102253,
+   "name": "Satness",
+   "tab": 4,
+   "sp": 4.4,
+   "fair": 5.57,
+   "rating": 86.14
   }
  }
 }
