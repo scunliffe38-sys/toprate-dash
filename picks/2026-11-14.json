@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:34:55.083Z",
+ "saved": "2026-11-13T23:34:59.709Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 10,
    "fair": 9.92,
    "rating": 91.65
+  },
+  "Sandown|4|OCEANADREAM": {
+   "on": 1,
+   "t": 1794612896611,
+   "name": "Oceana Dream",
+   "tab": 1,
+   "sp": 6.5,
+   "fair": 4.73,
+   "rating": 92.41
   }
  }
 }
