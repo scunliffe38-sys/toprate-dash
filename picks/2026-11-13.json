@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:22:28.803Z",
+ "saved": "2026-11-13T06:22:32.054Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -316,6 +316,15 @@
    "sp": 3.9,
    "fair": 3.73,
    "rating": 74
+  },
+  "Pakenham|1|VIATHERESA": {
+   "on": 1,
+   "t": 1794550949092,
+   "name": "Via Theresa",
+   "tab": 11,
+   "sp": 4.4,
+   "fair": 6.29,
+   "rating": 72.25
   }
  }
 }
