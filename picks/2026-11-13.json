@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:33:54.032Z",
+ "saved": "2026-11-13T08:33:58.937Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -824,6 +824,24 @@
    "sp": 4.2,
    "fair": 6.26,
    "rating": 80.32
+  },
+  "Sunshine Coast|8|SALCHOW": {
+   "on": 1,
+   "t": 1794558836101,
+   "name": "Salchow",
+   "tab": 14,
+   "sp": 4,
+   "fair": 6.68,
+   "rating": 80.07
+  },
+  "Sunshine Coast|8|NINJITZOU": {
+   "on": 1,
+   "t": 1794558838634,
+   "name": "Ninjitzou",
+   "tab": 12,
+   "sp": 5,
+   "fair": 7.82,
+   "rating": 79.62
   }
  }
 }
