@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:20:04.917Z",
+ "saved": "2026-11-13T06:20:13.097Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -226,6 +226,24 @@
    "sp": 4.8,
    "fair": 4.15,
    "rating": 77.45
+  },
+  "Canterbury|2|ESTEEMED": {
+   "on": 1,
+   "t": 1794550807777,
+   "name": "Esteemed",
+   "tab": 8,
+   "sp": 3.5,
+   "fair": 5.52,
+   "rating": 76.5
+  },
+  "Canterbury|2|DARNLUCKY": {
+   "on": 1,
+   "t": 1794550810176,
+   "name": "Darn Lucky",
+   "tab": 1,
+   "sp": 8.5,
+   "fair": 4.94,
+   "rating": 76.87
   }
  }
 }
