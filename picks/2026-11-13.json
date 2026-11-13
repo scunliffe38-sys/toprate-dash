@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:33:33.147Z",
+ "saved": "2026-11-13T08:33:54.032Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -806,6 +806,24 @@
    "sp": 34,
    "fair": 13.66,
    "rating": 83.67
+  },
+  "Sunshine Coast|8|APOLLOTEN": {
+   "on": 1,
+   "t": 1794558831200,
+   "name": "Apollo Ten",
+   "tab": 2,
+   "sp": 19,
+   "fair": 13.68,
+   "rating": 77.99
+  },
+  "Sunshine Coast|8|KINGEMPEROR": {
+   "on": 1,
+   "t": 1794558833928,
+   "name": "King Emperor",
+   "tab": 4,
+   "sp": 4.2,
+   "fair": 6.26,
+   "rating": 80.32
   }
  }
 }
