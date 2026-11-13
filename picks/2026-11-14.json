@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:34:38.160Z",
+ "saved": "2026-11-13T23:34:55.083Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": 11,
    "fair": 18.64,
    "rating": 89.61
+  },
+  "Sandown|3|GRIDGIRL": {
+   "on": 1,
+   "t": 1794612891961,
+   "name": "Grid Girl",
+   "tab": 2,
+   "sp": 10,
+   "fair": 9.92,
+   "rating": 91.65
   }
  }
 }
