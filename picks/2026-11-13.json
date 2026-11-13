@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T01:56:31.973Z",
+ "saved": "2026-11-13T01:56:35.360Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -28,6 +28,24 @@
    "sp": 6,
    "fair": 7.26,
    "rating": 71.59
+  },
+  "Geelong|3|LAFARNA": {
+   "on": 1,
+   "t": 1794534992322,
+   "name": "Lafarna",
+   "tab": 5,
+   "sp": 1.65,
+   "fair": 2.46,
+   "rating": 78.25
+  },
+  "Geelong|4|SHELTERED": {
+   "on": 1,
+   "t": 1794534995260,
+   "name": "Sheltered",
+   "tab": 4,
+   "sp": 3.1,
+   "fair": 3.1,
+   "rating": 73.79
   }
  }
 }
