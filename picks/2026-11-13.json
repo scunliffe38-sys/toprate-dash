@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:32:21.807Z",
+ "saved": "2026-11-13T08:33:18.265Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -770,6 +770,15 @@
    "sp": 5,
    "fair": 6.9,
    "rating": 83.18
+  },
+  "Sunshine Coast|7|SNITZSTREAM": {
+   "on": 1,
+   "t": 1794558795050,
+   "name": "Snitzstream",
+   "tab": 16,
+   "sp": 4.8,
+   "fair": 4.91,
+   "rating": 86.98
   }
  }
 }
