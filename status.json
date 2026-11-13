@@ -1,19 +1,19 @@
 {
- "started": "2026-11-13T11:22:26",
+ "started": "2026-11-13T12:43:23",
  "dates": [
   "2026-11-13",
   "2026-11-14",
   "2026-11-15",
   "2026-11-16"
  ],
- "reason": "Albany going Good 4; Albany scratched R2 #11, R3 #11/12, R4 #2, R6 #2",
+ "reason": "Bordertown Good 4 -> Soft 5",
  "status": "ok",
  "acceptors": 875,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-16",
  "card_source": "toprate",
  "extract": "2026-11-12T21:23:55+00:00",
- "finished": "2026-11-13T11:38:40",
+ "finished": "2026-11-13T12:59:33",
  "going": {
   "Canterbury": "Good 4",
   "Pakenham": "Good 4",
@@ -22,10 +22,10 @@
   "Ballina": "Soft 6",
   "Sunshine Coast": "Good 4",
   "Rockhampton": "Soft 5",
-  "Bordertown": "Good 4",
+  "Bordertown": "Soft 5",
   "Albany": "Good 4"
  },
  "scratchings": 202,
  "dashboard": "toprate_week_v2_2026-11-13.html",
- "fingerprint": "de7e9fec31af"
+ "fingerprint": "9fa030b76aa4"
 }
