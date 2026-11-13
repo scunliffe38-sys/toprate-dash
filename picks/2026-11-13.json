@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:31:54.842Z",
+ "saved": "2026-11-13T08:32:05.031Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -743,6 +743,15 @@
    "sp": 10,
    "fair": 10.46,
    "rating": 79.14
+  },
+  "Sunshine Coast|6|POINTVEGA": {
+   "on": 1,
+   "t": 1794558722164,
+   "name": "Point Vega",
+   "tab": 1,
+   "sp": 3,
+   "fair": 6.5,
+   "rating": 83.4
   }
  }
 }
