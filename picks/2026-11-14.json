@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:34:31.153Z",
+ "saved": "2026-11-13T23:34:38.160Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -28,6 +28,15 @@
    "sp": 3.2,
    "fair": 4.7,
    "rating": 94.11
+  },
+  "Sandown|3|ELROCKO": {
+   "on": 1,
+   "t": 1794612875094,
+   "name": "El Rocko",
+   "tab": 1,
+   "sp": 11,
+   "fair": 18.64,
+   "rating": 89.61
   }
  }
 }
