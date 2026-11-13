@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:29:05.310Z",
+ "saved": "2026-11-13T08:29:14.791Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -653,6 +653,24 @@
    "sp": 4.8,
    "fair": 4.53,
    "rating": 87.1
+  },
+  "Pakenham|7|BLANKFIELD": {
+   "on": 1,
+   "t": 1794558551157,
+   "name": "Blankfield",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 5.98,
+   "rating": 86.25
+  },
+  "Pakenham|7|TENWARRIORS": {
+   "on": 1,
+   "t": 1794558551941,
+   "name": "Ten Warriors",
+   "tab": 5,
+   "sp": 4.4,
+   "fair": 5.94,
+   "rating": 86.25
   }
  }
 }
