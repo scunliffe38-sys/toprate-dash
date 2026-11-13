@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:22:59.461Z",
+ "saved": "2026-11-13T08:23:11.290Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -577,6 +577,15 @@
    "sp": 9,
    "fair": 6.33,
    "rating": 85
+  },
+  "Canterbury|8|BENEATHTHEROCK": {
+   "on": 1,
+   "t": 1794558188148,
+   "name": "Beneath The Rock",
+   "tab": 2,
+   "sp": 1.85,
+   "fair": 2.27,
+   "rating": 88.63
   }
  }
 }
