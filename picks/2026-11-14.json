@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:28.427Z",
+ "saved": "2026-11-13T23:36:32.053Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 15,
    "fair": 14.17,
    "rating": 84.41
+  },
+  "Sandown|6|BREDEMALL": {
+   "on": 1,
+   "t": 1794612989020,
+   "name": "Bred 'em All",
+   "tab": 8,
+   "sp": 2.6,
+   "fair": 3.56,
+   "rating": 94.86
   }
  }
 }
