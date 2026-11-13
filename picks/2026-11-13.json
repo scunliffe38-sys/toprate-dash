@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:31:36.588Z",
+ "saved": "2026-11-13T08:31:54.842Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -734,6 +734,15 @@
    "sp": 2.5,
    "fair": 3.73,
    "rating": 82.28
+  },
+  "Sunshine Coast|5|WAXONWAXOFF": {
+   "on": 1,
+   "t": 1794558711966,
+   "name": "Wax On Wax Off",
+   "tab": 10,
+   "sp": 10,
+   "fair": 10.46,
+   "rating": 79.14
   }
  }
 }
