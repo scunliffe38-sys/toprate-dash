@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:32:05.031Z",
+ "saved": "2026-11-13T08:32:17.634Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -752,6 +752,15 @@
    "sp": 3,
    "fair": 6.5,
    "rating": 83.4
+  },
+  "Sunshine Coast|6|PROVANCE": {
+   "on": 1,
+   "t": 1794558734769,
+   "name": "Provance",
+   "tab": 19,
+   "sp": 9.5,
+   "fair": 6.53,
+   "rating": 83.35
   }
  }
 }
