@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:28:27.664Z",
+ "saved": "2026-11-13T08:28:32.331Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -635,6 +635,15 @@
    "sp": 5.5,
    "fair": 18.48,
    "rating": 82.3
+  },
+  "Pakenham|6|MADABOUTMAGNUS": {
+   "on": 1,
+   "t": 1794558509485,
+   "name": "Mad About Magnus",
+   "tab": 6,
+   "sp": 2.4,
+   "fair": 2.04,
+   "rating": 85.09
   }
  }
 }
