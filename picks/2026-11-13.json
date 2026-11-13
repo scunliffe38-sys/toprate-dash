@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:22:32.054Z",
+ "saved": "2026-11-13T06:22:35.954Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -325,6 +325,15 @@
    "sp": 4.4,
    "fair": 6.29,
    "rating": 72.25
+  },
+  "Pakenham|2|MONGOLIANHERO": {
+   "on": 1,
+   "t": 1794550953063,
+   "name": "Mongolian Hero",
+   "tab": 8,
+   "sp": 1.45,
+   "fair": 2.88,
+   "rating": 74.47
   }
  }
 }
