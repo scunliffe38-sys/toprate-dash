@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:29:30.453Z",
+ "saved": "2026-11-13T08:29:39.834Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -689,6 +689,24 @@
    "sp": 9.5,
    "fair": 13.51,
    "rating": 83.79
+  },
+  "Pakenham|8|LITTLERICHO": {
+   "on": 1,
+   "t": 1794558576036,
+   "name": "Little Richo",
+   "tab": 6,
+   "sp": 3.5,
+   "fair": 7.74,
+   "rating": 84.48
+  },
+  "Pakenham|8|LIGHTMOVES": {
+   "on": 1,
+   "t": 1794558576906,
+   "name": "Light Moves",
+   "tab": 11,
+   "sp": 5,
+   "fair": 4.43,
+   "rating": 86.18
   }
  }
 }
