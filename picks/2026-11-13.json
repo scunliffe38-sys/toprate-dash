@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:27:28.961Z",
+ "saved": "2026-11-13T08:28:22.961Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -617,6 +617,15 @@
    "sp": 6,
    "fair": 4.84,
    "rating": 86.46
+  },
+  "Pakenham|5|BRASSINPOCKET": {
+   "on": 1,
+   "t": 1794558499736,
+   "name": "Brass In Pocket",
+   "tab": 8,
+   "sp": 6,
+   "fair": 13.85,
+   "rating": 83.2
   }
  }
 }
