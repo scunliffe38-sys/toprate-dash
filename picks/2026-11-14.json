@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:11.002Z",
+ "saved": "2026-11-13T23:36:19.205Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -109,6 +109,33 @@
    "sp": 9,
    "fair": 8.15,
    "rating": 86.08
+  },
+  "Sandown|5|MAGNASENTENTIA": {
+   "on": 1,
+   "t": 1794612974358,
+   "name": "Magna Sententia",
+   "tab": 7,
+   "sp": 4.4,
+   "fair": 8.8,
+   "rating": 85.87
+  },
+  "Sandown|5|HARRYLIME": {
+   "on": 1,
+   "t": 1794612975222,
+   "name": "Harry Lime",
+   "tab": 4,
+   "sp": 6,
+   "fair": 8.71,
+   "rating": 85.89
+  },
+  "Sandown|5|FASTFREDDIE": {
+   "on": 1,
+   "t": 1794612976055,
+   "name": "Fast Freddie",
+   "tab": 5,
+   "sp": 12,
+   "fair": 8.54,
+   "rating": 85.95
   }
  }
 }
