@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:23:11.290Z",
+ "saved": "2026-11-13T08:23:21.326Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -586,6 +586,15 @@
    "sp": 1.85,
    "fair": 2.27,
    "rating": 88.63
+  },
+  "Canterbury|8|KUJENGA": {
+   "on": 1,
+   "t": 1794558198467,
+   "name": "Kujenga",
+   "tab": 3,
+   "sp": 4,
+   "fair": 7.31,
+   "rating": 84.36
   }
  }
 }
