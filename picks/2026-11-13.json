@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:41.038Z",
+ "saved": "2026-11-13T06:24:44.084Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -487,6 +487,15 @@
    "sp": 4.4,
    "fair": 6.09,
    "rating": 76.58
+  },
+  "Sunshine Coast|4|MISHANIVISION": {
+   "on": 1,
+   "t": 1794551081205,
+   "name": "Mishani Vision",
+   "tab": 12,
+   "sp": 2.7,
+   "fair": 6.67,
+   "rating": 76.36
   }
  }
 }
