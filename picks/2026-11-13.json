@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:21:32.784Z",
+ "saved": "2026-11-13T08:21:39.633Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -505,6 +505,15 @@
    "sp": 4,
    "fair": 3.45,
    "rating": 87.97
+  },
+  "Canterbury|5|MEME": {
+   "on": 1,
+   "t": 1794558096758,
+   "name": "Me Me",
+   "tab": 8,
+   "sp": 4,
+   "fair": 5.53,
+   "rating": 86.18
   }
  }
 }
