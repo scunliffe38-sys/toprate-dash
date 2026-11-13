@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:22:57.461Z",
+ "saved": "2026-11-13T06:23:03.905Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -361,6 +361,15 @@
    "sp": 11,
    "fair": 5.11,
    "rating": 74.99
+  },
+  "Pakenham|3|HEAVYISTHEHEAD": {
+   "on": 1,
+   "t": 1794550981013,
+   "name": "Heavy Is The Head",
+   "tab": 6,
+   "sp": 6,
+   "fair": 8.67,
+   "rating": 73.33
   }
  }
 }
