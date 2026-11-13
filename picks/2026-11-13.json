@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:22:21.999Z",
+ "saved": "2026-11-13T06:22:28.803Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -307,6 +307,15 @@
    "sp": 2,
    "fair": 2.54,
    "rating": 75.23
+  },
+  "Pakenham|1|AMBITIONINBLOOM": {
+   "on": 1,
+   "t": 1794550945897,
+   "name": "Ambition In Bloom",
+   "tab": 7,
+   "sp": 3.9,
+   "fair": 3.73,
+   "rating": 74
   }
  }
 }
