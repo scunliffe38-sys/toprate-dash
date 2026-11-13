@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:15.194Z",
+ "saved": "2026-11-13T06:24:20.309Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -433,6 +433,15 @@
    "sp": 1.5,
    "fair": 2.2,
    "rating": 74.96
+  },
+  "Sunshine Coast|2|TILLYSLASTWISH": {
+   "on": 1,
+   "t": 1794551057424,
+   "name": "Tillys Last Wish",
+   "tab": 15,
+   "sp": 3.1,
+   "fair": 3.35,
+   "rating": 74
   }
  }
 }
