@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-13",
+ "saved": "2026-11-13T01:56:28.034Z",
+ "picks": {
+  "Geelong|2|CELESTIALBLUE": {
+   "on": 1,
+   "t": 1794534984376,
+   "name": "Celestial Blue",
+   "tab": 2,
+   "sp": 3.1,
+   "fair": 2.87,
+   "rating": 74.97
+  },
+  "Geelong|2|RESONANT": {
+   "on": 1,
+   "t": 1794534985508,
+   "name": "Resonant",
+   "tab": 5,
+   "sp": 2.4,
+   "fair": 3.57,
+   "rating": 74.12
+  }
+ }
+}
