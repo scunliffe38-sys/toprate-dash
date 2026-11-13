@@ -1,31 +1,31 @@
 {
- "started": "2026-11-13T18:49:24",
+ "started": "2026-11-13T19:57:25",
  "dates": [
   "2026-11-13",
   "2026-11-14",
   "2026-11-15",
   "2026-11-16"
  ],
- "reason": "Rockhampton scratched R7 #12",
+ "reason": "Pakenham Good 4 -> Soft 5; Pakenham scratched R6 #3",
  "status": "ok",
  "acceptors": 875,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-16",
  "card_source": "toprate",
  "extract": "2026-11-12T21:23:55+00:00",
- "finished": "2026-11-13T19:05:19",
+ "finished": "2026-11-13T20:14:47",
  "going": {
   "Canterbury": "Good 4",
-  "Pakenham": "Good 4",
+  "Pakenham": "Soft 5",
   "Sunshine Coast": "Good 4",
-  "Rockhampton": "Good 4",
   "Albany": "Good 4",
   "Geelong": "Good 4",
   "Gundagai": "Good 4",
   "Ballina": "Soft 6",
+  "Rockhampton": "Good 4",
   "Bordertown": "Soft 6"
  },
- "scratchings": 208,
+ "scratchings": 209,
  "dashboard": "toprate_week_v2_2026-11-13.html",
- "fingerprint": "b6e2619d7bca"
+ "fingerprint": "f45d6bf7c579"
 }
