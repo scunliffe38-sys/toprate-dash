@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:44.084Z",
+ "saved": "2026-11-13T08:21:32.784Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -496,6 +496,15 @@
    "sp": 2.7,
    "fair": 6.67,
    "rating": 76.36
+  },
+  "Canterbury|5|VALOROUSPOWER": {
+   "on": 1,
+   "t": 1794558090257,
+   "name": "Valorous Power",
+   "tab": 2,
+   "sp": 4,
+   "fair": 3.45,
+   "rating": 87.97
   }
  }
 }
