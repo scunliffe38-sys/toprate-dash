@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:20.309Z",
+ "saved": "2026-11-13T06:24:28.392Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -442,6 +442,24 @@
    "sp": 3.1,
    "fair": 3.35,
    "rating": 74
+  },
+  "Sunshine Coast|3|BAUHINIANPRAYERS": {
+   "on": 1,
+   "t": 1794551064361,
+   "name": "Bauhinian Prayers",
+   "tab": 2,
+   "sp": 2.6,
+   "fair": 3.53,
+   "rating": 68.39
+  },
+  "Sunshine Coast|3|BURNTENDS": {
+   "on": 1,
+   "t": 1794551065318,
+   "name": "Burnt Ends",
+   "tab": 13,
+   "sp": 3.9,
+   "fair": 3.65,
+   "rating": 68.3
   }
  }
 }
