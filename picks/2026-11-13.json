@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T04:12:51.563Z",
+ "saved": "2026-11-13T06:19:42.132Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -190,6 +190,15 @@
    "sp": 3,
    "fair": 7.8,
    "rating": 81.1
+  },
+  "Canterbury|1|WATERCITY": {
+   "on": 1,
+   "t": 1794550779586,
+   "name": "Water City",
+   "tab": 4,
+   "sp": 1.65,
+   "fair": 2.17,
+   "rating": 76.32
   }
  }
 }
