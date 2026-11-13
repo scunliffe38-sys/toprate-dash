@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:29:14.791Z",
+ "saved": "2026-11-13T08:29:22.664Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -671,6 +671,15 @@
    "sp": 4.4,
    "fair": 5.94,
    "rating": 86.25
+  },
+  "Pakenham|7|SUSSEXDUCHESS": {
+   "on": 1,
+   "t": 1794558559788,
+   "name": "Sussex Duchess",
+   "tab": 8,
+   "sp": 11,
+   "fair": 10.98,
+   "rating": 84.42
   }
  }
 }
