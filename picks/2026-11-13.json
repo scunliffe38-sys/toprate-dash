@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T04:10:38.135Z",
+ "saved": "2026-11-13T04:10:48.749Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -172,6 +172,15 @@
    "sp": 3,
    "fair": 5.24,
    "rating": 83.44
+  },
+  "Geelong|9|SEAPOEM": {
+   "on": 1,
+   "t": 1794543045869,
+   "name": "Sea Poem",
+   "tab": 3,
+   "sp": 5,
+   "fair": 4.08,
+   "rating": 83.2
   }
  }
 }
