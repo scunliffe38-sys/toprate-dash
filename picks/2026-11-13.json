@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:22:39.133Z",
+ "saved": "2026-11-13T06:22:57.461Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -343,6 +343,24 @@
    "sp": 8,
    "fair": 6.64,
    "rating": 72.06
+  },
+  "Pakenham|3|KOKESHI": {
+   "on": 1,
+   "t": 1794550973516,
+   "name": "Kokeshi",
+   "tab": 9,
+   "sp": 4.2,
+   "fair": 3.88,
+   "rating": 75.72
+  },
+  "Pakenham|3|SMARTSTEP": {
+   "on": 1,
+   "t": 1794550974553,
+   "name": "Smart Step",
+   "tab": 4,
+   "sp": 11,
+   "fair": 5.11,
+   "rating": 74.99
   }
  }
 }
