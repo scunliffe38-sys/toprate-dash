@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T04:11:17.104Z",
+ "saved": "2026-11-13T04:12:43.832Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -138,13 +138,8 @@
    "rating": 86.97
   },
   "Geelong|7|SMALLTOWNHERO": {
-   "on": 1,
-   "t": 1794543023457,
-   "name": "Small Town Hero",
-   "tab": 7,
-   "sp": 5,
-   "fair": 8.79,
-   "rating": 82.76
+   "on": 0,
+   "t": 1794543160749
   },
   "Geelong|7|CARRIEDO": {
    "on": 1,
