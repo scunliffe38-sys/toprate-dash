@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:34:23.870Z",
+ "saved": "2026-11-13T23:34:31.153Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -10,6 +10,24 @@
    "sp": 2,
    "fair": 2.91,
    "rating": 95.75
+  },
+  "Sandown|3|OAKBEACH": {
+   "on": 1,
+   "t": 1794612865849,
+   "name": "Oak Beach",
+   "tab": 9,
+   "sp": 13,
+   "fair": 7.76,
+   "rating": 92.47
+  },
+  "Sandown|3|PORTER": {
+   "on": 1,
+   "t": 1794612868096,
+   "name": "Porter",
+   "tab": 5,
+   "sp": 3.2,
+   "fair": 4.7,
+   "rating": 94.11
   }
  }
 }
