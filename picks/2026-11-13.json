@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:28.392Z",
+ "saved": "2026-11-13T06:24:34.905Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -460,6 +460,15 @@
    "sp": 3.9,
    "fair": 3.65,
    "rating": 68.3
+  },
+  "Sunshine Coast|3|BRAVEBENNY": {
+   "on": 1,
+   "t": 1794551072064,
+   "name": "Brave Benny",
+   "tab": 5,
+   "sp": 3,
+   "fair": 5.77,
+   "rating": 66.85
   }
  }
 }
