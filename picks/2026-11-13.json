@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:11.184Z",
+ "saved": "2026-11-13T06:24:15.194Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -424,6 +424,15 @@
    "sp": 5.5,
    "fair": 5.81,
    "rating": 73.41
+  },
+  "Sunshine Coast|2|BUTTERCUP": {
+   "on": 1,
+   "t": 1794551052274,
+   "name": "Buttercup",
+   "tab": 10,
+   "sp": 1.5,
+   "fair": 2.2,
+   "rating": 74.96
   }
  }
 }
