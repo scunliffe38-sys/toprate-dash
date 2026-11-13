@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:23:21.326Z",
+ "saved": "2026-11-13T08:23:29.045Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -595,6 +595,15 @@
    "sp": 4,
    "fair": 7.31,
    "rating": 84.36
+  },
+  "Canterbury|8|HUSHHUSH": {
+   "on": 1,
+   "t": 1794558206179,
+   "name": "Hush Hush",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 6.88,
+   "rating": 84.59
   }
  }
 }
