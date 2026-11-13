@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:23:10.364Z",
+ "saved": "2026-11-13T06:23:18.442Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -379,6 +379,24 @@
    "sp": 2.7,
    "fair": 2.25,
    "rating": 89.32
+  },
+  "Pakenham|4|CELTICPARK": {
+   "on": 1,
+   "t": 1794550994270,
+   "name": "Celtic Park",
+   "tab": 6,
+   "sp": 8,
+   "fair": 6.9,
+   "rating": 85.89
+  },
+  "Pakenham|4|SUPERSTOCK": {
+   "on": 1,
+   "t": 1794550995467,
+   "name": "Superstock",
+   "tab": 3,
+   "sp": 4.4,
+   "fair": 9.82,
+   "rating": 84.77
   }
  }
 }
