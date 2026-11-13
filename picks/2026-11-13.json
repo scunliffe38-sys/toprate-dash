@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:23:32.105Z",
+ "saved": "2026-11-13T08:27:28.961Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -599,6 +599,24 @@
    "sp": 6.5,
    "fair": 6.88,
    "rating": 84.59
+  },
+  "Pakenham|5|GAZERATI": {
+   "on": 1,
+   "t": 1794558443955,
+   "name": "Gazerati",
+   "tab": 2,
+   "sp": 4.4,
+   "fair": 4.12,
+   "rating": 86.94
+  },
+  "Pakenham|5|INATIZZY": {
+   "on": 1,
+   "t": 1794558446429,
+   "name": "In A Tizzy",
+   "tab": 6,
+   "sp": 6,
+   "fair": 4.84,
+   "rating": 86.46
   }
  }
 }
