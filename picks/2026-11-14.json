@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:32.053Z",
+ "saved": "2026-11-13T23:36:37.299Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 2.6,
    "fair": 3.56,
    "rating": 94.86
+  },
+  "Sandown|6|DONTHOPEDO": {
+   "on": 1,
+   "t": 1794612994248,
+   "name": "Don't Hope Do",
+   "tab": 3,
+   "sp": 4.6,
+   "fair": 6.92,
+   "rating": 92.66
   }
  }
 }
