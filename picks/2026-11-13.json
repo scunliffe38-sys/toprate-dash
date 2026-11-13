@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T04:10:06.376Z",
+ "saved": "2026-11-13T04:10:17.123Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -109,6 +109,24 @@
    "sp": 3,
    "fair": 4.77,
    "rating": 81.08
+  },
+  "Geelong|6|GRANDPANEIL": {
+   "on": 1,
+   "t": 1794543012790,
+   "name": "Grandpa Neil",
+   "tab": 5,
+   "sp": 4.8,
+   "fair": 6.78,
+   "rating": 79.87
+  },
+  "Geelong|6|LYGONSTREETLUIGI": {
+   "on": 1,
+   "t": 1794543014265,
+   "name": "Lygon Street Luigi",
+   "tab": 2,
+   "sp": 5,
+   "fair": 6.46,
+   "rating": 80
   }
  }
 }
