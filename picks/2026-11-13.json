@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:33:18.265Z",
+ "saved": "2026-11-13T08:33:25.139Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -779,6 +779,24 @@
    "sp": 4.8,
    "fair": 4.91,
    "rating": 86.98
+  },
+  "Sunshine Coast|7|DIVINEJUSTICE": {
+   "on": 1,
+   "t": 1794558801065,
+   "name": "Divine Justice",
+   "tab": 6,
+   "sp": 3.6,
+   "fair": 5.13,
+   "rating": 86.82
+  },
+  "Sunshine Coast|7|SENESCHAL": {
+   "on": 1,
+   "t": 1794558802270,
+   "name": "Seneschal",
+   "tab": 9,
+   "sp": 6.5,
+   "fair": 8.34,
+   "rating": 85.25
   }
  }
 }
