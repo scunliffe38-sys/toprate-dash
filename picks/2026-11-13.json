@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:23:18.442Z",
+ "saved": "2026-11-13T06:24:01.741Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -397,6 +397,24 @@
    "sp": 4.4,
    "fair": 9.82,
    "rating": 84.77
+  },
+  "Sunshine Coast|1|POUTCHEK": {
+   "on": 1,
+   "t": 1794551038306,
+   "name": "Poutchek",
+   "tab": 6,
+   "sp": 3.1,
+   "fair": 3.78,
+   "rating": 74.83
+  },
+  "Sunshine Coast|1|HIGHLANDKITTY": {
+   "on": 1,
+   "t": 1794551039188,
+   "name": "Highland Kitty",
+   "tab": 5,
+   "sp": 2.5,
+   "fair": 4.06,
+   "rating": 74.61
   }
  }
 }
