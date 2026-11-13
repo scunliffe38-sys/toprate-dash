@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:01.741Z",
+ "saved": "2026-11-13T06:24:11.184Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -415,6 +415,15 @@
    "sp": 2.5,
    "fair": 4.06,
    "rating": 74.61
+  },
+  "Sunshine Coast|1|EVADETHEGAME": {
+   "on": 1,
+   "t": 1794551048264,
+   "name": "Evade The Game",
+   "tab": 4,
+   "sp": 5.5,
+   "fair": 5.81,
+   "rating": 73.41
   }
  }
 }
