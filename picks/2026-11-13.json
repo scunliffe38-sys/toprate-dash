@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:29:39.834Z",
+ "saved": "2026-11-13T08:29:51.520Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -707,6 +707,24 @@
    "sp": 5,
    "fair": 4.43,
    "rating": 86.18
+  },
+  "Pakenham|8|ZOURAIN": {
+   "on": 1,
+   "t": 1794558587662,
+   "name": "Zourain",
+   "tab": 1,
+   "sp": 12,
+   "fair": 14.16,
+   "rating": 82.64
+  },
+  "Pakenham|8|LETITBEEL": {
+   "on": 1,
+   "t": 1794558588666,
+   "name": "Let It Beel",
+   "tab": 8,
+   "sp": 8.5,
+   "fair": 8.55,
+   "rating": 84.16
   }
  }
 }
