@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:19:56.917Z",
+ "saved": "2026-11-13T06:20:00.311Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -208,6 +208,15 @@
    "sp": 5,
    "fair": 7.35,
    "rating": 71.66
+  },
+  "Canterbury|1|FROMMETOYOU": {
+   "on": 1,
+   "t": 1794550797349,
+   "name": "From Me To You",
+   "tab": 2,
+   "sp": 4,
+   "fair": 5.97,
+   "rating": 72.47
   }
  }
 }
