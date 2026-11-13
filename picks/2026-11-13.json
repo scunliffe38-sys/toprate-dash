@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T01:56:28.034Z",
+ "saved": "2026-11-13T01:56:31.973Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 2.4,
    "fair": 3.57,
    "rating": 74.12
+  },
+  "Geelong|2|TIZTHETYCOON": {
+   "on": 1,
+   "t": 1794534988920,
+   "name": "Tiz The Tycoon",
+   "tab": 9,
+   "sp": 6,
+   "fair": 7.26,
+   "rating": 71.59
   }
  }
 }
