@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:21:58.030Z",
+ "saved": "2026-11-13T08:22:08.133Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -532,6 +532,15 @@
    "sp": 8.5,
    "fair": 11.18,
    "rating": 83.58
+  },
+  "Canterbury|6|JUSTAWESOME": {
+   "on": 1,
+   "t": 1794558125314,
+   "name": "Just Awesome",
+   "tab": 4,
+   "sp": 3,
+   "fair": 3.42,
+   "rating": 89.83
   }
  }
 }
