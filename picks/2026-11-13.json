@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T08:29:22.664Z",
+ "saved": "2026-11-13T08:29:30.453Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -680,6 +680,15 @@
    "sp": 11,
    "fair": 10.98,
    "rating": 84.42
+  },
+  "Pakenham|7|SOMEPEOPLECALLME": {
+   "on": 1,
+   "t": 1794558567599,
+   "name": "Some People Callme",
+   "tab": 3,
+   "sp": 9.5,
+   "fair": 13.51,
+   "rating": 83.79
   }
  }
 }
