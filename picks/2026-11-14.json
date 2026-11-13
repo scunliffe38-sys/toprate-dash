@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:37.299Z",
+ "saved": "2026-11-13T23:36:47.486Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -163,6 +163,15 @@
    "sp": 4.6,
    "fair": 6.92,
    "rating": 92.66
+  },
+  "Sandown|6|TENNESSEESPIRIT": {
+   "on": 1,
+   "t": 1794613004304,
+   "name": "Tennessee Spirit",
+   "tab": 10,
+   "sp": 8.5,
+   "fair": 13.92,
+   "rating": 90.41
   }
  }
 }
