@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:35:03.845Z",
+ "saved": "2026-11-13T23:35:53.728Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -64,6 +64,15 @@
    "sp": 4.6,
    "fair": 7.98,
    "rating": 90.78
+  },
+  "Sandown|4|GENEVA": {
+   "on": 1,
+   "t": 1794612950581,
+   "name": "Geneva",
+   "tab": 6,
+   "sp": 3.9,
+   "fair": 4.81,
+   "rating": 92.39
   }
  }
 }
