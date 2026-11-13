@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T01:57:26.150Z",
+ "saved": "2026-11-13T04:10:06.376Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -91,6 +91,24 @@
    "sp": 4.4,
    "fair": 8.06,
    "rating": 77.6
+  },
+  "Geelong|6|POSITIVO": {
+   "on": 1,
+   "t": 1794543002773,
+   "name": "Positivo",
+   "tab": 3,
+   "sp": 5,
+   "fair": 4.02,
+   "rating": 81.63
+  },
+  "Geelong|6|SKYDREAM": {
+   "on": 1,
+   "t": 1794543003852,
+   "name": "Skydream",
+   "tab": 7,
+   "sp": 3,
+   "fair": 4.77,
+   "rating": 81.08
   }
  }
 }
