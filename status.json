@@ -1,25 +1,25 @@
 {
- "started": "2026-11-14T09:24:02",
+ "started": "2026-11-14T08:38:05",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "retry: Fannie Bay Synthetic -> Good; Fannie Bay scratched R2 #11",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T09:43:33",
+ "finished": "2026-11-14T10:21:27",
  "going": {
   "Sandown": "Heavy 8",
   "Newcastle": "Soft 5",
   "Doomben": "Heavy 8",
   "Morphettville": "Soft 6",
-  "Ascot": "Soft 5",
+  "Ascot": "Good 4",
   "Dunkeld": "Soft 7",
   "Illawarra Grange": "Soft 5",
   "Gundagai": "Good 4",
@@ -29,7 +29,7 @@
   "Toowoomba": "Soft 5",
   "Fannie Bay": "Good"
  },
- "scratchings": 319,
+ "scratchings": 320,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "e8bfab754cff"
+ "fingerprint": "d9184e27a3cd"
 }
