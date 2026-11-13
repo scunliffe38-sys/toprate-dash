@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T04:10:17.123Z",
+ "saved": "2026-11-13T04:10:26.305Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -127,6 +127,24 @@
    "sp": 5,
    "fair": 6.46,
    "rating": 80
+  },
+  "Geelong|7|NEZIHA": {
+   "on": 1,
+   "t": 1794543021119,
+   "name": "Neziha",
+   "tab": 6,
+   "sp": 3,
+   "fair": 2.89,
+   "rating": 86.97
+  },
+  "Geelong|7|SMALLTOWNHERO": {
+   "on": 1,
+   "t": 1794543023457,
+   "name": "Small Town Hero",
+   "tab": 7,
+   "sp": 5,
+   "fair": 8.79,
+   "rating": 82.76
   }
  }
 }
