@@ -1,6 +1,6 @@
 {
  "date": "2026-11-13",
- "saved": "2026-11-13T06:24:34.905Z",
+ "saved": "2026-11-13T06:24:41.038Z",
  "picks": {
   "Geelong|2|CELESTIALBLUE": {
    "on": 1,
@@ -469,6 +469,24 @@
    "sp": 3,
    "fair": 5.77,
    "rating": 66.85
+  },
+  "Sunshine Coast|4|BUSKER": {
+   "on": 1,
+   "t": 1794551076209,
+   "name": "Busker",
+   "tab": 9,
+   "sp": 7.5,
+   "fair": 6.52,
+   "rating": 76.38
+  },
+  "Sunshine Coast|4|BENTBRIDGE": {
+   "on": 1,
+   "t": 1794551078146,
+   "name": "Bent Bridge",
+   "tab": 6,
+   "sp": 4.4,
+   "fair": 6.09,
+   "rating": 76.58
   }
  }
 }
