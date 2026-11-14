@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T04:18:24.910Z",
+ "saved": "2026-11-14T04:18:30.027Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -325,6 +325,15 @@
    "sp": 6.5,
    "fair": 10.68,
    "rating": 90.42
+  },
+  "Sandown|7|SEMANTICS": {
+   "on": 1,
+   "t": 1794629906736,
+   "name": "Semantics",
+   "tab": 12,
+   "sp": 12,
+   "fair": 12.13,
+   "rating": 90.04
   }
  }
 }
