@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:17.746Z",
+ "saved": "2026-11-14T02:03:22.868Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -217,6 +217,15 @@
    "sp": 7,
    "fair": 14.42,
    "rating": 86.39
+  },
+  "Doomben|4|DRAWATTENTION": {
+   "on": 1,
+   "t": 1794621799648,
+   "name": "Draw Attention",
+   "tab": 9,
+   "sp": 1.65,
+   "fair": 1.97,
+   "rating": 95.46
   }
  }
 }
