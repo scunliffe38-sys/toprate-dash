@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T04:18:30.027Z",
+ "saved": "2026-11-14T04:20:22.570Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -334,6 +334,24 @@
    "sp": 12,
    "fair": 12.13,
    "rating": 90.04
+  },
+  "Sandown|8|JIMMYSSTAR": {
+   "on": 1,
+   "t": 1794630019536,
+   "name": "Jimmysstar",
+   "tab": 1,
+   "sp": 3.6,
+   "fair": 4.11,
+   "rating": 103.8
+  },
+  "Sandown|8|PERICLES": {
+   "on": 1,
+   "t": 1794630022500,
+   "name": "Pericles",
+   "tab": 2,
+   "sp": 3.8,
+   "fair": 5.65,
+   "rating": 102.7
   }
  }
 }
