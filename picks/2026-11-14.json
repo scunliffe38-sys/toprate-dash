@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-13T23:36:47.486Z",
+ "saved": "2026-11-14T02:03:06.074Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -172,6 +172,33 @@
    "sp": 8.5,
    "fair": 13.92,
    "rating": 90.41
+  },
+  "Doomben|3|TOROSTRIKE": {
+   "on": 1,
+   "t": 1794621780835,
+   "name": "Toro Strike",
+   "tab": 4,
+   "sp": 2.4,
+   "fair": 3.27,
+   "rating": 90.72
+  },
+  "Doomben|3|HEADHUNTER": {
+   "on": 1,
+   "t": 1794621782563,
+   "name": "Headhunter",
+   "tab": 11,
+   "sp": 4.4,
+   "fair": 4.9,
+   "rating": 89.56
+  },
+  "Doomben|3|GIAPPONESE": {
+   "on": 1,
+   "t": 1794621785739,
+   "name": "Giapponese",
+   "tab": 6,
+   "sp": 8.5,
+   "fair": 9.26,
+   "rating": 87.7
   }
  }
 }
