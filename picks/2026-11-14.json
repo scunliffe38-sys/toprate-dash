@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:53.926Z",
+ "saved": "2026-11-14T04:18:24.910Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -298,6 +298,33 @@
    "sp": 14,
    "fair": 9.32,
    "rating": 87.67
+  },
+  "Sandown|7|SEQUINNED": {
+   "on": 1,
+   "t": 1794629900460,
+   "name": "Sequinned",
+   "tab": 8,
+   "sp": 6.5,
+   "fair": 8.16,
+   "rating": 91.19
+  },
+  "Sandown|7|NATURALFLING": {
+   "on": 1,
+   "t": 1794629901597,
+   "name": "Natural Fling",
+   "tab": 2,
+   "sp": 4.4,
+   "fair": 3.41,
+   "rating": 93.75
+  },
+  "Sandown|7|AROUSED": {
+   "on": 1,
+   "t": 1794629904403,
+   "name": "Aroused",
+   "tab": 13,
+   "sp": 6.5,
+   "fair": 10.68,
+   "rating": 90.42
   }
  }
 }
