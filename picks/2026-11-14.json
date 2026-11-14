@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:34.261Z",
+ "saved": "2026-11-14T02:03:39.830Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -244,6 +244,33 @@
    "sp": 26,
    "fair": 23.47,
    "rating": 87.7
+  },
+  "Doomben|5|CARDONETTE": {
+   "on": 1,
+   "t": 1794621814473,
+   "name": "Cardonette",
+   "tab": 9,
+   "sp": 3.6,
+   "fair": 3.36,
+   "rating": 90.13
+  },
+  "Doomben|5|STRADAVARENNA": {
+   "on": 1,
+   "t": 1794621816685,
+   "name": "Strada Varenna",
+   "tab": 11,
+   "sp": 3.6,
+   "fair": 4.49,
+   "rating": 89.19
+  },
+  "Doomben|5|DESANTO": {
+   "on": 1,
+   "t": 1794621819379,
+   "name": "Desanto",
+   "tab": 13,
+   "sp": 4.4,
+   "fair": 5.71,
+   "rating": 88.46
   }
  }
 }
