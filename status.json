@@ -1,28 +1,28 @@
 {
- "started": "2026-11-15T03:09:14",
+ "started": "2026-11-15T09:11:02",
  "dates": [
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "overnight harvest",
+ "reason": "retry: Wellington scratched R3 #2/4, R4 #1, R5 #8/14, R6 #13/14/15/16/17/18, R7 #2/12/13/15; Strathalbyn Soft 6 -> Soft 5; Strathalbyn scratched R3 #5, R4 #10, R5 #12/13; Wyong Goo",
  "status": "ok",
  "acceptors": 846,
- "rider_share": 0.89,
+ "rider_share": 0.98,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
- "extract": "2026-11-14T16:07:52+00:00",
- "finished": "2026-11-15T04:15:19",
+ "extract": "2026-11-14T21:23:56+00:00",
+ "finished": "2026-11-15T09:29:35",
  "going": {
   "Moe": "Good 4",
-  "Donald": "Soft 5",
-  "Wyong": "Good 4",
+  "Donald": "Good 4",
+  "Wyong": "Soft 6",
   "Wellington": "Good 4",
-  "Warwick": "Heavy 10",
-  "Strathalbyn": "Soft 6",
-  "Hobart": "Soft 5"
+  "Strathalbyn": "Soft 5",
+  "Hobart": "Soft 5",
+  "Warwick": "Heavy 10"
  },
- "scratchings": 52,
+ "scratchings": 106,
  "dashboard": "toprate_week_v2_2026-11-15.html",
- "fingerprint": "a6bdfddafd02"
+ "fingerprint": "8688f21006a2"
 }
