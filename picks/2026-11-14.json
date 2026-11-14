@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T04:21:13.886Z",
+ "saved": "2026-11-14T04:21:17.254Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -419,6 +419,15 @@
    "sp": 4.4,
    "fair": 6.25,
    "rating": 97
+  },
+  "Sandown|10|TOMATOTOASTIE": {
+   "on": 1,
+   "t": 1794630074079,
+   "name": "Tomato Toastie",
+   "tab": 11,
+   "sp": 8,
+   "fair": 8.6,
+   "rating": 95.9
   }
  }
 }
