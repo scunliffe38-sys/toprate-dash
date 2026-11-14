@@ -1,19 +1,19 @@
 {
- "started": "2026-11-14T12:32:02",
+ "started": "2026-11-14T12:51:02",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Morphettville Soft 6 -> Soft 5",
+ "reason": "Gundagai Good 4 -> Soft 6",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T12:49:53",
+ "finished": "2026-11-14T13:08:04",
  "going": {
   "Sandown": "Heavy 8",
   "Newcastle": "Good 4",
@@ -30,7 +30,7 @@
   "Fannie Bay": "Good",
   "Sha Tin": "Soft"
  },
- "scratchings": 326,
+ "scratchings": 327,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "69e29ba53611"
+ "fingerprint": "94941997fca4"
 }
