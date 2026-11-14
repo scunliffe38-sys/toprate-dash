@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:39.830Z",
+ "saved": "2026-11-14T02:03:53.926Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -271,6 +271,33 @@
    "sp": 4.4,
    "fair": 5.71,
    "rating": 88.46
+  },
+  "Doomben|6|SMOKEONTHEWATER": {
+   "on": 1,
+   "t": 1794621827324,
+   "name": "Smoke On The Water",
+   "tab": 1,
+   "sp": 4.2,
+   "fair": 3.32,
+   "rating": 90.82
+  },
+  "Doomben|6|DUKEOFCAMDEN": {
+   "on": 1,
+   "t": 1794621829439,
+   "name": "Duke Of Camden",
+   "tab": 5,
+   "sp": 3.1,
+   "fair": 6.09,
+   "rating": 88.96
+  },
+  "Doomben|6|GALPIN": {
+   "on": 1,
+   "t": 1794621833599,
+   "name": "Galpin",
+   "tab": 7,
+   "sp": 14,
+   "fair": 9.32,
+   "rating": 87.67
   }
  }
 }
