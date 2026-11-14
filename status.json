@@ -1,19 +1,19 @@
 {
- "started": "2026-11-14T11:12:50",
+ "started": "2026-11-14T11:33:02",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Ascot scratched R4 #11, R7 #13, R8 #5, R9 #18/19/20",
+ "reason": "Doomben Heavy 8 -> Soft 7; Newcastle Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T11:30:23",
+ "finished": "2026-11-14T11:50:51",
  "going": {
   "Sandown": "Heavy 8",
   "Newcastle": "Good 4",
@@ -31,5 +31,5 @@
  },
  "scratchings": 326,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "f898c4fad767"
+ "fingerprint": "249fa307e0a7"
 }
