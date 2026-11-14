@@ -1,19 +1,19 @@
 {
- "started": "2026-11-14T15:20:02",
+ "started": "2026-11-14T15:38:02",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Gold Coast Poly scratched R2 #6",
+ "reason": "Gundagai scratched R5 #4, R6 #6; Morphettville Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T15:37:17",
+ "finished": "2026-11-14T15:55:40",
  "going": {
   "Sandown": "Soft 7",
   "Newcastle": "Good 4",
@@ -32,5 +32,5 @@
  },
  "scratchings": 332,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "5697bda449ea"
+ "fingerprint": "5a9ce2c62c5f"
 }
