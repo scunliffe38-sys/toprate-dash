@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T04:20:22.570Z",
+ "saved": "2026-11-14T04:20:34.859Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -352,6 +352,19 @@
    "sp": 3.8,
    "fair": 5.65,
    "rating": 102.7
+  },
+  "Sandown|8|SHADHAVAR": {
+   "on": 0,
+   "t": 1794630025621
+  },
+  "Sandown|8|SPLASHBACK": {
+   "on": 1,
+   "t": 1794630027644,
+   "name": "Splash Back",
+   "tab": 7,
+   "sp": 8.5,
+   "fair": 10.94,
+   "rating": 100.5
   }
  }
 }
