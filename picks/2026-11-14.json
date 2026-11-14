@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:22.868Z",
+ "saved": "2026-11-14T02:03:27.193Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -226,6 +226,15 @@
    "sp": 1.65,
    "fair": 1.97,
    "rating": 95.46
+  },
+  "Doomben|4|CIGARMAN": {
+   "on": 1,
+   "t": 1794621803948,
+   "name": "Cigar Man",
+   "tab": 2,
+   "sp": 10,
+   "fair": 7.84,
+   "rating": 91.12
   }
  }
 }
