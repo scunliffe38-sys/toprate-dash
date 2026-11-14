@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:06.074Z",
+ "saved": "2026-11-14T02:03:13.433Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -199,6 +199,15 @@
    "sp": 8.5,
    "fair": 9.26,
    "rating": 87.7
+  },
+  "Doomben|3|DONTCHATHINK": {
+   "on": 1,
+   "t": 1794621790040,
+   "name": "Don'tcha Think",
+   "tab": 8,
+   "sp": 10,
+   "fair": 15.67,
+   "rating": 86.15
   }
  }
 }
