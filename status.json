@@ -1,19 +1,19 @@
 {
- "started": "2026-11-14T14:44:02",
+ "started": "2026-11-14T15:02:02",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Doomben Soft 7 -> Soft 6",
+ "reason": "Sandown Heavy 8 -> Soft 7; Gundagai scratched R4 #10; Dunkeld Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T15:00:55",
+ "finished": "2026-11-14T15:18:55",
  "going": {
   "Sandown": "Soft 7",
   "Newcastle": "Good 4",
@@ -30,7 +30,7 @@
   "Fannie Bay": "Good",
   "Sha Tin": "Soft"
  },
- "scratchings": 329,
+ "scratchings": 330,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "f72275823290"
+ "fingerprint": "0a07d28c103d"
 }
