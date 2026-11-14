@@ -1,26 +1,26 @@
 {
- "started": "2026-11-14T14:26:02",
+ "started": "2026-11-14T14:44:02",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Ipswich Heavy 8 -> Soft 7",
+ "reason": "Doomben Soft 7 -> Soft 6",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T14:43:15",
+ "finished": "2026-11-14T15:00:55",
  "going": {
-  "Sandown": "Heavy 8",
+  "Sandown": "Soft 7",
   "Newcastle": "Good 4",
   "Doomben": "Soft 6",
   "Morphettville": "Soft 5",
   "Ascot": "Good 4",
-  "Dunkeld": "Soft 6",
+  "Dunkeld": "Soft 5",
   "Illawarra Grange": "Soft 5",
   "Gundagai": "Heavy 8",
   "Orange": "Good 4",
@@ -30,7 +30,7 @@
   "Fannie Bay": "Good",
   "Sha Tin": "Soft"
  },
- "scratchings": 328,
+ "scratchings": 329,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "c8976996936d"
+ "fingerprint": "f72275823290"
 }
