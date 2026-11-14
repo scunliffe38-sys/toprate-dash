@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T04:20:59.651Z",
+ "saved": "2026-11-14T04:21:07.009Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -392,6 +392,15 @@
    "sp": 7.5,
    "fair": 9.85,
    "rating": 98
+  },
+  "Sandown|9|TORRANZINO": {
+   "on": 1,
+   "t": 1794630063526,
+   "name": "Torranzino",
+   "tab": 8,
+   "sp": 34,
+   "fair": 53.27,
+   "rating": 93.1
   }
  }
 }
