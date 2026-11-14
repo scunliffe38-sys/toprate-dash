@@ -1,19 +1,19 @@
 {
- "started": "2026-11-14T13:27:02",
+ "started": "2026-11-14T14:08:28",
  "dates": [
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Dunkeld Soft 7 -> Soft 6; Morphettville scratched R1 #12",
+ "reason": "Gundagai Soft 6 -> Heavy 8",
  "status": "ok",
  "acceptors": 1671,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-13T21:36:45+00:00",
- "finished": "2026-11-14T13:44:18",
+ "finished": "2026-11-14T14:25:29",
  "going": {
   "Sandown": "Heavy 8",
   "Newcastle": "Good 4",
@@ -22,15 +22,15 @@
   "Ascot": "Good 4",
   "Dunkeld": "Soft 6",
   "Illawarra Grange": "Soft 5",
-  "Gundagai": "Soft 6",
+  "Gundagai": "Heavy 8",
   "Orange": "Good 4",
   "Gold Coast Poly": "Synthetic",
-  "Ipswich": "Heavy 8",
+  "Ipswich": "Soft 7",
   "Toowoomba": "Soft 5",
   "Fannie Bay": "Good",
   "Sha Tin": "Soft"
  },
  "scratchings": 328,
  "dashboard": "toprate_week_v2_2026-11-14.html",
- "fingerprint": "8a6df487d83d"
+ "fingerprint": "019435cf2fd5"
 }
