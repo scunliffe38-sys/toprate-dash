@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:27.193Z",
+ "saved": "2026-11-14T02:03:34.261Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -235,6 +235,15 @@
    "sp": 10,
    "fair": 7.84,
    "rating": 91.12
+  },
+  "Doomben|4|SAMURAIWARRIOR": {
+   "on": 1,
+   "t": 1794621810405,
+   "name": "Samurai Warrior",
+   "tab": 6,
+   "sp": 26,
+   "fair": 23.47,
+   "rating": 87.7
   }
  }
 }
