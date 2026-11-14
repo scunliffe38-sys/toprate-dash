@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T04:21:07.009Z",
+ "saved": "2026-11-14T04:21:13.886Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -401,6 +401,24 @@
    "sp": 34,
    "fair": 53.27,
    "rating": 93.1
+  },
+  "Sandown|10|CONCORDCONNIE": {
+   "on": 1,
+   "t": 1794630068613,
+   "name": "Concord Connie",
+   "tab": 4,
+   "sp": 1.6,
+   "fair": 2.02,
+   "rating": 100.8
+  },
+  "Sandown|10|SUPERFABULISTIC": {
+   "on": 1,
+   "t": 1794630070625,
+   "name": "Superfabulistic",
+   "tab": 12,
+   "sp": 4.4,
+   "fair": 6.25,
+   "rating": 97
   }
  }
 }
