@@ -1,6 +1,6 @@
 {
  "date": "2026-11-14",
- "saved": "2026-11-14T02:03:13.433Z",
+ "saved": "2026-11-14T02:03:17.746Z",
  "picks": {
   "Sandown|3|FUNDAMENTALNATURE": {
    "on": 1,
@@ -208,6 +208,15 @@
    "sp": 10,
    "fair": 15.67,
    "rating": 86.15
+  },
+  "Doomben|3|TEMPRANILLO": {
+   "on": 1,
+   "t": 1794621794409,
+   "name": "Tempranillo",
+   "tab": 15,
+   "sp": 7,
+   "fair": 14.42,
+   "rating": 86.39
   }
  }
 }
