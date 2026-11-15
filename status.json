@@ -1,29 +1,29 @@
 {
- "started": "2026-11-15T14:16:22",
+ "started": "2026-11-15T14:42:23",
  "dates": [
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Hobart Soft 5 -> Good 4",
+ "reason": "Wyong Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 846,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-14T21:23:56+00:00",
- "finished": "2026-11-15T14:32:58",
+ "finished": "2026-11-15T14:59:02",
  "going": {
   "Moe": "Soft 5",
   "Donald": "Good 4",
-  "Wyong": "Soft 6",
+  "Wyong": "Soft 5",
   "Wellington": "Good 3",
   "Strathalbyn": "Soft 5",
   "Geraldton": "Good 4",
   "Hobart": "Good 4",
   "Warwick": "Heavy 10"
  },
- "scratchings": 111,
+ "scratchings": 112,
  "dashboard": "toprate_week_v2_2026-11-15.html",
- "fingerprint": "2f3785b04037"
+ "fingerprint": "a43455f4c13d"
 }
