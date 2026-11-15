@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:07:05.377Z",
+ "saved": "2026-11-15T07:07:17.048Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -55,6 +55,15 @@
    "sp": 11,
    "fair": 10,
    "rating": 82.45
+  },
+  "Geraldton|6|SCURGEOFTHEWEST": {
+   "on": 1,
+   "t": 1794726433900,
+   "name": "Scurgeofthewest",
+   "tab": 1,
+   "sp": 8.5,
+   "fair": 12.44,
+   "rating": 81.76
   }
  }
 }
