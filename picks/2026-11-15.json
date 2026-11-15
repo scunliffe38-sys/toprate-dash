@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:06:21.960Z",
+ "saved": "2026-11-15T07:06:29.028Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -28,6 +28,15 @@
    "sp": 5.5,
    "fair": 10.57,
    "rating": 77.88
+  },
+  "Geraldton|5|VIVAROK": {
+   "on": 1,
+   "t": 1794726385734,
+   "name": "Vivarok",
+   "tab": 2,
+   "sp": 8.5,
+   "fair": 10.82,
+   "rating": 77.78
   }
  }
 }
