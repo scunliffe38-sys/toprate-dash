@@ -1,18 +1,18 @@
 {
- "started": "2026-11-15T11:55:22",
+ "started": "2026-11-15T12:54:23",
  "dates": [
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Wellington Good 4 -> Good 3",
+ "reason": "Wellington scratched R1 #5",
  "status": "ok",
  "acceptors": 846,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-14T21:23:56+00:00",
- "finished": "2026-11-15T12:11:39",
+ "finished": "2026-11-15T13:11:06",
  "going": {
   "Moe": "Good 4",
   "Donald": "Good 4",
@@ -23,7 +23,7 @@
   "Hobart": "Soft 5",
   "Warwick": "Heavy 10"
  },
- "scratchings": 110,
+ "scratchings": 111,
  "dashboard": "toprate_week_v2_2026-11-15.html",
- "fingerprint": "bdc86bb102cc"
+ "fingerprint": "4707f8bc082a"
 }
