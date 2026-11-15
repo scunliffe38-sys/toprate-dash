@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:06:29.028Z",
+ "saved": "2026-11-15T07:06:36.292Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": 8.5,
    "fair": 10.82,
    "rating": 77.78
+  },
+  "Geraldton|6|INSITU": {
+   "on": 1,
+   "t": 1794726393074,
+   "name": "In Situ",
+   "tab": 4,
+   "sp": 1.8,
+   "fair": 2.24,
+   "rating": 87.27
   }
  }
 }
