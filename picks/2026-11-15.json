@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:06:36.292Z",
+ "saved": "2026-11-15T07:07:05.377Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 1.8,
    "fair": 2.24,
    "rating": 87.27
+  },
+  "Geraldton|6|GILES": {
+   "on": 1,
+   "t": 1794726422227,
+   "name": "Giles",
+   "tab": 6,
+   "sp": 11,
+   "fair": 10,
+   "rating": 82.45
   }
  }
 }
