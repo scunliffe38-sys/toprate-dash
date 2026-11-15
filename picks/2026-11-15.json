@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:07:29.233Z",
+ "saved": "2026-11-15T07:07:33.239Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -91,6 +91,15 @@
    "sp": 11,
    "fair": 9.66,
    "rating": 87.66
+  },
+  "Geraldton|8|GYPSYRHYME": {
+   "on": 1,
+   "t": 1794726450035,
+   "name": "Gypsy Rhyme",
+   "tab": 2,
+   "sp": 2.4,
+   "fair": 2.16,
+   "rating": 80.72
   }
  }
 }
