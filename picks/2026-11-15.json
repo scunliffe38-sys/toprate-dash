@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:07:43.106Z",
+ "saved": "2026-11-15T07:08:04.572Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -109,6 +109,15 @@
    "sp": 3.8,
    "fair": 6.07,
    "rating": 77.41
+  },
+  "Geraldton|8|SATINBOW": {
+   "on": 1,
+   "t": 1794726481358,
+   "name": "Satin Bow",
+   "tab": 10,
+   "sp": 7.5,
+   "fair": 12.13,
+   "rating": 75.32
   }
  }
 }
