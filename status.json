@@ -1,18 +1,18 @@
 {
- "started": "2026-11-15T15:49:02",
+ "started": "2026-11-15T16:06:02",
  "dates": [
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Moe Soft 5 -> Soft 6; Moe scratched R8 #4; Moe scratched R9 #3",
+ "reason": "Moe scratched R8 #6; Hobart scratched R6 #7",
  "status": "ok",
  "acceptors": 846,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-14T21:23:56+00:00",
- "finished": "2026-11-15T16:05:38",
+ "finished": "2026-11-15T16:22:52",
  "going": {
   "Moe": "Soft 6",
   "Donald": "Good 4",
@@ -23,7 +23,7 @@
   "Hobart": "Good 4",
   "Warwick": "Heavy 10"
  },
- "scratchings": 117,
+ "scratchings": 119,
  "dashboard": "toprate_week_v2_2026-11-15.html",
- "fingerprint": "b6921ef6087e"
+ "fingerprint": "d2b431beef1f"
 }
