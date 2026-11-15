@@ -1,20 +1,20 @@
 {
- "started": "2026-11-15T15:00:02",
+ "started": "2026-11-15T15:31:22",
  "dates": [
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Geraldton scratched R8 #14",
+ "reason": "Moe scratched R7 #1",
  "status": "ok",
  "acceptors": 846,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-14T21:23:56+00:00",
- "finished": "2026-11-15T15:16:42",
+ "finished": "2026-11-15T15:48:10",
  "going": {
-  "Moe": "Soft 5",
+  "Moe": "Soft 6",
   "Donald": "Good 4",
   "Wyong": "Soft 5",
   "Wellington": "Good 3",
@@ -23,7 +23,7 @@
   "Hobart": "Good 4",
   "Warwick": "Heavy 10"
  },
- "scratchings": 112,
+ "scratchings": 115,
  "dashboard": "toprate_week_v2_2026-11-15.html",
- "fingerprint": "3251ffdf7d06"
+ "fingerprint": "b3ac63932060"
 }
