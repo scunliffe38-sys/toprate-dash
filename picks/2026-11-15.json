@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:06:11.015Z",
+ "saved": "2026-11-15T07:06:21.960Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 4.4,
    "fair": 6.83,
    "rating": 79.15
+  },
+  "Geraldton|5|IHTSAKING": {
+   "on": 1,
+   "t": 1794726378401,
+   "name": "Ihtsaking",
+   "tab": 7,
+   "sp": 5.5,
+   "fair": 10.57,
+   "rating": 77.88
   }
  }
 }
