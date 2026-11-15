@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:07:33.239Z",
+ "saved": "2026-11-15T07:07:43.106Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -100,6 +100,15 @@
    "sp": 2.4,
    "fair": 2.16,
    "rating": 80.72
+  },
+  "Geraldton|8|CATCHCARTER": {
+   "on": 1,
+   "t": 1794726459897,
+   "name": "Catch Carter",
+   "tab": 1,
+   "sp": 3.8,
+   "fair": 6.07,
+   "rating": 77.41
   }
  }
 }
