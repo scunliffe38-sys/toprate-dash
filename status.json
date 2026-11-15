@@ -1,20 +1,20 @@
 {
- "started": "2026-11-15T12:54:23",
+ "started": "2026-11-15T13:52:22",
  "dates": [
   "2026-11-15",
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Wellington scratched R1 #5",
+ "reason": "Moe Good 4 -> Soft 5",
  "status": "ok",
  "acceptors": 846,
  "rider_share": 0.98,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-14T21:23:56+00:00",
- "finished": "2026-11-15T13:11:06",
+ "finished": "2026-11-15T14:08:44",
  "going": {
-  "Moe": "Good 4",
+  "Moe": "Soft 5",
   "Donald": "Good 4",
   "Wyong": "Soft 6",
   "Wellington": "Good 3",
@@ -25,5 +25,5 @@
  },
  "scratchings": 111,
  "dashboard": "toprate_week_v2_2026-11-15.html",
- "fingerprint": "4707f8bc082a"
+ "fingerprint": "4ed1ce7ba0a0"
 }
