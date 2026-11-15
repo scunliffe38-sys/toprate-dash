@@ -1,6 +1,6 @@
 {
  "date": "2026-11-15",
- "saved": "2026-11-15T07:07:23.910Z",
+ "saved": "2026-11-15T07:07:29.233Z",
  "picks": {
   "Geraldton|5|FORBIDDENAPPLE": {
    "on": 1,
@@ -82,6 +82,15 @@
    "sp": 5.5,
    "fair": 5.49,
    "rating": 89.31
+  },
+  "Geraldton|7|SOUTHLAND": {
+   "on": 1,
+   "t": 1794726445978,
+   "name": "Southland",
+   "tab": 13,
+   "sp": 11,
+   "fair": 9.66,
+   "rating": 87.66
   }
  }
 }
