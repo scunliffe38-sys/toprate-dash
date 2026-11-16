@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:12:54.119Z",
+ "saved": "2026-11-16T04:12:58.746Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -68,6 +68,15 @@
   "Wangaratta|5|SALINASPECIAL": {
    "on": 0,
    "t": 1794802370834
+  },
+  "Wangaratta|5|THECELLIST": {
+   "on": 1,
+   "t": 1794802375570,
+   "name": "The Cellist",
+   "tab": 10,
+   "sp": 7.5,
+   "fair": 9.45,
+   "rating": 74.98
   }
  }
 }
