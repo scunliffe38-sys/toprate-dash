@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T03:51:02.396Z",
+ "saved": "2026-11-16T04:12:42.225Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -46,6 +46,24 @@
    "sp": 9,
    "fair": 7.63,
    "rating": 75.63
+  },
+  "Wangaratta|5|IMPOSINGTALLULAH": {
+   "on": 1,
+   "t": 1794802357304,
+   "name": "Imposing Tallulah",
+   "tab": 14,
+   "sp": 18,
+   "fair": 28.84,
+   "rating": 71.6
+  },
+  "Wangaratta|5|GRAHAM": {
+   "on": 1,
+   "t": 1794802359086,
+   "name": "Graham",
+   "tab": 4,
+   "sp": 34,
+   "fair": 25.93,
+   "rating": 71.91
   }
  }
 }
