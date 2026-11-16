@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:00:04.776Z",
+ "saved": "2026-11-16T13:00:29.277Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 3.8,
    "fair": 8.6,
    "rating": 75.57
+  },
+  "Kyneton|6|WINTERNIGHTS": {
+   "on": 1,
+   "t": 1794834025955,
+   "name": "Winter Nights",
+   "tab": 2,
+   "sp": 2.15,
+   "fair": 2.62,
+   "rating": 79.96
   }
  }
 }
