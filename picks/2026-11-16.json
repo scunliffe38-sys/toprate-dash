@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:14:13.409Z",
+ "saved": "2026-11-16T04:14:22.922Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -113,6 +113,15 @@
    "sp": 3.2,
    "fair": 5.46,
    "rating": 75.15
+  },
+  "Wangaratta|7|ELENAMONTERO": {
+   "on": 1,
+   "t": 1794802459469,
+   "name": "Elena Montero",
+   "tab": 5,
+   "sp": 8.5,
+   "fair": 7.95,
+   "rating": 74
   }
  }
 }
