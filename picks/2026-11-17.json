@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:59:51.068Z",
+ "saved": "2026-11-16T13:00:04.776Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -136,6 +136,15 @@
    "sp": 3.7,
    "fair": 4.88,
    "rating": 77.28
+  },
+  "Kyneton|5|ROYALHERITAGE": {
+   "on": 1,
+   "t": 1794834001651,
+   "name": "Royal Heritage",
+   "tab": 11,
+   "sp": 3.8,
+   "fair": 8.6,
+   "rating": 75.57
   }
  }
 }
