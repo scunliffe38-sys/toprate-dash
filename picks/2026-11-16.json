@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:14:33.218Z",
+ "saved": "2026-11-16T04:14:37.975Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -140,6 +140,24 @@
    "sp": 3.6,
    "fair": 6.54,
    "rating": 78.38
+  },
+  "Wangaratta|8|HELLBERG": {
+   "on": 1,
+   "t": 1794802474773,
+   "name": "Hellberg",
+   "tab": 6,
+   "sp": 8,
+   "fair": 10.17,
+   "rating": 77.05
+  },
+  "Wangaratta|8|PRINCESSGEISHA": {
+   "on": 1,
+   "t": 1794802477457,
+   "name": "Princess Geisha",
+   "tab": 11,
+   "sp": 6,
+   "fair": 6.91,
+   "rating": 78.29
   }
  }
 }
