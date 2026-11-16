@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:56:57.222Z",
+ "saved": "2026-11-16T12:57:12.582Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -73,6 +73,15 @@
    "sp": 21,
    "fair": 19.85,
    "rating": 67.78
+  },
+  "Kyneton|3|BLUELIGHTDISCO": {
+   "on": 1,
+   "t": 1794833829528,
+   "name": "Blue Light Disco",
+   "tab": 1,
+   "sp": 1.85,
+   "fair": 1.98,
+   "rating": 78.47
   }
  }
 }
