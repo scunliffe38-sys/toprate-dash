@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:56:03.762Z",
+ "saved": "2026-11-16T12:56:57.222Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -64,6 +64,15 @@
    "sp": 5.5,
    "fair": 8.63,
    "rating": 70.36
+  },
+  "Kyneton|2|DEARHEART": {
+   "on": 1,
+   "t": 1794833813945,
+   "name": "Dear Heart",
+   "tab": 3,
+   "sp": 21,
+   "fair": 19.85,
+   "rating": 67.78
   }
  }
 }
