@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:01:15.579Z",
+ "saved": "2026-11-16T13:01:30.575Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -172,6 +172,15 @@
    "sp": 15,
    "fair": 16.62,
    "rating": 74.46
+  },
+  "Kyneton|7|MANCHEGO": {
+   "on": 1,
+   "t": 1794834087388,
+   "name": "Manchego",
+   "tab": 4,
+   "sp": null,
+   "fair": 6.87,
+   "rating": 77.64
   }
  }
 }
