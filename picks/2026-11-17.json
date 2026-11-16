@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:02:10.155Z",
+ "saved": "2026-11-16T13:02:27.095Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -190,6 +190,15 @@
    "sp": 9.5,
    "fair": 9.6,
    "rating": 76.69
+  },
+  "Kyneton|7|HOTSPURREALE": {
+   "on": 1,
+   "t": 1794834143915,
+   "name": "Hotspur Reale",
+   "tab": 3,
+   "sp": 4.2,
+   "fair": 7.11,
+   "rating": 77.56
   }
  }
 }
