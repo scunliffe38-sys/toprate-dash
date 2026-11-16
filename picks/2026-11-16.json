@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:14:06.366Z",
+ "saved": "2026-11-16T04:14:13.409Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -104,6 +104,15 @@
    "sp": 11,
    "fair": 23.01,
    "rating": 70.8
+  },
+  "Wangaratta|7|ROYALTURF": {
+   "on": 1,
+   "t": 1794802450252,
+   "name": "Royal Turf",
+   "tab": 10,
+   "sp": 3.2,
+   "fair": 5.46,
+   "rating": 75.15
   }
  }
 }
