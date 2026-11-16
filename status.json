@@ -1,22 +1,21 @@
 {
- "started": "2026-11-16T16:14:20",
+ "started": "2026-11-17T03:10:32",
  "dates": [
-  "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Wangaratta Good 4 -> Good 3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 230,
- "rider_share": 1.0,
+ "acceptors": 199,
+ "rider_share": 0.87,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
- "extract": "2026-11-15T21:23:19+00:00",
- "finished": "2026-11-16T16:30:49",
+ "extract": "2026-11-16T16:08:54+00:00",
+ "finished": "2026-11-17T03:49:37",
  "going": {
-  "Wangaratta": "Good 3",
-  "Goulburn": "Soft 7"
+  "Kyneton": "Soft 5",
+  "Scone": "Soft 6"
  },
- "scratchings": 63,
- "dashboard": "toprate_week_v2_2026-11-16.html",
- "fingerprint": "0918ae2b2b76"
+ "scratchings": 29,
+ "dashboard": "toprate_week_v2_2026-11-17.html",
+ "fingerprint": "171530432319"
 }
