@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:02:53.002Z",
+ "saved": "2026-11-16T13:03:07.526Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -208,6 +208,15 @@
    "sp": 13,
    "fair": 19,
    "rating": 74.71
+  },
+  "Kyneton|8|BLISSBOMB": {
+   "on": 1,
+   "t": 1794834184451,
+   "name": "Bliss Bomb",
+   "tab": 3,
+   "sp": 2.6,
+   "fair": 3.63,
+   "rating": 75.24
   }
  }
 }
