@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:02:27.095Z",
+ "saved": "2026-11-16T13:02:53.002Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -199,6 +199,15 @@
    "sp": 4.2,
    "fair": 7.11,
    "rating": 77.56
+  },
+  "Kyneton|7|PULLMYFINGER": {
+   "on": 1,
+   "t": 1794834169846,
+   "name": "Pull My Finger",
+   "tab": 14,
+   "sp": 13,
+   "fair": 19,
+   "rating": 74.71
   }
  }
 }
