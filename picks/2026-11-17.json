@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-17",
+ "saved": "2026-11-16T12:27:55.391Z",
+ "picks": {
+  "Kyneton|1|CONTARINI": {
+   "on": 1,
+   "t": 1794832070897,
+   "name": "Contarini",
+   "tab": 9,
+   "sp": 8.5,
+   "fair": 6.78,
+   "rating": 73.2
+  },
+  "Kyneton|1|VOLTRIX": {
+   "on": 1,
+   "t": 1794832072872,
+   "name": "Voltrix",
+   "tab": 8,
+   "sp": 1.55,
+   "fair": 3.12,
+   "rating": 75.6
+  }
+ }
+}
