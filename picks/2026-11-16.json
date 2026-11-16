@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:13:54.132Z",
+ "saved": "2026-11-16T04:14:06.366Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -86,6 +86,24 @@
    "sp": 12,
    "fair": 17.56,
    "rating": 73.54
+  },
+  "Wangaratta|7|QUEUEJUMPER": {
+   "on": 1,
+   "t": 1794802443125,
+   "name": "Queue Jumper",
+   "tab": 17,
+   "sp": 23,
+   "fair": 18.73,
+   "rating": 71.41
+  },
+  "Wangaratta|7|EPICCENTRE": {
+   "on": 1,
+   "t": 1794802446098,
+   "name": "Epic Centre",
+   "tab": 8,
+   "sp": 11,
+   "fair": 23.01,
+   "rating": 70.8
   }
  }
 }
