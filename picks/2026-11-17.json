@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:00:29.277Z",
+ "saved": "2026-11-16T13:00:48.176Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 2.15,
    "fair": 2.62,
    "rating": 79.96
+  },
+  "Kyneton|6|SURELYSPECIAL": {
+   "on": 1,
+   "t": 1794834045060,
+   "name": "Surely Special",
+   "tab": 5,
+   "sp": 8.5,
+   "fair": 10.98,
+   "rating": 75.61
   }
  }
 }
