@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:14:22.922Z",
+ "saved": "2026-11-16T04:14:27.676Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -122,6 +122,15 @@
    "sp": 8.5,
    "fair": 7.95,
    "rating": 74
+  },
+  "Wangaratta|7|THREEMUSKETEERS": {
+   "on": 1,
+   "t": 1794802464424,
+   "name": "Three Musketeers",
+   "tab": 11,
+   "sp": 5.5,
+   "fair": 7.21,
+   "rating": 74.28
   }
  }
 }
