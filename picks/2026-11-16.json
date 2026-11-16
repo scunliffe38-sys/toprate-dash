@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:14:37.975Z",
+ "saved": "2026-11-16T04:14:53.756Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -158,6 +158,15 @@
    "sp": 6,
    "fair": 6.91,
    "rating": 78.29
+  },
+  "Wangaratta|8|PALLADIUM": {
+   "on": 1,
+   "t": 1794802490575,
+   "name": "Palladium",
+   "tab": 3,
+   "sp": 14,
+   "fair": 10.27,
+   "rating": 77.03
   }
  }
 }
