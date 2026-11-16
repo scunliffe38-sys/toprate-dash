@@ -1,22 +1,22 @@
 {
- "started": "2026-11-16T09:10:02",
+ "started": "2026-11-16T13:40:21",
  "dates": [
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "retry: Goulburn scratched R1 #3/6/8, R2 #7, R3 #4, R4 #1/3, R6 #1/4/8/14, R7 #5, R8 #4/5/10/11/12/15; Wangaratta scratched R1 #6/14, R2 #17, R3 #12/13/17, R4 #4/12, R5 #16/17/18, R",
+ "reason": "Goulburn scratched R6 #15",
  "status": "ok",
  "acceptors": 230,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-15T21:23:19+00:00",
- "finished": "2026-11-16T09:29:48",
+ "finished": "2026-11-16T13:55:54",
  "going": {
   "Wangaratta": "Good 4",
   "Goulburn": "Soft 6"
  },
- "scratchings": 60,
+ "scratchings": 61,
  "dashboard": "toprate_week_v2_2026-11-16.html",
- "fingerprint": "b5b2e347a5a1"
+ "fingerprint": "8a85b419a32a"
 }
