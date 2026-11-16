@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:57:22.139Z",
+ "saved": "2026-11-16T12:57:37.968Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -91,6 +91,15 @@
    "sp": 4.8,
    "fair": 7.12,
    "rating": 74.54
+  },
+  "Kyneton|3|MISTRESSOFMAYFAIR": {
+   "on": 1,
+   "t": 1794833854869,
+   "name": "Mistressof Mayfair",
+   "tab": 10,
+   "sp": 4.6,
+   "fair": 8.61,
+   "rating": 73.93
   }
  }
 }
