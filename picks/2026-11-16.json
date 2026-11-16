@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T03:50:56.676Z",
+ "saved": "2026-11-16T03:51:02.396Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -28,6 +28,24 @@
    "sp": 6.5,
    "fair": 5.02,
    "rating": 77.54
+  },
+  "Wangaratta|5|BOTTAS": {
+   "on": 1,
+   "t": 1794801056914,
+   "name": "Bottas",
+   "tab": 7,
+   "sp": 4,
+   "fair": 4.9,
+   "rating": 76.96
+  },
+  "Wangaratta|5|SHEANADH": {
+   "on": 1,
+   "t": 1794801059117,
+   "name": "Sheanadh",
+   "tab": 1,
+   "sp": 9,
+   "fair": 7.63,
+   "rating": 75.63
   }
  }
 }
