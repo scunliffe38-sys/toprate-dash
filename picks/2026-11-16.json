@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-16",
+ "saved": "2026-11-16T03:50:56.676Z",
+ "picks": {
+  "Wangaratta|6|OFFNGAWN": {
+   "on": 1,
+   "t": 1794801051939,
+   "name": "Off'n'gawn",
+   "tab": 10,
+   "sp": 3.9,
+   "fair": 7.15,
+   "rating": 76.37
+  },
+  "Wangaratta|6|TOPLINER": {
+   "on": 1,
+   "t": 1794801053180,
+   "name": "Top Liner",
+   "tab": 9,
+   "sp": 5,
+   "fair": 5.07,
+   "rating": 77.48
+  },
+  "Wangaratta|6|CASHEMCOWBOY": {
+   "on": 1,
+   "t": 1794801054147,
+   "name": "Cashemcowboy",
+   "tab": 3,
+   "sp": 6.5,
+   "fair": 5.02,
+   "rating": 77.54
+  }
+ }
+}
