@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:57:12.582Z",
+ "saved": "2026-11-16T12:57:22.139Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -82,6 +82,15 @@
    "sp": 1.85,
    "fair": 1.98,
    "rating": 78.47
+  },
+  "Kyneton|3|LUNETTA": {
+   "on": 1,
+   "t": 1794833839022,
+   "name": "Lunetta",
+   "tab": 5,
+   "sp": 4.8,
+   "fair": 7.12,
+   "rating": 74.54
   }
  }
 }
