@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:12:47.868Z",
+ "saved": "2026-11-16T04:12:54.119Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -66,13 +66,8 @@
    "rating": 71.91
   },
   "Wangaratta|5|SALINASPECIAL": {
-   "on": 1,
-   "t": 1794802364691,
-   "name": "Salina Special",
-   "tab": 15,
-   "sp": 4.4,
-   "fair": 8.27,
-   "rating": 75.38
+   "on": 0,
+   "t": 1794802370834
   }
  }
 }
