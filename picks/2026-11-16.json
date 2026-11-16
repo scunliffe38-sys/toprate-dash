@@ -1,6 +1,6 @@
 {
  "date": "2026-11-16",
- "saved": "2026-11-16T04:12:58.746Z",
+ "saved": "2026-11-16T04:13:54.132Z",
  "picks": {
   "Wangaratta|6|OFFNGAWN": {
    "on": 1,
@@ -77,6 +77,15 @@
    "sp": 7.5,
    "fair": 9.45,
    "rating": 74.98
+  },
+  "Wangaratta|6|CHURCHILLLANE": {
+   "on": 1,
+   "t": 1794802430805,
+   "name": "Churchill Lane",
+   "tab": 6,
+   "sp": 12,
+   "fair": 17.56,
+   "rating": 73.54
   }
  }
 }
