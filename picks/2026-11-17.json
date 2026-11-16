@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:08:33.755Z",
+ "saved": "2026-11-16T13:08:56.162Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -230,6 +230,15 @@
    "sp": 5,
    "fair": 7.21,
    "rating": 73.05
+  },
+  "Kyneton|7|ROMUALD": {
+   "on": 1,
+   "t": 1794834533094,
+   "name": "Romuald",
+   "tab": 6,
+   "sp": 8,
+   "fair": 20.74,
+   "rating": 74.47
   }
  }
 }
