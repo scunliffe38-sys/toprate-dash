@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:27:55.391Z",
+ "saved": "2026-11-16T12:28:23.366Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 1.55,
    "fair": 3.12,
    "rating": 75.6
+  },
+  "Kyneton|1|CRIMSONSTORM": {
+   "on": 1,
+   "t": 1794832100237,
+   "name": "Crimson Storm",
+   "tab": 10,
+   "sp": 10,
+   "fair": 38.48,
+   "rating": 67.79
   }
  }
 }
