@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:28:23.366Z",
+ "saved": "2026-11-16T12:28:37.522Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -28,6 +28,15 @@
    "sp": 10,
    "fair": 38.48,
    "rating": 67.79
+  },
+  "Kyneton|1|COSMICVOYAGE": {
+   "on": 1,
+   "t": 1794832114379,
+   "name": "Cosmic Voyage",
+   "tab": 2,
+   "sp": null,
+   "fair": 5.12,
+   "rating": 74.07
   }
  }
 }
