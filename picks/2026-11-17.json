@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:55:18.225Z",
+ "saved": "2026-11-16T12:55:40.820Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 3.6,
    "fair": 2.83,
    "rating": 73.75
+  },
+  "Kyneton|2|PRETTYSTYLISH": {
+   "on": 1,
+   "t": 1794833737776,
+   "name": "Pretty Stylish",
+   "tab": 7,
+   "sp": 12,
+   "fair": 8.24,
+   "rating": 70.49
   }
  }
 }
