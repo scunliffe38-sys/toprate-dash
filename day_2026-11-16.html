@@ -100,6 +100,7 @@ nav button .rt{font-size:11.5px;font-weight:500;color:var(--faint)}
 nav button[aria-selected=true] .rt{color:var(--brass)}
 nav button .cd{font-size:11px;font-weight:600;color:var(--pos);font-variant-numeric:tabular-nums}
 nav button .cd.soon{color:var(--brass)}
+nav button .rdc{font-size:11px;font-weight:500;color:var(--dim)} nav button .rdc b{color:var(--text);font-weight:600}   /* trip and class on each tab (16 Nov 2026) */
 nav button .cd.gone{color:var(--faint);font-weight:500}
 nav button:hover{color:var(--text)}
 nav button[aria-selected=true]{color:var(--text);border-bottom-color:var(--brass)}
@@ -118,6 +119,10 @@ nav button:focus-visible{outline:2px solid var(--brass);outline-offset:-2px}
 .mwl{color:var(--dim);gap:2px 10px;cursor:default}.mwl b{color:var(--text);font-weight:600}.mwl .src{color:var(--faint);font-size:11px}
 .mwl.hot{background:rgba(var(--keyrgb),.10);border-radius:4px;padding:4px 6px}.mwl .gauge{display:inline-block;width:110px;height:8px;border-radius:4px;background:var(--panel2);border:1px solid var(--rule);position:relative;vertical-align:middle}
 .mwl .gauge i{position:absolute;top:-3px;width:12px;height:12px;border-radius:50%;background:var(--green);margin-left:-6px}.mwl .gauge u{position:absolute;left:50%;top:-3px;width:1px;height:12px;background:var(--rule)}
+.wxc{background:var(--panel);border:1px solid var(--rule);border-radius:3px;color:var(--green);font:inherit;font-size:12.5px;font-weight:500;padding:2px 9px;cursor:pointer;margin-left:4px}
+.wxc:hover{border-color:var(--green)} .wxc span{color:var(--faint);font-size:11px}
+.wxc.hot{background:rgba(var(--keyrgb),.14);border-color:var(--brass);color:var(--text)}
+.mgo+.mwl{margin-top:-10px}
 .mwx{cursor:pointer;border-radius:4px}.mwx:hover,.mwx:focus-visible{background:var(--panel2);outline:none}.mwx .more{color:var(--green);font-weight:600;font-size:12px}
 dialog.wxpop{border:0;border-radius:8px;padding:0;width:min(720px,96vw);max-height:92vh;overflow:hidden;background:var(--panel);color:var(--text);box-shadow:0 12px 40px rgba(0,0,0,.35)}
 dialog.wxpop::backdrop{background:rgba(22,33,28,.45)}
@@ -478,6 +483,8 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .rhead{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
 .rhead h2{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:23px;margin:0}
 .rhead .meta{color:var(--dim);font-size:13px;flex:1 1 0;min-width:0}
+/* distance and class are the headline, the race's name small under it (Simon, 16 Nov 2026: "Go with B") */
+.rhead{row-gap:2px} .rhead h2{font-size:26px} .rhead .meta{flex:1 1 100%} .rhead .meta .rnm{color:var(--text)}
 .stop{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14.5px}
 .sname{color:var(--dim);font-size:12px}
 .stime{font-family:"Archivo Narrow",sans-serif;font-weight:500;color:var(--brass);font-size:13px;margin-left:4px}
@@ -704,7 +711,7 @@ header .rst.on,header .blt.on{background:#fff;color:var(--cond);border-color:#ff
   .daytab th:nth-child(1),.daytab td:nth-child(1){display:none}
   .horse{flex-wrap:wrap;gap:3px 8px;min-width:0}
   .detail td{padding:12px 10px 14px}
-  .rhead h2{font-size:20px}
+  .rhead h2{font-size:22px}
   /* Simon, 20 Sep 2026, on the phone: the race details sat to the right of the race name, wrapped into a
      narrow strip and left the rest of the row blank. Under the name instead, full width. */
   .rhead{gap:4px 12px}
@@ -743,7 +750,7 @@ header .rst.on,header .blt.on{background:#fff;color:var(--cond);border-color:#ff
   /* Lengths rides at every width now, so the field table buys its room back from the
      gaps rather than scrolling sideways: seven columns x 4px a side. */
   .rtab th,.rtab td{padding-left:4px;padding-right:4px}
-  .rhead h2{font-size:18px} .rhead .meta{font-size:12px}
+  .rhead h2{font-size:20px} .rhead .meta{font-size:12px}
   .mtabs button{min-width:104px;padding:7px 11px}
   /* The market column's freshness stamp wraps "122% / Mkt / . 6m ago" onto a third
      line and drags the whole header row down with it. It is the same tabAgeInfo()
@@ -1028,8 +1035,11 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 .dbody .quad.qb{border:1px solid var(--rule);border-radius:4px;padding:8px 12px}
 .dbody .quad.qb table,.dbody .quad.qb .ft{margin-left:0}
 .dri .dls{display:none}
+/* labels only (Simon, 16 Nov 2026): the one-line read beside each label is gone, the chip sized to its label; a quaddie to bet keeps
+   its green edge. The summary text stays in the button's markup for the phone rules and the hover. */
+.dri{flex:0 0 auto} .dri .ds{display:none}
 /* phone: still side by side, each just its short name; the verdict shows as the green edge (Simon, 23 Oct 2026) */
-@media(max-width:560px){.drill{flex-wrap:nowrap;gap:5px}.dri{padding:8px 6px;justify-content:center;font-size:12.5px}
+@media(max-width:560px){.drill{flex-wrap:nowrap;gap:5px}.dri{flex:1 1 0;padding:8px 6px;justify-content:center;font-size:12.5px}
   .dri .dl,.dri .ds,.dri .dc{display:none}.dri .dls{display:inline;font-weight:500;color:var(--green);white-space:nowrap}
   .dri.n .dls{color:var(--dim)}}
 /* your picks (Simon, 6 Nov 2026): a star on every runner and the picked row edged blue */
@@ -1041,6 +1051,10 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 tbody tr.run.pkd td:first-child{box-shadow:inset 3px 0 0 var(--green)}
 tbody tr.run.pkd td{background:rgba(var(--keyrgb),.06)}
 .ppk{display:none}
+/* the star to the left of the runner number (Simon, 16 Nov 2026), on the wide table; under 720 px the number rides on the silk and
+   the star keeps its place by the name (or under the weight on a phone) */
+.dpk{display:none}
+@media(min-width:721px){.rtab:not(.hk) .dpk{display:inline-flex;margin:-4px 4px -4px -6px;vertical-align:middle} .rtab:not(.hk) .horse .pk{display:none} .rtab:not(.hk) td.tab{white-space:nowrap}}
 nav button .pkn,.daytab .pkn{color:var(--green);font-style:normal;font-size:10px;margin-left:3px;vertical-align:1px}
 @media(max-width:420px){.rtab:not(.hk) .horse .pk{display:none} .rtab:not(.hk) .ppk{display:flex;margin:6px auto 0}}
 </style></head>
@@ -1376,6 +1390,21 @@ function wxStraight(w){
   return Math.abs(h)<3?'across the straight':`${h>0?'head':'tail'} ${Math.abs(h)} km/h in the straight`;
 }
 function wxBar(){ return wxBar0()+wxLean(); }   // the Wind row rides under the Weather line (6 Nov 2026, wxLean below)
+// Weather and Wind as click-throughs on the Track line (Simon, 16 Nov 2026: "Weather and Wind get lost ... could they be Click
+// throughs?"). Weather opens the race-by-race panel (radar, wind map) straight away; Wind opens its lean line underneath, and the
+// chip goes amber when the wind is up (20 km/h+). WXW holds the wind line open across races and meetings.
+var WXW=false;
+window.wxWindT=()=>{ WXW=!WXW; $("mgo").innerHTML=mgoBar(); };
+function wxChips(){
+  const wx=wxBar0(); if(!wx) return '';
+  const wl=wxLean(), hot=/mwl hot/.test(wl);
+  return `<button type="button" class="wxc" onclick="wxOpen()" title="Race by race: wind, gusts, temperature, rain, radar and wind map">Weather <span>&#8250;</span></button>`+
+    (wl?`<button type="button" class="wxc${hot?' hot':''}" onclick="wxWindT()" aria-expanded="${WXW}" title="How today's wind tends to change the settle here">${hot?'Windy':'Wind'} <span>${WXW?'&#9662;':'&#8250;'}</span></button>`:'');
+}
+function mgoBar(){
+  const ch=wxChips(), g=goingBar(ch);
+  return (g||(ch?`<div class="mgo">${ch}</div>`:''))+(WXW?wxLean():'');
+}
 function wxBar0(){
   const m=meet<0?null:M(); if(!m||!window.WX) return '';
   const now=Date.now(), rs=m.races.filter(r=>r.start_utc);
@@ -1470,7 +1499,7 @@ function wxLayer(b,ov){
   const d=b.closest('dialog'); b.parentNode.querySelectorAll('button').forEach(e=>e.setAttribute('aria-pressed',e===b));
   const f=d.querySelector('#wxmap'); if(f&&d._x) f.src=wxMapSrc(d._x,ov);
 }
-function goingBar(){
+function goingBar(extra){
   const m=meet<0?null:M();
   if(!m||isHK(m)||!m.races.some(r=>r.runners.length&&r.runners[0].condc)) return '';
   const u=m.going_user||'';
@@ -1478,8 +1507,20 @@ function goingBar(){
     `<option value=""${u?'':' selected'}>${goShow(m)?'As posted · '+goShow(m)+(goDiff(m)?' (rated on '+m.going+')':''):'Going not posted'}</option>`+
     GOINGS.map(g=>`<option value="${g}"${u===g?' selected':''}>${g}</option>`).join('')+`</select></label>`+
     (u?`<span class="rerated">every race re-rated on ${u}</span><button class="surfall" onclick="pickGoing('')">back to ${m.going||'as rated'}</button>`+
-       `<span class="gonote">going and barrier factors only; the learned base and settle map stay on ${m.going||'the card'}</span>`:'')+`</div>`;
+       `<span class="gonote">going and barrier factors only; the learned base and settle map stay on ${m.going||'the card'}</span>`:'')+(extra||'')+`</div>`;
 }
+// the class cut short for the race tabs (Simon, 16 Nov 2026, option C: each race's trip and class on its tab); the full one on hover
+function clsShort(c){ c=String(c||'').trim(); let m;
+  if(/^maiden/i.test(c)) return 'Mdn';
+  if((m=c.match(/^bench\s*mark\s*(\d+\+?)/i))) return 'BM'+m[1];
+  if((m=c.match(/^class\s*(\w+)/i))) return 'Cl'+m[1];
+  if((m=c.match(/^(?:restricted|rest|rst)\s*(\d+)\b(?!\s*met)/i))) return 'Rst'+m[1];
+  if(/^(?:restricted|rest|rst)\b/i.test(c)) return 'Rst';
+  if((m=c.match(/^group\s*(\d)/i))) return 'G'+m[1];
+  if(/^listed/i.test(c)) return 'LR';
+  if(/^open/i.test(c)) return 'Open';
+  if(/^high\s*weight/i.test(c)) return 'HW';
+  return c.length>6?c.slice(0,5)+'…':c; }
 function reratedTag(r){ return r.going_user?`<span class="rerated">on ${r.going_user}</span>`:((r.surf_now&&r.surf_now!==r.surf)?'<span class="rerated">re-rated</span>':''); }
 (function(){                                         // a saved going back on, for the meetings still posting what it was set against
   const o=goStore(), seen={};
@@ -2825,9 +2866,8 @@ function drillRow(m,r){
     it.push({k:'map',cls:'dmap',lab:'Speed map'+(r.umap?'<span class="uadj">Adjusted</span>':''),sh:'Map'+(r.umap?'<span class="uadj">Adjusted</span>':''),sum:top?`Leader <b>${top.no} ${top.name}</b>`:'no clear leader',
       tip:top&&sl?`${(100*sl.front).toFixed(0)}% to settle in the first two lengths`:''});
   }
-  const pr=spProfile(r);
-  if(pr){ const b=pr.rs.slice().sort((a,c)=>pr.P[c.no].net-pr.P[a.no].net)[0];
-    it.push({k:'rsp',cls:'drsp',lab:'RSP',sh:'RSP',sum:`Most advantaged <b>${b.no} ${b.name}</b>`,tip:'the race speed profile: early, middle and late against the field'}); }
+  // RSP taken off the row (Simon, 16 Nov 2026: "RSP isn't something i'm spending much time using at all ... I think we could drop it");
+  // spProfile and its panel stay for the HK worm and the speed map.
   if(r.wb&&r.wb.w!=null&&r.runners.filter(x=>x.wb0!=null&&wFig(x).length).length>=2){ const t=wcmpTop(r);
     it.push({k:'worms',cls:'dwc',lab:'Worms',sh:'Worms',sum:t?`Best last run <b>${t[0].no} ${t[0].name}</b>`:'compare the field',
       tip:'every runner\'s last ten ratings, against the Likely Winning Rating',body:wormCompare(r)}); }
@@ -2881,7 +2921,7 @@ function drawRace(){
   const r=M().races[active], a=analyse(r);
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);   // market percentage
   const lvh=liveOf(r), replay=(lvh&&lvh.status==='Paying'&&lvh.replay)?`<a class="replay" href="${lvh.replay}" target="_blank" rel="noopener" data-vlabel="${M().track} R${r.no} — replay">Replay <span>▶</span></a>`:'';
-  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${reratedTag(r)}${wbChip(r)}${ranHead(r)}${wxRace(M().track,r)}</div>${replay}</div>`;
+  let h=`<div class="rhead"><h2>R${r.no} · ${r.dist}m · ${r.cls}</h2><div class="meta"><span class="rnm">${r.name}</span>${reratedTag(r)}${wbChip(r)}${ranHead(r)}${wxRace(M().track,r)}</div>${replay}</div>`;
   h+=drillRow(M(),r);
   h+=blNote(r);
   h+=h2hCue(r);
@@ -2894,7 +2934,7 @@ function drawRace(){
     const lens=(x.fair>0&&r.runners[0].fair>0)?Math.max(0,1.66*Math.log(x.fair/r.runners[0].fair)):0;   // from the chances, not the points (deploy_lenfix, 18 Oct 2026): the points' scale moves with the nightly fit, the chance does not; 1.66 lengths a logit, measured on 6,592 races (probe_calib_fit.py)
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
     h+=`<tr class="run${i===0?' top':''}${pkRow(M(),r,x)}" tabindex="0" data-i="${i}">
-      <td class="tab">${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}<span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span>${x.wt==null?'':`<span class="pwt">${wtCell(x)}kg</span>`}${pkBtn(M(),r,x,'ppk')}</td>
+      <td class="tab">${pkBtn(M(),r,x,'dpk')}${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}<span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span>${x.wt==null?'':`<span class="pwt">${wtCell(x)}kg</span>`}${pkBtn(M(),r,x,'ppk')}</td>
       <td><div class="horse">${pkBtn(M(),r,x)}${silk(x)}${x.name}${wbMark(r,x)}${cqMark(x)}${wormIcon(r,x)}${x.sl?`<span class="slm slin ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span>`:''}</div>
         <div class="jock"><span class="jk">${x.jockey||'jockey TBA'}</span><span class="jsep"> &nbsp;·&nbsp; </span><span class="trn">${x.trainer}</span></div></td>
       <td class="bar an">${x.bar??'—'}</td>
@@ -2950,7 +2990,7 @@ function drawRaceHK(){
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);
   const bxbook=r.runners.filter(x=>x.bx).reduce((a,x)=>a+100/x.bx,0);
   const course=r.surf==='synth'?'All weather':`Turf${r.rail?' "'+r.rail+'" course':''}`;
-  let h=`<div class="rhead"><h2>${r.name}</h2><div class="meta">${r.dist}m &nbsp;·&nbsp; ${r.cls}${r.band?' ('+r.band+')':''}${wbChip(r)} &nbsp;·&nbsp; ${goDiff(m)?m.going_live+' (rated on '+m.going+')':(r.going||goShow(m)||'going not posted')}
+  let h=`<div class="rhead"><h2>R${r.no} · ${r.dist}m · ${r.cls}${r.band?' ('+r.band+')':''}</h2><div class="meta"><span class="rnm">${r.name}</span>${wbChip(r)} &nbsp;·&nbsp; ${goDiff(m)?m.going_live+' (rated on '+m.going+')':(r.going||goShow(m)||'going not posted')}
     <span class="chip hk">${course}</span> &nbsp;·&nbsp; ${r.time} Melbourne, ${r.time_hk} in Hong Kong${wxRace(M().track,r)}</div>${hkReplay(m,r,lv)}</div>`;
   h+=drillRow(m,r);
   h+=h2hCue(r);
@@ -3146,11 +3186,11 @@ document.addEventListener('visibilitychange',()=>{
 });
 function draw(){
   drawDays(); drawMeets(); bltLabel(); rstLabel(); vqDraw();
-  $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=goingBar()+wxBar();
+  $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=mgoBar();
   if(meet<0){ $("tabs").innerHTML=''; if(meet===-2) drawNext(); else drawDay(); countdown(); refreshTabAge(); return; }
   const races=M().races;
   $("tabs").innerHTML=`<button role="tab" class="sum" aria-selected="${active===-1}" onclick="pick(-1)"><span class="rn">Summary</span><span class="rt">&nbsp;</span><span class="cd">&nbsp;</span></button>`+
-    races.map((r,i)=>`<button role="tab" aria-selected="${i===active}" onclick="pick(${i})"><span class="rn">R${r.no}${pkRaceN(M(),r)?`<i class="pkn" title="${pkRaceN(M(),r)} of your picks">★</i>`:''}</span><span class="rt">${r.time||'&nbsp;'}</span>${r.time_hk?`<span class="hkt">${r.time_hk} HK</span>`:''}<span class="cd" data-t="${r.start_utc||''}" data-k="${M().track}|${r.no}">&nbsp;</span></button>`).join("");
+    races.map((r,i)=>`<button role="tab" aria-selected="${i===active}" onclick="pick(${i})"><span class="rn">R${r.no}${pkRaceN(M(),r)?`<i class="pkn" title="${pkRaceN(M(),r)} of your picks">★</i>`:''}</span><span class="rt">${r.time||'&nbsp;'}</span>${r.time_hk?`<span class="hkt">${r.time_hk} HK</span>`:''}${r.dist?`<span class="rdc" title="${String(r.cls||'').replace(/"/g,'&quot;')}"><b>${r.dist}m</b> ${clsShort(r.cls)}</span>`:''}<span class="cd" data-t="${r.start_utc||''}" data-k="${M().track}|${r.no}">&nbsp;</span></button>`).join("");
   if(active===-1) drawSummary(); else drawRace();
   countdown(); refreshTabAge();
 }
@@ -3745,4 +3785,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 16 Nov 21:46</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 16 Nov 21:58</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
