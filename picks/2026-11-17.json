@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:28:37.522Z",
+ "saved": "2026-11-16T12:55:18.225Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": null,
    "fair": 5.12,
    "rating": 74.07
+  },
+  "Kyneton|2|RAVENSGLOW": {
+   "on": 1,
+   "t": 1794833714981,
+   "name": "Ravens Glow",
+   "tab": 8,
+   "sp": 3.6,
+   "fair": 2.83,
+   "rating": 73.75
   }
  }
 }
