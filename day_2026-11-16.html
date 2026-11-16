@@ -330,9 +330,13 @@ nav button .hkt{font-size:10px;font-weight:500;color:var(--hk)}
 .rtab td.pct.chc{background-image:linear-gradient(90deg,rgba(0,109,166,.55) var(--cb),rgba(0,109,166,.10) var(--cb));background-repeat:no-repeat;background-size:calc(100% - 16px) 4px;background-position:8px 78%}
 .rtab td.price.mk.up,.sumtab td.price.mk.up,.rtab .pmk.up{color:#2E7D32;font-weight:600}
 .rtab td.price.mk.up,.sumtab td.price.mk.up{background:rgba(46,125,50,.10)}
-.sumtab tr.std td{background:rgba(46,125,50,.07)} .sumtab tr.std td:first-child{box-shadow:inset 4px 0 0 #97C459}
-.sumtab tr.big td{background:rgba(46,125,50,.15)} .sumtab tr.big td:first-child{box-shadow:inset 4px 0 0 #2E7D32}
-.sumtab td.edge.p,.sumtab td.edge.big{color:#2E7D32;font-weight:600}
+/* the rating standout's marker is purple (Simon, 16 Nov 2026: "Rating Standout could be purple as a marker"); green stays the price's */
+html .tagv.gold,html .tagv{background:#6B3FA0;color:#fff;border:0;border-radius:9px;padding:1px 7px}
+.sumtab tr.std td,.daytab tr.std td{background:rgba(107,63,160,.07)} .sumtab tr.std td:first-child,.daytab tr.std td:first-child{box-shadow:inset 4px 0 0 #A98BD3}
+.sumtab tr.big td,.daytab tr.big td{background:rgba(107,63,160,.15)} .sumtab tr.big td:first-child,.daytab tr.big td:first-child{box-shadow:inset 4px 0 0 #6B3FA0}
+.sumtab td.edge.p,.sumtab td.edge.big,.daytab td.edge.p,.daytab td.edge.big{color:#6B3FA0;font-weight:600}
+.daytab td.price.mk.up{color:#2E7D32;font-weight:600;background:rgba(46,125,50,.10)} .daytab td.price.mk.dn{color:var(--neg)}
+.daytab .sname .clc,.daytab .sname .goc{font-size:11.5px}
 .edge.big{color:var(--brass);font-weight:700;font-size:16px}
 .res.un{border:1px solid var(--faint);color:var(--faint);font-weight:500}
 .abil{font-family:"Archivo Narrow",sans-serif;font-size:17px;text-align:right;width:56px;color:var(--dim)}
@@ -2129,15 +2133,15 @@ function drawDay(){
   picks.forEach((it,i)=>{
     const {m,mi,r,ri,x,a}=it;
     const gap=x===a.top?a.gap:x.rating-a.top.rating;              // every pick is the top rater today; the else keeps it honest if that changes
-    const big=gap>=GAP_BIG, over=!!x.sp&&x.sp>x.fair;
-    h+=`<tr class="srow${big?' big':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
+    const big=gap>=GAP_BIG, ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // the meeting page's look (Simon, 16 Nov 2026: "The first view is better")
+    h+=`<tr class="srow${big?' big':(gap>=GAP_STANDOUT?' std':'')}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
       <td>${silk(x)}</td>
       <td><div class="stop">${x.name}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
-      <td><div class="stop">${m.track} R${r.no}</div><div class="sname">${r.time||''} · ${r.dist}m ${r.cls}${goShow(m)?` · ${goShow(m)}`:''}</div></td>
+      <td><div class="stop">${m.track} R${r.no}</div><div class="sname">${r.time||''} · ${r.dist}m <i class="clc ${clsTone(r.cls)}">${r.cls}</i>${goShow(m)?` <span class="goc ${goTone(goShow(m))}">${goShow(m)}</span>`:''}</div></td>
       <td class="rate" style="font-size:19px">${x.rating.toFixed(1)}</td>
       <td class="edge ${big?'big':(gap>=GAP_STANDOUT?'p':(gap<0?'g':''))}">${fxsign(gap)}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
-      <td class="price mk${over?' up':''}" title="${over?'the market is offering more than our price':''}">${x.sp?(over?'<span class="arw">▲</span>':'')+'$'+x.sp.toFixed(2):'—'}</td></tr>`;
+      <td class="price mk${ov}" title="${ov===' up'?'the market is offering 15% or more over our price':(ov===' dn'?'the market is 15% or more under our price':'')}">${x.sp?'$'+x.sp.toFixed(2):'—'}</td></tr>`;
   });
   $("race").innerHTML=h+`</tbody></table></div>`;
   document.querySelectorAll("tr.srow").forEach(tr=>{
@@ -2168,15 +2172,15 @@ function drawNext(){
   items.forEach(it=>{
     const {m,mi,r,ri,a,ran}=it, x=a.top, gap=a.gap;
     if(ran&&!sep){ sep=true; if(items.some(i=>!i.ran)) h+=`<tr class="ransep"><td colspan="7">Already run</td></tr>`; }
-    const big=gap>=GAP_BIG, over=!!x.sp&&x.sp>x.fair;
-    h+=`<tr class="srow${big?' big':''}${ran?' ran':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
+    const big=gap>=GAP_BIG, ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';
+    h+=`<tr class="srow${big?' big':(gap>=GAP_STANDOUT&&r.runners[1]?' std':'')}${ran?' ran':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
       <td>${silk(x)}</td>
       <td><div class="stop">${x.name}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
-      <td><div class="stop nw">${m.track} R${r.no}${pkRaceN(m,r)?`<i class="pkn" title="${pkRaceN(m,r)} of your picks">★${pkRaceN(m,r)>1?pkRaceN(m,r):''}</i>`:''}</div><div class="sname"><span class="cd" data-t="${r.start_utc||''}" data-k="${m.track}|${r.no}">&nbsp;</span> · ${r.time||''} · ${r.dist}m ${r.cls}</div></td>
+      <td><div class="stop nw">${m.track} R${r.no}${pkRaceN(m,r)?`<i class="pkn" title="${pkRaceN(m,r)} of your picks">★${pkRaceN(m,r)>1?pkRaceN(m,r):''}</i>`:''}</div><div class="sname"><span class="cd" data-t="${r.start_utc||''}" data-k="${m.track}|${r.no}">&nbsp;</span> · ${r.time||''} · ${r.dist}m <i class="clc ${clsTone(r.cls)}">${r.cls}</i></div></td>
       <td class="rate" style="font-size:19px">${x.rating.toFixed(1)}</td>
       <td class="edge ${big?'big':(gap>=GAP_STANDOUT?'p':'')}">${r.runners[1]?fxsign(gap):''}</td>
       <td class="price">$${x.fair.toFixed(2)}</td>
-      <td class="price mk${over?' up':''}" title="${over?'the market is offering more than our price':''}">${x.sp?(over?'<span class="arw">▲</span>':'')+'$'+x.sp.toFixed(2):'—'}</td></tr>`;
+      <td class="price mk${ov}" title="${ov===' up'?'the market is offering 15% or more over our price':(ov===' dn'?'the market is 15% or more under our price':'')}">${x.sp?'$'+x.sp.toFixed(2):'—'}</td></tr>`;
   });
   $("race").innerHTML=h+`</tbody></table></div>`;
   document.querySelectorAll("tr.srow").forEach(tr=>{
@@ -3859,4 +3863,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 16 Nov 22:52</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 16 Nov 23:05</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
