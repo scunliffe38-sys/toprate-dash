@@ -485,6 +485,8 @@ tr.wrow td{background:var(--panel);padding:12px 16px 14px;box-shadow:inset 0 2px
 .rhead .meta{color:var(--dim);font-size:13px;flex:1 1 0;min-width:0}
 /* distance and class are the headline, the race's name small under it (Simon, 16 Nov 2026: "Go with B") */
 .rhead{row-gap:2px} .rhead h2{font-size:26px} .rhead .meta{flex:1 1 100%} .rhead .meta .rnm{color:var(--text)}
+.rhead .replay{margin-left:2px;padding-top:3px;padding-bottom:3px}   /* beside the headline, not on a line of its own (16 Nov 2026) */
+.rhead{margin-bottom:8px}
 .stop{font-family:"Archivo Narrow",sans-serif;font-weight:600;font-size:14.5px}
 .sname{color:var(--dim);font-size:12px}
 .stime{font-family:"Archivo Narrow",sans-serif;font-weight:500;color:var(--brass);font-size:13px;margin-left:4px}
@@ -979,9 +981,20 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 .silk,.silk.ph,.rtab .psk .silk{background:transparent}   /* no grey box: TAB answers a silk it cannot draw with a 404, and the space stays empty (Simon, 23 Oct 2026) */
 /* the placing sits on the runner number's top-left corner, not after the name (Simon, 23 Oct 2026) */
 .rtab td.tab{position:relative}
-.rtab .res.pc{position:absolute;top:4px;left:2px;font-size:9px;padding:0 3px;line-height:1.35;z-index:1}
-.rtab .res.pc.r2,.rtab .res.pc.r3,.rtab .res.pc.r4{background:var(--panel)}
-@media(max-width:560px){.rtab .res.pc{top:3px;left:0}}
+/* placings you can find (Simon, 16 Nov 2026: "1st 2nd 3rd 4th are hard to pick up", option B plus C): medal colours, a bigger badge
+   ahead of the number (above the silk on a phone, where the corner badge sat under it), the placed rows tinted with a coloured edge */
+.rtab .res.pc{display:inline-block;font-size:11.5px;padding:1px 6px;margin-right:6px;line-height:1.35;vertical-align:middle;border-radius:3px}
+@media(max-width:720px){.rtab .res.pc{display:block;margin:0 0 4px;text-align:center;font-size:11px;padding:1px 0}}
+.rtab .res.pc.r1,.rstrip .p1 b{background:#C9A227;color:#2e2300;border:0}
+.rtab .res.pc.r2,.rstrip .p2 b{background:#A7ADB4;color:#1d2125;border:0}
+.rtab .res.pc.r3,.rstrip .p3 b{background:#B87333;color:#fff;border:0}
+.rtab .res.pc.r4,.rstrip .p4 b{background:var(--panel);color:var(--text);border:1px solid var(--dim)}
+.rtab tr.plc1,.rtab tr.plc1:hover{background:rgba(201,162,39,.16)} .rtab tr.plc1>td{background-color:transparent} .rtab tr.plc1>td:first-child{box-shadow:inset 4px 0 0 #C9A227}
+.rtab tr.plc2,.rtab tr.plc2:hover{background:rgba(167,173,180,.20)} .rtab tr.plc2>td{background-color:transparent} .rtab tr.plc2>td:first-child{box-shadow:inset 4px 0 0 #A7ADB4}
+.rtab tr.plc3,.rtab tr.plc3:hover{background:rgba(184,115,51,.14)} .rtab tr.plc3>td{background-color:transparent} .rtab tr.plc3>td:first-child{box-shadow:inset 4px 0 0 #B87333}
+.rtab tr.plc4>td:first-child{box-shadow:inset 4px 0 0 var(--dim)}
+.rstrip{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:0 0 10px;font-size:13px;color:var(--text)}
+.rstrip .rsp{white-space:nowrap} .rstrip .rsp b{display:inline-block;font-family:"Archivo Narrow",sans-serif;font-size:12px;font-weight:700;padding:1px 6px;border-radius:3px;margin-right:3px}
 /* the drill-in row: one line of items under the race header, the open one's detail beneath (Simon, 23 Oct 2026) */
 .drill{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 10px}
 .dri{flex:1 1 0;display:flex;align-items:baseline;gap:8px;min-width:0;background:var(--panel);border:1px solid var(--rule);border-radius:4px;
@@ -1829,6 +1842,9 @@ function resBadge(track,r,x){
 const ordn=n=>n+(n%100>=11&&n%100<=13?'th':['th','st','nd','rd'][Math.min(n%10,4)]||'th');
 // Has this race been run? The live feed's word first (Interim = run, results provisional; Paying; Abandoned); with no
 // live word, a start time more than 30 minutes past, the same line the tab countdown draws as "ran".
+// Next to Go moves on when TAB closes betting, the jump, not when the race pays a few minutes after the finish (Simon, 16 Nov 2026).
+// Only Next to Go: raceRun keeps meaning run and settled, so the dock's quaddie leg stays on the race being watched.
+function raceJumped(m,r){ const lv=(LIVEBY[D().date]||{})[`${m.track}|${r.no}`]; return !!lv&&lv.status==='Closed'; }
 function raceRun(m,r){
   const lv=(LIVEBY[D().date]||{})[`${m.track}|${r.no}`];
   if(lv&&['Interim','Paying','Abandoned'].includes(lv.status)) return true;
@@ -2010,6 +2026,15 @@ function bfLine(x,r){ let h='';
   if(x.bfn) h+=`<div class="bfc" title="Projected Betfair SP from the SP bets placed so far. It moves until the off; the real BSP replaces it once struck.">BSP ~$${bfx(x.bfn)}</div>`;
   return h; }
 const ORD=['1st','2nd','3rd','4th'];
+// the result line over the race table once TAB has placings (Simon, 16 Nov 2026, option C; top four only, all TAB publishes):
+// medal colours, the runner number and name, a dead heat as two in one place. Hidden with the results (placeOf is null under RESH).
+function resStrip(r){
+  const lv=liveOf(r); if(RESH||!lv||!lv.results||!lv.results.length) return '';
+  const all=(r.all||r.runners).concat(r.scr||[]);
+  const nm=no=>{ const x=all.find(y=>+y.no===+no); return x?String(x.name).replace(/</g,''):''; };
+  const cells=lv.results.slice(0,4).map((g,i)=>(g||[]).map(no=>`<span class="rsp p${i+1}"><b>${ORD[i]}</b> ${no} ${nm(no)}</span>`).join('')).join('');
+  return cells?`<div class="rstrip">${cells}</div>`:'';
+}
 function placeOf(lv,tab){ if(RESH||!lv||!lv.results) return null;
   for(let i=0;i<Math.min(4,lv.results.length);i++) if(lv.results[i].includes(tab)) return i; return null; }
 function fmtDate(s,opt){return new Date(s+"T00:00:00").toLocaleDateString('en-AU',opt);}
@@ -2094,7 +2119,7 @@ function nextRaces(){
   const d=D(), main=mainMeets(d), items=[];
   d.meetings.forEach((m,mi)=>{ if(!main.has(mi)&&!isHK(m)) return; m.races.forEach((r,ri)=>{
     if(!r.runners||!r.runners.length) return;
-    items.push({m,mi,r,ri,a:analyse(r),ran:raceRun(m,r),t:r.start_utc?new Date(r.start_utc).getTime():Infinity}); });});
+    items.push({m,mi,r,ri,a:analyse(r),ran:raceRun(m,r)||raceJumped(m,r),t:r.start_utc?new Date(r.start_utc).getTime():Infinity}); });});
   const up=items.filter(it=>!it.ran).sort((p,q)=>p.t-q.t||p.mi-q.mi||p.r.no-q.r.no);
   const ran=items.filter(it=>it.ran).sort((p,q)=>q.t-p.t||p.mi-q.mi||p.r.no-q.r.no);
   return up.concat(ran);
@@ -2921,11 +2946,12 @@ function drawRace(){
   const r=M().races[active], a=analyse(r);
   const book=r.runners.filter(x=>x.sp).reduce((a,x)=>a+100/x.sp,0);   // market percentage
   const lvh=liveOf(r), replay=(lvh&&lvh.status==='Paying'&&lvh.replay)?`<a class="replay" href="${lvh.replay}" target="_blank" rel="noopener" data-vlabel="${M().track} R${r.no} — replay">Replay <span>▶</span></a>`:'';
-  let h=`<div class="rhead"><h2>R${r.no} · ${r.dist}m · ${r.cls}</h2><div class="meta"><span class="rnm">${r.name}</span>${reratedTag(r)}${wbChip(r)}${ranHead(r)}${wxRace(M().track,r)}</div>${replay}</div>`;
+  let h=`<div class="rhead"><h2>R${r.no} · ${r.dist}m · ${r.cls}</h2>${replay}<div class="meta"><span class="rnm">${r.name}</span>${reratedTag(r)}${wbChip(r)}${ranHead(r)}${wxRace(M().track,r)}</div></div>`;
   h+=drillRow(M(),r);
   h+=blNote(r);
   h+=h2hCue(r);
   if(r.note) h+=`<p class="rnote"><b>Read:</b> ${r.note}</p>`;
+  h+=resStrip(r);
   h+=`<div class="scroll"><table class="rtab"><thead><tr><th></th><th>Runner</th><th>Bar</th><th class="wth" title="Weight carried today in kilos: the allotted weight less any apprentice claim. From the TAB card; Punting Form's fields until the TAB card arrives.">Wt</th><th class="slh" title="Stride length. ! a short strider racing 15% or more beyond its usual trip: these win less often than their form says. + a long strider stepping up that has not yet placed at the trip: these win more often. Hover or open the runner for the detail.">SL</th><th class="l5h">Last 5</th>
     <th class="r key">${r._bl?'<span class="dsk">SPM + BF Rating</span><span class="phd">SPM+BF<br>Rating</span>':'<span class="dsk">SPM Rating</span><span class="phd">SPM<br>Rating</span>'}</th><th class="r key2">Lengths</th>${ranHd(r)}${chh(r)}<th class="r bk"><span class="dsk"><small>100%</small>Model</span><span class="phd">Model <small>100%</small><br>BSP<br>Mkt <small>${book?book.toFixed(0)+'%':''}</small></span></th><th class="r bk"><small>${book?book.toFixed(0)+'%':'&nbsp;'} <span class="mkt-fresh"></span></small>Mkt</th></tr></thead><tbody>`;
   const topR=r.runners[0].rating, lv=liveOf(r), wet=wetOn(r)&&r.runners.some(x=>'wet' in x), span=(wet?13:12)+(hasRan(r)?2:0);
@@ -2933,7 +2959,8 @@ function drawRace(){
   r.runners.forEach((x,i)=>{
     const lens=(x.fair>0&&r.runners[0].fair>0)?Math.max(0,1.66*Math.log(x.fair/r.runners[0].fair)):0;   // from the chances, not the points (deploy_lenfix, 18 Oct 2026): the points' scale moves with the nightly fit, the chance does not; 1.66 lengths a logit, measured on 6,592 races (probe_calib_fit.py)
     const ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';   // overlay: market vs fair
-    h+=`<tr class="run${i===0?' top':''}${pkRow(M(),r,x)}" tabindex="0" data-i="${i}">
+    const plc=placeOf(lv,x.no);
+    h+=`<tr class="run${i===0?' top':''}${pkRow(M(),r,x)}${plc===null?'':' plc'+(plc+1)}" tabindex="0" data-i="${i}">
       <td class="tab">${pkBtn(M(),r,x,'dpk')}${(()=>{const p=placeOf(lv,x.no);return p===null?'':`<span class="res r${p+1} pc">${ORD[p]}</span>`;})()}<span class="tno">${x.no}</span><span class="psk">${silk(x)}<b>${x.no}</b></span><span class="pbar">b${x.bar??'–'}</span>${x.wt==null?'':`<span class="pwt">${wtCell(x)}kg</span>`}${pkBtn(M(),r,x,'ppk')}</td>
       <td><div class="horse">${pkBtn(M(),r,x)}${silk(x)}${x.name}${wbMark(r,x)}${cqMark(x)}${wormIcon(r,x)}${x.sl?`<span class="slm slin ${x.sl.k}">${x.sl.k==='red'?'!':'+'}</span>`:''}</div>
         <div class="jock"><span class="jk">${x.jockey||'jockey TBA'}</span><span class="jsep"> &nbsp;·&nbsp; </span><span class="trn">${x.trainer}</span></div></td>
@@ -3287,12 +3314,24 @@ function refreshTabAge(){
 }
 setInterval(refreshTabAge,30000);
 
-// ---- live overlay: reads live.json beside the page, polls every 60 s -------
+// ---- live overlay: reads live.json, polls every 20 s -------
+// FROM THE BOX FIRST (Simon, 16 Nov 2026: "The next to go takes too long to refresh, so do our prices / odds"): live_publish.py
+// also writes live.json into the Sky DVR's token directory, which Caddy serves uncached and open to this origin, so a price is
+// here seconds after the box has it instead of after GitHub Pages' rebuild (~90 s, at times minutes). The copy beside the page
+// is the fallback when the box does not answer in 4 s, or answers with a copy older than GitHub's last one seen. Every 20 s,
+// was 60. DATA.skydvr, not SKYDVR: that const is declared further down and this runs first.
+const LIVE_BOX=(!PAST&&DATA.skydvr)?DATA.skydvr+'/live.json':'';
+async function liveFetch(u,ms){ const c=new AbortController(), t=setTimeout(()=>c.abort(),ms);
+  try{ const r=await fetch(u,{cache:'no-store',signal:c.signal}); if(!r.ok) throw 0; return await r.json(); } finally{ clearTimeout(t); } }
 (function(){
-  let last='';
+  let last='', boxBad=0;
   async function tick(){
     const src=PAST?`live_${DATA.days[0].date}.json`:'live.json';   // a past day's frozen block (dash_history.py)
-    let j; try{const r=await fetch(src,{cache:PAST?'no-cache':'no-store'}); if(!r.ok) throw 0; j=await r.json();}catch(e){ if(PAST) pastNote(false); return;}
+    let j=null;
+    if(LIVE_BOX&&boxBad<=0){ try{ j=await liveFetch(LIVE_BOX+'?t='+Date.now(),4000); }catch(e){ j=null; boxBad=3; } }   // a miss: GitHub's copy for the next three ticks
+    else if(boxBad>0) boxBad--;
+    if(!j||(j.date&&j.date<TODAY)){ try{const r=await fetch(src,{cache:PAST?'no-cache':'no-store'}); if(!r.ok) throw 0; const g=await r.json();
+        if(!j||(g.generated||'')>(j.generated||'')) j=g; }catch(e){ if(!j){ if(PAST) pastNote(false); return; } } }
     if(PAST) pastNote(true);
     window.TAB_GENERATED=PAST?null:(j&&j.generated||null); refreshTabAge();
     window.WX=j&&j.wx||null;
@@ -3301,7 +3340,7 @@ setInterval(refreshTabAge,30000);
     last=sig; window.LIVE=races; window.LIVEBY={[j.date]:races}; if(nx) LIVEBY[nx.date]=nx.races||{};
     applyLivePrices(races,j.date); if(nx) applyLivePrices(nx.races||{},nx.date); draw();   // tomorrow's early markets on its tab
   }
-  tick(); if(!PAST) setInterval(tick,60000); window._liveTick=tick;
+  tick(); if(!PAST) setInterval(tick,20000); window._liveTick=tick;
 })();
 
 // ---- earlier days (Simon, 4 Nov 2026) --------------------------------------
@@ -3785,4 +3824,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 16 Nov 21:58</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Mon 16 Nov 22:35</b> AEST &middot; fastlive</div><div style="height:34px"></div></body></html>
