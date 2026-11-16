@@ -1,22 +1,22 @@
 {
- "started": "2026-11-16T13:40:21",
+ "started": "2026-11-16T14:36:20",
  "dates": [
   "2026-11-16",
   "2026-11-17"
  ],
- "reason": "Goulburn scratched R6 #15",
+ "reason": "Goulburn Soft 6 -> Soft 7",
  "status": "ok",
  "acceptors": 230,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-17",
  "card_source": "toprate",
  "extract": "2026-11-15T21:23:19+00:00",
- "finished": "2026-11-16T13:55:54",
+ "finished": "2026-11-16T14:52:07",
  "going": {
   "Wangaratta": "Good 4",
-  "Goulburn": "Soft 6"
+  "Goulburn": "Soft 7"
  },
- "scratchings": 61,
+ "scratchings": 62,
  "dashboard": "toprate_week_v2_2026-11-16.html",
- "fingerprint": "8a85b419a32a"
+ "fingerprint": "9c471e100eec"
 }
