@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:03:07.526Z",
+ "saved": "2026-11-16T13:03:15.007Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -217,6 +217,24 @@
    "sp": 2.6,
    "fair": 3.63,
    "rating": 75.24
+  },
+  "Kyneton|8|SHOWTIMEKISTENA": {
+   "on": 1,
+   "t": 1794834191322,
+   "name": "Showtime Kistena",
+   "tab": 4,
+   "sp": 7,
+   "fair": 7.73,
+   "rating": 72.87
+  },
+  "Kyneton|8|OURLITTLESTAR": {
+   "on": 1,
+   "t": 1794834191902,
+   "name": "Our Little Star",
+   "tab": 1,
+   "sp": 5,
+   "fair": 7.21,
+   "rating": 73.05
   }
  }
 }
