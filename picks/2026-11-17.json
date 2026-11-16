@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T12:59:17.692Z",
+ "saved": "2026-11-16T12:59:51.068Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -127,6 +127,15 @@
    "sp": 3.1,
    "fair": 2.89,
    "rating": 73.95
+  },
+  "Kyneton|5|BOWRIBBON": {
+   "on": 1,
+   "t": 1794833987944,
+   "name": "Bow Ribbon",
+   "tab": 5,
+   "sp": 3.7,
+   "fair": 4.88,
+   "rating": 77.28
   }
  }
 }
