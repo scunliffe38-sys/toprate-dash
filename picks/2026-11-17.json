@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:01:30.575Z",
+ "saved": "2026-11-16T13:02:10.155Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -181,6 +181,15 @@
    "sp": null,
    "fair": 6.87,
    "rating": 77.64
+  },
+  "Kyneton|7|RATTLENROLL": {
+   "on": 1,
+   "t": 1794834126834,
+   "name": "Rattle'n'roll",
+   "tab": 1,
+   "sp": 9.5,
+   "fair": 9.6,
+   "rating": 76.69
   }
  }
 }
