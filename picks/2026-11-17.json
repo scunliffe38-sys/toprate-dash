@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:03:11.104Z",
+ "saved": "2026-11-17T04:03:19.108Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -459,6 +459,24 @@
    "sp": 5,
    "fair": 4.51,
    "rating": 80.08
+  },
+  "Scone|8|GIRRAWHEEN": {
+   "on": 1,
+   "t": 1794888194844,
+   "name": "Girrawheen",
+   "tab": 8,
+   "sp": 3.3,
+   "fair": 7.16,
+   "rating": 78.57
+  },
+  "Scone|8|NEVERMISTA": {
+   "on": 1,
+   "t": 1794888195853,
+   "name": "Nevermista",
+   "tab": 5,
+   "sp": 6,
+   "fair": 8.62,
+   "rating": 77.97
   }
  }
 }
