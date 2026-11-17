@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T03:58:22.030Z",
+ "saved": "2026-11-17T03:59:30.715Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -360,6 +360,15 @@
    "sp": 13,
    "fair": 13.42,
    "rating": 70.4
+  },
+  "Scone|6|FOURINTHEMORNING": {
+   "on": 1,
+   "t": 1794887967476,
+   "name": "Four Inthe Morning",
+   "tab": 4,
+   "sp": 1.55,
+   "fair": 2.62,
+   "rating": 81.42
   }
  }
 }
