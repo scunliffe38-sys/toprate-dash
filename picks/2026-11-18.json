@@ -1,0 +1,24 @@
+{
+ "date": "2026-11-18",
+ "saved": "2026-11-17T12:39:12.603Z",
+ "picks": {
+  "Warwick Farm|1|CHURCHILLIAN": {
+   "on": 1,
+   "t": 1794919149060,
+   "name": "Churchillian",
+   "tab": 1,
+   "sp": 3.8,
+   "fair": 6.74,
+   "rating": 82.25
+  },
+  "Warwick Farm|1|EXTREMELYCHIC": {
+   "on": 1,
+   "t": 1794919150087,
+   "name": "Extremely Chic",
+   "tab": 10,
+   "sp": 3.1,
+   "fair": 3.52,
+   "rating": 84.34
+  }
+ }
+}
