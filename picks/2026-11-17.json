@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T03:59:58.749Z",
+ "saved": "2026-11-17T04:01:26.832Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -378,6 +378,15 @@
    "sp": 5.5,
    "fair": 4.37,
    "rating": 79.53
+  },
+  "Scone|7|THINKBACK": {
+   "on": 1,
+   "t": 1794888083749,
+   "name": "Think Back",
+   "tab": 2,
+   "sp": 5,
+   "fair": 4.86,
+   "rating": 76.97
   }
  }
 }
