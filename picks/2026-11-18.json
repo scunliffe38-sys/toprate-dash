@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:45:18.787Z",
+ "saved": "2026-11-17T12:45:43.284Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 3.2,
    "fair": 6.55,
    "rating": 83.44
+  },
+  "Warwick Farm|6|CARDAMOM": {
+   "on": 1,
+   "t": 1794919540185,
+   "name": "Cardamom",
+   "tab": 11,
+   "sp": 2.6,
+   "fair": 2.28,
+   "rating": 93.12
   }
  }
 }
