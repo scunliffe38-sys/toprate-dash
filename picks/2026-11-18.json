@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:41:17.502Z",
+ "saved": "2026-11-17T12:41:42.214Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": 9,
    "fair": 7.32,
    "rating": 87.7
+  },
+  "Warwick Farm|3|SEEIAYE": {
+   "on": 1,
+   "t": 1794919299039,
+   "name": "Seeiaye",
+   "tab": 6,
+   "sp": 6.5,
+   "fair": 7.89,
+   "rating": 87.46
   }
  }
 }
