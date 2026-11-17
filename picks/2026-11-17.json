@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T00:51:35.434Z",
+ "saved": "2026-11-17T00:51:41.720Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -311,6 +311,24 @@
    "sp": 2,
    "fair": 3.92,
    "rating": 75.38
+  },
+  "Scone|4|RETRIEVER": {
+   "on": 1,
+   "t": 1794876697742,
+   "name": "Retriever",
+   "tab": 10,
+   "sp": 12,
+   "fair": 7.18,
+   "rating": 73.27
+  },
+  "Scone|4|MAMELA": {
+   "on": 1,
+   "t": 1794876698622,
+   "name": "Mamela",
+   "tab": 9,
+   "sp": 7,
+   "fair": 7.42,
+   "rating": 73.17
   }
  }
 }
