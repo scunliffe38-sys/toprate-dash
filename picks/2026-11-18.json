@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:48:09.643Z",
+ "saved": "2026-11-17T12:49:39.827Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -235,6 +235,15 @@
    "sp": 2.5,
    "fair": 6.11,
    "rating": 82.32
+  },
+  "Sandown|4|NAVYHEART": {
+   "on": 1,
+   "t": 1794919776328,
+   "name": "Navy Heart",
+   "tab": 3,
+   "sp": 3.4,
+   "fair": 5.08,
+   "rating": 82.79
   }
  }
 }
