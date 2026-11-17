@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:43:46.847Z",
+ "saved": "2026-11-17T12:44:22.219Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -100,6 +100,15 @@
    "sp": 4.2,
    "fair": 4.22,
    "rating": 87.37
+  },
+  "Warwick Farm|4|SOCIABLE": {
+   "on": 1,
+   "t": 1794919459075,
+   "name": "Sociable",
+   "tab": 3,
+   "sp": 3.2,
+   "fair": 5.9,
+   "rating": 86.31
   }
  }
 }
