@@ -1,23 +1,25 @@
 {
- "started": "2026-11-17T15:48:21",
+ "started": "2026-11-18T03:09:07",
  "dates": [
-  "2026-11-17",
   "2026-11-18",
   "2026-11-19"
  ],
- "reason": "Scone Soft 6 -> Soft 5",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 199,
- "rider_share": 1.0,
+ "acceptors": 450,
+ "rider_share": 0.91,
  "extract_max_date": "2026-11-19",
  "card_source": "toprate",
- "extract": "2026-11-16T21:23:43+00:00",
- "finished": "2026-11-17T16:03:50",
+ "extract": "2026-11-17T16:07:22+00:00",
+ "finished": "2026-11-18T04:00:38",
  "going": {
-  "Kyneton": "Good 4",
-  "Scone": "Soft 5"
+  "Sandown": "Soft 5",
+  "Warwick Farm": "Soft 7",
+  "Doomben": "Heavy 8",
+  "Gawler": "Good 4",
+  "Belmont Park": "Soft 5"
  },
- "scratchings": 57,
- "dashboard": "toprate_week_v2_2026-11-17.html",
- "fingerprint": "b10d058ed0de"
+ "scratchings": 36,
+ "dashboard": "toprate_week_v2_2026-11-18.html",
+ "fingerprint": "64bb8dd85253"
 }
