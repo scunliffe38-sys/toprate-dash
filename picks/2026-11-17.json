@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T00:51:30.579Z",
+ "saved": "2026-11-17T00:51:35.434Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -293,6 +293,24 @@
    "sp": 3.3,
    "fair": 5.14,
    "rating": 74.8
+  },
+  "Scone|4|INCREMENTAL": {
+   "on": 1,
+   "t": 1794876691567,
+   "name": "Incremental",
+   "tab": 2,
+   "sp": 2.7,
+   "fair": 3.47,
+   "rating": 75.77
+  },
+  "Scone|4|NEAREST": {
+   "on": 1,
+   "t": 1794876692342,
+   "name": "Nearest",
+   "tab": 3,
+   "sp": 2,
+   "fair": 3.92,
+   "rating": 75.38
   }
  }
 }
