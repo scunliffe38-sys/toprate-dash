@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:49:39.827Z",
+ "saved": "2026-11-17T12:50:03.617Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -244,6 +244,15 @@
    "sp": 3.4,
    "fair": 5.08,
    "rating": 82.79
+  },
+  "Sandown|4|PARIAHPEARL": {
+   "on": 1,
+   "t": 1794919800549,
+   "name": "Pariah Pearl",
+   "tab": 1,
+   "sp": 3.2,
+   "fair": 5.23,
+   "rating": 82.67
   }
  }
 }
