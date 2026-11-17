@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:46:20.429Z",
+ "saved": "2026-11-17T12:47:28.425Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -190,6 +190,33 @@
    "sp": 2.6,
    "fair": 3.06,
    "rating": 83.39
+  },
+  "Sandown|2|SONDERA": {
+   "on": 1,
+   "t": 1794919642619,
+   "name": "Sondera",
+   "tab": 11,
+   "sp": 3.8,
+   "fair": 3.03,
+   "rating": 76.06
+  },
+  "Sandown|2|ROYALMAXIMUS": {
+   "on": 1,
+   "t": 1794919643703,
+   "name": "Royal Maximus",
+   "tab": 2,
+   "sp": 1.95,
+   "fair": 2.34,
+   "rating": 76.82
+  },
+  "Sandown|2|PERFECTDISMOUNT": {
+   "on": 1,
+   "t": 1794919645013,
+   "name": "Perfect Dismount",
+   "tab": 4,
+   "sp": 7,
+   "fair": 12.3,
+   "rating": 71.8
   }
  }
 }
