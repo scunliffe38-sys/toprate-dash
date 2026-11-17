@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:44:53.902Z",
+ "saved": "2026-11-17T12:44:58.548Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -127,6 +127,15 @@
    "sp": 9,
    "fair": 9.61,
    "rating": 82.3
+  },
+  "Warwick Farm|5|ROCKTHEVELIO": {
+   "on": 1,
+   "t": 1794919495467,
+   "name": "Rockthevelio",
+   "tab": 6,
+   "sp": 9.5,
+   "fair": 5.5,
+   "rating": 83.96
   }
  }
 }
