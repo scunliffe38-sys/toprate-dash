@@ -1,23 +1,23 @@
 {
- "started": "2026-11-17T11:00:26",
+ "started": "2026-11-17T13:39:20",
  "dates": [
   "2026-11-17",
   "2026-11-18",
   "2026-11-19"
  ],
- "reason": "Scone Soft 7 -> Soft 6",
+ "reason": "Kyneton Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 199,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-19",
  "card_source": "toprate",
  "extract": "2026-11-16T21:23:43+00:00",
- "finished": "2026-11-17T11:16:29",
+ "finished": "2026-11-17T13:55:29",
  "going": {
-  "Kyneton": "Soft 5",
+  "Kyneton": "Good 4",
   "Scone": "Soft 6"
  },
  "scratchings": 57,
  "dashboard": "toprate_week_v2_2026-11-17.html",
- "fingerprint": "c30d906e2b80"
+ "fingerprint": "962b37e6d3f4"
 }
