@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:02:52.956Z",
+ "saved": "2026-11-17T04:03:00.667Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -441,6 +441,15 @@
    "sp": 4.2,
    "fair": 8.07,
    "rating": 78.2
+  },
+  "Scone|8|SAINTLYSANDS": {
+   "on": 1,
+   "t": 1794888177557,
+   "name": "Saintly Sands",
+   "tab": 7,
+   "sp": 9.5,
+   "fair": 14.24,
+   "rating": 76.34
   }
  }
 }
