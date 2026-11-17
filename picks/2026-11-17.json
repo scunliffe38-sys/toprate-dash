@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:02:07.456Z",
+ "saved": "2026-11-17T04:02:17.288Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -396,6 +396,15 @@
    "sp": 13,
    "fair": 15.71,
    "rating": 73.37
+  },
+  "Scone|7|SMARTSCUD": {
+   "on": 1,
+   "t": 1794888134189,
+   "name": "Smart Scud",
+   "tab": 1,
+   "sp": 5,
+   "fair": 5.87,
+   "rating": 76.44
   }
  }
 }
