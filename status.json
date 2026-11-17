@@ -1,18 +1,18 @@
 {
- "started": "2026-11-18T09:16:09",
+ "started": "2026-11-18T08:25:15",
  "dates": [
   "2026-11-18",
   "2026-11-19",
   "2026-11-20"
  ],
- "reason": "Sandown Soft 5 -> Good 4; Sandown scratched R2 #4/6, R3 #6, R5 #2, R7 #7/8/11, R8 #1; Warwick Farm Soft 7 -> Soft 6; Warwick Farm scratched R1 #6, R3 #1/4/5/14/15, R4 #12, R5 #1/6/",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 450,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-20",
  "card_source": "toprate",
  "extract": "2026-11-17T21:23:38+00:00",
- "finished": "2026-11-18T09:34:10",
+ "finished": "2026-11-18T09:52:14",
  "going": {
   "Sandown": "Good 4",
   "Warwick Farm": "Soft 6",
@@ -22,5 +22,5 @@
  },
  "scratchings": 91,
  "dashboard": "toprate_week_v2_2026-11-18.html",
- "fingerprint": "4fb5be68c2eb"
+ "fingerprint": "e578628456bd"
 }
