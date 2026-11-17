@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:02:31.673Z",
+ "saved": "2026-11-17T04:02:43.284Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -423,6 +423,15 @@
    "sp": 3.5,
    "fair": 5.55,
    "rating": 76.62
+  },
+  "Scone|7|ENDLESSAPPLAUSE": {
+   "on": 1,
+   "t": 1794888160212,
+   "name": "Endless Applause",
+   "tab": 4,
+   "sp": 4.2,
+   "fair": 7.96,
+   "rating": 75.47
   }
  }
 }
