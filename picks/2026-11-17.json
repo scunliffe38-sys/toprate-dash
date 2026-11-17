@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:03:19.108Z",
+ "saved": "2026-11-17T04:19:32.232Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -477,6 +477,15 @@
    "sp": 6,
    "fair": 8.62,
    "rating": 77.97
+  },
+  "Kyneton|7|EETEEDEE": {
+   "on": 1,
+   "t": 1794889169423,
+   "name": "Eeteedee",
+   "tab": 13,
+   "sp": 4.2,
+   "fair": 6.36,
+   "rating": 76.3
   }
  }
 }
