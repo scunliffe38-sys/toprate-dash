@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:39:12.603Z",
+ "saved": "2026-11-17T12:40:53.403Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 3.1,
    "fair": 3.52,
    "rating": 84.34
+  },
+  "Warwick Farm|3|BRIGHTBURN": {
+   "on": 1,
+   "t": 1794919249935,
+   "name": "Brightburn",
+   "tab": 11,
+   "sp": 2.7,
+   "fair": 5.8,
+   "rating": 88.42
   }
  }
 }
