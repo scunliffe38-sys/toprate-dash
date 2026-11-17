@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:47:49.195Z",
+ "saved": "2026-11-17T12:48:09.643Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -226,6 +226,15 @@
    "sp": 9,
    "fair": 4.44,
    "rating": 83.39
+  },
+  "Sandown|3|OCEANSBLUE": {
+   "on": 1,
+   "t": 1794919686571,
+   "name": "Oceans Blue",
+   "tab": 6,
+   "sp": 2.5,
+   "fair": 6.11,
+   "rating": 82.32
   }
  }
 }
