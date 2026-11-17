@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T03:57:54.739Z",
+ "saved": "2026-11-17T03:58:22.030Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -338,6 +338,28 @@
    "sp": 1.95,
    "fair": 2.9,
    "rating": 75.38
+  },
+  "Scone|5|HALCYONBELLE": {
+   "on": 0,
+   "t": 1794887895141
+  },
+  "Scone|5|THEDIPLOMAT": {
+   "on": 1,
+   "t": 1794887896765,
+   "name": "The Diplomat",
+   "tab": 5,
+   "sp": 11,
+   "fair": 7.61,
+   "rating": 72.26
+  },
+  "Scone|5|SERIOUSJEWEL": {
+   "on": 1,
+   "t": 1794887898780,
+   "name": "Serious Jewel",
+   "tab": 4,
+   "sp": 13,
+   "fair": 13.42,
+   "rating": 70.4
   }
  }
 }
