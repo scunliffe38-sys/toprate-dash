@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:02:17.288Z",
+ "saved": "2026-11-17T04:02:25.830Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -405,6 +405,15 @@
    "sp": 5,
    "fair": 5.87,
    "rating": 76.44
+  },
+  "Scone|7|TAMIEKAWARRIOR": {
+   "on": 1,
+   "t": 1794888142693,
+   "name": "Tamieka Warrior",
+   "tab": 7,
+   "sp": 26,
+   "fair": 22.22,
+   "rating": 72.31
   }
  }
 }
