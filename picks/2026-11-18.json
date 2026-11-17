@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:45:07.593Z",
+ "saved": "2026-11-17T12:45:18.787Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 9,
    "fair": 8.33,
    "rating": 82.69
+  },
+  "Warwick Farm|5|WHOANELLIE": {
+   "on": 1,
+   "t": 1794919515703,
+   "name": "Whoa Nellie",
+   "tab": 3,
+   "sp": 3.2,
+   "fair": 6.55,
+   "rating": 83.44
   }
  }
 }
