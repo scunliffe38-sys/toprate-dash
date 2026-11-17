@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:41:42.214Z",
+ "saved": "2026-11-17T12:42:07.865Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -46,6 +46,51 @@
    "sp": 6.5,
    "fair": 7.89,
    "rating": 87.46
+  },
+  "Warwick Farm|2|PAPPABLUE": {
+   "on": 1,
+   "t": 1794919321979,
+   "name": "Pappa Blue",
+   "tab": 3,
+   "sp": 5,
+   "fair": 9.71,
+   "rating": 83.56
+  },
+  "Warwick Farm|2|AZARAX": {
+   "on": 1,
+   "t": 1794919322755,
+   "name": "Azarax",
+   "tab": 2,
+   "sp": 4.2,
+   "fair": 5.81,
+   "rating": 85.4
+  },
+  "Warwick Farm|2|VIVAMAURICIO": {
+   "on": 1,
+   "t": 1794919323526,
+   "name": "Viva Mauricio",
+   "tab": 5,
+   "sp": 4.6,
+   "fair": 5.67,
+   "rating": 85.5
+  },
+  "Warwick Farm|2|KOIBITO": {
+   "on": 1,
+   "t": 1794919324134,
+   "name": "Koibito",
+   "tab": 4,
+   "sp": 4.4,
+   "fair": 5.35,
+   "rating": 85.71
+  },
+  "Warwick Farm|2|ACCIDENTALBID": {
+   "on": 1,
+   "t": 1794919324787,
+   "name": "Accidental Bid",
+   "tab": 1,
+   "sp": 5,
+   "fair": 4.49,
+   "rating": 86.35
   }
  }
 }
