@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:03:00.667Z",
+ "saved": "2026-11-17T04:03:11.104Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -450,6 +450,15 @@
    "sp": 9.5,
    "fair": 14.24,
    "rating": 76.34
+  },
+  "Scone|8|CAMPARITWIST": {
+   "on": 1,
+   "t": 1794888187980,
+   "name": "Campari Twist",
+   "tab": 4,
+   "sp": 5,
+   "fair": 4.51,
+   "rating": 80.08
   }
  }
 }
