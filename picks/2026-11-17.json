@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-16T13:09:14.019Z",
+ "saved": "2026-11-17T00:50:45.354Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -248,6 +248,15 @@
    "sp": 11,
    "fair": 20.84,
    "rating": 69.83
+  },
+  "Scone|1|OLESTEELE": {
+   "on": 1,
+   "t": 1794876642247,
+   "name": "Ole Steele",
+   "tab": 2,
+   "sp": 1.2,
+   "fair": 1.91,
+   "rating": 80.77
   }
  }
 }
