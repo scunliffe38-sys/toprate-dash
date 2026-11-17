@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T04:02:25.830Z",
+ "saved": "2026-11-17T04:02:31.673Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -414,6 +414,15 @@
    "sp": 26,
    "fair": 22.22,
    "rating": 72.31
+  },
+  "Scone|7|ADMIREME": {
+   "on": 1,
+   "t": 1794888148525,
+   "name": "Admire Me",
+   "tab": 3,
+   "sp": 3.5,
+   "fair": 5.55,
+   "rating": 76.62
   }
  }
 }
