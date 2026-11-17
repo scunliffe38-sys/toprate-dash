@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T00:50:45.354Z",
+ "saved": "2026-11-17T00:51:08.586Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -257,6 +257,15 @@
    "sp": 1.2,
    "fair": 1.91,
    "rating": 80.77
+  },
+  "Scone|2|LIGHTENINGKISS": {
+   "on": 1,
+   "t": 1794876665486,
+   "name": "Lightening Kiss",
+   "tab": 5,
+   "sp": 1.6,
+   "fair": 1.59,
+   "rating": 74.61
   }
  }
 }
