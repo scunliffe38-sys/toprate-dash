@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:44:22.219Z",
+ "saved": "2026-11-17T12:44:48.952Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -109,6 +109,15 @@
    "sp": 3.2,
    "fair": 5.9,
    "rating": 86.31
+  },
+  "Warwick Farm|5|SOULLADY": {
+   "on": 1,
+   "t": 1794919485811,
+   "name": "Soul Lady",
+   "tab": 11,
+   "sp": 31,
+   "fair": 9.99,
+   "rating": 82.14
   }
  }
 }
