@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-17T12:46:16.960Z",
+ "saved": "2026-11-17T12:46:20.429Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -181,6 +181,15 @@
    "sp": 3.2,
    "fair": 4.64,
    "rating": 81.92
+  },
+  "Sandown|1|LALALILLY": {
+   "on": 1,
+   "t": 1794919577241,
+   "name": "La La Lilly",
+   "tab": 5,
+   "sp": 2.6,
+   "fair": 3.06,
+   "rating": 83.39
   }
  }
 }
