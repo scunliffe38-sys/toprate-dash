@@ -1,6 +1,6 @@
 {
  "date": "2026-11-17",
- "saved": "2026-11-17T00:51:22.537Z",
+ "saved": "2026-11-17T00:51:30.579Z",
  "picks": {
   "Kyneton|1|CONTARINI": {
    "on": 1,
@@ -284,6 +284,15 @@
    "sp": 2.4,
    "fair": 2.32,
    "rating": 77.96
+  },
+  "Scone|3|QUIRKYPRINCESS": {
+   "on": 1,
+   "t": 1794876687438,
+   "name": "Quirky Princess",
+   "tab": 6,
+   "sp": 3.3,
+   "fair": 5.14,
+   "rating": 74.8
   }
  }
 }
