@@ -1,23 +1,23 @@
 {
- "started": "2026-11-17T08:25:44",
+ "started": "2026-11-17T11:00:26",
  "dates": [
   "2026-11-17",
   "2026-11-18",
   "2026-11-19"
  ],
- "reason": "morning harvest",
+ "reason": "Scone Soft 7 -> Soft 6",
  "status": "ok",
  "acceptors": 199,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-19",
  "card_source": "toprate",
  "extract": "2026-11-16T21:23:43+00:00",
- "finished": "2026-11-17T10:20:51",
+ "finished": "2026-11-17T11:16:29",
  "going": {
   "Kyneton": "Soft 5",
-  "Scone": "Soft 7"
+  "Scone": "Soft 6"
  },
  "scratchings": 57,
  "dashboard": "toprate_week_v2_2026-11-17.html",
- "fingerprint": "22ea35be208b"
+ "fingerprint": "c30d906e2b80"
 }
