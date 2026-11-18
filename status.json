@@ -1,18 +1,18 @@
 {
- "started": "2026-11-18T17:53:21",
+ "started": "2026-11-18T18:26:21",
  "dates": [
   "2026-11-18",
   "2026-11-19",
   "2026-11-20"
  ],
- "reason": "Warwick Farm scratched R6 #1",
+ "reason": "Belmont Park scratched R3 #3/6",
  "status": "ok",
  "acceptors": 450,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-20",
  "card_source": "toprate",
  "extract": "2026-11-17T21:23:38+00:00",
- "finished": "2026-11-18T18:09:39",
+ "finished": "2026-11-18T18:42:32",
  "going": {
   "Sandown": "Good 4",
   "Doomben": "Good 4",
@@ -21,7 +21,7 @@
   "Happy Valley": "Good",
   "Warwick Farm": "Good 4"
  },
- "scratchings": 97,
+ "scratchings": 100,
  "dashboard": "toprate_week_v2_2026-11-18.html",
- "fingerprint": "189ee7c905cf"
+ "fingerprint": "15952e6773bf"
 }
