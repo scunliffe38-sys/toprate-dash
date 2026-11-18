@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:19:01.301Z",
+ "saved": "2026-11-18T10:22:28.545Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1099,6 +1099,24 @@
    "sp": 8.75,
    "fair": 3,
    "rating": 56.2
+  },
+  "Happy Valley|4|CLASS": {
+   "on": 1,
+   "t": 1794997344199,
+   "name": "Class",
+   "tab": 5,
+   "sp": 9.7,
+   "fair": 7.03,
+   "rating": 53.1
+  },
+  "Happy Valley|4|GAZELEY": {
+   "on": 1,
+   "t": 1794997345074,
+   "name": "Gazeley",
+   "tab": 9,
+   "sp": 2.55,
+   "fair": 7.42,
+   "rating": 52.9
   }
  }
 }
