@@ -3666,7 +3666,9 @@ function vfDraw(){
     ths.forEach(h=>{ const t=h.textContent.trim(); if(t in ren) h.textContent=ren[t]; });
     p.querySelectorAll('.fcsc tbody tr').forEach(t=>{ if(t.children.length<2) return;
       [...t.children].forEach((c,i)=>{ const k=cut[i]; if(!k||!c.textContent.trim()) return;
-        c.innerHTML=`<div class="vfc ${k}" title="${c.textContent.trim().replace(/"/g,'&quot;')}">${c.innerHTML}</div>`; }); }); }
+        c.innerHTML=`<div class="vfc ${k}" title="${c.textContent.trim().replace(/"/g,'&quot;')}">${c.innerHTML}</div>`; }); });
+    // no Credit column in the panel (Simon, 18 Nov 2026: "drop credit for sure")
+    const cr=col('Credit'); if(cr>=0) p.querySelectorAll('.fcsc tr').forEach(t=>{ if(t.children.length>cr+1) t.children[cr].remove(); }); }
   p.querySelectorAll('a.frp').forEach(a=>{ const t=a.closest('tr'); if(t) t.classList.toggle('vfon',a.href===VFURL); });
   p.hidden=false; vfPlace();
 }
@@ -4085,4 +4087,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 17:06</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 17:15</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
