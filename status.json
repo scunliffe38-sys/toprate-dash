@@ -1,18 +1,18 @@
 {
- "started": "2026-11-19T08:24:30",
+ "started": "2026-11-19T09:39:22",
  "dates": [
   "2026-11-19",
   "2026-11-20",
   "2026-11-21"
  ],
- "reason": "morning harvest",
+ "reason": "Mackay Soft 5 -> Good 4; Mackay scratched R4 #7",
  "status": "ok",
  "acceptors": 462,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-21",
  "card_source": "toprate",
  "extract": "2026-11-18T21:22:53+00:00",
- "finished": "2026-11-19T09:53:33",
+ "finished": "2026-11-19T09:57:15",
  "going": {
   "Mornington": "Good 4",
   "Newcastle": "Good 4",
@@ -22,5 +22,5 @@
  },
  "scratchings": 79,
  "dashboard": "toprate_week_v2_2026-11-19.html",
- "fingerprint": "ac131f1bc971"
+ "fingerprint": "e593f098d587"
 }
