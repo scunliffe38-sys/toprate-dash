@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:25:57.893Z",
+ "saved": "2026-11-18T05:28:23.815Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -550,6 +550,15 @@
    "sp": 9,
    "fair": 11.34,
    "rating": 84.27
+  },
+  "Gawler|5|SHOGUNCHIKARA": {
+   "on": 1,
+   "t": 1794979684805,
+   "name": "Shogun Chikara",
+   "tab": 3,
+   "sp": 4.4,
+   "fair": 5.44,
+   "rating": 78.43
   }
  }
 }
