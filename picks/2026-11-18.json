@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:24:20.212Z",
+ "saved": "2026-11-18T05:25:06.760Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -514,6 +514,24 @@
    "sp": 3.6,
    "fair": 4.83,
    "rating": 85.32
+  },
+  "Doomben|7|SIRARROGONCE": {
+   "on": 1,
+   "t": 1794979503472,
+   "name": "Sir Arrogonce",
+   "tab": 9,
+   "sp": 6.5,
+   "fair": 5.84,
+   "rating": 86.3
+  },
+  "Doomben|7|CLIMBTHELADDER": {
+   "on": 1,
+   "t": 1794979506136,
+   "name": "Climb The Ladder",
+   "tab": 1,
+   "sp": 2,
+   "fair": 5.69,
+   "rating": 86.28
   }
  }
 }
