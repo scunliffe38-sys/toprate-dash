@@ -740,6 +740,10 @@ header .rst.on,header .blt.on{background:#fff;color:var(--cond);border-color:#ff
 .vform .vfn{flex:1 1 100%;color:var(--faint);font-size:11px}
 .vform .fcp{width:auto;min-width:0;margin-top:0}
 .vform .fct tr.vfon td{background:var(--panel2);font-weight:600}
+.vform .fct{min-width:0;font-size:12px}
+.vform .fct th,.vform .fct td{padding:4px 4px}
+.vform .fct .vfc{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.vform .fct .vfc.v{max-width:84px} .vform .fct .vfc.w{max-width:104px} .vform .fct .vfc.j{max-width:96px}
 .vform .fct tr.vfon a.frp{color:var(--brick)}
 @container (max-width:760px){.vform .fcsc{display:none}.vform .fctp{display:table;width:100%}.vform .fcs{display:none}.vform .fcsp{display:block}}
 @media(max-width:720px){.vform{display:none!important}}
@@ -3653,7 +3657,16 @@ function vfDraw(){
     +`<span class="vfn">&#9654; on any run plays it in the window</span></div>${body}`;
   if(html!==VFHTML){ const st=p.scrollTop; p.innerHTML=html; VFHTML=html; p.scrollTop=st;   // the live poll redraws every minute: keep his place
     // the ▶ first, so changing replays never needs the run table scrolled sideways (it is the table's last column)
-    p.querySelectorAll('.fcsc tr').forEach(t=>{ const c=t.lastElementChild; if(t.children.length>1&&c) t.insertBefore(c,t.firstElementChild); }); }
+    p.querySelectorAll('.fcsc tr').forEach(t=>{ const c=t.lastElementChild; if(t.children.length>1&&c) t.insertBefore(c,t.firstElementChild); });
+    // narrower in the panel so the clock columns fit (Simon, 18 Nov 2026: "venue name is too wide ... ideally we could fit in early mid
+    // late net"): venue, winner / 2nd and jockey cut short with an ellipsis (the whole text on hover), two headers shortened, tighter cells
+    const ths=[...p.querySelectorAll('.fcsc thead th')], col=t=>ths.findIndex(h=>h.textContent.trim()===t);
+    const cut={[col('Venue')]:'v',[col('Winner/2nd')]:'w',[col('Jockey (Br)')]:'j'};
+    const ren={'Replay':'','Margin L':'Mrg','Jockey (Br)':'Jockey','Winner/2nd':'Winner'};
+    ths.forEach(h=>{ const t=h.textContent.trim(); if(t in ren) h.textContent=ren[t]; });
+    p.querySelectorAll('.fcsc tbody tr').forEach(t=>{ if(t.children.length<2) return;
+      [...t.children].forEach((c,i)=>{ const k=cut[i]; if(!k||!c.textContent.trim()) return;
+        c.innerHTML=`<div class="vfc ${k}" title="${c.textContent.trim().replace(/"/g,'&quot;')}">${c.innerHTML}</div>`; }); }); }
   p.querySelectorAll('a.frp').forEach(a=>{ const t=a.closest('tr'); if(t) t.classList.toggle('vfon',a.href===VFURL); });
   p.hidden=false; vfPlace();
 }
@@ -4072,4 +4085,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 16:56</b> AEST &middot; Gawler Good 4 -> Good 3</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 17:06</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
