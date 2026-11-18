@@ -1,25 +1,26 @@
 {
- "started": "2026-11-19T03:09:48",
+ "started": "2026-11-19T09:10:03",
  "dates": [
   "2026-11-19",
-  "2026-11-20"
+  "2026-11-20",
+  "2026-11-21"
  ],
- "reason": "overnight harvest",
+ "reason": "retry: Newcastle scratched R6 #1",
  "status": "ok",
  "acceptors": 462,
- "rider_share": 0.89,
- "extract_max_date": "2026-11-20",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-11-21",
  "card_source": "toprate",
- "extract": "2026-11-18T16:08:00+00:00",
- "finished": "2026-11-19T04:02:26",
+ "extract": "2026-11-18T21:22:53+00:00",
+ "finished": "2026-11-19T09:28:12",
  "going": {
   "Mornington": "Good 4",
-  "Newcastle": "Soft 5",
-  "Albury": "Soft 5",
+  "Newcastle": "Good 4",
+  "Albury": "Good 4",
   "Mackay": "Soft 5",
   "Narrogin": "Good 4"
  },
- "scratchings": 45,
+ "scratchings": 78,
  "dashboard": "toprate_week_v2_2026-11-19.html",
- "fingerprint": "60cef43808b0"
+ "fingerprint": "27fc1c73d5bc"
 }
