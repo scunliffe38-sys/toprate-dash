@@ -1,26 +1,26 @@
 {
- "started": "2026-11-18T11:21:23",
+ "started": "2026-11-18T13:40:31",
  "dates": [
   "2026-11-18",
   "2026-11-19",
   "2026-11-20"
  ],
- "reason": "Belmont Park Soft 5 -> Good 4; Belmont Park scratched R2 #10/17, R7 #17/18/19",
+ "reason": "Doomben Soft 6 -> Soft 5",
  "status": "ok",
  "acceptors": 450,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-20",
  "card_source": "toprate",
  "extract": "2026-11-17T21:23:38+00:00",
- "finished": "2026-11-18T11:38:06",
+ "finished": "2026-11-18T13:56:58",
  "going": {
   "Sandown": "Good 4",
   "Warwick Farm": "Soft 6",
-  "Doomben": "Soft 6",
+  "Doomben": "Soft 5",
   "Gawler": "Good 4",
   "Belmont Park": "Good 4"
  },
  "scratchings": 96,
  "dashboard": "toprate_week_v2_2026-11-18.html",
- "fingerprint": "6f9205a9f066"
+ "fingerprint": "71330c3c2c8c"
 }
