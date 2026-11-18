@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:22:48.800Z",
+ "saved": "2026-11-18T05:22:58.560Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -496,6 +496,15 @@
    "sp": 3.8,
    "fair": 6.25,
    "rating": 83.96
+  },
+  "Doomben|6|PUFFNHARRY": {
+   "on": 1,
+   "t": 1794979375290,
+   "name": "Puff 'n' Harry",
+   "tab": 1,
+   "sp": 5,
+   "fair": 3.52,
+   "rating": 86.32
   }
  }
 }
