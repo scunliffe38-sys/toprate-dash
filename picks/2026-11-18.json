@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:23:38.079Z",
+ "saved": "2026-11-18T10:23:48.465Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1126,6 +1126,15 @@
    "sp": 20.1,
    "fair": 42.29,
    "rating": 46.5
+  },
+  "Happy Valley|4|SUPERUNICORN": {
+   "on": 1,
+   "t": 1794997425349,
+   "name": "Super Unicorn",
+   "tab": 1,
+   "sp": 9.45,
+   "fair": 18.19,
+   "rating": 49.6
   }
  }
 }
