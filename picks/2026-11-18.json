@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:31:26.143Z",
+ "saved": "2026-11-18T05:32:51.044Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -640,6 +640,15 @@
    "sp": 9,
    "fair": 10.95,
    "rating": 74.37
+  },
+  "Sandown|5|MICKIDABEEL": {
+   "on": 1,
+   "t": 1794979967535,
+   "name": "Mickidabeel",
+   "tab": 4,
+   "sp": 2.7,
+   "fair": 3.82,
+   "rating": 86.99
   }
  }
 }
