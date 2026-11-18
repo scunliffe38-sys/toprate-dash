@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:56:10.994Z",
+ "saved": "2026-11-18T05:56:15.209Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -847,6 +847,15 @@
    "sp": 15,
    "fair": 12.88,
    "rating": 80.32
+  },
+  "Belmont Park|4|ROKNROM": {
+   "on": 1,
+   "t": 1794981371937,
+   "name": "Rok 'n' Rom",
+   "tab": 1,
+   "sp": 2.25,
+   "fair": 2.51,
+   "rating": 82.96
   }
  }
 }
