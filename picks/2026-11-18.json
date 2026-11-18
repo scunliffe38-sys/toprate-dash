@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T04:04:58.667Z",
+ "saved": "2026-11-18T04:05:11.904Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -370,6 +370,24 @@
    "sp": 2.4,
    "fair": 2.68,
    "rating": 71.37
+  },
+  "Gawler|2|SHESICONNIC": {
+   "on": 1,
+   "t": 1794974707611,
+   "name": "She's Iconnic",
+   "tab": 11,
+   "sp": 1.75,
+   "fair": 3.43,
+   "rating": 76.19
+  },
+  "Gawler|2|ARTISON": {
+   "on": 1,
+   "t": 1794974708713,
+   "name": "Artison",
+   "tab": 10,
+   "sp": 3.4,
+   "fair": 4.23,
+   "rating": 75.48
   }
  }
 }
