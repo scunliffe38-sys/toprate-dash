@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:30:45.672Z",
+ "saved": "2026-11-18T05:30:52.433Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -613,6 +613,15 @@
    "sp": 7.5,
    "fair": 8.34,
    "rating": 74.56
+  },
+  "Gawler|6|NOSIEBYNATURE": {
+   "on": 1,
+   "t": 1794979849235,
+   "name": "Nosie By Nature",
+   "tab": 2,
+   "sp": 5.5,
+   "fair": 7.1,
+   "rating": 75.72
   }
  }
 }
