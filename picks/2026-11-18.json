@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T06:24:02.224Z",
+ "saved": "2026-11-18T06:25:22.194Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -973,6 +973,42 @@
    "sp": 5.5,
    "fair": 10.6,
    "rating": 77.06
+  },
+  "Belmont Park|7|ASUMMERFLING": {
+   "on": 1,
+   "t": 1794983115006,
+   "name": "A Summer Fling",
+   "tab": 9,
+   "sp": 2.3,
+   "fair": 4.76,
+   "rating": 87.59
+  },
+  "Belmont Park|7|SHIMONOSEKI": {
+   "on": 1,
+   "t": 1794983116069,
+   "name": "Shimonoseki",
+   "tab": 7,
+   "sp": 6,
+   "fair": 7.17,
+   "rating": 86.43
+  },
+  "Belmont Park|7|SPANISHARMADA": {
+   "on": 1,
+   "t": 1794983117425,
+   "name": "Spanish Armada",
+   "tab": 11,
+   "sp": 8,
+   "fair": 11.9,
+   "rating": 85.04
+  },
+  "Belmont Park|7|SIMPLYOUTRAGEOUS": {
+   "on": 1,
+   "t": 1794983118659,
+   "name": "Simply Outrageous",
+   "tab": 16,
+   "sp": 26,
+   "fair": 14.7,
+   "rating": 84.43
   }
  }
 }
