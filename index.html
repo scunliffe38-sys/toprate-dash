@@ -683,10 +683,13 @@ header .rst.on,header .blt.on{background:#fff;color:var(--cond);border-color:#ff
 .vdock .vqp button.nx::after{content:"";position:absolute;right:2px;top:2px;width:5px;height:5px;border-radius:50%;background:var(--cond)}
 .vdock .vqp button.on{background:var(--cond);color:#fff;border-color:var(--cond)}
 .vdock .vqr{display:flex;flex-wrap:wrap;gap:5px 6px;margin-top:6px}
-.vdock .vru{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--rule);border-radius:4px;padding:2px 7px 2px 3px;min-width:0;max-width:100%}
-.vdock .vru img.vsk,.vdock .vru .vsk{display:block;width:30px;height:36px;flex:0 0 30px;object-fit:contain}
-.vdock .vru b{font-family:"Archivo Narrow",sans-serif;font-size:17px;line-height:1;font-variant-numeric:tabular-nums}
-.vdock .vru .vn{color:var(--dim);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px}
+.vdock .vru{display:inline-flex;align-items:center;gap:5px;border:1px solid var(--rule);border-radius:4px;padding:1px 7px 1px 2px;min-width:0;max-width:100%}
+.vdock .vru img.vsk,.vdock .vru .vsk{display:block;width:24px;height:29px;flex:0 0 24px;object-fit:contain}
+.vdock .vru b{font-family:"Archivo Narrow",sans-serif;font-size:15px;line-height:1;font-variant-numeric:tabular-nums}
+.vdock .vru .vn{color:var(--text);font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:110px}
+.vdock .vru .vo{font-family:"Archivo Narrow",sans-serif;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.vdock .vru .va{font-family:"Archivo Narrow",sans-serif;font-size:12.5px;color:var(--green);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
+.vdock.fs .vru .vo{color:#fff} .vdock.fs .vru .va{color:#8cc8f0}
 .vdock .vru.hit{border-color:var(--green);box-shadow:inset 0 0 0 1px var(--green)} .vdock .vru.hit .vn{color:var(--green);font-weight:600}
 .vdock .vru.won{border-color:var(--neg)} .vdock .vru.won .vn{color:var(--neg)}
 .vdock .vru.scr{opacity:.5} .vdock .vru.scr .vn{text-decoration:line-through}
@@ -3667,8 +3670,9 @@ function vfDraw(){
     p.querySelectorAll('.fcsc tbody tr').forEach(t=>{ if(t.children.length<2) return;
       [...t.children].forEach((c,i)=>{ const k=cut[i]; if(!k||!c.textContent.trim()) return;
         c.innerHTML=`<div class="vfc ${k}" title="${c.textContent.trim().replace(/"/g,'&quot;')}">${c.innerHTML}</div>`; }); });
-    // no Credit column in the panel (Simon, 18 Nov 2026: "drop credit for sure")
-    const cr=col('Credit'); if(cr>=0) p.querySelectorAll('.fcsc tr').forEach(t=>{ if(t.children.length>cr+1) t.children[cr].remove(); }); }
+    // no Credit or Gear column in the panel (Simon, 18 Nov 2026: "drop credit for sure", "drop gear too"); highest index first
+    ['Credit','Gear'].map(col).filter(i=>i>=0).sort((x,y)=>y-x).forEach(cr=>
+      p.querySelectorAll('.fcsc tr').forEach(t=>{ if(t.children.length>cr+1) t.children[cr].remove(); })); }
   p.querySelectorAll('a.frp').forEach(a=>{ const t=a.closest('tr'); if(t) t.classList.toggle('vfon',a.href===VFURL); });
   p.hidden=false; vfPlace();
 }
@@ -3801,11 +3805,20 @@ document.addEventListener('fullscreenchange',()=>{ const d=$("vdock"); if(!d) re
   d.classList.toggle('fs',on); if(!on){ try{ screen.orientation&&screen.orientation.unlock&&screen.orientation.unlock(); }catch(e){} }
   const f=$("vfs"); if(f) f.innerHTML=on?'&#10005;':'&#x26F6;'; vqDraw(); });
 (()=>{ const f=$("vfs"); if(f) f.hidden=!FS_OK; })();
-function vqRunner(rr,no,cls){
+// each runner one compact chip (Simon, 18 Nov 2026: "i don't love the runner display at the bottom of the video ... Silks, Runner Name
+// (abbreviate), number, Odds are what I want to see ... if last leg of Quaddie, then I want approximates"): silk, number, the name cut
+// short (vqAbbr; whole name on hover), TAB's price (x.sp, live), and on a quaddie's last leg TAB's approximate per $1 (live.json qa)
+function vqAbbr(nm){ nm=String(nm||'').trim(); if(nm.length<=11) return nm;
+  const w=nm.split(/\s+/), f=w[0].length>10?w[0].slice(0,9)+'.':w[0];
+  return w.length>1&&f.length<=10?f+' '+w.slice(1).map(y=>y[0]).join(''):f; }
+function vqRunner(rr,no,cls,ap){
   const x=(rr.all||rr.runners).find(y=>+y.no===+no)||(rr.scr||[]).find(y=>+y.no===+no)||{no,name:''};
-  const nm=String(x.name||'').replace(/</g,'');
+  const nm=String(x.name||'').replace(/</g,''), scr=/scr/.test(cls||'');
   const sk=x.silk?`<img class="vsk" src="${x.silk}" alt="" loading="lazy" onerror="this.outerHTML='<span class=&quot;vsk&quot;></span>'">`:'<span class="vsk"></span>';
-  return `<span class="vru ${cls||''}" title="${no} ${nm.replace(/"/g,'&quot;')}">${sk}<b>${no}</b><span class="vn">${nm}</span></span>`;
+  const od=!scr&&x.sp>1?'$'+x.sp.toFixed(2):'', av=!scr&&ap>0?qaFmt(ap):'';
+  const tip=`${no} ${nm}${scr?' (scratched)':''}${od?' · TAB '+od:''}${av?' · quaddie approx '+av+' per $1':''}`.replace(/"/g,'&quot;');
+  return `<span class="vru ${cls||''}" title="${tip}">${sk}<b>${no}</b><span class="vn">${vqAbbr(nm)}</span>`
+    +`<span class="vo">${scr?'scr':(od||'—')}</span>${av?`<span class="va">≈${av}</span>`:''}</span>`;
 }
 function vqDraw(){
   const el=$("vdq"); if(!el) return;
@@ -3830,10 +3843,12 @@ function vqDraw(){
       const c=[l.run?(l.win?(hit?'hit':'miss'):'run'):'', nx&&l.no===nx.g.no?'nx':'', l.no===g.no?'on':''].filter(Boolean).join(' ');
       return `<button type="button" class="${c}" onclick="vqLeg(${tk},${l.no})" aria-pressed="${l.no===g.no}" title="${l.run?'run':(nx&&l.no===nx.g.no?'next to run':'to come')}">R${l.no}</button>`; }).join('')).join('');
   const rr=m.races.find(r=>r.no===g.no);
-  const win=g.win||[], chips=g.sel.map(no=>vqRunner(rr,no,win.includes(no)?'hit':'')).join('')
+  const lq=i===3?(LIVEBY[d.date]||{})[`${m.track}|${g.no}`]:null, qa=(lq&&lq.qa&&lq.qa[q.p]&&lq.qa[q.p].a)||{}, ap=no=>+qa[String(no)]||0;
+  const win=g.win||[], chips=g.sel.map(no=>vqRunner(rr,no,win.includes(no)?'hit':'',ap(no))).join('')
     +g.scr.map(no=>vqRunner(rr,no,'scr')).join('')
-    +(win.length&&!win.some(w=>g.sel.includes(w))?win.map(no=>vqRunner(rr,no,'won')).join(''):'');
-  const note=t.part?'<div class="vqn">Your stars do not cover every leg yet, so these are SPM\'s.</div>':'';
+    +(win.length&&!win.some(w=>g.sel.includes(w))?win.map(no=>vqRunner(rr,no,'won',ap(no))).join(''):'');
+  const note=(Object.keys(qa).length?'<div class="vqn">≈ TAB\'s quaddie approximate: the return per $1 if that runner wins this, the last leg.</div>':'')
+    +(t.part?'<div class="vqn">Your stars do not cover every leg yet, so these are SPM\'s.</div>':'');
   el.innerHTML=bar+`<div class="vqp">${pick}<span class="cx">${t.legs.map(l=>l.sel.length).join('×')} = ${t.n} · ${myqFx(fx)}%</span></div><div class="vqr">${chips}</div>`+note; el.hidden=false;
 }
 setInterval(vqDraw,30000);   // a leg turning over at the off with no live tick yet
@@ -4087,4 +4102,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 17:15</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 17:22</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
