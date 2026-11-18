@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:21:55.620Z",
+ "saved": "2026-11-18T05:22:48.800Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -469,6 +469,33 @@
    "sp": 4.6,
    "fair": 3.35,
    "rating": 85.85
+  },
+  "Doomben|5|TREVENSON": {
+   "on": 1,
+   "t": 1794979363688,
+   "name": "Trevenson",
+   "tab": 1,
+   "sp": 12,
+   "fair": 10.1,
+   "rating": 82.53
+  },
+  "Doomben|5|CRYPTIONSDESIRE": {
+   "on": 1,
+   "t": 1794979364749,
+   "name": "Cryption's Desire",
+   "tab": 4,
+   "sp": 4.2,
+   "fair": 7.64,
+   "rating": 83.38
+  },
+  "Doomben|5|SAVEUR": {
+   "on": 1,
+   "t": 1794979365703,
+   "name": "Saveur",
+   "tab": 10,
+   "sp": 3.8,
+   "fair": 6.25,
+   "rating": 83.96
   }
  }
 }
