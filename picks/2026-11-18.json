@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:53:42.388Z",
+ "saved": "2026-11-18T03:54:10.753Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -307,6 +307,15 @@
    "sp": 9,
    "fair": 5.25,
    "rating": 75.88
+  },
+  "Doomben|3|XAMI": {
+   "on": 1,
+   "t": 1794974047479,
+   "name": "Xami",
+   "tab": 11,
+   "sp": 2.2,
+   "fair": 6.3,
+   "rating": 75.34
   }
  }
 }
