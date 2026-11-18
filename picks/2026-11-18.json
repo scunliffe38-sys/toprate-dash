@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T04:05:27.633Z",
+ "saved": "2026-11-18T04:05:31.320Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -433,6 +433,15 @@
    "sp": 3.3,
    "fair": 4.44,
    "rating": 76.39
+  },
+  "Gawler|4|FLYINGBRANT": {
+   "on": 1,
+   "t": 1794974728112,
+   "name": "Flying Brant",
+   "tab": 1,
+   "sp": 5,
+   "fair": 6.19,
+   "rating": 75.28
   }
  }
 }
