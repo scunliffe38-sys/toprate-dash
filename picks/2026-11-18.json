@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:39:32.566Z",
+ "saved": "2026-11-18T03:40:02.581Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -271,6 +271,24 @@
    "sp": 3.1,
    "fair": 3.07,
    "rating": 77.01
+  },
+  "Doomben|2|PRIZEWITNESS": {
+   "on": 1,
+   "t": 1794973197975,
+   "name": "Prize Witness",
+   "tab": 11,
+   "sp": 2.6,
+   "fair": 3.5,
+   "rating": 79.37
+  },
+  "Doomben|2|FILTHY": {
+   "on": 1,
+   "t": 1794973199487,
+   "name": "Filthy",
+   "tab": 1,
+   "sp": 4.4,
+   "fair": 4.69,
+   "rating": 78.52
   }
  }
 }
