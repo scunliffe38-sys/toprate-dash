@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:52:37.913Z",
+ "saved": "2026-11-18T05:52:41.547Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -793,6 +793,15 @@
    "sp": 9,
    "fair": 5.52,
    "rating": 81.84
+  },
+  "Belmont Park|1|MYSTICSMILE": {
+   "on": 1,
+   "t": 1794981158413,
+   "name": "Mystic Smile",
+   "tab": 8,
+   "sp": 4,
+   "fair": 7.04,
+   "rating": 81.04
   }
  }
 }
