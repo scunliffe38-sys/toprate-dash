@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:54:10.753Z",
+ "saved": "2026-11-18T03:54:45.637Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -316,6 +316,15 @@
    "sp": 2.2,
    "fair": 6.3,
    "rating": 75.34
+  },
+  "Doomben|3|FUNNYSTORIES": {
+   "on": 1,
+   "t": 1794974081960,
+   "name": "Funny Stories",
+   "tab": 13,
+   "sp": 34,
+   "fair": 21.58,
+   "rating": 71.54
   }
  }
 }
