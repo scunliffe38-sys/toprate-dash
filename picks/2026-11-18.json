@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:56:15.209Z",
+ "saved": "2026-11-18T05:56:18.461Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -856,6 +856,15 @@
    "sp": 2.25,
    "fair": 2.51,
    "rating": 82.96
+  },
+  "Belmont Park|4|THENUN": {
+   "on": 1,
+   "t": 1794981375316,
+   "name": "The Nun",
+   "tab": 2,
+   "sp": 4,
+   "fair": 6.33,
+   "rating": 80.1
   }
  }
 }
