@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:57:47.111Z",
+ "saved": "2026-11-18T10:57:53.833Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1047,35 +1047,20 @@
    "rating": 36.1
   },
   "Happy Valley|2|TACTICALCOMMAND": {
-   "on": 1,
-   "t": 1794996696562,
-   "name": "Tactical Command",
-   "tab": 4,
-   "sp": 26.3,
-   "fair": 42.62,
-   "rating": 30.6
+   "on": 0,
+   "t": 1794999468962
   },
   "Happy Valley|2|SPICYSPANGLE": {
-   "on": 1,
-   "t": 1794996697386,
-   "name": "Spicy Spangle",
-   "tab": 3,
-   "sp": 22.75,
-   "fair": 33.43,
-   "rating": 31.4
+   "on": 0,
+   "t": 1794999469662
   },
   "Happy Valley|2|DIAMONDSPARKLE": {
    "on": 0,
    "t": 1794999464031
   },
   "Happy Valley|2|DIRIYA": {
-   "on": 1,
-   "t": 1794996710856,
-   "name": "Diriya",
-   "tab": 10,
-   "sp": 12.3,
-   "fair": 32.79,
-   "rating": 31.5
+   "on": 0,
+   "t": 1794999470586
   },
   "Happy Valley|4|REFUSETOBEENGLISH": {
    "on": 1,
