@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T04:05:31.320Z",
+ "saved": "2026-11-18T05:20:20.297Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -442,6 +442,15 @@
    "sp": 5,
    "fair": 6.19,
    "rating": 75.28
+  },
+  "Warwick Farm|6|GLASTONBURYGIRL": {
+   "on": 1,
+   "t": 1794979216996,
+   "name": "Glastonbury Girl",
+   "tab": 15,
+   "sp": 14,
+   "fair": 15.37,
+   "rating": 86.7
   }
  }
 }
