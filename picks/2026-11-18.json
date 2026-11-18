@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:34:20.978Z",
+ "saved": "2026-11-18T05:34:47.511Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -703,6 +703,42 @@
    "sp": 6,
    "fair": 6,
    "rating": 84.81
+  },
+  "Sandown|7|HARBOURTOWN": {
+   "on": 1,
+   "t": 1794980079878,
+   "name": "Harbour Town",
+   "tab": 2,
+   "sp": 8,
+   "fair": 4.19,
+   "rating": 88.48
+  },
+  "Sandown|7|RUSSIANCHOICE": {
+   "on": 1,
+   "t": 1794980080751,
+   "name": "Russian Choice",
+   "tab": 9,
+   "sp": 2.5,
+   "fair": 4.67,
+   "rating": 88.12
+  },
+  "Sandown|7|ONAVUITTON": {
+   "on": 1,
+   "t": 1794980083043,
+   "name": "Onavuitton",
+   "tab": 4,
+   "sp": 3.9,
+   "fair": 6.37,
+   "rating": 87.14
+  },
+  "Sandown|7|JAMESJOHNO": {
+   "on": 1,
+   "t": 1794980084342,
+   "name": "Jamesjohno",
+   "tab": 10,
+   "sp": 9.5,
+   "fair": 7.82,
+   "rating": 86.49
   }
  }
 }
