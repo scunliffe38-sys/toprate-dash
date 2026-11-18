@@ -86,6 +86,16 @@ header .wgrp .wlive:hover{background:#e6f1f8}
 @media(max-width:720px){.daysrow{flex-wrap:wrap}.hs{flex:1 1 100%;order:3;padding:6px 0 8px}.hpan{padding:10px 6px 60px}.hpan .hpi{padding:10px 8px 14px}.hist{padding:4px 8px}.hist label{display:none}}
 
 .mtabs{display:flex;gap:6px;overflow-x:auto;margin-bottom:14px;padding-bottom:2px}
+.ntgbar{display:flex;align-items:stretch;gap:6px;overflow-x:auto;margin:-6px 0 14px;padding-bottom:2px}
+.ntgbar[hidden]{display:none}
+.ntgbar .nl{flex:0 0 auto;align-self:center;color:var(--dim);font-size:10.5px;font-weight:600;text-transform:uppercase;letter-spacing:.06em;margin-right:2px;white-space:nowrap}
+.ntgbar button{flex:0 0 auto;background:var(--panel);border:1px solid var(--rule);border-radius:4px;color:var(--text);padding:4px 10px;cursor:pointer;
+  font-family:inherit;font-size:12.5px;line-height:1.25;display:flex;flex-direction:column;align-items:flex-start;gap:1px;white-space:nowrap}
+.ntgbar button:hover{border-color:var(--green)}
+.ntgbar button .t{font-weight:600} .ntgbar button .s{color:var(--dim);font-size:11.5px;font-variant-numeric:tabular-nums}
+.ntgbar button .cd.soon{color:var(--brick);font-weight:600}
+.ntgbar button[aria-selected="true"]{border-color:var(--green);box-shadow:inset 0 0 0 1px var(--green)}
+.ntgbar button .pkn{color:var(--cond);font-style:normal;margin-left:3px}
 .mtabs button{flex:0 0 auto;background:var(--panel);border:1px solid var(--rule);border-radius:3px;color:var(--dim);padding:8px 13px;cursor:pointer;white-space:nowrap;text-align:left;font-family:inherit;font-size:13px;display:flex;flex-direction:column;gap:2px;min-width:118px}
 .mtabs button:hover{border-color:var(--dim);color:var(--text)}
 .mtabs button[aria-selected=true]{border-color:var(--brass);background:var(--panel2);color:var(--text)}
@@ -1188,6 +1198,7 @@ nav button .pkn,.daytab .pkn{color:var(--green);font-style:normal;font-size:10px
 <div class="mtabs" id="meets" role="tablist"></div>
 <div class="mtabs sub" id="meets2" role="tablist"></div>
 <div class="mtabs hkrow" id="meetshk" role="tablist" aria-label="Hong Kong"></div>
+<div class="ntgbar" id="ntgbar" role="tablist" aria-label="Next to go" hidden></div>
 <nav id="tabs" role="tablist"></nav>
 <div id="mgo"></div>
 <div id="race"></div>
@@ -1304,7 +1315,7 @@ let PKHOME=(()=>{ let v=null; try{ v=new URLSearchParams(location.search).get('h
 const $=id=>document.getElementById(id);
 let daySort='meeting';   // 'meeting' | 'time' | 'rating'
 let allMeets=false;      // the carousel carries one meeting per state until this is on
-let day=0, meet=-2, active=-1, open=null;   // meet -2 = Next to Go (the landing page), -1 = Today's Best, active -1 = meeting summary
+let day=0, meet=-1, active=-1, open=null;   // meet -1 = Today's Best (the landing page since the Next to Go page went, 18 Nov 2026), active -1 = meeting summary
 const STATE_ORDER=['VIC','NSW','QLD','SA','WA','TAS','ACT'];
 DATA.days.forEach(d=>d.meetings.sort((a,b)=>{                       // stable: keeps builder order within a state
   const ia=STATE_ORDER.indexOf(a.state), ib=STATE_ORDER.indexOf(b.state);
@@ -2181,12 +2192,8 @@ function drawMeets(){
   const sm=shownMeets(d).map(i=>d.meetings[i]);
   $("hdate").textContent=fmtDate(d.date,{weekday:'long',day:'numeric',month:'long',year:'numeric'});
   const np=dayPicks().length;
-  const nx=nextRaces(), up=nx.filter(it=>!it.ran), n1=up[0];
   const best=day===0?"Today's Best":fmtDate(d.date,{weekday:'short'})+"'s Best";
-  $("meets").innerHTML=`<button role="tab" class="ntg" aria-selected="${meet===-2}" onclick="pickMeet(-2)">
-      <span class="tk">Next to Go</span>
-      <span class="sb"><span>${n1?n1.m.track+' R'+n1.r.no:'all run'}</span><span class="w">${up.length} to go</span></span></button>
-    <button role="tab" class="today" aria-selected="${meet===-1}" onclick="pickMeet(-1)">
+  $("meets").innerHTML=`<button role="tab" class="today" aria-selected="${meet===-1}" onclick="pickMeet(-1)">
       <span class="tk">${best}</span>
       <span class="sb"><span>${sm.length} meeting${sm.length===1?'':'s'}</span><span class="w">${np} to look at</span></span></button>`+strip.map(i=>{const m=d.meetings[i];return isHK(m)?hkTab(m,i):`<button role="tab" aria-selected="${i===meet}"${meetDone(m)?' class="done"':''} onclick="pickMeet(${i})">
       <span class="tk">${m.track}</span>
@@ -2254,31 +2261,22 @@ function nextRaces(){
 }
 let _nextKey='';
 function nextKey(){ const it=nextRaces().find(x=>!x.ran); return it?it.m.track+'|'+it.r.no:'-'; }
-function drawNext(){
-  const items=nextRaces(); _nextKey=nextKey();
-  if(!items.length){ $("race").innerHTML=`<p class="mnote">No races at the main meetings.</p>`; return; }
-  let h=`<div class="scroll"><table class="daytab ntgtab"><thead><tr><th></th><th>Top rated</th><th>Race</th><th class="r">Rating</th>
-      <th class="r" title="Rating points clear of the next horse in the race">Gap</th><th class="r">Model</th><th class="r">Mkt <span class="mkt-fresh"></span></th></tr></thead><tbody>`;
-  let sep=false;
-  items.forEach(it=>{
-    const {m,mi,r,ri,a,ran}=it, x=a.top, gap=a.gap;
-    if(ran&&!sep){ sep=true; if(items.some(i=>!i.ran)) h+=`<tr class="ransep"><td colspan="7">Already run</td></tr>`; }
-    const big=gap>=GAP_BIG, ov=x.sp?(x.sp>=x.fair*1.15?' up':(x.sp<=x.fair/1.15?' dn':'')):'';
-    h+=`<tr class="srow${big?' big':(gap>=GAP_STANDOUT&&r.runners[1]?' std':'')}${ran?' ran':''}" tabindex="0" data-mi="${mi}" data-ri="${ri}">
-      <td>${silk(x)}</td>
-      <td><div class="stop">${x.name}${resBadge(m.track,r,x)}</div><div class="sname">${x.jockey||'jockey TBA'} · ${x.trainer}</div></td>
-      <td><div class="stop nw">${m.track} R${r.no}${pkRaceN(m,r)?`<i class="pkn" title="${pkRaceN(m,r)} of your picks">★${pkRaceN(m,r)>1?pkRaceN(m,r):''}</i>`:''}</div><div class="sname"><span class="cd" data-t="${r.start_utc||''}" data-k="${m.track}|${r.no}">&nbsp;</span> · ${r.time||''} · ${r.dist}m <i class="clc ${clsTone(r.cls)}">${r.cls}</i></div></td>
-      <td class="rate" style="font-size:19px">${x.rating.toFixed(1)}</td>
-      <td class="edge ${big?'big':(gap>=GAP_STANDOUT?'p':'')}">${r.runners[1]?fxsign(gap):''}</td>
-      <td class="price">$${x.fair.toFixed(2)}</td>
-      <td class="price mk${ov}" title="${ov===' up'?'the market is offering 15% or more over our price':(ov===' dn'?'the market is 15% or more under our price':'')}">${x.sp?'$'+x.sp.toFixed(2):'—'}</td></tr>`;
-  });
-  $("race").innerHTML=h+`</tbody></table></div>`;
-  document.querySelectorAll("tr.srow").forEach(tr=>{
-    const go=()=>{meet=+tr.dataset.mi;active=+tr.dataset.ri;open=null;draw();$("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});};
-    tr.onclick=go; tr.onkeydown=e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}};
-  });
+// Next to Go as a row of buttons under the meetings (Simon, 18 Nov 2026: "across the top .. i want next to go as cards ... left to
+// right ... below the meetings ... then remove the next to go page"; "by cards i mean buttons"): every race still to run at the main
+// meetings and Hong Kong, soonest on the left, track and race over the countdown and start time; a click opens the race. The
+// Next to Go page it replaces (20 Sep 2026) is gone and the dash opens on Today's Best.
+function drawNtg(){
+  const el=$("ntgbar"); if(!el) return;
+  const up=nextRaces().filter(it=>!it.ran); _nextKey=nextKey();
+  if(!up.length){ el.hidden=true; el.innerHTML=''; return; }
+  el.innerHTML=up.map(   // no label (Simon, 18 Nov 2026: "don't even need the NTG label")
+    ({m,mi,r,ri})=>{ const pk=pkRaceN(m,r);
+    return `<button role="tab" aria-selected="${meet===mi&&active===ri}" onclick="ntgGo(${mi},${ri})" title="${String(m.track).replace(/"/g,'&quot;')} R${r.no} · ${r.time||''} · ${r.dist}m ${String(r.cls||'').replace(/"/g,'&quot;')}">`
+      +`<span class="t">${m.track} R${r.no}${pk?`<i class="pkn" title="${pk} of your picks">★</i>`:''}</span>`
+      +`<span class="s"><span class="cd" data-t="${r.start_utc||''}" data-k="${m.track}|${r.no}">&nbsp;</span>${r.time?' · '+r.time:''}</span></button>`; }).join('');
+  el.hidden=false;
 }
+window.ntgGo=(mi,ri)=>{ meet=mi; active=ri; open=null; draw(); $("tabs").scrollIntoView({behavior:'smooth',block:'nearest'}); };
 function drawSummary(){
   const m=M(); const rows=m.races.map(r=>({r,a:analyse(r)}));
   let h='';
@@ -3342,9 +3340,9 @@ document.addEventListener('visibilitychange',()=>{
   if(document.visibilityState==='hidden') Object.keys(PKS.timer).forEach(d=>{ clearTimeout(PKS.timer[d]); pkPush(d); });
 });
 function draw(){
-  drawDays(); drawMeets(); bltLabel(); rstLabel(); vqDraw(); vfDraw();
+  drawDays(); drawMeets(); drawNtg(); bltLabel(); rstLabel(); vqDraw(); vfDraw();
   $("tabs").style.display=meet<0?'none':''; $("mgo").innerHTML=mgoBar();
-  if(meet<0){ $("tabs").innerHTML=''; if(meet===-2) drawNext(); else drawDay(); countdown(); refreshTabAge(); return; }
+  if(meet<0){ $("tabs").innerHTML=''; drawDay(); countdown(); refreshTabAge(); return; }
   const races=M().races;
   $("tabs").innerHTML=`<button role="tab" class="sum" aria-selected="${active===-1}" onclick="pick(-1)"><span class="rn">Summary</span><span class="rt">&nbsp;</span><span class="cd">&nbsp;</span></button>`+
     races.map((r,i)=>`<button role="tab" aria-selected="${i===active}" onclick="pick(${i})"><span class="rn">R${r.no}${pkRaceN(M(),r)?`<i class="pkn" title="${pkRaceN(M(),r)} of your picks">★</i>`:''}</span><span class="rt">${r.time||'&nbsp;'}</span>${r.time_hk?`<span class="hkt">${r.time_hk} HK</span>`:''}${r.dist?`<span class="rdc" title="${String(r.cls||'').replace(/"/g,'&quot;')}"><b>${r.dist}m</b> <i class="clc ${clsTone(r.cls)}">${clsShort(r.cls)}</i></span>`:''}<span class="cd" data-t="${r.start_utc||''}" data-k="${M().track}|${r.no}">&nbsp;</span></button>`).join("");
@@ -3354,7 +3352,7 @@ function draw(){
 
 function countdown(){
   const now=Date.now();
-  document.querySelectorAll("nav .cd[data-t],.daytab .cd[data-t]").forEach(el=>{
+  document.querySelectorAll("nav .cd[data-t],.daytab .cd[data-t],.ntgbar .cd[data-t]").forEach(el=>{
     const lv=LIVE[el.dataset.k]; const st=lv&&lv.status, tr=el.closest('.daytab tr');
     if(tr) tr.classList.toggle('near',!(st&&st!=='Normal')&&!!el.dataset.t&&(new Date(el.dataset.t).getTime()-now)>0&&(new Date(el.dataset.t).getTime()-now)<=600000);   // inside 10 minutes (23 Oct 2026)
     if(st&&st!=='Normal'){ const m={Closed:['closed','soon'],Interim:['interim','soon'],Paying:['paying','gone'],Abandoned:['abnd','gone']}[st];
@@ -3370,10 +3368,10 @@ function countdown(){
     el.textContent=txt; el.className="cd"+(cls?" "+cls:"");
   });
 }
-setInterval(()=>{ if(meet===-2&&nextKey()!==_nextKey) draw(); else countdown(); },30000);
+setInterval(()=>{ if(nextKey()!==_nextKey) draw(); else countdown(); },30000);   // a race jumping drops off the strip
 window.pick=i=>{active=i;open=null;draw();};
 window.pickMeet=i=>{meet=i;active=i<0?-1:landingRace(D().meetings[i]);open=null;draw();$("tabs").scrollIntoView({behavior:'smooth',block:'nearest'});};
-window.pickDay=i=>{day=i;meet=-2;active=-1;open=null;draw();};
+window.pickDay=i=>{day=i;meet=-1;active=-1;open=null;draw();};
 draw();
 pkPull();   // the picks the other devices left (picks/<date>.json), after the page is up
 // the deep link (Simon, 4 Nov 2026): #<track>|<horse> opens that meeting at the race the horse was in, its row open -- the race
@@ -4102,4 +4100,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 18:09</b> AEST &middot; Warwick Farm scratched R6 #1</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Wed 18 Nov 18:22</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
