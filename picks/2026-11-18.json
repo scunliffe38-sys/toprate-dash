@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T06:23:08.935Z",
+ "saved": "2026-11-18T06:23:25.523Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -937,6 +937,15 @@
    "sp": 3.2,
    "fair": 3.96,
    "rating": 80.9
+  },
+  "Belmont Park|5|SUPERFLUOUS": {
+   "on": 1,
+   "t": 1794983002047,
+   "name": "Superfluous",
+   "tab": 3,
+   "sp": 13,
+   "fair": 16.65,
+   "rating": 76.47
   }
  }
 }
