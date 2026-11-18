@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:20:20.297Z",
+ "saved": "2026-11-18T05:20:26.046Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -451,6 +451,15 @@
    "sp": 14,
    "fair": 15.37,
    "rating": 86.7
+  },
+  "Warwick Farm|6|SUPERATA": {
+   "on": 1,
+   "t": 1794979222780,
+   "name": "Superata",
+   "tab": 8,
+   "sp": 21,
+   "fair": 26.62,
+   "rating": 85.01
   }
  }
 }
