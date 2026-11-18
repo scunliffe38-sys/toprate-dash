@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:11:53.979Z",
+ "saved": "2026-11-18T10:18:50.575Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1081,6 +1081,15 @@
    "sp": 12.3,
    "fair": 32.79,
    "rating": 31.5
+  },
+  "Happy Valley|4|REFUSETOBEENGLISH": {
+   "on": 1,
+   "t": 1794997127528,
+   "name": "Refusetobeenglish",
+   "tab": 2,
+   "sp": 7.55,
+   "fair": 19.67,
+   "rating": 49.3
   }
  }
 }
