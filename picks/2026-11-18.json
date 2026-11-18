@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:55:55.610Z",
+ "saved": "2026-11-18T05:56:05.866Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -829,6 +829,15 @@
    "sp": 3.6,
    "fair": 7.05,
    "rating": 82.22
+  },
+  "Belmont Park|3|MIGHTYHOSANNA": {
+   "on": 1,
+   "t": 1794981362730,
+   "name": "Mighty Hosanna",
+   "tab": 2,
+   "sp": 5.5,
+   "fair": 8.62,
+   "rating": 81.57
   }
  }
 }
