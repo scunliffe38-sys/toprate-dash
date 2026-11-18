@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:25:43.933Z",
+ "saved": "2026-11-18T05:25:57.893Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -541,6 +541,15 @@
    "sp": 5.5,
    "fair": 9.97,
    "rating": 84.64
+  },
+  "Doomben|7|DISPARATE": {
+   "on": 1,
+   "t": 1794979554807,
+   "name": "Disparate",
+   "tab": 18,
+   "sp": 9,
+   "fair": 11.34,
+   "rating": 84.27
   }
  }
 }
