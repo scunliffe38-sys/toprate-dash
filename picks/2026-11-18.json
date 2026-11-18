@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:57:43.553Z",
+ "saved": "2026-11-18T10:57:47.111Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1065,13 +1065,8 @@
    "rating": 31.4
   },
   "Happy Valley|2|DIAMONDSPARKLE": {
-   "on": 1,
-   "t": 1794996699700,
-   "name": "Diamond Sparkle",
-   "tab": 6,
-   "sp": 25.55,
-   "fair": 32.55,
-   "rating": 31.5
+   "on": 0,
+   "t": 1794999464031
   },
   "Happy Valley|2|DIRIYA": {
    "on": 1,
