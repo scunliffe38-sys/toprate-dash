@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T06:23:25.523Z",
+ "saved": "2026-11-18T06:23:34.740Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -946,6 +946,24 @@
    "sp": 13,
    "fair": 16.65,
    "rating": 76.47
+  },
+  "Belmont Park|6|CAPABLEANGEL": {
+   "on": 1,
+   "t": 1794983009936,
+   "name": "Capable Angel",
+   "tab": 4,
+   "sp": 4.4,
+   "fair": 4.46,
+   "rating": 79.6
+  },
+  "Belmont Park|6|QUEENNARDI": {
+   "on": 1,
+   "t": 1794983011573,
+   "name": "Queen Nardi",
+   "tab": 6,
+   "sp": 4.4,
+   "fair": 6.03,
+   "rating": 78.71
   }
  }
 }
