@@ -1,26 +1,26 @@
 {
- "started": "2026-11-18T16:18:02",
+ "started": "2026-11-18T16:40:35",
  "dates": [
   "2026-11-18",
   "2026-11-19",
   "2026-11-20"
  ],
- "reason": "Warwick Farm Soft 5 -> Good 4",
+ "reason": "Gawler Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 450,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-20",
  "card_source": "toprate",
  "extract": "2026-11-17T21:23:38+00:00",
- "finished": "2026-11-18T16:34:45",
+ "finished": "2026-11-18T16:56:47",
  "going": {
   "Sandown": "Good 4",
   "Warwick Farm": "Good 4",
   "Doomben": "Good 4",
-  "Gawler": "Good 4",
+  "Gawler": "Good 3",
   "Belmont Park": "Good 4"
  },
  "scratchings": 96,
  "dashboard": "toprate_week_v2_2026-11-18.html",
- "fingerprint": "894becdb72a1"
+ "fingerprint": "5d40ad3fe204"
 }
