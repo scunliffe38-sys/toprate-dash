@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:30:40.070Z",
+ "saved": "2026-11-18T05:30:45.672Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -604,6 +604,15 @@
    "sp": 6,
    "fair": 7.71,
    "rating": 74.76
+  },
+  "Gawler|7|BLACKSEA": {
+   "on": 1,
+   "t": 1794979842530,
+   "name": "Black Sea",
+   "tab": 3,
+   "sp": 7.5,
+   "fair": 8.34,
+   "rating": 74.56
   }
  }
 }
