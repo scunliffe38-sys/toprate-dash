@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:18:50.575Z",
+ "saved": "2026-11-18T10:19:01.301Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1090,6 +1090,15 @@
    "sp": 7.55,
    "fair": 19.67,
    "rating": 49.3
+  },
+  "Happy Valley|4|REDBRICKWARRIOR": {
+   "on": 1,
+   "t": 1794997138209,
+   "name": "Red Brick Warrior",
+   "tab": 12,
+   "sp": 8.75,
+   "fair": 3,
+   "rating": 56.2
   }
  }
 }
