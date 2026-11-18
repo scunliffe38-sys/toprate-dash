@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:52:41.547Z",
+ "saved": "2026-11-18T05:52:58.165Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -802,6 +802,15 @@
    "sp": 4,
    "fair": 7.04,
    "rating": 81.04
+  },
+  "Belmont Park|1|GINGERMACHINO": {
+   "on": 1,
+   "t": 1794981174907,
+   "name": "Ginger Machino",
+   "tab": 10,
+   "sp": 4.4,
+   "fair": 7.81,
+   "rating": 80.75
   }
  }
 }
