@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:20:26.046Z",
+ "saved": "2026-11-18T05:21:55.620Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -460,6 +460,15 @@
    "sp": 21,
    "fair": 26.62,
    "rating": 85.01
+  },
+  "Doomben|5|TILLDUSK": {
+   "on": 1,
+   "t": 1794979312495,
+   "name": "Till Dusk",
+   "tab": 2,
+   "sp": 4.6,
+   "fair": 3.35,
+   "rating": 85.85
   }
  }
 }
