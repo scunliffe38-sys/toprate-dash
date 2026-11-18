@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:29:13.753Z",
+ "saved": "2026-11-18T05:29:45.786Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -568,6 +568,15 @@
    "sp": 4,
    "fair": 5.39,
    "rating": 78.38
+  },
+  "Gawler|6|VOLKANO": {
+   "on": 1,
+   "t": 1794979782645,
+   "name": "Volkano",
+   "tab": 6,
+   "sp": 4.6,
+   "fair": 5.3,
+   "rating": 76.67
   }
  }
 }
