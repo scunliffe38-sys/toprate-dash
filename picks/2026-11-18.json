@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T06:25:22.194Z",
+ "saved": "2026-11-18T06:25:46.423Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1009,6 +1009,15 @@
    "sp": 26,
    "fair": 14.7,
    "rating": 84.43
+  },
+  "Belmont Park|7|PRECIOUSGOD": {
+   "on": 1,
+   "t": 1794983142794,
+   "name": "Precious God",
+   "tab": 3,
+   "sp": 19,
+   "fair": 20.5,
+   "rating": 83.52
   }
  }
 }
