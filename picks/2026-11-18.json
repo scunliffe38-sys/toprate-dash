@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:40:02.581Z",
+ "saved": "2026-11-18T03:53:08.621Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -289,6 +289,15 @@
    "sp": 4.4,
    "fair": 4.69,
    "rating": 78.52
+  },
+  "Doomben|2|IAMLOUIE": {
+   "on": 1,
+   "t": 1794973981523,
+   "name": "I Am Louie",
+   "tab": 4,
+   "sp": 14,
+   "fair": 8.48,
+   "rating": 76.71
   }
  }
 }
