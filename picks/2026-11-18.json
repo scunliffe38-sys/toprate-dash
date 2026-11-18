@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:29:45.786Z",
+ "saved": "2026-11-18T05:30:40.070Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -577,6 +577,33 @@
    "sp": 4.6,
    "fair": 5.3,
    "rating": 76.67
+  },
+  "Gawler|7|TORRITA": {
+   "on": 1,
+   "t": 1794979833009,
+   "name": "Torrita",
+   "tab": 9,
+   "sp": 4.6,
+   "fair": 5.43,
+   "rating": 75.87
+  },
+  "Gawler|7|EXONUMIA": {
+   "on": 1,
+   "t": 1794979834733,
+   "name": "Exonumia",
+   "tab": 2,
+   "sp": 5,
+   "fair": 5.67,
+   "rating": 75.68
+  },
+  "Gawler|7|MAPLEWAY": {
+   "on": 1,
+   "t": 1794979836278,
+   "name": "Mapleway",
+   "tab": 10,
+   "sp": 6,
+   "fair": 7.71,
+   "rating": 74.76
   }
  }
 }
