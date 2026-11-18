@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:22:58.560Z",
+ "saved": "2026-11-18T05:24:20.212Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -505,6 +505,15 @@
    "sp": 5,
    "fair": 3.52,
    "rating": 86.32
+  },
+  "Doomben|6|ABENDER": {
+   "on": 1,
+   "t": 1794979456664,
+   "name": "Abender",
+   "tab": 3,
+   "sp": 3.6,
+   "fair": 4.83,
+   "rating": 85.32
   }
  }
 }
