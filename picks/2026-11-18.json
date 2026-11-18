@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:57:10.676Z",
+ "saved": "2026-11-18T03:57:29.318Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -343,6 +343,15 @@
    "sp": 9,
    "fair": 11.6,
    "rating": 79.59
+  },
+  "Doomben|4|DOWNUNDERSTUNNAH": {
+   "on": 1,
+   "t": 1794974246104,
+   "name": "Down Under Stunnah",
+   "tab": 10,
+   "sp": 8,
+   "fair": 9.72,
+   "rating": 80.15
   }
  }
 }
