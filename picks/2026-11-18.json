@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:33:04.045Z",
+ "saved": "2026-11-18T05:33:56.306Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -667,6 +667,15 @@
    "sp": 3.7,
    "fair": 8.09,
    "rating": 84.48
+  },
+  "Sandown|5|SAMUELLANGHORNE": {
+   "on": 1,
+   "t": 1794980032665,
+   "name": "Samuel Langhorne",
+   "tab": 3,
+   "sp": 23,
+   "fair": 8.06,
+   "rating": 84.5
   }
  }
 }
