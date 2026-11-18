@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:56:30.950Z",
+ "saved": "2026-11-18T05:56:54.530Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -874,6 +874,51 @@
    "sp": 18,
    "fair": 14.22,
    "rating": 77.7
+  },
+  "Belmont Park|2|VENETIANGEM": {
+   "on": 1,
+   "t": 1794981406830,
+   "name": "Venetian Gem",
+   "tab": 14,
+   "sp": 7.5,
+   "fair": 7.34,
+   "rating": 79.55
+  },
+  "Belmont Park|2|BRAVEMOVE": {
+   "on": 1,
+   "t": 1794981407535,
+   "name": "Brave Move",
+   "tab": 5,
+   "sp": 8,
+   "fair": 6.69,
+   "rating": 79.74
+  },
+  "Belmont Park|2|TWICETHECHARM": {
+   "on": 1,
+   "t": 1794981408766,
+   "name": "Twice The Charm",
+   "tab": 11,
+   "sp": 4.2,
+   "fair": 6.47,
+   "rating": 79.97
+  },
+  "Belmont Park|2|BUSTERSBABE": {
+   "on": 1,
+   "t": 1794981410602,
+   "name": "Buster's Babe",
+   "tab": 6,
+   "sp": 3.1,
+   "fair": 5.62,
+   "rating": 80.23
+  },
+  "Belmont Park|2|FALLENCITY": {
+   "on": 1,
+   "t": 1794981411445,
+   "name": "Fallen City",
+   "tab": 13,
+   "sp": 7.5,
+   "fair": 5.33,
+   "rating": 80.4
   }
  }
 }
