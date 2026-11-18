@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:54:45.637Z",
+ "saved": "2026-11-18T03:56:22.264Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -325,6 +325,15 @@
    "sp": 34,
    "fair": 21.58,
    "rating": 71.54
+  },
+  "Doomben|4|PECCAVI": {
+   "on": 1,
+   "t": 1794974178331,
+   "name": "Peccavi",
+   "tab": 5,
+   "sp": 2.7,
+   "fair": 3.96,
+   "rating": 82.98
   }
  }
 }
