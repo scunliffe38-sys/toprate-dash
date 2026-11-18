@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T04:05:15.887Z",
+ "saved": "2026-11-18T04:05:22.353Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -397,6 +397,24 @@
    "sp": 2.7,
    "fair": 3.49,
    "rating": 77.57
+  },
+  "Gawler|3|LAPILLI": {
+   "on": 1,
+   "t": 1794974717980,
+   "name": "Lapilli",
+   "tab": 4,
+   "sp": 7.5,
+   "fair": 5.68,
+   "rating": 75.9
+  },
+  "Gawler|3|MUSICALSUNSET": {
+   "on": 1,
+   "t": 1794974719252,
+   "name": "Musical Sunset",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 6.24,
+   "rating": 75.65
   }
  }
 }
