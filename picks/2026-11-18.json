@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:56:18.461Z",
+ "saved": "2026-11-18T05:56:30.950Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -865,6 +865,15 @@
    "sp": 4,
    "fair": 6.33,
    "rating": 80.1
+  },
+  "Belmont Park|4|EUTHYMIC": {
+   "on": 1,
+   "t": 1794981387773,
+   "name": "Euthymic",
+   "tab": 7,
+   "sp": 18,
+   "fair": 14.22,
+   "rating": 77.7
   }
  }
 }
