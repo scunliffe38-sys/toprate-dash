@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T03:58:01.270Z",
+ "saved": "2026-11-18T04:04:58.667Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -361,6 +361,15 @@
    "sp": 2.8,
    "fair": 3.12,
    "rating": 83.73
+  },
+  "Gawler|1|BREWSTERBUCK": {
+   "on": 1,
+   "t": 1794974694920,
+   "name": "Brewster Buck",
+   "tab": 6,
+   "sp": 2.4,
+   "fair": 2.68,
+   "rating": 71.37
   }
  }
 }
