@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:31:14.549Z",
+ "saved": "2026-11-18T05:31:26.143Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -631,6 +631,15 @@
    "sp": 9.5,
    "fair": 9.77,
    "rating": 74.73
+  },
+  "Gawler|6|PRANCETHRULIFE": {
+   "on": 1,
+   "t": 1794979883031,
+   "name": "Prancethrulife",
+   "tab": 9,
+   "sp": 9,
+   "fair": 10.95,
+   "rating": 74.37
   }
  }
 }
