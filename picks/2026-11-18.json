@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:25:06.760Z",
+ "saved": "2026-11-18T05:25:43.933Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -532,6 +532,15 @@
    "sp": 2,
    "fair": 5.69,
    "rating": 86.28
+  },
+  "Doomben|7|VEOMAS": {
+   "on": 1,
+   "t": 1794979539991,
+   "name": "Veomas",
+   "tab": 8,
+   "sp": 5.5,
+   "fair": 9.97,
+   "rating": 84.64
   }
  }
 }
