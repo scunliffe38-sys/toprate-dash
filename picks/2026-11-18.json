@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:34:47.511Z",
+ "saved": "2026-11-18T05:35:08.242Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -739,6 +739,42 @@
    "sp": 9.5,
    "fair": 7.82,
    "rating": 86.49
+  },
+  "Sandown|8|BEFUDDLE": {
+   "on": 1,
+   "t": 1794980094916,
+   "name": "Befuddle",
+   "tab": 7,
+   "sp": 2.6,
+   "fair": 3.49,
+   "rating": 88.55
+  },
+  "Sandown|8|SISTERSHAY": {
+   "on": 1,
+   "t": 1794980097063,
+   "name": "Sister Shay",
+   "tab": 2,
+   "sp": 7,
+   "fair": 4.96,
+   "rating": 87.41
+  },
+  "Sandown|8|THEVOLTA": {
+   "on": 1,
+   "t": 1794980098401,
+   "name": "The Volta",
+   "tab": 8,
+   "sp": 4,
+   "fair": 5.63,
+   "rating": 87.01
+  },
+  "Sandown|8|LEGACYBAY": {
+   "on": 1,
+   "t": 1794980100149,
+   "name": "Legacy Bay",
+   "tab": 10,
+   "sp": 6,
+   "fair": 9.34,
+   "rating": 85.38
   }
  }
 }
