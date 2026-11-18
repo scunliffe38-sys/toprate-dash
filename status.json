@@ -1,27 +1,25 @@
 {
- "started": "2026-11-18T18:43:02",
+ "started": "2026-11-19T03:09:48",
  "dates": [
-  "2026-11-18",
   "2026-11-19",
   "2026-11-20"
  ],
- "reason": "Gawler scratched R6 #12",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 450,
- "rider_share": 1.0,
+ "acceptors": 462,
+ "rider_share": 0.89,
  "extract_max_date": "2026-11-20",
  "card_source": "toprate",
- "extract": "2026-11-17T21:23:38+00:00",
- "finished": "2026-11-18T18:59:37",
+ "extract": "2026-11-18T16:08:00+00:00",
+ "finished": "2026-11-19T04:02:26",
  "going": {
-  "Sandown": "Good 4",
-  "Gawler": "Good 3",
-  "Belmont Park": "Good 4",
-  "Happy Valley": "Good",
-  "Warwick Farm": "Good 4",
-  "Doomben": "Good 4"
+  "Mornington": "Good 4",
+  "Newcastle": "Soft 5",
+  "Albury": "Soft 5",
+  "Mackay": "Soft 5",
+  "Narrogin": "Good 4"
  },
- "scratchings": 100,
- "dashboard": "toprate_week_v2_2026-11-18.html",
- "fingerprint": "8e69a2496997"
+ "scratchings": 45,
+ "dashboard": "toprate_week_v2_2026-11-19.html",
+ "fingerprint": "60cef43808b0"
 }
