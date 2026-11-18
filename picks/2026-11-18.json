@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:51:51.956Z",
+ "saved": "2026-11-18T05:52:37.913Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -784,6 +784,15 @@
    "sp": 3,
    "fair": 4.62,
    "rating": 82.38
+  },
+  "Belmont Park|1|TWILIGHTSTAR": {
+   "on": 1,
+   "t": 1794981154560,
+   "name": "Twilight Star",
+   "tab": 7,
+   "sp": 9,
+   "fair": 5.52,
+   "rating": 81.84
   }
  }
 }
