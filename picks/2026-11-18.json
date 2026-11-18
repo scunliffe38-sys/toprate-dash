@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T10:57:10.275Z",
+ "saved": "2026-11-18T10:57:43.553Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1179,6 +1179,15 @@
   "Happy Valley|3|MATZDEN": {
    "on": 0,
    "t": 1794999427202
+  },
+  "Happy Valley|2|ALWAYSMYFOLKS": {
+   "on": 1,
+   "t": 1794999460380,
+   "name": "Always My Folks",
+   "tab": 5,
+   "sp": 4.75,
+   "fair": 9.6,
+   "rating": 36.1
   }
  }
 }
