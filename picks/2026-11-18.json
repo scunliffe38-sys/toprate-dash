@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:32:57.828Z",
+ "saved": "2026-11-18T05:33:04.045Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -658,6 +658,15 @@
    "sp": 3.5,
    "fair": 3.83,
    "rating": 86.98
+  },
+  "Sandown|5|CHIHULY": {
+   "on": 1,
+   "t": 1794979980836,
+   "name": "Chihuly",
+   "tab": 6,
+   "sp": 3.7,
+   "fair": 8.09,
+   "rating": 84.48
   }
  }
 }
