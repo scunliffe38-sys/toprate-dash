@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T04:05:11.904Z",
+ "saved": "2026-11-18T04:05:15.887Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -388,6 +388,15 @@
    "sp": 3.4,
    "fair": 4.23,
    "rating": 75.48
+  },
+  "Gawler|3|OUIFLOURISH": {
+   "on": 1,
+   "t": 1794974712681,
+   "name": "Oui Flourish",
+   "tab": 2,
+   "sp": 2.7,
+   "fair": 3.49,
+   "rating": 77.57
   }
  }
 }
