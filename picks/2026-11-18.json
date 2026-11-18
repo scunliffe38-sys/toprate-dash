@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:35:08.242Z",
+ "saved": "2026-11-18T05:51:51.956Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -775,6 +775,15 @@
    "sp": 6,
    "fair": 9.34,
    "rating": 85.38
+  },
+  "Belmont Park|1|MERIVALELOUVAIN": {
+   "on": 1,
+   "t": 1794981108656,
+   "name": "Merivale Louvain",
+   "tab": 1,
+   "sp": 3,
+   "fair": 4.62,
+   "rating": 82.38
   }
  }
 }
