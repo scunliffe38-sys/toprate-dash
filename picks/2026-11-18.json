@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T04:05:22.353Z",
+ "saved": "2026-11-18T04:05:27.633Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -415,6 +415,24 @@
    "sp": 5.5,
    "fair": 6.24,
    "rating": 75.65
+  },
+  "Gawler|4|NUNYA": {
+   "on": 1,
+   "t": 1794974722518,
+   "name": "Nunya",
+   "tab": 3,
+   "sp": 2.25,
+   "fair": 3.93,
+   "rating": 76.81
+  },
+  "Gawler|4|SWANDANCE": {
+   "on": 1,
+   "t": 1794974724452,
+   "name": "Swan Dance",
+   "tab": 6,
+   "sp": 3.3,
+   "fair": 4.44,
+   "rating": 76.39
   }
  }
 }
