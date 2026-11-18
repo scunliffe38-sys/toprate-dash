@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:52:58.165Z",
+ "saved": "2026-11-18T05:55:17.864Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -811,6 +811,15 @@
    "sp": 4.4,
    "fair": 7.81,
    "rating": 80.75
+  },
+  "Belmont Park|3|FLYINGSWAGMAN": {
+   "on": 1,
+   "t": 1794981314600,
+   "name": "Flying Swagman",
+   "tab": 5,
+   "sp": 2.1,
+   "fair": 2.18,
+   "rating": 85.98
   }
  }
 }
