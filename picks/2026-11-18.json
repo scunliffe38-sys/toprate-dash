@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:55:17.864Z",
+ "saved": "2026-11-18T05:55:55.610Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -820,6 +820,15 @@
    "sp": 2.1,
    "fair": 2.18,
    "rating": 85.98
+  },
+  "Belmont Park|3|PERFECTCHANT": {
+   "on": 1,
+   "t": 1794981352299,
+   "name": "Perfect Chant",
+   "tab": 1,
+   "sp": 3.6,
+   "fair": 7.05,
+   "rating": 82.22
   }
  }
 }
