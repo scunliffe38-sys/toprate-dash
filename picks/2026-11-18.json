@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:33:56.306Z",
+ "saved": "2026-11-18T05:34:20.978Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -676,6 +676,33 @@
    "sp": 23,
    "fair": 8.06,
    "rating": 84.5
+  },
+  "Sandown|6|SEETHRU": {
+   "on": 1,
+   "t": 1794980054537,
+   "name": "Seethru",
+   "tab": 3,
+   "sp": 5,
+   "fair": 4.53,
+   "rating": 85.6
+  },
+  "Sandown|6|FLYINGMIKKI": {
+   "on": 1,
+   "t": 1794980056236,
+   "name": "Flying Mikki",
+   "tab": 2,
+   "sp": 3.2,
+   "fair": 5.56,
+   "rating": 84.94
+  },
+  "Sandown|6|RAINSUN": {
+   "on": 1,
+   "t": 1794980057741,
+   "name": "Rainsun",
+   "tab": 5,
+   "sp": 6,
+   "fair": 6,
+   "rating": 84.81
   }
  }
 }
