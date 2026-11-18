@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T06:25:56.136Z",
+ "saved": "2026-11-18T10:11:36.269Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1027,6 +1027,24 @@
    "sp": 26,
    "fair": 17.66,
    "rating": 83.92
+  },
+  "Happy Valley|2|MAPOGO": {
+   "on": 1,
+   "t": 1794996691949,
+   "name": "Mapogo",
+   "tab": 2,
+   "sp": 3.05,
+   "fair": 2.44,
+   "rating": 41.1
+  },
+  "Happy Valley|2|GOLDENFRIENDSHIP": {
+   "on": 1,
+   "t": 1794996692818,
+   "name": "Golden Friendship",
+   "tab": 1,
+   "sp": 5.1,
+   "fair": 9.52,
+   "rating": 36.1
   }
  }
 }
