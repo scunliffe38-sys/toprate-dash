@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T05:28:23.815Z",
+ "saved": "2026-11-18T05:29:13.753Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -559,6 +559,15 @@
    "sp": 4.4,
    "fair": 5.44,
    "rating": 78.43
+  },
+  "Gawler|5|PERCIDIAN": {
+   "on": 1,
+   "t": 1794979750501,
+   "name": "Percidian",
+   "tab": 7,
+   "sp": 4,
+   "fair": 5.39,
+   "rating": 78.38
   }
  }
 }
