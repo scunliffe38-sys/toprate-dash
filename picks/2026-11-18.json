@@ -1,6 +1,6 @@
 {
  "date": "2026-11-18",
- "saved": "2026-11-18T06:25:46.423Z",
+ "saved": "2026-11-18T06:25:56.136Z",
  "picks": {
   "Warwick Farm|1|CHURCHILLIAN": {
    "on": 1,
@@ -1018,6 +1018,15 @@
    "sp": 19,
    "fair": 20.5,
    "rating": 83.52
+  },
+  "Belmont Park|7|FLYINGSOUTH": {
+   "on": 1,
+   "t": 1794983153057,
+   "name": "Flying South",
+   "tab": 4,
+   "sp": 26,
+   "fair": 17.66,
+   "rating": 83.92
   }
  }
 }
