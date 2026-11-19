@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:14:50.476Z",
+ "saved": "2026-11-19T04:15:18.781Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -264,22 +264,12 @@
    "rating": 84.49
   },
   "Newcastle|6|HIDDENSTAR": {
-   "on": 1,
-   "t": 1795061686495,
-   "name": "Hidden Star",
-   "tab": 6,
-   "sp": 3.5,
-   "fair": 4.85,
-   "rating": 82.2
+   "on": 0,
+   "t": 1795061714722
   },
   "Newcastle|6|SHUDAKNOWN": {
-   "on": 1,
-   "t": 1795061687638,
-   "name": "Shuda Known",
-   "tab": 7,
-   "sp": 2.9,
-   "fair": 5.53,
-   "rating": 81.81
+   "on": 0,
+   "t": 1795061715923
   }
  }
 }
