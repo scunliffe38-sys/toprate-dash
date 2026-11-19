@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:41:40.912Z",
+ "saved": "2026-11-19T01:42:27.612Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -82,6 +82,15 @@
    "sp": 3.5,
    "fair": 4.53,
    "rating": 75.22
+  },
+  "Newcastle|3|MOORDYUP": {
+   "on": 1,
+   "t": 1795052544046,
+   "name": "Moordyup",
+   "tab": 10,
+   "sp": 9,
+   "fair": 7.29,
+   "rating": 73.67
   }
  }
 }
