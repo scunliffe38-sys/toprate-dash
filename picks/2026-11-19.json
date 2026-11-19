@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:49:46.276Z",
+ "saved": "2026-11-19T06:49:51.578Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -544,6 +544,15 @@
    "sp": 8.5,
    "fair": 5.89,
    "rating": 75.18
+  },
+  "Narrogin|8|SNIPOFGOSSIP": {
+   "on": 1,
+   "t": 1795070988258,
+   "name": "Snip Of Gossip",
+   "tab": 4,
+   "sp": 4.4,
+   "fair": 7.47,
+   "rating": 74.42
   }
  }
 }
