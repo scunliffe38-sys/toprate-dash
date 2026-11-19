@@ -3877,9 +3877,41 @@ const WATCH_LIVE=WL.url||"https://www.racing.com/videos/watch-live";    // their
 const EMBED=Object.assign({account:"3461375237001",player:"sNYVJfSom_default",video:"6371333751112",
                            title:"Watch Live",trials_video:"6367463974112",trials_title:"Live trials"},WL.embed||{});
 const embedUrl=v=>`https://players.brightcove.net/${EMBED.account}/${EMBED.player}/index.html?videoId=${v}&autoplay=true`;
-window.watchLive=(which)=>{
+// Our own player, not theirs (19 Nov 2026, Simon: "the Racing.com live vision is a bit jumpy ... it keeps stalling
+// intermittently, and going back 2 or 3 seconds"). The broadcast is LOW-LATENCY HLS (racingvic-ll, 2 s segments,
+// PART-HOLD-BACK 3.0) and their Brightcove player rides 3 s behind the edge: measured on the box, 2-5 s of picture in
+// hand, so any hitch on a phone stalls it and the player resyncs backwards. Brightcove's playback API (the policy key
+// sits in the player's public config.json, both CORS *) hands back the master playlist; only the master carries the
+// one-hour token, the variants and segments are open, and the playlist holds 30 minutes. So hls.js plays it like Sky:
+// lowLatencyMode off, RCOM_SYNC seconds behind live with a normal buffer, and the Sky rewind bar over the 30 minutes.
+// Anything failing on the way (API, hls.js, a stream that will not start) falls back to their iframe, as before.
+const RCOM_SYNC=10;             // s behind live: five 2-second segments in hand instead of their 3 s
+async function rcomSrc(v){
+  const ac=new AbortController(), t=setTimeout(()=>ac.abort(),4000);
+  try{
+    if(!rcomSrc._pk){
+      const c=await (await fetch(`https://players.brightcove.net/${EMBED.account}/${EMBED.player}/config.json`,{signal:ac.signal})).json();
+      rcomSrc._pk=((c||{}).video_cloud||{}).policy_key||null;
+    }
+    if(!rcomSrc._pk) return null;
+    const r=await fetch(`https://edge.api.brightcove.com/playback/v1/accounts/${EMBED.account}/videos/${v}`,
+                        {headers:{Accept:'application/json;pk='+rcomSrc._pk},signal:ac.signal});
+    if(!r.ok){ if(r.status===401||r.status===403) rcomSrc._pk=null; return null; }
+    const j=await r.json();
+    const s=(j.sources||[]).find(x=>/mpegurl/i.test(x.type||'')&&/^https:/.test(x.src||'')&&!x.key_systems);
+    return s?s.src:null;
+  }catch(e){ return null; }
+  finally{ clearTimeout(t); }
+}
+function rcomFrame(v){          // their own player: the fallback, and what "pop out" opens
+  $("vdb").innerHTML=fsTidy(`<iframe src="${embedUrl(v)}" allowfullscreen
+                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>`);
+}
+let _rcomTry=0;                 // a fatal network error re-asks the API once (fresh token), then their player
+window.watchLive=async (which,retry)=>{
   const b=$("vdb"), d=$("vdock"); if(!b||!d) return;
   killHls();
+  if(!retry) _rcomTry=0;
   const trials=which==='trials'&&EMBED.trials_video;
   const v=trials?EMBED.trials_video:EMBED.video;
   const links=[`<a href="${embedUrl(v)}" target="rcomlive" rel="noopener">pop out &#8599;</a>`,
@@ -3890,13 +3922,35 @@ window.watchLive=(which)=>{
   if(EMBED.trials_video) links.splice(1,0,trials
     ? '<a href="#" onclick="watchLive();return false;">live racing</a>'
     : `<a href="#" onclick="watchLive('trials');return false;">live trials</a>`);
-  $("vdt").innerHTML=`Racing.com ${trials?'live trials':'live'} &nbsp;\u00b7&nbsp; `+links.join(' &nbsp;\u00b7&nbsp; ');
-  b.innerHTML=fsTidy(`<iframe src="${embedUrl(v)}" allowfullscreen
-                 allow="autoplay; encrypted-media; fullscreen; picture-in-picture"></iframe>`);
+  $("vdt").innerHTML=`Racing.com ${trials?'live trials':'live'} &nbsp;\u00b7&nbsp; <span id="skyoff">live</span> &nbsp;\u00b7&nbsp; `+links.join(' &nbsp;\u00b7&nbsp; ');
+  b.innerHTML=fsTidy('<video id="skyv" controls autoplay playsinline></video>');
   d.classList.add('wide'); VFS=null;
   d.hidden=false; vqDraw(); vfDraw();
+  const tok=watchLive._tok=(watchLive._tok||0)+1;          // a newer open (or a Sky switch) wins
+  const still=()=>tok===watchLive._tok&&document.getElementById("skyv");
+  let ok=false;
+  try{ await loadHls(); ok=!!(window.Hls&&Hls.isSupported()); }catch(e){ ok=false; }
+  const src=await rcomSrc(v);
+  if(!still()) return;
+  const vid=document.getElementById("skyv");
+  if(!src){ rcomFrame(v); return; }
+  if(!ok){                                               // iOS Safari: native HLS, its own live UI
+    if(vid.canPlayType('application/vnd.apple.mpegurl')){ vid.src=src; return; }
+    rcomFrame(v); return;
+  }
+  skyScrub(vid);
+  _hls=new Hls({liveDurationInfinity:true,backBufferLength:Infinity,lowLatencyMode:false,liveSyncDuration:RCOM_SYNC});
+  _hls.loadSource(src);
+  _hls.attachMedia(vid);
+  const started=setTimeout(()=>{ if(still()&&!(vid.currentTime>0)) rcomFrame(v); },15000);   // never a black box
+  vid.addEventListener('playing',()=>clearTimeout(started),{once:true});
+  _hls.on(Hls.Events.ERROR,(_e,data)=>{
+    if(!data.fatal) return;                              // hls.js retries these itself
+    if(data.type===Hls.ErrorTypes.MEDIA_ERROR){ _hls.recoverMediaError(); return; }
+    if(data.type===Hls.ErrorTypes.NETWORK_ERROR&&_rcomTry++<1){ watchLive(which,true); return; }
+    killHls(); rcomFrame(v);
+  });
 };
-
 // ---- Sky, straight off the HLS: Thoroughbred Central and Sky 1 --------------
 // Racing NSW publish this channel on their own homepage as a plain JW Player
 // with an unauthenticated Akamai URL: no login, no token, no EXT-X-KEY. Five
@@ -4009,6 +4063,7 @@ window.skyLive=async (ch,forceDirect)=>{
   const key=SKY[ch]?ch:'stc', c=SKY[key];
   const b=$("vdb"), d=$("vdock"); if(!b||!d) return;
   killHls();
+  watchLive._tok=(watchLive._tok||0)+1;                  // a racing.com open still loading lets go of the dock
   const dvr=forceDirect?null:await skyDvrUrl(key);
   const src=dvr||c.url; _skyDirect=!dvr;
   const others=Object.keys(SKY).filter(k=>k!==key)
@@ -4110,4 +4165,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Thu 19 Nov 22:34</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Thu 19 Nov 23:09</b> AEST &middot; rcomhls: racing.com live in our own player</div><div style="height:34px"></div></body></html>
