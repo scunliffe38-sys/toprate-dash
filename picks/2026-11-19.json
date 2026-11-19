@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:50:35.639Z",
+ "saved": "2026-11-19T06:50:40.366Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -562,6 +562,15 @@
    "sp": 3.2,
    "fair": 10.31,
    "rating": 73.38
+  },
+  "Narrogin|8|SAUCISSON": {
+   "on": 1,
+   "t": 1795071037297,
+   "name": "Saucisson",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 10.83,
+   "rating": 73.23
   }
  }
 }
