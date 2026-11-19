@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:49:13.236Z",
+ "saved": "2026-11-19T06:49:41.803Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -524,13 +524,8 @@
    "rating": 71.19
   },
   "Narrogin|7|WHATHAVEYOUDONE": {
-   "on": 1,
-   "t": 1795070953050,
-   "name": "What Have You Done",
-   "tab": 10,
-   "sp": 11,
-   "fair": 9.38,
-   "rating": 69.55
+   "on": 0,
+   "t": 1795070978745
   }
  }
 }
