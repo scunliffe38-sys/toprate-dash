@@ -1,26 +1,28 @@
 {
- "started": "2026-11-19T16:55:23",
+ "started": "2026-11-20T03:09:10",
  "dates": [
-  "2026-11-19",
   "2026-11-20",
   "2026-11-21"
  ],
- "reason": "Newcastle scratched R7 #12",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 462,
- "rider_share": 1.0,
+ "acceptors": 867,
+ "rider_share": 0.87,
  "extract_max_date": "2026-11-21",
  "card_source": "toprate",
- "extract": "2026-11-18T21:22:53+00:00",
- "finished": "2026-11-19T17:10:51",
+ "extract": "2026-11-19T16:07:25+00:00",
+ "finished": "2026-11-20T04:01:41",
  "going": {
-  "Mornington": "Good 4",
-  "Newcastle": "Good 4",
-  "Albury": "Good 4",
-  "Mackay": "Soft 6",
-  "Narrogin": "Good 4"
+  "Pakenham": "Soft 5",
+  "Swan Hill": "Good 4",
+  "Grafton": "Soft 6",
+  "Orange": "Good 4",
+  "Gold Coast": "Soft 5",
+  "Kilcoy": "Heavy 10",
+  "Port Lincoln": "Good 4",
+  "Launceston": "Soft 5"
  },
- "scratchings": 89,
- "dashboard": "toprate_week_v2_2026-11-19.html",
- "fingerprint": "ac8177cdc201"
+ "scratchings": 86,
+ "dashboard": "toprate_week_v2_2026-11-20.html",
+ "fingerprint": "07db3c9f34db"
 }
