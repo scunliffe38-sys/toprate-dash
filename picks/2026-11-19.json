@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:16:17.807Z",
+ "saved": "2026-11-19T04:16:21.059Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -333,6 +333,15 @@
    "sp": 15,
    "fair": 11.66,
    "rating": 83.67
+  },
+  "Newcastle|8|MURPHILLY": {
+   "on": 1,
+   "t": 1795061778167,
+   "name": "Murphilly",
+   "tab": 7,
+   "sp": 19,
+   "fair": 28.74,
+   "rating": 81.12
   }
  }
 }
