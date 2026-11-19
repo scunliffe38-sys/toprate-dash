@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T03:31:29.729Z",
+ "saved": "2026-11-19T04:14:31.154Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -217,6 +217,24 @@
    "sp": 4.8,
    "fair": 4.59,
    "rating": 71.5
+  },
+  "Newcastle|5|ERINJO": {
+   "on": 1,
+   "t": 1795061666186,
+   "name": "Erin Jo",
+   "tab": 2,
+   "sp": 1.6,
+   "fair": 2.94,
+   "rating": 83
+  },
+  "Newcastle|5|ABOVETHELAW": {
+   "on": 1,
+   "t": 1795061668626,
+   "name": "Above The Law",
+   "tab": 1,
+   "sp": 7,
+   "fair": 3.77,
+   "rating": 82.18
   }
  }
 }
