@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:42:44.818Z",
+ "saved": "2026-11-19T03:31:18.773Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -145,6 +145,33 @@
    "sp": 3.7,
    "fair": 11.9,
    "rating": 69.77
+  },
+  "Mornington|4|MONUMENTUM": {
+   "on": 1,
+   "t": 1795059072981,
+   "name": "Monumentum",
+   "tab": 6,
+   "sp": 2.1,
+   "fair": 1.76,
+   "rating": 74.18
+  },
+  "Mornington|4|IRISHECLIPSE": {
+   "on": 1,
+   "t": 1795059073857,
+   "name": "Irish Eclipse",
+   "tab": 3,
+   "sp": 2.8,
+   "fair": 6.43,
+   "rating": 69.55
+  },
+  "Mornington|4|KIRKSTONE": {
+   "on": 1,
+   "t": 1795059075403,
+   "name": "Kirkstone",
+   "tab": 4,
+   "sp": 4.2,
+   "fair": 7.72,
+   "rating": 68.91
   }
  }
 }
