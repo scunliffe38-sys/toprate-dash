@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:14:31.154Z",
+ "saved": "2026-11-19T04:14:41.370Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -235,6 +235,24 @@
    "sp": 7,
    "fair": 3.77,
    "rating": 82.18
+  },
+  "Newcastle|5|FIVEOFAKIND": {
+   "on": 1,
+   "t": 1795061677365,
+   "name": "Five Of A Kind",
+   "tab": 4,
+   "sp": 6.5,
+   "fair": 7.89,
+   "rating": 79.8
+  },
+  "Newcastle|5|MODERNIST": {
+   "on": 1,
+   "t": 1795061678526,
+   "name": "Modernist",
+   "tab": 6,
+   "sp": 10,
+   "fair": 10.35,
+   "rating": 78.92
   }
  }
 }
