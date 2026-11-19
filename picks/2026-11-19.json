@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T05:39:57.999Z",
+ "saved": "2026-11-19T05:40:08.509Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -414,6 +414,33 @@
    "sp": 3.1,
    "fair": 2.88,
    "rating": 85.36
+  },
+  "Mornington|8|BLAZEAWAY": {
+   "on": 1,
+   "t": 1795066803479,
+   "name": "Blaze Away",
+   "tab": 3,
+   "sp": 4,
+   "fair": 4.53,
+   "rating": 77.66
+  },
+  "Mornington|8|ARABIANMYTH": {
+   "on": 1,
+   "t": 1795066804883,
+   "name": "Arabian Myth",
+   "tab": 5,
+   "sp": 6,
+   "fair": 5.08,
+   "rating": 77.28
+  },
+  "Mornington|8|PACKERSJOURNEY": {
+   "on": 1,
+   "t": 1795066805591,
+   "name": "Packers Journey",
+   "tab": 1,
+   "sp": 4,
+   "fair": 5.26,
+   "rating": 77.16
   }
  }
 }
