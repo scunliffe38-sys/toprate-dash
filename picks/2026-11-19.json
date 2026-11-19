@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T05:40:08.509Z",
+ "saved": "2026-11-19T06:45:51.781Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -441,6 +441,24 @@
    "sp": 4,
    "fair": 5.26,
    "rating": 77.16
+  },
+  "Narrogin|4|ADDICTIVEDREAM": {
+   "on": 1,
+   "t": 1795070747363,
+   "name": "Addictive Dream",
+   "tab": 2,
+   "sp": 7,
+   "fair": 3.19,
+   "rating": 75.75
+  },
+  "Narrogin|4|RIVERANGEL": {
+   "on": 1,
+   "t": 1795070748207,
+   "name": "River Angel",
+   "tab": 4,
+   "sp": 3.6,
+   "fair": 5.41,
+   "rating": 73.94
   }
  }
 }
