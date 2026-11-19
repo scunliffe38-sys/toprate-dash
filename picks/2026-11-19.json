@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:46:23.217Z",
+ "saved": "2026-11-19T06:47:55.474Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -468,6 +468,24 @@
    "sp": 3.8,
    "fair": 5.87,
    "rating": 73.64
+  },
+  "Narrogin|5|WILUNALASS": {
+   "on": 1,
+   "t": 1795070870459,
+   "name": "Wiluna Lass",
+   "tab": 1,
+   "sp": 2.7,
+   "fair": 2.19,
+   "rating": 81.71
+  },
+  "Narrogin|5|RISETOGLORY": {
+   "on": 1,
+   "t": 1795070871868,
+   "name": "Rise To Glory",
+   "tab": 6,
+   "sp": 2.4,
+   "fair": 4.66,
+   "rating": 79.06
   }
  }
 }
