@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:45:51.781Z",
+ "saved": "2026-11-19T06:46:23.217Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -459,6 +459,15 @@
    "sp": 3.6,
    "fair": 5.41,
    "rating": 73.94
+  },
+  "Narrogin|4|STORMLORD": {
+   "on": 1,
+   "t": 1795070780127,
+   "name": "Storm Lord",
+   "tab": 3,
+   "sp": 3.8,
+   "fair": 5.87,
+   "rating": 73.64
   }
  }
 }
