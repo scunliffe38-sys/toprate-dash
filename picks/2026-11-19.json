@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T05:39:45.770Z",
+ "saved": "2026-11-19T05:39:51.793Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -387,6 +387,15 @@
    "sp": 3.6,
    "fair": 3.74,
    "rating": 79.58
+  },
+  "Mornington|5|PRAYTELL": {
+   "on": 1,
+   "t": 1795066788921,
+   "name": "Pray Tell",
+   "tab": 4,
+   "sp": 1.4,
+   "fair": 1.38,
+   "rating": 77.29
   }
  }
 }
