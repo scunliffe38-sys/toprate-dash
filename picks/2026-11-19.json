@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:14:41.370Z",
+ "saved": "2026-11-19T04:14:46.097Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -253,6 +253,15 @@
    "sp": 10,
    "fair": 10.35,
    "rating": 78.92
+  },
+  "Newcastle|6|ZOUBOY": {
+   "on": 1,
+   "t": 1795061683242,
+   "name": "Zouboy",
+   "tab": 3,
+   "sp": 2.4,
+   "fair": 2.43,
+   "rating": 84.49
   }
  }
 }
