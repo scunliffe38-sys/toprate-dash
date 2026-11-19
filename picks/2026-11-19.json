@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:41:34.343Z",
+ "saved": "2026-11-19T01:41:40.912Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -64,6 +64,24 @@
    "sp": 1.7,
    "fair": 3.1,
    "rating": 76.39
+  },
+  "Newcastle|3|GOLDENPRINCESS": {
+   "on": 1,
+   "t": 1795052496402,
+   "name": "Golden Princess",
+   "tab": 9,
+   "sp": 6.5,
+   "fair": 4.11,
+   "rating": 75.51
+  },
+  "Newcastle|3|MISSBLACKBETTY": {
+   "on": 1,
+   "t": 1795052497693,
+   "name": "Miss Black Betty",
+   "tab": 11,
+   "sp": 3.5,
+   "fair": 4.53,
+   "rating": 75.22
   }
  }
 }
