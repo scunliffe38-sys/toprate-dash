@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:39:02.894Z",
+ "saved": "2026-11-19T01:39:07.425Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -10,6 +10,15 @@
    "sp": 1.85,
    "fair": 3.18,
    "rating": 73.76
+  },
+  "Newcastle|1|MYQUEEN": {
+   "on": 1,
+   "t": 1795052344216,
+   "name": "My Queen",
+   "tab": 8,
+   "sp": 3.9,
+   "fair": 2.96,
+   "rating": 73.93
   }
  }
 }
