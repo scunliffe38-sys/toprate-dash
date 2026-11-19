@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:15:32.577Z",
+ "saved": "2026-11-19T04:16:17.807Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -324,6 +324,15 @@
    "sp": 5,
    "fair": 6.11,
    "rating": 85.52
+  },
+  "Newcastle|8|FETESDESMERES": {
+   "on": 1,
+   "t": 1795061775277,
+   "name": "Fetes Des Meres",
+   "tab": 15,
+   "sp": 15,
+   "fair": 11.66,
+   "rating": 83.67
   }
  }
 }
