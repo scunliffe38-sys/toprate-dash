@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:41:28.970Z",
+ "saved": "2026-11-19T01:41:34.343Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -55,6 +55,15 @@
    "sp": 9.5,
    "fair": 8.33,
    "rating": 74.2
+  },
+  "Newcastle|3|RATIFY": {
+   "on": 1,
+   "t": 1795052491235,
+   "name": "Ratify",
+   "tab": 4,
+   "sp": 1.7,
+   "fair": 3.1,
+   "rating": 76.39
   }
  }
 }
