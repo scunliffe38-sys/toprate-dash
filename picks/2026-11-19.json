@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T03:31:25.380Z",
+ "saved": "2026-11-19T03:31:29.729Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -208,6 +208,15 @@
    "sp": 2.7,
    "fair": 2.94,
    "rating": 72.99
+  },
+  "Mornington|1|PARERA": {
+   "on": 1,
+   "t": 1795059086521,
+   "name": "Parera",
+   "tab": 5,
+   "sp": 4.8,
+   "fair": 4.59,
+   "rating": 71.5
   }
  }
 }
