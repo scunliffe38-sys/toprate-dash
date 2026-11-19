@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:47:55.474Z",
+ "saved": "2026-11-19T06:48:41.263Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -486,6 +486,24 @@
    "sp": 2.4,
    "fair": 4.66,
    "rating": 79.06
+  },
+  "Narrogin|6|CHERYLSSHOUT": {
+   "on": 1,
+   "t": 1795070916627,
+   "name": "Cheryl's Shout",
+   "tab": 1,
+   "sp": 2.2,
+   "fair": 2.57,
+   "rating": 75.87
+  },
+  "Narrogin|6|BUDINO": {
+   "on": 1,
+   "t": 1795070917943,
+   "name": "Budino",
+   "tab": 2,
+   "sp": 4.2,
+   "fair": 5.94,
+   "rating": 73.12
   }
  }
 }
