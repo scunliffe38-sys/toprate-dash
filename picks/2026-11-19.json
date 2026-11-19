@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:42:37.789Z",
+ "saved": "2026-11-19T01:42:44.818Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -136,6 +136,15 @@
    "sp": 6,
    "fair": 8.45,
    "rating": 70.77
+  },
+  "Newcastle|4|NEVERSAYASSUME": {
+   "on": 1,
+   "t": 1795052561753,
+   "name": "Never Say Assume",
+   "tab": 1,
+   "sp": 3.7,
+   "fair": 11.9,
+   "rating": 69.77
   }
  }
 }
