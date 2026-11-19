@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:16:21.059Z",
+ "saved": "2026-11-19T05:39:45.770Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -342,6 +342,51 @@
    "sp": 19,
    "fair": 28.74,
    "rating": 81.12
+  },
+  "Mornington|6|FAMGORMAN": {
+   "on": 1,
+   "t": 1795066778160,
+   "name": "Fam Gorman",
+   "tab": 1,
+   "sp": 2.7,
+   "fair": 6.92,
+   "rating": 77.48
+  },
+  "Mornington|6|JONQUIL": {
+   "on": 1,
+   "t": 1795066780661,
+   "name": "Jonquil",
+   "tab": 8,
+   "sp": 7.5,
+   "fair": 8.79,
+   "rating": 76.67
+  },
+  "Mornington|6|HOLLANDIA": {
+   "on": 1,
+   "t": 1795066781941,
+   "name": "Hollandia",
+   "tab": 6,
+   "sp": 5,
+   "fair": 5.64,
+   "rating": 78.16
+  },
+  "Mornington|6|FRANKEXPRESS": {
+   "on": 1,
+   "t": 1795066782655,
+   "name": "Frank Express",
+   "tab": 2,
+   "sp": 4.2,
+   "fair": 5.62,
+   "rating": 78.19
+  },
+  "Mornington|6|UPANDUNDER": {
+   "on": 1,
+   "t": 1795066783249,
+   "name": "Up And Under",
+   "tab": 7,
+   "sp": 3.6,
+   "fair": 3.74,
+   "rating": 79.58
   }
  }
 }
