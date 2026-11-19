@@ -1,18 +1,18 @@
 {
- "started": "2026-11-19T11:10:23",
+ "started": "2026-11-19T11:27:02",
  "dates": [
   "2026-11-19",
   "2026-11-20",
   "2026-11-21"
  ],
- "reason": "Narrogin scratched R2 #1/12/13/14, R7 #11/12/13",
+ "reason": "Newcastle scratched R8 #9",
  "status": "ok",
  "acceptors": 462,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-21",
  "card_source": "toprate",
  "extract": "2026-11-18T21:22:53+00:00",
- "finished": "2026-11-19T11:25:53",
+ "finished": "2026-11-19T11:42:51",
  "going": {
   "Mornington": "Good 4",
   "Newcastle": "Good 4",
@@ -22,5 +22,5 @@
  },
  "scratchings": 87,
  "dashboard": "toprate_week_v2_2026-11-19.html",
- "fingerprint": "07e24d4a00e3"
+ "fingerprint": "a47580ce8a82"
 }
