@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:15:18.781Z",
+ "saved": "2026-11-19T04:15:26.741Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -270,6 +270,42 @@
   "Newcastle|6|SHUDAKNOWN": {
    "on": 0,
    "t": 1795061715923
+  },
+  "Newcastle|7|HAZE": {
+   "on": 1,
+   "t": 1795061720094,
+   "name": "Haze",
+   "tab": 2,
+   "sp": 8.5,
+   "fair": 7.88,
+   "rating": 79.38
+  },
+  "Newcastle|7|COMMANDINGARTIST": {
+   "on": 1,
+   "t": 1795061720913,
+   "name": "Commanding Artist",
+   "tab": 1,
+   "sp": 5,
+   "fair": 7.06,
+   "rating": 79.71
+  },
+  "Newcastle|7|MIDORIGIANT": {
+   "on": 1,
+   "t": 1795061722284,
+   "name": "Midori Giant",
+   "tab": 4,
+   "sp": 5,
+   "fair": 6.24,
+   "rating": 80.1
+  },
+  "Newcastle|7|VETWELVE": {
+   "on": 1,
+   "t": 1795061723798,
+   "name": "Vetwelve",
+   "tab": 3,
+   "sp": 3.9,
+   "fair": 5.78,
+   "rating": 80.29
   }
  }
 }
