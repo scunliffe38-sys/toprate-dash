@@ -1,18 +1,18 @@
 {
- "started": "2026-11-19T11:27:02",
+ "started": "2026-11-19T12:50:23",
  "dates": [
   "2026-11-19",
   "2026-11-20",
   "2026-11-21"
  ],
- "reason": "Newcastle scratched R8 #9",
+ "reason": "Mackay scratched R1 #1",
  "status": "ok",
  "acceptors": 462,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-21",
  "card_source": "toprate",
  "extract": "2026-11-18T21:22:53+00:00",
- "finished": "2026-11-19T11:42:51",
+ "finished": "2026-11-19T13:06:24",
  "going": {
   "Mornington": "Good 4",
   "Newcastle": "Good 4",
@@ -20,7 +20,7 @@
   "Mackay": "Good 4",
   "Narrogin": "Good 4"
  },
- "scratchings": 87,
+ "scratchings": 88,
  "dashboard": "toprate_week_v2_2026-11-19.html",
- "fingerprint": "a47580ce8a82"
+ "fingerprint": "7cb4b7f2610c"
 }
