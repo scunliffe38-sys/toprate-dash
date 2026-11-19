@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T04:15:26.741Z",
+ "saved": "2026-11-19T04:15:32.577Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -306,6 +306,24 @@
    "sp": 3.9,
    "fair": 5.78,
    "rating": 80.29
+  },
+  "Newcastle|8|UNREACHABLE": {
+   "on": 1,
+   "t": 1795061727239,
+   "name": "Unreachable",
+   "tab": 8,
+   "sp": 6,
+   "fair": 4.92,
+   "rating": 86.08
+  },
+  "Newcastle|8|ANGELCITY": {
+   "on": 1,
+   "t": 1795061729673,
+   "name": "Angel City",
+   "tab": 13,
+   "sp": 5,
+   "fair": 6.11,
+   "rating": 85.52
   }
  }
 }
