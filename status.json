@@ -1,19 +1,19 @@
 {
- "started": "2026-11-20T09:55:02",
+ "started": "2026-11-20T08:25:45",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Kilcoy Heavy 10 -> Heavy 8; Kilcoy scratched R1 #12/13/15, R2 #5/13/14, R3 #6/12, R5 #4/12/14/15, R6 #1/4/11, R7 #4/5/6/7/8, R8 #2/12/13/14/15; Gold Coast Soft 5 -> Good 4; Gold Co",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T10:13:36",
+ "finished": "2026-11-20T10:26:02",
  "going": {
   "Pakenham": "Good 4",
   "Swan Hill": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 185,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "f000308d5de6"
+ "fingerprint": "546ccbc853e4"
 }
