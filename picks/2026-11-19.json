@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:41:02.209Z",
+ "saved": "2026-11-19T01:41:28.970Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 13,
    "fair": 7.87,
    "rating": 74.36
+  },
+  "Newcastle|2|VINTAGEBELL": {
+   "on": 1,
+   "t": 1795052485913,
+   "name": "Vintage Bell",
+   "tab": 5,
+   "sp": 9.5,
+   "fair": 8.33,
+   "rating": 74.2
   }
  }
 }
