@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T05:39:54.892Z",
+ "saved": "2026-11-19T05:39:57.999Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -405,6 +405,15 @@
    "sp": 1.4,
    "fair": 1.94,
    "rating": 87.07
+  },
+  "Mornington|7|COVERTACTION": {
+   "on": 1,
+   "t": 1795066795131,
+   "name": "Covert Action",
+   "tab": 4,
+   "sp": 3.1,
+   "fair": 2.88,
+   "rating": 85.36
   }
  }
 }
