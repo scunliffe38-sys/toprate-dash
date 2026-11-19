@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:49:41.803Z",
+ "saved": "2026-11-19T06:49:46.276Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -526,6 +526,24 @@
   "Narrogin|7|WHATHAVEYOUDONE": {
    "on": 0,
    "t": 1795070978745
+  },
+  "Narrogin|8|MISSWALLSTREET": {
+   "on": 1,
+   "t": 1795070983217,
+   "name": "Miss Wall Street",
+   "tab": 8,
+   "sp": 6.5,
+   "fair": 4.78,
+   "rating": 75.86
+  },
+  "Narrogin|8|SPACEACADEMY": {
+   "on": 1,
+   "t": 1795070986031,
+   "name": "Space Academy",
+   "tab": 6,
+   "sp": 8.5,
+   "fair": 5.89,
+   "rating": 75.18
   }
  }
 }
