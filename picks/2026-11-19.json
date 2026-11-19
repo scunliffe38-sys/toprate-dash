@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:49:10.061Z",
+ "saved": "2026-11-19T06:49:13.236Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -513,6 +513,24 @@
    "sp": 1.65,
    "fair": 3.96,
    "rating": 72.39
+  },
+  "Narrogin|7|CASINOROYALE": {
+   "on": 1,
+   "t": 1795070950155,
+   "name": "Casino Royale",
+   "tab": 1,
+   "sp": 9.5,
+   "fair": 5.59,
+   "rating": 71.19
+  },
+  "Narrogin|7|WHATHAVEYOUDONE": {
+   "on": 1,
+   "t": 1795070953050,
+   "name": "What Have You Done",
+   "tab": 10,
+   "sp": 11,
+   "fair": 9.38,
+   "rating": 69.55
   }
  }
 }
