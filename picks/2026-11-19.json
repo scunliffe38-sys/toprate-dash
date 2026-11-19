@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T06:49:51.578Z",
+ "saved": "2026-11-19T06:50:35.639Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -553,6 +553,15 @@
    "sp": 4.4,
    "fair": 7.47,
    "rating": 74.42
+  },
+  "Narrogin|8|BEEJAYBOY": {
+   "on": 1,
+   "t": 1795071031970,
+   "name": "Beejay Boy",
+   "tab": 3,
+   "sp": 3.2,
+   "fair": 10.31,
+   "rating": 73.38
   }
  }
 }
