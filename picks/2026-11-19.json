@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:42:27.612Z",
+ "saved": "2026-11-19T01:42:37.789Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -91,6 +91,51 @@
    "sp": 9,
    "fair": 7.29,
    "rating": 73.67
+  },
+  "Newcastle|4|LLANTARNAM": {
+   "on": 1,
+   "t": 1795052550198,
+   "name": "Llantarnam",
+   "tab": 2,
+   "sp": 7.5,
+   "fair": 5.68,
+   "rating": 72.03
+  },
+  "Newcastle|4|FARSAIN": {
+   "on": 1,
+   "t": 1795052551692,
+   "name": "Farsain",
+   "tab": 6,
+   "sp": 23,
+   "fair": 6.33,
+   "rating": 71.67
+  },
+  "Newcastle|4|HELLFLIGHT": {
+   "on": 1,
+   "t": 1795052552791,
+   "name": "Hellflight",
+   "tab": 7,
+   "sp": 2.9,
+   "fair": 7.48,
+   "rating": 71.18
+  },
+  "Newcastle|4|EXTRASPECIAL": {
+   "on": 1,
+   "t": 1795052554675,
+   "name": "Extra Special",
+   "tab": 5,
+   "sp": 8,
+   "fair": 8.28,
+   "rating": 70.87
+  },
+  "Newcastle|4|CATHEDRALCOVE": {
+   "on": 1,
+   "t": 1795052557340,
+   "name": "Cathedral Cove",
+   "tab": 4,
+   "sp": 6,
+   "fair": 8.45,
+   "rating": 70.77
   }
  }
 }
