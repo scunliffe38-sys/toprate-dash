@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T05:39:51.793Z",
+ "saved": "2026-11-19T05:39:54.892Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -396,6 +396,15 @@
    "sp": 1.4,
    "fair": 1.38,
    "rating": 77.29
+  },
+  "Mornington|7|CHANDLER": {
+   "on": 1,
+   "t": 1795066792062,
+   "name": "Chandler",
+   "tab": 2,
+   "sp": 1.4,
+   "fair": 1.94,
+   "rating": 87.07
   }
  }
 }
