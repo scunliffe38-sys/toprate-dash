@@ -1,6 +1,6 @@
 {
  "date": "2026-11-19",
- "saved": "2026-11-19T01:39:07.425Z",
+ "saved": "2026-11-19T01:41:02.209Z",
  "picks": {
   "Newcastle|1|HELLISHCHARM": {
    "on": 1,
@@ -19,6 +19,33 @@
    "sp": 3.9,
    "fair": 2.96,
    "rating": 73.93
+  },
+  "Newcastle|2|OAKFIELDVIRGINIA": {
+   "on": 1,
+   "t": 1795052457012,
+   "name": "Oakfield Virginia",
+   "tab": 6,
+   "sp": 1.6,
+   "fair": 3.33,
+   "rating": 77.12
+  },
+  "Newcastle|2|DWIGHT": {
+   "on": 1,
+   "t": 1795052458625,
+   "name": "Dwight",
+   "tab": 2,
+   "sp": 3.6,
+   "fair": 4.79,
+   "rating": 75.91
+  },
+  "Newcastle|2|ECHOOFAWHISPER": {
+   "on": 1,
+   "t": 1795052461837,
+   "name": "Echo Of A Whisper",
+   "tab": 8,
+   "sp": 13,
+   "fair": 7.87,
+   "rating": 74.36
   }
  }
 }
