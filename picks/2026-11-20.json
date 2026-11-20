@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:48:56.500Z",
+ "saved": "2026-11-20T08:48:59.787Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -581,6 +581,15 @@
    "sp": 4.6,
    "fair": 10.72,
    "rating": 95.58
+  },
+  "Launceston|8|MAGNAPRIME": {
+   "on": 1,
+   "t": 1795164536563,
+   "name": "Magnaprime",
+   "tab": 7,
+   "sp": 23,
+   "fair": 15.71,
+   "rating": 94.38
   }
  }
 }
