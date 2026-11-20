@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:02:30.394Z",
+ "saved": "2026-11-20T04:02:49.008Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -82,6 +82,15 @@
    "sp": 2.7,
    "fair": 5.66,
    "rating": 74.2
+  },
+  "Swan Hill|6|PACIFICGLAMOUR": {
+   "on": 1,
+   "t": 1795147365838,
+   "name": "Pacific Glamour",
+   "tab": 5,
+   "sp": 8,
+   "fair": 8.13,
+   "rating": 73.04
   }
  }
 }
