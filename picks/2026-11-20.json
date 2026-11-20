@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T07:53:48.975Z",
+ "saved": "2026-11-20T07:53:52.504Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -446,6 +446,15 @@
    "sp": 6.5,
    "fair": 6.37,
    "rating": 85.63
+  },
+  "Gold Coast|6|PARETO": {
+   "on": 1,
+   "t": 1795161231983,
+   "name": "Pareto",
+   "tab": 1,
+   "sp": 7.5,
+   "fair": 7.9,
+   "rating": 84.98
   }
  }
 }
