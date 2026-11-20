@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:37:00.328Z",
+ "saved": "2026-11-20T05:37:23.442Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -235,6 +235,15 @@
    "sp": 8,
    "fair": 9.2,
    "rating": 77.42
+  },
+  "Pakenham|3|HURTLING": {
+   "on": 1,
+   "t": 1795153040090,
+   "name": "Hurtling",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 11.42,
+   "rating": 76.72
   }
  }
 }
