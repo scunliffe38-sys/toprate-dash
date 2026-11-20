@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:37:58.914Z",
+ "saved": "2026-11-20T05:39:24.125Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -271,6 +271,33 @@
    "sp": 34,
    "fair": 27.19,
    "rating": 72.28
+  },
+  "Launceston|3|WOUNDEDEAGLE": {
+   "on": 1,
+   "t": 1795153158610,
+   "name": "Wounded Eagle",
+   "tab": 4,
+   "sp": 5,
+   "fair": 6.08,
+   "rating": 68.13
+  },
+  "Launceston|3|MRTOD": {
+   "on": 1,
+   "t": 1795153159613,
+   "name": "Mr Tod",
+   "tab": 2,
+   "sp": 5,
+   "fair": 4.02,
+   "rating": 69.5
+  },
+  "Launceston|3|DEERPOWER": {
+   "on": 1,
+   "t": 1795153160581,
+   "name": "Deer Power",
+   "tab": 5,
+   "sp": 3,
+   "fair": 8.62,
+   "rating": 66.98
   }
  }
 }
