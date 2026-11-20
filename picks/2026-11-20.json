@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:01:39.325Z",
+ "saved": "2026-11-20T04:02:18.949Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -55,6 +55,15 @@
    "sp": 5,
    "fair": 6.86,
    "rating": 75.49
+  },
+  "Swan Hill|5|SMOKINROHIE": {
+   "on": 1,
+   "t": 1795147335601,
+   "name": "Smokin' Rohie",
+   "tab": 3,
+   "sp": 17,
+   "fair": 13.56,
+   "rating": 73.37
   }
  }
 }
