@@ -1,19 +1,19 @@
 {
- "started": "2026-11-20T17:53:02",
+ "started": "2026-11-20T18:12:02",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Port Lincoln scratched R8 #9",
+ "reason": "Launceston scratched R2 #9; Pakenham Soft 6 -> Soft 7; Pakenham scratched R8 #6; Pakenham scratched R5 #8",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T18:10:50",
+ "finished": "2026-11-20T18:30:00",
  "going": {
   "Pakenham": "Soft 7",
   "Gold Coast": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 200,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "1c43cb268211"
+ "fingerprint": "0a1270b92394"
 }
