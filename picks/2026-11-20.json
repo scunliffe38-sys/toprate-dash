@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:34:17.527Z",
+ "saved": "2026-11-20T05:34:43.895Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -163,6 +163,15 @@
    "sp": 15,
    "fair": 15.83,
    "rating": 68.77
+  },
+  "Pakenham|1|VICTORIOUSDREAM": {
+   "on": 1,
+   "t": 1795152880773,
+   "name": "Victorious Dream",
+   "tab": 8,
+   "sp": 2.6,
+   "fair": 2.84,
+   "rating": 74.33
   }
  }
 }
