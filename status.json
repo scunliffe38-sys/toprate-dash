@@ -1,21 +1,21 @@
 {
- "started": "2026-11-20T14:57:22",
+ "started": "2026-11-20T16:02:17",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Swan Hill scratched R4 #5",
+ "reason": "Pakenham scratched R4 #3, R5 #2/6",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T15:14:46",
+ "finished": "2026-11-20T16:19:22",
  "going": {
-  "Pakenham": "Good 4",
+  "Pakenham": "Soft 6",
   "Swan Hill": "Good 4",
   "Grafton": "Good 4",
   "Orange": "Good 4",
@@ -24,7 +24,7 @@
   "Port Lincoln": "Good 4",
   "Launceston": "Soft 5"
  },
- "scratchings": 189,
+ "scratchings": 194,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "50ba4832f309"
+ "fingerprint": "f00b8b965350"
 }
