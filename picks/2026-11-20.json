@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:51:23.577Z",
+ "saved": "2026-11-20T08:51:33.803Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -716,6 +716,15 @@
    "sp": 3.6,
    "fair": 2.58,
    "rating": 82.69
+  },
+  "Pakenham|6|DETERMINEDROSE": {
+   "on": 1,
+   "t": 1795164690600,
+   "name": "Determined Rose",
+   "tab": 8,
+   "sp": 4.4,
+   "fair": 4.28,
+   "rating": 81.03
   }
  }
 }
