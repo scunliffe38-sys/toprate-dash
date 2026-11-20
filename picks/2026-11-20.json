@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:03:23.971Z",
+ "saved": "2026-11-20T04:03:27.528Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -118,6 +118,15 @@
    "sp": 6.5,
    "fair": 5.9,
    "rating": 73.16
+  },
+  "Swan Hill|7|ARTPARK": {
+   "on": 1,
+   "t": 1795147404357,
+   "name": "Artpark",
+   "tab": 14,
+   "sp": 2.7,
+   "fair": 7.67,
+   "rating": 72.32
   }
  }
 }
