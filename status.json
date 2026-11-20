@@ -1,30 +1,34 @@
 {
- "started": "2026-11-20T20:42:02",
+ "started": "2026-11-21T03:10:17",
  "dates": [
-  "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Pakenham Heavy 9 -> Heavy 10; Pakenham scratched R8 #9",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 867,
- "rider_share": 1.0,
+ "acceptors": 1847,
+ "rider_share": 0.9,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
- "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T21:00:36",
+ "extract": "2026-11-20T16:08:33+00:00",
+ "finished": "2026-11-21T04:24:05",
  "going": {
-  "Pakenham": "Heavy 10",
-  "Gold Coast": "Good 4",
-  "Launceston": "Good 4",
-  "Swan Hill": "Good 4",
-  "Grafton": "Good 4",
-  "Orange": "Good 4",
-  "Kilcoy": "Soft 6",
-  "Port Lincoln": "Good 4"
+  "Cranbourne": "Good 3",
+  "Kembla Grange": "Good 4",
+  "Sunshine Coast": "Soft 5",
+  "Morphettville": "Good 4",
+  "Ascot": "Good 4",
+  "Penshurst": "Good 4",
+  "Tatura": "Good 4",
+  "Gosford": "Good 4",
+  "Beaudesert": "Soft 6",
+  "Toowoomba": "Good 4",
+  "Inverell": "Good 4",
+  "Roma": "Good",
+  "Esperance": "Soft 5"
  },
- "scratchings": 207,
- "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "98da404b22e9"
+ "scratchings": 129,
+ "dashboard": "toprate_week_v2_2026-11-21.html",
+ "fingerprint": "9897b23da3bd"
 }
