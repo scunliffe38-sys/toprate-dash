@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:48:18.368Z",
+ "saved": "2026-11-20T08:48:22.816Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -527,6 +527,24 @@
    "sp": 2.7,
    "fair": 3.04,
    "rating": 84.88
+  },
+  "Launceston|7|GEEGEESDOWNPOUR": {
+   "on": 1,
+   "t": 1795164499611,
+   "name": "Geegees Downpour",
+   "tab": 3,
+   "sp": 6.5,
+   "fair": 6.65,
+   "rating": 82.03
+  },
+  "Launceston|7|VORTISTAR": {
+   "on": 1,
+   "t": 1795164502183,
+   "name": "Vortistar",
+   "tab": 4,
+   "sp": 6,
+   "fair": 6.74,
+   "rating": 81.98
   }
  }
 }
