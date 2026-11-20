@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:03:34.706Z",
+ "saved": "2026-11-20T04:03:48.192Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -136,6 +136,15 @@
    "sp": 2.3,
    "fair": 3.14,
    "rating": 83.22
+  },
+  "Swan Hill|8|REGALSURGE": {
+   "on": 1,
+   "t": 1795147424984,
+   "name": "Regal Surge",
+   "tab": 3,
+   "sp": 5.5,
+   "fair": 8.82,
+   "rating": 79.9
   }
  }
 }
