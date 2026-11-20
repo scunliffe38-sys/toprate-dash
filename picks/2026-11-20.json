@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:48:22.816Z",
+ "saved": "2026-11-20T08:48:43.151Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -545,6 +545,15 @@
    "sp": 6,
    "fair": 6.74,
    "rating": 81.98
+  },
+  "Launceston|7|ZUNI": {
+   "on": 1,
+   "t": 1795164519987,
+   "name": "Zuni",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 8.39,
+   "rating": 81.2
   }
  }
 }
