@@ -1,23 +1,23 @@
 {
- "started": "2026-11-20T12:23:20",
+ "started": "2026-11-20T13:13:21",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Kilcoy Heavy 8 -> Soft 7",
+ "reason": "Grafton Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T12:39:57",
+ "finished": "2026-11-20T13:30:24",
  "going": {
   "Pakenham": "Good 4",
   "Swan Hill": "Good 4",
-  "Grafton": "Soft 5",
+  "Grafton": "Good 4",
   "Orange": "Good 4",
   "Gold Coast": "Good 4",
   "Kilcoy": "Soft 7",
@@ -26,5 +26,5 @@
  },
  "scratchings": 187,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "27966ed8b32e"
+ "fingerprint": "cdf47244de3f"
 }
