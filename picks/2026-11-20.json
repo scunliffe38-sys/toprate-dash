@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:52:42.514Z",
+ "saved": "2026-11-20T08:52:51.334Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -783,6 +783,15 @@
    "sp": 3.4,
    "fair": 3.35,
    "rating": 84
+  },
+  "Pakenham|8|ROUGHENUFF": {
+   "on": 1,
+   "t": 1795164768006,
+   "name": "Rough Enuff",
+   "tab": 1,
+   "sp": 2.6,
+   "fair": 4.48,
+   "rating": 83.19
   }
  }
 }
