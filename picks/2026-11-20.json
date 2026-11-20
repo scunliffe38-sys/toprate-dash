@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:39:30.898Z",
+ "saved": "2026-11-20T05:40:06.472Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -307,6 +307,15 @@
    "sp": 2.9,
    "fair": 3.11,
    "rating": 85.45
+  },
+  "Launceston|4|WITHINSIGHT": {
+   "on": 1,
+   "t": 1795153203217,
+   "name": "Within Sight",
+   "tab": 5,
+   "sp": 7,
+   "fair": 6.16,
+   "rating": 83.01
   }
  }
 }
