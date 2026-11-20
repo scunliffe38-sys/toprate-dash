@@ -1,19 +1,19 @@
 {
- "started": "2026-11-20T18:38:26",
+ "started": "2026-11-20T18:57:02",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Pakenham scratched R6 #4",
+ "reason": "Pakenham scratched R7 #9",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T18:56:24",
+ "finished": "2026-11-20T19:15:17",
  "going": {
   "Pakenham": "Soft 7",
   "Gold Coast": "Good 4",
@@ -24,7 +24,7 @@
   "Kilcoy": "Soft 6",
   "Port Lincoln": "Good 4"
  },
- "scratchings": 202,
+ "scratchings": 204,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "79b6000faca4"
+ "fingerprint": "01563f02cf1f"
 }
