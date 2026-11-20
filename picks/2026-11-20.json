@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:40:40.081Z",
+ "saved": "2026-11-20T05:40:45.711Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -327,13 +327,8 @@
    "rating": 87.37
   },
   "Launceston|5|STONECOLDSTUNNER": {
-   "on": 1,
-   "t": 1795153211948,
-   "name": "Stone Cold Stunner",
-   "tab": 1,
-   "sp": 6.5,
-   "fair": 5.62,
-   "rating": 85.66
+   "on": 0,
+   "t": 1795153242534
   },
   "Launceston|5|TUSKEGEE": {
    "on": 1,
