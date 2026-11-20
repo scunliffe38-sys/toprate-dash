@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T07:54:19.479Z",
+ "saved": "2026-11-20T08:48:18.368Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -518,6 +518,15 @@
    "sp": 8,
    "fair": 12.24,
    "rating": 81.88
+  },
+  "Launceston|7|MCVEIGH": {
+   "on": 1,
+   "t": 1795164495122,
+   "name": "Mcveigh",
+   "tab": 1,
+   "sp": 2.7,
+   "fair": 3.04,
+   "rating": 84.88
   }
  }
 }
