@@ -1,19 +1,19 @@
 {
- "started": "2026-11-21T09:13:02",
+ "started": "2026-11-21T09:36:02",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "retry: Beaudesert scratched R2 #6, R3 #19, R8 #13/14",
+ "reason": "Pioneer Park going Good; Pioneer Park scratched R4 #8; Roma scratched R4 #15/16/17, R6 #11",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T09:35:15",
+ "finished": "2026-11-21T09:57:57",
  "going": {
   "Cranbourne": "Soft 6",
   "Kembla Grange": "Soft 5",
@@ -30,7 +30,7 @@
   "Pioneer Park": "Good",
   "Esperance": "Soft 5"
  },
- "scratchings": 261,
+ "scratchings": 263,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "dd2c8fd56141"
+ "fingerprint": "0991694d2ff2"
 }
