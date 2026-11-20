@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:50:42.389Z",
+ "saved": "2026-11-20T08:50:52.644Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -680,6 +680,15 @@
    "sp": 4.2,
    "fair": 3.8,
    "rating": 81.52
+  },
+  "Pakenham|5|MISSCOTOLETTA": {
+   "on": 1,
+   "t": 1795164649304,
+   "name": "Miss Cotoletta",
+   "tab": 3,
+   "sp": 2.5,
+   "fair": 3.81,
+   "rating": 81.48
   }
  }
 }
