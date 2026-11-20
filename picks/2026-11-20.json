@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T07:53:29.481Z",
+ "saved": "2026-11-20T07:53:32.741Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -392,6 +392,15 @@
    "sp": 5.5,
    "fair": 4.27,
    "rating": 82.06
+  },
+  "Gold Coast|5|INZAINDRAGON": {
+   "on": 1,
+   "t": 1795161209510,
+   "name": "Inzain Dragon",
+   "tab": 10,
+   "sp": 7,
+   "fair": 6.52,
+   "rating": 80.76
   }
  }
 }
