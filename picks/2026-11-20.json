@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:03:20.519Z",
+ "saved": "2026-11-20T04:03:23.971Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -109,6 +109,15 @@
    "sp": 4.2,
    "fair": 4.91,
    "rating": 73.73
+  },
+  "Swan Hill|7|PONTEARCOBALENO": {
+   "on": 1,
+   "t": 1795147400797,
+   "name": "Ponte Arcobaleno",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 5.9,
+   "rating": 73.16
   }
  }
 }
