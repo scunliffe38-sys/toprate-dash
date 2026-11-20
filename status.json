@@ -1,19 +1,19 @@
 {
- "started": "2026-11-20T13:57:20",
+ "started": "2026-11-20T14:15:02",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Port Lincoln scratched R2 #7",
+ "reason": "Kilcoy Soft 7 -> Soft 6",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T14:14:01",
+ "finished": "2026-11-20T14:32:28",
  "going": {
   "Pakenham": "Good 4",
   "Swan Hill": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 188,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "86187f6d7dd6"
+ "fingerprint": "f2916434a597"
 }
