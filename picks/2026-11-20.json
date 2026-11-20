@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:49:38.501Z",
+ "saved": "2026-11-20T08:49:41.974Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -662,6 +662,15 @@
    "sp": 8,
    "fair": 8.42,
    "rating": 74.73
+  },
+  "Launceston|10|CHEFSKISS": {
+   "on": 1,
+   "t": 1795164578676,
+   "name": "Chef's Kiss",
+   "tab": 1,
+   "sp": 7,
+   "fair": 10.78,
+   "rating": 73.9
   }
  }
 }
