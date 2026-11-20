@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:52:03.065Z",
+ "saved": "2026-11-20T08:52:06.855Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -743,6 +743,10 @@
    "sp": 3.5,
    "fair": 6.58,
    "rating": 79.55
+  },
+  "Pakenham|7|IMPONDERABLE": {
+   "on": 0,
+   "t": 1795164726429
   }
  }
 }
