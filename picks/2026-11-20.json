@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:52:27.652Z",
+ "saved": "2026-11-20T08:52:32.985Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -765,6 +765,15 @@
    "sp": 8.5,
    "fair": 11.69,
    "rating": 79.03
+  },
+  "Pakenham|7|SABEERIA": {
+   "on": 1,
+   "t": 1795164749663,
+   "name": "Sabeeria",
+   "tab": 10,
+   "sp": 9,
+   "fair": 17.68,
+   "rating": 77.79
   }
  }
 }
