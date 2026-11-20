@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:51:33.803Z",
+ "saved": "2026-11-20T08:51:46.384Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -725,6 +725,15 @@
    "sp": 4.4,
    "fair": 4.28,
    "rating": 81.03
+  },
+  "Pakenham|6|LEANTOTHEMOON": {
+   "on": 1,
+   "t": 1795164703097,
+   "name": "Leantothemoon",
+   "tab": 2,
+   "sp": 7,
+   "fair": 12.26,
+   "rating": 77.56
   }
  }
 }
