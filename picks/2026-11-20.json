@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:03:48.192Z",
+ "saved": "2026-11-20T05:33:51.970Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -145,6 +145,15 @@
    "sp": 5.5,
    "fair": 8.82,
    "rating": 79.9
+  },
+  "Pakenham|1|ANGLINGANGEL": {
+   "on": 1,
+   "t": 1795152828757,
+   "name": "Angling Angel",
+   "tab": 9,
+   "sp": 2.15,
+   "fair": 3.38,
+   "rating": 73.65
   }
  }
 }
