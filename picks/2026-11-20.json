@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:37:36.010Z",
+ "saved": "2026-11-20T05:37:49.161Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -253,6 +253,15 @@
    "sp": 1.5,
    "fair": 1.86,
    "rating": 80.86
+  },
+  "Pakenham|4|TAKASAGO": {
+   "on": 1,
+   "t": 1795153065910,
+   "name": "Takasago",
+   "tab": 11,
+   "sp": 6,
+   "fair": 7.87,
+   "rating": 76.26
   }
  }
 }
