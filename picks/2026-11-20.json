@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:37:49.161Z",
+ "saved": "2026-11-20T05:37:58.914Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -262,6 +262,15 @@
    "sp": 6,
    "fair": 7.87,
    "rating": 76.26
+  },
+  "Pakenham|4|STORMBELLA": {
+   "on": 1,
+   "t": 1795153075368,
+   "name": "Storm Bella",
+   "tab": 10,
+   "sp": 34,
+   "fair": 27.19,
+   "rating": 72.28
   }
  }
 }
