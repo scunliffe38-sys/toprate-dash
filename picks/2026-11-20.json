@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:48:59.787Z",
+ "saved": "2026-11-20T08:49:13.640Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -590,6 +590,42 @@
    "sp": 23,
    "fair": 15.71,
    "rating": 94.38
+  },
+  "Launceston|9|FLUFFYSGIRL": {
+   "on": 1,
+   "t": 1795164545472,
+   "name": "Fluffy's Girl",
+   "tab": 7,
+   "sp": 2.9,
+   "fair": 4.46,
+   "rating": 80.22
+  },
+  "Launceston|9|BAYBOUGG": {
+   "on": 1,
+   "t": 1795164546757,
+   "name": "Baybougg",
+   "tab": 5,
+   "sp": 6,
+   "fair": 5.6,
+   "rating": 79.43
+  },
+  "Launceston|9|ILOVETHISTOWN": {
+   "on": 1,
+   "t": 1795164548455,
+   "name": "Ilovethistown",
+   "tab": 4,
+   "sp": 4.4,
+   "fair": 6.09,
+   "rating": 79.16
+  },
+  "Launceston|9|POPILITA": {
+   "on": 1,
+   "t": 1795164550541,
+   "name": "Popilita",
+   "tab": 3,
+   "sp": 5,
+   "fair": 7.47,
+   "rating": 78.45
   }
  }
 }
