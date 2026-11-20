@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:34:43.895Z",
+ "saved": "2026-11-20T05:34:55.942Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -172,6 +172,24 @@
    "sp": 2.6,
    "fair": 2.84,
    "rating": 74.33
+  },
+  "Pakenham|2|URBANCREED": {
+   "on": 1,
+   "t": 1795152892689,
+   "name": "Urban Creed",
+   "tab": 3,
+   "sp": 4.4,
+   "fair": 4.09,
+   "rating": 77.33
+  },
+  "Pakenham|2|GALWAYGAL": {
+   "on": 1,
+   "t": 1795152895401,
+   "name": "Galway Gal",
+   "tab": 8,
+   "sp": 1.2,
+   "fair": 1.8,
+   "rating": 80.08
   }
  }
 }
