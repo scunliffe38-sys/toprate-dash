@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:52:13.330Z",
+ "saved": "2026-11-20T08:52:27.652Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -756,6 +756,15 @@
    "sp": 3.6,
    "fair": 4.13,
    "rating": 82.2
+  },
+  "Pakenham|7|LOTSOFTIME": {
+   "on": 1,
+   "t": 1795164744490,
+   "name": "Lots Of Time",
+   "tab": 4,
+   "sp": 8.5,
+   "fair": 11.69,
+   "rating": 79.03
   }
  }
 }
