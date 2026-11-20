@@ -1,19 +1,19 @@
 {
- "started": "2026-11-20T10:40:22",
+ "started": "2026-11-20T11:05:21",
  "dates": [
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
   "2026-11-23"
  ],
- "reason": "Kilcoy scratched R2 #15",
+ "reason": "Kilcoy scratched R4 #3",
  "status": "ok",
  "acceptors": 867,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-23",
  "card_source": "toprate",
  "extract": "2026-11-19T21:24:08+00:00",
- "finished": "2026-11-20T10:57:30",
+ "finished": "2026-11-20T11:21:48",
  "going": {
   "Pakenham": "Good 4",
   "Swan Hill": "Good 4",
@@ -24,7 +24,7 @@
   "Port Lincoln": "Good 4",
   "Launceston": "Soft 5"
  },
- "scratchings": 186,
+ "scratchings": 187,
  "dashboard": "toprate_week_v2_2026-11-20.html",
- "fingerprint": "57ae0ec77646"
+ "fingerprint": "724693fa3a70"
 }
