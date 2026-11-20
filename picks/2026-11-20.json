@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:49:27.124Z",
+ "saved": "2026-11-20T08:49:30.809Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -644,6 +644,15 @@
    "sp": 8,
    "fair": 6.97,
    "rating": 75.35
+  },
+  "Launceston|10|NORTHERNCHILD": {
+   "on": 1,
+   "t": 1795164567521,
+   "name": "Northern Child",
+   "tab": 4,
+   "sp": 9,
+   "fair": 6.6,
+   "rating": 75.55
   }
  }
 }
