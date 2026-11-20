@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:50:52.644Z",
+ "saved": "2026-11-20T08:50:57.023Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -689,6 +689,15 @@
    "sp": 2.5,
    "fair": 3.81,
    "rating": 81.48
+  },
+  "Pakenham|5|FLOWERDALE": {
+   "on": 1,
+   "t": 1795164653691,
+   "name": "Flowerdale",
+   "tab": 1,
+   "sp": 8.5,
+   "fair": 5.6,
+   "rating": 80.27
   }
  }
 }
