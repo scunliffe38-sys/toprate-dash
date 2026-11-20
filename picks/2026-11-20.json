@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:34:55.942Z",
+ "saved": "2026-11-20T05:36:12.674Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -190,6 +190,24 @@
    "sp": 1.2,
    "fair": 1.8,
    "rating": 80.08
+  },
+  "Pakenham|3|GILGEOUS": {
+   "on": 1,
+   "t": 1795152968276,
+   "name": "Gilgeous",
+   "tab": 3,
+   "sp": 4.2,
+   "fair": 4.74,
+   "rating": 79.51
+  },
+  "Pakenham|3|ACTIONPOINT": {
+   "on": 1,
+   "t": 1795152972372,
+   "name": "Action Point",
+   "tab": 1,
+   "sp": 7.5,
+   "fair": 5.43,
+   "rating": 79.11
   }
  }
 }
