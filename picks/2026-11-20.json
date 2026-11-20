@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:41:02.974Z",
+ "saved": "2026-11-20T07:53:17.590Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -374,6 +374,15 @@
    "sp": 6,
    "fair": 4.21,
    "rating": 82.68
+  },
+  "Gold Coast|5|PINOTPIRATE": {
+   "on": 1,
+   "t": 1795161194227,
+   "name": "Pinot Pirate",
+   "tab": 11,
+   "sp": 1.9,
+   "fair": 4.23,
+   "rating": 82.16
   }
  }
 }
