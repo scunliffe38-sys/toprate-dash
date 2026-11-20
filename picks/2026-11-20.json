@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T07:53:36.123Z",
+ "saved": "2026-11-20T07:53:42.462Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -410,6 +410,24 @@
    "sp": 9,
    "fair": 6.66,
    "rating": 80.66
+  },
+  "Gold Coast|5|MEETGEORGE": {
+   "on": 1,
+   "t": 1795161219324,
+   "name": "Meet George",
+   "tab": 15,
+   "sp": 9,
+   "fair": 10.41,
+   "rating": 79.23
+  },
+  "Gold Coast|6|FROSTNIP": {
+   "on": 1,
+   "t": 1795161222292,
+   "name": "Frostnip",
+   "tab": 9,
+   "sp": 10,
+   "fair": 5.23,
+   "rating": 86.27
   }
  }
 }
