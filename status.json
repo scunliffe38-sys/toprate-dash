@@ -1,34 +1,36 @@
 {
- "started": "2026-11-21T03:10:17",
+ "started": "2026-11-21T09:13:02",
  "dates": [
   "2026-11-21",
   "2026-11-22",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-24"
  ],
- "reason": "overnight harvest",
+ "reason": "retry: Beaudesert scratched R2 #6, R3 #19, R8 #13/14",
  "status": "ok",
  "acceptors": 1847,
- "rider_share": 0.9,
- "extract_max_date": "2026-11-23",
+ "rider_share": 0.97,
+ "extract_max_date": "2026-11-24",
  "card_source": "toprate",
- "extract": "2026-11-20T16:08:33+00:00",
- "finished": "2026-11-21T04:24:05",
+ "extract": "2026-11-20T21:25:24+00:00",
+ "finished": "2026-11-21T09:35:15",
  "going": {
-  "Cranbourne": "Good 3",
-  "Kembla Grange": "Good 4",
-  "Sunshine Coast": "Soft 5",
+  "Cranbourne": "Soft 6",
+  "Kembla Grange": "Soft 5",
+  "Sunshine Coast": "Good 4",
   "Morphettville": "Good 4",
   "Ascot": "Good 4",
-  "Penshurst": "Good 4",
-  "Tatura": "Good 4",
-  "Gosford": "Good 4",
-  "Beaudesert": "Soft 6",
+  "Tatura": "Soft 5",
+  "Penshurst": "Soft 7",
+  "Gosford": "Soft 5",
   "Toowoomba": "Good 4",
+  "Beaudesert": "Soft 5",
   "Inverell": "Good 4",
   "Roma": "Good",
+  "Pioneer Park": "Good",
   "Esperance": "Soft 5"
  },
- "scratchings": 129,
+ "scratchings": 261,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "9897b23da3bd"
+ "fingerprint": "dd2c8fd56141"
 }
