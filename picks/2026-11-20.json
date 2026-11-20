@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T07:54:00.489Z",
+ "saved": "2026-11-20T07:54:11.865Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -482,6 +482,33 @@
    "sp": 6,
    "fair": 4.22,
    "rating": 84.96
+  },
+  "Gold Coast|8|CERTIFY": {
+   "on": 1,
+   "t": 1795161246560,
+   "name": "Certify",
+   "tab": 11,
+   "sp": 6.5,
+   "fair": 8.73,
+   "rating": 82.87
+  },
+  "Gold Coast|8|CUESTA": {
+   "on": 1,
+   "t": 1795161247536,
+   "name": "Cuesta",
+   "tab": 9,
+   "sp": 11,
+   "fair": 9.95,
+   "rating": 82.47
+  },
+  "Gold Coast|8|LARIDAE": {
+   "on": 1,
+   "t": 1795161248608,
+   "name": "Laridae",
+   "tab": 5,
+   "sp": 10,
+   "fair": 10.59,
+   "rating": 82.28
   }
  }
 }
