@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:00:26.017Z",
+ "saved": "2026-11-20T04:00:30.536Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 5,
    "fair": 5.1,
    "rating": 75.27
+  },
+  "Swan Hill|3|SOMECHANCE": {
+   "on": 1,
+   "t": 1795147227349,
+   "name": "Some Chance",
+   "tab": 14,
+   "sp": 7,
+   "fair": 6.05,
+   "rating": 74.73
   }
  }
 }
