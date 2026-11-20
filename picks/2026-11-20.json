@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:40:15.107Z",
+ "saved": "2026-11-20T05:40:40.081Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -334,6 +334,24 @@
    "sp": 6.5,
    "fair": 5.62,
    "rating": 85.66
+  },
+  "Launceston|5|TUSKEGEE": {
+   "on": 1,
+   "t": 1795153234599,
+   "name": "Tuskegee",
+   "tab": 2,
+   "sp": 6.5,
+   "fair": 6.29,
+   "rating": 85.26
+  },
+  "Launceston|5|FLORENCEGLASS": {
+   "on": 1,
+   "t": 1795153236958,
+   "name": "Florence Glass",
+   "tab": 7,
+   "sp": 21,
+   "fair": 23.5,
+   "rating": 80.57
   }
  }
 }
