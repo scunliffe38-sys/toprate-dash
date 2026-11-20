@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:51:16.569Z",
+ "saved": "2026-11-20T08:51:23.577Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -707,6 +707,15 @@
    "sp": 14,
    "fair": 29.84,
    "rating": 75.1
+  },
+  "Pakenham|6|VEGASMISSILE": {
+   "on": 1,
+   "t": 1795164680474,
+   "name": "Vegas Missile",
+   "tab": 6,
+   "sp": 3.6,
+   "fair": 2.58,
+   "rating": 82.69
   }
  }
 }
