@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T08:51:46.384Z",
+ "saved": "2026-11-20T08:52:03.065Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -734,6 +734,15 @@
    "sp": 7,
    "fair": 12.26,
    "rating": 77.56
+  },
+  "Pakenham|6|MAFEE": {
+   "on": 1,
+   "t": 1795164719799,
+   "name": "Mafee",
+   "tab": 1,
+   "sp": 3.5,
+   "fair": 6.58,
+   "rating": 79.55
   }
  }
 }
