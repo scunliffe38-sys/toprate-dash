@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T04:03:27.528Z",
+ "saved": "2026-11-20T04:03:34.706Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -127,6 +127,15 @@
    "sp": 2.7,
    "fair": 7.67,
    "rating": 72.32
+  },
+  "Swan Hill|8|SHARETHEMUSIC": {
+   "on": 1,
+   "t": 1795147411485,
+   "name": "Share The Music",
+   "tab": 5,
+   "sp": 2.3,
+   "fair": 3.14,
+   "rating": 83.22
   }
  }
 }
