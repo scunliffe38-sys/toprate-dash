@@ -1,6 +1,6 @@
 {
  "date": "2026-11-20",
- "saved": "2026-11-20T05:36:45.997Z",
+ "saved": "2026-11-20T05:36:51.993Z",
  "picks": {
   "Swan Hill|3|CATCHAPRINCESS": {
    "on": 1,
@@ -217,6 +217,15 @@
    "sp": 2.9,
    "fair": 6.6,
    "rating": 78.48
+  },
+  "Pakenham|3|SOUTHPOLE": {
+   "on": 1,
+   "t": 1795153008657,
+   "name": "Southpole",
+   "tab": 8,
+   "sp": 9.5,
+   "fair": 8.28,
+   "rating": 77.76
   }
  }
 }
