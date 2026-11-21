@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:42:53.568Z",
+ "saved": "2026-11-21T04:43:00.314Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -587,6 +587,33 @@
    "sp": 10,
    "fair": 7.07,
    "rating": 86.27
+  },
+  "Ascot|6|WESTERNMISS": {
+   "on": 1,
+   "t": 1795236174678,
+   "name": "Western Miss",
+   "tab": 8,
+   "sp": 2.25,
+   "fair": 3.46,
+   "rating": 94.59
+  },
+  "Ascot|6|SEPTEMBERBORN": {
+   "on": 1,
+   "t": 1795236177102,
+   "name": "September Born",
+   "tab": 4,
+   "sp": 5.5,
+   "fair": 4.81,
+   "rating": 93.52
+  },
+  "Ascot|6|OLYSCHOICE": {
+   "on": 1,
+   "t": 1795236179771,
+   "name": "Oly's Choice",
+   "tab": 5,
+   "sp": 4.8,
+   "fair": 5.83,
+   "rating": 92.86
   }
  }
 }
