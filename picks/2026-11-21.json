@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:24:40.724Z",
+ "saved": "2026-11-21T04:42:23.776Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -515,6 +515,33 @@
    "sp": 5,
    "fair": 9.84,
    "rating": 101.84
+  },
+  "Ascot|3|ROMMEO": {
+   "on": 1,
+   "t": 1795236135769,
+   "name": "Rommeo",
+   "tab": 3,
+   "sp": 8.5,
+   "fair": 10.69,
+   "rating": 86.91
+  },
+  "Ascot|3|TAHNITALK": {
+   "on": 1,
+   "t": 1795236138171,
+   "name": "Tahni Talk",
+   "tab": 1,
+   "sp": 4.8,
+   "fair": 4.69,
+   "rating": 89.42
+  },
+  "Ascot|3|WESTERNLADY": {
+   "on": 1,
+   "t": 1795236140561,
+   "name": "Western Lady",
+   "tab": 2,
+   "sp": 1.95,
+   "fair": 2.93,
+   "rating": 90.77
   }
  }
 }
