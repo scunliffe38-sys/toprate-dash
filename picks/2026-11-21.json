@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:34.569Z",
+ "saved": "2026-11-21T04:22:39.586Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -371,6 +371,15 @@
    "sp": 7,
    "fair": 5.66,
    "rating": 98.54
+  },
+  "Sunshine Coast|7|SIRWINNIE": {
+   "on": 1,
+   "t": 1795234956359,
+   "name": "Sir Winnie",
+   "tab": 17,
+   "sp": 15,
+   "fair": 15.55,
+   "rating": 95.69
   }
  }
 }
