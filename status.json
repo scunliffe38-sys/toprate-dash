@@ -1,18 +1,18 @@
 {
- "started": "2026-11-22T08:25:07",
+ "started": "2026-11-22T09:17:02",
  "dates": [
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "morning harvest",
+ "reason": "Kilmore Soft 7 -> Soft 6; Kilmore scratched R3 #12, R4 #3, R6 #4/12, R7 #4/7/10, R8 #7/16, R9 #5; Canberra Soft 6 -> Soft 5; Canberra scratched R2 #8, R5 #4/6, R6 #6/8/11, R7 #10/1",
  "status": "ok",
  "acceptors": 578,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-21T21:23:29+00:00",
- "finished": "2026-11-22T09:35:43",
+ "finished": "2026-11-22T09:36:12",
  "going": {
   "Kilmore": "Soft 6",
   "Taree": "Soft 5",
@@ -23,5 +23,5 @@
  },
  "scratchings": 100,
  "dashboard": "toprate_week_v2_2026-11-22.html",
- "fingerprint": "0f33e365cce9"
+ "fingerprint": "398e8eac5528"
 }
