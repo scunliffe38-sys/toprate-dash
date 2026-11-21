@@ -1,36 +1,36 @@
 {
- "started": "2026-11-21T17:49:27",
+ "started": "2026-11-21T18:08:02",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Esperance scratched R2 #3",
+ "reason": "Kembla Grange scratched R10 #13; Roma scratched R7 #4",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T18:07:43",
+ "finished": "2026-11-21T18:26:24",
  "going": {
   "Sunshine Coast": "Soft 5",
-  "Morphettville": "Good 3",
   "Ascot": "Soft 5",
   "Toowoomba": "Good 4",
   "Beaudesert": "Good 4",
-  "Roma": "Good",
   "Esperance": "Soft 5",
   "Cranbourne": "Soft 5",
   "Kembla Grange": "Good 4",
+  "Morphettville": "Good 3",
   "Tatura": "Soft 5",
   "Penshurst": "Soft 6",
   "Gosford": "Good 4",
   "Inverell": "Good 3",
+  "Roma": "Good",
   "Pioneer Park": "Good"
  },
  "scratchings": 280,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "b10f30599806"
+ "fingerprint": "02cd96d28448"
 }
