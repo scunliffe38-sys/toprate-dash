@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:12.848Z",
+ "saved": "2026-11-21T04:22:19.002Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -326,6 +326,24 @@
    "sp": 2.3,
    "fair": 3.13,
    "rating": 96.46
+  },
+  "Sunshine Coast|10|TENDEEP": {
+   "on": 1,
+   "t": 1795234935038,
+   "name": "Ten Deep",
+   "tab": 4,
+   "sp": 4.2,
+   "fair": 6.75,
+   "rating": 94.17
+  },
+  "Sunshine Coast|10|HELL": {
+   "on": 1,
+   "t": 1795234938572,
+   "name": "Hell",
+   "tab": 2,
+   "sp": 8,
+   "fair": 7.78,
+   "rating": 93.73
   }
  }
 }
