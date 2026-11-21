@@ -1,36 +1,27 @@
 {
- "started": "2026-11-21T19:10:28",
+ "started": "2026-11-22T03:09:23",
  "dates": [
-  "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Toowoomba scratched R2 #10",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 1847,
- "rider_share": 0.97,
+ "acceptors": 578,
+ "rider_share": 0.91,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
- "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T19:28:29",
+ "extract": "2026-11-21T16:07:41+00:00",
+ "finished": "2026-11-22T04:16:41",
  "going": {
-  "Ascot": "Soft 5",
-  "Toowoomba": "Good 4",
-  "Esperance": "Soft 5",
-  "Cranbourne": "Soft 5",
-  "Kembla Grange": "Good 4",
-  "Sunshine Coast": "Soft 5",
-  "Morphettville": "Good 3",
-  "Tatura": "Soft 5",
-  "Penshurst": "Soft 6",
-  "Gosford": "Good 4",
-  "Beaudesert": "Good 4",
-  "Inverell": "Good 3",
-  "Roma": "Good",
-  "Pioneer Park": "Good"
+  "Kilmore": "Soft 7",
+  "Taree": "Soft 5",
+  "Cairns": "Good 4",
+  "Bunbury": "Soft 5",
+  "Canberra": "Soft 6",
+  "Clare": "Good 4"
  },
- "scratchings": 281,
- "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "d04c1bca3034"
+ "scratchings": 55,
+ "dashboard": "toprate_week_v2_2026-11-22.html",
+ "fingerprint": "6ac5a4bd75b8"
 }
