@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:39.586Z",
+ "saved": "2026-11-21T04:22:48.193Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -380,6 +380,15 @@
    "sp": 15,
    "fair": 15.55,
    "rating": 95.69
+  },
+  "Sunshine Coast|7|FABULANTES": {
+   "on": 1,
+   "t": 1795234965031,
+   "name": "Fabulantes",
+   "tab": 15,
+   "sp": 6.5,
+   "fair": 9.49,
+   "rating": 97.08
   }
  }
 }
