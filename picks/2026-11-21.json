@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:42:23.776Z",
+ "saved": "2026-11-21T04:42:30.773Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -542,6 +542,15 @@
    "sp": 1.95,
    "fair": 2.93,
    "rating": 90.77
+  },
+  "Ascot|4|TERRITORYMAN": {
+   "on": 1,
+   "t": 1795236147674,
+   "name": "Territory Man",
+   "tab": 7,
+   "sp": 2.3,
+   "fair": 2.3,
+   "rating": 93.02
   }
  }
 }
