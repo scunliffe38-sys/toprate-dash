@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:43:00.314Z",
+ "saved": "2026-11-21T06:18:27.566Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -614,6 +614,15 @@
    "sp": 4.8,
    "fair": 5.83,
    "rating": 92.86
+  },
+  "Sunshine Coast|8|GOLDENBOOM": {
+   "on": 1,
+   "t": 1795241904371,
+   "name": "Golden Boom",
+   "tab": 4,
+   "sp": 14,
+   "fair": 28.04,
+   "rating": 91.64
   }
  }
 }
