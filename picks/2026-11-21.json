@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:44:46.690Z",
+ "saved": "2026-11-21T01:44:57.564Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -91,6 +91,15 @@
    "sp": 3.7,
    "fair": 5.88,
    "rating": 87.17
+  },
+  "Cranbourne|5|POWERPIVOT": {
+   "on": 1,
+   "t": 1795225494200,
+   "name": "Power Pivot",
+   "tab": 12,
+   "sp": 5.5,
+   "fair": 20.46,
+   "rating": 82.97
   }
  }
 }
