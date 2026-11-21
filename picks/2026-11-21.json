@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:26:23.172Z",
+ "saved": "2026-11-21T06:26:30.477Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -686,6 +686,24 @@
    "sp": 9.5,
    "fair": 14.75,
    "rating": 91.75
+  },
+  "Ascot|7|FOREVERBOY": {
+   "on": 1,
+   "t": 1795242386434,
+   "name": "Forever Boy",
+   "tab": 2,
+   "sp": 2.6,
+   "fair": 6.14,
+   "rating": 94.37
+  },
+  "Ascot|7|ARCADIAPARK": {
+   "on": 1,
+   "t": 1795242387404,
+   "name": "Arcadia Park",
+   "tab": 8,
+   "sp": 6.5,
+   "fair": 12.18,
+   "rating": 92.32
   }
  }
 }
