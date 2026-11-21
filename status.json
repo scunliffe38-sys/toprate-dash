@@ -1,19 +1,19 @@
 {
- "started": "2026-11-21T16:16:02",
+ "started": "2026-11-21T16:35:02",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Beaudesert Soft 5 -> Good 4; Sunshine Coast scratched R9 #7",
+ "reason": "Cranbourne scratched R8 #16; Sunshine Coast scratched R6 #3; Pioneer Park scratched R5 #2; Roma scratched R4 #5",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T16:34:21",
+ "finished": "2026-11-21T16:53:44",
  "going": {
   "Cranbourne": "Soft 5",
   "Kembla Grange": "Good 4",
@@ -32,5 +32,5 @@
  },
  "scratchings": 276,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "e701d52c2f25"
+ "fingerprint": "7635c5ced58c"
 }
