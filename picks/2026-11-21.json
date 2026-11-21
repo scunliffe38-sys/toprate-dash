@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:45:07.171Z",
+ "saved": "2026-11-21T01:45:13.252Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -109,6 +109,15 @@
    "sp": 1.65,
    "fair": 2.93,
    "rating": 90.5
+  },
+  "Cranbourne|6|LARIO": {
+   "on": 1,
+   "t": 1795225510124,
+   "name": "Lario",
+   "tab": 4,
+   "sp": 6.5,
+   "fair": 4.8,
+   "rating": 88.74
   }
  }
 }
