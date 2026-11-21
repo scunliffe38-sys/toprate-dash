@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:17:18.990Z",
+ "saved": "2026-11-21T04:18:02.375Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -190,6 +190,15 @@
    "sp": 19,
    "fair": 20.65,
    "rating": 87.2
+  },
+  "Cranbourne|7|FISSION": {
+   "on": 1,
+   "t": 1795234679090,
+   "name": "Fission",
+   "tab": 11,
+   "sp": 12,
+   "fair": 15.16,
+   "rating": 88.2
   }
  }
 }
