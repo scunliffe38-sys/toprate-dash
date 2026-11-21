@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:19.002Z",
+ "saved": "2026-11-21T04:22:27.811Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -344,6 +344,15 @@
    "sp": 8,
    "fair": 7.78,
    "rating": 93.73
+  },
+  "Sunshine Coast|10|SPACETRACKER": {
+   "on": 1,
+   "t": 1795234944705,
+   "name": "Space Tracker",
+   "tab": 1,
+   "sp": 14,
+   "fair": 10.13,
+   "rating": 92.95
   }
  }
 }
