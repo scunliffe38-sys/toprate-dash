@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:23:40.359Z",
+ "saved": "2026-11-21T04:23:48.311Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -443,6 +443,15 @@
    "sp": 7.5,
    "fair": 4.68,
    "rating": 104.01
+  },
+  "Kembla Grange|8|HELLSING": {
+   "on": 1,
+   "t": 1795235024904,
+   "name": "Hellsing",
+   "tab": 5,
+   "sp": 26,
+   "fair": 11,
+   "rating": 101.49
   }
  }
 }
