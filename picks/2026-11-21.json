@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:42:49.538Z",
+ "saved": "2026-11-21T04:42:53.568Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -578,6 +578,15 @@
    "sp": 1.75,
    "fair": 6.2,
    "rating": 86.74
+  },
+  "Ascot|5|HEZANGELIC": {
+   "on": 1,
+   "t": 1795236170358,
+   "name": "Hezangelic",
+   "tab": 1,
+   "sp": 10,
+   "fair": 7.07,
+   "rating": 86.27
   }
  }
 }
