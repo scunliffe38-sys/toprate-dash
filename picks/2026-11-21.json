@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:23:27.200Z",
+ "saved": "2026-11-21T04:23:34.067Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -407,6 +407,24 @@
    "sp": 7.5,
    "fair": 4.35,
    "rating": 95.69
+  },
+  "Kembla Grange|7|FIRESTAR": {
+   "on": 1,
+   "t": 1795235009219,
+   "name": "Fire Star",
+   "tab": 3,
+   "sp": 5,
+   "fair": 6.29,
+   "rating": 94.41
+  },
+  "Kembla Grange|7|SMASHINGTIME": {
+   "on": 1,
+   "t": 1795235010804,
+   "name": "Smashing Time",
+   "tab": 6,
+   "sp": 6.5,
+   "fair": 8.76,
+   "rating": 93.28
   }
  }
 }
