@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:18:57.061Z",
+ "saved": "2026-11-21T04:19:02.324Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -280,6 +280,15 @@
    "sp": 3.9,
    "fair": 6.19,
    "rating": 90.12
+  },
+  "Cranbourne|7|BRAVEDESIGN": {
+   "on": 1,
+   "t": 1795234739117,
+   "name": "Brave Design",
+   "tab": 12,
+   "sp": 11,
+   "fair": 11.56,
+   "rating": 89.1
   }
  }
 }
