@@ -1,22 +1,22 @@
 {
- "started": "2026-11-21T15:14:38",
+ "started": "2026-11-21T15:37:29",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Penshurst Soft 7 -> Soft 6",
+ "reason": "Pioneer Park scratched R3 #10",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T15:34:16",
+ "finished": "2026-11-21T15:55:44",
  "going": {
   "Cranbourne": "Soft 5",
-  "Kembla Grange": "Soft 5",
+  "Kembla Grange": "Good 4",
   "Sunshine Coast": "Soft 5",
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
@@ -30,7 +30,7 @@
   "Pioneer Park": "Good",
   "Esperance": "Soft 5"
  },
- "scratchings": 270,
+ "scratchings": 271,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "a38bba813ef6"
+ "fingerprint": "7fc91a04109d"
 }
