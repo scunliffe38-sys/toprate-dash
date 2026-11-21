@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:27:03.694Z",
+ "saved": "2026-11-21T06:27:08.125Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -722,6 +722,24 @@
    "sp": 4.6,
    "fair": 6.09,
    "rating": 89.23
+  },
+  "Ascot|9|COSMICCRUSADER": {
+   "on": 1,
+   "t": 1795242423928,
+   "name": "Cosmic Crusader",
+   "tab": 1,
+   "sp": 3,
+   "fair": 1.8,
+   "rating": 107.61
+  },
+  "Ascot|9|ROCKFEST": {
+   "on": 1,
+   "t": 1795242425020,
+   "name": "Rock Fest",
+   "tab": 13,
+   "sp": 7.5,
+   "fair": 12.18,
+   "rating": 102.27
   }
  }
 }
