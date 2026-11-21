@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:19:41.813Z",
+ "saved": "2026-11-21T04:20:29.639Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -159,13 +159,8 @@
    "rating": 88.9
   },
   "Cranbourne|7|MYTEMPTATION": {
-   "on": 1,
-   "t": 1795234625311,
-   "name": "Mytemptation",
-   "tab": 5,
-   "sp": 10,
-   "fair": 12.88,
-   "rating": 88.7
+   "on": 0,
+   "t": 1795234828669
   },
   "Cranbourne|7|MOMETZ": {
    "on": 1,
@@ -262,13 +257,8 @@
    "rating": 90.12
   },
   "Cranbourne|7|BRAVEDESIGN": {
-   "on": 1,
-   "t": 1795234739117,
-   "name": "Brave Design",
-   "tab": 12,
-   "sp": 11,
-   "fair": 11.56,
-   "rating": 89.1
+   "on": 0,
+   "t": 1795234825895
   }
  }
 }
