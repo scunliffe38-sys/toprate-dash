@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:44:15.184Z",
+ "saved": "2026-11-21T01:44:19.008Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 3.4,
    "fair": 2.94,
    "rating": 88.9
+  },
+  "Cranbourne|4|INTERESTPOINT": {
+   "on": 1,
+   "t": 1795225455863,
+   "name": "Interest Point",
+   "tab": 2,
+   "sp": 6,
+   "fair": 5.74,
+   "rating": 86.49
   }
  }
 }
