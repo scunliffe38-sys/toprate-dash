@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:18:51.880Z",
+ "saved": "2026-11-21T04:18:57.061Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -271,6 +271,15 @@
    "sp": 4.2,
    "fair": 3.48,
    "rating": 92.02
+  },
+  "Cranbourne|10|IMFOXING": {
+   "on": 1,
+   "t": 1795234733826,
+   "name": "I'm Foxing",
+   "tab": 6,
+   "sp": 3.9,
+   "fair": 6.19,
+   "rating": 90.12
   }
  }
 }
