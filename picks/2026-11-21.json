@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:04.259Z",
+ "saved": "2026-11-21T04:22:12.848Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -299,6 +299,33 @@
    "sp": 7.5,
    "fair": 9.65,
    "rating": 84.88
+  },
+  "Sunshine Coast|9|VOLCANICRUSH": {
+   "on": 1,
+   "t": 1795234928608,
+   "name": "Volcanic Rush",
+   "tab": 11,
+   "sp": 6.5,
+   "fair": 10.6,
+   "rating": 84.6
+  },
+  "Sunshine Coast|9|EQUINOXKING": {
+   "on": 1,
+   "t": 1795234929597,
+   "name": "Equinox King",
+   "tab": 6,
+   "sp": 9,
+   "fair": 11.17,
+   "rating": 84.45
+  },
+  "Sunshine Coast|10|SMOKEONTHEWATER": {
+   "on": 1,
+   "t": 1795234932749,
+   "name": "Smoke On The Water",
+   "tab": 8,
+   "sp": 2.3,
+   "fair": 3.13,
+   "rating": 96.46
   }
  }
 }
