@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:21:56.674Z",
+ "saved": "2026-11-21T04:22:04.259Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -290,6 +290,15 @@
    "sp": 3.3,
    "fair": 3.11,
    "rating": 88.34
+  },
+  "Sunshine Coast|9|OREILLYSFLIGHT": {
+   "on": 1,
+   "t": 1795234921047,
+   "name": "O'reillys Flight",
+   "tab": 7,
+   "sp": 7.5,
+   "fair": 9.65,
+   "rating": 84.88
   }
  }
 }
