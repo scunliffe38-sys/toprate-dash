@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:18:11.520Z",
+ "saved": "2026-11-21T04:18:23.646Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -208,6 +208,33 @@
    "sp": 3.7,
    "fair": 5.08,
    "rating": 99.92
+  },
+  "Cranbourne|8|AMENABLE": {
+   "on": 1,
+   "t": 1795234695811,
+   "name": "Amenable",
+   "tab": 8,
+   "sp": 6.5,
+   "fair": 7.79,
+   "rating": 98.6
+  },
+  "Cranbourne|8|PINSTRIPED": {
+   "on": 1,
+   "t": 1795234698282,
+   "name": "Pinstriped",
+   "tab": 5,
+   "sp": 8,
+   "fair": 10.87,
+   "rating": 97.59
+  },
+  "Cranbourne|8|FREEDOMRALLY": {
+   "on": 1,
+   "t": 1795234700464,
+   "name": "Freedom Rally",
+   "tab": 9,
+   "sp": 11,
+   "fair": 12.51,
+   "rating": 97.16
   }
  }
 }
