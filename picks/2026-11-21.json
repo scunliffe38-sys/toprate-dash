@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:27:12.950Z",
+ "saved": "2026-11-21T06:27:22.920Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -749,6 +749,33 @@
    "sp": 6,
    "fair": 16.82,
    "rating": 101.3
+  },
+  "Ascot|10|PRINCEOFDALA": {
+   "on": 1,
+   "t": 1795242435847,
+   "name": "Prince Of Dala",
+   "tab": 4,
+   "sp": 1.9,
+   "fair": 2.8,
+   "rating": 96.01
+  },
+  "Ascot|10|TRULYLOYAL": {
+   "on": 1,
+   "t": 1795242438045,
+   "name": "Truly Loyal",
+   "tab": 11,
+   "sp": 5.5,
+   "fair": 4.35,
+   "rating": 94.68
+  },
+  "Ascot|10|HERAULT": {
+   "on": 1,
+   "t": 1795242439698,
+   "name": "Herault",
+   "tab": 9,
+   "sp": 4,
+   "fair": 7.15,
+   "rating": 93.15
   }
  }
 }
