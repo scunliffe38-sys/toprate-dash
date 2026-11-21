@@ -1,19 +1,19 @@
 {
- "started": "2026-11-21T14:04:35",
+ "started": "2026-11-21T14:24:02",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Inverell Good 4 -> Good 3",
+ "reason": "Cranbourne Soft 6 -> Soft 5; Gosford scratched R1 #6; Pioneer Park scratched R4 #5",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T14:23:37",
+ "finished": "2026-11-21T14:44:01",
  "going": {
   "Cranbourne": "Soft 5",
   "Kembla Grange": "Soft 5",
@@ -30,7 +30,7 @@
   "Pioneer Park": "Good",
   "Esperance": "Soft 5"
  },
- "scratchings": 269,
+ "scratchings": 270,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "7591c124bafb"
+ "fingerprint": "ef2e341d38ed"
 }
