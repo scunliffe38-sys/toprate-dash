@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:42:30.773Z",
+ "saved": "2026-11-21T04:42:41.163Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -551,6 +551,15 @@
    "sp": 2.3,
    "fair": 2.3,
    "rating": 93.02
+  },
+  "Ascot|5|NINETYMILESTRAIGHT": {
+   "on": 1,
+   "t": 1795236157958,
+   "name": "Ninetymilestraight",
+   "tab": 4,
+   "sp": 10,
+   "fair": 5.63,
+   "rating": 86.99
   }
  }
 }
