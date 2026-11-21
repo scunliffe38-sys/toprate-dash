@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:23:34.067Z",
+ "saved": "2026-11-21T04:23:40.359Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -425,6 +425,24 @@
    "sp": 6.5,
    "fair": 8.76,
    "rating": 93.28
+  },
+  "Kembla Grange|8|GRINGOTTS": {
+   "on": 1,
+   "t": 1795235015003,
+   "name": "Gringotts",
+   "tab": 1,
+   "sp": 2.4,
+   "fair": 4.28,
+   "rating": 104.22
+  },
+  "Kembla Grange|8|FORMALDISPLAY": {
+   "on": 1,
+   "t": 1795235017024,
+   "name": "Formal Display",
+   "tab": 3,
+   "sp": 7.5,
+   "fair": 4.68,
+   "rating": 104.01
   }
  }
 }
