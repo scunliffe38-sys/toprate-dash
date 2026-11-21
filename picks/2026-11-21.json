@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:18:48.537Z",
+ "saved": "2026-11-21T06:19:38.634Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -632,6 +632,15 @@
    "sp": 16,
    "fair": 13.88,
    "rating": 93.62
+  },
+  "Sunshine Coast|9|THEAUTUMNAFFAIR": {
+   "on": 1,
+   "t": 1795241975255,
+   "name": "The Autumn Affair",
+   "tab": 9,
+   "sp": 10,
+   "fair": 13.59,
+   "rating": 83.47
   }
  }
 }
