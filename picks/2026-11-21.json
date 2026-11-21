@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:20:35.970Z",
+ "saved": "2026-11-21T04:21:44.490Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -254,6 +254,15 @@
   "Cranbourne|7|BRAVEDESIGN": {
    "on": 0,
    "t": 1795234825895
+  },
+  "Sunshine Coast|8|HIDDENWEALTH": {
+   "on": 1,
+   "t": 1795234901071,
+   "name": "Hidden Wealth",
+   "tab": 3,
+   "sp": 4,
+   "fair": 4.2,
+   "rating": 96.99
   }
  }
 }
