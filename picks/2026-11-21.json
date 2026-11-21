@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:24:14.309Z",
+ "saved": "2026-11-21T04:24:40.724Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -506,6 +506,15 @@
    "sp": 7,
    "fair": 6.79,
    "rating": 93.27
+  },
+  "Kembla Grange|8|GODSWINDOW": {
+   "on": 1,
+   "t": 1795235077473,
+   "name": "God's Window",
+   "tab": 4,
+   "sp": 5,
+   "fair": 9.84,
+   "rating": 101.84
   }
  }
 }
