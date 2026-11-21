@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:25:58.152Z",
+ "saved": "2026-11-21T06:26:23.172Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -668,6 +668,24 @@
    "sp": 3.7,
    "fair": 2.38,
    "rating": 97.23
+  },
+  "Ascot|7|GINGERBAKER": {
+   "on": 1,
+   "t": 1795242379189,
+   "name": "Ginger Baker",
+   "tab": 1,
+   "sp": 14,
+   "fair": 14.39,
+   "rating": 91.82
+  },
+  "Ascot|7|ROCKINGSOCIETY": {
+   "on": 1,
+   "t": 1795242380070,
+   "name": "Rocking Society",
+   "tab": 10,
+   "sp": 9.5,
+   "fair": 14.75,
+   "rating": 91.75
   }
  }
 }
