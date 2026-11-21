@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:26:30.477Z",
+ "saved": "2026-11-21T06:26:41.507Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -704,6 +704,15 @@
    "sp": 6.5,
    "fair": 12.18,
    "rating": 92.32
+  },
+  "Ascot|8|BEATTY": {
+   "on": 1,
+   "t": 1795242398408,
+   "name": "Beatty",
+   "tab": 1,
+   "sp": 1.75,
+   "fair": 2.42,
+   "rating": 91.82
   }
  }
 }
