@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:44:23.811Z",
+ "saved": "2026-11-21T01:44:46.690Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -64,6 +64,33 @@
    "sp": 4.6,
    "fair": 7.73,
    "rating": 85.44
+  },
+  "Cranbourne|5|TISHMAN": {
+   "on": 1,
+   "t": 1795225479860,
+   "name": "Tishman",
+   "tab": 4,
+   "sp": 4.8,
+   "fair": 4.62,
+   "rating": 87.97
+  },
+  "Cranbourne|5|DADANDDAVE": {
+   "on": 1,
+   "t": 1795225481868,
+   "name": "Dad And Dave",
+   "tab": 3,
+   "sp": 5,
+   "fair": 5.38,
+   "rating": 87.45
+  },
+  "Cranbourne|5|ARDASHIR": {
+   "on": 1,
+   "t": 1795225483526,
+   "name": "Ardashir",
+   "tab": 11,
+   "sp": 3.7,
+   "fair": 5.88,
+   "rating": 87.17
   }
  }
 }
