@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:18:46.864Z",
+ "saved": "2026-11-21T04:18:51.880Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -262,6 +262,15 @@
    "sp": 7.5,
    "fair": 11.37,
    "rating": 98.04
+  },
+  "Cranbourne|10|CHOIRPOINT": {
+   "on": 1,
+   "t": 1795234728614,
+   "name": "Choir Point",
+   "tab": 10,
+   "sp": 4.2,
+   "fair": 3.48,
+   "rating": 92.02
   }
  }
 }
