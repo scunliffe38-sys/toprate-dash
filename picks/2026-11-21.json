@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:18:23.646Z",
+ "saved": "2026-11-21T04:18:34.776Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -235,6 +235,15 @@
    "sp": 11,
    "fair": 12.51,
    "rating": 97.16
+  },
+  "Cranbourne|9|SMOOTHCHINO": {
+   "on": 1,
+   "t": 1795234711548,
+   "name": "Smooth Chino",
+   "tab": 4,
+   "sp": 3,
+   "fair": 3.94,
+   "rating": 101.26
   }
  }
 }
