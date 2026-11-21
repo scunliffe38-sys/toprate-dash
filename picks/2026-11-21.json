@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:19:02.324Z",
+ "saved": "2026-11-21T04:19:28.400Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -120,13 +120,8 @@
    "rating": 88.74
   },
   "Cranbourne|7|ALERO": {
-   "on": 1,
-   "t": 1795234612186,
-   "name": "Alero",
-   "tab": 8,
-   "sp": 4.8,
-   "fair": 6.4,
-   "rating": 91
+   "on": 0,
+   "t": 1795234762628
   },
   "Cranbourne|7|MARKDEL": {
    "on": 1,
@@ -138,22 +133,12 @@
    "rating": 90.4
   },
   "Cranbourne|7|CELSIUSSTAR": {
-   "on": 1,
-   "t": 1795234615748,
-   "name": "Celsius Star",
-   "tab": 2,
-   "sp": 6.5,
-   "fair": 8.04,
-   "rating": 90.3
+   "on": 0,
+   "t": 1795234765076
   },
   "Cranbourne|7|ELOUYOU": {
-   "on": 1,
-   "t": 1795234617273,
-   "name": "Elouyou",
-   "tab": 3,
-   "sp": 9,
-   "fair": 8.17,
-   "rating": 90.2
+   "on": 0,
+   "t": 1795234767781
   },
   "Cranbourne|7|STOLIBOLLI": {
    "on": 1,
