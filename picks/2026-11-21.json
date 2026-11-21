@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:27.811Z",
+ "saved": "2026-11-21T04:22:34.569Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -353,6 +353,24 @@
    "sp": 14,
    "fair": 10.13,
    "rating": 92.95
+  },
+  "Sunshine Coast|7|BRINDAVAN": {
+   "on": 1,
+   "t": 1795234950251,
+   "name": "Brindavan",
+   "tab": 4,
+   "sp": 2.15,
+   "fair": 3.15,
+   "rating": 100.24
+  },
+  "Sunshine Coast|7|FUKUBANA": {
+   "on": 1,
+   "t": 1795234951402,
+   "name": "Fukubana",
+   "tab": 5,
+   "sp": 7,
+   "fair": 5.66,
+   "rating": 98.54
   }
  }
 }
