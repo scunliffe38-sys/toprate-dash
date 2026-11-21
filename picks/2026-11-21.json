@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:20:29.639Z",
+ "saved": "2026-11-21T04:20:35.970Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -163,13 +163,8 @@
    "t": 1795234828669
   },
   "Cranbourne|7|MOMETZ": {
-   "on": 1,
-   "t": 1795234635660,
-   "name": "Mometz",
-   "tab": 9,
-   "sp": 19,
-   "fair": 20.65,
-   "rating": 87.2
+   "on": 0,
+   "t": 1795234832848
   },
   "Cranbourne|7|FISSION": {
    "on": 0,
