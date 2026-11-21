@@ -1,19 +1,19 @@
 {
- "started": "2026-11-21T14:24:02",
+ "started": "2026-11-21T14:45:02",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Cranbourne Soft 6 -> Soft 5; Gosford scratched R1 #6; Pioneer Park scratched R4 #5",
+ "reason": "Cranbourne scratched R10 #11",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T14:44:01",
+ "finished": "2026-11-21T15:04:00",
  "going": {
   "Cranbourne": "Soft 5",
   "Kembla Grange": "Soft 5",
@@ -32,5 +32,5 @@
  },
  "scratchings": 270,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "ef2e341d38ed"
+ "fingerprint": "141f1869861a"
 }
