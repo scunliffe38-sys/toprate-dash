@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:21:48.080Z",
+ "saved": "2026-11-21T04:21:51.963Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -272,6 +272,15 @@
    "sp": 4,
    "fair": 4.92,
    "rating": 96.53
+  },
+  "Sunshine Coast|8|FOREIGNPRESS": {
+   "on": 1,
+   "t": 1795234908808,
+   "name": "Foreign Press",
+   "tab": 12,
+   "sp": 7,
+   "fair": 10.57,
+   "rating": 94.41
   }
  }
 }
