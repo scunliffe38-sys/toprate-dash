@@ -1,19 +1,19 @@
 {
- "started": "2026-11-21T10:51:26",
+ "started": "2026-11-21T11:29:25",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Ascot Good 4 -> Soft 5; Ascot scratched R1 #1",
+ "reason": "Ascot scratched R2 #8",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T11:10:24",
+ "finished": "2026-11-21T11:48:53",
  "going": {
   "Cranbourne": "Soft 6",
   "Kembla Grange": "Soft 5",
@@ -30,7 +30,7 @@
   "Pioneer Park": "Good",
   "Esperance": "Soft 5"
  },
- "scratchings": 264,
+ "scratchings": 267,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "40960ca4ca03"
+ "fingerprint": "78d5d28d0d3d"
 }
