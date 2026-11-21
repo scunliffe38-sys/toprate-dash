@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:42:41.163Z",
+ "saved": "2026-11-21T04:42:46.080Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -560,6 +560,15 @@
    "sp": 10,
    "fair": 5.63,
    "rating": 86.99
+  },
+  "Ascot|5|LONGSERVICELEAF": {
+   "on": 1,
+   "t": 1795236162947,
+   "name": "Long Service Leaf",
+   "tab": 2,
+   "sp": 7.5,
+   "fair": 6.05,
+   "rating": 86.77
   }
  }
 }
