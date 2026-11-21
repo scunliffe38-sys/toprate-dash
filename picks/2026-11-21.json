@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:18:34.776Z",
+ "saved": "2026-11-21T04:18:46.864Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -244,6 +244,24 @@
    "sp": 3,
    "fair": 3.94,
    "rating": 101.26
+  },
+  "Cranbourne|9|MERIDIUS": {
+   "on": 1,
+   "t": 1795234722049,
+   "name": "Meridius",
+   "tab": 9,
+   "sp": 8.5,
+   "fair": 10.6,
+   "rating": 98.25
+  },
+  "Cranbourne|9|NDOLA": {
+   "on": 1,
+   "t": 1795234723712,
+   "name": "Ndola",
+   "tab": 5,
+   "sp": 7.5,
+   "fair": 11.37,
+   "rating": 98.04
   }
  }
 }
