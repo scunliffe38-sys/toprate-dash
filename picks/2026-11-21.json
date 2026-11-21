@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:18:27.566Z",
+ "saved": "2026-11-21T06:18:48.537Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -623,6 +623,15 @@
    "sp": 14,
    "fair": 28.04,
    "rating": 91.64
+  },
+  "Sunshine Coast|8|BRINGMEKASH": {
+   "on": 1,
+   "t": 1795241925440,
+   "name": "Bring Me Kash",
+   "tab": 8,
+   "sp": 16,
+   "fair": 13.88,
+   "rating": 93.62
   }
  }
 }
