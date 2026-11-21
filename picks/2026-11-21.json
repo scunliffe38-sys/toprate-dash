@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:22:48.193Z",
+ "saved": "2026-11-21T04:23:27.200Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -389,6 +389,24 @@
    "sp": 6.5,
    "fair": 9.49,
    "rating": 97.08
+  },
+  "Kembla Grange|7|EARNTOBURN": {
+   "on": 1,
+   "t": 1795235003931,
+   "name": "Earn To Burn",
+   "tab": 5,
+   "sp": 2.2,
+   "fair": 3.83,
+   "rating": 96.14
+  },
+  "Kembla Grange|7|SCAMPI": {
+   "on": 1,
+   "t": 1795235006731,
+   "name": "Scampi",
+   "tab": 4,
+   "sp": 7.5,
+   "fair": 4.35,
+   "rating": 95.69
   }
  }
 }
