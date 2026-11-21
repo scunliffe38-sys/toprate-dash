@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:42:46.080Z",
+ "saved": "2026-11-21T04:42:49.538Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -569,6 +569,15 @@
    "sp": 7.5,
    "fair": 6.05,
    "rating": 86.77
+  },
+  "Ascot|5|ROSTISLAV": {
+   "on": 1,
+   "t": 1795236166209,
+   "name": "Rostislav",
+   "tab": 5,
+   "sp": 1.75,
+   "fair": 6.2,
+   "rating": 86.74
   }
  }
 }
