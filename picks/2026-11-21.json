@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:44:19.008Z",
+ "saved": "2026-11-21T01:44:23.811Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -55,6 +55,15 @@
    "sp": 6,
    "fair": 5.74,
    "rating": 86.49
+  },
+  "Cranbourne|4|NATIONSTATE": {
+   "on": 1,
+   "t": 1795225460498,
+   "name": "Nation State",
+   "tab": 1,
+   "sp": 4.6,
+   "fair": 7.73,
+   "rating": 85.44
   }
  }
 }
