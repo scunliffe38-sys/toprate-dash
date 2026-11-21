@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:44:57.564Z",
+ "saved": "2026-11-21T01:45:07.171Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -100,6 +100,15 @@
    "sp": 5.5,
    "fair": 20.46,
    "rating": 82.97
+  },
+  "Cranbourne|6|JENNIMULTABELLA": {
+   "on": 1,
+   "t": 1795225503902,
+   "name": "Jenni Multabella",
+   "tab": 11,
+   "sp": 1.65,
+   "fair": 2.93,
+   "rating": 90.5
   }
  }
 }
