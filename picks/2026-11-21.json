@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:19:45.773Z",
+ "saved": "2026-11-21T06:20:16.093Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -650,6 +650,15 @@
    "sp": 8,
    "fair": 16.16,
    "rating": 82.93
+  },
+  "Sunshine Coast|10|PREVAILED": {
+   "on": 1,
+   "t": 1795242012982,
+   "name": "Prevailed",
+   "tab": 16,
+   "sp": 9,
+   "fair": 18.31,
+   "rating": 91.19
   }
  }
 }
