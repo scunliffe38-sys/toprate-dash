@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:19:38.634Z",
+ "saved": "2026-11-21T06:19:45.773Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -641,6 +641,15 @@
    "sp": 10,
    "fair": 13.59,
    "rating": 83.47
+  },
+  "Sunshine Coast|9|RULETHENIGHT": {
+   "on": 1,
+   "t": 1795241982633,
+   "name": "Rule The Night",
+   "tab": 10,
+   "sp": 8,
+   "fair": 16.16,
+   "rating": 82.93
   }
  }
 }
