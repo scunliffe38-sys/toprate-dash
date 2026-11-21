@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T01:45:13.252Z",
+ "saved": "2026-11-21T04:17:02.402Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -118,6 +118,60 @@
    "sp": 6.5,
    "fair": 4.8,
    "rating": 88.74
+  },
+  "Cranbourne|7|ALERO": {
+   "on": 1,
+   "t": 1795234612186,
+   "name": "Alero",
+   "tab": 8,
+   "sp": 4.8,
+   "fair": 6.4,
+   "rating": 91
+  },
+  "Cranbourne|7|MARKDEL": {
+   "on": 1,
+   "t": 1795234613868,
+   "name": "Markdel",
+   "tab": 7,
+   "sp": 5.5,
+   "fair": 7.75,
+   "rating": 90.4
+  },
+  "Cranbourne|7|CELSIUSSTAR": {
+   "on": 1,
+   "t": 1795234615748,
+   "name": "Celsius Star",
+   "tab": 2,
+   "sp": 6.5,
+   "fair": 8.04,
+   "rating": 90.3
+  },
+  "Cranbourne|7|ELOUYOU": {
+   "on": 1,
+   "t": 1795234617273,
+   "name": "Elouyou",
+   "tab": 3,
+   "sp": 9,
+   "fair": 8.17,
+   "rating": 90.2
+  },
+  "Cranbourne|7|STOLIBOLLI": {
+   "on": 1,
+   "t": 1795234619282,
+   "name": "Stoli Bolli",
+   "tab": 1,
+   "sp": 5,
+   "fair": 9.17,
+   "rating": 89.8
+  },
+  "Cranbourne|7|KAYINGCHEER": {
+   "on": 1,
+   "t": 1795234622054,
+   "name": "Ka Ying Cheer",
+   "tab": 6,
+   "sp": 14,
+   "fair": 12.43,
+   "rating": 88.9
   }
  }
 }
