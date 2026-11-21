@@ -1,21 +1,21 @@
 {
- "started": "2026-11-21T13:43:27",
+ "started": "2026-11-21T14:04:35",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Gosford Soft 5 -> Good 4",
+ "reason": "Inverell Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T14:02:37",
+ "finished": "2026-11-21T14:23:37",
  "going": {
-  "Cranbourne": "Soft 6",
+  "Cranbourne": "Soft 5",
   "Kembla Grange": "Soft 5",
   "Sunshine Coast": "Soft 5",
   "Morphettville": "Good 4",
@@ -25,12 +25,12 @@
   "Gosford": "Good 4",
   "Toowoomba": "Good 4",
   "Beaudesert": "Soft 5",
-  "Inverell": "Good 4",
+  "Inverell": "Good 3",
   "Roma": "Good",
   "Pioneer Park": "Good",
   "Esperance": "Soft 5"
  },
- "scratchings": 267,
+ "scratchings": 269,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "9cfdfac0e03f"
+ "fingerprint": "7591c124bafb"
 }
