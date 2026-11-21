@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T06:20:16.093Z",
+ "saved": "2026-11-21T06:25:58.152Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -659,6 +659,15 @@
    "sp": 9,
    "fair": 18.31,
    "rating": 91.19
+  },
+  "Ascot|7|ABERDEENFLYER": {
+   "on": 1,
+   "t": 1795242354923,
+   "name": "Aberdeen Flyer",
+   "tab": 4,
+   "sp": 3.7,
+   "fair": 2.38,
+   "rating": 97.23
   }
  }
 }
