@@ -1,6 +1,6 @@
 {
  "date": "2026-11-21",
- "saved": "2026-11-21T04:23:53.434Z",
+ "saved": "2026-11-21T04:24:02.734Z",
  "picks": {
   "Cranbourne|3|SWIFTFORCE": {
    "on": 1,
@@ -461,6 +461,24 @@
    "sp": 15,
    "fair": 15.22,
    "rating": 100.56
+  },
+  "Kembla Grange|9|YOURENOTTHEKING": {
+   "on": 1,
+   "t": 1795235038001,
+   "name": "Youre Not The King",
+   "tab": 8,
+   "sp": 2.6,
+   "fair": 2.85,
+   "rating": 98.84
+  },
+  "Kembla Grange|9|MANOFWORTH": {
+   "on": 1,
+   "t": 1795235039557,
+   "name": "Man Of Worth",
+   "tab": 5,
+   "sp": 3.5,
+   "fair": 4.68,
+   "rating": 97.24
   }
  }
 }
