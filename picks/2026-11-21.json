@@ -1,0 +1,33 @@
+{
+ "date": "2026-11-21",
+ "saved": "2026-11-21T01:44:11.751Z",
+ "picks": {
+  "Cranbourne|3|SWIFTFORCE": {
+   "on": 1,
+   "t": 1795225445625,
+   "name": "Swift Force",
+   "tab": 4,
+   "sp": 2.8,
+   "fair": 3.47,
+   "rating": 96.93
+  },
+  "Cranbourne|3|MARSEPT": {
+   "on": 1,
+   "t": 1795225447089,
+   "name": "Marsept",
+   "tab": 8,
+   "sp": 3.6,
+   "fair": 5.98,
+   "rating": 95.04
+  },
+  "Cranbourne|3|DAVIDA": {
+   "on": 1,
+   "t": 1795225449222,
+   "name": "Davida",
+   "tab": 3,
+   "sp": 19,
+   "fair": 6.49,
+   "rating": 94.74
+  }
+ }
+}
