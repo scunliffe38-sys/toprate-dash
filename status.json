@@ -1,19 +1,19 @@
 {
- "started": "2026-11-21T14:45:02",
+ "started": "2026-11-21T15:14:38",
  "dates": [
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Cranbourne scratched R10 #11",
+ "reason": "Penshurst Soft 7 -> Soft 6",
  "status": "ok",
  "acceptors": 1847,
  "rider_share": 0.97,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-20T21:25:24+00:00",
- "finished": "2026-11-21T15:04:00",
+ "finished": "2026-11-21T15:34:16",
  "going": {
   "Cranbourne": "Soft 5",
   "Kembla Grange": "Soft 5",
@@ -21,7 +21,7 @@
   "Morphettville": "Good 4",
   "Ascot": "Soft 5",
   "Tatura": "Soft 5",
-  "Penshurst": "Soft 7",
+  "Penshurst": "Soft 6",
   "Gosford": "Good 4",
   "Toowoomba": "Good 4",
   "Beaudesert": "Soft 5",
@@ -32,5 +32,5 @@
  },
  "scratchings": 270,
  "dashboard": "toprate_week_v2_2026-11-21.html",
- "fingerprint": "141f1869861a"
+ "fingerprint": "a38bba813ef6"
 }
