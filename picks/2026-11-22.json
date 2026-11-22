@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:39:39.746Z",
+ "saved": "2026-11-22T04:39:45.952Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -397,6 +397,33 @@
    "sp": 4,
    "fair": 4.68,
    "rating": 76.93
+  },
+  "Bunbury|4|BADGERBOB": {
+   "on": 1,
+   "t": 1795322381500,
+   "name": "Badger Bob",
+   "tab": 2,
+   "sp": 12,
+   "fair": 5.06,
+   "rating": 76.73
+  },
+  "Bunbury|4|RAKITIN": {
+   "on": 1,
+   "t": 1795322382113,
+   "name": "Rakitin",
+   "tab": 5,
+   "sp": 2.8,
+   "fair": 5.46,
+   "rating": 76.48
+  },
+  "Bunbury|4|MAKEMETURN": {
+   "on": 1,
+   "t": 1795322382876,
+   "name": "Make Me Turn",
+   "tab": 13,
+   "sp": 4.4,
+   "fair": 6.9,
+   "rating": 75.83
   }
  }
 }
