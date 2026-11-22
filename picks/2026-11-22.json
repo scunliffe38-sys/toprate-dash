@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:38:05.679Z",
+ "saved": "2026-11-22T04:38:15.656Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -262,6 +262,33 @@
    "sp": 7.2,
    "fair": 7.54,
    "rating": 77.5
+  },
+  "Sha Tin|6|LIVEANDLETLIVE": {
+   "on": 1,
+   "t": 1795322289657,
+   "name": "Liveandletlive",
+   "tab": 3,
+   "sp": 16.7,
+   "fair": 8.53,
+   "rating": 77
+  },
+  "Sha Tin|6|SUPERGOLDENDRAGON": {
+   "on": 1,
+   "t": 1795322290536,
+   "name": "Super Goldendragon",
+   "tab": 12,
+   "sp": 6.5,
+   "fair": 11.64,
+   "rating": 75.9
+  },
+  "Sha Tin|7|KAYINGRISING": {
+   "on": 1,
+   "t": 1795322292821,
+   "name": "Ka Ying Rising",
+   "tab": 1,
+   "sp": 1.05,
+   "fair": 1.22,
+   "rating": 121.4
   }
  }
 }
