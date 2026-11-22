@@ -1,18 +1,18 @@
 {
- "started": "2026-11-22T15:28:23",
+ "started": "2026-11-22T16:36:02",
  "dates": [
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Clare scratched R3 #8",
+ "reason": "Bunbury scratched R2 #3",
  "status": "ok",
  "acceptors": 578,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-21T21:23:29+00:00",
- "finished": "2026-11-22T15:45:24",
+ "finished": "2026-11-22T16:53:12",
  "going": {
   "Kilmore": "Soft 6",
   "Taree": "Good 4",
@@ -22,7 +22,7 @@
   "Clare": "Good 4",
   "Sha Tin": "Good"
  },
- "scratchings": 112,
+ "scratchings": 116,
  "dashboard": "toprate_week_v2_2026-11-22.html",
- "fingerprint": "9c08f6865b6d"
+ "fingerprint": "df893030e51d"
 }
