@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:32:44.775Z",
+ "saved": "2026-11-22T07:32:50.694Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -577,6 +577,15 @@
    "sp": 3.95,
    "fair": 5.25,
    "rating": 117.3
+  },
+  "Sha Tin|8|GALAXYPATCH": {
+   "on": 1,
+   "t": 1795332767558,
+   "name": "Galaxy Patch",
+   "tab": 3,
+   "sp": 3.95,
+   "fair": 8.61,
+   "rating": 115.5
   }
  }
 }
