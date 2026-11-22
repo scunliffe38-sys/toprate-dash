@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:33:58.564Z",
+ "saved": "2026-11-22T07:34:37.116Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -658,6 +658,24 @@
    "sp": 4.95,
    "fair": 8.38,
    "rating": 79.1
+  },
+  "Sha Tin|9|VOYAGEBUBBLE": {
+   "on": 1,
+   "t": 1795332872059,
+   "name": "Voyage Bubble",
+   "tab": 1,
+   "sp": 9.65,
+   "fair": 7.48,
+   "rating": 99.9
+  },
+  "Sha Tin|9|SILVERYBREEZE": {
+   "on": 1,
+   "t": 1795332873742,
+   "name": "Silvery Breeze",
+   "tab": 10,
+   "sp": 20.6,
+   "fair": 14.53,
+   "rating": 97.5
   }
  }
 }
