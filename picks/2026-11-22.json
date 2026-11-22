@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:31:39.698Z",
+ "saved": "2026-11-22T07:31:47.063Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -532,6 +532,33 @@
    "sp": 3.4,
    "fair": 4.28,
    "rating": 84.14
+  },
+  "Bunbury|8|HOYADESTROYER": {
+   "on": 1,
+   "t": 1795332700679,
+   "name": "Hoya Destroyer",
+   "tab": 3,
+   "sp": 4.4,
+   "fair": 7.65,
+   "rating": 82.33
+  },
+  "Bunbury|8|SHOWLAS": {
+   "on": 1,
+   "t": 1795332703011,
+   "name": "Showlas",
+   "tab": 5,
+   "sp": 5,
+   "fair": 9.11,
+   "rating": 81.76
+  },
+  "Bunbury|8|KATFIVE": {
+   "on": 1,
+   "t": 1795332703764,
+   "name": "Kat Five",
+   "tab": 10,
+   "sp": 9,
+   "fair": 11.16,
+   "rating": 81.16
   }
  }
 }
