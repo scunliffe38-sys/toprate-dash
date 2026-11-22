@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:38:01.526Z",
+ "saved": "2026-11-22T04:38:05.679Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -253,6 +253,15 @@
    "sp": 6.2,
    "fair": 6.46,
    "rating": 78.1
+  },
+  "Sha Tin|6|BRAVEFIELD": {
+   "on": 1,
+   "t": 1795322282884,
+   "name": "Bravefield",
+   "tab": 1,
+   "sp": 7.2,
+   "fair": 7.54,
+   "rating": 77.5
   }
  }
 }
