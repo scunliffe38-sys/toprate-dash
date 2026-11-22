@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:04.121Z",
+ "saved": "2026-11-22T02:56:10.327Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -28,6 +28,33 @@
    "sp": 4,
    "fair": 6.47,
    "rating": 82.28
+  },
+  "Kilmore|6|SUNLITSERENADE": {
+   "on": 1,
+   "t": 1795316164311,
+   "name": "Sunlit Serenade",
+   "tab": 5,
+   "sp": 8.5,
+   "fair": 8.19,
+   "rating": 81.48
+  },
+  "Kilmore|6|GALANTKNIGHT": {
+   "on": 1,
+   "t": 1795316166199,
+   "name": "Galant Knight",
+   "tab": 1,
+   "sp": 5,
+   "fair": 8.74,
+   "rating": 81.29
+  },
+  "Kilmore|6|SHIPSTERNBLUFF": {
+   "on": 1,
+   "t": 1795316167279,
+   "name": "Shipstern Bluff",
+   "tab": 9,
+   "sp": 6.5,
+   "fair": 9.06,
+   "rating": 81.15
   }
  }
 }
