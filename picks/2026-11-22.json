@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:37:37.359Z",
+ "saved": "2026-11-22T04:37:44.688Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -181,6 +181,24 @@
    "sp": 5.5,
    "fair": 6.82,
    "rating": 56.1
+  },
+  "Sha Tin|4|LETSHAVEFUN": {
+   "on": 1,
+   "t": 1795322259495,
+   "name": "Let's Have Fun",
+   "tab": 11,
+   "sp": 16.1,
+   "fair": 9.85,
+   "rating": 54.8
+  },
+  "Sha Tin|4|RAGINGWARRIOR": {
+   "on": 1,
+   "t": 1795322261864,
+   "name": "Raging Warrior",
+   "tab": 7,
+   "sp": 14.55,
+   "fair": 12.3,
+   "rating": 54
   }
  }
 }
