@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:45.307Z",
+ "saved": "2026-11-22T02:56:55.118Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -127,6 +127,33 @@
    "sp": 6.5,
    "fair": 10.79,
    "rating": 97.25
+  },
+  "Kilmore|9|JENNIYOUTHINK": {
+   "on": 1,
+   "t": 1795316208175,
+   "name": "Jenni You Think",
+   "tab": 11,
+   "sp": 2.5,
+   "fair": 3.95,
+   "rating": 87.39
+  },
+  "Kilmore|9|TILLQUEEN": {
+   "on": 1,
+   "t": 1795316210216,
+   "name": "Till Queen",
+   "tab": 7,
+   "sp": 8,
+   "fair": 6.48,
+   "rating": 85.83
+  },
+  "Kilmore|9|DEALERSING": {
+   "on": 1,
+   "t": 1795316212040,
+   "name": "Dealer Sing",
+   "tab": 9,
+   "sp": 12,
+   "fair": 8.2,
+   "rating": 85.13
   }
  }
 }
