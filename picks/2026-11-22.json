@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:31.035Z",
+ "saved": "2026-11-22T02:56:36.337Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -100,6 +100,24 @@
    "sp": 9.5,
    "fair": 9.64,
    "rating": 82.34
+  },
+  "Kilmore|8|SABAJ": {
+   "on": 1,
+   "t": 1795316191336,
+   "name": "Sabaj",
+   "tab": 2,
+   "sp": 3,
+   "fair": 2.61,
+   "rating": 101.65
+  },
+  "Kilmore|8|TOODARNDISCREET": {
+   "on": 1,
+   "t": 1795316193274,
+   "name": "Too Darn Discreet",
+   "tab": 4,
+   "sp": 5,
+   "fair": 8.35,
+   "rating": 98
   }
  }
 }
