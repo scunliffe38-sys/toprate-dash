@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:31:15.678Z",
+ "saved": "2026-11-22T07:31:22.465Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -487,6 +487,33 @@
    "sp": 6.5,
    "fair": 6.19,
    "rating": 75.77
+  },
+  "Bunbury|7|NATURESRECKONING": {
+   "on": 1,
+   "t": 1795332677801,
+   "name": "Nature's Reckoning",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 5.98,
+   "rating": 84.24
+  },
+  "Bunbury|7|COSMICTREAT": {
+   "on": 1,
+   "t": 1795332679371,
+   "name": "Cosmic Treat",
+   "tab": 11,
+   "sp": 5.5,
+   "fair": 6.66,
+   "rating": 83.91
+  },
+  "Bunbury|7|QUEENARIA": {
+   "on": 1,
+   "t": 1795332682286,
+   "name": "Queen Aria",
+   "tab": 6,
+   "sp": 7,
+   "fair": 8.96,
+   "rating": 82.98
   }
  }
 }
