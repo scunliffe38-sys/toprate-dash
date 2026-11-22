@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:36.337Z",
+ "saved": "2026-11-22T02:56:45.307Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -118,6 +118,15 @@
    "sp": 5,
    "fair": 8.35,
    "rating": 98
+  },
+  "Kilmore|8|MILITARYACADEMY": {
+   "on": 1,
+   "t": 1795316202262,
+   "name": "Military Academy",
+   "tab": 11,
+   "sp": 6.5,
+   "fair": 10.79,
+   "rating": 97.25
   }
  }
 }
