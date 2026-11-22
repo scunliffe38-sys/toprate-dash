@@ -1,22 +1,22 @@
 {
- "started": "2026-11-22T12:40:02",
+ "started": "2026-11-22T13:20:37",
  "dates": [
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Cairns Soft 5 -> Good 4",
+ "reason": "Canberra Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 578,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-21T21:23:29+00:00",
- "finished": "2026-11-22T12:56:55",
+ "finished": "2026-11-22T13:37:44",
  "going": {
   "Kilmore": "Soft 6",
   "Taree": "Soft 5",
-  "Canberra": "Soft 5",
+  "Canberra": "Good 4",
   "Cairns": "Good 4",
   "Bunbury": "Soft 5",
   "Clare": "Good 4",
@@ -24,5 +24,5 @@
  },
  "scratchings": 110,
  "dashboard": "toprate_week_v2_2026-11-22.html",
- "fingerprint": "7a6188f460e8"
+ "fingerprint": "78a7538ace51"
 }
