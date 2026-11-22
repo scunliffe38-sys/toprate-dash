@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:31:03.789Z",
+ "saved": "2026-11-22T07:31:09.320Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -451,6 +451,24 @@
    "sp": 7,
    "fair": 8.5,
    "rating": 72.11
+  },
+  "Bunbury|5|MRFRODO": {
+   "on": 1,
+   "t": 1795332665208,
+   "name": "Mr Frodo",
+   "tab": 1,
+   "sp": 6,
+   "fair": 10.48,
+   "rating": 71.4
+  },
+  "Bunbury|5|BRAGGINGRIGHTS": {
+   "on": 1,
+   "t": 1795332666060,
+   "name": "Bragging Rights",
+   "tab": 3,
+   "sp": 9,
+   "fair": 9.08,
+   "rating": 71.89
   }
  }
 }
