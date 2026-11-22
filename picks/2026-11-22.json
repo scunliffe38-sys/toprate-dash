@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:33:46.738Z",
+ "saved": "2026-11-22T07:33:51.527Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -622,6 +622,15 @@
    "sp": 2.25,
    "fair": 2.97,
    "rating": 75.4
+  },
+  "Sha Tin|10|NEGENTROPY": {
+   "on": 1,
+   "t": 1795332828318,
+   "name": "Negentropy",
+   "tab": 12,
+   "sp": 10.8,
+   "fair": 6.07,
+   "rating": 72.8
   }
  }
 }
