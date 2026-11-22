@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:34:37.116Z",
+ "saved": "2026-11-22T07:34:43.124Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -676,6 +676,24 @@
    "sp": 20.6,
    "fair": 14.53,
    "rating": 97.5
+  },
+  "Sha Tin|9|GENTLEMENLEGACY": {
+   "on": 1,
+   "t": 1795332878166,
+   "name": "Gentlemen Legacy",
+   "tab": 8,
+   "sp": 6.8,
+   "fair": 15.25,
+   "rating": 97.3
+  },
+  "Sha Tin|9|ENSUED": {
+   "on": 1,
+   "t": 1795332880018,
+   "name": "Ensued",
+   "tab": 4,
+   "sp": 11.05,
+   "fair": 45.75,
+   "rating": 93.3
   }
  }
 }
