@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:39:31.640Z",
+ "saved": "2026-11-22T04:39:39.746Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -352,6 +352,51 @@
    "sp": 6,
    "fair": 5.28,
    "rating": 72.29
+  },
+  "Bunbury|3|STERNPLAYER": {
+   "on": 1,
+   "t": 1795322372889,
+   "name": "Stern Player",
+   "tab": 10,
+   "sp": 3.1,
+   "fair": 5.73,
+   "rating": 72.15
+  },
+  "Bunbury|3|BIGMARE": {
+   "on": 1,
+   "t": 1795322373587,
+   "name": "Big Mare",
+   "tab": 3,
+   "sp": 8,
+   "fair": 6.9,
+   "rating": 71.5
+  },
+  "Bunbury|3|OFFTHERICHTER": {
+   "on": 1,
+   "t": 1795322374438,
+   "name": "Off The Richter",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 7.53,
+   "rating": 71.26
+  },
+  "Bunbury|3|RONNYSSECRET": {
+   "on": 1,
+   "t": 1795322376693,
+   "name": "Ronny's Secret",
+   "tab": 9,
+   "sp": 8.5,
+   "fair": 8.49,
+   "rating": 70.89
+  },
+  "Bunbury|4|DIVINEMIRAGE": {
+   "on": 1,
+   "t": 1795322379498,
+   "name": "Divine Mirage",
+   "tab": 12,
+   "sp": 4,
+   "fair": 4.68,
+   "rating": 76.93
   }
  }
 }
