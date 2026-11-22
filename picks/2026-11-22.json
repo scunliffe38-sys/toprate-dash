@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:32:58.898Z",
+ "saved": "2026-11-22T07:33:46.738Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -613,6 +613,15 @@
    "sp": 3.05,
    "fair": 3.55,
    "rating": 102.7
+  },
+  "Sha Tin|10|NYXGLUCK": {
+   "on": 1,
+   "t": 1795332823482,
+   "name": "Nyx Gluck",
+   "tab": 3,
+   "sp": 2.25,
+   "fair": 2.97,
+   "rating": 75.4
   }
  }
 }
