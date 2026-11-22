@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:10.327Z",
+ "saved": "2026-11-22T02:56:19.495Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -55,6 +55,33 @@
    "sp": 6.5,
    "fair": 9.06,
    "rating": 81.15
+  },
+  "Kilmore|7|BOLDSTRIKE": {
+   "on": 1,
+   "t": 1795316175289,
+   "name": "Bold Strike",
+   "tab": 2,
+   "sp": 3.7,
+   "fair": 4.64,
+   "rating": 84.78
+  },
+  "Kilmore|7|CATCHTHEMOON": {
+   "on": 1,
+   "t": 1795316176381,
+   "name": "Catch The Moon",
+   "tab": 9,
+   "sp": 3.5,
+   "fair": 5.65,
+   "rating": 84.19
+  },
+  "Kilmore|7|REVOLVER": {
+   "on": 1,
+   "t": 1795316179467,
+   "name": "Revolver",
+   "tab": 8,
+   "sp": 5.5,
+   "fair": 6.62,
+   "rating": 83.6
   }
  }
 }
