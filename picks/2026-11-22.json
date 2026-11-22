@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:31:22.465Z",
+ "saved": "2026-11-22T07:31:35.730Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -514,6 +514,15 @@
    "sp": 7,
    "fair": 8.96,
    "rating": 82.98
+  },
+  "Bunbury|7|FEARLESSTALK": {
+   "on": 1,
+   "t": 1795332692637,
+   "name": "Fearless Talk",
+   "tab": 12,
+   "sp": 7,
+   "fair": 10.87,
+   "rating": 82.37
   }
  }
 }
