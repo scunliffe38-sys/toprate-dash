@@ -1,22 +1,22 @@
 {
- "started": "2026-11-23T09:10:03",
+ "started": "2026-11-23T09:27:02",
  "dates": [
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "retry: Ballina Soft 5 -> Good 4; Ballina scratched R1 #2, R2 #2/8, R3 #5/7, R4 #3/4/8, R5 #10, R7 #4/7/8, R8 #11/15; Barcaldine scratched R4 #12, R5 #15/16/17, R6 #11",
+ "reason": "Barcaldine scratched R3 #11",
  "status": "ok",
  "acceptors": 164,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-22T21:23:07+00:00",
- "finished": "2026-11-23T09:26:05",
+ "finished": "2026-11-23T09:43:25",
  "going": {
   "Ballina": "Good 4",
   "Barcaldine": "Soft 6"
  },
  "scratchings": 45,
  "dashboard": "toprate_week_v2_2026-11-23.html",
- "fingerprint": "504efb6050e7"
+ "fingerprint": "99605e4030fd"
 }
