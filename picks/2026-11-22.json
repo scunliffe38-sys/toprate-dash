@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:31:09.320Z",
+ "saved": "2026-11-22T07:31:15.678Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -469,6 +469,24 @@
    "sp": 9,
    "fair": 9.08,
    "rating": 71.89
+  },
+  "Bunbury|6|BRODA": {
+   "on": 1,
+   "t": 1795332670860,
+   "name": "Broda",
+   "tab": 3,
+   "sp": 1.8,
+   "fair": 3.45,
+   "rating": 77.77
+  },
+  "Bunbury|6|BONDIKNIGHT": {
+   "on": 1,
+   "t": 1795332672501,
+   "name": "Bondi Knight",
+   "tab": 2,
+   "sp": 6.5,
+   "fair": 6.19,
+   "rating": 75.77
   }
  }
 }
