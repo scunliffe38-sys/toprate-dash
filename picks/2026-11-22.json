@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:39:45.952Z",
+ "saved": "2026-11-22T07:31:03.789Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -424,6 +424,33 @@
    "sp": 4.4,
    "fair": 6.9,
    "rating": 75.83
+  },
+  "Bunbury|5|TABLETALK": {
+   "on": 1,
+   "t": 1795332656924,
+   "name": "Table Talk",
+   "tab": 6,
+   "sp": 4.2,
+   "fair": 4.33,
+   "rating": 74.34
+  },
+  "Bunbury|5|ARRESTEDEVELOPMENT": {
+   "on": 1,
+   "t": 1795332658425,
+   "name": "Arrestedevelopment",
+   "tab": 8,
+   "sp": 2.8,
+   "fair": 4.52,
+   "rating": 74.22
+  },
+  "Bunbury|5|MONEYMANZIEL": {
+   "on": 1,
+   "t": 1795332660553,
+   "name": "Money Manziel",
+   "tab": 10,
+   "sp": 7,
+   "fair": 8.5,
+   "rating": 72.11
   }
  }
 }
