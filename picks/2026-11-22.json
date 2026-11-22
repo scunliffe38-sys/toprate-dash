@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:37:51.531Z",
+ "saved": "2026-11-22T04:37:54.952Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -226,6 +226,15 @@
    "sp": 4.15,
    "fair": 8.21,
    "rating": 72.7
+  },
+  "Sha Tin|5|AUTUMNKING": {
+   "on": 1,
+   "t": 1795322272111,
+   "name": "Autumn King",
+   "tab": 6,
+   "sp": 8.05,
+   "fair": 8.65,
+   "rating": 72.5
   }
  }
 }
