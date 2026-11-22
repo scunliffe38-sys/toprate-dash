@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:39:27.536Z",
+ "saved": "2026-11-22T04:39:31.640Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -334,6 +334,24 @@
    "sp": 1.6,
    "fair": 2,
    "rating": 80.54
+  },
+  "Bunbury|2|MAYTHISBETHEONE": {
+   "on": 1,
+   "t": 1795322368365,
+   "name": "Maythisbetheone",
+   "tab": 7,
+   "sp": 4.2,
+   "fair": 5.49,
+   "rating": 77.27
+  },
+  "Bunbury|3|DIAMONDCHOUX": {
+   "on": 1,
+   "t": 1795322371173,
+   "name": "Diamond Choux",
+   "tab": 2,
+   "sp": 6,
+   "fair": 5.28,
+   "rating": 72.29
   }
  }
 }
