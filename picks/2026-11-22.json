@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:37:17.043Z",
+ "saved": "2026-11-22T04:37:37.359Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -163,6 +163,24 @@
    "sp": 3.75,
    "fair": 5.76,
    "rating": 56.7
+  },
+  "Sha Tin|4|MRCOOL": {
+   "on": 1,
+   "t": 1795322252686,
+   "name": "Mr Cool",
+   "tab": 2,
+   "sp": 9.35,
+   "fair": 8.04,
+   "rating": 55.5
+  },
+  "Sha Tin|4|NATURALNUMBERS": {
+   "on": 1,
+   "t": 1795322254479,
+   "name": "Natural Numbers",
+   "tab": 3,
+   "sp": 5.5,
+   "fair": 6.82,
+   "rating": 56.1
   }
  }
 }
