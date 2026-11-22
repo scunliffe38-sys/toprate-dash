@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:37:44.688Z",
+ "saved": "2026-11-22T04:37:51.531Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -199,6 +199,33 @@
    "sp": 14.55,
    "fair": 12.3,
    "rating": 54
+  },
+  "Sha Tin|5|CROSSBORDERPEGASUS": {
+   "on": 1,
+   "t": 1795322265371,
+   "name": "Crossborderpegasus",
+   "tab": 1,
+   "sp": 3.65,
+   "fair": 5.28,
+   "rating": 74.3
+  },
+  "Sha Tin|5|SOYOUIMAGINE": {
+   "on": 1,
+   "t": 1795322267129,
+   "name": "So You Imagine",
+   "tab": 9,
+   "sp": 9.95,
+   "fair": 6.47,
+   "rating": 73.6
+  },
+  "Sha Tin|5|PILEGEND": {
+   "on": 1,
+   "t": 1795322268698,
+   "name": "Pi Legend",
+   "tab": 2,
+   "sp": 4.15,
+   "fair": 8.21,
+   "rating": 72.7
   }
  }
 }
