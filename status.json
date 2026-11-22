@@ -1,28 +1,22 @@
 {
- "started": "2026-11-22T16:36:02",
+ "started": "2026-11-23T03:09:13",
  "dates": [
-  "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Bunbury scratched R2 #3",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 578,
- "rider_share": 1.0,
+ "acceptors": 164,
+ "rider_share": 0.83,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
- "extract": "2026-11-21T21:23:29+00:00",
- "finished": "2026-11-22T16:53:12",
+ "extract": "2026-11-22T16:07:35+00:00",
+ "finished": "2026-11-23T03:59:12",
  "going": {
-  "Kilmore": "Soft 6",
-  "Taree": "Good 4",
-  "Canberra": "Good 4",
-  "Cairns": "Good 4",
-  "Bunbury": "Soft 5",
-  "Clare": "Good 4",
-  "Sha Tin": "Good"
+  "Ballina": "Soft 5",
+  "Barcaldine": "Soft 6"
  },
- "scratchings": 116,
- "dashboard": "toprate_week_v2_2026-11-22.html",
- "fingerprint": "df893030e51d"
+ "scratchings": 25,
+ "dashboard": "toprate_week_v2_2026-11-23.html",
+ "fingerprint": "4a58a4178cab"
 }
