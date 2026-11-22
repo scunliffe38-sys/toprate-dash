@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:55:22.589Z",
+ "saved": "2026-11-22T02:55:49.157Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -10,6 +10,15 @@
    "sp": 2.5,
    "fair": 6.72,
    "rating": 87.68
+  },
+  "Kilmore|6|SILVERBULLET": {
+   "on": 1,
+   "t": 1795316146091,
+   "name": "Silver Bullet",
+   "tab": 2,
+   "sp": 4.4,
+   "fair": 4.22,
+   "rating": 83.73
   }
  }
 }
