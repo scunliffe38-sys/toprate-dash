@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:38:15.656Z",
+ "saved": "2026-11-22T04:39:20.419Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -289,6 +289,33 @@
    "sp": 1.05,
    "fair": 1.22,
    "rating": 121.4
+  },
+  "Bunbury|1|EASYGOING": {
+   "on": 1,
+   "t": 1795322354942,
+   "name": "Easy Going",
+   "tab": 12,
+   "sp": 4,
+   "fair": 3.58,
+   "rating": 75.37
+  },
+  "Bunbury|1|LENNYGOODCHILD": {
+   "on": 1,
+   "t": 1795322355797,
+   "name": "Lenny Good Child",
+   "tab": 3,
+   "sp": 5.5,
+   "fair": 5.37,
+   "rating": 74.05
+  },
+  "Bunbury|1|CARTIERGLOW": {
+   "on": 1,
+   "t": 1795322357376,
+   "name": "Cartier Glow",
+   "tab": 1,
+   "sp": 4.6,
+   "fair": 7.46,
+   "rating": 72.89
   }
  }
 }
