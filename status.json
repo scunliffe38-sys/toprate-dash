@@ -1,18 +1,18 @@
 {
- "started": "2026-11-22T14:16:02",
+ "started": "2026-11-22T15:28:23",
  "dates": [
   "2026-11-22",
   "2026-11-23",
   "2026-11-24"
  ],
- "reason": "Taree Soft 5 -> Good 4",
+ "reason": "Clare scratched R3 #8",
  "status": "ok",
  "acceptors": 578,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-24",
  "card_source": "toprate",
  "extract": "2026-11-21T21:23:29+00:00",
- "finished": "2026-11-22T14:32:22",
+ "finished": "2026-11-22T15:45:24",
  "going": {
   "Kilmore": "Soft 6",
   "Taree": "Good 4",
@@ -22,7 +22,7 @@
   "Clare": "Good 4",
   "Sha Tin": "Good"
  },
- "scratchings": 111,
+ "scratchings": 112,
  "dashboard": "toprate_week_v2_2026-11-22.html",
- "fingerprint": "3d3f2c412e5f"
+ "fingerprint": "9c08f6865b6d"
 }
