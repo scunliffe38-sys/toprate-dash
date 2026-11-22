@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:39:20.419Z",
+ "saved": "2026-11-22T04:39:23.812Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -316,6 +316,15 @@
    "sp": 4.6,
    "fair": 7.46,
    "rating": 72.89
+  },
+  "Bunbury|1|ARABIANCHARM": {
+   "on": 1,
+   "t": 1795322360756,
+   "name": "Arabian Charm",
+   "tab": 8,
+   "sp": 6,
+   "fair": 12.7,
+   "rating": 71.22
   }
  }
 }
