@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:55.118Z",
+ "saved": "2026-11-22T04:37:17.043Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -154,6 +154,15 @@
    "sp": 12,
    "fair": 8.2,
    "rating": 85.13
+  },
+  "Sha Tin|4|SHANNONGLOW": {
+   "on": 1,
+   "t": 1795322234506,
+   "name": "Shannon Glow",
+   "tab": 4,
+   "sp": 3.75,
+   "fair": 5.76,
+   "rating": 56.7
   }
  }
 }
