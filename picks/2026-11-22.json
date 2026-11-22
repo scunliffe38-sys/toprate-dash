@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:33:51.527Z",
+ "saved": "2026-11-22T07:33:58.564Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -631,6 +631,33 @@
    "sp": 10.8,
    "fair": 6.07,
    "rating": 72.8
+  },
+  "Sha Tin|11|PACKINGGLORY": {
+   "on": 1,
+   "t": 1795332832337,
+   "name": "Packing Glory",
+   "tab": 9,
+   "sp": 7.35,
+   "fair": 6.36,
+   "rating": 80.1
+  },
+  "Sha Tin|11|CIRCUITCHAMPION": {
+   "on": 1,
+   "t": 1795332833496,
+   "name": "Circuit Champion",
+   "tab": 8,
+   "sp": 8.65,
+   "fair": 4.3,
+   "rating": 81.5
+  },
+  "Sha Tin|11|SALONS": {
+   "on": 1,
+   "t": 1795332835468,
+   "name": "Salon S",
+   "tab": 1,
+   "sp": 4.95,
+   "fair": 8.38,
+   "rating": 79.1
   }
  }
 }
