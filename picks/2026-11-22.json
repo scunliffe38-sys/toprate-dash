@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T07:31:35.730Z",
+ "saved": "2026-11-22T07:31:39.698Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -523,6 +523,15 @@
    "sp": 7,
    "fair": 10.87,
    "rating": 82.37
+  },
+  "Bunbury|8|ARTICOLE": {
+   "on": 1,
+   "t": 1795332696574,
+   "name": "Articole",
+   "tab": 2,
+   "sp": 3.4,
+   "fair": 4.28,
+   "rating": 84.14
   }
  }
 }
