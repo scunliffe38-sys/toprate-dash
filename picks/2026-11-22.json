@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T02:56:24.008Z",
+ "saved": "2026-11-22T02:56:31.035Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -91,6 +91,15 @@
    "sp": 7,
    "fair": 7.91,
    "rating": 83.06
+  },
+  "Kilmore|7|SAVVIEBLANC": {
+   "on": 1,
+   "t": 1795316187933,
+   "name": "Savvie Blanc",
+   "tab": 6,
+   "sp": 9.5,
+   "fair": 9.64,
+   "rating": 82.34
   }
  }
 }
