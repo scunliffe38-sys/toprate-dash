@@ -1,6 +1,6 @@
 {
  "date": "2026-11-22",
- "saved": "2026-11-22T04:37:54.952Z",
+ "saved": "2026-11-22T04:38:01.526Z",
  "picks": {
   "Kilmore|5|FIELDELO": {
    "on": 1,
@@ -235,6 +235,24 @@
    "sp": 8.05,
    "fair": 8.65,
    "rating": 72.5
+  },
+  "Sha Tin|6|SERAPHGABRIEL": {
+   "on": 1,
+   "t": 1795322278698,
+   "name": "Seraph Gabriel",
+   "tab": 4,
+   "sp": 6.4,
+   "fair": 4.22,
+   "rating": 79.6
+  },
+  "Sha Tin|6|BIGRETURN": {
+   "on": 1,
+   "t": 1795322281410,
+   "name": "Big Return",
+   "tab": 7,
+   "sp": 6.2,
+   "fair": 6.46,
+   "rating": 78.1
   }
  }
 }
