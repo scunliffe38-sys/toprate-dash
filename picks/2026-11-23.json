@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:09:45.245Z",
+ "saved": "2026-11-23T02:09:51.358Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -64,6 +64,15 @@
    "sp": 2.6,
    "fair": 3.28,
    "rating": 70.21
+  },
+  "Ballina|3|DIAMANTINAROSE": {
+   "on": 1,
+   "t": 1795399788185,
+   "name": "Diamantina Rose",
+   "tab": 6,
+   "sp": 1.65,
+   "fair": 2.19,
+   "rating": 86.64
   }
  }
 }
