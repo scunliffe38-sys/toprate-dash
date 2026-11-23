@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:09:32.728Z",
+ "saved": "2026-11-23T02:09:36.306Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -28,6 +28,24 @@
    "sp": 3.6,
    "fair": 5.04,
    "rating": 77.84
+  },
+  "Ballina|1|LOFTYMACSPORRAN": {
+   "on": 1,
+   "t": 1795399773074,
+   "name": "Lofty Macsporran",
+   "tab": 5,
+   "sp": 3.8,
+   "fair": 4.16,
+   "rating": 78.56
+  },
+  "Ballina|1|BELLARATA": {
+   "on": 1,
+   "t": 1795399775847,
+   "name": "Bellarata",
+   "tab": 3,
+   "sp": 2.7,
+   "fair": 4.14,
+   "rating": 78.56
   }
  }
 }
