@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T04:31:49.702Z",
+ "saved": "2026-11-23T04:31:57.571Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -127,6 +127,33 @@
    "sp": 2.6,
    "fair": 3.95,
    "rating": 77.25
+  },
+  "Ballina|6|STAYSPENDING": {
+   "on": 1,
+   "t": 1795408311091,
+   "name": "Stay Spending",
+   "tab": 12,
+   "sp": 1.95,
+   "fair": 3.08,
+   "rating": 68.34
+  },
+  "Ballina|6|MRPARAGON": {
+   "on": 1,
+   "t": 1795408312708,
+   "name": "Mr Paragon",
+   "tab": 6,
+   "sp": 2.7,
+   "fair": 3.79,
+   "rating": 67.67
+  },
+  "Ballina|6|WANNAKISS": {
+   "on": 1,
+   "t": 1795408314442,
+   "name": "Wanna Kiss",
+   "tab": 11,
+   "sp": 8,
+   "fair": 7.65,
+   "rating": 65.3
   }
  }
 }
