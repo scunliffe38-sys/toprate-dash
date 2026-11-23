@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:09:51.358Z",
+ "saved": "2026-11-23T02:10:02.931Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -73,6 +73,24 @@
    "sp": 1.65,
    "fair": 2.19,
    "rating": 86.64
+  },
+  "Ballina|4|AYAKA": {
+   "on": 1,
+   "t": 1795399799687,
+   "name": "Ayaka",
+   "tab": 10,
+   "sp": 2.3,
+   "fair": 3.41,
+   "rating": 63.29
+  },
+  "Ballina|4|TIMEHASCOME": {
+   "on": 1,
+   "t": 1795399802540,
+   "name": "Time Has Come",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 6.29,
+   "rating": 61.13
   }
  }
 }
