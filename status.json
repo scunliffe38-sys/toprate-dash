@@ -1,21 +1,23 @@
 {
- "started": "2026-11-24T03:09:19",
+ "started": "2026-11-24T09:10:02",
  "dates": [
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25",
+  "2026-11-26"
  ],
- "reason": "overnight harvest",
+ "reason": "retry: Ararat scratched R1 #14/15/16, R3 #2, R5 #6/11, R6 #1/4, R7 #16, R8 #13; Tamworth Good 4 -> Good 3; Tamworth scratched R2 #6, R3 #1/8, R4 #8, R5 #14/15, R7 #5/7/8/12, R8 #5/",
  "status": "ok",
  "acceptors": 204,
- "rider_share": 0.92,
- "extract_max_date": "2026-11-24",
+ "rider_share": 1.0,
+ "extract_max_date": "2026-11-26",
  "card_source": "toprate",
- "extract": "2026-11-23T16:07:33+00:00",
- "finished": "2026-11-24T03:45:33",
+ "extract": "2026-11-23T21:23:01+00:00",
+ "finished": "2026-11-24T09:26:13",
  "going": {
   "Ararat": "Good 4",
-  "Tamworth": "Good 4"
+  "Tamworth": "Good 3"
  },
- "scratchings": 25,
+ "scratchings": 49,
  "dashboard": "toprate_week_v2_2026-11-24.html",
- "fingerprint": "52c910c7b004"
+ "fingerprint": "36ab75d6d704"
 }
