@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:09:36.306Z",
+ "saved": "2026-11-23T02:09:45.245Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -46,6 +46,24 @@
    "sp": 2.7,
    "fair": 4.14,
    "rating": 78.56
+  },
+  "Ballina|2|PRESTIGEHEADWATER": {
+   "on": 1,
+   "t": 1795399780894,
+   "name": "Prestige Headwater",
+   "tab": 1,
+   "sp": 2,
+   "fair": 2.94,
+   "rating": 70.64
+  },
+  "Ballina|2|DIRTYLILDIVA": {
+   "on": 1,
+   "t": 1795399781937,
+   "name": "Dirty Lil' Diva",
+   "tab": 6,
+   "sp": 2.6,
+   "fair": 3.28,
+   "rating": 70.21
   }
  }
 }
