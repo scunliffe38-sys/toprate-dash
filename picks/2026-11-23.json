@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:10:02.931Z",
+ "saved": "2026-11-23T02:10:08.876Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -91,6 +91,15 @@
    "sp": 6.5,
    "fair": 6.29,
    "rating": 61.13
+  },
+  "Ballina|4|INFULLSWING": {
+   "on": 1,
+   "t": 1795399805834,
+   "name": "In Full Swing",
+   "tab": 2,
+   "sp": 7.5,
+   "fair": 6.81,
+   "rating": 60.89
   }
  }
 }
