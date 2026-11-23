@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:10:08.876Z",
+ "saved": "2026-11-23T02:10:19.425Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -100,6 +100,15 @@
    "sp": 7.5,
    "fair": 6.81,
    "rating": 60.89
+  },
+  "Ballina|2|FORTUNISTIC": {
+   "on": 1,
+   "t": 1795399816263,
+   "name": "Fortunistic",
+   "tab": 7,
+   "sp": 3.2,
+   "fair": 3.82,
+   "rating": 69.77
   }
  }
 }
