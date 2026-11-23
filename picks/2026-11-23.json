@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T04:31:57.571Z",
+ "saved": "2026-11-23T04:32:09.245Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -154,6 +154,51 @@
    "sp": 8,
    "fair": 7.65,
    "rating": 65.3
+  },
+  "Ballina|7|GODTFREDKIRK": {
+   "on": 1,
+   "t": 1795408317777,
+   "name": "Godtfred Kirk",
+   "tab": 1,
+   "sp": 2.15,
+   "fair": 3.2,
+   "rating": 78.95
+  },
+  "Ballina|7|THEMINSTRELBOY": {
+   "on": 1,
+   "t": 1795408319877,
+   "name": "The Minstrel Boy",
+   "tab": 2,
+   "sp": 2.9,
+   "fair": 4.05,
+   "rating": 78.13
+  },
+  "Ballina|7|DENVERBRONCO": {
+   "on": 1,
+   "t": 1795408322323,
+   "name": "Denver Bronco",
+   "tab": 5,
+   "sp": 5,
+   "fair": 4.41,
+   "rating": 77.82
+  },
+  "Ballina|8|AZUKI": {
+   "on": 1,
+   "t": 1795408324396,
+   "name": "Azuki",
+   "tab": 7,
+   "sp": 3.9,
+   "fair": 3.69,
+   "rating": 78.73
+  },
+  "Ballina|8|MAGICMOZ": {
+   "on": 1,
+   "t": 1795408326081,
+   "name": "Magic Moz",
+   "tab": 10,
+   "sp": 5,
+   "fair": 5.19,
+   "rating": 77.72
   }
  }
 }
