@@ -1,6 +1,6 @@
 {
  "date": "2026-11-23",
- "saved": "2026-11-23T02:09:22.906Z",
+ "saved": "2026-11-23T02:09:32.728Z",
  "picks": {
   "Ballina|1|JEWELSSTATEMENT": {
    "on": 1,
@@ -10,6 +10,24 @@
    "sp": 7.5,
    "fair": 8.19,
    "rating": 76.1
+  },
+  "Ballina|1|DRAHOMIRA": {
+   "on": 1,
+   "t": 1795399769584,
+   "name": "Drahomira",
+   "tab": 6,
+   "sp": 8,
+   "fair": 8.67,
+   "rating": 75.89
+  },
+  "Ballina|1|COPENHAGENCAT": {
+   "on": 1,
+   "t": 1795399772188,
+   "name": "Copenhagen Cat",
+   "tab": 4,
+   "sp": 3.6,
+   "fair": 5.04,
+   "rating": 77.84
   }
  }
 }
