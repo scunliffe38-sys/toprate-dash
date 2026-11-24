@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T03:23:27.966Z",
+ "saved": "2026-11-24T03:23:38.009Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -136,6 +136,15 @@
    "sp": 6,
    "fair": 7.22,
    "rating": 71.39
+  },
+  "Ararat|5|THEPALLETMAN": {
+   "on": 1,
+   "t": 1795490614931,
+   "name": "The Pallet Man",
+   "tab": 5,
+   "sp": 4.4,
+   "fair": 11.82,
+   "rating": 69.71
   }
  }
 }
