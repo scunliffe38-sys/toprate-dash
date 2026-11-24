@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T01:06:53.867Z",
+ "saved": "2026-11-24T01:07:05.330Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -19,6 +19,24 @@
    "sp": 4.4,
    "fair": 5,
    "rating": 60.16
+  },
+  "Ararat|1|UPFORAFLAG": {
+   "on": 1,
+   "t": 1795482421520,
+   "name": "Up For A Flag",
+   "tab": 13,
+   "sp": 7,
+   "fair": 8.98,
+   "rating": 58.35
+  },
+  "Ararat|1|IDEASGALORE": {
+   "on": 1,
+   "t": 1795482422254,
+   "name": "Ideas Galore",
+   "tab": 11,
+   "sp": 11,
+   "fair": 9.01,
+   "rating": 58.31
   }
  }
 }
