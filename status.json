@@ -1,25 +1,25 @@
 {
- "started": "2026-11-25T03:09:19",
+ "started": "2026-11-25T08:25:03",
  "dates": [
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "overnight harvest",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 499,
- "rider_share": 0.94,
+ "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
- "extract": "2026-11-24T16:07:36+00:00",
- "finished": "2026-11-25T04:00:35",
+ "extract": "2026-11-24T21:23:24+00:00",
+ "finished": "2026-11-25T09:19:22",
  "going": {
   "Geelong": "Good 4",
-  "Wyong": "Good 4",
+  "Wyong": "Soft 6",
   "Ipswich": "Soft 5",
-  "Strathalbyn": "Good 4",
+  "Strathalbyn": "Soft 5",
   "Launceston": "Soft 5"
  },
- "scratchings": 35,
+ "scratchings": 73,
  "dashboard": "toprate_week_v2_2026-11-25.html",
- "fingerprint": "8b49bcb4c49c"
+ "fingerprint": "0ea118b8079a"
 }
