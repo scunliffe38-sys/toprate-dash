@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T01:07:34.286Z",
+ "saved": "2026-11-24T03:23:27.966Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -109,6 +109,33 @@
    "sp": 3.5,
    "fair": 4.27,
    "rating": 66.86
+  },
+  "Ararat|5|INCOHERENT": {
+   "on": 1,
+   "t": 1795490602638,
+   "name": "Incoherent",
+   "tab": 9,
+   "sp": 2.7,
+   "fair": 4.58,
+   "rating": 72.79
+  },
+  "Ararat|5|DRAMATICDREAM": {
+   "on": 1,
+   "t": 1795490603490,
+   "name": "Dramatic Dream",
+   "tab": 1,
+   "sp": 4.4,
+   "fair": 4.8,
+   "rating": 72.66
+  },
+  "Ararat|5|LADUPEUR": {
+   "on": 1,
+   "t": 1795490604883,
+   "name": "La Dupeur",
+   "tab": 14,
+   "sp": 6,
+   "fair": 7.22,
+   "rating": 71.39
   }
  }
 }
