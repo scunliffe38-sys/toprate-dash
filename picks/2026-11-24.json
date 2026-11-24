@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T01:07:17.297Z",
+ "saved": "2026-11-24T01:07:27.114Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -73,6 +73,24 @@
    "sp": 1.85,
    "fair": 3.11,
    "rating": 77.13
+  },
+  "Ararat|3|SWISSIMPACT": {
+   "on": 1,
+   "t": 1795482444062,
+   "name": "Swiss Impact",
+   "tab": 11,
+   "sp": 4.6,
+   "fair": 3.91,
+   "rating": 76.24
+  },
+  "Ararat|3|LUNETTA": {
+   "on": 1,
+   "t": 1795482446684,
+   "name": "Lunetta",
+   "tab": 4,
+   "sp": 6,
+   "fair": 6.55,
+   "rating": 74.35
   }
  }
 }
