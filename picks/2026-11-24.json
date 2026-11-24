@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T03:23:49.553Z",
+ "saved": "2026-11-24T03:23:52.629Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -190,6 +190,15 @@
    "sp": 3.8,
    "fair": 4.69,
    "rating": 79.01
+  },
+  "Ararat|7|HIDDENWITNESS": {
+   "on": 1,
+   "t": 1795490632336,
+   "name": "Hidden Witness",
+   "tab": 13,
+   "sp": 5,
+   "fair": 6.26,
+   "rating": 78.06
   }
  }
 }
