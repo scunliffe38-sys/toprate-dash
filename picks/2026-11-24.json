@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T01:07:05.330Z",
+ "saved": "2026-11-24T01:07:09.721Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -37,6 +37,24 @@
    "sp": 11,
    "fair": 9.01,
    "rating": 58.31
+  },
+  "Ararat|2|MERITAGE": {
+   "on": 1,
+   "t": 1795482426554,
+   "name": "Meritage",
+   "tab": 6,
+   "sp": 5.5,
+   "fair": 4.26,
+   "rating": 68.37
+  },
+  "Ararat|2|NEDKELLY": {
+   "on": 1,
+   "t": 1795482429434,
+   "name": "Ned Kelly",
+   "tab": 2,
+   "sp": 3.3,
+   "fair": 5.61,
+   "rating": 67.6
   }
  }
 }
