@@ -1,17 +1,17 @@
 {
- "started": "2026-11-25T09:15:02",
+ "started": "2026-11-25T09:44:02",
  "dates": [
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "Wyong Good 4 -> Soft 6; Wyong scratched R1 #6, R2 #2/7, R3 #2/5/6, R5 #8, R6 #6/8, R7 #7/9; Ipswich scratched R1 #3/9, R3 #1/14, R5 #16, R6 #8; Strathalbyn Good 4 -> Soft 5; Strath",
+ "reason": "Launceston scratched R4 #2, R6 #9",
  "status": "ok",
  "acceptors": 499,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
  "extract": "2026-11-24T21:23:24+00:00",
- "finished": "2026-11-25T09:30:42",
+ "finished": "2026-11-25T09:59:58",
  "going": {
   "Geelong": "Good 4",
   "Wyong": "Soft 6",
@@ -19,7 +19,7 @@
   "Strathalbyn": "Soft 5",
   "Launceston": "Soft 5"
  },
- "scratchings": 73,
+ "scratchings": 75,
  "dashboard": "toprate_week_v2_2026-11-25.html",
- "fingerprint": "a43a112b96cf"
+ "fingerprint": "d039ace87ad6"
 }
