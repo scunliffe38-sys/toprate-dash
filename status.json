@@ -1,23 +1,23 @@
 {
- "started": "2026-11-24T08:24:45",
+ "started": "2026-11-24T17:32:17",
  "dates": [
   "2026-11-24",
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "morning harvest",
+ "reason": "Tamworth scratched R8 #2",
  "status": "ok",
  "acceptors": 204,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
  "extract": "2026-11-23T21:23:01+00:00",
- "finished": "2026-11-24T10:03:28",
+ "finished": "2026-11-24T17:47:36",
  "going": {
   "Ararat": "Good 4",
   "Tamworth": "Good 3"
  },
- "scratchings": 49,
+ "scratchings": 50,
  "dashboard": "toprate_week_v2_2026-11-24.html",
- "fingerprint": "88f60de1d279"
+ "fingerprint": "f92b27c014cb"
 }
