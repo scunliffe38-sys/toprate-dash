@@ -1,23 +1,25 @@
 {
- "started": "2026-11-24T17:32:17",
+ "started": "2026-11-25T03:09:19",
  "dates": [
-  "2026-11-24",
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "Tamworth scratched R8 #2",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 204,
- "rider_share": 1.0,
+ "acceptors": 499,
+ "rider_share": 0.94,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
- "extract": "2026-11-23T21:23:01+00:00",
- "finished": "2026-11-24T17:47:36",
+ "extract": "2026-11-24T16:07:36+00:00",
+ "finished": "2026-11-25T04:00:35",
  "going": {
-  "Ararat": "Good 4",
-  "Tamworth": "Good 3"
+  "Geelong": "Good 4",
+  "Wyong": "Good 4",
+  "Ipswich": "Soft 5",
+  "Strathalbyn": "Good 4",
+  "Launceston": "Soft 5"
  },
- "scratchings": 50,
- "dashboard": "toprate_week_v2_2026-11-24.html",
- "fingerprint": "f92b27c014cb"
+ "scratchings": 35,
+ "dashboard": "toprate_week_v2_2026-11-25.html",
+ "fingerprint": "8b49bcb4c49c"
 }
