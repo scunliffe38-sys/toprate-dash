@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T03:24:04.730Z",
+ "saved": "2026-11-24T03:24:09.725Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -217,6 +217,24 @@
    "sp": 9,
    "fair": 7.7,
    "rating": 77.5
+  },
+  "Ararat|8|HARRYDELAD": {
+   "on": 1,
+   "t": 1795490645093,
+   "name": "Harry De Lad",
+   "tab": 4,
+   "sp": 5,
+   "fair": 3.12,
+   "rating": 78.64
+  },
+  "Ararat|8|MAYASACE": {
+   "on": 1,
+   "t": 1795490646660,
+   "name": "Maya's Ace",
+   "tab": 10,
+   "sp": 3.8,
+   "fair": 5.98,
+   "rating": 76.64
   }
  }
 }
