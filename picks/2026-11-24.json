@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T01:07:27.114Z",
+ "saved": "2026-11-24T01:07:34.286Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -91,6 +91,24 @@
    "sp": 6,
    "fair": 6.55,
    "rating": 74.35
+  },
+  "Ararat|4|REDRABBIT": {
+   "on": 1,
+   "t": 1795482449967,
+   "name": "Red Rabbit",
+   "tab": 12,
+   "sp": 3.2,
+   "fair": 3.05,
+   "rating": 67.8
+  },
+  "Ararat|4|PAREBRISE": {
+   "on": 1,
+   "t": 1795482451206,
+   "name": "Pare Brise",
+   "tab": 6,
+   "sp": 3.5,
+   "fair": 4.27,
+   "rating": 66.86
   }
  }
 }
