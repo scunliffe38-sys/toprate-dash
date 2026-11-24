@@ -1,6 +1,6 @@
 {
  "date": "2026-11-24",
- "saved": "2026-11-24T03:23:38.009Z",
+ "saved": "2026-11-24T03:23:49.553Z",
  "picks": {
   "Ararat|1|CHARLIEMESSYHAIR": {
    "on": 1,
@@ -145,6 +145,51 @@
    "sp": 4.4,
    "fair": 11.82,
    "rating": 69.71
+  },
+  "Ararat|6|MANCHEGO": {
+   "on": 1,
+   "t": 1795490620820,
+   "name": "Manchego",
+   "tab": 5,
+   "sp": 3.2,
+   "fair": 4.47,
+   "rating": 78.8
+  },
+  "Ararat|6|FENESTELLA": {
+   "on": 1,
+   "t": 1795490622583,
+   "name": "Fenestella",
+   "tab": 8,
+   "sp": 4.4,
+   "fair": 5.48,
+   "rating": 78.16
+  },
+  "Ararat|6|FRENCHNAVY": {
+   "on": 1,
+   "t": 1795490624314,
+   "name": "French Navy",
+   "tab": 3,
+   "sp": 6,
+   "fair": 6.53,
+   "rating": 77.57
+  },
+  "Ararat|6|BACKUPBARBIE": {
+   "on": 1,
+   "t": 1795490626331,
+   "name": "Back Up Barbie",
+   "tab": 6,
+   "sp": 5,
+   "fair": 6.74,
+   "rating": 77.48
+  },
+  "Ararat|7|FRENCHREIGN": {
+   "on": 1,
+   "t": 1795490629520,
+   "name": "French Reign",
+   "tab": 2,
+   "sp": 3.8,
+   "fair": 4.69,
+   "rating": 79.01
   }
  }
 }
