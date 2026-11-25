@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T08:01:06.720Z",
+ "saved": "2026-11-25T08:01:52.088Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -378,6 +378,15 @@
    "sp": 4.4,
    "fair": 5.66,
    "rating": 77.3
+  },
+  "Launceston|7|IMCHEV": {
+   "on": 1,
+   "t": 1795593708764,
+   "name": "I'm Chev",
+   "tab": 7,
+   "sp": 5,
+   "fair": 10.94,
+   "rating": 74.95
   }
  }
 }
