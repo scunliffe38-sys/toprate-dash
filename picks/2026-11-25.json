@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:35:54.337Z",
+ "saved": "2026-11-25T07:38:32.759Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -230,6 +230,15 @@
    "sp": 2.2,
    "fair": 2.19,
    "rating": 83.27
+  },
+  "Albany|5|SHAZAIR": {
+   "on": 1,
+   "t": 1795592309556,
+   "name": "Shazair",
+   "tab": 2,
+   "sp": 6,
+   "fair": 8.66,
+   "rating": 78.36
   }
  }
 }
