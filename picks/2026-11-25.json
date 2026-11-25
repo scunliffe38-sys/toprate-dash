@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:44:02.349Z",
+ "saved": "2026-11-25T12:44:17.906Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -423,6 +423,15 @@
    "sp": 3.6,
    "fair": 3.21,
    "rating": 59.6
+  },
+  "Happy Valley|6|ENTHRALLED": {
+   "on": 1,
+   "t": 1795610654035,
+   "name": "Enthralled",
+   "tab": 6,
+   "sp": 8.55,
+   "fair": 11.08,
+   "rating": 55.1
   }
  }
 }
