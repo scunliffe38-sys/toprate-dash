@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T08:00:14.697Z",
+ "saved": "2026-11-25T08:00:26.926Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -342,6 +342,15 @@
    "sp": 4.2,
    "fair": 3.08,
    "rating": 91
+  },
+  "Launceston|6|COALRIVER": {
+   "on": 1,
+   "t": 1795593623808,
+   "name": "Coal River",
+   "tab": 5,
+   "sp": 1.9,
+   "fair": 3.28,
+   "rating": 95.87
   }
  }
 }
