@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:38:40.575Z",
+ "saved": "2026-11-25T07:38:46.591Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -234,6 +234,15 @@
   "Albany|5|SHAZAIR": {
    "on": 0,
    "t": 1795592317422
+  },
+  "Albany|5|HEREFORCHEQUES": {
+   "on": 1,
+   "t": 1795592323351,
+   "name": "Here For Cheques",
+   "tab": 3,
+   "sp": 5,
+   "fair": 9.15,
+   "rating": 78.15
   }
  }
 }
