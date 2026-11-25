@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:28:39.475Z",
+ "saved": "2026-11-25T05:28:51.824Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -50,6 +50,15 @@
    "sp": 6.5,
    "fair": 7.31,
    "rating": 80.97
+  },
+  "Geelong|6|UNWAVERING": {
+   "on": 1,
+   "t": 1795584528560,
+   "name": "Unwavering",
+   "tab": 11,
+   "sp": 4.8,
+   "fair": 8.01,
+   "rating": 80.7
   }
  }
 }
