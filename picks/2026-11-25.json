@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:46:48.561Z",
+ "saved": "2026-11-25T12:47:03.106Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -504,6 +504,15 @@
    "sp": 2.2,
    "fair": 2.98,
    "rating": 73.8
+  },
+  "Happy Valley|8|HAPPYBOSS": {
+   "on": 1,
+   "t": 1795610819727,
+   "name": "Happy Boss",
+   "tab": 6,
+   "sp": 13.25,
+   "fair": 9.78,
+   "rating": 69.5
   }
  }
 }
