@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:28:09.821Z",
+ "saved": "2026-11-25T05:28:39.475Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -32,6 +32,24 @@
   "Geelong|5|MOLESWORTH": {
    "on": 0,
    "t": 1795584486542
+  },
+  "Geelong|6|SATOSHI": {
+   "on": 1,
+   "t": 1795584515874,
+   "name": "Satoshi",
+   "tab": 10,
+   "sp": 5.5,
+   "fair": 5.26,
+   "rating": 82.04
+  },
+  "Geelong|6|BOLDBORDEAUX": {
+   "on": 1,
+   "t": 1795584518679,
+   "name": "Bold Bordeaux",
+   "tab": 1,
+   "sp": 6.5,
+   "fair": 7.31,
+   "rating": 80.97
   }
  }
 }
