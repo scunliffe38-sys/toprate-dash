@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:44:58.875Z",
+ "saved": "2026-11-25T12:45:23.079Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -459,6 +459,15 @@
    "sp": 11.8,
    "fair": 19.74,
    "rating": 52.9
+  },
+  "Happy Valley|7|WINNINGMACHINE": {
+   "on": 1,
+   "t": 1795610719886,
+   "name": "Winning Machine",
+   "tab": 8,
+   "sp": 3.35,
+   "fair": 3.14,
+   "rating": 58.6
   }
  }
 }
