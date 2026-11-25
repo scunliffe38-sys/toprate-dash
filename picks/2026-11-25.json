@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:31:03.811Z",
+ "saved": "2026-11-25T05:33:58.923Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -113,6 +113,42 @@
    "sp": 6.5,
    "fair": 8.64,
    "rating": 83.6
+  },
+  "Geelong|8|ALBANIANIAM": {
+   "on": 1,
+   "t": 1795584706031,
+   "name": "Albanian I Am",
+   "tab": 2,
+   "sp": 8.5,
+   "fair": 10.38,
+   "rating": 82.95
+  },
+  "Albany|1|AUTOMATICMAN": {
+   "on": 1,
+   "t": 1795584831768,
+   "name": "Automatic Man",
+   "tab": 7,
+   "sp": 2.5,
+   "fair": 3.11,
+   "rating": 70.92
+  },
+  "Albany|1|ISTHISTHINGON": {
+   "on": 1,
+   "t": 1795584833962,
+   "name": "Is This Thing On",
+   "tab": 9,
+   "sp": 3.1,
+   "fair": 3.92,
+   "rating": 70.06
+  },
+  "Albany|2|ZALISGIFT": {
+   "on": 1,
+   "t": 1795584836918,
+   "name": "Zali's Gift",
+   "tab": 8,
+   "sp": 3.1,
+   "fair": 4.01,
+   "rating": 71.03
   }
  }
 }
