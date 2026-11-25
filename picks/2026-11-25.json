@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T08:01:52.088Z",
+ "saved": "2026-11-25T08:01:56.612Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -387,6 +387,15 @@
    "sp": 5,
    "fair": 10.94,
    "rating": 74.95
+  },
+  "Launceston|7|BRAVEJET": {
+   "on": 1,
+   "t": 1795593713417,
+   "name": "Brave Jet",
+   "tab": 5,
+   "sp": 2.3,
+   "fair": 2.6,
+   "rating": 80.06
   }
  }
 }
