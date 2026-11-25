@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:44:17.906Z",
+ "saved": "2026-11-25T12:44:27.437Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -432,6 +432,24 @@
    "sp": 8.55,
    "fair": 11.08,
    "rating": 55.1
+  },
+  "Happy Valley|6|ACE": {
+   "on": 1,
+   "t": 1795610664179,
+   "name": "Ace",
+   "tab": 1,
+   "sp": 16.2,
+   "fair": 11.67,
+   "rating": 54.8
+  },
+  "Happy Valley|6|URANUSSTAR": {
+   "on": 1,
+   "t": 1795610667147,
+   "name": "Uranus Star",
+   "tab": 4,
+   "sp": 8.95,
+   "fair": 12.05,
+   "rating": 54.7
   }
  }
 }
