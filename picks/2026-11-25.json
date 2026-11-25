@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:46:43.357Z",
+ "saved": "2026-11-25T12:46:48.561Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -495,6 +495,15 @@
    "sp": 11.75,
    "fair": 9.03,
    "rating": 54.7
+  },
+  "Happy Valley|8|FLOWWATERFLOW": {
+   "on": 1,
+   "t": 1795610805287,
+   "name": "Flow Water Flow",
+   "tab": 2,
+   "sp": 2.2,
+   "fair": 2.98,
+   "rating": 73.8
   }
  }
 }
