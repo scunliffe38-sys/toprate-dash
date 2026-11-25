@@ -1,25 +1,26 @@
 {
- "started": "2026-11-25T09:44:02",
+ "started": "2026-11-25T11:14:21",
  "dates": [
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "Launceston scratched R4 #2, R6 #9",
+ "reason": "Albany going Soft 5",
  "status": "ok",
  "acceptors": 499,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
  "extract": "2026-11-24T21:23:24+00:00",
- "finished": "2026-11-25T09:59:58",
+ "finished": "2026-11-25T11:31:25",
  "going": {
   "Geelong": "Good 4",
   "Wyong": "Soft 6",
   "Ipswich": "Soft 5",
   "Strathalbyn": "Soft 5",
+  "Albany": "Soft 5",
   "Launceston": "Soft 5"
  },
  "scratchings": 75,
  "dashboard": "toprate_week_v2_2026-11-25.html",
- "fingerprint": "d039ace87ad6"
+ "fingerprint": "086342b785ca"
 }
