@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:30:18.736Z",
+ "saved": "2026-11-25T05:31:03.811Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -104,6 +104,15 @@
    "sp": 3.8,
    "fair": 4.74,
    "rating": 85.58
+  },
+  "Geelong|8|MANHATTANEMPIRE": {
+   "on": 1,
+   "t": 1795584660656,
+   "name": "Manhattan Empire",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 8.64,
+   "rating": 83.6
   }
  }
 }
