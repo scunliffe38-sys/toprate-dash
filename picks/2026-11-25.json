@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:38:46.591Z",
+ "saved": "2026-11-25T07:39:00.719Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -243,6 +243,15 @@
    "sp": 5,
    "fair": 9.15,
    "rating": 78.15
+  },
+  "Albany|5|POLYVANOVA": {
+   "on": 1,
+   "t": 1795592337478,
+   "name": "Polyvanova",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 10.13,
+   "rating": 77.8
   }
  }
 }
