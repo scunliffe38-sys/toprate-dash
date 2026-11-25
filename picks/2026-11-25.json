@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:29:46.769Z",
+ "saved": "2026-11-25T05:30:18.736Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -95,6 +95,15 @@
    "sp": 2.6,
    "fair": 3.39,
    "rating": 86.77
+  },
+  "Geelong|8|JENNIPOPPINS": {
+   "on": 1,
+   "t": 1795584615476,
+   "name": "Jenni Poppins",
+   "tab": 11,
+   "sp": 3.8,
+   "fair": 4.74,
+   "rating": 85.58
   }
  }
 }
