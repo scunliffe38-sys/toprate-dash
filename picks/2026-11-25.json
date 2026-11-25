@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:46:16.915Z",
+ "saved": "2026-11-25T12:46:43.357Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -486,6 +486,15 @@
    "sp": 18.6,
    "fair": 17.1,
    "rating": 52.4
+  },
+  "Happy Valley|7|GOLDENCHAMP": {
+   "on": 1,
+   "t": 1795610800207,
+   "name": "Golden Champ",
+   "tab": 3,
+   "sp": 11.75,
+   "fair": 9.03,
+   "rating": 54.7
   }
  }
 }
