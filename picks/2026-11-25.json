@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:06.360Z",
+ "saved": "2026-11-25T07:39:09.934Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -261,6 +261,15 @@
    "sp": 8.5,
    "fair": 11.11,
    "rating": 77.49
+  },
+  "Albany|6|RAVINAVA": {
+   "on": 1,
+   "t": 1795592346748,
+   "name": "Ravin' Ava",
+   "tab": 7,
+   "sp": 1.8,
+   "fair": 2.45,
+   "rating": 80.09
   }
  }
 }
