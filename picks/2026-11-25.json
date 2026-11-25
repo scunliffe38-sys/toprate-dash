@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:48:19.895Z",
+ "saved": "2026-11-25T12:48:26.747Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -533,13 +533,8 @@
    "rating": 73.3
   },
   "Happy Valley|9|FLASHINGFIGHTER": {
-   "on": 1,
-   "t": 1795610870287,
-   "name": "Flashing Fighter",
-   "tab": 6,
-   "sp": 12.45,
-   "fair": 7.88,
-   "rating": 70.7
+   "on": 0,
+   "t": 1795610903601
   },
   "Happy Valley|9|ACECHAMPION": {
    "on": 1,
