@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:47:53.571Z",
+ "saved": "2026-11-25T12:47:58.489Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -540,6 +540,15 @@
    "sp": 12.45,
    "fair": 7.88,
    "rating": 70.7
+  },
+  "Happy Valley|9|ACECHAMPION": {
+   "on": 1,
+   "t": 1795610875190,
+   "name": "Ace Champion",
+   "tab": 2,
+   "sp": 2.8,
+   "fair": 8.6,
+   "rating": 70.4
   }
  }
 }
