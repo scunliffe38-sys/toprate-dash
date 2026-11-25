@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:29:01.722Z",
+ "saved": "2026-11-25T05:29:36.648Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -68,6 +68,24 @@
    "sp": 4,
    "fair": 8.26,
    "rating": 80.58
+  },
+  "Geelong|7|LAYLA": {
+   "on": 1,
+   "t": 1795584573207,
+   "name": "Layla",
+   "tab": 12,
+   "sp": 1.75,
+   "fair": 2.41,
+   "rating": 88.33
+  },
+  "Geelong|7|JACKPOTPARK": {
+   "on": 1,
+   "t": 1795584576432,
+   "name": "Jackpot Park",
+   "tab": 1,
+   "sp": 3.5,
+   "fair": 3.65,
+   "rating": 86.95
   }
  }
 }
