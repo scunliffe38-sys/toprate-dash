@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:50.288Z",
+ "saved": "2026-11-25T07:39:53.654Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -306,6 +306,15 @@
    "sp": 6,
    "fair": 7.21,
    "rating": 74.97
+  },
+  "Albany|7|SCENICGEORGE": {
+   "on": 1,
+   "t": 1795592390440,
+   "name": "Scenic George",
+   "tab": 2,
+   "sp": 5.5,
+   "fair": 7.63,
+   "rating": 74.74
   }
  }
 }
