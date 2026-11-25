@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:35:49.858Z",
+ "saved": "2026-11-25T05:35:54.337Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -221,6 +221,15 @@
    "sp": 4.8,
    "fair": 3.87,
    "rating": 84.62
+  },
+  "Albany|5|KIDDINGME": {
+   "on": 1,
+   "t": 1795584951014,
+   "name": "Kidding Me",
+   "tab": 6,
+   "sp": 2.2,
+   "fair": 2.19,
+   "rating": 83.27
   }
  }
 }
