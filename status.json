@@ -1,27 +1,27 @@
 {
- "started": "2026-11-25T16:56:02",
+ "started": "2026-11-25T18:13:23",
  "dates": [
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "Albany Soft 5 -> Good 4",
+ "reason": "Launceston Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 499,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
  "extract": "2026-11-24T21:23:24+00:00",
- "finished": "2026-11-25T17:12:49",
+ "finished": "2026-11-25T18:30:21",
  "going": {
   "Geelong": "Good 3",
-  "Wyong": "Soft 6",
-  "Ipswich": "Good 4",
   "Strathalbyn": "Good 4",
   "Albany": "Good 4",
-  "Launceston": "Soft 5",
-  "Happy Valley": "Good"
+  "Launceston": "Good 4",
+  "Happy Valley": "Good",
+  "Wyong": "Soft 6",
+  "Ipswich": "Good 4"
  },
  "scratchings": 84,
  "dashboard": "toprate_week_v2_2026-11-25.html",
- "fingerprint": "bd69982d7c14"
+ "fingerprint": "729bf5dc3910"
 }
