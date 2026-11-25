@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:00.719Z",
+ "saved": "2026-11-25T07:39:06.360Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -252,6 +252,15 @@
    "sp": 6.5,
    "fair": 10.13,
    "rating": 77.8
+  },
+  "Albany|5|ARAFISIO": {
+   "on": 1,
+   "t": 1795592343122,
+   "name": "Arafisio",
+   "tab": 4,
+   "sp": 8.5,
+   "fair": 11.11,
+   "rating": 77.49
   }
  }
 }
