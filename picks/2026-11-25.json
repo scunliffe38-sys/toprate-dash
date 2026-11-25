@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:29:36.648Z",
+ "saved": "2026-11-25T05:29:46.769Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -86,6 +86,15 @@
    "sp": 3.5,
    "fair": 3.65,
    "rating": 86.95
+  },
+  "Geelong|8|DAMEOFDUBAI": {
+   "on": 1,
+   "t": 1795584583529,
+   "name": "Dame Of Dubai",
+   "tab": 7,
+   "sp": 2.6,
+   "fair": 3.39,
+   "rating": 86.77
   }
  }
 }
