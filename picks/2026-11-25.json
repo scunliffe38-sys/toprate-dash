@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:38.196Z",
+ "saved": "2026-11-25T07:39:44.756Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -288,6 +288,15 @@
    "sp": 3.2,
    "fair": 3.17,
    "rating": 77.6
+  },
+  "Albany|7|GODLLGETYA": {
+   "on": 1,
+   "t": 1795592381542,
+   "name": "God'll Getya",
+   "tab": 4,
+   "sp": 6,
+   "fair": 6.91,
+   "rating": 75.09
   }
  }
 }
