@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:27:43.077Z",
+ "saved": "2026-11-25T05:27:51.756Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 7.5,
    "fair": 8.95,
    "rating": 80.12
+  },
+  "Geelong|5|CORONALAD": {
+   "on": 1,
+   "t": 1795584468528,
+   "name": "Corona Lad",
+   "tab": 7,
+   "sp": 5.5,
+   "fair": 8.02,
+   "rating": 80.45
   }
  }
 }
