@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:27:51.756Z",
+ "saved": "2026-11-25T05:27:57.751Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -28,6 +28,15 @@
    "sp": 5.5,
    "fair": 8.02,
    "rating": 80.45
+  },
+  "Geelong|5|MOLESWORTH": {
+   "on": 1,
+   "t": 1795584474595,
+   "name": "Molesworth",
+   "tab": 6,
+   "sp": 11,
+   "fair": 11.57,
+   "rating": 79.32
   }
  }
 }
