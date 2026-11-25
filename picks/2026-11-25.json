@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:40:04.205Z",
+ "saved": "2026-11-25T08:00:01.698Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -324,6 +324,15 @@
    "sp": 7.5,
    "fair": 16.45,
    "rating": 72.3
+  },
+  "Launceston|5|OZONICA": {
+   "on": 1,
+   "t": 1795593598413,
+   "name": "Ozonica",
+   "tab": 3,
+   "sp": 1.35,
+   "fair": 2.58,
+   "rating": 91.68
   }
  }
 }
