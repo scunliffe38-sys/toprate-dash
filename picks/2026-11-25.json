@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:47:58.489Z",
+ "saved": "2026-11-25T12:48:19.895Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -549,6 +549,15 @@
    "sp": 2.8,
    "fair": 8.6,
    "rating": 70.4
+  },
+  "Happy Valley|9|LIGHTNESSOFMUSIC": {
+   "on": 1,
+   "t": 1795610896620,
+   "name": "Lightness Of Music",
+   "tab": 8,
+   "sp": 21.8,
+   "fair": 10.83,
+   "rating": 69.6
   }
  }
 }
