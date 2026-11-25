@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:34:46.527Z",
+ "saved": "2026-11-25T05:35:33.315Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -176,6 +176,15 @@
    "sp": 2.5,
    "fair": 3.16,
    "rating": 79.53
+  },
+  "Albany|3|PEANUTBUTTER": {
+   "on": 1,
+   "t": 1795584929762,
+   "name": "Peanut Butter",
+   "tab": 5,
+   "sp": 4.2,
+   "fair": 5.98,
+   "rating": 77.27
   }
  }
 }
