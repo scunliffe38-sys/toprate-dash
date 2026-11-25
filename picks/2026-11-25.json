@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T12:47:03.106Z",
+ "saved": "2026-11-25T12:47:09.335Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -513,6 +513,15 @@
    "sp": 13.25,
    "fair": 9.78,
    "rating": 69.5
+  },
+  "Happy Valley|8|THEBOOMBOX": {
+   "on": 1,
+   "t": 1795610826041,
+   "name": "The Boom Box",
+   "tab": 3,
+   "sp": 10.5,
+   "fair": 9.88,
+   "rating": 69.4
   }
  }
 }
