@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:53.654Z",
+ "saved": "2026-11-25T07:40:04.205Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -315,6 +315,15 @@
    "sp": 5.5,
    "fair": 7.63,
    "rating": 74.74
+  },
+  "Albany|7|MISSROMPIN": {
+   "on": 1,
+   "t": 1795592400999,
+   "name": "Miss Rompin",
+   "tab": 9,
+   "sp": 7.5,
+   "fair": 16.45,
+   "rating": 72.3
   }
  }
 }
