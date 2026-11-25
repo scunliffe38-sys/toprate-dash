@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:28:51.824Z",
+ "saved": "2026-11-25T05:29:01.722Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -59,6 +59,15 @@
    "sp": 4.8,
    "fair": 8.01,
    "rating": 80.7
+  },
+  "Geelong|6|AZZACOOL": {
+   "on": 1,
+   "t": 1795584538504,
+   "name": "Azzacool",
+   "tab": 7,
+   "sp": 4,
+   "fair": 8.26,
+   "rating": 80.58
   }
  }
 }
