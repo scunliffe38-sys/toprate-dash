@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:35:33.315Z",
+ "saved": "2026-11-25T05:35:38.473Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -185,6 +185,15 @@
    "sp": 4.2,
    "fair": 5.98,
    "rating": 77.27
+  },
+  "Albany|3|HANGGLIDER": {
+   "on": 1,
+   "t": 1795584935141,
+   "name": "Hang Glider",
+   "tab": 4,
+   "sp": 3.3,
+   "fair": 6.68,
+   "rating": 76.85
   }
  }
 }
