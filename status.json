@@ -1,17 +1,17 @@
 {
- "started": "2026-11-25T14:38:21",
+ "started": "2026-11-25T14:56:02",
  "dates": [
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "Ipswich scratched R2 #9/11",
+ "reason": "Geelong Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 499,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
  "extract": "2026-11-24T21:23:24+00:00",
- "finished": "2026-11-25T14:55:15",
+ "finished": "2026-11-25T15:12:53",
  "going": {
   "Geelong": "Good 3",
   "Wyong": "Soft 6",
@@ -20,7 +20,7 @@
   "Albany": "Soft 5",
   "Launceston": "Soft 5"
  },
- "scratchings": 82,
+ "scratchings": 83,
  "dashboard": "toprate_week_v2_2026-11-25.html",
- "fingerprint": "053205d3978a"
+ "fingerprint": "105fe7df28cb"
 }
