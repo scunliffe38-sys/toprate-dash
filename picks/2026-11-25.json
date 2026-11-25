@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:09.934Z",
+ "saved": "2026-11-25T07:39:22.746Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -270,6 +270,15 @@
    "sp": 1.8,
    "fair": 2.45,
    "rating": 80.09
+  },
+  "Albany|6|BONDIEXPRESS": {
+   "on": 1,
+   "t": 1795592359555,
+   "name": "Bondi Express",
+   "tab": 2,
+   "sp": 8,
+   "fair": 7.19,
+   "rating": 76.54
   }
  }
 }
