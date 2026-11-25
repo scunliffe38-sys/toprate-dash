@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:35:38.473Z",
+ "saved": "2026-11-25T05:35:49.858Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -194,6 +194,33 @@
    "sp": 3.3,
    "fair": 6.68,
    "rating": 76.85
+  },
+  "Albany|4|NICCYSAFFAIR": {
+   "on": 1,
+   "t": 1795584944824,
+   "name": "Niccy's Affair",
+   "tab": 8,
+   "sp": 4,
+   "fair": 4.19,
+   "rating": 84.35
+  },
+  "Albany|4|STORMAWAY": {
+   "on": 1,
+   "t": 1795584945759,
+   "name": "Storm Away",
+   "tab": 7,
+   "sp": 2.3,
+   "fair": 3.47,
+   "rating": 85.03
+  },
+  "Albany|4|FLICKTHESWITCH": {
+   "on": 1,
+   "t": 1795584946744,
+   "name": "Flick The Switch",
+   "tab": 2,
+   "sp": 4.8,
+   "fair": 3.87,
+   "rating": 84.62
   }
  }
 }
