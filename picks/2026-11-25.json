@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T08:02:00.686Z",
+ "saved": "2026-11-25T08:02:08.367Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -405,6 +405,15 @@
    "sp": 3.2,
    "fair": 2.59,
    "rating": 81.28
+  },
+  "Launceston|8|SUMMIT": {
+   "on": 1,
+   "t": 1795593725139,
+   "name": "Summit",
+   "tab": 1,
+   "sp": 1.85,
+   "fair": 2.96,
+   "rating": 80.76
   }
  }
 }
