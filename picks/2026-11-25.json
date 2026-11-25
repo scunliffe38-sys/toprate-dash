@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T05:27:36.466Z",
+ "saved": "2026-11-25T05:27:43.077Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -10,6 +10,15 @@
    "sp": 4.2,
    "fair": 3.43,
    "rating": 83.25
+  },
+  "Geelong|5|MICKIO": {
+   "on": 1,
+   "t": 1795584459861,
+   "name": "Mickio",
+   "tab": 2,
+   "sp": 7.5,
+   "fair": 8.95,
+   "rating": 80.12
   }
  }
 }
