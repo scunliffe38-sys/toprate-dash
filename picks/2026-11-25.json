@@ -1,6 +1,6 @@
 {
  "date": "2026-11-25",
- "saved": "2026-11-25T07:39:22.746Z",
+ "saved": "2026-11-25T07:39:38.196Z",
  "picks": {
   "Geelong|5|SIXTYGRAND": {
    "on": 1,
@@ -279,6 +279,15 @@
    "sp": 8,
    "fair": 7.19,
    "rating": 76.54
+  },
+  "Albany|7|CALADAN": {
+   "on": 1,
+   "t": 1795592375037,
+   "name": "Caladan",
+   "tab": 1,
+   "sp": 3.2,
+   "fair": 3.17,
+   "rating": 77.6
   }
  }
 }
