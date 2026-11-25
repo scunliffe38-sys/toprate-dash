@@ -1,17 +1,17 @@
 {
- "started": "2026-11-25T15:14:02",
+ "started": "2026-11-25T15:32:02",
  "dates": [
   "2026-11-25",
   "2026-11-26"
  ],
- "reason": "Geelong scratched R8 #9",
+ "reason": "Strathalbyn scratched R1 #10; Ipswich Soft 5 -> Good 4",
  "status": "ok",
  "acceptors": 499,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-26",
  "card_source": "toprate",
  "extract": "2026-11-24T21:23:24+00:00",
- "finished": "2026-11-25T15:31:01",
+ "finished": "2026-11-25T15:49:30",
  "going": {
   "Geelong": "Good 3",
   "Wyong": "Soft 6",
@@ -22,5 +22,5 @@
  },
  "scratchings": 84,
  "dashboard": "toprate_week_v2_2026-11-25.html",
- "fingerprint": "165271ae4323"
+ "fingerprint": "7a86342fbd55"
 }
