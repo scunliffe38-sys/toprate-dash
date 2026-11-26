@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:26:48.376Z",
+ "saved": "2026-11-26T04:26:56.597Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -102,13 +102,8 @@
    "rating": 83.79
   },
   "Hawkesbury|7|MIDNIGHTREVOLT": {
-   "on": 1,
-   "t": 1795667153068,
-   "name": "Midnight Revolt",
-   "tab": 8,
-   "sp": 6.5,
-   "fair": 9.09,
-   "rating": 81.45
+   "on": 0,
+   "t": 1795667213125
   },
   "Hawkesbury|4|COOLSUMMERNIGHTS": {
    "on": 1,
