@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:51:39.756Z",
+ "saved": "2026-11-26T05:52:42.345Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -277,13 +277,8 @@
    "rating": 82.2
   },
   "Mornington|8|GOODNESS": {
-   "on": 1,
-   "t": 1795672296905,
-   "name": "Goodness",
-   "tab": 6,
-   "sp": 2.6,
-   "fair": 3.48,
-   "rating": 81.85
+   "on": 0,
+   "t": 1795672359322
   }
  }
 }
