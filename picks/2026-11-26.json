@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:50:39.509Z",
+ "saved": "2026-11-26T05:50:45.590Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -230,6 +230,24 @@
    "sp": 4.8,
    "fair": 8.9,
    "rating": 78.21
+  },
+  "Mornington|7|ILOVEDIAMONDS": {
+   "on": 1,
+   "t": 1795672241447,
+   "name": "Ilovediamonds",
+   "tab": 3,
+   "sp": 4,
+   "fair": 3.45,
+   "rating": 82.53
+  },
+  "Mornington|7|BELLUPA": {
+   "on": 1,
+   "t": 1795672242714,
+   "name": "Bel Lupa",
+   "tab": 12,
+   "sp": 2.6,
+   "fair": 3.69,
+   "rating": 82.32
   }
  }
 }
