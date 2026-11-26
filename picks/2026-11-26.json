@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:51:32.749Z",
+ "saved": "2026-11-26T05:51:39.756Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -266,6 +266,24 @@
    "sp": 11,
    "fair": 13.3,
    "rating": 77.86
+  },
+  "Mornington|8|ROUGHENUFF": {
+   "on": 1,
+   "t": 1795672295926,
+   "name": "Rough Enuff",
+   "tab": 2,
+   "sp": 2.7,
+   "fair": 3.12,
+   "rating": 82.2
+  },
+  "Mornington|8|GOODNESS": {
+   "on": 1,
+   "t": 1795672296905,
+   "name": "Goodness",
+   "tab": 6,
+   "sp": 2.6,
+   "fair": 3.48,
+   "rating": 81.85
   }
  }
 }
