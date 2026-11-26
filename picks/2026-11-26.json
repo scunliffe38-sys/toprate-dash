@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:58:20.472Z",
+ "saved": "2026-11-26T05:58:24.797Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -369,6 +369,15 @@
    "sp": 4.2,
    "fair": 6.26,
    "rating": 79.47
+  },
+  "Geraldton|7|MIFFMUFFEREDMOOF": {
+   "on": 1,
+   "t": 1795672701876,
+   "name": "Miff Muffered Moof",
+   "tab": 7,
+   "sp": 21,
+   "fair": 26.15,
+   "rating": 74.95
   }
  }
 }
