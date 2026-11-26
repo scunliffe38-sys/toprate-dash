@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:25:58.327Z",
+ "saved": "2026-11-26T04:26:10.603Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -109,6 +109,15 @@
    "sp": 6.5,
    "fair": 9.09,
    "rating": 81.45
+  },
+  "Hawkesbury|4|COOLSUMMERNIGHTS": {
+   "on": 1,
+   "t": 1795667167159,
+   "name": "Cool Summer Nights",
+   "tab": 5,
+   "sp": 5,
+   "fair": 4.91,
+   "rating": 81.48
   }
  }
 }
