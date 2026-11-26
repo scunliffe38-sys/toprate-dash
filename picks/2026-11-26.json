@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T03:10:13.461Z",
+ "saved": "2026-11-26T04:24:50.481Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -10,6 +10,15 @@
    "sp": 2.8,
    "fair": 3.14,
    "rating": 71.51
+  },
+  "Hawkesbury|5|PEARLOFDUBAI": {
+   "on": 1,
+   "t": 1795667087260,
+   "name": "Pearl Of Dubai",
+   "tab": 9,
+   "sp": 2.3,
+   "fair": 2,
+   "rating": 77.26
   }
  }
 }
