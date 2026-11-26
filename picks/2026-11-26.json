@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:57:59.196Z",
+ "saved": "2026-11-26T05:58:20.472Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -360,6 +360,15 @@
    "sp": 3.3,
    "fair": 4.07,
    "rating": 80.79
+  },
+  "Geraldton|7|BLOWINSMOKE": {
+   "on": 1,
+   "t": 1795672697648,
+   "name": "Blowin' Smoke",
+   "tab": 6,
+   "sp": 4.2,
+   "fair": 6.26,
+   "rating": 79.47
   }
  }
 }
