@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:24:54.034Z",
+ "saved": "2026-11-26T04:25:02.746Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -28,6 +28,15 @@
    "sp": 2.5,
    "fair": 5.07,
    "rating": 74.02
+  },
+  "Hawkesbury|6|GOTHERE": {
+   "on": 1,
+   "t": 1795667099524,
+   "name": "Got Here",
+   "tab": 4,
+   "sp": 8.5,
+   "fair": 6.34,
+   "rating": 78.01
   }
  }
 }
