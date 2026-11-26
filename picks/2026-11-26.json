@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:26:10.603Z",
+ "saved": "2026-11-26T04:26:20.043Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -118,6 +118,42 @@
    "sp": 5,
    "fair": 4.91,
    "rating": 81.48
+  },
+  "Hawkesbury|4|PERINIMISS": {
+   "on": 1,
+   "t": 1795667171256,
+   "name": "Perini Miss",
+   "tab": 4,
+   "sp": 3.9,
+   "fair": 5.06,
+   "rating": 81.38
+  },
+  "Hawkesbury|4|FITZCLARENCE": {
+   "on": 1,
+   "t": 1795667173559,
+   "name": "Fitzclarence",
+   "tab": 2,
+   "sp": 7,
+   "fair": 5.14,
+   "rating": 81.34
+  },
+  "Hawkesbury|4|SHEEZADIVA": {
+   "on": 1,
+   "t": 1795667174940,
+   "name": "Sheeza Diva",
+   "tab": 1,
+   "sp": 4,
+   "fair": 6.55,
+   "rating": 80.46
+  },
+  "Hawkesbury|4|CANJUSTIFY": {
+   "on": 1,
+   "t": 1795667176819,
+   "name": "Canjustify",
+   "tab": 6,
+   "sp": 3.7,
+   "fair": 7.64,
+   "rating": 79.95
   }
  }
 }
