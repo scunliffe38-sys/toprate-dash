@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:56:51.619Z",
+ "saved": "2026-11-26T05:56:55.255Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -333,6 +333,15 @@
    "sp": 11,
    "fair": 14.5,
    "rating": 72.93
+  },
+  "Geraldton|6|GYPSYRHYME": {
+   "on": 1,
+   "t": 1795672612364,
+   "name": "Gypsy Rhyme",
+   "tab": 3,
+   "sp": 1.4,
+   "fair": 1.66,
+   "rating": 83.03
   }
  }
 }
