@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:25:13.555Z",
+ "saved": "2026-11-26T04:25:20.560Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -64,6 +64,24 @@
    "sp": 3.3,
    "fair": 7.61,
    "rating": 77.39
+  },
+  "Hawkesbury|6|HIKARIRISING": {
+   "on": 1,
+   "t": 1795667117235,
+   "name": "Hikari Rising",
+   "tab": 5,
+   "sp": 10,
+   "fair": 8.03,
+   "rating": 77.25
+  },
+  "Hawkesbury|6|EXTREMECOURAGE": {
+   "on": 1,
+   "t": 1795667119799,
+   "name": "Extreme Courage",
+   "tab": 1,
+   "sp": 8.5,
+   "fair": 8.95,
+   "rating": 76.84
   }
  }
 }
