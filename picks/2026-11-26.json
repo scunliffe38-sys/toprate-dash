@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:52:42.345Z",
+ "saved": "2026-11-26T05:56:51.619Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -279,6 +279,60 @@
   "Mornington|8|GOODNESS": {
    "on": 0,
    "t": 1795672359322
+  },
+  "Geraldton|5|YAPPER": {
+   "on": 1,
+   "t": 1795672600796,
+   "name": "Yapper",
+   "tab": 3,
+   "sp": 4,
+   "fair": 5.28,
+   "rating": 76.13
+  },
+  "Geraldton|5|VIOLENT": {
+   "on": 1,
+   "t": 1795672602934,
+   "name": "Violent",
+   "tab": 12,
+   "sp": 3.8,
+   "fair": 6.1,
+   "rating": 75.7
+  },
+  "Geraldton|5|JEWELOFZAVALA": {
+   "on": 1,
+   "t": 1795672604509,
+   "name": "Jewel Of Zavala",
+   "tab": 9,
+   "sp": 6,
+   "fair": 7.97,
+   "rating": 74.82
+  },
+  "Geraldton|5|SATINBOW": {
+   "on": 1,
+   "t": 1795672605529,
+   "name": "Satin Bow",
+   "tab": 10,
+   "sp": 8.5,
+   "fair": 10.33,
+   "rating": 73.99
+  },
+  "Geraldton|5|FLAMINGDRAGON": {
+   "on": 1,
+   "t": 1795672606724,
+   "name": "Flaming Dragon",
+   "tab": 5,
+   "sp": 8,
+   "fair": 13.53,
+   "rating": 73.14
+  },
+  "Geraldton|5|BLOODSAINT": {
+   "on": 1,
+   "t": 1795672608403,
+   "name": "Blood Saint",
+   "tab": 6,
+   "sp": 11,
+   "fair": 14.5,
+   "rating": 72.93
   }
  }
 }
