@@ -1,19 +1,19 @@
 {
- "started": "2026-11-27T09:11:02",
+ "started": "2026-11-27T08:25:18",
  "dates": [
   "2026-11-27",
   "2026-11-28",
   "2026-11-29",
   "2026-11-30"
  ],
- "reason": "retry: Muswellbrook Soft 5 -> Good 4; Muswellbrook scratched R1 #3, R4 #3/9/10/14, R5 #2/9, R6 #5/9, R8 #5/12; Mt Gambier Good 4 -> Soft 5; Mt Gambier scratched R3 #3/5, R5 #6/12, ",
+ "reason": "morning harvest",
  "status": "ok",
  "acceptors": 753,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-30",
  "card_source": "toprate",
  "extract": "2026-11-26T21:23:39+00:00",
- "finished": "2026-11-27T09:31:11",
+ "finished": "2026-11-27T10:23:23",
  "going": {
   "Canterbury": "Good 4",
   "Pakenham": "Good 4",
@@ -26,5 +26,5 @@
  },
  "scratchings": 140,
  "dashboard": "toprate_week_v2_2026-11-27.html",
- "fingerprint": "9f1f7607a625"
+ "fingerprint": "55bf84e7f0fb"
 }
