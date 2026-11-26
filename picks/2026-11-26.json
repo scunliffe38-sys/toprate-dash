@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:25:23.123Z",
+ "saved": "2026-11-26T04:25:58.327Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -91,6 +91,24 @@
    "sp": 1.7,
    "fair": 2.43,
    "rating": 85.98
+  },
+  "Hawkesbury|7|WONTHEARMECOMING": {
+   "on": 1,
+   "t": 1795667152293,
+   "name": "Won'thearmecoming",
+   "tab": 6,
+   "sp": 4.2,
+   "fair": 4.54,
+   "rating": 83.79
+  },
+  "Hawkesbury|7|MIDNIGHTREVOLT": {
+   "on": 1,
+   "t": 1795667153068,
+   "name": "Midnight Revolt",
+   "tab": 8,
+   "sp": 6.5,
+   "fair": 9.09,
+   "rating": 81.45
   }
  }
 }
