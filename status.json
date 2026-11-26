@@ -1,25 +1,28 @@
 {
- "started": "2026-11-26T16:56:23",
+ "started": "2026-11-27T03:09:18",
  "dates": [
-  "2026-11-26",
   "2026-11-27",
   "2026-11-28"
  ],
- "reason": "Geraldton scratched R2 #11",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 317,
- "rider_share": 1.0,
+ "acceptors": 753,
+ "rider_share": 0.89,
  "extract_max_date": "2026-11-28",
  "card_source": "toprate",
- "extract": "2026-11-25T21:23:19+00:00",
- "finished": "2026-11-26T17:12:23",
+ "extract": "2026-11-26T16:07:33+00:00",
+ "finished": "2026-11-27T04:02:32",
  "going": {
-  "Mornington": "Good 3",
-  "Hawkesbury": "Soft 5",
-  "Rockhampton": "Soft 6",
-  "Geraldton": "Good 4"
+  "Canterbury": "Good 4",
+  "Pakenham": "Soft 5",
+  "Wodonga": "Good 4",
+  "Muswellbrook": "Soft 5",
+  "Queanbeyan": "Soft 5",
+  "Sunshine Coast": "Soft 5",
+  "Cairns": "Soft 5",
+  "Mt Gambier": "Good 4"
  },
- "scratchings": 56,
- "dashboard": "toprate_week_v2_2026-11-26.html",
- "fingerprint": "b5fe97986845"
+ "scratchings": 64,
+ "dashboard": "toprate_week_v2_2026-11-27.html",
+ "fingerprint": "6976b421a7f2"
 }
