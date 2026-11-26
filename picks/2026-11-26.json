@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:25:08.561Z",
+ "saved": "2026-11-26T04:25:13.555Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -46,6 +46,24 @@
    "sp": 4,
    "fair": 5.36,
    "rating": 78.54
+  },
+  "Hawkesbury|6|WOOTTONTOUCHIT": {
+   "on": 1,
+   "t": 1795667108583,
+   "name": "Wootton Touch It",
+   "tab": 14,
+   "sp": 5.5,
+   "fair": 7.83,
+   "rating": 77.33
+  },
+  "Hawkesbury|6|SOUTHPORT": {
+   "on": 1,
+   "t": 1795667110262,
+   "name": "Southport",
+   "tab": 2,
+   "sp": 3.3,
+   "fair": 7.61,
+   "rating": 77.39
   }
  }
 }
