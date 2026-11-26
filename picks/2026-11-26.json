@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T04:26:56.597Z",
+ "saved": "2026-11-26T05:50:11.572Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -10,6 +10,33 @@
    "sp": 2.8,
    "fair": 3.14,
    "rating": 71.51
+  },
+  "Mornington|5|GUNZ": {
+   "on": 1,
+   "t": 1795672180224,
+   "name": "Gunz",
+   "tab": 3,
+   "sp": 2.4,
+   "fair": 3.13,
+   "rating": 83.08
+  },
+  "Mornington|5|OLEDAZE": {
+   "on": 1,
+   "t": 1795672181465,
+   "name": "Ole Daze",
+   "tab": 7,
+   "sp": 3.4,
+   "fair": 4.3,
+   "rating": 82.06
+  },
+  "Mornington|5|VALEDICTORIAN": {
+   "on": 1,
+   "t": 1795672208224,
+   "name": "Valedictorian",
+   "tab": 9,
+   "sp": 11,
+   "fair": 5.46,
+   "rating": 81.17
   },
   "Hawkesbury|5|PEARLOFDUBAI": {
    "on": 1,
