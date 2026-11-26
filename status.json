@@ -1,25 +1,25 @@
 {
- "started": "2026-11-26T11:18:18",
+ "started": "2026-11-26T15:06:21",
  "dates": [
   "2026-11-26",
   "2026-11-27",
   "2026-11-28"
  ],
- "reason": "Geraldton scratched R1 #12, R3 #4, R4 #11/12/13/14, R5 #13/14/15/16, R8 #10",
+ "reason": "Mornington Good 4 -> Good 3",
  "status": "ok",
  "acceptors": 317,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-28",
  "card_source": "toprate",
  "extract": "2026-11-25T21:23:19+00:00",
- "finished": "2026-11-26T11:34:54",
+ "finished": "2026-11-26T15:22:29",
  "going": {
-  "Mornington": "Good 4",
+  "Mornington": "Good 3",
   "Hawkesbury": "Soft 5",
   "Rockhampton": "Soft 6",
   "Geraldton": "Good 4"
  },
  "scratchings": 54,
  "dashboard": "toprate_week_v2_2026-11-26.html",
- "fingerprint": "01f67527fdf0"
+ "fingerprint": "ea4686d9fd24"
 }
