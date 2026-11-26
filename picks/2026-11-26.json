@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:58:49.885Z",
+ "saved": "2026-11-26T05:58:58.789Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -396,6 +396,15 @@
    "sp": 1.8,
    "fair": 2.32,
    "rating": 83.4
+  },
+  "Geraldton|8|CHAMPEZE": {
+   "on": 1,
+   "t": 1795672735918,
+   "name": "Champeze",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 6.85,
+   "rating": 79.77
   }
  }
 }
