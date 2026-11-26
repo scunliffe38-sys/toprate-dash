@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:57:51.720Z",
+ "saved": "2026-11-26T05:57:59.196Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -351,6 +351,15 @@
    "sp": 6,
    "fair": 7.88,
    "rating": 77.91
+  },
+  "Geraldton|7|LIEUTENANTDUNBAR": {
+   "on": 1,
+   "t": 1795672676290,
+   "name": "Lieutenant Dunbar",
+   "tab": 5,
+   "sp": 3.3,
+   "fair": 4.07,
+   "rating": 80.79
   }
  }
 }
