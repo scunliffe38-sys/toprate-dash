@@ -1,6 +1,6 @@
 {
  "date": "2026-11-26",
- "saved": "2026-11-26T05:50:45.590Z",
+ "saved": "2026-11-26T05:50:56.912Z",
  "picks": {
   "Mornington|1|RUPTURED": {
    "on": 1,
@@ -248,6 +248,15 @@
    "sp": 2.6,
    "fair": 3.69,
    "rating": 82.32
+  },
+  "Mornington|7|OTTALAUS": {
+   "on": 1,
+   "t": 1795672254057,
+   "name": "Ottalaus",
+   "tab": 2,
+   "sp": 7.5,
+   "fair": 11.33,
+   "rating": 78.42
   }
  }
 }
