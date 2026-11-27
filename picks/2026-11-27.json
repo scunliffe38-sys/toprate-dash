@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:22:29.361Z",
+ "saved": "2026-11-27T05:23:02.634Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -242,6 +242,15 @@
    "sp": 2.3,
    "fair": 2.12,
    "rating": 78.77
+  },
+  "Pakenham|4|CHRONIC": {
+   "on": 1,
+   "t": 1795756979352,
+   "name": "Chronic",
+   "tab": 4,
+   "sp": 13,
+   "fair": 38.3,
+   "rating": 69.99
   }
  }
 }
