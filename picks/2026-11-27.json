@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:18:49.793Z",
+ "saved": "2026-11-27T05:19:07.832Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -179,6 +179,15 @@
    "sp": 4.8,
    "fair": 7.77,
    "rating": 71.94
+  },
+  "Pakenham|2|PLEASEPLEASEME": {
+   "on": 1,
+   "t": 1795756744753,
+   "name": "Please Please Me",
+   "tab": 9,
+   "sp": 6.5,
+   "fair": 11.32,
+   "rating": 70.71
   }
  }
 }
