@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:51:30.675Z",
+ "saved": "2026-11-27T05:17:06.273Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -134,6 +134,24 @@
    "sp": 5.5,
    "fair": 6.09,
    "rating": 82.98
+  },
+  "Pakenham|1|MAJESTICSON": {
+   "on": 1,
+   "t": 1795756621524,
+   "name": "Majestic Son",
+   "tab": 7,
+   "sp": 1.6,
+   "fair": 1.55,
+   "rating": 79.04
+  },
+  "Pakenham|1|LORDOFTHEEARTH": {
+   "on": 1,
+   "t": 1795756622804,
+   "name": "Lord Of The Earth",
+   "tab": 6,
+   "sp": 4.6,
+   "fair": 10.78,
+   "rating": 72.61
   }
  }
 }
