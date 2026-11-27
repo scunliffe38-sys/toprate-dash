@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:24:09.742Z",
+ "saved": "2026-11-27T07:24:19.684Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -380,6 +380,15 @@
    "sp": 4.4,
    "fair": 3.85,
    "rating": 86.74
+  },
+  "Pakenham|7|HOOKNSPUR": {
+   "on": 1,
+   "t": 1795764256621,
+   "name": "Hook 'n' Spur",
+   "tab": 5,
+   "sp": 5,
+   "fair": 5.38,
+   "rating": 84.09
   }
  }
 }
