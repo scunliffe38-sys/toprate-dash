@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:18:52.035Z",
+ "saved": "2026-11-27T07:18:58.918Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -289,13 +289,8 @@
    "rating": 85.18
   },
   "Pakenham|6|BLUEBANDIT": {
-   "on": 1,
-   "t": 1795763067027,
-   "name": "Blue Bandit",
-   "tab": 3,
-   "sp": 10,
-   "fair": 13.36,
-   "rating": 82.61
+   "on": 0,
+   "t": 1795763935831
   },
   "Pakenham|6|SEABORN": {
    "on": 1,
