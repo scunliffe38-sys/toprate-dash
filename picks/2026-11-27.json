@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:04:30.180Z",
+ "saved": "2026-11-27T07:04:50.795Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -296,6 +296,15 @@
    "sp": 10,
    "fair": 13.36,
    "rating": 82.61
+  },
+  "Pakenham|6|SEABORN": {
+   "on": 1,
+   "t": 1795763087734,
+   "name": "Seaborn",
+   "tab": 7,
+   "sp": 12,
+   "fair": 13.32,
+   "rating": 82.62
   }
  }
 }
