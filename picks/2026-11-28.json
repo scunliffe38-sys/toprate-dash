@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-27T09:54:25.673Z",
+ "saved": "2026-11-27T09:54:34.383Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -10,6 +10,15 @@
    "sp": 5,
    "fair": 5.69,
    "rating": 91.12
+  },
+  "Sandown|2|SERGEANTMAJOR": {
+   "on": 1,
+   "t": 1795773271260,
+   "name": "Sergeant Major",
+   "tab": 3,
+   "sp": 13,
+   "fair": 8.49,
+   "rating": 89.97
   }
  }
 }
