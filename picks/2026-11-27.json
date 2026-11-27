@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:48:15.014Z",
+ "saved": "2026-11-27T02:48:18.603Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -16,13 +16,8 @@
    "t": 1795747694551
   },
   "Wodonga|5|STRATEGICDEFENSE": {
-   "on": 1,
-   "t": 1795742623409,
-   "name": "Strategic Defense",
-   "tab": 12,
-   "sp": 6.5,
-   "fair": 13.35,
-   "rating": 77.71
+   "on": 0,
+   "t": 1795747695340
   },
   "Wodonga|5|GIANTSREPRIEVE": {
    "on": 1,
