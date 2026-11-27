@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:48:18.603Z",
+ "saved": "2026-11-27T02:48:23.113Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -54,6 +54,15 @@
    "sp": 2.9,
    "fair": 4.56,
    "rating": 81.26
+  },
+  "Wodonga|5|STARBUYER": {
+   "on": 1,
+   "t": 1795747699736,
+   "name": "Star Buyer",
+   "tab": 6,
+   "sp": 6,
+   "fair": 14.91,
+   "rating": 77.39
   }
  }
 }
