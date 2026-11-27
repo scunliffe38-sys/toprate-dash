@@ -1,19 +1,19 @@
 {
- "started": "2026-11-27T15:33:21",
+ "started": "2026-11-27T15:51:02",
  "dates": [
   "2026-11-27",
   "2026-11-28",
   "2026-11-29",
   "2026-11-30"
  ],
- "reason": "Wodonga scratched R5 #12",
+ "reason": "Muswellbrook scratched R5 #14; Pakenham Good 4 -> Soft 5; Pakenham scratched R3 #2; Pakenham scratched R5 #4, R8 #10",
  "status": "ok",
  "acceptors": 753,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-30",
  "card_source": "toprate",
  "extract": "2026-11-26T21:23:39+00:00",
- "finished": "2026-11-27T15:50:33",
+ "finished": "2026-11-27T16:08:13",
  "going": {
   "Canterbury": "Good 4",
   "Pakenham": "Soft 5",
@@ -24,7 +24,7 @@
   "Cairns": "Soft 5",
   "Mt Gambier": "Good 4"
  },
- "scratchings": 162,
+ "scratchings": 163,
  "dashboard": "toprate_week_v2_2026-11-27.html",
- "fingerprint": "62b96b50786d"
+ "fingerprint": "cab29496bcc2"
 }
