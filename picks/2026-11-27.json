@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:23:02.634Z",
+ "saved": "2026-11-27T06:55:00.912Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -251,6 +251,24 @@
    "sp": 13,
    "fair": 38.3,
    "rating": 69.99
+  },
+  "Pakenham|5|UNTAPPED": {
+   "on": 1,
+   "t": 1795762495313,
+   "name": "Untapped",
+   "tab": 2,
+   "sp": 3.7,
+   "fair": 6.31,
+   "rating": 85.06
+  },
+  "Pakenham|5|MOUNTSABYINYO": {
+   "on": 1,
+   "t": 1795762497360,
+   "name": "Mount Sabyinyo",
+   "tab": 3,
+   "sp": 2.8,
+   "fair": 2.72,
+   "rating": 87.9
   }
  }
 }
