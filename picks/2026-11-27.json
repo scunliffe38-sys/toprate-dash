@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:06:26.771Z",
+ "saved": "2026-11-27T07:08:37.259Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -368,6 +368,24 @@
    "sp": 8,
    "fair": 9.93,
    "rating": 86.99
+  },
+  "Canterbury|5|AURA": {
+   "on": 1,
+   "t": 1795763311485,
+   "name": "Aura",
+   "tab": 10,
+   "sp": 3.3,
+   "fair": 4.79,
+   "rating": 86.21
+  },
+  "Canterbury|5|HALLOWEDHALLS": {
+   "on": 1,
+   "t": 1795763313811,
+   "name": "Hallowed Halls",
+   "tab": 1,
+   "sp": 2.6,
+   "fair": 3.18,
+   "rating": 87.83
   }
  }
 }
