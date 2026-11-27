@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-27T09:54:34.383Z",
+ "saved": "2026-11-27T09:54:38.804Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -19,6 +19,24 @@
    "sp": 13,
    "fair": 8.49,
    "rating": 89.97
+  },
+  "Sandown|3|BILLYCART": {
+   "on": 1,
+   "t": 1795773274801,
+   "name": "Billycart",
+   "tab": 8,
+   "sp": 1.55,
+   "fair": 2.64,
+   "rating": 84.48
+  },
+  "Sandown|3|FRANKEDUP": {
+   "on": 1,
+   "t": 1795773275629,
+   "name": "Franked Up",
+   "tab": 4,
+   "sp": 4.8,
+   "fair": 5.35,
+   "rating": 82.22
   }
  }
 }
