@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:05:01.363Z",
+ "saved": "2026-11-27T07:05:39.003Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -314,6 +314,15 @@
    "sp": 2.5,
    "fair": 2.9,
    "rating": 86.17
+  },
+  "Pakenham|7|MIGHTYMYSTIC": {
+   "on": 1,
+   "t": 1795763135530,
+   "name": "Mighty Mystic",
+   "tab": 3,
+   "sp": 6.5,
+   "fair": 6.48,
+   "rating": 83.55
   }
  }
 }
