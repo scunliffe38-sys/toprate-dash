@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:25:21.247Z",
+ "saved": "2026-11-27T08:36:28.484Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -398,6 +398,15 @@
    "sp": 19,
    "fair": 40.06,
    "rating": 82.92
+  },
+  "Canterbury|5|BONDIBLOSSOM": {
+   "on": 1,
+   "t": 1795768584986,
+   "name": "Bondi Blossom",
+   "tab": 5,
+   "sp": 12,
+   "fair": 9.22,
+   "rating": 83.64
   }
  }
 }
