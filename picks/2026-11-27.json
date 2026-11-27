@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:24:01.802Z",
+ "saved": "2026-11-27T07:24:09.742Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -324,13 +324,8 @@
    "t": 1795764238050
   },
   "Pakenham|7|TITANSSPIRIT": {
-   "on": 1,
-   "t": 1795763168470,
-   "name": "Titan's Spirit",
-   "tab": 9,
-   "sp": 9.5,
-   "fair": 12.14,
-   "rating": 81.52
+   "on": 0,
+   "t": 1795764246682
   },
   "Pakenham|8|NOETZIE": {
    "on": 1,
