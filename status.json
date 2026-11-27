@@ -1,19 +1,19 @@
 {
- "started": "2026-11-27T16:09:02",
+ "started": "2026-11-27T16:39:25",
  "dates": [
   "2026-11-27",
   "2026-11-28",
   "2026-11-29",
   "2026-11-30"
  ],
- "reason": "Pakenham scratched R7 #8",
+ "reason": "Pakenham scratched R2 #13",
  "status": "ok",
  "acceptors": 753,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-30",
  "card_source": "toprate",
  "extract": "2026-11-26T21:23:39+00:00",
- "finished": "2026-11-27T16:26:25",
+ "finished": "2026-11-27T16:56:33",
  "going": {
   "Canterbury": "Good 4",
   "Pakenham": "Soft 5",
@@ -24,7 +24,7 @@
   "Cairns": "Soft 5",
   "Mt Gambier": "Good 4"
  },
- "scratchings": 163,
+ "scratchings": 164,
  "dashboard": "toprate_week_v2_2026-11-27.html",
- "fingerprint": "101b255f7a24"
+ "fingerprint": "212f341dea27"
 }
