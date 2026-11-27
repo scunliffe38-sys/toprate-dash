@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T01:24:01.075Z",
+ "saved": "2026-11-27T02:47:44.982Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -46,6 +46,15 @@
    "sp": 1.6,
    "fair": 1.96,
    "rating": 98.56
+  },
+  "Wodonga|6|PRESSER": {
+   "on": 1,
+   "t": 1795747661531,
+   "name": "Presser",
+   "tab": 5,
+   "sp": 6.5,
+   "fair": 9.32,
+   "rating": 93.57
   }
  }
 }
