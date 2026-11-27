@@ -1,19 +1,19 @@
 {
- "started": "2026-11-28T08:25:21",
+ "started": "2026-11-28T09:53:02",
  "dates": [
   "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01"
  ],
- "reason": "morning harvest",
+ "reason": "Fannie Bay Synthetic -> Good; Fannie Bay scratched R1 #7, R2 #7, R6 #4",
  "status": "ok",
  "acceptors": 1538,
  "rider_share": 0.98,
  "extract_max_date": "2026-12-01",
  "card_source": "toprate",
  "extract": "2026-11-27T21:23:43+00:00",
- "finished": "2026-11-28T10:12:46",
+ "finished": "2026-11-28T10:15:01",
  "going": {
   "Sandown": "Soft 6",
   "Rosehill": "Good 4",
@@ -30,5 +30,5 @@
  },
  "scratchings": 277,
  "dashboard": "toprate_week_v2_2026-11-28.html",
- "fingerprint": "05a2b48be4d1"
+ "fingerprint": "a38f58ebe5b5"
 }
