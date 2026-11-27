@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:21:12.454Z",
+ "saved": "2026-11-27T05:21:36.091Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -206,6 +206,24 @@
    "sp": 4.4,
    "fair": 4.06,
    "rating": 75.91
+  },
+  "Pakenham|3|FORTROCK": {
+   "on": 1,
+   "t": 1795756891812,
+   "name": "Fort Rock",
+   "tab": 7,
+   "sp": 3.9,
+   "fair": 4.72,
+   "rating": 75.5
+  },
+  "Pakenham|3|ABYDOS": {
+   "on": 1,
+   "t": 1795756893013,
+   "name": "Abydos",
+   "tab": 1,
+   "sp": 2.7,
+   "fair": 4.99,
+   "rating": 75.24
   }
  }
 }
