@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:19:32.781Z",
+ "saved": "2026-11-27T05:21:12.454Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -197,6 +197,15 @@
    "sp": 7.5,
    "fair": 12.87,
    "rating": 70.3
+  },
+  "Pakenham|3|PERCIPIENT": {
+   "on": 1,
+   "t": 1795756868807,
+   "name": "Percipient",
+   "tab": 9,
+   "sp": 4.4,
+   "fair": 4.06,
+   "rating": 75.91
   }
  }
 }
