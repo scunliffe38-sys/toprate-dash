@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:48:50.442Z",
+ "saved": "2026-11-27T02:50:28.350Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -71,6 +71,24 @@
    "sp": 8,
    "fair": 8.93,
    "rating": 78.71
+  },
+  "Wodonga|7|ROSIESPROPHECY": {
+   "on": 1,
+   "t": 1795747822761,
+   "name": "Rosie's Prophecy",
+   "tab": 10,
+   "sp": 8,
+   "fair": 13.43,
+   "rating": 77.46
+  },
+  "Wodonga|7|ROUSSILLON": {
+   "on": 1,
+   "t": 1795747825035,
+   "name": "Roussillon",
+   "tab": 11,
+   "sp": 7,
+   "fair": 10.32,
+   "rating": 78.27
   }
  }
 }
