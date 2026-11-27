@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T01:23:57.207Z",
+ "saved": "2026-11-27T01:24:01.075Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": 11,
    "fair": 6.85,
    "rating": 79.92
+  },
+  "Wodonga|6|BUCCLEUCH": {
+   "on": 1,
+   "t": 1795742637960,
+   "name": "Buccleuch",
+   "tab": 1,
+   "sp": 1.6,
+   "fair": 1.96,
+   "rating": 98.56
   }
  }
 }
