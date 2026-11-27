@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:48:23.113Z",
+ "saved": "2026-11-27T02:48:43.772Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -20,13 +20,8 @@
    "t": 1795747695340
   },
   "Wodonga|5|GIANTSREPRIEVE": {
-   "on": 1,
-   "t": 1795742634085,
-   "name": "Giant's Reprieve",
-   "tab": 2,
-   "sp": 11,
-   "fair": 6.85,
-   "rating": 79.92
+   "on": 0,
+   "t": 1795747719219
   },
   "Wodonga|6|BUCCLEUCH": {
    "on": 1,
@@ -56,13 +51,8 @@
    "rating": 81.26
   },
   "Wodonga|5|STARBUYER": {
-   "on": 1,
-   "t": 1795747699736,
-   "name": "Star Buyer",
-   "tab": 6,
-   "sp": 6,
-   "fair": 14.91,
-   "rating": 77.39
+   "on": 0,
+   "t": 1795747720486
   }
  }
 }
