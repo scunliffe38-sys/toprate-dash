@@ -1,19 +1,19 @@
 {
- "started": "2026-11-27T17:27:21",
+ "started": "2026-11-27T17:49:24",
  "dates": [
   "2026-11-27",
   "2026-11-28",
   "2026-11-29",
   "2026-11-30"
  ],
- "reason": "Pakenham scratched R3 #1",
+ "reason": "Pakenham scratched R1 #1",
  "status": "ok",
  "acceptors": 753,
  "rider_share": 1.0,
  "extract_max_date": "2026-11-30",
  "card_source": "toprate",
  "extract": "2026-11-26T21:23:39+00:00",
- "finished": "2026-11-27T17:44:15",
+ "finished": "2026-11-27T18:06:16",
  "going": {
   "Canterbury": "Good 4",
   "Pakenham": "Soft 5",
@@ -24,7 +24,7 @@
   "Queanbeyan": "Good 4",
   "Muswellbrook": "Good 4"
  },
- "scratchings": 165,
+ "scratchings": 166,
  "dashboard": "toprate_week_v2_2026-11-27.html",
- "fingerprint": "3901afafb15c"
+ "fingerprint": "e5f31b11bb5c"
 }
