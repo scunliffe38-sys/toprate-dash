@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T01:23:41.604Z",
+ "saved": "2026-11-27T01:23:46.506Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -19,6 +19,15 @@
    "sp": 34,
    "fair": 10.96,
    "rating": 78.35
+  },
+  "Wodonga|5|STRATEGICDEFENSE": {
+   "on": 1,
+   "t": 1795742623409,
+   "name": "Strategic Defense",
+   "tab": 12,
+   "sp": 6.5,
+   "fair": 13.35,
+   "rating": 77.71
   }
  }
 }
