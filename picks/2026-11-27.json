@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T08:36:28.484Z",
+ "saved": "2026-11-27T08:37:18.048Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -407,6 +407,24 @@
    "sp": 12,
    "fair": 9.22,
    "rating": 83.64
+  },
+  "Canterbury|7|CELESTIALCHARM": {
+   "on": 1,
+   "t": 1795768632089,
+   "name": "Celestial Charm",
+   "tab": 11,
+   "sp": 2.2,
+   "fair": 3.15,
+   "rating": 88.23
+  },
+  "Canterbury|7|SCUROSTAR": {
+   "on": 1,
+   "t": 1795768634579,
+   "name": "Scuro Star",
+   "tab": 10,
+   "sp": 6,
+   "fair": 4.17,
+   "rating": 87.22
   }
  }
 }
