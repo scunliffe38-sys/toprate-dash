@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:04:50.795Z",
+ "saved": "2026-11-27T07:05:01.363Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -305,6 +305,15 @@
    "sp": 12,
    "fair": 13.32,
    "rating": 82.62
+  },
+  "Pakenham|7|BARBARINO": {
+   "on": 1,
+   "t": 1795763098212,
+   "name": "Barbarino",
+   "tab": 1,
+   "sp": 2.5,
+   "fair": 2.9,
+   "rating": 86.17
   }
  }
 }
