@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:48:43.772Z",
+ "saved": "2026-11-27T02:48:50.442Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -53,6 +53,24 @@
   "Wodonga|5|STARBUYER": {
    "on": 0,
    "t": 1795747720486
+  },
+  "Wodonga|7|HAZARDOUS": {
+   "on": 1,
+   "t": 1795747725999,
+   "name": "Hazardous",
+   "tab": 9,
+   "sp": 2.6,
+   "fair": 5.5,
+   "rating": 80.31
+  },
+  "Wodonga|7|COMMANDSSUCCESS": {
+   "on": 1,
+   "t": 1795747730263,
+   "name": "Commands Success",
+   "tab": 5,
+   "sp": 8,
+   "fair": 8.93,
+   "rating": 78.71
   }
  }
 }
