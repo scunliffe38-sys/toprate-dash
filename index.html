@@ -1130,6 +1130,7 @@ tbody tr.run:hover,tbody tr.srow:hover{background:rgba(217,220,224,.5)}
 .wcmp rect.wbz{fill:var(--green);opacity:.07}
 .wcmp text.wbz{font-size:11px;fill:var(--green);font-weight:600}
 .wcmp .wch{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-size:12px;color:var(--dim);margin-top:6px}
+.wcmp .wch .wstar{color:var(--green);border-color:var(--green);font-weight:500} .wcmp .wch .wstar:disabled{opacity:.6;cursor:default}
 .wcmp .wch button{font:inherit;font-size:12px;border:1px solid var(--rule);background:var(--panel);border-radius:10px;padding:0 9px;cursor:pointer;color:var(--text)}
 .dbody{margin:-4px 0 14px}
 .dbody .smap{margin:0;border-radius:4px}
@@ -3052,7 +3053,13 @@ function wormCompare(r){
     s+=`<line class="wlead" x1="${xs(N-1)+6}" x2="${lx-3}" y1="${Math.min(Math.max(ys(h.td),T+4),H-B-2)}" y2="${l.y}"/>`;
     s+=`<text class="wcn ${on?'on':(any?'dim':'')}" x="${lx}" y="${l.y+4}" onclick="wsel(${h.x.no})" style="fill:${h.c}">${h.x.no} ${nm} <tspan style="opacity:.8">${h.td.toFixed(1)}</tspan></text>`; }
   s+='</svg>';
-  const hint=any?`<button type="button" onclick="wsel(null)">clear</button>`:'';
+  // the highlighted runners onto the selection stars (Simon, 27 Nov 2026): one tap stars every runner on in the Worms panel.
+  // Only adds: a star already on stays on, and a star on a runner not highlighted is left alone. Only where the stars show (pkMine).
+  let stb='';
+  if(any&&pkMine()){ const m=M(), ks=H0.filter(h=>WSEL.has(h.x.no)).map(h=>pkKey(m,r,h.x)), n=ks.filter(k=>!pkOn(D().date,k)).length;
+    stb=n?`<button type="button" class="wstar" onclick="wstar()" title="Add the ${ks.length===1?'highlighted runner':ks.length+' highlighted runners'} to ${pkWho()}">★ Star ${ks.length===1?'it':'these '+ks.length}</button>`
+         :`<button type="button" class="wstar" disabled title="Every highlighted runner is already in ${pkWho()}">★ starred</button>`; }
+  const hint=any?`${stb}<button type="button" onclick="wsel(null)">clear</button>`:'';
   return `<div class="wcmp">${s}<div class="wch"><span>Its last ${N} runs, in SPM rating points at today's trip; the dot and the figure at the right are its latest. Click a name or a line to highlight it; click more to compare.</span>${hint}</div></div>`;
 }
 function drillRow(m,r){
@@ -3317,6 +3324,17 @@ function pkToggle(k){
   day[k]=on?{on:1,t:Date.now(),name:x?x.name:k.split('|')[2],tab:x?x.no:null,sp:x&&x.sp?x.sp:null,fair:x?x.fair:null,rating:x?x.rating:null}:{on:0,t:Date.now()};
   pkSave(); draw(); pkQueue(date);
 }
+// star a set of runners at once, one save and one sync (the Worms panel's "Star these", 27 Nov 2026)
+function pkSetOn(keys){
+  if(!pkMine()) return;
+  const date=D().date, day=pkDay(date); let ch=0;
+  for(const k of keys){ if(pkOn(date,k)) continue; const [track,no]=k.split('|');
+    const m=D().meetings.find(q=>q.track===track), r=m&&m.races.find(q=>String(q.no)===no), x=r&&(r.all||r.runners).find(q=>pkKey(m,r,q)===k);
+    day[k]={on:1,t:Date.now(),name:x?x.name:k.split('|')[2],tab:x?x.no:null,sp:x&&x.sp?x.sp:null,fair:x?x.fair:null,rating:x?x.rating:null}; ch++; }
+  if(ch){ pkSave(); draw(); pkQueue(date); }
+}
+window.wstar=()=>{ const m=M(), r=m&&m.races.find(q=>`${m.track}|${q.no}`===WSELK); if(!r) return;
+  pkSetOn(r.runners.filter(x=>WSEL.has(x.no)).map(x=>pkKey(m,r,x))); };
 $("race").addEventListener('click',e=>{ const b=e.target.closest('.pk'); if(!b) return; e.preventDefault(); e.stopPropagation(); pkToggle(b.dataset.pk); });
 // ---- the repo copy
 const pkB64=t=>btoa(unescape(encodeURIComponent(t))), pkUnb64=t=>decodeURIComponent(escape(atob(t.replace(/\n/g,''))));
@@ -4228,4 +4246,4 @@ window.skyLive=async (ch,forceDirect)=>{
   setInterval(tick,60000); window._trsTick=tick;
 })();
 </script><script>if("serviceWorker" in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})});</script>
-<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 27 Nov 18:06</b> AEST &middot; Pakenham scratched R1 #1</div><div style="height:34px"></div></body></html>
+<div id="tr-updated" style="position:fixed;left:0;right:0;bottom:0;z-index:9999;font:12.5px/1.4 system-ui,sans-serif;padding:6px 12px;background:#111;color:#ddd;border-top:2px solid #2e7d32;text-align:center">Rated <b>Fri 27 Nov 18:54</b> AEST &middot; template republish</div><div style="height:34px"></div></body></html>
