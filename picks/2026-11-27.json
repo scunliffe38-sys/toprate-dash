@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:18:58.918Z",
+ "saved": "2026-11-27T07:24:01.802Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -320,13 +320,8 @@
    "rating": 83.55
   },
   "Pakenham|7|CIRCUSLIGHTS": {
-   "on": 1,
-   "t": 1795763147264,
-   "name": "Circus Lights",
-   "tab": 7,
-   "sp": 4.6,
-   "fair": 9.16,
-   "rating": 82.43
+   "on": 0,
+   "t": 1795764238050
   },
   "Pakenham|7|TITANSSPIRIT": {
    "on": 1,
