@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:51:20.532Z",
+ "saved": "2026-11-27T02:51:30.675Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -125,6 +125,15 @@
    "sp": 34,
    "fair": 13.01,
    "rating": 80.47
+  },
+  "Wodonga|8|PAPARAZZO": {
+   "on": 1,
+   "t": 1795747887449,
+   "name": "Paparazzo",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 6.09,
+   "rating": 82.98
   }
  }
 }
