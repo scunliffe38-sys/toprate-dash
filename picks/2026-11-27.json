@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:17:06.273Z",
+ "saved": "2026-11-27T05:18:11.148Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -152,6 +152,15 @@
    "sp": 4.6,
    "fair": 10.78,
    "rating": 72.61
+  },
+  "Pakenham|2|ASSUNTA": {
+   "on": 1,
+   "t": 1795756687905,
+   "name": "Assunta",
+   "tab": 1,
+   "sp": 5,
+   "fair": 5.81,
+   "rating": 72.89
   }
  }
 }
