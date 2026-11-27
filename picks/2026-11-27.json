@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:22:15.421Z",
+ "saved": "2026-11-27T05:22:29.361Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -233,6 +233,15 @@
    "sp": 26,
    "fair": 21.11,
    "rating": 70.91
+  },
+  "Pakenham|4|MONTESQUIEU": {
+   "on": 1,
+   "t": 1795756946207,
+   "name": "Montesquieu",
+   "tab": 6,
+   "sp": 2.3,
+   "fair": 2.12,
+   "rating": 78.77
   }
  }
 }
