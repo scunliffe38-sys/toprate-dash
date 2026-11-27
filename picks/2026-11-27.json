@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T05:18:11.148Z",
+ "saved": "2026-11-27T05:18:31.586Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -161,6 +161,15 @@
    "sp": 5,
    "fair": 5.81,
    "rating": 72.89
+  },
+  "Pakenham|2|MEDIADARLING": {
+   "on": 1,
+   "t": 1795756708373,
+   "name": "Media Darling",
+   "tab": 7,
+   "sp": 4,
+   "fair": 7.51,
+   "rating": 72.05
   }
  }
 }
