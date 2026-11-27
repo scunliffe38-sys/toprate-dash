@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:47:44.982Z",
+ "saved": "2026-11-27T02:48:15.014Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -12,13 +12,8 @@
    "rating": 81.96
   },
   "Wodonga|5|SCOTTISHPEARL": {
-   "on": 1,
-   "t": 1795742618511,
-   "name": "Scottish Pearl",
-   "tab": 7,
-   "sp": 34,
-   "fair": 10.96,
-   "rating": 78.35
+   "on": 0,
+   "t": 1795747694551
   },
   "Wodonga|5|STRATEGICDEFENSE": {
    "on": 1,
@@ -55,6 +50,15 @@
    "sp": 6.5,
    "fair": 9.32,
    "rating": 93.57
+  },
+  "Wodonga|5|BOTTAS": {
+   "on": 1,
+   "t": 1795747691829,
+   "name": "Bottas",
+   "tab": 8,
+   "sp": 2.9,
+   "fair": 4.56,
+   "rating": 81.26
   }
  }
 }
