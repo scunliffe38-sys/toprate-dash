@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T07:08:37.259Z",
+ "saved": "2026-11-27T07:18:52.035Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -386,6 +386,15 @@
    "sp": 2.6,
    "fair": 3.18,
    "rating": 87.83
+  },
+  "Pakenham|5|CHILLIES": {
+   "on": 1,
+   "t": 1795763928635,
+   "name": "Chillies",
+   "tab": 8,
+   "sp": 4.4,
+   "fair": 3.85,
+   "rating": 86.74
   }
  }
 }
