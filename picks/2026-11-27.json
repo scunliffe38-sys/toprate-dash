@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T06:55:00.912Z",
+ "saved": "2026-11-27T07:04:06.161Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -269,6 +269,24 @@
    "sp": 2.8,
    "fair": 2.72,
    "rating": 87.9
+  },
+  "Pakenham|6|PERFECTNIGHT": {
+   "on": 1,
+   "t": 1795763040821,
+   "name": "Perfect Night",
+   "tab": 12,
+   "sp": 4,
+   "fair": 5.92,
+   "rating": 85.01
+  },
+  "Pakenham|6|THEREWEREROSES": {
+   "on": 1,
+   "t": 1795763042760,
+   "name": "There Were Roses",
+   "tab": 10,
+   "sp": 8,
+   "fair": 5.63,
+   "rating": 85.18
   }
  }
 }
