@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T02:50:28.350Z",
+ "saved": "2026-11-27T02:51:20.532Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -89,6 +89,42 @@
    "sp": 7,
    "fair": 10.32,
    "rating": 78.27
+  },
+  "Wodonga|8|SHOMA": {
+   "on": 1,
+   "t": 1795747872201,
+   "name": "Shoma",
+   "tab": 6,
+   "sp": 5,
+   "fair": 6.54,
+   "rating": 82.76
+  },
+  "Wodonga|8|DOUBTFREE": {
+   "on": 1,
+   "t": 1795747873761,
+   "name": "Doubtfree",
+   "tab": 8,
+   "sp": 4.8,
+   "fair": 7.73,
+   "rating": 82.19
+  },
+  "Wodonga|8|FUTUREFUND": {
+   "on": 1,
+   "t": 1795747875190,
+   "name": "Future Fund",
+   "tab": 2,
+   "sp": 26,
+   "fair": 11.03,
+   "rating": 81
+  },
+  "Wodonga|8|COPPERFIELD": {
+   "on": 1,
+   "t": 1795747877020,
+   "name": "Copperfield",
+   "tab": 3,
+   "sp": 34,
+   "fair": 13.01,
+   "rating": 80.47
   }
  }
 }
