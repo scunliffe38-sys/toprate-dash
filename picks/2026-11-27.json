@@ -1,6 +1,6 @@
 {
  "date": "2026-11-27",
- "saved": "2026-11-27T01:23:33.402Z",
+ "saved": "2026-11-27T01:23:41.604Z",
  "picks": {
   "Wodonga|5|SHOTARO": {
    "on": 1,
@@ -10,6 +10,15 @@
    "sp": 3.4,
    "fair": 3.69,
    "rating": 81.96
+  },
+  "Wodonga|5|SCOTTISHPEARL": {
+   "on": 1,
+   "t": 1795742618511,
+   "name": "Scottish Pearl",
+   "tab": 7,
+   "sp": 34,
+   "fair": 10.96,
+   "rating": 78.35
   }
  }
 }
