@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:00:23.077Z",
+ "saved": "2026-11-28T05:00:31.475Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -428,6 +428,15 @@
    "sp": 7,
    "fair": 7.75,
    "rating": 94.98
+  },
+  "Sandown|7|POWERPIVOT": {
+   "on": 1,
+   "t": 1795842028284,
+   "name": "Power Pivot",
+   "tab": 14,
+   "sp": 13,
+   "fair": 59.78,
+   "rating": 89.09
   }
  }
 }
