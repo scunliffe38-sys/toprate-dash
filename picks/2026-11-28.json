@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:04.697Z",
+ "saved": "2026-11-28T01:59:09.301Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -50,6 +50,24 @@
    "sp": 3.6,
    "fair": 3.92,
    "rating": 94.72
+  },
+  "Sandown|4|ODENKIRK": {
+   "on": 1,
+   "t": 1795831144763,
+   "name": "Odenkirk",
+   "tab": 5,
+   "sp": 5.5,
+   "fair": 7.8,
+   "rating": 92.76
+  },
+  "Sandown|4|OVERSOURCED": {
+   "on": 1,
+   "t": 1795831146062,
+   "name": "Oversourced",
+   "tab": 14,
+   "sp": 9.5,
+   "fair": 10.5,
+   "rating": 91.88
   }
  }
 }
