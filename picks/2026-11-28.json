@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:30:21.227Z",
+ "saved": "2026-11-28T05:30:26.832Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -680,6 +680,15 @@
    "sp": 3.8,
    "fair": 7.31,
    "rating": 98.86
+  },
+  "Ascot|10|OURGIRLCANRUN": {
+   "on": 1,
+   "t": 1795843823698,
+   "name": "Ourgirlcanrun",
+   "tab": 4,
+   "sp": 2,
+   "fair": 3.92,
+   "rating": 94.25
   }
  }
 }
