@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T08:25:18.857Z",
+ "saved": "2026-11-28T08:25:27.052Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -788,6 +788,33 @@
    "sp": 2.5,
    "fair": 2.29,
    "rating": 66.56
+  },
+  "Toowoomba|8|REIGNOFDAME": {
+   "on": 1,
+   "t": 1795854322040,
+   "name": "Reign Of Dame",
+   "tab": 7,
+   "sp": 3.8,
+   "fair": 6.3,
+   "rating": 63.26
+  },
+  "Toowoomba|8|HELLAVALEGACY": {
+   "on": 1,
+   "t": 1795854323877,
+   "name": "Hellavalegacy",
+   "tab": 5,
+   "sp": 13,
+   "fair": 9.12,
+   "rating": 62.06
+  },
+  "Toowoomba|8|CONCERNED": {
+   "on": 1,
+   "t": 1795854326989,
+   "name": "Concerned",
+   "tab": 1,
+   "sp": 7.5,
+   "fair": 9.75,
+   "rating": 61.85
   }
  }
 }
