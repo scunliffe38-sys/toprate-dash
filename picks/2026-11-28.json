@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:28:49.523Z",
+ "saved": "2026-11-28T05:29:58.228Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -635,6 +635,15 @@
    "sp": 34,
    "fair": 17.59,
    "rating": 92.55
+  },
+  "Ascot|8|DRAKAINA": {
+   "on": 1,
+   "t": 1795843794974,
+   "name": "Drakaina",
+   "tab": 5,
+   "sp": 16,
+   "fair": 8.91,
+   "rating": 94.5
   }
  }
 }
