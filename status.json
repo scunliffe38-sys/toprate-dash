@@ -1,19 +1,19 @@
 {
- "started": "2026-11-28T16:37:28",
+ "started": "2026-11-28T16:56:02",
  "dates": [
   "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01"
  ],
- "reason": "Sandown Soft 6 -> Soft 7",
+ "reason": "Kembla Grange Good 4 -> Soft 5; Sandown scratched R10 #7; Sandown scratched R10 #13",
  "status": "ok",
  "acceptors": 1538,
  "rider_share": 0.98,
  "extract_max_date": "2026-12-01",
  "card_source": "toprate",
  "extract": "2026-11-27T21:23:43+00:00",
- "finished": "2026-11-28T16:55:33",
+ "finished": "2026-11-28T17:14:34",
  "going": {
   "Sandown": "Soft 7",
   "Rosehill": "Good 4",
@@ -30,5 +30,5 @@
  },
  "scratchings": 308,
  "dashboard": "toprate_week_v2_2026-11-28.html",
- "fingerprint": "8ec5d5c2b909"
+ "fingerprint": "5577ef56a37a"
 }
