@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:34.697Z",
+ "saved": "2026-11-28T01:59:37.665Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -113,6 +113,15 @@
    "sp": 3.6,
    "fair": 6.52,
    "rating": 96.13
+  },
+  "Sandown|6|CAVILLAVENUE": {
+   "on": 1,
+   "t": 1795831177392,
+   "name": "Cavill Avenue",
+   "tab": 1,
+   "sp": 1.9,
+   "fair": 3.84,
+   "rating": 86.47
   }
  }
 }
