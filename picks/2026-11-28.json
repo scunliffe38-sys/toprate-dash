@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:48:37.671Z",
+ "saved": "2026-11-28T04:48:54.559Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -185,6 +185,15 @@
    "sp": 41,
    "fair": 17.9,
    "rating": 94.48
+  },
+  "Rosehill|8|GLORIOUSMOMENTS": {
+   "on": 1,
+   "t": 1795841331233,
+   "name": "Glorious Moments",
+   "tab": 7,
+   "sp": 2.3,
+   "fair": 3.66,
+   "rating": 101.76
   }
  }
 }
