@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-27T09:54:38.804Z",
+ "saved": "2026-11-28T01:58:33.377Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -37,6 +37,15 @@
    "sp": 4.8,
    "fair": 5.35,
    "rating": 82.22
+  },
+  "Sandown|3|GILGEOUS": {
+   "on": 1,
+   "t": 1795831110235,
+   "name": "Gilgeous",
+   "tab": 1,
+   "sp": 11,
+   "fair": 10.76,
+   "rating": 79.97
   }
  }
 }
