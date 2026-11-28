@@ -1,25 +1,25 @@
 {
- "started": "2026-11-28T10:35:26",
+ "started": "2026-11-28T10:54:02",
  "dates": [
   "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01"
  ],
- "reason": "Kempsey scratched R1 #9, R2 #7",
+ "reason": "Tab Park Gold Coast scratched R1 #2",
  "status": "ok",
  "acceptors": 1538,
  "rider_share": 0.98,
  "extract_max_date": "2026-12-01",
  "card_source": "toprate",
  "extract": "2026-11-27T21:23:43+00:00",
- "finished": "2026-11-28T10:53:44",
+ "finished": "2026-11-28T11:11:59",
  "going": {
   "Sandown": "Soft 6",
   "Rosehill": "Good 4",
   "Doomben": "Soft 6",
   "Morphettville": "Good 4",
-  "Ascot": "Soft 5",
+  "Ascot": "Good 4",
   "Yarra Valley": "Heavy 8",
   "Kembla Grange": "Good 4",
   "Wagga": "Soft 5",
@@ -28,7 +28,7 @@
   "Kempsey": "Soft 6",
   "Fannie Bay": "Good"
  },
- "scratchings": 280,
+ "scratchings": 288,
  "dashboard": "toprate_week_v2_2026-11-28.html",
- "fingerprint": "f5f67c3b4bac"
+ "fingerprint": "55bf68f35550"
 }
