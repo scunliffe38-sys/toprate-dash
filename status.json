@@ -1,34 +1,26 @@
 {
- "started": "2026-11-28T17:37:02",
+ "started": "2026-11-29T03:09:44",
  "dates": [
-  "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01"
  ],
- "reason": "Sandown Soft 7 -> Heavy 8",
+ "reason": "overnight harvest",
  "status": "ok",
- "acceptors": 1538,
- "rider_share": 0.98,
+ "acceptors": 775,
+ "rider_share": 0.91,
  "extract_max_date": "2026-12-01",
  "card_source": "toprate",
- "extract": "2026-11-27T21:23:43+00:00",
- "finished": "2026-11-28T17:55:30",
+ "extract": "2026-11-28T16:08:01+00:00",
+ "finished": "2026-11-29T04:17:06",
  "going": {
-  "Sandown": "Heavy 8",
-  "Rosehill": "Good 4",
-  "Doomben": "Good 4",
-  "Morphettville": "Good 4",
-  "Ascot": "Good 4",
-  "Kembla Grange": "Soft 5",
-  "Tab Park Gold Coast": "Heavy 10",
-  "Toowoomba": "Good 4",
-  "Fannie Bay": "Good",
-  "Yarra Valley": "Heavy 10",
-  "Wagga": "Heavy 8",
-  "Kempsey": "Soft 6"
+  "Warrnambool": "Soft 6",
+  "Traralgon": "Heavy 8",
+  "Newcastle": "Good 4",
+  "Grafton": "Soft 7",
+  "Hobart": "Soft 7"
  },
- "scratchings": 309,
- "dashboard": "toprate_week_v2_2026-11-28.html",
- "fingerprint": "8f152fcbac27"
+ "scratchings": 35,
+ "dashboard": "toprate_week_v2_2026-11-29.html",
+ "fingerprint": "ee42628d3e55"
 }
