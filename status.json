@@ -1,19 +1,19 @@
 {
- "started": "2026-11-28T15:38:02",
+ "started": "2026-11-28T15:57:02",
  "dates": [
   "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01"
  ],
- "reason": "Wagga scratched R5 #5",
+ "reason": "Doomben Soft 5 -> Good 4; Kembla Grange scratched R4 #2",
  "status": "ok",
  "acceptors": 1538,
  "rider_share": 0.98,
  "extract_max_date": "2026-12-01",
  "card_source": "toprate",
  "extract": "2026-11-27T21:23:43+00:00",
- "finished": "2026-11-28T15:56:09",
+ "finished": "2026-11-28T16:14:48",
  "going": {
   "Sandown": "Soft 6",
   "Rosehill": "Good 4",
@@ -30,5 +30,5 @@
  },
  "scratchings": 306,
  "dashboard": "toprate_week_v2_2026-11-28.html",
- "fingerprint": "46b339b473a2"
+ "fingerprint": "1462e17898d4"
 }
