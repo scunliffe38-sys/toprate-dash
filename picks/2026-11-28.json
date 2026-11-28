@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:30:11.901Z",
+ "saved": "2026-11-28T05:30:15.365Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -653,6 +653,15 @@
    "sp": 2.3,
    "fair": 2.96,
    "rating": 101.32
+  },
+  "Ascot|9|WANTAWINNER": {
+   "on": 1,
+   "t": 1795843812194,
+   "name": "Want A Winner",
+   "tab": 6,
+   "sp": 23,
+   "fair": 34.95,
+   "rating": 94.57
   }
  }
 }
