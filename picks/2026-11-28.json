@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:50:15.871Z",
+ "saved": "2026-11-28T04:50:58.372Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -212,6 +212,15 @@
    "sp": 2.9,
    "fair": 2.83,
    "rating": 98.73
+  },
+  "Rosehill|9|ANYTHINKGOES": {
+   "on": 1,
+   "t": 1795841454825,
+   "name": "Anythink Goes",
+   "tab": 12,
+   "sp": 13,
+   "fair": 25.35,
+   "rating": 92.33
   }
  }
 }
