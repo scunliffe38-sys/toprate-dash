@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T08:24:52.845Z",
+ "saved": "2026-11-28T08:25:01.047Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -734,6 +734,15 @@
    "sp": 2.2,
    "fair": 4.81,
    "rating": 68.32
+  },
+  "Toowoomba|5|PROFFER": {
+   "on": 1,
+   "t": 1795854297833,
+   "name": "Proffer",
+   "tab": 3,
+   "sp": 23,
+   "fair": 11.93,
+   "rating": 65.6
   }
  }
 }
