@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:53:12.616Z",
+ "saved": "2026-11-28T04:53:34.737Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -329,6 +329,15 @@
    "sp": 2,
    "fair": 2.38,
    "rating": 86.64
+  },
+  "Ascot|4|LUCKEEFLORAN": {
+   "on": 1,
+   "t": 1795841611428,
+   "name": "Luckee Floran",
+   "tab": 5,
+   "sp": 23,
+   "fair": 19.7,
+   "rating": 80.51
   }
  }
 }
