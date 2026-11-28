@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:00:10.681Z",
+ "saved": "2026-11-28T05:00:17.246Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -410,6 +410,15 @@
    "sp": 6.5,
    "fair": 4.03,
    "rating": 96.88
+  },
+  "Sandown|7|MANZORBLUE": {
+   "on": 1,
+   "t": 1795842013803,
+   "name": "Manzor Blue",
+   "tab": 4,
+   "sp": 3.4,
+   "fair": 7.34,
+   "rating": 95.19
   }
  }
 }
