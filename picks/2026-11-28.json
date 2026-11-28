@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T08:25:06.182Z",
+ "saved": "2026-11-28T08:25:10.619Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -752,6 +752,24 @@
    "sp": 1.7,
    "fair": 1.5,
    "rating": 88.31
+  },
+  "Toowoomba|6|STARRAPPER": {
+   "on": 1,
+   "t": 1795854307395,
+   "name": "Star Rapper",
+   "tab": 2,
+   "sp": 4.2,
+   "fair": 6.89,
+   "rating": 83
+  },
+  "Toowoomba|7|LAURELS": {
+   "on": 1,
+   "t": 1795854310572,
+   "name": "Laurels",
+   "tab": 4,
+   "sp": 1.7,
+   "fair": 3.01,
+   "rating": 83.71
   }
  }
 }
