@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:44.833Z",
+ "saved": "2026-11-28T01:59:50.731Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -131,6 +131,15 @@
    "sp": 10,
    "fair": 6.13,
    "rating": 85
+  },
+  "Sandown|6|LAFARNA": {
+   "on": 1,
+   "t": 1795831187355,
+   "name": "Lafarna",
+   "tab": 6,
+   "sp": 9,
+   "fair": 10.61,
+   "rating": 83.31
   }
  }
 }
