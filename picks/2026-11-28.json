@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:00:17.246Z",
+ "saved": "2026-11-28T05:00:23.077Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -419,6 +419,15 @@
    "sp": 3.4,
    "fair": 7.34,
    "rating": 95.19
+  },
+  "Sandown|7|BEACHPAD": {
+   "on": 1,
+   "t": 1795842019786,
+   "name": "Beach Pad",
+   "tab": 6,
+   "sp": 7,
+   "fair": 7.75,
+   "rating": 94.98
   }
  }
 }
