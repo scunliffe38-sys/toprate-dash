@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T08:24:40.155Z",
+ "saved": "2026-11-28T08:24:52.845Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -716,6 +716,24 @@
    "sp": 2.7,
    "fair": 2.92,
    "rating": 69.77
+  },
+  "Toowoomba|5|FIERCEFIGHTER": {
+   "on": 1,
+   "t": 1795854287259,
+   "name": "Fierce Fighter",
+   "tab": 2,
+   "sp": 8,
+   "fair": 7.33,
+   "rating": 67.04
+  },
+  "Toowoomba|5|ONTHECUSP": {
+   "on": 1,
+   "t": 1795854289672,
+   "name": "On The Cusp",
+   "tab": 6,
+   "sp": 2.2,
+   "fair": 4.81,
+   "rating": 68.32
   }
  }
 }
