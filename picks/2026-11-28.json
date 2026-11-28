@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:14.017Z",
+ "saved": "2026-11-28T01:59:30.502Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -77,6 +77,24 @@
    "sp": 9.5,
    "fair": 10.6,
    "rating": 91.85
+  },
+  "Sandown|5|TRESMAGNIFIQUE": {
+   "on": 1,
+   "t": 1795831165944,
+   "name": "Tres Magnifique",
+   "tab": 9,
+   "sp": 7,
+   "fair": 4.36,
+   "rating": 97.41
+  },
+  "Sandown|5|JETTSMASH": {
+   "on": 1,
+   "t": 1795831167250,
+   "name": "Jett Smash",
+   "tab": 7,
+   "sp": 2.7,
+   "fair": 4.41,
+   "rating": 97.39
   }
  }
 }
