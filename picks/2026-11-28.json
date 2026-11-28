@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:50.731Z",
+ "saved": "2026-11-28T04:48:37.671Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -140,6 +140,51 @@
    "sp": 9,
    "fair": 10.61,
    "rating": 83.31
+  },
+  "Rosehill|7|ROSELYNSSTAR": {
+   "on": 1,
+   "t": 1795841314383,
+   "name": "Roselyn's Star",
+   "tab": 2,
+   "sp": 1.7,
+   "fair": 4.56,
+   "rating": 98.67
+  },
+  "Rosehill|7|POLYGLOT": {
+   "on": 1,
+   "t": 1795841314383,
+   "name": "Polyglot",
+   "tab": 7,
+   "sp": 6.5,
+   "fair": 5.77,
+   "rating": 97.93
+  },
+  "Rosehill|7|KINGSSECRET": {
+   "on": 1,
+   "t": 1795841314383,
+   "name": "King's Secret",
+   "tab": 1,
+   "sp": 11,
+   "fair": 11.22,
+   "rating": 95.91
+  },
+  "Rosehill|7|SUNSHINEINMYPOCKET": {
+   "on": 1,
+   "t": 1795841314384,
+   "name": "Sunshineinmypocket",
+   "tab": 6,
+   "sp": 12,
+   "fair": 12.17,
+   "rating": 95.65
+  },
+  "Rosehill|7|MAJORSHARE": {
+   "on": 1,
+   "t": 1795841314384,
+   "name": "Major Share",
+   "tab": 8,
+   "sp": 41,
+   "fair": 17.9,
+   "rating": 94.48
   }
  }
 }
