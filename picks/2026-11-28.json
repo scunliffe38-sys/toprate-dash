@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:58:39.499Z",
+ "saved": "2026-11-28T01:59:04.697Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -41,6 +41,15 @@
   "Sandown|3|GILGEOUS": {
    "on": 0,
    "t": 1795831116400
+  },
+  "Sandown|4|ROYALPRESS": {
+   "on": 1,
+   "t": 1795831141549,
+   "name": "Royal Press",
+   "tab": 1,
+   "sp": 3.6,
+   "fair": 3.92,
+   "rating": 94.72
   }
  }
 }
