@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:01:06.711Z",
+ "saved": "2026-11-28T05:01:10.603Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -491,6 +491,15 @@
    "sp": 5.5,
    "fair": 7.47,
    "rating": 96.14
+  },
+  "Sandown|9|MAKDANE": {
+   "on": 1,
+   "t": 1795842067468,
+   "name": "Makdane",
+   "tab": 5,
+   "sp": 8,
+   "fair": 8.57,
+   "rating": 95.69
   }
  }
 }
