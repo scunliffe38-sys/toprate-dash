@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:28:12.684Z",
+ "saved": "2026-11-28T05:28:49.523Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -590,6 +590,51 @@
    "sp": 7,
    "fair": 6.42,
    "rating": 87.95
+  },
+  "Ascot|8|LADIESPRO": {
+   "on": 1,
+   "t": 1795843726383,
+   "name": "Ladies Pro",
+   "tab": 1,
+   "sp": 2.8,
+   "fair": 3.54,
+   "rating": 97.15
+  },
+  "Ascot|8|LIKECLOCKWORK": {
+   "on": 1,
+   "t": 1795843726383,
+   "name": "Like Clockwork",
+   "tab": 11,
+   "sp": 3.6,
+   "fair": 6.73,
+   "rating": 95.3
+  },
+  "Ascot|8|CINQUESTELLE": {
+   "on": 1,
+   "t": 1795843726383,
+   "name": "Cinque Stelle",
+   "tab": 13,
+   "sp": 5,
+   "fair": 9.23,
+   "rating": 94.42
+  },
+  "Ascot|8|INCONFIDENCE": {
+   "on": 1,
+   "t": 1795843726383,
+   "name": "In Confidence",
+   "tab": 12,
+   "sp": 7,
+   "fair": 9.31,
+   "rating": 94.38
+  },
+  "Ascot|8|BLACKORA": {
+   "on": 1,
+   "t": 1795843726383,
+   "name": "Black Ora",
+   "tab": 6,
+   "sp": 34,
+   "fair": 17.59,
+   "rating": 92.55
   }
  }
 }
