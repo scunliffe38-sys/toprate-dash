@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:53:43.030Z",
+ "saved": "2026-11-28T04:54:01.663Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -347,6 +347,33 @@
    "sp": 9.5,
    "fair": 12.65,
    "rating": 81.77
+  },
+  "Ascot|5|BASSETTHOUND": {
+   "on": 1,
+   "t": 1795841634235,
+   "name": "Bassett Hound",
+   "tab": 3,
+   "sp": 2.15,
+   "fair": 4.6,
+   "rating": 94.51
+  },
+  "Ascot|5|SNITZALATTE": {
+   "on": 1,
+   "t": 1795841636389,
+   "name": "Snitzalatte",
+   "tab": 6,
+   "sp": 9.5,
+   "fair": 5.26,
+   "rating": 94.06
+  },
+  "Ascot|5|XENTARO": {
+   "on": 1,
+   "t": 1795841638444,
+   "name": "Xentaro",
+   "tab": 10,
+   "sp": 8,
+   "fair": 6.8,
+   "rating": 93.28
   }
  }
 }
