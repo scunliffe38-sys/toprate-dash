@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:54:01.663Z",
+ "saved": "2026-11-28T04:54:07.496Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -374,6 +374,33 @@
    "sp": 8,
    "fair": 6.8,
    "rating": 93.28
+  },
+  "Ascot|6|STREAMLINED": {
+   "on": 1,
+   "t": 1795841642530,
+   "name": "Streamlined",
+   "tab": 9,
+   "sp": 5.5,
+   "fair": 4.87,
+   "rating": 88.67
+  },
+  "Ascot|6|MARKETSNITZ": {
+   "on": 1,
+   "t": 1795841644316,
+   "name": "Market Snitz",
+   "tab": 6,
+   "sp": 3,
+   "fair": 5.23,
+   "rating": 88.54
+  },
+  "Ascot|6|LINCHPIN": {
+   "on": 1,
+   "t": 1795841647313,
+   "name": "Linchpin",
+   "tab": 2,
+   "sp": 5.5,
+   "fair": 6.31,
+   "rating": 87.91
   }
  }
 }
