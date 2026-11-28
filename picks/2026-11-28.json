@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:30:38.294Z",
+ "saved": "2026-11-28T05:30:47.308Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -698,6 +698,15 @@
    "sp": 26,
    "fair": 8.71,
    "rating": 91.99
+  },
+  "Ascot|10|GALWAYSHAWL": {
+   "on": 1,
+   "t": 1795843844217,
+   "name": "Galway Shawl",
+   "tab": 11,
+   "sp": 9,
+   "fair": 14.32,
+   "rating": 90.65
   }
  }
 }
