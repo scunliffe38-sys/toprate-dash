@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:30:47.308Z",
+ "saved": "2026-11-28T08:24:40.155Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -707,6 +707,15 @@
    "sp": 9,
    "fair": 14.32,
    "rating": 90.65
+  },
+  "Toowoomba|5|DOMINATOR": {
+   "on": 1,
+   "t": 1795854276847,
+   "name": "Dominator",
+   "tab": 1,
+   "sp": 2.7,
+   "fair": 2.92,
+   "rating": 69.77
   }
  }
 }
