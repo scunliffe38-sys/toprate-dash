@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:01:35.887Z",
+ "saved": "2026-11-28T05:28:12.684Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -563,6 +563,33 @@
    "sp": 8.5,
    "fair": 27.35,
    "rating": 87.76
+  },
+  "Ascot|7|ONELASTRESORT": {
+   "on": 1,
+   "t": 1795843689423,
+   "name": "One Last Resort",
+   "tab": 4,
+   "sp": 3.3,
+   "fair": 3.17,
+   "rating": 90.03
+  },
+  "Ascot|7|LEVATIDIMEZZO": {
+   "on": 1,
+   "t": 1795843689423,
+   "name": "Levati Dimezzo",
+   "tab": 1,
+   "sp": 9.5,
+   "fair": 5.67,
+   "rating": 88.31
+  },
+  "Ascot|7|GAINTREE": {
+   "on": 1,
+   "t": 1795843689423,
+   "name": "Gaintree",
+   "tab": 8,
+   "sp": 7,
+   "fair": 6.42,
+   "rating": 87.95
   }
  }
 }
