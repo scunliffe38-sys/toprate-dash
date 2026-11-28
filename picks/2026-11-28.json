@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:00:31.475Z",
+ "saved": "2026-11-28T05:00:46.017Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -437,6 +437,33 @@
    "sp": 13,
    "fair": 59.78,
    "rating": 89.09
+  },
+  "Sandown|8|KINGZEPHYR": {
+   "on": 1,
+   "t": 1795842041078,
+   "name": "King Zephyr",
+   "tab": 7,
+   "sp": 3.8,
+   "fair": 3.83,
+   "rating": 97.36
+  },
+  "Sandown|8|RUNHARRYRUN": {
+   "on": 1,
+   "t": 1795842042760,
+   "name": "Run Harry Run",
+   "tab": 3,
+   "sp": 4,
+   "fair": 5.21,
+   "rating": 96.38
+  },
+  "Sandown|8|RAMADAN": {
+   "on": 1,
+   "t": 1795842045717,
+   "name": "Ramadan",
+   "tab": 2,
+   "sp": 7,
+   "fair": 5.59,
+   "rating": 96.3
   }
  }
 }
