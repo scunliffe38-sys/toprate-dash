@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:51:34.623Z",
+ "saved": "2026-11-28T04:51:38.203Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -257,6 +257,15 @@
    "sp": 6.5,
    "fair": 8.1,
    "rating": 91.01
+  },
+  "Rosehill|10|FRIENDLYFIRE": {
+   "on": 1,
+   "t": 1795841494869,
+   "name": "Friendly Fire",
+   "tab": 15,
+   "sp": 6,
+   "fair": 7.98,
+   "rating": 91.07
   }
  }
 }
