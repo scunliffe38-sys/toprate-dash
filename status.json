@@ -1,34 +1,34 @@
 {
- "started": "2026-11-28T15:57:02",
+ "started": "2026-11-28T16:37:28",
  "dates": [
   "2026-11-28",
   "2026-11-29",
   "2026-11-30",
   "2026-12-01"
  ],
- "reason": "Doomben Soft 5 -> Good 4; Kembla Grange scratched R4 #2",
+ "reason": "Sandown Soft 6 -> Soft 7",
  "status": "ok",
  "acceptors": 1538,
  "rider_share": 0.98,
  "extract_max_date": "2026-12-01",
  "card_source": "toprate",
  "extract": "2026-11-27T21:23:43+00:00",
- "finished": "2026-11-28T16:14:48",
+ "finished": "2026-11-28T16:55:33",
  "going": {
-  "Sandown": "Soft 6",
+  "Sandown": "Soft 7",
   "Rosehill": "Good 4",
   "Doomben": "Good 4",
   "Morphettville": "Good 4",
   "Ascot": "Good 4",
-  "Yarra Valley": "Heavy 10",
-  "Kembla Grange": "Good 4",
+  "Kembla Grange": "Soft 5",
   "Wagga": "Heavy 8",
   "Tab Park Gold Coast": "Heavy 10",
   "Toowoomba": "Good 4",
   "Kempsey": "Soft 6",
-  "Fannie Bay": "Good"
+  "Fannie Bay": "Good",
+  "Yarra Valley": "Heavy 10"
  },
- "scratchings": 306,
+ "scratchings": 308,
  "dashboard": "toprate_week_v2_2026-11-28.html",
- "fingerprint": "1462e17898d4"
+ "fingerprint": "8ec5d5c2b909"
 }
