@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:30.502Z",
+ "saved": "2026-11-28T01:59:34.697Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -95,6 +95,24 @@
    "sp": 2.7,
    "fair": 4.41,
    "rating": 97.39
+  },
+  "Sandown|5|KARREN": {
+   "on": 1,
+   "t": 1795831171296,
+   "name": "Karren",
+   "tab": 10,
+   "sp": 7,
+   "fair": 4.58,
+   "rating": 97.29
+  },
+  "Sandown|5|PHOTOGRAPH": {
+   "on": 1,
+   "t": 1795831174298,
+   "name": "Photograph",
+   "tab": 4,
+   "sp": 3.6,
+   "fair": 6.52,
+   "rating": 96.13
   }
  }
 }
