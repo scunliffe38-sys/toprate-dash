@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:51:45.058Z",
+ "saved": "2026-11-28T04:53:03.096Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -275,6 +275,42 @@
    "sp": 4.4,
    "fair": 9.82,
    "rating": 90.4
+  },
+  "Ascot|3|WESTBOUND": {
+   "on": 1,
+   "t": 1795841579656,
+   "name": "Westbound",
+   "tab": 2,
+   "sp": 2.2,
+   "fair": 2.25,
+   "rating": 95.04
+  },
+  "Ascot|3|DECORATION": {
+   "on": 1,
+   "t": 1795841579657,
+   "name": "Decoration",
+   "tab": 3,
+   "sp": 6,
+   "fair": 10.01,
+   "rating": 90.59
+  },
+  "Ascot|3|STREETBAND": {
+   "on": 1,
+   "t": 1795841579657,
+   "name": "Street Band",
+   "tab": 5,
+   "sp": 7,
+   "fair": 13.08,
+   "rating": 89.82
+  },
+  "Ascot|3|CLASSICIMPACT": {
+   "on": 1,
+   "t": 1795841579657,
+   "name": "Classic Impact",
+   "tab": 8,
+   "sp": 5.5,
+   "fair": 17.38,
+   "rating": 89
   }
  }
 }
