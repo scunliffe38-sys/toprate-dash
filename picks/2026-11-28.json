@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:53:34.737Z",
+ "saved": "2026-11-28T04:53:43.030Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -338,6 +338,15 @@
    "sp": 23,
    "fair": 19.7,
    "rating": 80.51
+  },
+  "Ascot|4|DIABLOLAD": {
+   "on": 1,
+   "t": 1795841619803,
+   "name": "Diablo Lad",
+   "tab": 10,
+   "sp": 9.5,
+   "fair": 12.65,
+   "rating": 81.77
   }
  }
 }
