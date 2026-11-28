@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:01:23.608Z",
+ "saved": "2026-11-28T05:01:27.602Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -536,6 +536,15 @@
    "sp": 10,
    "fair": 13.15,
    "rating": 89.86
+  },
+  "Sandown|10|IMPULSIVEREACTION": {
+   "on": 1,
+   "t": 1795842084427,
+   "name": "Impulsive Reaction",
+   "tab": 2,
+   "sp": 12,
+   "fair": 15.99,
+   "rating": 89.32
   }
  }
 }
