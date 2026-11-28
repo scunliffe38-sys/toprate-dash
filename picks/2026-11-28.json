@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:01:14.073Z",
+ "saved": "2026-11-28T05:01:19.813Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -509,6 +509,24 @@
    "sp": 5,
    "fair": 8.24,
    "rating": 95.82
+  },
+  "Sandown|10|SOMEWHERE": {
+   "on": 1,
+   "t": 1795842075505,
+   "name": "Somewhere",
+   "tab": 6,
+   "sp": 5,
+   "fair": 5.05,
+   "rating": 92.64
+  },
+  "Sandown|10|WETUMPKA": {
+   "on": 1,
+   "t": 1795842076552,
+   "name": "Wetumpka",
+   "tab": 17,
+   "sp": 3.5,
+   "fair": 5.21,
+   "rating": 92.56
   }
  }
 }
