@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:50:08.188Z",
+ "saved": "2026-11-28T04:50:15.871Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -203,6 +203,15 @@
    "sp": 7,
    "fair": 9.36,
    "rating": 99.03
+  },
+  "Rosehill|9|PALTROWMISS": {
+   "on": 1,
+   "t": 1795841412603,
+   "name": "Paltrow Miss",
+   "tab": 10,
+   "sp": 2.9,
+   "fair": 2.83,
+   "rating": 98.73
   }
  }
 }
