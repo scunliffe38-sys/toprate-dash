@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:51:38.203Z",
+ "saved": "2026-11-28T04:51:45.058Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -266,6 +266,15 @@
    "sp": 6,
    "fair": 7.98,
    "rating": 91.07
+  },
+  "Rosehill|10|SWORDPLAY": {
+   "on": 1,
+   "t": 1795841501645,
+   "name": "Swordplay",
+   "tab": 7,
+   "sp": 4.4,
+   "fair": 9.82,
+   "rating": 90.4
   }
  }
 }
