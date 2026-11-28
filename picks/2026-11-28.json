@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T05:30:15.365Z",
+ "saved": "2026-11-28T05:30:21.227Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -662,6 +662,24 @@
    "sp": 23,
    "fair": 34.95,
    "rating": 94.57
+  },
+  "Ascot|9|TALKANCO": {
+   "on": 1,
+   "t": 1795843817401,
+   "name": "Talkanco",
+   "tab": 12,
+   "sp": 7.5,
+   "fair": 9.52,
+   "rating": 98.17
+  },
+  "Ascot|9|REYMAGNERIO": {
+   "on": 1,
+   "t": 1795843818156,
+   "name": "Rey Magnerio",
+   "tab": 2,
+   "sp": 3.8,
+   "fair": 7.31,
+   "rating": 98.86
   }
  }
 }
