@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T04:53:03.096Z",
+ "saved": "2026-11-28T04:53:06.573Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -311,6 +311,15 @@
    "sp": 5.5,
    "fair": 17.38,
    "rating": 89
+  },
+  "Ascot|3|HOLLERNUFF": {
+   "on": 1,
+   "t": 1795841583408,
+   "name": "Holler Nuff",
+   "tab": 4,
+   "sp": 10,
+   "fair": 7.46,
+   "rating": 91.5
   }
  }
 }
