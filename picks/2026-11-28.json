@@ -1,6 +1,6 @@
 {
  "date": "2026-11-28",
- "saved": "2026-11-28T01:59:09.301Z",
+ "saved": "2026-11-28T01:59:14.017Z",
  "picks": {
   "Sandown|2|ESMAHLI": {
    "on": 1,
@@ -68,6 +68,15 @@
    "sp": 9.5,
    "fair": 10.5,
    "rating": 91.88
+  },
+  "Sandown|4|RUBITRIX": {
+   "on": 1,
+   "t": 1795831150813,
+   "name": "Rubitrix",
+   "tab": 15,
+   "sp": 9.5,
+   "fair": 10.6,
+   "rating": 91.85
   }
  }
 }
